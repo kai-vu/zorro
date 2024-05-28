@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://Ameneh.org/aircraft.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://Ameneh.org/aircraft.owl">
+    <Prefix name="" IRI="http://Ameneh.org/aircraft.owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>the developer is Ameneh Naghdi Pour.Contact: a.nghdipour@vu.nl</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Assembly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AssemblyPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cause"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Outcome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PepairProcedure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Problem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ServiceAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subsystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubsytemPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#System"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WorkAround"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCause"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSolution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSymptom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfAssembly"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOfSubsystem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#locatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#needWorkaround"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#resultIN"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasID"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#screwDriver1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#screwDriver2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#screwDriver3"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Assembly"/>
+        <Class IRI="#Subsystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AssemblyPart"/>
+        <Class IRI="#Assembly"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cause"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Event"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Outcome"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PepairProcedure"/>
+        <Class IRI="#ServiceAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Problem"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ServiceAction"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Subsystem"/>
+        <Class IRI="#System"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubsytemPart"/>
+        <Class IRI="#Subsystem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Symptom"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkAround"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Problem"/>
+        <Class IRI="#ServiceAction"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#generate"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#generate"/>
+        <Class IRI="#Cause"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCause"/>
+        <Class IRI="#Problem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSolution"/>
+        <Class IRI="#Problem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <Class IRI="#Problem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#locatedIn"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#needWorkaround"/>
+        <Class IRI="#Problem"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#resultIN"/>
+        <Class IRI="#ServiceAction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#generate"/>
+        <Class IRI="#Problem"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCause"/>
+        <Class IRI="#Cause"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSolution"/>
+        <Class IRI="#ServiceAction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <Class IRI="#Symptom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOfAssembly"/>
+        <Class IRI="#AssemblyPart"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#locatedIn"/>
+        <Class IRI="#System"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#needWorkaround"/>
+        <Class IRI="#WorkAround"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#resultIN"/>
+        <Class IRI="#Outcome"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasID"/>
+        <Class IRI="#Problem"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasID"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
