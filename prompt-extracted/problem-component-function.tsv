@@ -1,0 +1,71 @@
+Failure of Engine to Start	Cranking Section	Initiating engine start
+Failure of Engine to Start	Electrical Power	Providing electrical power
+Failure of Engine to Idle Properly	Fuel Distribution	Fuel-air mixture distribution
+Failure of Engine to Idle Properly	Induction System	Air-fuel intake
+Low Power and Uneven Running	Power Section	Power output
+Low Power and Uneven Running	Ignition Distribution System	Ignition timing and distribution
+Failure of Engine to Develop Full Power	Power Section	Power output
+Failure of Engine to Develop Full Power	Induction System	Proper air-fuel intake
+Rough Engine	Ignition Distribution System	Ignition timing
+Rough Engine	Cylinder Section	Cylinder operation
+Low Oil Pressure	Lubrication System	Maintaining oil pressure
+High Oil Temperature	Cooling System	Proper cooling
+High Oil Temperature	Lubrication System	Oil temperature regulation
+Excessive Oil Consumption	Lubrication System	Oil distribution
+Excessive Oil Consumption	Cylinder Section	Cylinder operation
+Lack of fuel	Fuel Distribution	Fuel distribution
+Lack of fuel	Induction System	Air-fuel intake
+Overpriming	Priming System	Excessive fuel during start
+Overpriming	Fuel Distribution	Fuel-air mixture control
+Defective spark plugs	Ignition Distribution System	Proper ignition
+Defective ignition wire	Ignition Distribution System	Ignition transfer
+Defective battery	Electrical Power	Power supply for starting
+Improper operation of magneto breaker	Ignition Distribution System	Ignition timing
+Lack of sufficient fuel flow	Fuel Distribution	Fuel delivery
+Lack of sufficient fuel flow	Induction System	Proper air-fuel intake
+Water in carburetor	Induction System	Air-fuel mixture contamination
+Internal failure	Power Section	Core engine functionality
+Incorrect idle mixture	Fuel Distribution	Fuel-air mixture control
+Leak in induction system	Induction System	Proper air-fuel intake
+Incorrect idle adjustment	Fuel Distribution	Fuel-air mixture control
+Uneven cylinder compression	Cylinder Section	Balanced cylinder compression
+Faulty ignition system	Ignition Distribution System	Proper ignition timing and distribution
+Insufficient fuel pressure	Fuel Distribution	Fuel delivery
+Mixture too rich	Fuel Distribution	Proper air-fuel mixture
+Mixture too lean	Fuel Distribution	Proper air-fuel mixture
+Leaks in induction system	Induction System	Proper air-fuel intake
+Defective spark plugs	Ignition Distribution System	Proper ignition
+Improper fuel	Fuel Distribution	Correct fuel type
+Magneto breaker points not working properly	Ignition Distribution System	Ignition timing
+Defective ignition wire	Ignition Distribution System	Ignition transfer
+Defective spark plug terminal connectors	Ignition Distribution System	Proper ignition
+Leak in induction system	Induction System	Proper air-fuel intake
+Throttle lever out of adjustment	Induction System	Air-fuel intake control
+Improper fuel flow	Fuel Distribution	Fuel delivery
+Restriction in air scoop	Induction System	Air intake restriction
+Improper fuel	Fuel Distribution	Correct fuel type
+Faulty ignition	Ignition Distribution System	Proper ignition timing
+Cracked engine mount	Power Section	Engine stability
+Defective mounting bushings	Power Section	Engine stability
+Uneven compression	Cylinder Section	Balanced cylinder compression
+Insufficient oil	Lubrication System	Adequate lubrication
+Air lock or dirt in relief valve	Lubrication System	Proper oil pressure regulation
+Leak in suction line or pressure line	Lubrication System	Proper oil flow
+High oil temperature	Cooling System	Proper cooling
+High oil temperature	Lubrication System	Oil temperature regulation
+Defective pressure gage	Lubrication System	Accurate oil pressure reading
+Stoppage in oil pump intake passage	Lubrication System	Proper oil flow
+Insufficient air cooling	Cooling System	Proper engine cooling
+Insufficient oil supply	Lubrication System	Adequate lubrication
+Low grade of oil	Lubrication System	Proper lubrication
+Clogged oil lines or strainers	Lubrication System	Proper oil flow
+Excessive blow-by	Cylinder Section	Proper cylinder sealing
+Failing or failed bearings	Power Section	Smooth engine operation
+Failing or failed bearings	Lubrication System	Proper lubrication
+Defective temperature gage	Cooling System	Accurate temperature reading
+Low grade of oil	Lubrication System	Proper lubrication
+Failing or failed bearings	Power Section	Smooth engine operation
+Failing or failed bearings	Lubrication System	Proper lubrication
+Worn piston rings	Cylinder Section	Proper cylinder sealing
+Incorrect installation of piston rings	Cylinder Section	Proper cylinder sealing
+Failure of rings to seat	Cylinder Section	Proper cylinder sealing

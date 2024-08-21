@@ -1,0 +1,51 @@
+TROUBLE,PROBABLE CAUSE,REMEDY 
+Failure of Engine to Start,Lack of fuel,"Check fuel system for leaks. Fill fuel tank. Clean dirty lines, strainers or fuel valves."
+Failure of Engine to Start,Overpriming,"Leave ignition off and mixture control in Idle Cut-Off, open throttle and unload engine by cranking for a few seconds. Turn ignition switch on and proceed to start in a normal manner."
+Failure of Engine to Start,Defective spark plugs,Clean and adjust or replace spark plugs. 
+Failure of Engine to Start,Defective ignition wire,"Check with electric tester, and replace any defective wires."
+Failure of Engine to Start,Defective battery,Replace with charged battery. 
+Failure of Engine to Start,Improper operation of magneto breaker,Clean points. Check internal timing of magnetos. 
+Failure of Engine to Start,Lack of sufficient fuel flow,Disconnect fuel line and check fuel flow. 
+Failure of Engine to Start,Water in carburetor,Drain carburetor and fuel lines. 
+Failure of Engine to Start,Internal failure,"Check oil screens for metal particles. If found, complete overhaul of the engine may be indicated."
+Failure of Engine to Idle Properly,Incorrect idle mixture,Adjust mixture. 
+Failure of Engine to Idle Properly,Leak in induction system,Tighten all connections in the induction system. Replace any parts that are defective. 
+Failure of Engine to Idle Properly,Incorrect idle adjustment,Adjust throttle stop to obtain correct idle. 
+Failure of Engine to Idle Properly,Uneven cylinder compression,Check condition of piston rings and valve seats. 
+Failure of Engine to Idle Properly,Faulty ignition system,Check entire ignition system.
+Failure of Engine to Idle Properly,Insufficient fuel pressure,Adjust fuel pressure. 
+Low Power and Uneven Running,"Mixture too rich (indicated by sluggish operation, red exhaust flame at night. Extreme cases indicated by black smoke from exhaust)",Readjustment of carburetor by authorized personnel is indicated. 
+Low Power and Uneven Running,Mixture too lean (indicated by overheating or backfiring),Check fuel lines for dirt or other restrictions. Readjustment of carburetor by authorized person- nel is indicated. 
+Low Power and Uneven Running,Leaks in induction system,Tighten all connections. Replace defective parts. 
+Low Power and Uneven Running,Defective spark plugs,Clean and gap or replace spark plugs. 
+Low Power and Uneven Running,Improper fuel,Fill tank with fuel of recom- mended grade. 
+Low Power and Uneven Running,Magneto breaker points not working properly,Clean points. Check internal timing of magnetos. 
+Low Power and Uneven Running,Defective ignition wire,Check wire with electric tester. Replace defective wire. 
+Low Power and Uneven Running,Defective spark plug terminal connectors,Replace connectors on spark plug wire. 
+Failure of Engine to Develop Full Power,Leak in induction system,Tighten all connections and replace defective parts. 
+Failure of Engine to Develop Full Power,Throttle lever out of adjustment,Adjust throttle lever. 
+Failure of Engine to Develop Full Power,Improper fuel flow,"Check strainer, gage and flow at the fuel inlet."
+Failure of Engine to Develop Full Power,Restriction in air scoop,Examine air scoop and remove restrictions. 
+Failure of Engine to Develop Full Power,Improper fuel,Drain and refill tank with recom- mended fuel. 
+Failure of Engine to Develop Full Power,Faulty ignition,Tighten all connections. Check system with tester. Check ignition timing. 
+Rough Engine,Cracked engine mount,Replace or repair mount. 
+Rough Engine,Defective mounting bushings,Install new mounting bushings. 
+Rough Engine,Uneven compression,Check compression. 
+Low Oil Pressure,Insufficient oil,Fill to proper level with recom- mended oil. 
+Low Oil Pressure,Air lock or dirt in relief valve,Remove and clean oil pressure relief valve. 
+Low Oil Pressure,Leak in suction line or pressure line,Check gasket between accessory housing and crankcase. 
+Low Oil Pressure,High oil temperature,See High Oil Temperature in Trouble column. 
+Low Oil Pressure,Defective pressure gage,Replace. 
+Low Oil Pressure,Stoppage in oil pump intake passage,Check line for obstruction. Clean suction strainer. 
+High Oil Temperature,Insufficient air cooling,Check air inlet and outlet for deformation or obstruction. 
+High Oil Temperature,Insufficient oil supply,Fill to proper level with specified oil. 
+High Oil Temperature,Low grade of oil,Replace with oil conforming to specifications.
+High Oil Temperature,Clogged oil lines or strainers,Remove and clean oil strainers.
+High Oil Temperature,Excessive blow-by,Usually caused by worn or stuck rings.
+High Oil Temperature,Failing or failed bearings,"Examine sump for metal par- ticles. If found, overhaul of engine is indicated."
+High Oil Temperature,Defective temperature gage,Replace gage.
+Excessive Oil Consumption,Low grade of oil,Fill tank with oil conforming to specifications.
+Excessive Oil Consumption,Failing or failed bearings,Check sump for metal particles. 
+Excessive Oil Consumption,Worn piston rings,Install new rings.
+Excessive Oil Consumption,Incorrect installation of piston rings,Install new rings.
+Excessive Oil Consumption,Failure of rings to seat (new nitrided cylinders),Use mineral base oil. Climb to cruise altitude at full power and operate at 75% cruise power setting until oil consumption stabilizes.

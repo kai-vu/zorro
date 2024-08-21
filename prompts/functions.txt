@@ -1,0 +1,125 @@
+DESCRIPTION OF O-320 AIRCRAFT ENGINE
+The O-320 series are four cylinder, direct drive and, horizontally opposed, air cooled engines.
+In referring to the location of the various engine components, the parts are described in their relationship to the engine as installed in the airframe. Thus, the power take-off end is considered the front and the accessory drive end the rear. The sump section is considered the bottom and the opposite side of the engine where the shroud tubes are located the top. Reference to the left and right side is made with the observer facing the rear of the engine. The cylinders are numbered from front to rear, odd numbers on the right, even numbers on the left. The direction of rotation for accessory drives is determined with the observer facing the drive pad. The direction of rotation of the crankshaft, viewed from the rear, is clockwise.
+Cylinders - The cylinders are of conventional air cooled construction with the two major parts, head and barrel, screwed and shrunk together. The heads are made from an aluminum alloy casting with a fully machined combustion chamber. Rocker shaft bearing supports are cast integral with the head along with housings to form the rocker boxes for both valve rockers. The cylinder barrels, which are machined from chrome nickel molybdenum steel forgings, have deep integral cooling fins and the inside of the barrels are ground and honed to a specified finish.
+Valve Operating Mechanism - A conventional type camshaft is located above and parallel to the crankshaft. The camshaft actuates hydraulic tappets which operate the valves through push rods and valve rockers. The valve rockers are supported on full floating steel shafts. The valve springs bear against hardened steel seats and are retained on the valve stems by means of split keys.
+Crankcase - The crankcase assembly consists of two reinforced aluminum alloy castings, fastened together by means of studs, bolts and nuts. The mating surfaces of the two castings are joined without the use of a gasket, and the main bearing bores are machined for use of precision type main bearing inserts.
+Crankshaft - The crankshaft is made from a chrome nickel molybdenum steel forging. All bearing journal surfaces are nitrided.
+Connecting Rods - The connecting rods are made in the form of H sections from alloy steel forgings. They have replaceable bearing inserts in the crankshaft ends and bronze bushings in the piston ends. The bearing caps on the crankshaft ends are retained by two bolts and nuts through each cap.
+Pistons - The pistons are machined from an aluminum alloy. The piston pin is of a full floating type with a plug located in each end of the pin. Depending on the cylinder assembly, pistons may employ either half wedge or full wedge rings. Consult the latest revision of Service Instruction No. 1037 for proper piston and ring combinations.
+Accessory Housing - The accessory housing is made from an aluminum casting and is fastened to the rear of the crankcase and the top rear of the sump. It forms a housing for the oil pump and the various accessory drives.
+Oil Sump - The sump incorporates an oil drain plug, oil suction screen, mounting pad for carburetor, the intake riser and intake pipe connections.
+Cooling System - These engines are designed to be cooled by air pressure. Baffles are provided to build up a pressure and force the air through the cylinder fins. The air is then exhausted to the atmosphere through gills or augmentor tubes usually located at the rear of the cowling.
+Induction System - Lycoming O-320 series engines are equipped with a float type carburetor. Particularly good distribution of the fuel-air mixture to each cylinder is obtained through the center zone induction system, which is integral with the oil sump and is submerged in oil, insuring a more uniform vaporization of fuel and aiding in cooling the oil in the sump. From the riser the fuel-air mixture is distributed to each cylinder by individual intake pipes. The Precision Airmotive MA-4SPA and HA-6 carburetors are of the single barrel float type equipped with a manual mixture control and an idle-cut-off.
+Lubrication System - The lubrication system is of the pressure wet sump type. The main bearings, connecting rod bearings, camshaft bearings, valve tappets, push rods and crankshaft idler gears are lubricated by means of oil collectors and spray. The oil pump, which is located in the accessory housing, draws oil through a drilled passage leading from the oil suction screen located in the sump. The oil from the pump then enters a drilled passage in the accessory housing, where a flexible line leads the oil to the external oil cooler. In the event that cold oil or an obstruction should restrict the flow of oil to the cooler, an oil cooler bypass valve is provided. Pressure oil from the cooler returns to a second threaded connection on the accessory housing from which point a drilled passage conducts the oil to the oil pressure screen, which is contained in a cast chamber located on the accessory housing below the tachometer drive. The oil pressure screen is provided to filter from the oil any solid particles that may have passed through the suction screen in the sump. After being filtered in the pressure screen chamber, the oil is fed through a drilled passage to the oil relief valve, located in the upper right side of the crankcase in front of the accessory housing. This relief valve regulates the engine oil pressure by allowing excessive oil to return to the sump, while the balance of the pressure oil is fed to the main oil gallery in the right half of the crankcase. During its travel through this main gallery, the oil is distributed by means of separate drilled passages to the main bearings of the crankshaft. Separate passages from the rear main bearing supply pressure oil to both crankshaft idler gears. Angular holes are drilled through the main bearings to the rod journals. Oil from the main oil gallery also flows to the cam and valve gear passages, and is then conducted through branch passages to the hydraulic tappets and camshaft bearings. Oil enters the tappets through indexing holes and travels out through the hollow push rods to the valve mechanism, lubricating the valve rocker bearings and valve stems. Residual oil from the bearings, accessory drives and the rocker boxes is returned by gravity to the sump, where after passing through a screen it is again circulated through the engine. Pressure build-up within the crankcase is held to a minimum by means of a breather located on the accessory housing.
+Priming System - Provision for a primer system is provided on all engines.
+Ignition Distribution System - Dual ignition is furnished by two magnetos. Consult Table 1 for model application. Bendix magnetos are designed to permit periodic internal maintenance; Slick Electro magnetos are designed to operate for approximately 900 hours without internal maintenance.
+
+Systems:
+- Accessory Drives
+- Ignition Distribution System
+- Power Section
+- Fuel Distribution
+- Cylinder Section
+- Cranking Section
+- Electrical Power
+- Lubrication System
+- Cooling System
+- Induction System
+- Priming System
+
+Assemblies:
+- Oil Cooler Bypass Valve, Oil Pressure Screen And Breather Fitting
+- Propeller Governor Drive Cover, Vacuum Pump Drive And Cover
+- Oil Filter Assembly And Oil Cooler Bypass Valve
+- Oil Pump Assembly And Accessory Housing Attaching Parts
+- Fuel Pump Assembly And Attaching Parts
+- Accessory Housing Assembly
+- Magnetos, Magneto Drives, Harnesses And Spark Plugs
+- Crankshaft Idler Gears, Tachometer Drive And Camshaft
+- Crankcase Assembly
+- Crankcase Attaching Parts
+- Crankcase Related Parts
+- Crankshaft Assembly
+- Carburetor Assembly
+- Cylinder Related Parts
+- Connecting Rods, Pistons And Ring Assemblies
+- Valve Assembly
+- Intake Pipes And Attaching Parts
+- Cylinder Head Drain Tubes And Intercylinder Cooling Baffles
+- Cylinder Assembly
+- Starter Motor And Attaching Parts
+- Alternator Mounting And Attaching Parts
+- Oil Sump Assembly And Oil Suction Screen
+- Oil Level Gage
+
+Output two tables, one for the systems and one for the assemblies, both with two columns: the name of the system/assembly and its function. Use short verb phrases in gerund form (-ing) for each function. Write the tables yourself, do not program them.
+
+
+---
+
+
+Which systems and assemblies depend on each other for functioning? Ouput two tables, one for the systems and one for the assemblies, both with two columns: the name of the system/assembly and which systems/assemblies they depend on. Separate multiple systems / assemblies by semicolon. 
+
+
+---
+
+For the following problems, create a table of which system or assembly they are related to, and which function of that system or assembly is failing due to the problem.
+- Failure of Engine to Start
+- Failure of Engine to Idle Properly
+- Low Power and Uneven Running
+- Failure of Engine to Develop Full Power
+- Rough Engine
+- Low Oil Pressure
+- High Oil Temperature
+- Excessive Oil Consumption
+- Lack of fuel
+- Overpriming
+- Defective spark plugs
+- Defective ignition wire
+- Defective battery
+- Improper operation of magneto breaker
+- Lack of sufficient fuel flow
+- Water in carburetor
+- Internal failure
+- Incorrect idle mixture
+- Leak in induction system
+- Incorrect idle adjustment
+- Uneven cylinder compression
+- Faulty ignition system
+- Insufficient fuel pressure
+- Mixture too rich
+- Mixture too lean
+- Leaks in induction system
+- Defective spark plugs
+- Improper fuel
+- Magneto breaker points not working properly
+- Defective ignition wire
+- Defective spark plug terminal connectors
+- Leak in induction system
+- Throttle lever out of adjustment
+- Improper fuel flow
+- Restriction in air scoop
+- Improper fuel
+- Faulty ignition
+- Cracked engine mount
+- Defective mounting bushings
+- Uneven compression
+- Insufficient oil
+- Air lock or dirt in relief valve
+- Leak in suction line or pressure line
+- High oil temperature
+- Defective pressure gage
+- Stoppage in oil pump intake passage
+- Insufficient air cooling
+- Insufficient oil supply
+- Low grade of oil
+- Clogged oil lines or strainers
+- Excessive blow-by
+- Failing or failed bearings
+- Defective temperature gage
+- Low grade of oil
+- Failing or failed bearings
+- Worn piston rings
+- Incorrect installation of piston rings
+- Failure of rings to seat
