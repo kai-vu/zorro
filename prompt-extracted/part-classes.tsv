@@ -1,0 +1,44 @@
+Part	subClassOf
+BOLT	Fastener
+NUT	Fastener
+SCREW	Fastener
+STUD	Fastener
+WASHER	Fastener
+PIN	Fastener
+DOWEL	Fastener
+ADAPTER	Connector
+CLAMP	Connector
+CONNECTION	Connector
+NIPPLE	Connector
+PIPE	Connector
+FITTING	Connector
+ELBOW	Connector
+FLANGE	Connector
+HOSE	Connector
+TUBE	Connector
+SOCKET	Connector
+GASKET	Seal
+PLUG	Seal
+BODY	Structural Component
+BRACKET	Structural Component
+PLATE	Structural Component
+COVER	Structural Component
+CAP	Structural Component
+HOUSING	Structural Component
+LOCKPLATE	Structural Component
+STRAP	Structural Component
+STRUT	Structural Component
+GUIDE	Structural Component
+GEAR	Rotary Component
+SHAFT	Rotary Component
+IMPELLER	Rotary Component
+BEARING	Rotary Component
+BUSHING	Rotary Component
+VALVE	Flow Component
+PISTON	Flow Component
+PLUNGER	Flow Component
+SPRING	Separator
+SPACER	Separator
+SHIM	Separator
+RING	Retainer
+CLIP	Retainer

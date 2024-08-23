@@ -1,11 +1,11 @@
-Function	dependsOn
+Component	dependsOn
 Accessory Drives	Power Section
 Ignition Distribution System	Accessory Drives
 Ignition Distribution System	Power Section
 Power Section	Lubrication System
 Power Section	Cooling System
-Fuel Distribution	Induction System
-Fuel Distribution	Power Section
+Fuel Distribution System	Induction System
+Fuel Distribution System	Power Section
 Cylinder Section	Cooling System
 Cylinder Section	Lubrication System
 Cylinder Section	Power Section
@@ -16,8 +16,8 @@ Lubrication System	Power Section
 Lubrication System	Cooling System
 Cooling System	Power Section
 Induction System	Power Section
-Induction System	Fuel Distribution
-Priming System	Fuel Distribution
+Induction System	Fuel Distribution System
+Priming System	Fuel Distribution System
 Priming System	Induction System
 Oil Cooler Bypass Valve, Oil Pressure Screen And Breather Fitting	Lubrication System
 Propeller Governor Drive Cover, Vacuum Pump Drive And Cover	Accessory Drives
@@ -25,7 +25,7 @@ Propeller Governor Drive Cover, Vacuum Pump Drive And Cover	Power Section
 Oil Filter Assembly And Oil Cooler Bypass Valve	Lubrication System
 Oil Pump Assembly And Accessory Housing Attaching Parts	Lubrication System
 Oil Pump Assembly And Accessory Housing Attaching Parts	Accessory Drives
-Fuel Pump Assembly And Attaching Parts	Fuel Distribution
+Fuel Pump Assembly And Attaching Parts	Fuel Distribution System
 Fuel Pump Assembly And Attaching Parts	Induction System
 Accessory Housing Assembly	Accessory Drives
 Accessory Housing Assembly	Power Section
@@ -39,7 +39,7 @@ Crankcase Attaching Parts	Crankcase Assembly
 Crankcase Related Parts	Crankcase Assembly
 Crankshaft Assembly	Power Section
 Crankshaft Assembly	Lubrication System
-Carburetor Assembly	Fuel Distribution
+Carburetor Assembly	Fuel Distribution System
 Carburetor Assembly	Induction System
 Cylinder Related Parts	Cylinder Section
 Cylinder Related Parts	Cooling System
@@ -48,7 +48,7 @@ Connecting Rods, Pistons And Ring Assemblies	Cylinder Section
 Valve Assembly	Power Section
 Valve Assembly	Cylinder Section
 Intake Pipes And Attaching Parts	Induction System
-Intake Pipes And Attaching Parts	Fuel Distribution
+Intake Pipes And Attaching Parts	Fuel Distribution System
 Cylinder Head Drain Tubes And Intercylinder Cooling Baffles	Cylinder Section
 Cylinder Head Drain Tubes And Intercylinder Cooling Baffles	Cooling System
 Cylinder Assembly	Cylinder Section
