@@ -1,3 +1,4 @@
+defines	functionOf	Function
 Failure of Engine to Start	Cranking Section	Initiating engine start
 Failure of Engine to Start	Electrical Power	Providing electrical power
 Failure of Engine to Idle Properly	Fuel Distribution	Fuel-air mixture distribution
@@ -33,7 +34,7 @@ Faulty ignition system	Ignition Distribution System	Proper ignition timing and d
 Insufficient fuel pressure	Fuel Distribution	Fuel delivery
 Mixture too rich	Fuel Distribution	Proper air-fuel mixture
 Mixture too lean	Fuel Distribution	Proper air-fuel mixture
-Leaks in induction system	Induction System	Proper air-fuel intake
+Leak in induction system	Induction System	Proper air-fuel intake
 Defective spark plugs	Ignition Distribution System	Proper ignition
 Improper fuel	Fuel Distribution	Correct fuel type
 Magneto breaker points not working properly	Ignition Distribution System	Ignition timing
