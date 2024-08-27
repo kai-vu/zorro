@@ -1,34 +1,33 @@
 @prefix : <http://Ameneh.org/aircraft.owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-:ExcessiveOilConsumption a :Problem ;
-    rdfs:label "Excessive Oil Consumption" ;
+:ExcessiveOilConsumption rdfs:label "Excessive Oil Consumption" ;
     :hasCause :FailingOrFailedBearings,
         :FailureOfRingsToSeat,
         :IncorrectInstallationOfPistonRings,
         :LowGradeOfOil,
-        :WornPistonRings .
+        :WornPistonRings ;
+    rdfs:subClassOf :Problem .
 
-:FailureOfEngineToDevelopFullPower a :Problem ;
-    rdfs:label "Failure of Engine to Develop Full Power" ;
+:FailureOfEngineToDevelopFullPower rdfs:label "Failure of Engine to Develop Full Power" ;
     :hasCause :FaultyIgnition,
         :ImproperFuel,
         :ImproperFuelFlow,
         :LeakInInductionSystem,
         :RestrictionInAirScoop,
-        :ThrottleLeverOutOfAdjustment .
+        :ThrottleLeverOutOfAdjustment ;
+    rdfs:subClassOf :Problem .
 
-:FailureOfEngineToIdleProperly a :Problem ;
-    rdfs:label "Failure of Engine to Idle Properly" ;
+:FailureOfEngineToIdleProperly rdfs:label "Failure of Engine to Idle Properly" ;
     :hasCause :FaultyIgnitionSystem,
         :IncorrectIdleAdjustment,
         :IncorrectIdleMixture,
         :InsufficientFuelPressure,
         :LeakInInductionSystem,
-        :UnevenCylinderCompression .
+        :UnevenCylinderCompression ;
+    rdfs:subClassOf :Problem .
 
-:FailureOfEngineToStart a :Problem ;
-    rdfs:label "Failure of Engine to Start" ;
+:FailureOfEngineToStart rdfs:label "Failure of Engine to Start" ;
     :hasCause :DefectiveBattery,
         :DefectiveIgnitionWire,
         :DefectiveSparkPlugs,
@@ -37,19 +36,19 @@
         :LackOfFuel,
         :LackOfSufficientFuelFlow,
         :Overpriming,
-        :WaterInCarburetor .
+        :WaterInCarburetor ;
+    rdfs:subClassOf :Problem .
 
-:LowOilPressure a :Problem ;
-    rdfs:label "Low Oil Pressure" ;
+:LowOilPressure rdfs:label "Low Oil Pressure" ;
     :hasCause :AirLockOrDirtInReliefValve,
         :DefectivePressureGage,
         :HighOilTemperature,
         :InsufficientOil,
         :LeakInSuctionLineOrPressureLine,
-        :StoppageInOilPumpIntakePassage .
+        :StoppageInOilPumpIntakePassage ;
+    rdfs:subClassOf :Problem .
 
-:LowPowerAndUnevenRunning a :Problem ;
-    rdfs:label "Low Power and Uneven Running" ;
+:LowPowerAndUnevenRunning rdfs:label "Low Power and Uneven Running" ;
     :hasCause :DefectiveIgnitionWire,
         :DefectiveSparkPlugTerminalConnectors,
         :DefectiveSparkPlugs,
@@ -57,52 +56,52 @@
         :LeaksInInductionSystem,
         :MagnetoBreakerPointsNotWorkingProperly,
         :MixtureTooLean,
-        :MixtureTooRich .
+        :MixtureTooRich ;
+    rdfs:subClassOf :Problem .
 
-:RoughEngine a :Problem ;
-    rdfs:label "Rough Engine" ;
+:RoughEngine rdfs:label "Rough Engine" ;
     :hasCause :CrackedEngineMount,
         :DefectiveMountingBushings,
-        :UnevenCompression .
+        :UnevenCompression ;
+    rdfs:subClassOf :Problem .
 
-:AirLockOrDirtInReliefValve a :Problem ;
-    rdfs:label "Air lock or dirt in relief valve" .
+:AirLockOrDirtInReliefValve rdfs:label "Air lock or dirt in relief valve" ;
+    rdfs:subClassOf :Problem .
 
-:CloggedOilLinesOrStrainers a :Problem ;
-    rdfs:label "Clogged oil lines or strainers" .
+:CloggedOilLinesOrStrainers rdfs:label "Clogged oil lines or strainers" ;
+    rdfs:subClassOf :Problem .
 
-:CrackedEngineMount a :Problem ;
-    rdfs:label "Cracked engine mount" .
+:CrackedEngineMount rdfs:label "Cracked engine mount" ;
+    rdfs:subClassOf :Problem .
 
-:DefectiveBattery a :Problem ;
-    rdfs:label "Defective battery" .
+:DefectiveBattery rdfs:label "Defective battery" ;
+    rdfs:subClassOf :Problem .
 
-:DefectiveMountingBushings a :Problem ;
-    rdfs:label "Defective mounting bushings" .
+:DefectiveMountingBushings rdfs:label "Defective mounting bushings" ;
+    rdfs:subClassOf :Problem .
 
-:DefectivePressureGage a :Problem ;
-    rdfs:label "Defective pressure gage" .
+:DefectivePressureGage rdfs:label "Defective pressure gage" ;
+    rdfs:subClassOf :Problem .
 
-:DefectiveSparkPlugTerminalConnectors a :Problem ;
-    rdfs:label "Defective spark plug terminal connectors" .
+:DefectiveSparkPlugTerminalConnectors rdfs:label "Defective spark plug terminal connectors" ;
+    rdfs:subClassOf :Problem .
 
-:DefectiveTemperatureGage a :Problem ;
-    rdfs:label "Defective temperature gage" .
+:DefectiveTemperatureGage rdfs:label "Defective temperature gage" ;
+    rdfs:subClassOf :Problem .
 
-:ExcessiveBlowBy a :Problem ;
-    rdfs:label "Excessive blow-by" .
+:ExcessiveBlowBy rdfs:label "Excessive blow-by" ;
+    rdfs:subClassOf :Problem .
 
-:FailureOfRingsToSeat a :Problem ;
-    rdfs:label "Failure of rings to seat (new nitrided cylinders)" .
+:FailureOfRingsToSeat rdfs:label "Failure of rings to seat (new nitrided cylinders)" ;
+    rdfs:subClassOf :Problem .
 
-:FaultyIgnition a :Problem ;
-    rdfs:label "Faulty ignition" .
+:FaultyIgnition rdfs:label "Faulty ignition" ;
+    rdfs:subClassOf :Problem .
 
-:FaultyIgnitionSystem a :Problem ;
-    rdfs:label "Faulty ignition system" .
+:FaultyIgnitionSystem rdfs:label "Faulty ignition system" ;
+    rdfs:subClassOf :Problem .
 
-:HighOilTemperature a :Problem ;
-    rdfs:label "High Oil Temperature",
+:HighOilTemperature rdfs:label "High Oil Temperature",
         "High oil temperature" ;
     :hasCause :CloggedOilLinesOrStrainers,
         :DefectiveTemperatureGage,
@@ -110,298 +109,299 @@
         :FailingOrFailedBearings,
         :InsufficientAirCooling,
         :InsufficientOilSupply,
-        :LowGradeOfOil .
+        :LowGradeOfOil ;
+    rdfs:subClassOf :Problem .
 
-:ImproperFuelFlow a :Problem ;
-    rdfs:label "Improper fuel flow" .
+:ImproperFuelFlow rdfs:label "Improper fuel flow" ;
+    rdfs:subClassOf :Problem .
 
-:ImproperOperationOfMagnetoBreaker a :Problem ;
-    rdfs:label "Improper operation of magneto breaker" .
+:ImproperOperationOfMagnetoBreaker rdfs:label "Improper operation of magneto breaker" ;
+    rdfs:subClassOf :Problem .
 
-:IncorrectIdleAdjustment a :Problem ;
-    rdfs:label "Incorrect idle adjustment" .
+:IncorrectIdleAdjustment rdfs:label "Incorrect idle adjustment" ;
+    rdfs:subClassOf :Problem .
 
-:IncorrectIdleMixture a :Problem ;
-    rdfs:label "Incorrect idle mixture" .
+:IncorrectIdleMixture rdfs:label "Incorrect idle mixture" ;
+    rdfs:subClassOf :Problem .
 
-:IncorrectInstallationOfPistonRings a :Problem ;
-    rdfs:label "Incorrect installation of piston rings" .
+:IncorrectInstallationOfPistonRings rdfs:label "Incorrect installation of piston rings" ;
+    rdfs:subClassOf :Problem .
 
-:InsufficientAirCooling a :Problem ;
-    rdfs:label "Insufficient air cooling" .
+:InsufficientAirCooling rdfs:label "Insufficient air cooling" ;
+    rdfs:subClassOf :Problem .
 
-:InsufficientFuelPressure a :Problem ;
-    rdfs:label "Insufficient fuel pressure" .
+:InsufficientFuelPressure rdfs:label "Insufficient fuel pressure" ;
+    rdfs:subClassOf :Problem .
 
-:InsufficientOil a :Problem ;
-    rdfs:label "Insufficient oil" .
+:InsufficientOil rdfs:label "Insufficient oil" ;
+    rdfs:subClassOf :Problem .
 
-:InsufficientOilSupply a :Problem ;
-    rdfs:label "Insufficient oil supply" .
+:InsufficientOilSupply rdfs:label "Insufficient oil supply" ;
+    rdfs:subClassOf :Problem .
 
-:InternalFailure a :Problem ;
-    rdfs:label "Internal failure" .
+:InternalFailure rdfs:label "Internal failure" ;
+    rdfs:subClassOf :Problem .
 
-:LackOfFuel a :Problem ;
-    rdfs:label "Lack of fuel" .
+:LackOfFuel rdfs:label "Lack of fuel" ;
+    rdfs:subClassOf :Problem .
 
-:LackOfSufficientFuelFlow a :Problem ;
-    rdfs:label "Lack of sufficient fuel flow" .
+:LackOfSufficientFuelFlow rdfs:label "Lack of sufficient fuel flow" ;
+    rdfs:subClassOf :Problem .
 
-:LeakInSuctionLineOrPressureLine a :Problem ;
-    rdfs:label "Leak in suction line or pressure line" .
+:LeakInSuctionLineOrPressureLine rdfs:label "Leak in suction line or pressure line" ;
+    rdfs:subClassOf :Problem .
 
-:LeaksInInductionSystem a :Problem ;
-    rdfs:label "Leaks in induction system" .
+:LeaksInInductionSystem rdfs:label "Leaks in induction system" ;
+    rdfs:subClassOf :Problem .
 
-:MagnetoBreakerPointsNotWorkingProperly a :Problem ;
-    rdfs:label "Magneto breaker points not working properly" .
+:MagnetoBreakerPointsNotWorkingProperly rdfs:label "Magneto breaker points not working properly" ;
+    rdfs:subClassOf :Problem .
 
-:MixtureTooLean a :Problem ;
-    rdfs:label "Mixture too lean (indicated by overheating or backfiring)" .
+:MixtureTooLean rdfs:label "Mixture too lean (indicated by overheating or backfiring)" ;
+    rdfs:subClassOf :Problem .
 
-:MixtureTooRich a :Problem ;
-    rdfs:label "Mixture too rich (indicated by sluggish operation, red exhaust flame at night. Extreme cases indicated by black smoke from exhaust)" .
+:MixtureTooRich rdfs:label "Mixture too rich (indicated by sluggish operation, red exhaust flame at night. Extreme cases indicated by black smoke from exhaust)" ;
+    rdfs:subClassOf :Problem .
 
-:Overpriming a :Problem ;
-    rdfs:label "Overpriming" .
+:Overpriming rdfs:label "Overpriming" ;
+    rdfs:subClassOf :Problem .
 
-:RestrictionInAirScoop a :Problem ;
-    rdfs:label "Restriction in air scoop" .
+:RestrictionInAirScoop rdfs:label "Restriction in air scoop" ;
+    rdfs:subClassOf :Problem .
 
-:StoppageInOilPumpIntakePassage a :Problem ;
-    rdfs:label "Stoppage in oil pump intake passage" .
+:StoppageInOilPumpIntakePassage rdfs:label "Stoppage in oil pump intake passage" ;
+    rdfs:subClassOf :Problem .
 
-:ThrottleLeverOutOfAdjustment a :Problem ;
-    rdfs:label "Throttle lever out of adjustment" .
+:ThrottleLeverOutOfAdjustment rdfs:label "Throttle lever out of adjustment" ;
+    rdfs:subClassOf :Problem .
 
-:UnevenCompression a :Problem ;
-    rdfs:label "Uneven compression" .
+:UnevenCompression rdfs:label "Uneven compression" ;
+    rdfs:subClassOf :Problem .
 
-:UnevenCylinderCompression a :Problem ;
-    rdfs:label "Uneven cylinder compression" .
+:UnevenCylinderCompression rdfs:label "Uneven cylinder compression" ;
+    rdfs:subClassOf :Problem .
 
-:WaterInCarburetor a :Problem ;
-    rdfs:label "Water in carburetor" .
+:WaterInCarburetor rdfs:label "Water in carburetor" ;
+    rdfs:subClassOf :Problem .
 
-:WornPistonRings a :Problem ;
-    rdfs:label "Worn piston rings" .
+:WornPistonRings rdfs:label "Worn piston rings" ;
+    rdfs:subClassOf :Problem .
 
-:DefectiveIgnitionWire a :Problem ;
-    rdfs:label "Defective ignition wire" .
+:DefectiveIgnitionWire rdfs:label "Defective ignition wire" ;
+    rdfs:subClassOf :Problem .
 
-:DefectiveSparkPlugs a :Problem ;
-    rdfs:label "Defective spark plugs" .
+:DefectiveSparkPlugs rdfs:label "Defective spark plugs" ;
+    rdfs:subClassOf :Problem .
 
-:FailingOrFailedBearings a :Problem ;
-    rdfs:label "Failing or failed bearings" .
+:FailingOrFailedBearings rdfs:label "Failing or failed bearings" ;
+    rdfs:subClassOf :Problem .
 
-:ImproperFuel a :Problem ;
-    rdfs:label "Improper fuel" .
+:ImproperFuel rdfs:label "Improper fuel" ;
+    rdfs:subClassOf :Problem .
 
-:LeakInInductionSystem a :Problem ;
-    rdfs:label "Leak in induction system" .
+:LeakInInductionSystem rdfs:label "Leak in induction system" ;
+    rdfs:subClassOf :Problem .
 
-:LowGradeOfOil a :Problem ;
-    rdfs:label "Low grade of oil" .
+:LowGradeOfOil rdfs:label "Low grade of oil" ;
+    rdfs:subClassOf :Problem .
 
-[] a :Solution ;
-    rdfs:label "Drain and refill tank with recom- mended fuel. " ;
-    :solves :ImproperFuel .
+[] rdfs:label "Drain and refill tank with recom- mended fuel. " ;
+    :solves :ImproperFuel ;
+    rdfs:subClassOf :Solution .
 
-[] a :Solution ;
-    rdfs:label "Readjustment of carburetor by authorized personnel is indicated. " ;
-    :solves :MixtureTooRich .
-
-[] a :Solution ;
-    rdfs:label "Check gasket between accessory housing and crankcase. " ;
-    :solves :LeakInSuctionLineOrPressureLine .
-
-[] a :Solution ;
-    rdfs:label "Clean and gap or replace spark plugs. " ;
-    :solves :DefectiveSparkPlugs .
-
-[] a :Solution ;
-    rdfs:label "Fill to proper level with specified oil. " ;
-    :solves :InsufficientOilSupply .
-
-[] a :Solution ;
-    rdfs:label "Leave ignition off and mixture control in Idle Cut-Off, open throttle and unload engine by cranking for a few seconds. Turn ignition switch on and proceed to start in a normal manner." ;
-    :solves :Overpriming .
-
-[] a :Solution ;
-    rdfs:label "Replace with oil conforming to specifications." ;
-    :solves :LowGradeOfOil .
-
-[] a :Solution ;
-    rdfs:label "Clean and adjust or replace spark plugs. " ;
-    :solves :DefectiveSparkPlugs .
-
-[] a :Solution ;
-    rdfs:label "Remove and clean oil strainers." ;
-    :solves :CloggedOilLinesOrStrainers .
-
-[] a :Solution ;
-    rdfs:label "Install new rings." ;
-    :solves :WornPistonRings .
-
-[] a :Solution ;
-    rdfs:label "Disconnect fuel line and check fuel flow. " ;
-    :solves :LackOfSufficientFuelFlow .
-
-[] a :Solution ;
-    rdfs:label "Check with electric tester, and replace any defective wires." ;
-    :solves :DefectiveIgnitionWire .
-
-[] a :Solution ;
-    rdfs:label "Install new mounting bushings. " ;
-    :solves :DefectiveMountingBushings .
-
-[] a :Solution ;
-    rdfs:label "Check condition of piston rings and valve seats. " ;
-    :solves :UnevenCylinderCompression .
-
-[] a :Solution ;
-    rdfs:label "Check oil screens for metal particles. If found, complete overhaul of the engine may be indicated." ;
-    :solves :InternalFailure .
-
-[] a :Solution ;
-    rdfs:label "Check strainer, gage and flow at the fuel inlet." ;
-    :solves :ImproperFuelFlow .
-
-[] a :Solution ;
-    rdfs:label "Check fuel system for leaks. Fill fuel tank. Clean dirty lines, strainers or fuel valves." ;
-    :solves :LackOfFuel .
-
-[] a :Solution ;
-    rdfs:label "Check wire with electric tester. Replace defective wire. " ;
-    :solves :DefectiveIgnitionWire .
-
-[] a :Solution ;
-    rdfs:label "Check air inlet and outlet for deformation or obstruction. " ;
-    :solves :InsufficientAirCooling .
-
-[] a :Solution ;
-    rdfs:label "Tighten all connections. Check system with tester. Check ignition timing. " ;
-    :solves :FaultyIgnition .
-
-[] a :Solution ;
-    rdfs:label "Adjust fuel pressure. " ;
-    :solves :InsufficientFuelPressure .
-
-[] a :Solution ;
-    rdfs:label "Clean points. Check internal timing of magnetos. " ;
-    :solves :MagnetoBreakerPointsNotWorkingProperly .
-
-[] a :Solution ;
-    rdfs:label "Check entire ignition system." ;
-    :solves :FaultyIgnitionSystem .
-
-[] a :Solution ;
-    rdfs:label "Check fuel lines for dirt or other restrictions. Readjustment of carburetor by authorized person- nel is indicated. " ;
-    :solves :MixtureTooLean .
-
-[] a :Solution ;
-    rdfs:label "Drain carburetor and fuel lines. " ;
-    :solves :WaterInCarburetor .
-
-[] a :Solution ;
-    rdfs:label "Adjust mixture. " ;
-    :solves :IncorrectIdleMixture .
-
-[] a :Solution ;
-    rdfs:label "Check line for obstruction. Clean suction strainer. " ;
-    :solves :StoppageInOilPumpIntakePassage .
-
-[] a :Solution ;
-    rdfs:label "Examine sump for metal par- ticles. If found, overhaul of engine is indicated." ;
-    :solves :FailingOrFailedBearings .
-
-[] a :Solution ;
-    rdfs:label "Replace. " ;
-    :solves :DefectivePressureGage .
-
-[] a :Solution ;
-    rdfs:label "Check sump for metal particles. " ;
-    :solves :FailingOrFailedBearings .
-
-[] a :Solution ;
-    rdfs:label "Usually caused by worn or stuck rings." ;
-    :solves :ExcessiveBlowBy .
-
-[] a :Solution ;
-    rdfs:label "Tighten all connections in the induction system. Replace any parts that are defective. " ;
-    :solves :LeakInInductionSystem .
-
-[] a :Solution ;
-    rdfs:label "Fill tank with oil conforming to specifications." ;
-    :solves :LowGradeOfOil .
-
-[] a :Solution ;
-    rdfs:label "Adjust throttle lever. " ;
-    :solves :ThrottleLeverOutOfAdjustment .
-
-[] a :Solution ;
-    rdfs:label "Fill tank with fuel of recom- mended grade. " ;
-    :solves :ImproperFuel .
-
-[] a :Solution ;
-    rdfs:label "Fill to proper level with recom- mended oil. " ;
-    :solves :InsufficientOil .
-
-[] a :Solution ;
-    rdfs:label "Replace gage." ;
-    :solves :DefectiveTemperatureGage .
-
-[] a :Solution ;
-    rdfs:label "Use mineral base oil. Climb to cruise altitude at full power and operate at 75% cruise power setting until oil consumption stabilizes." ;
-    :solves :FailureOfRingsToSeat .
-
-[] a :Solution ;
-    rdfs:label "Tighten all connections. Replace defective parts. " ;
-    :solves :LeaksInInductionSystem .
-
-[] a :Solution ;
-    rdfs:label "Adjust throttle stop to obtain correct idle. " ;
-    :solves :IncorrectIdleAdjustment .
-
-[] a :Solution ;
-    rdfs:label "See High Oil Temperature in Trouble column. " ;
-    :solves :HighOilTemperature .
-
-[] a :Solution ;
-    rdfs:label "Tighten all connections and replace defective parts. " ;
-    :solves :LeakInInductionSystem .
-
-[] a :Solution ;
-    rdfs:label "Check compression. " ;
-    :solves :UnevenCompression .
-
-[] a :Solution ;
-    rdfs:label "Replace with charged battery. " ;
-    :solves :DefectiveBattery .
-
-[] a :Solution ;
-    rdfs:label "Remove and clean oil pressure relief valve. " ;
-    :solves :AirLockOrDirtInReliefValve .
-
-[] a :Solution ;
-    rdfs:label "Replace connectors on spark plug wire. " ;
-    :solves :DefectiveSparkPlugTerminalConnectors .
-
-[] a :Solution ;
-    rdfs:label "Examine air scoop and remove restrictions. " ;
-    :solves :RestrictionInAirScoop .
-
-[] a :Solution ;
-    rdfs:label "Clean points. Check internal timing of magnetos. " ;
-    :solves :ImproperOperationOfMagnetoBreaker .
-
-[] a :Solution ;
-    rdfs:label "Replace or repair mount. " ;
-    :solves :CrackedEngineMount .
-
-[] a :Solution ;
-    rdfs:label "Install new rings." ;
-    :solves :IncorrectInstallationOfPistonRings .
+[] rdfs:label "Replace or repair mount. " ;
+    :solves :CrackedEngineMount ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Adjust throttle stop to obtain correct idle. " ;
+    :solves :IncorrectIdleAdjustment ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Readjustment of carburetor by authorized personnel is indicated. " ;
+    :solves :MixtureTooRich ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Replace gage." ;
+    :solves :DefectiveTemperatureGage ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Tighten all connections in the induction system. Replace any parts that are defective. " ;
+    :solves :LeakInInductionSystem ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Replace with charged battery. " ;
+    :solves :DefectiveBattery ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Tighten all connections and replace defective parts. " ;
+    :solves :LeakInInductionSystem ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Clean and adjust or replace spark plugs. " ;
+    :solves :DefectiveSparkPlugs ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Fill to proper level with recom- mended oil. " ;
+    :solves :InsufficientOil ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Check oil screens for metal particles. If found, complete overhaul of the engine may be indicated." ;
+    :solves :InternalFailure ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Remove and clean oil pressure relief valve. " ;
+    :solves :AirLockOrDirtInReliefValve ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Fill to proper level with specified oil. " ;
+    :solves :InsufficientOilSupply ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Check air inlet and outlet for deformation or obstruction. " ;
+    :solves :InsufficientAirCooling ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Remove and clean oil strainers." ;
+    :solves :CloggedOilLinesOrStrainers ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Clean points. Check internal timing of magnetos. " ;
+    :solves :ImproperOperationOfMagnetoBreaker ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Check gasket between accessory housing and crankcase. " ;
+    :solves :LeakInSuctionLineOrPressureLine ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Replace with oil conforming to specifications." ;
+    :solves :LowGradeOfOil ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Tighten all connections. Check system with tester. Check ignition timing. " ;
+    :solves :FaultyIgnition ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Examine sump for metal par- ticles. If found, overhaul of engine is indicated." ;
+    :solves :FailingOrFailedBearings ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Install new rings." ;
+    :solves :IncorrectInstallationOfPistonRings ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Check wire with electric tester. Replace defective wire. " ;
+    :solves :DefectiveIgnitionWire ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Install new mounting bushings. " ;
+    :solves :DefectiveMountingBushings ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Clean and gap or replace spark plugs. " ;
+    :solves :DefectiveSparkPlugs ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Check line for obstruction. Clean suction strainer. " ;
+    :solves :StoppageInOilPumpIntakePassage ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Usually caused by worn or stuck rings." ;
+    :solves :ExcessiveBlowBy ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Drain carburetor and fuel lines. " ;
+    :solves :WaterInCarburetor ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Check sump for metal particles. " ;
+    :solves :FailingOrFailedBearings ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Check compression. " ;
+    :solves :UnevenCompression ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Check entire ignition system." ;
+    :solves :FaultyIgnitionSystem ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Adjust mixture. " ;
+    :solves :IncorrectIdleMixture ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Replace. " ;
+    :solves :DefectivePressureGage ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "See High Oil Temperature in Trouble column. " ;
+    :solves :HighOilTemperature ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Check condition of piston rings and valve seats. " ;
+    :solves :UnevenCylinderCompression ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Tighten all connections. Replace defective parts. " ;
+    :solves :LeaksInInductionSystem ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Check fuel system for leaks. Fill fuel tank. Clean dirty lines, strainers or fuel valves." ;
+    :solves :LackOfFuel ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Fill tank with oil conforming to specifications." ;
+    :solves :LowGradeOfOil ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Check with electric tester, and replace any defective wires." ;
+    :solves :DefectiveIgnitionWire ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Use mineral base oil. Climb to cruise altitude at full power and operate at 75% cruise power setting until oil consumption stabilizes." ;
+    :solves :FailureOfRingsToSeat ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Examine air scoop and remove restrictions. " ;
+    :solves :RestrictionInAirScoop ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Adjust throttle lever. " ;
+    :solves :ThrottleLeverOutOfAdjustment ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Check strainer, gage and flow at the fuel inlet." ;
+    :solves :ImproperFuelFlow ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Replace connectors on spark plug wire. " ;
+    :solves :DefectiveSparkPlugTerminalConnectors ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Fill tank with fuel of recom- mended grade. " ;
+    :solves :ImproperFuel ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Disconnect fuel line and check fuel flow. " ;
+    :solves :LackOfSufficientFuelFlow ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Install new rings." ;
+    :solves :WornPistonRings ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Adjust fuel pressure. " ;
+    :solves :InsufficientFuelPressure ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Clean points. Check internal timing of magnetos. " ;
+    :solves :MagnetoBreakerPointsNotWorkingProperly ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Leave ignition off and mixture control in Idle Cut-Off, open throttle and unload engine by cranking for a few seconds. Turn ignition switch on and proceed to start in a normal manner." ;
+    :solves :Overpriming ;
+    rdfs:subClassOf :Solution .
+
+[] rdfs:label "Check fuel lines for dirt or other restrictions. Readjustment of carburetor by authorized person- nel is indicated. " ;
+    :solves :MixtureTooLean ;
+    rdfs:subClassOf :Solution .
 
