@@ -1,4 +1,5 @@
 openai-key.txt
+gpt-cache
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
