@@ -1,6 +1,6 @@
 # made by Niek Aukes
-# this file is a bit of a mess still.
-# it's used to experiment with a part linker
+# a cleaned up version of the partlinker.py script
+# all unnecessary code has been removed
 #%%
 import numpy as np
 import pandas as pd
@@ -8,57 +8,15 @@ import pandas as pd
 #%%
 # load in problem extractions and parts catalog
 problem_extractions = pd.read_csv('problem_extractions_chatgpt_4o.csv')
-action_extractions = pd.read_csv('action_extractions_chatgpt_4o.csv')
 parts_catalog = pd.read_csv('pdf-extracted/parts-catalog.csv')
 
-#%%
 # create a dictionary with the part number and type
 part_dict = {}
 for index, row in parts_catalog.iterrows():
     part_dict[row['Part Number']] = row['Type']
-    
-print(part_dict)
-# %%
+
 # print the unique part types
 part_set = set(part_dict.values())
-print(part_set)
-
-# %%
-# calculate the % of parts mentioned in the problem extractions 
-# that are not in the parts catalog
-count = 0
-for index, row in problem_extractions.iterrows():
-    if row['part'] not in part_set:
-        count += 1
-        print(row['part'])
-
-print(count/len(problem_extractions))
-print(count)
-
-# from analyzing the output, it seems that most parts
-# mentioned in the problem extractions that aren't in the parts catalog
-# seem to be assemblies, like 'ENGINE',
-# abbreviations, like 'CYL'
-# or still have location identifiers attached to them, like in 'ROCKER COVER GASKETS'
-
-# %%
-
-# idea: split up the parts in problem extractions by spaces
-count = 0
-for index, row in problem_extractions.iterrows():
-    parts = str(row['part']).split(' ')
-    for part in parts:
-        if part in part_set:
-            count += 1
-            print("part:", row['part'], "match:", part)
-            break
-
-print("% of parts mentioned in the catalog:", count/len(problem_extractions))
-
-# much higher percentage of parts mentioned in the problem extractions
-# however there is a lot of noise as well
-# like part: INTAKE TUBE GASKET match: TUBE
-# this is where a more structured approach could be useful, like a parser
 # %%
 
 
@@ -83,17 +41,14 @@ ATTRIBUTES = [
     "BLAST",
     "INNER",
     "SNAP",
-    #"INTAKE", # actually a "part", but doesn't exist in the parts catalog
+    "INTAKE", # actually a "part", but doesn't exist in the parts catalog
     "PUSH",
     "BOTTOM",
     "WIRE",
     "BACK",
     "INDUCTION"
 ]
-wordmap = {
-    #"ENGINE": 'PART', # ENGINE would match with all parts, practically useless
-    "INTAKE": 'PART', # a subset of parts, but we treat it as a part, even though we can't find it in the parts catalog
-}
+wordmap = {}
 for part in part_set:
     wordmap[part] = 'PART'
     wordmap[part + "S"] = 'PART'
@@ -107,8 +62,6 @@ for attribute in ATTRIBUTES:
     if attribute in wordmap:
         print("WARNING: attribute already in wordmap")
     wordmap[attribute] = 'ATTRIBUTE'
-    
-test_sentence = "INTAKE GASKET"
 
 def lex(sentence):
     tokens = []
@@ -120,7 +73,6 @@ def lex(sentence):
             tokens.append((word, 'CONTEXT'))
     return tokens
 
-print(lex(test_sentence))
 #%%
 # 2. Parsing: create a tree structure from the tokens
 # tree structure:
@@ -199,24 +151,6 @@ def parse_ctx(tokens):
         tokens.insert(0, next)
         return ParseNode("ctx", "", [])
     
-print(parse(lex(test_sentence)))
-# %%
-# check parsability of all problem extractions
-parsable = 0
-parsed_extractions = []
-for index, row in problem_extractions.iterrows():
-    result = parse(lex(row['part']))
-    if result is not None:
-        parsable += 1
-        parsed_extractions.append(result)
-    else:
-        lexed = lex(row['part'])
-        print("Unparsable:", 
-              row['part'],
-              "with tokens",
-              [word[1] for word in lexed])
-        
-print("Parsable:", parsable/len(problem_extractions))
 # %%
 #==============================================================================
 #   STRUCTURING THE PARTS CATALOG
@@ -266,7 +200,7 @@ class Section:
 class Assembly:
     def __init__(self, name):
         self.name = name
-        self.parts = {}
+        self.parts = []
         
     def __str__(self):
         return self.name + ' (' + str(len(self.parts)) + ' parts)'
@@ -274,10 +208,9 @@ class Assembly:
     def __repr__(self) -> str:
         return self.__str__()
 
-#%%
+# create the graph
 word_hints = {}
 sections = {}
-occurance = {}
 
 for index, row in parts_catalog.iterrows():
     section = row['Section']
@@ -287,15 +220,8 @@ for index, row in parts_catalog.iterrows():
     if assembly not in sections[section].assemblies:
         sections[section].assemblies[assembly] = Assembly(assembly)
     
-    part_name = str(row['Part Number'])
-    
-    if part_name in sections[section].assemblies[assembly].parts:
-        print("WARNING: part already in assembly:", part_name)
-        continue
-    
-    part = Part(part_name, row['Type'], row['Specifics'])
-    sections[section].assemblies[assembly].parts[part.part_number] = part
-    #buzzwords = str(row['Part Number']).split(' ')
+    part = Part(row['Part Number'], row['Type'], row['Specifics'])
+    sections[section].assemblies[assembly].parts.append(part)
     buzzwords = []
     buzzwords.extend(str(row['Specifics']).split(' '))
     buzzwords.extend(str(row['Type']).split(' '))
@@ -305,23 +231,18 @@ for index, row in parts_catalog.iterrows():
             word_hints[w].append(part)
         else:
             word_hints[w] = [part]
-    occurance[part] = len(buzzwords)
 
 # build connections
 for section in sections.values():
     for assembly in section.assemblies.values():
-        for part in assembly.parts.values():
-            for other in assembly.parts.values():
+        for part in assembly.parts:
+            for other in assembly.parts:
                 if part != other:
                     c = Connection(part, other, 'ASSEMBLY')
                     part.connections.add(c)
                     other.connections.add(c)
-print(word_hints['ROCKER'])
 # %%
 
-# example
-parsed_example = parse(lex(test_sentence))
-#print(parsed_example)
 # find the deepest part node
 def find_deepest_part(node):
     if node.type == 'main':
@@ -335,8 +256,6 @@ def find_deepest_part(node):
             elif child.type == 'PART':
                 return child
     return None
-
-dpart = find_deepest_part(parsed_example)
 
 # find all buzzwords
 def find_buzzwords(node, details=""):
@@ -363,9 +282,6 @@ def find_buzzwords(node, details=""):
     buzzwords.extend(details_split)
     
     return buzzwords
-            
-bz = find_buzzwords(parsed_example)
-print(bz)
 
 def make_buzz_ranking(buzzwords):
     ranking = {}
@@ -373,11 +289,10 @@ def make_buzz_ranking(buzzwords):
         if buzzword in word_hints:
             for part in word_hints[buzzword]:
                 if part in ranking:
-                    ranking[part] += 1 / occurance[part]
+                    ranking[part] += 1
                 else:
-                    ranking[part] = 1 / occurance[part]
+                    ranking[part] = 1
     return ranking
-
 def inv(d):
     r = {}
     for k, v in d.items():
@@ -386,11 +301,7 @@ def inv(d):
         else:
             r[v] = [k]
     return r
-ranking_example = make_buzz_ranking(bz)
-print(ranking_example)
-print(len(ranking_example) / len(parts_catalog))
 
-# %%
 # filter out the parts that don't match the type
 def get_candidates(ranking, part_type):
     candidates = []
@@ -401,20 +312,12 @@ def get_candidates(ranking, part_type):
             candidates.append((part, score))
     return candidates
 
-example_candidates = get_candidates(ranking_example, dpart.value)
-print(example_candidates)
-
-def rank_candidates(ranking, candidates, ignore_type=None):
+def rank_candidates(ranking, candidates):
     scores = {}
     for candidate in candidates:
         score = 1
         for connection in candidate[0].connections:
             subjectpart = connection.part1 if connection.part1 != candidate[0] else connection.part2
-            
-            # ignore if the part is of the ignore_type
-            # usually used for the part itself
-            if ignore_type is not None and subjectpart.part_type == ignore_type:
-                continue
             if subjectpart in ranking:
                 score += ranking[subjectpart]
         #score *= candidate[1]
@@ -422,9 +325,8 @@ def rank_candidates(ranking, candidates, ignore_type=None):
         scores[candidate[0]] = score
     return scores
 
-print(rank_candidates(ranking_example, example_candidates, dpart.value))
-# %%
-def get_ranked_candidates(node, secondary=None):
+# combine the functions to get the ranked candidates
+def get_ranked_candidates(node):
     dpart = find_deepest_part(node)
     bz = find_buzzwords(node)
     if dpart is None: # no part found
@@ -432,90 +334,65 @@ def get_ranked_candidates(node, secondary=None):
         return None
     
     ranking = make_buzz_ranking(bz)
-    
-    # if there is a secondary part, use the ranking
-    # may be used for part pairs in problem and action extractions
-    if secondary is not None:
-        s_ranking = make_buzz_ranking(find_buzzwords(secondary))
-        # add the scores of the secondary ranking to the primary ranking
-        for part, score in s_ranking.items():
-            if part in ranking:
-                ranking[part] += score * 0.5
-            else:
-                ranking[part] = score * 0.5
-    
     candidates = get_candidates(ranking, dpart.value)
     if len(candidates) == 0:
         print("No candidates found for", dpart.value)
-    return rank_candidates(ranking, candidates, dpart.value)
+    return rank_candidates(ranking, candidates)
 
 #%%
 # run the function on all parsed extractions
-ranked_candidates = []
-for parsed in parsed_extractions:
-    res = get_ranked_candidates(parsed)
-    ranked_candidates.append(res)
-    print("Ranked candidates:", res)
-
-extraction_successes = 0
-identified_parts = []
-for c in ranked_candidates:
-    if c is not None and len(c) > 0:
-        extraction_successes += 1
-        # get the part with the highest score
-        # and only add it if it is the only part with that score
-        m = max(c.values())
-        invc = inv(c)
-        if len(invc[m]) == 1 and m > 4:
-            identified_parts.append(invc[m][0])
+if __name__ == '__main__':
+    parsed_extractions = []
+    for index, row in problem_extractions.iterrows():
+        result = parse(lex(row['part']))
+        if result is not None:
+            parsed_extractions.append(result)
         else:
-            print("Ambiguity in ranking:", invc[m],"with score", m)
-        
-print("succesful extractions:", extraction_successes / len(ranked_candidates))
-print("succesful identifications:", len(identified_parts) / len(ranked_candidates))
+            lexed = lex(row['part'])
+            print("Unparsable:", 
+                row['part'],
+                "with tokens",
+                [word[1] for word in lexed])
+    ranked_candidates = []
+    for parsed in parsed_extractions:
+        res = get_ranked_candidates(parsed)
+        ranked_candidates.append(res)
+        print("Ranked candidates:", res)
 
-# scrolling through the output, it seems that the parser is able to identify
-# clearly mentioned parts, like seals and gaskets
-# but struggles a lot with more general mentions, like 'ENGINE' or 'INTAKE'
-# obviously this makes sense, there is not a single part that is called 'ENGINE' or 'INTAKE'
-# but rather a collection of parts that make up the engine or intake system
+    extraction_successes = 0
+    identified_parts = []
+    for c in ranked_candidates:
+        if c is not None and len(c) > 0:
+            extraction_successes += 1
+            # get the part with the highest score
+            # and only add it if it is the only part with that score
+            m = max(c.values())
+            invc = inv(c)
+            if len(invc[m]) == 1 and m > 10:
+                identified_parts.append(invc[m][0])
+            else:
+                print("Ambiguity in ranking:", invc[m],"with score", m)
+            
+    print("succesful extractions:", extraction_successes / len(ranked_candidates))
+    print("succesful identifications:", len(identified_parts) / len(ranked_candidates))
 
-# now it is unknown wether it actually identifies the correct part
-# not sure how to evaluate this.
-# %%
-# custom example playground
-examples = [
-    "ROCKER COVER",
-    "ROCKER COVER GASKETS",
-    "BLACK BAFFLE SEAL", # example of a not so strong match
-    "INTAKE GASKET"
-]
-for example in examples:
-    example_parsed = parse(lex(example))
-    ranked_candidates = get_ranked_candidates(example_parsed)
-    print("Ranked candidates for", example +  ":", ranked_candidates)
+    # scrolling through the output, it seems that the parser is able to identify
+    # clearly mentioned parts, like seals and gaskets
+    # but struggles a lot with more general mentions, like 'ENGINE' or 'INTAKE'
+    # obviously this makes sense, there is not a single part that is called 'ENGINE' or 'INTAKE'
+    # but rather a collection of parts that make up the engine or intake system
+
+    # now it is unknown wether it actually identifies the correct part
+    # not sure how to evaluate this.
     
     
-    
-    
-    
-    
-    
-    
-# %%
-# now, process the problem and action extractions together
-for i in range(len(problem_extractions)):
-    problem = problem_extractions.iloc[i]
-    action = action_extractions.iloc[i]
-    problem_parsed = parse(lex(problem['part']))
-    action_parsed = parse(lex(action['part']))
-    if problem_parsed is not None:
-        problem_candidates = get_ranked_candidates(problem_parsed, action_parsed)
-        print("Problem:", problem['part'])
-        print("Problem candidates:", problem_candidates)
-    
-    if action_parsed is not None:
-        action_candidates = get_ranked_candidates(action_parsed, problem_parsed)
-        print("Action:", action['part'])
-        print("Action candidates:", action_candidates)
-# %%
+    # custom example playground
+    examples = [
+        "ROCKER COVER",
+        "ROCKER COVER GASKETS",
+        "BLACK BAFFLE SEAL" # example of a not so strong match
+    ]
+    for example in examples:
+        example_parsed = parse(lex(example))
+        ranked_candidates = get_ranked_candidates(example_parsed)
+        print("Ranked candidates for", example +  ":", ranked_candidates)
