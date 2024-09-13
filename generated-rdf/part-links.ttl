@@ -1,0 +1,1393 @@
+@prefix : <http://Ameneh.org/aircraft.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:2IntakeGasket :isMaybe [ :linkCandidate :partnr-71973 ;
+            :linkScore 1e+00 ] .
+
+:4IntakeGasket :isMaybe [ :linkCandidate :partnr-71973 ;
+            :linkScore 1e+00 ] .
+
+:AdelClamp :isMaybe [ :linkCandidate :partnr-LW-18959-150-25 ;
+            :linkScore 1e+00 ] .
+
+:AftBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:AftBaffleAttachFitting :isMaybe [ :linkCandidate :partnr-71140 ;
+            :linkScore 1e+00 ] .
+
+:AftBaffleAttachPlate :isMaybe [ :linkCandidate :partnr-LW-M-2375 ;
+            :linkScore 1e+00 ] .
+
+:AftBaffleBracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
+:AftBaffleHasScrew :isMaybe [ :linkCandidate :partnr-STD-1882 ;
+            :linkScore 1e+00 ] .
+
+:AftBaffleScrew :isMaybe [ :linkCandidate :partnr-STD-1882 ;
+            :linkScore 1e+00 ] .
+
+:AftBaffleSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:AftBaffleSupportBracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
+:AftBaffling :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:AftCrankcaseSpinBolt :isMaybe [ :linkCandidate :partnr-LW-25S1.50 ;
+            :linkScore 1.268e-01 ],
+        [ :linkCandidate :partnr-LW-25-1.50 ;
+            :linkScore 1.513e-01 ],
+        [ :linkCandidate :partnr-LW-25-1.75 ;
+            :linkScore 1.513e-01 ],
+        [ :linkCandidate :partnr-LW-25-1.13 ;
+            :linkScore 1.513e-01 ],
+        [ :linkCandidate :partnr-AN6-34A ;
+            :linkScore 1.1669e-01 ] .
+
+:AftCylBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:AftEngineBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:AftUpperBaffleSeal :isMaybe [ :linkCandidate :partnr-70310 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-LW-18661 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-06A23493 ;
+            :linkScore 3.3333e-01 ] .
+
+:AirInletTube :isMaybe [ :linkCandidate :partnr-68987 ;
+            :linkScore 1e+00 ] .
+
+:AlternateAirBoxBushing :isMaybe [ :linkCandidate :partnr-74637 ;
+            :linkScore 1e+00 ] .
+
+:BackBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:BackBaffleBracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
+:BackBaffleBracketScrew :isMaybe [ :linkCandidate :partnr-STD-1882 ;
+            :linkScore 1e+00 ] .
+
+:BackBaffleScrew :isMaybe [ :linkCandidate :partnr-STD-1882 ;
+            :linkScore 1e+00 ] .
+
+:BackTopBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:BackboneBolt :isMaybe [ :linkCandidate :partnr-LW-25-1.00 ;
+            :linkScore 1e+00 ] .
+
+:BackboneOfEngBaffling :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:Baffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:BaffleAttachBracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
+:BaffleBolt :isMaybe [ :linkCandidate :partnr-LW-25-1.00 ;
+            :linkScore 1e+00 ] .
+
+:BaffleBoltOrScrew :isMaybe [ :linkCandidate :partnr-STD-1882 ;
+            :linkScore 1e+00 ] .
+
+:BaffleBracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
+:BaffleBracketByOilCooler :isMaybe [ :linkCandidate :OilCoolerBypassValveOilPressureScreenAndBreatherFitting ;
+            :linkScore 2.7779e-01 ],
+        [ :linkCandidate :OilPumpAssemblyAndAccessoryHousingAttachingParts ;
+            :linkScore 1.0821e-01 ],
+        [ :linkCandidate :OilLevelGage ;
+            :linkScore 1.0358e-01 ],
+        [ :linkCandidate :OilSumpAssemblyAndOilSuctionScreen ;
+            :linkScore 1.7291e-01 ],
+        [ :linkCandidate :OilFilterAssemblyAndOilCoolerBypassValve ;
+            :linkScore 3.375e-01 ] .
+
+:BaffleBracketScrew :isMaybe [ :linkCandidate :partnr-STD-1882 ;
+            :linkScore 1e+00 ] .
+
+:BaffleButtonPlug :isMaybe [ :linkCandidate :partnr-62417 ;
+            :linkScore 1e+00 ] .
+
+:BaffleByRockerCover :isMaybe [ :linkCandidate :partnr-61247 ;
+            :linkScore 1e+00 ] .
+
+:BaffleConnectionRod :isMaybe [ :linkCandidate :partnr-15F19957-08 ;
+            :linkScore 1e+00 ] .
+
+:BaffleMountScrew :isMaybe [ :linkCandidate :partnr-STD-1882 ;
+            :linkScore 1e+00 ] .
+
+:BaffleMountingBracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
+:BaffleMountingBracketRivet :isMaybe [ :linkCandidate :AlternatorMountingAndAttachingParts ;
+            :linkScore 1e+00 ] .
+
+:BaffleMountingScrew :isMaybe [ :linkCandidate :partnr-STD-1882 ;
+            :linkScore 1e+00 ] .
+
+:BafflePlug :isMaybe [ :linkCandidate :partnr-62417 ;
+            :linkScore 1e+00 ] .
+
+:BaffleRod :isMaybe [ :linkCandidate :partnr-15F19957-08 ;
+            :linkScore 1e+00 ] .
+
+:BaffleScrew :isMaybe [ :linkCandidate :partnr-STD-1882 ;
+            :linkScore 1e+00 ] .
+
+:BaffleScrewBehindDipstickTube :isMaybe [ :linkCandidate :partnr-68761 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-68759 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-68760 ;
+            :linkScore 3.3333e-01 ] .
+
+:BaffleScrewBehindOilFillerTube :isMaybe [ :linkCandidate :partnr-68759 ;
+            :linkScore 1.4493e-01 ],
+        [ :linkCandidate :partnr-68760 ;
+            :linkScore 1.4493e-01 ],
+        [ :linkCandidate :partnr-68761 ;
+            :linkScore 1.4226e-01 ],
+        [ :linkCandidate :partnr-56C23075 ;
+            :linkScore 2.8586e-01 ],
+        [ :linkCandidate :partnr-75736 ;
+            :linkScore 2.8202e-01 ] .
+
+:BaffleScrewBehindOilTube :isMaybe [ :linkCandidate :partnr-68761 ;
+            :linkScore 1.4226e-01 ],
+        [ :linkCandidate :partnr-68760 ;
+            :linkScore 1.4493e-01 ],
+        [ :linkCandidate :partnr-56C23075 ;
+            :linkScore 2.8586e-01 ],
+        [ :linkCandidate :partnr-75736 ;
+            :linkScore 2.8202e-01 ],
+        [ :linkCandidate :partnr-68759 ;
+            :linkScore 1.4493e-01 ] .
+
+:BaffleSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:BaffleSparkPlugAccessPlug :isMaybe [ :linkCandidate :partnr-1182-E7 ;
+            :linkScore 1e+00 ] .
+
+:BaffleSparkPlugCap :isMaybe [ :linkCandidate :partnr-17C19386 ;
+            :linkScore 1e+00 ] .
+
+:BaffleSparkPlugHoleCover :isMaybe [ :linkCandidate :partnr-60430 ;
+            :linkScore 5e-01 ],
+        [ :linkCandidate :partnr-69106 ;
+            :linkScore 5e-01 ] .
+
+:BaffleSpring :isMaybe [ :linkCandidate :partnr-61084 ;
+            :linkScore 1e+00 ] .
+
+:BaffleSupportOnAftCopilotSideEngineBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:BaffleSupportRod :isMaybe [ :linkCandidate :partnr-15F19957-08 ;
+            :linkScore 1e+00 ] .
+
+:BaffleSupportSteelRod :isMaybe [ :linkCandidate :partnr-15F19957-08 ;
+            :linkScore 1e+00 ] .
+
+:BaffleTieRod :isMaybe [ :linkCandidate :partnr-15F19957-08 ;
+            :linkScore 1e+00 ] .
+
+:BaffleTieRodBolt :isMaybe [ :linkCandidate :partnr-78027 ;
+            :linkScore 1e+00 ] .
+
+:BaffleTieRodSpacer :isMaybe [ :linkCandidate :partnr-74887 ;
+            :linkScore 1e+00 ] .
+
+:Baffling :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:BafflingConnectingRod :isMaybe [ :linkCandidate :partnr-78030-S ;
+            :linkScore 1e+00 ] .
+
+:BafflingMountBracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
+:BafflingPlug :isMaybe [ :linkCandidate :partnr-62417 ;
+            :linkScore 1e+00 ] .
+
+:BafflingSupportBracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
+:BatteryBoxBracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
+:BlackFwdEngSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:BlackFwdLwrEngSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:BlackFwdSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:BlackSealForFwdBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:Bolt :isMaybe [ :linkCandidate :partnr-LW-25-1.00 ;
+            :linkScore 1e+00 ] .
+
+:BothBafflePlug :isMaybe [ :linkCandidate :partnr-62417 ;
+            :linkScore 1e+00 ] .
+
+:BothBolt :isMaybe [ :linkCandidate :partnr-LW-25-1.00 ;
+            :linkScore 1e+00 ] .
+
+:BothEngBafflePlug :isMaybe [ :linkCandidate :partnr-62417 ;
+            :linkScore 1e+00 ] .
+
+:BothOilCooler :isMaybe [ :linkCandidate :OilFilterAssemblyAndOilCoolerBypassValve ;
+            :linkScore 3.375e-01 ],
+        [ :linkCandidate :OilPumpAssemblyAndAccessoryHousingAttachingParts ;
+            :linkScore 1.0821e-01 ],
+        [ :linkCandidate :OilSumpAssemblyAndOilSuctionScreen ;
+            :linkScore 1.7291e-01 ],
+        [ :linkCandidate :OilCoolerBypassValveOilPressureScreenAndBreatherFitting ;
+            :linkScore 2.7779e-01 ],
+        [ :linkCandidate :OilLevelGage ;
+            :linkScore 1.0358e-01 ] .
+
+:BothSideBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:BothSparkPlugBafflePlug :isMaybe [ :linkCandidate :partnr-1182-E7 ;
+            :linkScore 1e+00 ] .
+
+:BottomBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:BottomBaffleConnectingRod :isMaybe [ :linkCandidate :partnr-78030-S ;
+            :linkScore 1e+00 ] .
+
+:BottomBaffleWireSpring :isMaybe [ :linkCandidate :partnr-61084 ;
+            :linkScore 1e+00 ] .
+
+:BottomEngineBaffleSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:BottomLeftBaffleSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:BottomOfOilCooler :isMaybe [ :linkCandidate :OilCoolerBypassValveOilPressureScreenAndBreatherFitting ;
+            :linkScore 2.7779e-01 ],
+        [ :linkCandidate :OilSumpAssemblyAndOilSuctionScreen ;
+            :linkScore 1.7291e-01 ],
+        [ :linkCandidate :OilPumpAssemblyAndAccessoryHousingAttachingParts ;
+            :linkScore 1.0821e-01 ],
+        [ :linkCandidate :OilFilterAssemblyAndOilCoolerBypassValve ;
+            :linkScore 3.375e-01 ],
+        [ :linkCandidate :OilLevelGage ;
+            :linkScore 1.0358e-01 ] .
+
+:Bracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
+:BracketSupportForEngOilCoolerBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:ButtonPlug :isMaybe [ :linkCandidate :partnr-62417 ;
+            :linkScore 1e+00 ] .
+
+:CapScrew :isMaybe [ :linkCandidate :partnr-STD-1882 ;
+            :linkScore 1e+00 ] .
+
+:CarbHeatBracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
+:CarbHeatValve :isMaybe [ :linkCandidate :partnr-53E22144 ;
+            :linkScore 1e+00 ] .
+
+:CarbInletGasket :isMaybe [ :linkCandidate :partnr-06E19769-0.63 ;
+            :linkScore 1e+00 ] .
+
+:CenterAftEngineBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:CenterCaseBolt :isMaybe [ :linkCandidate :partnr-LW-25-1.00 ;
+            :linkScore 1e+00 ] .
+
+:CenterCowlingInletTube :isMaybe [ :linkCandidate :partnr-68987 ;
+            :linkScore 1e+00 ] .
+
+:CenterTopBaffleBracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
+:ChtFitting :isMaybe [ :linkCandidate :partnr-71140 ;
+            :linkScore 1e+00 ] .
+
+:Clamp :isMaybe [ :linkCandidate :partnr-LW-18959-150-25 ;
+            :linkScore 1e+00 ] .
+
+:ClipForOilBaffleCoolerBracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
+:CoolingBaffleConnectingRod :isMaybe [ :linkCandidate :partnr-78030-S ;
+            :linkScore 1e+00 ] .
+
+:CoolingBafflingRivet :isMaybe [ :linkCandidate :CylinderHeadDrainTubesAndIntercylinderCoolingBaffles ;
+            :linkScore 1e+00 ] .
+
+:CowlBracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
+:CowlSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:CowlingSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:CrankshaftFrontSeal :isMaybe [ :linkCandidate :partnr-LW-13792 ;
+            :linkScore 1e+00 ] .
+
+:CrankshaftSeal :isMaybe [ :linkCandidate :partnr-LW-13792 ;
+            :linkScore 1e+00 ] .
+
+:Cyl :isMaybe [ :linkCandidate :partnr-LW-12416 ;
+            :linkScore 1e+00 ] .
+
+:CylRockerCoverGasket :isMaybe [ :linkCandidate :partnr-75906 ;
+            :linkScore 1e+00 ] .
+
+:CylinderRockerCoversScrew :isMaybe [ :linkCandidate :partnr-STD-1925 ;
+            :linkScore 1e+00 ] .
+
+:DeflectorBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:DipstickTube :isMaybe [ :linkCandidate :partnr-68987 ;
+            :linkScore 1e+00 ] .
+
+:EachBaffleScrew :isMaybe [ :linkCandidate :partnr-STD-1882 ;
+            :linkScore 1e+00 ] .
+
+:EngBafflePlug :isMaybe [ :linkCandidate :partnr-62417 ;
+            :linkScore 1e+00 ] .
+
+:EngBaffling :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:EngCylIntake :isMaybe [ :linkCandidate :CylinderAssembly ;
+            :linkScore 3.3263e-01 ],
+        [ :linkCandidate :IntakePipesAndAttachingParts ;
+            :linkScore 4.1778e-01 ],
+        [ :linkCandidate :CylinderRelatedParts ;
+            :linkScore 2.4959e-01 ] .
+
+:EngFwdLwrBlackSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:EngFwdLwrCowlSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:EngGroundinStrapBolt :isMaybe [ :linkCandidate :partnr-LW-25S1.50 ;
+            :linkScore 1.4286e-01 ],
+        [ :linkCandidate :partnr-LW-25-1.50 ;
+            :linkScore 1.4286e-01 ],
+        [ :linkCandidate :partnr-AN6-34A ;
+            :linkScore 1.4286e-01 ],
+        [ :linkCandidate :partnr-LW-25-1.75 ;
+            :linkScore 1.4286e-01 ],
+        [ :linkCandidate :partnr-LW-25-1.13 ;
+            :linkScore 1.4286e-01 ] .
+
+:EngGroundingBolt :isMaybe [ :linkCandidate :partnr-LW-25-1.00 ;
+            :linkScore 1e+00 ] .
+
+:EngRockerCoverScrew :isMaybe [ :linkCandidate :partnr-STD-1925 ;
+            :linkScore 1e+00 ] .
+
+:EngineBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:EngineBaffleMountingScrew :isMaybe [ :linkCandidate :partnr-STD-1882 ;
+            :linkScore 1e+00 ] .
+
+:EngineBafflePlug :isMaybe [ :linkCandidate :partnr-62417 ;
+            :linkScore 1e+00 ] .
+
+:EngineBaffleScrew :isMaybe [ :linkCandidate :partnr-STD-1882 ;
+            :linkScore 1e+00 ] .
+
+:EngineBaffleSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:EngineBaffleSnapPlug :isMaybe [ :linkCandidate :partnr-62417 ;
+            :linkScore 1e+00 ] .
+
+:EngineBaffleSupportBracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
+:EngineBaffleTieRod :isMaybe [ :linkCandidate :partnr-15F19957-08 ;
+            :linkScore 1e+00 ] .
+
+:EngineBafflingFeltSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:EngineCoolingBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:EngineCoolingBaffleSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:EngineLeftRearBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:EngineToBaffleAttachFitting :isMaybe [ :linkCandidate :partnr-71140 ;
+            :linkScore 1e+00 ] .
+
+:ExhPushRodSeal :isMaybe [ :linkCandidate :partnr-06A23493 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-LW-18661 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-70310 ;
+            :linkScore 3.3333e-01 ] .
+
+:ExhaustPushRodSeal :isMaybe [ :linkCandidate :partnr-70310 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-06A23493 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-LW-18661 ;
+            :linkScore 3.3333e-01 ] .
+
+:ExhaustSeal :isMaybe [ :linkCandidate :partnr-06A23493 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-LW-18661 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-70310 ;
+            :linkScore 3.3333e-01 ] .
+
+:ExhaustTubeElbowTopBolt :isMaybe [ :linkCandidate :partnr-LW-25-1.00 ;
+            :linkScore 2.1657e-01 ],
+        [ :linkCandidate :partnr-LW-25-0.94 ;
+            :linkScore 1.1337e-01 ],
+        [ :linkCandidate :partnr-LW-25-1.13 ;
+            :linkScore 1.1337e-01 ] .
+
+:ExhaustValve :isMaybe [ :linkCandidate :partnr-17B23936 ;
+            :linkScore 1e+00 ] .
+
+:ExhaustValvePushRodTube :isMaybe [ :linkCandidate :partnr-68987 ;
+            :linkScore 5.5709e-01 ],
+        [ :linkCandidate :partnr-15G23494 ;
+            :linkScore 4.4291e-01 ] .
+
+:ExtPushRodTubeSeal :isMaybe [ :linkCandidate :partnr-70310 ;
+            :linkScore 3.6279e-01 ],
+        [ :linkCandidate :partnr-06A23493 ;
+            :linkScore 2.7442e-01 ],
+        [ :linkCandidate :partnr-LW-18661 ;
+            :linkScore 3.6279e-01 ] .
+
+:ExtValve :isMaybe [ :linkCandidate :partnr-53E22144 ;
+            :linkScore 1e+00 ] .
+
+:FireSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:FoamSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:ForwardBaffleSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:FoundEngineBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:FoundRightBaffleSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:FrontBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:FrontBaffleSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:FrontCrankshaftOilPlug :isMaybe [ :linkCandidate :partnr-STD-1211 ;
+            :linkScore 1.7603e-01 ],
+        [ :linkCandidate :partnr-STD-91 ;
+            :linkScore 1.6357e-01 ],
+        [ :linkCandidate :partnr-STD-551 ;
+            :linkScore 1.5011e-01 ],
+        [ :linkCandidate :partnr-STD-784 ;
+            :linkScore 1.521e-01 ],
+        [ :linkCandidate :partnr-62417 ;
+            :linkScore 2.0609e-01 ] .
+
+:FrontCrankshaftOilSeal :isMaybe [ :linkCandidate :partnr-LW-13792 ;
+            :linkScore 1e+00 ] .
+
+:FrontEngineOilSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1.4583e-01 ],
+        [ :linkCandidate :partnr-LW-14260 ;
+            :linkScore 3.8294e-01 ],
+        [ :linkCandidate :partnr-LW-13792 ;
+            :linkScore 2.8448e-01 ],
+        [ :linkCandidate :partnr-72075 ;
+            :linkScore 1.8675e-01 ] .
+
+:FrontSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:FuelTopEngineBaffleSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:FwdAdelClamp :isMaybe [ :linkCandidate :partnr-LW-18959-150-25 ;
+            :linkScore 1e+00 ] .
+
+:FwdAltAttachBolt :isMaybe [ :linkCandidate :partnr-LW-25-1.00 ;
+            :linkScore 1e+00 ] .
+
+:FwdBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:FwdBafflePlug :isMaybe [ :linkCandidate :partnr-62417 ;
+            :linkScore 1e+00 ] .
+
+:FwdBaffleSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:FwdBaffleUnderHeatShroudIntake :isMaybe [ :linkCandidate :IntakePipesAndAttachingParts ;
+            :linkScore 1e+00 ] .
+
+:FwdBaffling :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:FwdBlackBaffleSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:FwdBlackEngSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:FwdCenterEngBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:FwdCoolingBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:FwdEngBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:FwdEngBlackSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:FwdEngSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:FwdEngineBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:FwdEngineBaffleBolt :isMaybe [ :linkCandidate :partnr-LW-25-1.00 ;
+            :linkScore 1e+00 ] .
+
+:FwdEngineBaffleSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:FwdEngineHoistLoopBolt :isMaybe [ :linkCandidate :partnr-LW-25-1.00 ;
+            :linkScore 1e+00 ] .
+
+:FwdFrontBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:FwdLowerBaffleSeal :isMaybe [ :linkCandidate :partnr-LW-18661 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-70310 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-06A23493 ;
+            :linkScore 3.3333e-01 ] .
+
+:FwdLowerEngineBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:FwdLowerEngineBaffleSeal :isMaybe [ :linkCandidate :partnr-LW-18661 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-06A23493 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-70310 ;
+            :linkScore 3.3333e-01 ] .
+
+:FwdLwrBaffleBlackSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:FwdLwrBlackBaffleSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:FwdLwrBlackSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:FwdLwrEngBaffleSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:FwdLwrEngSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:FwdLwrSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:FwdLwrSealOnBaffling :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:FwdPushRodSeal :isMaybe [ :linkCandidate :partnr-06A23493 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-70310 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-LW-18661 ;
+            :linkScore 3.3333e-01 ] .
+
+:FwdPushRodTube :isMaybe [ :linkCandidate :partnr-15G23494 ;
+            :linkScore 4.4291e-01 ],
+        [ :linkCandidate :partnr-68987 ;
+            :linkScore 5.5709e-01 ] .
+
+:FwdSnifflerValve :isMaybe [ :linkCandidate :partnr-53E22144 ;
+            :linkScore 1e+00 ] .
+
+:FwdUpperBaffleSeal :isMaybe [ :linkCandidate :partnr-06A23493 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-LW-18661 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-70310 ;
+            :linkScore 3.3333e-01 ] .
+
+:GroundingStrapBolt :isMaybe [ :linkCandidate :partnr-LW-25-1.75 ;
+            :linkScore 1.4286e-01 ],
+        [ :linkCandidate :partnr-LW-25-1.13 ;
+            :linkScore 1.4286e-01 ],
+        [ :linkCandidate :partnr-LW-25S1.50 ;
+            :linkScore 1.4286e-01 ],
+        [ :linkCandidate :partnr-LW-25-1.50 ;
+            :linkScore 1.4286e-01 ],
+        [ :linkCandidate :partnr-AN6-34A ;
+            :linkScore 1.4286e-01 ] .
+
+:HarnessClamp :isMaybe [ :linkCandidate :partnr-LW-18959-150-25 ;
+            :linkScore 1e+00 ] .
+
+:HasAll4RockerGasket :isMaybe [ :linkCandidate :partnr-75906 ;
+            :linkScore 1e+00 ] .
+
+:HasValve :isMaybe [ :linkCandidate :partnr-53E22144 ;
+            :linkScore 1e+00 ] .
+
+:IlnderRockerCover :isMaybe [ :linkCandidate :partnr-61247 ;
+            :linkScore 1e+00 ] .
+
+:Impeller :isMaybe [ :linkCandidate :partnr-05K19423-S ;
+            :linkScore 1e+00 ] .
+
+:InatkeGasket :isMaybe [ :linkCandidate :partnr-06E19769-0.63 ;
+            :linkScore 1e+00 ] .
+
+:InducationTubeGasket :isMaybe [ :linkCandidate :partnr-71973 ;
+            :linkScore 1e+00 ] .
+
+:InductionPipe :isMaybe [ :linkCandidate :partnr-74084 ;
+            :linkScore 1e+00 ] .
+
+:InductionTubeGasket :isMaybe [ :linkCandidate :partnr-71973 ;
+            :linkScore 1e+00 ] .
+
+:InductionTubeHoseClamp :isMaybe [ :linkCandidate :partnr-LW-15592-8-28 ;
+            :linkScore 1e+00 ] .
+
+:InnerBaffleConnectorRod :isMaybe [ :linkCandidate :partnr-15F19957-08 ;
+            :linkScore 1e+00 ] .
+
+:InnerBaffleSpring :isMaybe [ :linkCandidate :partnr-LW-11795 ;
+            :linkScore 1e+00 ] .
+
+:InnerBaffleTieSpring :isMaybe [ :linkCandidate :partnr-LW-11795 ;
+            :linkScore 1e+00 ] .
+
+:InnerExhaustPushRodSeal :isMaybe [ :linkCandidate :partnr-06A23493 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-LW-18661 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-70310 ;
+            :linkScore 3.3333e-01 ] .
+
+:InnerIntakePushRodSeal :isMaybe [ :linkCandidate :partnr-06A23493 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-LW-18661 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-70310 ;
+            :linkScore 3.3333e-01 ] .
+
+:Intake :isMaybe [ :linkCandidate :IntakePipesAndAttachingParts ;
+            :linkScore 1e+00 ] .
+
+:IntakeBolt :isMaybe [ :linkCandidate :partnr-LW-25-1.13 ;
+            :linkScore 2e-01 ],
+        [ :linkCandidate :partnr-LW-25-0.94 ;
+            :linkScore 2e-01 ] .
+
+:IntakeCylGasket :isMaybe [ :linkCandidate :partnr-71973 ;
+            :linkScore 4.6412e-01 ],
+        [ :linkCandidate :partnr-77611 ;
+            :linkScore 2.8925e-01 ],
+        [ :linkCandidate :partnr-75906 ;
+            :linkScore 2.4662e-01 ] .
+
+:IntakeGasket :isMaybe [ :linkCandidate :partnr-71973 ;
+            :linkScore 1e+00 ] .
+
+:IntakeGasketTube :isMaybe [ :linkCandidate :partnr-74084 ;
+            :linkScore 1e+00 ] .
+
+:IntakeHoseClamp :isMaybe [ :linkCandidate :partnr-LW-15592-8-28 ;
+            :linkScore 1e+00 ] .
+
+:IntakeLubeGasket :isMaybe [ :linkCandidate :partnr-71973 ;
+            :linkScore 1e+00 ] .
+
+:IntakePipe :isMaybe [ :linkCandidate :partnr-74084 ;
+            :linkScore 1e+00 ] .
+
+:IntakePipeGasket :isMaybe [ :linkCandidate :partnr-71973 ;
+            :linkScore 1e+00 ] .
+
+:IntakeTube :isMaybe [ :linkCandidate :partnr-74084 ;
+            :linkScore 1e+00 ] .
+
+:IntakeTubeBolt :isMaybe [ :linkCandidate :partnr-LW-25-0.94 ;
+            :linkScore 1.6476e-01 ],
+        [ :linkCandidate :partnr-LW-25-1.13 ;
+            :linkScore 1.6476e-01 ],
+        [ :linkCandidate :partnr-LW-25-1.00 ;
+            :linkScore 8.81e-02 ] .
+
+:IntakeTubeFlange :isMaybe [ :linkCandidate :partnr-73346 ;
+            :linkScore 1e+00 ] .
+
+:IntakeTubeGasket :isMaybe [ :linkCandidate :partnr-71973 ;
+            :linkScore 1e+00 ] .
+
+:InterCylinderBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:IntercylinderBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:IntercylinderBaffleConnectingRod :isMaybe [ :linkCandidate :partnr-78030-S ;
+            :linkScore 1e+00 ] .
+
+:IntercylinderBaffleSupportRod :isMaybe [ :linkCandidate :partnr-15F19957-08 ;
+            :linkScore 1e+00 ] .
+
+:LeftAftBaffleAngleBracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
+:LeftAftBaffleBracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
+:LeftAftBaffleScrew :isMaybe [ :linkCandidate :partnr-STD-1916 ;
+            :linkScore 5e-01 ],
+        [ :linkCandidate :partnr-STD-553 ;
+            :linkScore 5e-01 ] .
+
+:LeftAftBaffleSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:LeftBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:LeftBafflePlug :isMaybe [ :linkCandidate :partnr-1182-E7 ;
+            :linkScore 1e+00 ] .
+
+:LeftEngineBaffleScrew :isMaybe [ :linkCandidate :partnr-STD-553 ;
+            :linkScore 5e-01 ],
+        [ :linkCandidate :partnr-STD-1916 ;
+            :linkScore 5e-01 ] .
+
+:LeftEngineIntake :isMaybe [ :linkCandidate :IntakePipesAndAttachingParts ;
+            :linkScore 1e+00 ] .
+
+:LeftEngineLowerFireSeal :isMaybe [ :linkCandidate :partnr-70310 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-06A23493 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-LW-18661 ;
+            :linkScore 3.3333e-01 ] .
+
+:LeftEngineRockerCoverGasket :isMaybe [ :linkCandidate :partnr-75906 ;
+            :linkScore 3.852e-01 ],
+        [ :linkCandidate :partnr-8313 ;
+            :linkScore 2.027e-01 ],
+        [ :linkCandidate :partnr-69551 ;
+            :linkScore 1.9474e-01 ],
+        [ :linkCandidate :partnr-61183 ;
+            :linkScore 2.1735e-01 ] .
+
+:LeftRearBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:LeftSideAftBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:LhOilCooler :isMaybe [ :linkCandidate :OilSumpAssemblyAndOilSuctionScreen ;
+            :linkScore 1.7291e-01 ],
+        [ :linkCandidate :OilPumpAssemblyAndAccessoryHousingAttachingParts ;
+            :linkScore 1.0821e-01 ],
+        [ :linkCandidate :OilLevelGage ;
+            :linkScore 1.0358e-01 ],
+        [ :linkCandidate :OilFilterAssemblyAndOilCoolerBypassValve ;
+            :linkScore 3.375e-01 ],
+        [ :linkCandidate :OilCoolerBypassValveOilPressureScreenAndBreatherFitting ;
+            :linkScore 2.7779e-01 ] .
+
+:LiftingEyeBolt :isMaybe [ :linkCandidate :partnr-LW-25-1.50 ;
+            :linkScore 1.4286e-01 ],
+        [ :linkCandidate :partnr-LW-25-1.13 ;
+            :linkScore 1.4286e-01 ],
+        [ :linkCandidate :partnr-LW-25-1.75 ;
+            :linkScore 1.4286e-01 ],
+        [ :linkCandidate :partnr-AN6-34A ;
+            :linkScore 1.4286e-01 ],
+        [ :linkCandidate :partnr-LW-25S1.50 ;
+            :linkScore 1.4286e-01 ] .
+
+:LongBaffleTieRod :isMaybe [ :linkCandidate :partnr-15F19957-08 ;
+            :linkScore 1.25e-01 ],
+        [ :linkCandidate :partnr-15F19957-14 ;
+            :linkScore 1.25e-01 ],
+        [ :linkCandidate :partnr-15F19957-11 ;
+            :linkScore 1.25e-01 ],
+        [ :linkCandidate :partnr-15F19957-12 ;
+            :linkScore 1.25e-01 ],
+        [ :linkCandidate :partnr-15F19957-10 ;
+            :linkScore 1.25e-01 ],
+        [ :linkCandidate :partnr-15F19957-13 ;
+            :linkScore 1.25e-01 ],
+        [ :linkCandidate :partnr-15F19957-15 ;
+            :linkScore 1.25e-01 ],
+        [ :linkCandidate :partnr-15F19957-09 ;
+            :linkScore 1.25e-01 ] .
+
+:LowerBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:LowerClamp :isMaybe [ :linkCandidate :partnr-LW-18959-150-25 ;
+            :linkScore 1e+00 ] .
+
+:LowerCowlSeal :isMaybe [ :linkCandidate :partnr-70310 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-06A23493 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-LW-18661 ;
+            :linkScore 3.3333e-01 ] .
+
+:LowerIntakeClamp :isMaybe [ :linkCandidate :partnr-LW-15592-8-28 ;
+            :linkScore 1e+00 ] .
+
+:LowerRightBaffleSpring :isMaybe [ :linkCandidate :partnr-LW-11795 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-LW-14995 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-LW-11800 ;
+            :linkScore 3.3333e-01 ] .
+
+:LowerRockerBoxScrew :isMaybe [ :linkCandidate :partnr-STD-1925 ;
+            :linkScore 1e+00 ] .
+
+:LwrBlackSealAboveIntake :isMaybe [ :linkCandidate :IntakePipesAndAttachingParts ;
+            :linkScore 1e+00 ] .
+
+:LwrFwdEngSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:LwrFwdSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:LwrIntakeClamp :isMaybe [ :linkCandidate :partnr-LW-15592-8-28 ;
+            :linkScore 1e+00 ] .
+
+:LwrIntakeTube :isMaybe [ :linkCandidate :partnr-74084 ;
+            :linkScore 1e+00 ] .
+
+:ManifoldPressureFitting :isMaybe [ :linkCandidate :partnr-71140 ;
+            :linkScore 1e+00 ] .
+
+:NlgDownLockAftTrunnionBolt :isMaybe [ :linkCandidate :partnr-AN6-34A ;
+            :linkScore 6.897e-02 ],
+        [ :linkCandidate :partnr-LW-25-1.75 ;
+            :linkScore 6.897e-02 ],
+        [ :linkCandidate :partnr-LW-31-1.16 ;
+            :linkScore 5.907e-02 ],
+        [ :linkCandidate :partnr-LW-25S1.50 ;
+            :linkScore 6.897e-02 ],
+        [ :linkCandidate :partnr-LW-25-1.25 ;
+            :linkScore 3.141e-02 ],
+        [ :linkCandidate :partnr-LW-25-1.13 ;
+            :linkScore 2.619e-02 ],
+        [ :linkCandidate :partnr-LW-25-1.00 ;
+            :linkScore 2.264e-02 ],
+        [ :linkCandidate :partnr-LW-25-1.44 ;
+            :linkScore 3.066e-02 ],
+        [ :linkCandidate :partnr-LW-25-0.94 ;
+            :linkScore 2.619e-02 ],
+        [ :linkCandidate :partnr-LW-25-1.50 ;
+            :linkScore 6.897e-02 ] .
+
+:Nut :isMaybe [ :linkCandidate :partnr-STD-1410 ;
+            :linkScore 1e+00 ] .
+
+:Oil :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:OilCooler :isMaybe [ :linkCandidate :OilCoolerBypassValveOilPressureScreenAndBreatherFitting ;
+            :linkScore 2.7779e-01 ],
+        [ :linkCandidate :OilLevelGage ;
+            :linkScore 1.0358e-01 ],
+        [ :linkCandidate :OilPumpAssemblyAndAccessoryHousingAttachingParts ;
+            :linkScore 1.0821e-01 ],
+        [ :linkCandidate :OilSumpAssemblyAndOilSuctionScreen ;
+            :linkScore 1.7291e-01 ],
+        [ :linkCandidate :OilFilterAssemblyAndOilCoolerBypassValve ;
+            :linkScore 3.375e-01 ] .
+
+:OilCoolerBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:OilCoolerBaffling :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:OilCoolerFlange :isMaybe [ :linkCandidate :partnr-73346 ;
+            :linkScore 1e+00 ] .
+
+:OilCoolerLowerBaffleSeal :isMaybe [ :linkCandidate :partnr-72075 ;
+            :linkScore 1.8675e-01 ],
+        [ :linkCandidate :partnr-LW-13792 ;
+            :linkScore 2.8448e-01 ],
+        [ :linkCandidate :partnr-LW-14260 ;
+            :linkScore 3.8294e-01 ],
+        [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1.4583e-01 ] .
+
+:OilCoolerLowerFitting :isMaybe [ :linkCandidate :partnr-71140 ;
+            :linkScore 1e+00 ] .
+
+:OilCoolerLwrBaffleSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1.4583e-01 ],
+        [ :linkCandidate :partnr-72075 ;
+            :linkScore 1.8675e-01 ],
+        [ :linkCandidate :partnr-LW-13792 ;
+            :linkScore 2.8448e-01 ],
+        [ :linkCandidate :partnr-LW-14260 ;
+            :linkScore 3.8294e-01 ] .
+
+:OilCoolerMountingBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:OilCoolerSupportBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:OilCoolerSupportBracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
+:OilCoolerToEngineLiftingEyeBracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
+:OilDipstickOil :isMaybe [ :linkCandidate :partnr-LW-13215 ;
+            :linkScore 5.0954e-01 ],
+        [ :linkCandidate :partnr-77852 ;
+            :linkScore 4.9046e-01 ] .
+
+:OilDrainLineClamp :isMaybe [ :linkCandidate :partnr-LW-15592-5-05 ;
+            :linkScore 1e+00 ] .
+
+:OilFillTube :isMaybe [ :linkCandidate :partnr-68761 ;
+            :linkScore 1.4226e-01 ],
+        [ :linkCandidate :partnr-56C23075 ;
+            :linkScore 2.8586e-01 ],
+        [ :linkCandidate :partnr-68760 ;
+            :linkScore 1.4493e-01 ],
+        [ :linkCandidate :partnr-75736 ;
+            :linkScore 2.8202e-01 ],
+        [ :linkCandidate :partnr-68759 ;
+            :linkScore 1.4493e-01 ] .
+
+:OilFillerTube :isMaybe [ :linkCandidate :partnr-75736 ;
+            :linkScore 2.8202e-01 ],
+        [ :linkCandidate :partnr-68761 ;
+            :linkScore 1.4226e-01 ],
+        [ :linkCandidate :partnr-56C23075 ;
+            :linkScore 2.8586e-01 ],
+        [ :linkCandidate :partnr-68760 ;
+            :linkScore 1.4493e-01 ],
+        [ :linkCandidate :partnr-68759 ;
+            :linkScore 1.4493e-01 ] .
+
+:OilLine90DegreeAdelClampBracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
+:OilReturnLikeClamp :isMaybe [ :linkCandidate :partnr-LW-15592-5-05 ;
+            :linkScore 1e+00 ] .
+
+:OilReturnLineClamp :isMaybe [ :linkCandidate :partnr-LW-15592-8-28 ;
+            :linkScore 5.7758e-01 ],
+        [ :linkCandidate :partnr-LW-15592-5-05 ;
+            :linkScore 4.2242e-01 ] .
+
+:OilReturnLineHoseClamp :isMaybe [ :linkCandidate :partnr-LW-15592-5-05 ;
+            :linkScore 4.3011e-01 ],
+        [ :linkCandidate :partnr-LW-15592-8-28 ;
+            :linkScore 5.6989e-01 ] .
+
+:OilReturnTubeHoseClamp :isMaybe [ :linkCandidate :partnr-LW-15592-5-05 ;
+            :linkScore 4.3011e-01 ],
+        [ :linkCandidate :partnr-LW-15592-8-28 ;
+            :linkScore 5.6989e-01 ] .
+
+:OuterBaffling :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:OuterCylBaffling :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:PhenolicSpacer :isMaybe [ :linkCandidate :partnr-LW-11866 ;
+            :linkScore 1e+00 ] .
+
+:PilotReportedIntake :isMaybe [ :linkCandidate :IntakePipesAndAttachingParts ;
+            :linkScore 1e+00 ] .
+
+:PistonPin :isMaybe [ :linkCandidate :partnr-LW-14078 ;
+            :linkScore 1e+00 ] .
+
+:PlugsForEngBaffling :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:PossibleCrankshaftOilSeal :isMaybe [ :linkCandidate :partnr-LW-13792 ;
+            :linkScore 1e+00 ] .
+
+:PrimerLneClamp :isMaybe [ :linkCandidate :partnr-LW-18959-150-25 ;
+            :linkScore 1e+00 ] .
+
+:PushRodSeal :isMaybe [ :linkCandidate :partnr-LW-18661 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-70310 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-06A23493 ;
+            :linkScore 3.3333e-01 ] .
+
+:PushRodTubeAdelClamp :isMaybe [ :linkCandidate :partnr-LW-15592-5-05 ;
+            :linkScore 3.4977e-01 ],
+        [ :linkCandidate :partnr-LW-15592-8-28 ;
+            :linkScore 6.5023e-01 ] .
+
+:RearBaffleMountScrew :isMaybe [ :linkCandidate :partnr-STD-1882 ;
+            :linkScore 1e+00 ] .
+
+:RearBaffleMountingBracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
+:RearBaffleMountingScrew :isMaybe [ :linkCandidate :partnr-STD-1882 ;
+            :linkScore 1e+00 ] .
+
+:RearBafflePlug :isMaybe [ :linkCandidate :partnr-62417 ;
+            :linkScore 1e+00 ] .
+
+:RearBaffleScrew :isMaybe [ :linkCandidate :partnr-STD-1882 ;
+            :linkScore 1e+00 ] .
+
+:RearEngineBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:RearEngineBaffleBracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
+:RightBafflePlug :isMaybe [ :linkCandidate :partnr-1182-E7 ;
+            :linkScore 1e+00 ] .
+
+:RightBaffleTieRod :isMaybe [ :linkCandidate :partnr-15F19957-08 ;
+            :linkScore 1e+00 ] .
+
+:RightEngineBaffleSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:RockerArmCover :isMaybe [ :linkCandidate :partnr-61247 ;
+            :linkScore 1e+00 ] .
+
+:RockerBoxCover :isMaybe [ :linkCandidate :partnr-61247 ;
+            :linkScore 1e+00 ] .
+
+:RockerBoxCoverGasket :isMaybe [ :linkCandidate :partnr-75906 ;
+            :linkScore 1e+00 ] .
+
+:RockerBoxCoverScrew :isMaybe [ :linkCandidate :partnr-STD-1925 ;
+            :linkScore 1e+00 ] .
+
+:RockerBoxGasket :isMaybe [ :linkCandidate :partnr-75906 ;
+            :linkScore 1e+00 ] .
+
+:RockerCover :isMaybe [ :linkCandidate :partnr-61247 ;
+            :linkScore 1e+00 ] .
+
+:RockerCoverBottomScrew :isMaybe [ :linkCandidate :partnr-STD-1925 ;
+            :linkScore 1e+00 ] .
+
+:RockerCoverDrainHoseClamp :isMaybe [ :linkCandidate :partnr-LW-15592-8-28 ;
+            :linkScore 4.183e-01 ],
+        [ :linkCandidate :partnr-LW-15592-5-05 ;
+            :linkScore 5.817e-01 ] .
+
+:RockerCoverGasket :isMaybe [ :linkCandidate :partnr-75906 ;
+            :linkScore 3.852e-01 ],
+        [ :linkCandidate :partnr-61183 ;
+            :linkScore 2.1735e-01 ],
+        [ :linkCandidate :partnr-8313 ;
+            :linkScore 2.027e-01 ],
+        [ :linkCandidate :partnr-69551 ;
+            :linkScore 1.9474e-01 ] .
+
+:RockerCoverScrew :isMaybe [ :linkCandidate :partnr-STD-1925 ;
+            :linkScore 1e+00 ] .
+
+:RockerCoverSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:RockerCoversOnBothEngScrew :isMaybe [ :linkCandidate :partnr-STD-1925 ;
+            :linkScore 1e+00 ] .
+
+:RockerCvoerGasket :isMaybe [ :linkCandidate :partnr-75906 ;
+            :linkScore 1e+00 ] .
+
+:RockerDrainLineClamp :isMaybe [ :linkCandidate :partnr-LW-15592-5-05 ;
+            :linkScore 1e+00 ] .
+
+:RockerGasket :isMaybe [ :linkCandidate :partnr-75906 ;
+            :linkScore 1e+00 ] .
+
+:RockerScrew :isMaybe [ :linkCandidate :partnr-STD-1925 ;
+            :linkScore 1e+00 ] .
+
+:RockerShaftPlug :isMaybe [ :linkCandidate :partnr-1102 ;
+            :linkScore 3.3333e-01 ] .
+
+:RockerShaftThrustPlug :isMaybe [ :linkCandidate :partnr-1102 ;
+            :linkScore 3.3333e-01 ] .
+
+:RubberBaffleSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:SIntakeGasket :isMaybe [ :linkCandidate :partnr-71973 ;
+            :linkScore 1e+00 ] .
+
+:Screw :isMaybe [ :linkCandidate :partnr-STD-1882 ;
+            :linkScore 1e+00 ] .
+
+:ScrewBehindDipstickTube :isMaybe [ :linkCandidate :partnr-68987 ;
+            :linkScore 1e+00 ] .
+
+:ScrewBehindOilDipstickTube :isMaybe [ :linkCandidate :partnr-68761 ;
+            :linkScore 1.4226e-01 ],
+        [ :linkCandidate :partnr-68759 ;
+            :linkScore 1.4493e-01 ],
+        [ :linkCandidate :partnr-56C23075 ;
+            :linkScore 2.8586e-01 ],
+        [ :linkCandidate :partnr-68760 ;
+            :linkScore 1.4493e-01 ],
+        [ :linkCandidate :partnr-75736 ;
+            :linkScore 2.8202e-01 ] .
+
+:ScrewBehindOilFillerTube :isMaybe [ :linkCandidate :partnr-68761 ;
+            :linkScore 1.4226e-01 ],
+        [ :linkCandidate :partnr-68760 ;
+            :linkScore 1.4493e-01 ],
+        [ :linkCandidate :partnr-75736 ;
+            :linkScore 2.8202e-01 ],
+        [ :linkCandidate :partnr-56C23075 ;
+            :linkScore 2.8586e-01 ],
+        [ :linkCandidate :partnr-68759 ;
+            :linkScore 1.4493e-01 ] .
+
+:ScrewForBaffleBehindOilDipstickTube :isMaybe [ :linkCandidate :partnr-75736 ;
+            :linkScore 2.8202e-01 ],
+        [ :linkCandidate :partnr-68760 ;
+            :linkScore 1.4493e-01 ],
+        [ :linkCandidate :partnr-56C23075 ;
+            :linkScore 2.8586e-01 ],
+        [ :linkCandidate :partnr-68761 ;
+            :linkScore 1.4226e-01 ],
+        [ :linkCandidate :partnr-68759 ;
+            :linkScore 1.4493e-01 ] .
+
+:ScrewForEngBaffleBehindOilDipstickTube :isMaybe [ :linkCandidate :partnr-68759 ;
+            :linkScore 1.4493e-01 ],
+        [ :linkCandidate :partnr-68760 ;
+            :linkScore 1.4493e-01 ],
+        [ :linkCandidate :partnr-56C23075 ;
+            :linkScore 2.8586e-01 ],
+        [ :linkCandidate :partnr-75736 ;
+            :linkScore 2.8202e-01 ],
+        [ :linkCandidate :partnr-68761 ;
+            :linkScore 1.4226e-01 ] .
+
+:ScrewsForRockerCover :isMaybe [ :linkCandidate :partnr-61247 ;
+            :linkScore 1e+00 ] .
+
+:Seal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:SideBackBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:SideBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:SideBaffleBolt :isMaybe [ :linkCandidate :partnr-LW-25-1.00 ;
+            :linkScore 1e+00 ] .
+
+:SideBafflePlug :isMaybe [ :linkCandidate :partnr-62417 ;
+            :linkScore 1e+00 ] .
+
+:SideBaffleScrew :isMaybe [ :linkCandidate :partnr-STD-1882 ;
+            :linkScore 1e+00 ] .
+
+:SideBaffleSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:SideBaffling :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:SideCowlSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:SideLowerFwdOilCoolerHoseBracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
+:SideOfBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:SideOfEngFwdRubberSeal :isMaybe [ :linkCandidate :partnr-06A19956 ;
+            :linkScore 1e+00 ] .
+
+:SiideOfEngineCasePlug :isMaybe [ :linkCandidate :partnr-62417 ;
+            :linkScore 1e+00 ] .
+
+:SniffleValve :isMaybe [ :linkCandidate :partnr-53E22144 ;
+            :linkScore 1e+00 ] .
+
+:SnifflerValve :isMaybe [ :linkCandidate :partnr-53E22144 ;
+            :linkScore 1e+00 ] .
+
+:SomeRockerCoverScrew :isMaybe [ :linkCandidate :partnr-STD-1925 ;
+            :linkScore 1e+00 ] .
+
+:SparkPlug :isMaybe [ :linkCandidate :partnr-1182-E7 ;
+            :linkScore 1e+00 ] .
+
+:SparkPlugBaffleHolePlug :isMaybe [ :linkCandidate :partnr-1182-E7 ;
+            :linkScore 1e+00 ] .
+
+:SparkPlugBafflePlug :isMaybe [ :linkCandidate :partnr-1182-E7 ;
+            :linkScore 1e+00 ] .
+
+:SparkPlugCap :isMaybe [ :linkCandidate :partnr-17C19386 ;
+            :linkScore 1e+00 ] .
+
+:StarterFrontCap :isMaybe [ :linkCandidate :partnr-17C19386 ;
+            :linkScore 1e+00 ] .
+
+:StarterRingGear :isMaybe [ :linkCandidate :partnr-72566 ;
+            :linkScore 4.975e-01 ],
+        [ :linkCandidate :partnr-60882 ;
+            :linkScore 5.025e-01 ] .
+
+:TieRod :isMaybe [ :linkCandidate :partnr-15F19957-08 ;
+            :linkScore 1e+00 ] .
+
+:TopBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:TopCaseBolt :isMaybe [ :linkCandidate :partnr-LW-25-1.00 ;
+            :linkScore 1e+00 ] .
+
+:TopEngineCaseBolt :isMaybe [ :linkCandidate :partnr-LW-25-1.00 ;
+            :linkScore 1e+00 ] .
+
+:TopEngineCoolingFanBafflePlug :isMaybe [ :linkCandidate :partnr-62417 ;
+            :linkScore 1e+00 ] .
+
+:TopLiftingBracketCaseHalfBolt :isMaybe [ :linkCandidate :partnr-LW-31H0.88 ;
+            :linkScore 3.939e-02 ],
+        [ :linkCandidate :partnr-LW-25S1.50 ;
+            :linkScore 4.157e-02 ],
+        [ :linkCandidate :partnr-AN6-16 ;
+            :linkScore 3.939e-02 ],
+        [ :linkCandidate :partnr-LW-25-1.75 ;
+            :linkScore 4.157e-02 ],
+        [ :linkCandidate :partnr-LW-31-0.94 ;
+            :linkScore 3.939e-02 ],
+        [ :linkCandidate :partnr-AN6-34A ;
+            :linkScore 4.157e-02 ],
+        [ :linkCandidate :partnr-AN6-14 ;
+            :linkScore 3.939e-02 ],
+        [ :linkCandidate :partnr-LW-25-1.50 ;
+            :linkScore 4.157e-02 ],
+        [ :linkCandidate :partnr-LW-31H0.75 ;
+            :linkScore 3.939e-02 ],
+        [ :linkCandidate :partnr-LW-25-1.13 ;
+            :linkScore 4.157e-02 ] .
+
+:TopSideBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:UpperBaffle :isMaybe [ :linkCandidate :partnr-72569 ;
+            :linkScore 1e+00 ] .
+
+:UpperBaffleSeal :isMaybe [ :linkCandidate :partnr-06A23493 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-LW-18661 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-70310 ;
+            :linkScore 3.3333e-01 ] .
+
+:UpperOilLineToOilCoolerAdelClamp :isMaybe [ :linkCandidate :partnr-LW-15592-8-28 ;
+            :linkScore 1e+00 ] .
+
+:UpperRightBaffleSeal :isMaybe [ :linkCandidate :partnr-06A23493 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-LW-18661 ;
+            :linkScore 3.3333e-01 ],
+        [ :linkCandidate :partnr-70310 ;
+            :linkScore 3.3333e-01 ] .
+
+:Valve :isMaybe [ :linkCandidate :partnr-53E22144 ;
+            :linkScore 1e+00 ] .
+
+:ValveCover :isMaybe [ :linkCandidate :partnr-61247 ;
+            :linkScore 1e+00 ] .
+
+:ValveCoverGasket :isMaybe [ :linkCandidate :partnr-76510 ;
+            :linkScore 1.5781e-01 ],
+        [ :linkCandidate :partnr-61183 ;
+            :linkScore 2.3979e-01 ],
+        [ :linkCandidate :partnr-8313 ;
+            :linkScore 2.2363e-01 ],
+        [ :linkCandidate :partnr-69551 ;
+            :linkScore 2.1485e-01 ],
+        [ :linkCandidate :partnr-75906 ;
+            :linkScore 1.6393e-01 ] .
+
+:ValveGuide :isMaybe [ :linkCandidate :partnr-76943 ;
+            :linkScore 1e+00 ] .
+
+:WiringHarnessSupportBracket :isMaybe [ :linkCandidate :partnr-07A21443 ;
+            :linkScore 1e+00 ] .
+
