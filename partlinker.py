@@ -4,6 +4,7 @@
 #%%
 import numpy as np
 import pandas as pd
+from itertools import chain
 
 #%%
 # load in problem extractions and parts catalog
@@ -108,7 +109,7 @@ for attribute in ATTRIBUTES:
         print("WARNING: attribute already in wordmap")
     wordmap[attribute] = 'ATTRIBUTE'
     
-test_sentence = "INTAKE GASKET"
+test_sentence = "ROCKER COVER GASKET"
 
 def lex(sentence):
     tokens = []
@@ -373,9 +374,9 @@ def make_buzz_ranking(buzzwords):
         if buzzword in word_hints:
             for part in word_hints[buzzword]:
                 if part in ranking:
-                    ranking[part] += 1 / occurance[part]
+                    ranking[part] += 100.0 / len(set(chain(word_hints[buzzword],buzzwords)))
                 else:
-                    ranking[part] = 1 / occurance[part]
+                    ranking[part] = 100.0 / len(set(chain(word_hints[buzzword],buzzwords)))
     return ranking
 
 def inv(d):
@@ -519,3 +520,4 @@ for i in range(len(problem_extractions)):
         print("Action:", action['part'])
         print("Action candidates:", action_candidates)
 # %%
+# $$ \text{score}(entry, catalog) = \frac{|\text{entry} \cap \text{catalog}|}{|\text{entry} \cup \text{catalog}|} $$
