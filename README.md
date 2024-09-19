@@ -34,9 +34,18 @@ To do this we use 3 approaches: regular expressions, NER, and GPT4.
 
 ### Part links
 We link extracted part names to parts from the part catalog.
-To do this, we use a Filtered Contextual Bag-of-Words matching approach.
+
+One of the methods is called Filtered Contextual Bag-of-Words matching.
 For every unique extracted part name, we try to find the most likely matching candidates from the part catalog.
-First, we try to construct a set of candidates by matching the last word of the mentioned part name (the head of the noun phrase) ...
+First, we try to construct a set of candidates by (exactly) matching the (lemmatized) *last word* (such as "gasket") of the mentioned part name (the head of the noun phrase) to a *type* from the parts catalog (this is the filter).
+
+- If this fails, we return the similarities of the part name with the names of systems and assemblies.
+- Else, the set of candidates consists of all parts of the matched type.
+We then calculate the similarities of the extracted part name with the candidate descriptions (including the names of their assemblies and systems).
+    - If this gives any non-zero similarities, we return those.
+    - Else, we collect the descriptions of all neighboring parts in the same assembly for each candidate part. Then we return the similarities between the extracted part name and these texts.
+
+The text similarity function we use is the cosine similarity of TFIDF bag-of-words vectors.
 
 ## References
 ### MaintNet
