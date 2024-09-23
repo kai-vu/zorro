@@ -14,6 +14,11 @@
 #################################################################
 
 ###  http://Ameneh.org/aircraft.owl#address
+:dealsWith rdf:type owl:ObjectProperty ;
+         rdfs:domain :Action ;
+         rdfs:range :Problem .
+
+###  http://Ameneh.org/aircraft.owl#address
 :address rdf:type owl:ObjectProperty ;
          rdfs:domain :WorkAround ;
          rdfs:range :Effect .
@@ -21,8 +26,8 @@
 
 ###  http://Ameneh.org/aircraft.owl#consistOf
 :consistOf rdf:type owl:ObjectProperty ;
-           rdfs:domain :Procedure ;
            rdfs:range :Step .
+           rdfs:domain :Procedure ;
 
 
 ###  http://Ameneh.org/aircraft.owl#define
