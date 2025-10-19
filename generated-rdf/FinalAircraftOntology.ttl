@@ -6,8 +6,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://Ameneh.org/aircraft.owl#> .
 
-<http://Ameneh.org/aircraft.owl> rdf:type owl:Ontology ;
-                                  rdfs:comment "the developer is Ameneh Naghdi Pour.Contact: a.nghdipour"@vu.nl .
+<http://Ameneh.org/aircraft.owl> rdf:type owl:Ontology.
 
 #################################################################
 #    Object Properties
@@ -26,8 +25,8 @@
 
 ###  http://Ameneh.org/aircraft.owl#consistOf
 :consistOf rdf:type owl:ObjectProperty ;
-           rdfs:range :Step .
-           rdfs:domain :Procedure ;
+           rdfs:range :Step ;
+           rdfs:domain :Procedure .
 
 
 ###  http://Ameneh.org/aircraft.owl#define
