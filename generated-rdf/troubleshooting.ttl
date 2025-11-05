@@ -1,4 +1,4 @@
-@prefix : <http://Ameneh.org/aircraft.owl#> .
+@prefix : <https://w3id.org/zorro#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 :AdjustFuelPressure rdfs:label "Adjust fuel pressure. " ;

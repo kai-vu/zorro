@@ -1,4 +1,4 @@
-@prefix : <http://Ameneh.org/aircraft.owl#> .
+@prefix : <https://w3id.org/zorro#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 :partnr-01L23459 rdfs:label "25/32 I.D. x 3/8 O.D. x 1/32 thick (Roller tappet engines) washer" ;

@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://Ameneh.org/aircraft.owl"
+     xml:base="https://w3id.org/zorro/zorro.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://Ameneh.org/aircraft.owl">
-    <Prefix name="" IRI="http://Ameneh.org/aircraft.owl#"/>
+     ontologyIRI="https://w3id.org/zorro/zorro.owl">
+    <Prefix name="" IRI="https://w3id.org/zorro/zorro.owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -14,7 +14,7 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal xml:lang="vu.nl">the developer is Ameneh Naghdi Pour.Contact: a.nghdipour</Literal>
+        <Literal xml:lang="vu.nl">the developer is Ameneh Naghdi Pour.Contact: a.nghdipour@vu.nl</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="#Assembly"/>

@@ -1,4 +1,4 @@
-@prefix : <http://Ameneh.org/aircraft.owl#> .
+@prefix : <https://w3id.org/zorro#> .
 @prefix ns1: <http://purl.org/dc/elements/1.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -174,7 +174,7 @@
     :involves [ a :Gasket ] ;
     ns1:description "REPLACED GASKET." .
 
-:action100032 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100032 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100032" ;
     :dealsWith :problem100032 ;
     :involves [ a :AirBaffle ;
@@ -192,7 +192,7 @@
     :involves [ a :BaffleAssy ] ;
     ns1:description "REPLACED BAFFLE ASSY." .
 
-:action100035 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100035 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100035" ;
     :dealsWith :problem100035 ;
     ns1:description "REMOVED & REPLACED ALL ROCKER GASKETS." .
@@ -471,7 +471,7 @@
     :dealsWith :problem100085 ;
     ns1:description "STARTED ENGINE, LEANED MIXTURE TO CLEAN SPARK PLUGS. MA" .
 
-:action100086 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100086 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100086" ;
     :dealsWith :problem100086 ;
     :involves [ a :IntakeGasket ;
@@ -488,27 +488,27 @@
     :dealsWith :problem100088 ;
     ns1:description "TIGHTENED SCREWS." .
 
-:action100089 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100089 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100089" ;
     :dealsWith :problem100089 ;
     :involves [ a :InductionTubeGasket ;
             :atCylinder 2 ] ;
     ns1:description "REMOVED & REPLACED #2 INDUCTION TUBE GASKET." .
 
-:action100090 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100090 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100090" ;
     :dealsWith :problem100090 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKETS." .
 
-:action100091 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100091 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100091" ;
     :dealsWith :problem100091 ;
     :involves [ a :IntakeGasket ;
             :atCylinder 1 ] ;
     ns1:description "REMOVED & REPLACED #1 INTAKE GASKET W/ NEW." .
 
-:action100092 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100092 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100092" ;
     :dealsWith :problem100092 ;
     :involves [ a :RockerCoverGasket ;
@@ -517,13 +517,13 @@
             :atCylinder 3 ] ;
     ns1:description "REMOVED & REPLACED #3 & 4 ROCKER COVER GASKETS W/ NEW." .
 
-:action100093 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100093 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100093" ;
     :dealsWith :problem100093 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKET." .
 
-:action100094 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100094 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100094" ;
     :dealsWith :problem100094 ;
     :involves [ a :IntakeGasket ;
@@ -535,7 +535,7 @@
     :dealsWith :problem100095 ;
     ns1:description "TIGHTENED SCREWS." .
 
-:action100096 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100096 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100096" ;
     :dealsWith :problem100096 ;
     :involves [ a :RockerCoverGasket ;
@@ -557,7 +557,7 @@
     :dealsWith :problem100099 ;
     ns1:description "REMOVED COWLING, REMOVED ALL SPARK PLUGS. REAMED #3 EXH" .
 
-:action100100 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100100 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100100" ;
     :dealsWith :problem100100 ;
     :involves [ a :Gasket ] ;
@@ -689,14 +689,14 @@
     :involves [ a :IntakeGasket ] ;
     ns1:description "REPLACED INTAKE GASKET." .
 
-:action100122 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100122 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100122" ;
     :dealsWith :problem100122 ;
     :involves [ a :IntakeGasket ;
             :atCylinder 2 ] ;
     ns1:description "REMOVED & REPLACED #2 INTAKE GASKET." .
 
-:action100123 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100123 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100123" ;
     :dealsWith :problem100123 ;
     :involves [ a :RockerGasket ;
@@ -728,13 +728,13 @@
     :dealsWith :problem100127 ;
     ns1:description "STOP DRILLED CRACK, FABRICATED PATCH W/ LIKE MATERIAL." .
 
-:action100128 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100128 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100128" ;
     :dealsWith :problem100128 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action100129 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100129 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100129" ;
     :dealsWith :problem100129 ;
     :involves [ a :Gasket ] ;
@@ -750,7 +750,7 @@
     :dealsWith :problem100131 ;
     ns1:description "FREED EXHAUST VALVE, INSPECTED & FOUND TO BE SERVICEABL" .
 
-:action100132 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100132 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100132" ;
     :dealsWith :problem100132 ;
     :involves [ a :RockerCoverGasket ;
@@ -759,7 +759,7 @@
             :atCylinder 3 ] ;
     ns1:description "REMOVED & REPLACED #1 & 3 ROCKER COVER GASKETS." .
 
-:action100133 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100133 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100133" ;
     :dealsWith :problem100133 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -770,13 +770,13 @@
     :dealsWith :problem100134 ;
     ns1:description "DISCONNECTED LINES & WIRES TO REMOVE BAFFLE. REMOVED BA" .
 
-:action100135 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100135 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100135" ;
     :dealsWith :problem100135 ;
     :involves [ a :ChtProbe ] ;
     ns1:description "REMOVED & REPLACED CHT PROBE. INSP ENGINE, NO DEFECTS N" .
 
-:action100136 a <http://Ameneh.org/aircraft.owl#Ops&LeakCheckAction> ;
+:action100136 a <https://w3id.org/zorro#Ops&LeakCheckAction> ;
     rdfs:label "action100136" ;
     :dealsWith :problem100136 ;
     ns1:description "OPS & LEAK CHECK GOOD." .
@@ -796,7 +796,7 @@
     :dealsWith :problem100139 ;
     ns1:description "REPLACED ALL 3 GASKETS." .
 
-:action100140 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100140 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100140" ;
     :dealsWith :problem100140 ;
     :involves [ a :Gasket ] ;
@@ -905,7 +905,7 @@
     :dealsWith :problem100157 ;
     ns1:description "RAN A/C, COULDN'T DUPLICATE DISCREP. NO DEFECTS NOTED D" .
 
-:action100158 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100158 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100158" ;
     :dealsWith :problem100158 ;
     :involves [ a :RockerCover ;
@@ -920,7 +920,7 @@
     :involves [ a :BaffleSeal ] ;
     ns1:description "RESECURED BAFFLE SEAL." .
 
-:action100160 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100160 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100160" ;
     :dealsWith :problem100160 ;
     :involves [ a :Intake ;
@@ -1057,7 +1057,7 @@
     :involves [ a :Firewall ] ;
     ns1:description "FIREWALL REPAIRED BY ODEGAARD WINGS. " .
 
-:action100187 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100187 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100187" ;
     :dealsWith :problem100187 ;
     :involves [ a :IntakeGasket ;
@@ -1066,13 +1066,13 @@
             :atCylinder 4 ] ;
     ns1:description "REMOVED & REPLACED #2 & 4 INTAKE GASKETS." .
 
-:action100188 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100188 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100188" ;
     :dealsWith :problem100188 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKET." .
 
-:action100189 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100189 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100189" ;
     :dealsWith :problem100189 ;
     :involves [ a :RockerCoverGasket ;
@@ -1095,7 +1095,7 @@
     :dealsWith :problem100192 ;
     ns1:description "TIGHTENED HOSE CLAMPS." .
 
-:action100193 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100193 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100193" ;
     :dealsWith :problem100193 ;
     :involves [ a :Seal ] ;
@@ -1106,7 +1106,7 @@
     :dealsWith :problem100194 ;
     ns1:description "PREPPED AREA & APPLIED SEALANT." .
 
-:action100195 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100195 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100195" ;
     :dealsWith :problem100195 ;
     :involves [ a :EngineBaffleButton ;
@@ -1118,13 +1118,13 @@
     :dealsWith :problem100196 ;
     ns1:description "INSTALLED NEW SCREW." .
 
-:action100197 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100197 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100197" ;
     :dealsWith :problem100197 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKETS." .
 
-:action100198 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100198 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100198" ;
     :dealsWith :problem100198 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -1150,7 +1150,7 @@
     :dealsWith :problem100202 ;
     ns1:description "TIGHTENED ALL SCREWS." .
 
-:action100203 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100203 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100203" ;
     :dealsWith :problem100203 ;
     :involves [ a :IntakeGasket ;
@@ -1158,7 +1158,7 @@
             :atEngine "R" ] ;
     ns1:description "REMOVED & REPLACED #2 INTAKE GASKET ON R/H ENGINE." .
 
-:action100204 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100204 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100204" ;
     :dealsWith :problem100204 ;
     :involves [ a :IntakeGasket ;
@@ -1172,7 +1172,7 @@
             :atEngine "L" ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKET 2, 3 & 4 ON L/H ENGINE" .
 
-:action100205 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100205 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100205" ;
     :dealsWith :problem100205 ;
     :involves [ a :RockerCoverGasket ;
@@ -1183,7 +1183,7 @@
             :atEngine "R" ] ;
     ns1:description "REMOVED & REPLACED #2 & 4 ROCKER COVER GASKETS ON R/H E" .
 
-:action100206 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100206 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100206" ;
     :dealsWith :problem100206 ;
     ns1:description "REMOVED & REPLACED #3 CYL ASSY. REEMED 1, 2, 4 EXHAUST" .
@@ -1193,20 +1193,20 @@
     :dealsWith :problem100207 ;
     ns1:description "RAN ENGINE, #3 CYL NO EGT. PULLED PROP THROUGH 4 COMPRE" .
 
-:action100208 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100208 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100208" ;
     :dealsWith :problem100208 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKETS." .
 
-:action100209 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100209 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100209" ;
     :dealsWith :problem100209 ;
     :involves [ a :IntakeGasket ;
             :atCylinder 2 ] ;
     ns1:description "REMOVED & REPLACED CYL #2 INTAKE GASKET." .
 
-:action100210 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100210 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100210" ;
     :dealsWith :problem100210 ;
     :involves [ a :RockerCoverGasket ;
@@ -1222,31 +1222,31 @@
             :atCylinder 3 ] ;
     ns1:description "REMOVED CYL #3 AFT BAFFLE, REPLACED BROKEN FASTENERS &" .
 
-:action100212 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100212 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100212" ;
     :dealsWith :problem100212 ;
     :involves [ a :RockerCover ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER W/ NEW." .
 
-:action100213 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100213 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100213" ;
     :dealsWith :problem100213 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKETS." .
 
-:action100214 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100214 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100214" ;
     :dealsWith :problem100214 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action100215 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100215 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100215" ;
     :dealsWith :problem100215 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action100216 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100216 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100216" ;
     :dealsWith :problem100216 ;
     ns1:description "REMOVED & REPLACED ALL GASKETS." .
@@ -1268,7 +1268,7 @@
     :involves [ a :HoseClamp ] ;
     ns1:description "TIGHTENED HOSE CLAMPS." .
 
-:action100220 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100220 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100220" ;
     :dealsWith :problem100220 ;
     :involves [ a :IntakeGasket ;
@@ -1456,7 +1456,7 @@
             :atEngine "R" ] ;
     ns1:description "REMOVED R/H REAR BAFFLE." .
 
-:action100250 a <http://Ameneh.org/aircraft.owl#Installed&TorquedAction> ;
+:action100250 a <https://w3id.org/zorro#Installed&TorquedAction> ;
     rdfs:label "action100250" ;
     :dealsWith :problem100250 ;
     :involves [ a :RockerBoxCover ;
@@ -1469,7 +1469,7 @@
     :involves [ a :Gasket ] ;
     ns1:description "REPLACED GASKET." .
 
-:action100252 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100252 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100252" ;
     :dealsWith :problem100252 ;
     :involves [ a :Bracket ] ;
@@ -1485,14 +1485,14 @@
     :dealsWith :problem100254 ;
     ns1:description "REINSTALLED ENGINE IAW MAINTENANCE MAN" .
 
-:action100255 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100255 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100255" ;
     :dealsWith :problem100255 ;
     :involves [ a :RockerCoverGasket ;
             :atCylinder 2 ] ;
     ns1:description "REMOVED & REPLACED #2 ROCKER COVER GASKET." .
 
-:action100256 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100256 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100256" ;
     :dealsWith :problem100256 ;
     :involves [ a :Gasket ] ;
@@ -1503,7 +1503,7 @@
     :dealsWith :problem100257 ;
     ns1:description "REQUIRES MX FLIGHT TO VERIFY DISCREPANCY" .
 
-:action100258 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100258 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100258" ;
     :dealsWith :problem100258 ;
     :involves [ a :RockerCoverGasket ;
@@ -1514,7 +1514,7 @@
             :atCylinder 1 ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKETS 1, 3 & 4." .
 
-:action100259 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100259 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100259" ;
     :dealsWith :problem100259 ;
     :involves [ a :Gasket ;
@@ -1808,7 +1808,7 @@
     :dealsWith :problem100306 ;
     ns1:description "REPLACED CYL #2 & 3 INTAKE GASKETS." .
 
-:action100307 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100307 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100307" ;
     :dealsWith :problem100307 ;
     ns1:description "REMOVED & REPLACED INTAKE GASKET W/ NEW." .
@@ -1818,12 +1818,12 @@
     :dealsWith :problem100308 ;
     ns1:description "TIGHTENED SCREWS." .
 
-:action100309 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100309 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100309" ;
     :dealsWith :problem100309 ;
     ns1:description "REMOVED & REPLACED STARTER RING GEAR. RESAFETY WIRED PR" .
 
-:action100310 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100310 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100310" ;
     :dealsWith :problem100310 ;
     ns1:description "REMOVED & REPLACED #2 & 4 INTAKE GASKETS W/ NEW." .
@@ -1833,7 +1833,7 @@
     :dealsWith :problem100311 ;
     ns1:description "REPLACED BOTH BAFFLE PLUGS." .
 
-:action100312 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100312 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100312" ;
     :dealsWith :problem100312 ;
     ns1:description "REMOVED & REPLACED #1 ROCKER COVER GASKET." .
@@ -1853,12 +1853,12 @@
     :dealsWith :problem100315 ;
     ns1:description "REPLACED GASKET." .
 
-:action100316 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100316 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100316" ;
     :dealsWith :problem100316 ;
     ns1:description "REMOVED & REPLACED #2 ROCKER COVER GASKET." .
 
-:action100317 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100317 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100317" ;
     :dealsWith :problem100317 ;
     ns1:description "REMOVED & REPLACED #2 & 3 ROCKER COVER GASKETS." .
@@ -2279,7 +2279,7 @@
     :involves [ a :Gasket ] ;
     ns1:description "REPLACED GASKET." .
 
-:action100384 a <http://Ameneh.org/aircraft.owl#Insp'DAction> ;
+:action100384 a <https://w3id.org/zorro#Insp'DAction> ;
     rdfs:label "action100384" ;
     :dealsWith :problem100384 ;
     ns1:description "INSP'D, FOUND #3 CYL EXHAUST VALVE STUCK OPEN, CONTACTE" .
@@ -4517,7 +4517,7 @@
             :atCylinder 4 ] ;
     ns1:description "REPLACED CYL #4 INTAKE GASKET." .
 
-:action100748 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100748 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100748" ;
     :dealsWith :problem100748 ;
     :involves [ a :IntakeGasket ] ;
@@ -4528,13 +4528,13 @@
     :dealsWith :problem100749 ;
     ns1:description "STOP DRILLED CRACK." .
 
-:action100750 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100750 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100750" ;
     :dealsWith :problem100750 ;
     :involves [ a :Seal ] ;
     ns1:description "REMOVED & REPLACED SEAL." .
 
-:action100751 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100751 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100751" ;
     :dealsWith :problem100751 ;
     :involves [ a :Seal ] ;
@@ -4572,7 +4572,7 @@
     :involves [ a :InductionTubeGasket ] ;
     ns1:description "INSTALLED NEW INDUCTION TUBE GASKETS." .
 
-:action100757 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100757 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100757" ;
     :dealsWith :problem100757 ;
     :involves [ a :IntakeGasket ] ;
@@ -4590,7 +4590,7 @@
     :involves [ a :ButtonPlug ] ;
     ns1:description "REPLACED BUTTON PLUGS." .
 
-:action100760 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100760 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100760" ;
     :dealsWith :problem100760 ;
     :involves [ a :IntakeGasket ] ;
@@ -5309,13 +5309,13 @@
     :involves [ a :PrimerLineSleeve ] ;
     ns1:description "REPLACED TORN PRIMER LINE SLEEVE." .
 
-:action100886 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100886 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100886" ;
     :dealsWith :problem100886 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action100887 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100887 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100887" ;
     :dealsWith :problem100887 ;
     :involves [ a :IntakeGasket ;
@@ -5329,7 +5329,7 @@
     :involves [ a :BaffleSeal ] ;
     ns1:description "RESECURED BAFFLE SEAL." .
 
-:action100889 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100889 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100889" ;
     :dealsWith :problem100889 ;
     :involves [ a :RockerCoverGasket ;
@@ -5355,13 +5355,13 @@
     :dealsWith :problem100892 ;
     ns1:description "RAN UP A/C, LEANED MIXTURE TO CLEAR FOULED PLUG. MAG DR" .
 
-:action100893 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100893 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100893" ;
     :dealsWith :problem100893 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKETS." .
 
-:action100894 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100894 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100894" ;
     :dealsWith :problem100894 ;
     :involves [ a :RockerGasket ] ;
@@ -5373,7 +5373,7 @@
     :involves [ a :Seal ] ;
     ns1:description "SECURED SEAL." .
 
-:action100896 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100896 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100896" ;
     :dealsWith :problem100896 ;
     :involves [ a :RockerCoverGasket ;
@@ -5384,7 +5384,7 @@
             :atEngine "L" ] ;
     ns1:description "REMOVED & REPLACED L/H ENGINE #3 & 4 ROCKER COVER GASKE" .
 
-:action100897 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100897 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100897" ;
     :dealsWith :problem100897 ;
     :involves [ a :RockerCoverGasket ;
@@ -5395,19 +5395,19 @@
             :atEngine "R" ] ;
     ns1:description "REMOVED & REPLACED R/H ENGINE #3 & 4 ROCKER COVER GASKE" .
 
-:action100898 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100898 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100898" ;
     :dealsWith :problem100898 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKETS." .
 
-:action100899 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100899 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100899" ;
     :dealsWith :problem100899 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action100900 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100900 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100900" ;
     :dealsWith :problem100900 ;
     :involves [ a :RockerCoverGasket ;
@@ -5433,27 +5433,27 @@
     :dealsWith :problem100903 ;
     ns1:description "STOP DRILLED CRACK." .
 
-:action100904 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100904 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100904" ;
     :dealsWith :problem100904 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKET." .
 
-:action100905 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100905 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100905" ;
     :dealsWith :problem100905 ;
     :involves [ a :RockerCoverGasket ;
             :atCylinder 2 ] ;
     ns1:description "REMOVED & REPLACED #2 ROCKER COVER GASKET." .
 
-:action100906 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100906 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100906" ;
     :dealsWith :problem100906 ;
     :involves [ a :IntakeGasket ;
             :atCylinder 4 ] ;
     ns1:description "REMOVED & REPLACED #4 INTAKE GASKET." .
 
-:action100907 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100907 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100907" ;
     :dealsWith :problem100907 ;
     :involves [ a :RockerCoverGasket ;
@@ -5465,7 +5465,7 @@
     :dealsWith :problem100908 ;
     ns1:description "FOR TEST FLIGHT." .
 
-:action100909 a <http://Ameneh.org/aircraft.owl#Removed,Cleaned&InstalledAction> ;
+:action100909 a <https://w3id.org/zorro#Removed,Cleaned&InstalledAction> ;
     rdfs:label "action100909" ;
     :dealsWith :problem100909 ;
     :involves [ a :FuelInjNozzle ;
@@ -5479,7 +5479,7 @@
     :dealsWith :problem100910 ;
     ns1:description "REMOVED SPARK PLUGS, LEADS, SIDE BAFFLES, LOWER COUPLIN" .
 
-:action100911 a <http://Ameneh.org/aircraft.owl#Removed,Cleaned,ReinstalledAction> ;
+:action100911 a <https://w3id.org/zorro#Removed,Cleaned,ReinstalledAction> ;
     rdfs:label "action100911" ;
     :dealsWith :problem100911 ;
     :involves [ a :FuelInjNozzle ;
@@ -5488,13 +5488,13 @@
             :atCylinder 4 ] ;
     ns1:description "REMOVED, CLEANED, REINSTALLED #2, 4 FUEL INJ NOZZLES. O" .
 
-:action100912 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100912 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100912" ;
     :dealsWith :problem100912 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET W/ NEW." .
 
-:action100913 a <http://Ameneh.org/aircraft.owl#RanUpA/CAction> ;
+:action100913 a <https://w3id.org/zorro#RanUpA/CAction> ;
     rdfs:label "action100913" ;
     :dealsWith :problem100913 ;
     ns1:description "RAN UP A/C 2ND TIME, COMPRESSIONS ABOUT 20 PSI." .
@@ -5509,7 +5509,7 @@
     :dealsWith :problem100915 ;
     ns1:description "ATTEMPTED TO STAKE VALVE BUT COMPRESSION REMAINS AT 40/" .
 
-:action100916 a <http://Ameneh.org/aircraft.owl#RanA/CAction> ;
+:action100916 a <https://w3id.org/zorro#RanA/CAction> ;
     rdfs:label "action100916" ;
     :dealsWith :problem100916 ;
     ns1:description "RAN A/C, COMPRESSIONS REMAINS LOW. DISASSEMBLED AS REQU" .
@@ -5524,7 +5524,7 @@
     :dealsWith :problem100918 ;
     ns1:description "REMOVED BAFFLE, REINSTALLED BRACKET. REINSTALLED BAFFLE" .
 
-:action100919 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100919 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100919" ;
     :dealsWith :problem100919 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -5807,13 +5807,13 @@
     :involves [ a :BaffleSeal ] ;
     ns1:description "RESECURED BAFFLE SEAL." .
 
-:action100967 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100967 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100967" ;
     :dealsWith :problem100967 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action100968 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100968 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100968" ;
     :dealsWith :problem100968 ;
     :involves [ a :IntakeGasket ] ;
@@ -5824,32 +5824,32 @@
     :dealsWith :problem100969 ;
     ns1:description "INSTALLED NEW BOLTS & WASHERS." .
 
-:action100970 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100970 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100970" ;
     :dealsWith :problem100970 ;
     :involves [ a :Screw ] ;
     ns1:description "REMOVED & REPLACED SCREW." .
 
-:action100971 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100971 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100971" ;
     :dealsWith :problem100971 ;
     :involves [ a :RockerCoverGasket ;
             :atCylinder 1 ] ;
     ns1:description "REMOVED & REPLACED #1 ROCKER COVER GASKET." .
 
-:action100972 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100972 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100972" ;
     :dealsWith :problem100972 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action100973 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100973 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100973" ;
     :dealsWith :problem100973 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action100974 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100974 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100974" ;
     :dealsWith :problem100974 ;
     :involves [ a :TieRod ] ;
@@ -5873,7 +5873,7 @@
             :atCylinder 1 ] ;
     ns1:description "REPLACED #1 INTAKE GASKET." .
 
-:action100978 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100978 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100978" ;
     :dealsWith :problem100978 ;
     :involves [ a :IntakeGasket ] ;
@@ -5885,7 +5885,7 @@
     :involves [ a :BaffleSupportRod ] ;
     ns1:description "TIGHTENED BAFFLE SUPPORT ROD." .
 
-:action100980 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action100980 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action100980" ;
     :dealsWith :problem100980 ;
     :involves [ a :IntakeGasket ] ;
@@ -6794,20 +6794,20 @@
     :dealsWith :problem101143 ;
     ns1:description "STOP DRILLED CRACK." .
 
-:action101144 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101144 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101144" ;
     :dealsWith :problem101144 ;
     :involves [ a :IntakeGasket ;
             :atCylinder 4 ] ;
     ns1:description "REMOVED & REPLACED CYL #4 INTAKE GASKET." .
 
-:action101145 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101145 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101145" ;
     :dealsWith :problem101145 ;
     :involves [ a :BafflePlug ] ;
     ns1:description "REMOVED & REPLACED BAFFLE PLUG." .
 
-:action101146 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101146 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101146" ;
     :dealsWith :problem101146 ;
     :involves [ a :BaffleButton ] ;
@@ -6840,7 +6840,7 @@
     :dealsWith :problem101151 ;
     ns1:description "INSTALLED NEW SCREW ON BAFFLE." .
 
-:action101152 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101152 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101152" ;
     :dealsWith :problem101152 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -6856,19 +6856,19 @@
     :dealsWith :problem101154 ;
     ns1:description "REMOVED GASKET. DURING INSTALLATION TORE NEW GASKET. RE" .
 
-:action101155 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101155 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101155" ;
     :dealsWith :problem101155 ;
     :involves [ a :RockerGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER GASKETS." .
 
-:action101156 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101156 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101156" ;
     :dealsWith :problem101156 ;
     :involves [ a :SparkPlugBafflePlug ] ;
     ns1:description "REMOVED & REPLACED SPARK PLUG BAFFLE PLUGS." .
 
-:action101157 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101157 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101157" ;
     :dealsWith :problem101157 ;
     :involves [ a :IntakeGasket ;
@@ -6876,7 +6876,7 @@
             :atEngine "R" ] ;
     ns1:description "REMOVED & REPLACED #3 INTAKE GASKET ON R/H ENGINE." .
 
-:action101158 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101158 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101158" ;
     :dealsWith :problem101158 ;
     :involves [ a :IntakeGasket ;
@@ -6884,7 +6884,7 @@
             :atEngine "L" ] ;
     ns1:description "REMOVED & REPLACED #4 INTAKE GASKET ON L/H ENGINE." .
 
-:action101159 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101159 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101159" ;
     :dealsWith :problem101159 ;
     :involves [ a :BaffleSpringWNew ] ;
@@ -7460,7 +7460,7 @@
     :dealsWith :problem101262 ;
     ns1:description "REMOVED OIL COOLER, CLEANED AREA - NO CRACKING NOTED. R" .
 
-:action101263 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101263 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101263" ;
     :dealsWith :problem101263 ;
     ns1:description "REMOVED & REPLACED L/H ENG CYL #3 ROCKER COVER GASKET." .
@@ -7470,22 +7470,22 @@
     :dealsWith :problem101264 ;
     ns1:description "INSTALLED NEW SCREW." .
 
-:action101265 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101265 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101265" ;
     :dealsWith :problem101265 ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action101266 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101266 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101266" ;
     :dealsWith :problem101266 ;
     ns1:description "REMOVED & REPLACED #2 INTAKE GASKET." .
 
-:action101267 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101267 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101267" ;
     :dealsWith :problem101267 ;
     ns1:description "REMOVED & REPLACED ANCHOR STAND ASSY." .
 
-:action101268 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101268 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101268" ;
     :dealsWith :problem101268 ;
     ns1:description "REMOVED & REPLACED GASKET." .
@@ -7505,7 +7505,7 @@
     :dealsWith :problem101271 ;
     ns1:description "PERFORMED HIDDEN DAMAGE ON AFFECTED AREA, NO DAMAGE NOT" .
 
-:action101272 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101272 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101272" ;
     :dealsWith :problem101272 ;
     ns1:description "REMOVED & REPLACED GASKET W/ NEW." .
@@ -7515,37 +7515,37 @@
     :dealsWith :problem101273 ;
     ns1:description "REPLACED ROCKER COVER GASKET." .
 
-:action101274 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101274 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101274" ;
     :dealsWith :problem101274 ;
     ns1:description "REMOVED & REPLACED GASKETS." .
 
-:action101275 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101275 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101275" ;
     :dealsWith :problem101275 ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKET." .
 
-:action101276 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101276 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101276" ;
     :dealsWith :problem101276 ;
     ns1:description "REMOVED & REPLACED GASKET FOR L/H ENG CYL #2 INTAKE." .
 
-:action101277 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101277 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101277" ;
     :dealsWith :problem101277 ;
     ns1:description "REMOVED & REPLACED L/H ENG CYL #1, 2, 3 ROCKER COVER GA" .
 
-:action101278 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101278 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101278" ;
     :dealsWith :problem101278 ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKETS ON CYL #1 & 2." .
 
-:action101279 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101279 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101279" ;
     :dealsWith :problem101279 ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action101280 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101280 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101280" ;
     :dealsWith :problem101280 ;
     ns1:description "REMOVED & REPLACED GASKET." .
@@ -8709,33 +8709,33 @@
     :dealsWith :problem101482 ;
     ns1:description "STOP DRILLED CRACK." .
 
-:action101483 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101483 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101483" ;
     :dealsWith :problem101483 ;
     :involves [ a :Intake ;
             :atCylinder 4 ] ;
     ns1:description "REMOVED & REPLACED CYL #4 INTAKE." .
 
-:action101484 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101484 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101484" ;
     :dealsWith :problem101484 ;
     :involves [ a :RockerCoverGasket ;
             :atCylinder 3 ] ;
     ns1:description "REMOVED & REPLACED CYL #3 ROCKER COVER GASKET." .
 
-:action101485 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101485 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101485" ;
     :dealsWith :problem101485 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKET." .
 
-:action101486 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101486 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101486" ;
     :dealsWith :problem101486 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKET." .
 
-:action101487 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101487 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101487" ;
     :dealsWith :problem101487 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -8747,7 +8747,7 @@
     :involves [ a :Gasket ] ;
     ns1:description "REPLACED GASKET." .
 
-:action101489 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101489 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101489" ;
     :dealsWith :problem101489 ;
     :involves [ a :Gasket ] ;
@@ -8769,20 +8769,20 @@
     :involves [ a :Nut ] ;
     ns1:description "INSTALLED NEW NUT." .
 
-:action101493 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101493 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101493" ;
     :dealsWith :problem101493 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKETS." .
 
-:action101494 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101494 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101494" ;
     :dealsWith :problem101494 ;
     :involves [ a :RockerCoverGasket ;
             :atCylinder 3 ] ;
     ns1:description "REMOVED & REPLACED CYL #3 ROCKER COVER GASKETS." .
 
-:action101495 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101495 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101495" ;
     :dealsWith :problem101495 ;
     :involves [ a :RockerCoverGask ;
@@ -8836,7 +8836,7 @@
     :involves [ a :Patch ] ;
     ns1:description "FABRICATED PATCH W/ LIKE MATERIALS. RIVETED IAW " .
 
-:action101503 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101503 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101503" ;
     :dealsWith :problem101503 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -8847,40 +8847,40 @@
     :dealsWith :problem101504 ;
     ns1:description "STOP DRILLED CRACK." .
 
-:action101505 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101505 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101505" ;
     :dealsWith :problem101505 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKETS." .
 
-:action101506 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101506 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101506" ;
     :dealsWith :problem101506 ;
     :involves [ a :IntakeGasket ;
             :atCylinder 2 ] ;
     ns1:description "REMOVED & REPLACED #2 INTAKE GASKET." .
 
-:action101507 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101507 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101507" ;
     :dealsWith :problem101507 ;
     :involves [ a :RockerCoverGasket ;
             :atCylinder 2 ] ;
     ns1:description "REMOVED & REPLACED #2 ROCKER COVER GASKET." .
 
-:action101508 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101508 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101508" ;
     :dealsWith :problem101508 ;
     :involves [ a :RockerCoverGasket ;
             :atCylinder 3 ] ;
     ns1:description "REMOVED & REPLACED #3 ROCKER COVER GASKET." .
 
-:action101509 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101509 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101509" ;
     :dealsWith :problem101509 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKET." .
 
-:action101510 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101510 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101510" ;
     :dealsWith :problem101510 ;
     :involves [ a :Gasket ] ;
@@ -8898,13 +8898,13 @@
     :involves [ a :TieWire ] ;
     ns1:description "INSTALLED NEW TIE WIRE." .
 
-:action101513 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101513 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101513" ;
     :dealsWith :problem101513 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKET." .
 
-:action101514 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101514 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101514" ;
     :dealsWith :problem101514 ;
     :involves [ a :IntakeGasket ] ;
@@ -8915,14 +8915,14 @@
     :dealsWith :problem101515 ;
     ns1:description "STOP DRILLED CRACK." .
 
-:action101516 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101516 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101516" ;
     :dealsWith :problem101516 ;
     :involves [ a :IntakeGasket ;
             :atCylinder 2 ] ;
     ns1:description "REMOVED & REPLACED #2 INTAKE GASKET." .
 
-:action101517 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101517 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101517" ;
     :dealsWith :problem101517 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -8933,7 +8933,7 @@
     :dealsWith :problem101518 ;
     ns1:description "STOP DRILLED CRACK." .
 
-:action101519 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101519 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101519" ;
     :dealsWith :problem101519 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -9326,7 +9326,7 @@
     :dealsWith :problem101585 ;
     ns1:description "INSTALLED PATCH FABRICATED OUT OF LIKE MATERIAL." .
 
-:action101586 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101586 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101586" ;
     :dealsWith :problem101586 ;
     :involves [ a :RockerCoverGasket ;
@@ -9339,12 +9339,12 @@
     :involves [ a :IntakeGasket ] ;
     ns1:description "REPLACED INTAKE GASKET." .
 
-:action101588 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101588 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101588" ;
     :dealsWith :problem101588 ;
     ns1:description "REMOVED & REPLACED GASKET W/ NEW." .
 
-:action101589 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101589 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101589" ;
     :dealsWith :problem101589 ;
     ns1:description "REMOVED & REPLACED GASKET." .
@@ -9354,13 +9354,13 @@
     :dealsWith :problem101590 ;
     ns1:description "STOP DRILLED CRACKS, FABRICATED PATCH OUT OF LIKE MATER" .
 
-:action101591 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101591 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101591" ;
     :dealsWith :problem101591 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKET." .
 
-:action101592 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101592 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101592" ;
     :dealsWith :problem101592 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -9377,37 +9377,37 @@
     :involves [ a :BaffleSeal ] ;
     ns1:description "RESECURED BAFFLE SEAL." .
 
-:action101595 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101595 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101595" ;
     :dealsWith :problem101595 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKET W/ NEW." .
 
-:action101596 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101596 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101596" ;
     :dealsWith :problem101596 ;
     ns1:description "REMOVED & REPLACED BROKEN BRACKET." .
 
-:action101597 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101597 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101597" ;
     :dealsWith :problem101597 ;
     :involves [ a :RockerCoverGasket ;
             :atCylinder 4 ] ;
     ns1:description "REMOVED & REPLACED CYL #4 ROCKER COVER GASKET & RETAPPE" .
 
-:action101598 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101598 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101598" ;
     :dealsWith :problem101598 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKETS." .
 
-:action101599 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101599 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101599" ;
     :dealsWith :problem101599 ;
     :involves [ a :BafflePlug ] ;
     ns1:description "REMOVED & REPLACED BAFFLE PLUGS." .
 
-:action101600 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101600 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101600" ;
     :dealsWith :problem101600 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -9534,7 +9534,7 @@
     :involves [ a :BafflePlug ] ;
     ns1:description "INSTALLED NEW BAFFLE PLUG." .
 
-:action101622 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101622 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101622" ;
     :dealsWith :problem101622 ;
     :involves [ a :IntakeGasket ] ;
@@ -9546,19 +9546,19 @@
     :involves [ a :BaffleSeal ] ;
     ns1:description "RESECURED BAFFLE SEAL." .
 
-:action101624 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101624 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101624" ;
     :dealsWith :problem101624 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKET." .
 
-:action101625 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101625 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101625" ;
     :dealsWith :problem101625 ;
     :involves [ a :BafflePlug ] ;
     ns1:description "REMOVED & REPLACED BAFFLE PLUG." .
 
-:action101626 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101626 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101626" ;
     :dealsWith :problem101626 ;
     :involves [ a :IntakeGasket ;
@@ -9622,19 +9622,19 @@
     :involves [ a :BaffleSeal ] ;
     ns1:description "RESECURED BAFFLE SEAL." .
 
-:action101638 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101638 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101638" ;
     :dealsWith :problem101638 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKETS." .
 
-:action101639 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101639 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101639" ;
     :dealsWith :problem101639 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKETS." .
 
-:action101640 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101640 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101640" ;
     :dealsWith :problem101640 ;
     :involves [ a :IntakeGasket ] ;
@@ -9647,7 +9647,7 @@
             :atCylinder 4 ] ;
     ns1:description "INSTALLED NEW #4 INDUCTION TUBE GASKET." .
 
-:action101642 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101642 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101642" ;
     :dealsWith :problem101642 ;
     :involves [ a :Gasket ] ;
@@ -9665,7 +9665,7 @@
     :dealsWith :problem101644 ;
     ns1:description "STAKED VALVES - NO CHANGE IN COMPRESSION." .
 
-:action101645 a <http://Ameneh.org/aircraft.owl#RanUp&LeakCk'EdAction> ;
+:action101645 a <https://w3id.org/zorro#RanUp&LeakCk'EdAction> ;
     rdfs:label "action101645" ;
     :dealsWith :problem101645 ;
     ns1:description "RAN UP & LEAK CK'ED - CK GOOD. COMPRESSION CK 79/80." .
@@ -9741,7 +9741,7 @@
     :dealsWith :problem101659 ;
     ns1:description "REINSTALLED 45 DEGREE FITTING & REATTACHED CYL HEAD END" .
 
-:action101660 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101660 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101660" ;
     :dealsWith :problem101660 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -9920,26 +9920,26 @@
     :dealsWith :problem101690 ;
     ns1:description "RESWEDGED #3 INTAKE TUBE IAW LYCOMING OVERHAUL MANUAL." .
 
-:action101691 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101691 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101691" ;
     :dealsWith :problem101691 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKETS, CLEANED LEAKS." .
 
-:action101692 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101692 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101692" ;
     :dealsWith :problem101692 ;
     :involves [ a :IntakeGasket ;
             :atCylinder 2 ] ;
     ns1:description "REMOVED & REPLACED #2 INTAKE GASKET." .
 
-:action101693 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101693 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101693" ;
     :dealsWith :problem101693 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKET." .
 
-:action101694 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101694 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101694" ;
     :dealsWith :problem101694 ;
     :involves [ a :IntakeGasket ;
@@ -9951,7 +9951,7 @@
     :dealsWith :problem101695 ;
     ns1:description "REMOVED FOD" .
 
-:action101696 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101696 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101696" ;
     :dealsWith :problem101696 ;
     :involves [ a :Gasket ] ;
@@ -9963,20 +9963,20 @@
     :involves [ a :Plug ] ;
     ns1:description "REPLACED PLUGS." .
 
-:action101698 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101698 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101698" ;
     :dealsWith :problem101698 ;
     :involves [ a :IntakeGasket ;
             :atCylinder 4 ] ;
     ns1:description "REMOVED & REPLACED #4 INTAKE GASKET." .
 
-:action101699 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101699 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101699" ;
     :dealsWith :problem101699 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action101700 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101700 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101700" ;
     :dealsWith :problem101700 ;
     :involves [ a :Gasket ] ;
@@ -10474,7 +10474,7 @@
     :dealsWith :problem101784 ;
     ns1:description "STOP DRILLED CRACK." .
 
-:action101785 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101785 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101785" ;
     :dealsWith :problem101785 ;
     :involves [ a :RockerCoverGasket ;
@@ -10492,7 +10492,7 @@
     :dealsWith :problem101787 ;
     ns1:description "REPLACED & INSTALLED 2 BUTTONS." .
 
-:action101788 a <http://Ameneh.org/aircraft.owl#Replaced&TightenedAction> ;
+:action101788 a <https://w3id.org/zorro#Replaced&TightenedAction> ;
     rdfs:label "action101788" ;
     :dealsWith :problem101788 ;
     ns1:description "REPLACED MISSING SCREW & TIGHTENED ALL SCREWS." .
@@ -10523,7 +10523,7 @@
     :involves [ a :IntakeGasket ] ;
     ns1:description "REPLACED INTAKE GASKET." .
 
-:action101794 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101794 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101794" ;
     :dealsWith :problem101794 ;
     ns1:description "REMOVED & REPLACED PLUGS." .
@@ -10533,13 +10533,13 @@
     :dealsWith :problem101795 ;
     ns1:description "DISCONNECTED OIL PRESSURE LINE, DISPLACED OIL COOLER. F" .
 
-:action101796 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101796 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101796" ;
     :dealsWith :problem101796 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKET." .
 
-:action101797 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101797 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101797" ;
     :dealsWith :problem101797 ;
     :involves [ a :RockerCoverGasket ;
@@ -10557,7 +10557,7 @@
     :dealsWith :problem101799 ;
     ns1:description "INSTALLED NEW SCREW." .
 
-:action101800 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101800 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101800" ;
     :dealsWith :problem101800 ;
     :involves [ a :IntakeGasket ;
@@ -10571,7 +10571,7 @@
     :involves [ a :BafflePlug ] ;
     ns1:description "INSTALLED NEW BAFFLE PLUG." .
 
-:action101802 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101802 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101802" ;
     :dealsWith :problem101802 ;
     :involves [ a :Gasket ] ;
@@ -10612,13 +10612,13 @@
             :atCylinder 2 ] ;
     ns1:description "REPLACED GASKETS ON #2 & 4 INTAKES." .
 
-:action101808 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101808 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101808" ;
     :dealsWith :problem101808 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKET." .
 
-:action101809 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101809 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101809" ;
     :dealsWith :problem101809 ;
     :involves [ a :IntakeGasket ] ;
@@ -10647,13 +10647,13 @@
     :involves [ a :FwdCase ] ;
     ns1:description "REMOVED PROP & FLYWHEEL TO GAIN ACCESS. CLEANED FWD CAS" .
 
-:action101814 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101814 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101814" ;
     :dealsWith :problem101814 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKET." .
 
-:action101815 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101815 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101815" ;
     :dealsWith :problem101815 ;
     :involves [ a :RockerCoverGasket ;
@@ -10671,19 +10671,19 @@
     :dealsWith :problem101817 ;
     ns1:description "INSPECTED, FOUND TO BE SERVICEABLE." .
 
-:action101818 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101818 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101818" ;
     :dealsWith :problem101818 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKET." .
 
-:action101819 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101819 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101819" ;
     :dealsWith :problem101819 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action101820 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101820 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101820" ;
     :dealsWith :problem101820 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -11078,7 +11078,7 @@
     :involves [ a :Bolt ] ;
     ns1:description "REMOVED BOLT, CLEAN & SEALANT APPLIED. REASSEMBLED." .
 
-:action101887 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101887 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101887" ;
     :dealsWith :problem101887 ;
     :involves [ a :IntakeGasket ] ;
@@ -11119,7 +11119,7 @@
     :involves [ a :ValveCoverGasket ] ;
     ns1:description "INSTALLED ALL NEW VALVE COVER GASKETS." .
 
-:action101896 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101896 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101896" ;
     :dealsWith :problem101896 ;
     :involves [ a :IntakeGasket ] ;
@@ -11137,13 +11137,13 @@
     :involves [ a :3InductionTubeGasket ] ;
     ns1:description "INSTALLED NEW #3 INDUCTION TUBE GASKET." .
 
-:action101899 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101899 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101899" ;
     :dealsWith :problem101899 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKETS W/ NEW." .
 
-:action101900 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101900 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101900" ;
     :dealsWith :problem101900 ;
     :involves [ a :IntakeGasket ] ;
@@ -11293,13 +11293,13 @@
             :atCylinder 2 ] ;
     ns1:description "INSTALLED NEW GASKET ON #2 INTAKE FLANGE." .
 
-:action101926 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101926 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101926" ;
     :dealsWith :problem101926 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKET." .
 
-:action101927 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101927 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101927" ;
     :dealsWith :problem101927 ;
     :involves [ a :Gasket ] ;
@@ -11319,13 +11319,13 @@
     :dealsWith :problem101930 ;
     ns1:description "SERVICED W/ MINERAL OIL." .
 
-:action101931 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101931 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101931" ;
     :dealsWith :problem101931 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKETS." .
 
-:action101932 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101932 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101932" ;
     :dealsWith :problem101932 ;
     ns1:description "REMOVED & REPLACED BOTH ENGINE BAFFLE PLUGS." .
@@ -11350,7 +11350,7 @@
     :dealsWith :problem101936 ;
     ns1:description "FABRICATED PATCH OF LIKE MATERIAL, INSTALLED USING EXIS" .
 
-:action101937 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101937 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101937" ;
     :dealsWith :problem101937 ;
     ns1:description "REMOVED & REPLACED LOOSE COTTER PIN." .
@@ -11361,7 +11361,7 @@
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REPLACED ROCKER COVER GASKET." .
 
-:action101939 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101939 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101939" ;
     :dealsWith :problem101939 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -11395,12 +11395,12 @@
     :involves [ a :BaffleConnectingRod ] ;
     ns1:description "TIGHTENED BAFFLE CONNECTING ROD, NO DAMAGE TO OIL RETUR" .
 
-:action101945 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101945 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101945" ;
     :dealsWith :problem101945 ;
     ns1:description "REMOVED & REPLACED INTAKE GASKET." .
 
-:action101946 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101946 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101946" ;
     :dealsWith :problem101946 ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKETS." .
@@ -11411,7 +11411,7 @@
     :involves [ a :Baffle ] ;
     ns1:description "REMOVED DAMAGED BAFFLE SECTION, FABRICATED NEW SECTION" .
 
-:action101948 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101948 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101948" ;
     :dealsWith :problem101948 ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKETS." .
@@ -11437,17 +11437,17 @@
     :involves [ a :Baffle ] ;
     ns1:description "RIVETED BAFFLE SEAL BACK ONTO BAFFLE." .
 
-:action101953 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101953 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101953" ;
     :dealsWith :problem101953 ;
     ns1:description "REMOVED & REPLACED INTAKE GASKETS." .
 
-:action101954 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101954 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101954" ;
     :dealsWith :problem101954 ;
     ns1:description "REMOVED & REPLACED INTAKE GASKET." .
 
-:action101955 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101955 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101955" ;
     :dealsWith :problem101955 ;
     ns1:description "REMOVED & REPLACED INTAKE GASKETS." .
@@ -11468,12 +11468,12 @@
     :dealsWith :problem101958 ;
     ns1:description "CLEANED THREADS W/ 18MM TAP, INSPECTED THREADS, THREADS" .
 
-:action101959 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101959 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101959" ;
     :dealsWith :problem101959 ;
     ns1:description "REMOVED & REPLACED R/H BAFFLE PLUG." .
 
-:action101960 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101960 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101960" ;
     :dealsWith :problem101960 ;
     ns1:description "REMOVED & REPLACED BAFFLE." .
@@ -11512,7 +11512,7 @@
             :atCylinder 1 ] ;
     ns1:description "CANNED CYL #1 INTAKE PIPE FROM INVENTORY ITEM. REMOVED" .
 
-:action101966 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101966 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101966" ;
     :dealsWith :problem101966 ;
     :involves [ a :IntakeGasket ;
@@ -11520,7 +11520,7 @@
             :atEngine "L" ] ;
     ns1:description "REMOVED & REPLACED #4 INTAKE GASKET ON L/H ENG." .
 
-:action101967 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101967 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101967" ;
     :dealsWith :problem101967 ;
     :involves [ a :IntakeGasket ;
@@ -11529,7 +11529,7 @@
             :atCylinder 3 ] ;
     ns1:description "REMOVED & REPLACED #2 & 3 INTAKE GASKETS." .
 
-:action101968 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101968 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101968" ;
     :dealsWith :problem101968 ;
     :involves [ a :IntakeGasket ] ;
@@ -11541,7 +11541,7 @@
     :involves [ a :IntakeGasket ] ;
     ns1:description "INSTALLED NEW INTAKE GASKET." .
 
-:action101970 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101970 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101970" ;
     :dealsWith :problem101970 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -11559,7 +11559,7 @@
     :involves [ a :IntakeGasket ] ;
     ns1:description "REPLACED INTAKE GASKETS." .
 
-:action101973 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101973 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101973" ;
     :dealsWith :problem101973 ;
     :involves [ a :Gasket ] ;
@@ -11583,7 +11583,7 @@
     :involves [ a :BafflePlug ] ;
     ns1:description "INSTALLED NEW BAFFLE PLUG." .
 
-:action101977 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101977 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101977" ;
     :dealsWith :problem101977 ;
     :involves [ a :RockerGasket ] ;
@@ -11601,7 +11601,7 @@
     :involves [ a :BaffleCrosstie ] ;
     ns1:description "INSTALLED NEW BAFFLE CROSSTIE." .
 
-:action101980 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action101980 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action101980" ;
     :dealsWith :problem101980 ;
     :involves [ a :RockerCoverGasket ;
@@ -11885,25 +11885,25 @@
     :dealsWith :problem102031 ;
     ns1:description "RAN UP ENGINE, ADJUSTED MIXTURE & IDLE, OPS CK GOOD." .
 
-:action102032 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102032 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102032" ;
     :dealsWith :problem102032 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKET." .
 
-:action102033 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102033 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102033" ;
     :dealsWith :problem102033 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKET." .
 
-:action102034 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102034 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102034" ;
     :dealsWith :problem102034 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKETS." .
 
-:action102035 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102035 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102035" ;
     :dealsWith :problem102035 ;
     :involves [ a :RockerCoverGasket ;
@@ -11931,7 +11931,7 @@
     :dealsWith :problem102039 ;
     ns1:description "GROUND RAN A/C & FOUND NO ROUGH ENGINE. CK'ED MAG TIMIN" .
 
-:action102040 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102040 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102040" ;
     :dealsWith :problem102040 ;
     :involves [ a :Gasket ] ;
@@ -11981,21 +11981,21 @@
     :dealsWith :problem102048 ;
     ns1:description "REMOVED BAFFLES & LINES. REMOVED #3 CYL. INSTALLED REPA" .
 
-:action102049 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102049 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102049" ;
     :dealsWith :problem102049 ;
     :involves [ a :IntakeGasket ;
             :atEngine "R" ] ;
     ns1:description "REMOVED & REPLACED R/H INTAKE GASKETS." .
 
-:action102050 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102050 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102050" ;
     :dealsWith :problem102050 ;
     :involves [ a :RockerCoverGasket ;
             :atEngine "L" ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKETS ON L/H ENG." .
 
-:action102051 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102051 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102051" ;
     :dealsWith :problem102051 ;
     :involves [ a :RockerCoverGasket ;
@@ -12023,7 +12023,7 @@
     :dealsWith :problem102053 ;
     ns1:description "STOP DRILLED CRACK." .
 
-:action102054 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102054 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102054" ;
     :dealsWith :problem102054 ;
     :involves [ a :IntakeGasket ] ;
@@ -12054,7 +12054,7 @@
     :dealsWith :problem102059 ;
     ns1:description "LEAK CK GOOD." .
 
-:action102060 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102060 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102060" ;
     :dealsWith :problem102060 ;
     :involves [ a :IntakeGasket ] ;
@@ -12895,7 +12895,7 @@
     :involves [ a :TieRod ] ;
     ns1:description "REPOSITIONED TIE ROD." .
 
-:action102202 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102202 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102202" ;
     :dealsWith :problem102202 ;
     :involves [ a :RockerCoverGasket ;
@@ -12906,7 +12906,7 @@
             :atEngine "L" ] ;
     ns1:description "REMOVED & REPLACED L/H #3 & 4 ROCKER COVER GASKETS." .
 
-:action102203 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102203 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102203" ;
     :dealsWith :problem102203 ;
     :involves [ a :Gasket ] ;
@@ -12917,7 +12917,7 @@
     :dealsWith :problem102204 ;
     ns1:description "BROUGHT A/C IN HANGAR TO WARM UP. A/C STARTED." .
 
-:action102205 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102205 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102205" ;
     :dealsWith :problem102205 ;
     :involves [ a :IntakeGasket ] ;
@@ -12940,7 +12940,7 @@
     :involves [ a :RockerSeal ] ;
     ns1:description "REPLACED ROCKER SEAL." .
 
-:action102209 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102209 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102209" ;
     :dealsWith :problem102209 ;
     :involves [ a :IntakeGasket ] ;
@@ -12951,19 +12951,19 @@
     :dealsWith :problem102210 ;
     ns1:description "INSTALLED NEW #3 INDUCTION TUBE GASKET." .
 
-:action102211 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102211 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102211" ;
     :dealsWith :problem102211 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKETS." .
 
-:action102212 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102212 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102212" ;
     :dealsWith :problem102212 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKETS." .
 
-:action102213 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102213 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102213" ;
     :dealsWith :problem102213 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -12975,14 +12975,14 @@
     :involves [ a :OilDipstick ] ;
     ns1:description "REMOVED OIL DIPSTICK, INSTALLED BAFFLE SCREW, REINSTALL" .
 
-:action102215 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102215 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102215" ;
     :dealsWith :problem102215 ;
     :involves [ a :RockerCoverGasket ;
             :atCylinder 1 ] ;
     ns1:description "REMOVED & REPLACED CYL #1 ROCKER COVER GASKET." .
 
-:action102216 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102216 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102216" ;
     :dealsWith :problem102216 ;
     :involves [ a :RockerCoverGasket ;
@@ -13373,7 +13373,7 @@
     :involves [ a :Magneto ] ;
     ns1:description "INSTALLED BOTH MAGNETOS, TIMED & TORQUED TO SPECS. INST" .
 
-:action102285 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102285 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102285" ;
     :dealsWith :problem102285 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -13384,13 +13384,13 @@
     :dealsWith :problem102286 ;
     ns1:description "RAN A/C, NO DEFECTS NOTED. MAG DROPS 100 RPM." .
 
-:action102287 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102287 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102287" ;
     :dealsWith :problem102287 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKETS." .
 
-:action102288 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102288 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102288" ;
     :dealsWith :problem102288 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -13412,55 +13412,55 @@
     :involves [ a :Gasket ] ;
     ns1:description "REPLACED GASKETS." .
 
-:action102292 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102292 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102292" ;
     :dealsWith :problem102292 ;
     :involves [ a :Rod ] ;
     ns1:description "REMOVED & REPLACED ROD." .
 
-:action102293 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102293 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102293" ;
     :dealsWith :problem102293 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKET." .
 
-:action102294 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102294 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102294" ;
     :dealsWith :problem102294 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKETS." .
 
-:action102295 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102295 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102295" ;
     :dealsWith :problem102295 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKET." .
 
-:action102296 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102296 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102296" ;
     :dealsWith :problem102296 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKETS. LEAK CK GOOD." .
 
-:action102297 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102297 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102297" ;
     :dealsWith :problem102297 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKETS." .
 
-:action102298 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102298 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102298" ;
     :dealsWith :problem102298 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKET." .
 
-:action102299 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102299 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102299" ;
     :dealsWith :problem102299 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKETS." .
 
-:action102300 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102300 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102300" ;
     :dealsWith :problem102300 ;
     :involves [ a :RockerCoversGasket ] ;
@@ -13958,7 +13958,7 @@
             :atCylinder 4 ] ;
     ns1:description "REMOVED #4 CYL ASSY, OIL COOLER & INSTALLED REPAIRED CY" .
 
-:action102385 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102385 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102385" ;
     :dealsWith :problem102385 ;
     :involves [ a :RockerCoverGasket ;
@@ -13977,7 +13977,7 @@
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "INSTALLED NEW ROCKER COVER GASKET." .
 
-:action102388 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102388 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102388" ;
     :dealsWith :problem102388 ;
     :involves [ a :RockerCoverGasket ;
@@ -13988,75 +13988,75 @@
             :atCylinder 2 ] ;
     ns1:description "REMOVED & REPLACED #2, 3 & 4 ROCKER COVER GASKETS." .
 
-:action102389 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102389 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102389" ;
     :dealsWith :problem102389 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKET." .
 
-:action102390 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102390 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102390" ;
     :dealsWith :problem102390 ;
     :involves [ a :IntakeGasket ;
             :atCylinder 4 ] ;
     ns1:description "REMOVED & REPLACED #4 INTAKE GASKET." .
 
-:action102391 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102391 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102391" ;
     :dealsWith :problem102391 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET W/ NEW." .
 
-:action102392 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102392 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102392" ;
     :dealsWith :problem102392 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKETS." .
 
-:action102393 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102393 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102393" ;
     :dealsWith :problem102393 ;
     :involves [ a :CylAnchorAssy ;
             :atCylinder 2 ] ;
     ns1:description "REMOVED & REPLACED #2 CYL ANCHOR ASSY." .
 
-:action102394 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102394 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102394" ;
     :dealsWith :problem102394 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action102395 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102395 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102395" ;
     :dealsWith :problem102395 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action102396 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102396 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102396" ;
     :dealsWith :problem102396 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKETS." .
 
-:action102397 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102397 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102397" ;
     :dealsWith :problem102397 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKETS." .
 
-:action102398 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102398 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102398" ;
     :dealsWith :problem102398 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKETS." .
 
-:action102399 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102399 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102399" ;
     :dealsWith :problem102399 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKET." .
 
-:action102400 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102400 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102400" ;
     :dealsWith :problem102400 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -14094,25 +14094,25 @@
             :atCylinder 3 ] ;
     ns1:description "REPLACED 3 & 4 COVER GASKETS." .
 
-:action102406 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102406 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102406" ;
     :dealsWith :problem102406 ;
     :involves [ a :BaffleSeal ] ;
     ns1:description "REMOVED & REPLACED BAFFLE SEAL." .
 
-:action102407 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102407 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102407" ;
     :dealsWith :problem102407 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKET." .
 
-:action102408 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102408 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102408" ;
     :dealsWith :problem102408 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKET." .
 
-:action102409 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102409 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102409" ;
     :dealsWith :problem102409 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -14150,20 +14150,20 @@
     :dealsWith :problem102415 ;
     ns1:description "REPLACED ALL ROCKER GASKETS." .
 
-:action102416 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102416 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102416" ;
     :dealsWith :problem102416 ;
     :involves [ a :Baffle ] ;
     ns1:description "REMOVED & REPLACED BAFFLE." .
 
-:action102417 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102417 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102417" ;
     :dealsWith :problem102417 ;
     :involves [ a :RockerCoverGasket ;
             :atCylinder 4 ] ;
     ns1:description "REMOVED & REPLACED #4 ROCKER COVER GASKET." .
 
-:action102418 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102418 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102418" ;
     :dealsWith :problem102418 ;
     :involves [ a :IntakeGasket ;
@@ -14800,14 +14800,14 @@
     :dealsWith :problem102521 ;
     ns1:description "INSTALLED PATCH." .
 
-:action102522 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102522 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102522" ;
     :dealsWith :problem102522 ;
     :involves [ a :IntakeGasket ;
             :atCylinder 4 ] ;
     ns1:description "REMOVED & REPLACED #4 CYL INTAKE GASKET." .
 
-:action102523 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102523 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102523" ;
     :dealsWith :problem102523 ;
     :involves [ a :RockerCoverGasket ;
@@ -14816,13 +14816,13 @@
             :atCylinder 3 ] ;
     ns1:description "REMOVED & REPLACED #3 & 4 CYL ROCKER COVER GASKETS." .
 
-:action102524 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102524 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102524" ;
     :dealsWith :problem102524 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKETS." .
 
-:action102525 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102525 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102525" ;
     :dealsWith :problem102525 ;
     :involves [ a :Gasket ] ;
@@ -14848,25 +14848,25 @@
     :dealsWith :problem102529 ;
     ns1:description "LEAK CK GOOD." .
 
-:action102530 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102530 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102530" ;
     :dealsWith :problem102530 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKETS." .
 
-:action102531 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102531 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102531" ;
     :dealsWith :problem102531 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKETS." .
 
-:action102532 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102532 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102532" ;
     :dealsWith :problem102532 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action102533 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102533 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102533" ;
     :dealsWith :problem102533 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -14883,13 +14883,13 @@
     :dealsWith :problem102535 ;
     ns1:description "TIGHTENED LOWER FITTING ON OIL COOLER." .
 
-:action102536 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102536 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102536" ;
     :dealsWith :problem102536 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKET." .
 
-:action102537 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102537 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102537" ;
     :dealsWith :problem102537 ;
     :involves [ a :IntakeGasket ] ;
@@ -14933,7 +14933,7 @@
     :dealsWith :problem102544 ;
     ns1:description "TIGHTENED SCREWS." .
 
-:action102545 a <http://Ameneh.org/aircraft.owl#Ck'EdAction> ;
+:action102545 a <https://w3id.org/zorro#Ck'EdAction> ;
     rdfs:label "action102545" ;
     :dealsWith :problem102545 ;
     ns1:description "CK'ED TORQUE OF B-NUT, TORQUE SEALED." .
@@ -15170,7 +15170,7 @@
     :dealsWith :problem102587 ;
     ns1:description "TIGHTENED ALL ROCKER BOX COVERS." .
 
-:action102588 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102588 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102588" ;
     :dealsWith :problem102588 ;
     :involves [ a :BaffleScrew ] ;
@@ -15186,7 +15186,7 @@
     :dealsWith :problem102590 ;
     ns1:description "TIGHTENED SCREW." .
 
-:action102591 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102591 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102591" ;
     :dealsWith :problem102591 ;
     ns1:description "REMOVED & REPLACED #3 & 4 CYL ROCKER COVER GASKETS." .
@@ -15196,12 +15196,12 @@
     :dealsWith :problem102592 ;
     ns1:description "STOP DRILLED CRACK, FABRICATED PATCH FROM LIKE MATERIAL" .
 
-:action102593 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102593 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102593" ;
     :dealsWith :problem102593 ;
     ns1:description "REMOVED & REPLACED #3 ROCKER COVER GASKET." .
 
-:action102594 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102594 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102594" ;
     :dealsWith :problem102594 ;
     ns1:description "REMOVED & REPLACED INDUCTION TUBE GASKET." .
@@ -15212,12 +15212,12 @@
     :involves [ a :BaffleDoubler ] ;
     ns1:description "INSTALLED BAFFLE DOUBLER IAW" .
 
-:action102596 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102596 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102596" ;
     :dealsWith :problem102596 ;
     ns1:description "REMOVED & REPLACED INTAKE GASKETS." .
 
-:action102597 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102597 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102597" ;
     :dealsWith :problem102597 ;
     ns1:description "REMOVED & REPLACED #2 ROCKER COVER GASKET W/ NEW." .
@@ -15227,7 +15227,7 @@
     :dealsWith :problem102598 ;
     ns1:description "REPLACED GASKET. LEAK CK GOOD." .
 
-:action102599 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102599 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102599" ;
     :dealsWith :problem102599 ;
     ns1:description "REMOVED & REPLACED PLUGS." .
@@ -15243,7 +15243,7 @@
     :involves [ a :FuelLineSupportBracket ] ;
     ns1:description "TIGHTENED FUEL LINE SUPPORT BRACKET AT BAFFLE SUPPORT." .
 
-:action102602 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102602 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102602" ;
     :dealsWith :problem102602 ;
     :involves [ a :IntakeGasket ;
@@ -15262,13 +15262,13 @@
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REPLACED ROCKER COVER GASKET." .
 
-:action102606 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102606 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102606" ;
     :dealsWith :problem102606 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKETS." .
 
-:action102607 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102607 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102607" ;
     :dealsWith :problem102607 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -15280,14 +15280,14 @@
     :involves [ a :Gasket ] ;
     ns1:description "REPLACED GASKET." .
 
-:action102609 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102609 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102609" ;
     :dealsWith :problem102609 ;
     :involves [ a :RockerCoverGasket ;
             :atCylinder 4 ] ;
     ns1:description "REMOVED & REPLACED #4 ROCKER COVER GASKET." .
 
-:action102610 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102610 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102610" ;
     :dealsWith :problem102610 ;
     :involves [ a :Baffle ] ;
@@ -15304,7 +15304,7 @@
     :dealsWith :problem102612 ;
     ns1:description "STOP DRILLED CRACK." .
 
-:action102613 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102613 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102613" ;
     :dealsWith :problem102613 ;
     :involves [ a :RockerCoverGasket ;
@@ -15313,7 +15313,7 @@
             :atCylinder 1 ] ;
     ns1:description "REMOVED & REPLACED #1 & 2 ROCKER COVER GASKETS." .
 
-:action102614 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102614 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102614" ;
     :dealsWith :problem102614 ;
     :involves [ a :RockerCoverGasket ;
@@ -15322,26 +15322,26 @@
             :atCylinder 2 ] ;
     ns1:description "REMOVED & REPLACED #2 & 3 ROCKER COVER GASKETS." .
 
-:action102615 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102615 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102615" ;
     :dealsWith :problem102615 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKETS." .
 
-:action102616 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102616 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102616" ;
     :dealsWith :problem102616 ;
     :involves [ a :RockerGasket ;
             :atCylinder 2 ] ;
     ns1:description "REMOVED & REPLACED CYL #2 ROCKER GASKET." .
 
-:action102617 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102617 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102617" ;
     :dealsWith :problem102617 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKETS." .
 
-:action102618 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102618 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102618" ;
     :dealsWith :problem102618 ;
     :involves [ a :RockerCover ] ;
@@ -15944,31 +15944,31 @@
     :involves [ a :PressureTube ] ;
     ns1:description "CLEANED SMALL SCRATCH IN PRESSURE TUBE, REPOSITIONED CL" .
 
-:action102723 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102723 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102723" ;
     :dealsWith :problem102723 ;
     :involves [ a :Baffle ] ;
     ns1:description "REMOVED & REPLACED BAFFLE." .
 
-:action102724 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102724 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102724" ;
     :dealsWith :problem102724 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKETS." .
 
-:action102725 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102725 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102725" ;
     :dealsWith :problem102725 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKETS." .
 
-:action102726 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102726 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102726" ;
     :dealsWith :problem102726 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKET." .
 
-:action102727 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102727 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102727" ;
     :dealsWith :problem102727 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -16017,12 +16017,12 @@
             :atCylinder 4 ] ;
     ns1:description "INSTALLED #4 AFT BAFFLE, NEW INTERCONNECTING RODS, INST" .
 
-:action102736 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102736 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102736" ;
     :dealsWith :problem102736 ;
     ns1:description "REMOVED & REPLACED SMALL GROMMET." .
 
-:action102737 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102737 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102737" ;
     :dealsWith :problem102737 ;
     ns1:description "REMOVED & REPLACED GASKET W/ NEW." .
@@ -16574,13 +16574,13 @@
     :involves [ a :SnifflerValve ] ;
     ns1:description "CLEANED SNIFFLER VALVES. MX FLIGHT REQUIRED." .
 
-:action102822 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102822 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102822" ;
     :dealsWith :problem102822 ;
     :involves [ a :ChtProbe ] ;
     ns1:description "REMOVED & REPLACED CHT PROBE." .
 
-:action102823 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102823 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102823" ;
     :dealsWith :problem102823 ;
     :involves [ a :IntakeGasket ;
@@ -16589,14 +16589,14 @@
             :atCylinder 1 ] ;
     ns1:description "REMOVED & REPLACED #1 & 4 CYL INTAKE GASKETS." .
 
-:action102824 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102824 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102824" ;
     :dealsWith :problem102824 ;
     :involves [ a :RockerCoverGasket ;
             :atCylinder 4 ] ;
     ns1:description "REMOVED & REPLACED #4 CYL ROCKER COVER GASKET." .
 
-:action102825 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102825 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102825" ;
     :dealsWith :problem102825 ;
     :involves [ a :IntakeGasket ;
@@ -16605,7 +16605,7 @@
             :atCylinder 2 ] ;
     ns1:description "REMOVED & REPLACED #2 & 3 CYL INTAKE GASKETS." .
 
-:action102826 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102826 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102826" ;
     :dealsWith :problem102826 ;
     :involves [ a :RockerCoverGasket ;
@@ -16616,34 +16616,34 @@
     :dealsWith :problem102827 ;
     ns1:description "RAN A/C. MAG, IDLE RPM & IDLE MIXTURE CK GOOD. NO VIBRA" .
 
-:action102828 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102828 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102828" ;
     :dealsWith :problem102828 ;
     :involves [ a :Gasket ;
             :atEngine "L" ] ;
     ns1:description "REMOVED & REPLACED L/H GASKETS." .
 
-:action102829 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102829 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102829" ;
     :dealsWith :problem102829 ;
     :involves [ a :Bracket ] ;
     ns1:description "REMOVED & REPLACED BRACKET." .
 
-:action102830 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102830 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102830" ;
     :dealsWith :problem102830 ;
     :involves [ a :RockerGasket ;
             :atEngine "R" ] ;
     ns1:description "REMOVED & REPLACED ROCKER GASKETS ON R/H ENG." .
 
-:action102831 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102831 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102831" ;
     :dealsWith :problem102831 ;
     :involves [ a :IntakeGasket ;
             :atCylinder 3 ] ;
     ns1:description "REMOVED & REPLACED #3 CYL INTAKE GASKET." .
 
-:action102832 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102832 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102832" ;
     :dealsWith :problem102832 ;
     :involves [ a :RockerCoverGasket ;
@@ -16654,13 +16654,13 @@
     :dealsWith :problem102833 ;
     ns1:description "SECURED BOTTOM LEFT & BOTTOM RIGHT SIDES OF FRONT BAFFL" .
 
-:action102834 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102834 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102834" ;
     :dealsWith :problem102834 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action102835 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102835 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102835" ;
     :dealsWith :problem102835 ;
     :involves [ a :RockerCoverGasket ;
@@ -16673,20 +16673,20 @@
     :involves [ a :BaffleSeal ] ;
     ns1:description "SECURED UPPER RIGHT BAFFLE SEAL." .
 
-:action102837 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102837 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102837" ;
     :dealsWith :problem102837 ;
     :involves [ a :RockerCoverGasket ;
             :atCylinder 2 ] ;
     ns1:description "REMOVED & REPLACED CYL #2 ROCKER COVER GASKET." .
 
-:action102838 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102838 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102838" ;
     :dealsWith :problem102838 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKET." .
 
-:action102839 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102839 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102839" ;
     :dealsWith :problem102839 ;
     :involves [ a :IntakeGasket ] ;
@@ -17558,7 +17558,7 @@
     :involves [ a :BafflePlug ] ;
     ns1:description "INSTALLED NEW BAFFLE PLUG." .
 
-:action102982 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102982 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102982" ;
     :dealsWith :problem102982 ;
     :involves [ a :RockerGasket ] ;
@@ -17570,19 +17570,19 @@
     :involves [ a :BaffleMaterial ] ;
     ns1:description "INSTALLED NEW SECTION OF BAFFLE MATERIAL." .
 
-:action102984 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102984 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102984" ;
     :dealsWith :problem102984 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKETS." .
 
-:action102985 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102985 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102985" ;
     :dealsWith :problem102985 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKET." .
 
-:action102986 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102986 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102986" ;
     :dealsWith :problem102986 ;
     :involves [ a :RockerCoverGasket ;
@@ -17591,7 +17591,7 @@
             :atCylinder 3 ] ;
     ns1:description "REMOVED & REPLACED #2 & 3 CYL ROCKER COVER GASKETS." .
 
-:action102987 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102987 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102987" ;
     :dealsWith :problem102987 ;
     :involves [ a :BaffleConnectingRod ] ;
@@ -17602,13 +17602,13 @@
     :dealsWith :problem102988 ;
     ns1:description "RESECURED CLAMPS." .
 
-:action102989 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102989 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102989" ;
     :dealsWith :problem102989 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKETS." .
 
-:action102990 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102990 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102990" ;
     :dealsWith :problem102990 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -17625,26 +17625,26 @@
     :involves [ a :Baffle ] ;
     ns1:description "SECURED BAFFLE." .
 
-:action102993 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102993 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102993" ;
     :dealsWith :problem102993 ;
     :involves [ a :IntakeGasket ;
             :atCylinder 4 ] ;
     ns1:description "REMOVED & REPLACED #4 CYL INTAKE GASKET." .
 
-:action102994 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102994 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102994" ;
     :dealsWith :problem102994 ;
     :involves [ a :AdelClamp ;
             :atCylinder 3 ] ;
     ns1:description "REMOVED & REPLACED FWD ADEL CLAMP ON #3 CYL PUSH ROD TU" .
 
-:action102995 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102995 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102995" ;
     :dealsWith :problem102995 ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action102996 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102996 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102996" ;
     :dealsWith :problem102996 ;
     :involves [ a :RockerCoverGasket ;
@@ -17661,12 +17661,12 @@
     :dealsWith :problem102998 ;
     ns1:description "REPLACED SCREW." .
 
-:action102999 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action102999 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action102999" ;
     :dealsWith :problem102999 ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action103000 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103000 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103000" ;
     :dealsWith :problem103000 ;
     ns1:description "REMOVED & REPLACED GASKET." .
@@ -17787,7 +17787,7 @@
     :involves [ a :Baffling ] ;
     ns1:description "REMOVED BAFFLING, OIL LINE & QUICK DRAIN FROM CORE ENGI" .
 
-:action103022 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103022 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103022" ;
     :dealsWith :problem103022 ;
     :involves [ a :IntakeGasket ] ;
@@ -17803,28 +17803,28 @@
     :dealsWith :problem103024 ;
     ns1:description "RUN UP IDLE CK GOOD." .
 
-:action103025 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103025 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103025" ;
     :dealsWith :problem103025 ;
     :involves [ a :RockerCoverGasket ;
             :atCylinder 3 ] ;
     ns1:description "REMOVED & REPLACED CYL #3 ROCKER COVER GASKET." .
 
-:action103026 a <http://Ameneh.org/aircraft.owl#Removed&ReplacdAction> ;
+:action103026 a <https://w3id.org/zorro#Removed&ReplacdAction> ;
     rdfs:label "action103026" ;
     :dealsWith :problem103026 ;
     :involves [ a :IntakeGasket ;
             :atCylinder 3 ] ;
     ns1:description "REMOVED & REPLACD #3 CYL INTAKE GASKET." .
 
-:action103027 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103027 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103027" ;
     :dealsWith :problem103027 ;
     :involves [ a :IntakeGasket ;
             :atCylinder 2 ] ;
     ns1:description "REMOVED & REPLACED #2 CYL INTAKE GASKET." .
 
-:action103028 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103028 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103028" ;
     :dealsWith :problem103028 ;
     :involves [ a :Gasket ] ;
@@ -17841,7 +17841,7 @@
     :dealsWith :problem103030 ;
     ns1:description "RAN UP A/C, NO DEFECTS NOTED." .
 
-:action103031 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103031 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103031" ;
     :dealsWith :problem103031 ;
     :involves [ a :BafflePlug ] ;
@@ -17858,25 +17858,25 @@
     :dealsWith :problem103033 ;
     ns1:description "INSTALLED NEW PLUG." .
 
-:action103034 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103034 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103034" ;
     :dealsWith :problem103034 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action103035 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103035 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103035" ;
     :dealsWith :problem103035 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action103036 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103036 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103036" ;
     :dealsWith :problem103036 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKETS." .
 
-:action103037 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103037 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103037" ;
     :dealsWith :problem103037 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -18717,19 +18717,19 @@
     :dealsWith :problem103187 ;
     ns1:description "STOP DRILLED CRACK." .
 
-:action103188 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103188 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103188" ;
     :dealsWith :problem103188 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKETS." .
 
-:action103189 a <http://Ameneh.org/aircraft.owl#Removed&InstalledAction> ;
+:action103189 a <https://w3id.org/zorro#Removed&InstalledAction> ;
     rdfs:label "action103189" ;
     :dealsWith :problem103189 ;
     :involves [ a :Baffle ] ;
     ns1:description "REMOVED BAFFLE, FABRICATED & INSTALLED NEW BAFFLE." .
 
-:action103190 a <http://Ameneh.org/aircraft.owl#Removed&InstalledAction> ;
+:action103190 a <https://w3id.org/zorro#Removed&InstalledAction> ;
     rdfs:label "action103190" ;
     :dealsWith :problem103190 ;
     :involves [ a :Baffle ] ;
@@ -18740,7 +18740,7 @@
     :dealsWith :problem103191 ;
     ns1:description "TIGHTENED ALL SCREWS." .
 
-:action103192 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103192 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103192" ;
     :dealsWith :problem103192 ;
     :involves [ a :Gasket ] ;
@@ -19489,27 +19489,27 @@
     :dealsWith :problem103322 ;
     ns1:description "OPS CK GOOD." .
 
-:action103323 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103323 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103323" ;
     :dealsWith :problem103323 ;
     :involves [ a :Egt ;
             :atCylinder 1 ] ;
     ns1:description "REMOVED & REPLACED #1 EGT, OPS CK GOOD." .
 
-:action103324 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103324 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103324" ;
     :dealsWith :problem103324 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKET." .
 
-:action103325 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103325 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103325" ;
     :dealsWith :problem103325 ;
     :involves [ a :ChtProbe ;
             :atCylinder 1 ] ;
     ns1:description "REMOVED & REPLACED CHT PROBE ON #1 CYL." .
 
-:action103326 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103326 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103326" ;
     :dealsWith :problem103326 ;
     :involves [ a :IntakeGasket ] ;
@@ -19519,7 +19519,7 @@
     :dealsWith :problem103327 ;
     ns1:description "PLACED HELICOPTER IN HEATER HANGAR. STARTED ENGINE USIN" .
 
-:action103328 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103328 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103328" ;
     :dealsWith :problem103328 ;
     :involves [ a :IntakeGasket ] ;
@@ -19529,13 +19529,13 @@
     :dealsWith :problem103329 ;
     ns1:description "UPON FURTHER INSP, NO LEAK FROM INTAKE TUBE FOUND." .
 
-:action103330 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103330 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103330" ;
     :dealsWith :problem103330 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKETS." .
 
-:action103331 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103331 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103331" ;
     :dealsWith :problem103331 ;
     :involves [ a :Gasket ] ;
@@ -19558,7 +19558,7 @@
     :dealsWith :problem103334 ;
     ns1:description "INSTALLED SCREWS." .
 
-:action103335 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103335 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103335" ;
     :dealsWith :problem103335 ;
     :involves [ a :IntakeGasket ] ;
@@ -19570,14 +19570,14 @@
     :involves [ a :BaffleMaterial ] ;
     ns1:description "RESECURED BAFFLE MATERIAL." .
 
-:action103337 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103337 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103337" ;
     :dealsWith :problem103337 ;
     :involves [ a :IntakeGasket ;
             :atCylinder 2 ] ;
     ns1:description "REMOVED & REPLACED CYL #2 INTAKE GASKET." .
 
-:action103338 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103338 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103338" ;
     :dealsWith :problem103338 ;
     :involves [ a :RockerCoverGasket ;
@@ -19586,13 +19586,13 @@
             :atCylinder 1 ] ;
     ns1:description "REMOVED & REPLACED CYL #1, 4 ROCKER COVER GASKETS." .
 
-:action103339 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103339 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103339" ;
     :dealsWith :problem103339 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKETS." .
 
-:action103340 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103340 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103340" ;
     :dealsWith :problem103340 ;
     :involves [ a :IntakeGasket ;
@@ -19729,14 +19729,14 @@
     :dealsWith :problem103363 ;
     ns1:description "REPLACED BOLT." .
 
-:action103364 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103364 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103364" ;
     :dealsWith :problem103364 ;
     :involves [ a :RockerCoverGasket ;
             :atCylinder 4 ] ;
     ns1:description "REMOVED & REPLACED CYL #4 ROCKER COVER GASKET." .
 
-:action103365 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103365 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103365" ;
     :dealsWith :problem103365 ;
     :involves [ a :IntakeGasket ;
@@ -19745,19 +19745,19 @@
             :atCylinder 1 ] ;
     ns1:description "REMOVED & REPLACED #1 & 2 INTAKE GASKETS." .
 
-:action103366 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103366 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103366" ;
     :dealsWith :problem103366 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action103367 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103367 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103367" ;
     :dealsWith :problem103367 ;
     :involves [ a :RockerCoverGasket ] ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKET." .
 
-:action103368 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103368 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103368" ;
     :dealsWith :problem103368 ;
     :involves [ a :RockerCoverGasket ;
@@ -19774,7 +19774,7 @@
     :dealsWith :problem103370 ;
     ns1:description "DRILLED NEW TIE ROD HOLE IN R/H AFT BAFFLE. INSTALLED S" .
 
-:action103371 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103371 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103371" ;
     :dealsWith :problem103371 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -19790,7 +19790,7 @@
     :dealsWith :problem103373 ;
     ns1:description "STOP DRILLED CRACKS, FABRICATED PATCH & RIVETED IAW CES" .
 
-:action103374 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103374 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103374" ;
     :dealsWith :problem103374 ;
     :involves [ a :RockerGasket ] ;
@@ -19807,25 +19807,25 @@
     :involves [ a :Gasket ] ;
     ns1:description "REPLACED GASKET." .
 
-:action103377 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103377 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103377" ;
     :dealsWith :problem103377 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKETS." .
 
-:action103378 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103378 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103378" ;
     :dealsWith :problem103378 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action103379 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103379 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103379" ;
     :dealsWith :problem103379 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action103380 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103380 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103380" ;
     :dealsWith :problem103380 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -22717,7 +22717,7 @@
     :dealsWith :problem103907 ;
     ns1:description "INSTALLED RTV TO SEAL." .
 
-:action103908 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103908 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103908" ;
     :dealsWith :problem103908 ;
     ns1:description "REMOVED & REPLACED GASKETS." .
@@ -22727,12 +22727,12 @@
     :dealsWith :problem103909 ;
     ns1:description "REPLACED STAPLE WITH POP RIVET" .
 
-:action103910 a <http://Ameneh.org/aircraft.owl#Removed,Cleaned,InstalledAction> ;
+:action103910 a <https://w3id.org/zorro#Removed,Cleaned,InstalledAction> ;
     rdfs:label "action103910" ;
     :dealsWith :problem103910 ;
     ns1:description "REMOVED, CLEANED, INSTALLED NEW SILICONE GASKETS" .
 
-:action103911 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103911 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103911" ;
     :dealsWith :problem103911 ;
     ns1:description "REMOVED AND REPLACED #3 INTAKE GASKET ON R/H ENG" .
@@ -22747,12 +22747,12 @@
     :dealsWith :problem103913 ;
     ns1:description "REPLACED CYL #2 & 4 INTAKE GASKETS" .
 
-:action103914 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103914 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103914" ;
     :dealsWith :problem103914 ;
     ns1:description "REMOVED & REPLACED INTAKE GASKET." .
 
-:action103915 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103915 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103915" ;
     :dealsWith :problem103915 ;
     ns1:description "REMOVED & REPLACED ROCKER COVER GASKETS." .
@@ -22767,7 +22767,7 @@
     :dealsWith :problem103917 ;
     ns1:description "REMOVED OLD GASKETS, CLEANED & INSTALLED NEW SILICONE G" .
 
-:action103918 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action103918 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action103918" ;
     :dealsWith :problem103918 ;
     ns1:description "REMOVED & REPLACED GASKET." .
@@ -24317,13 +24317,13 @@
     :involves [ a :Bolt ] ;
     ns1:description "RETORQUED BOLTS." .
 
-:action104203 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104203 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104203" ;
     :dealsWith :problem104203 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action104204 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104204 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104204" ;
     :dealsWith :problem104204 ;
     :involves [ a :Gasket ] ;
@@ -24351,7 +24351,7 @@
     :dealsWith :problem104208 ;
     ns1:description "INSTALLED NEW SCREW." .
 
-:action104209 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104209 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104209" ;
     :dealsWith :problem104209 ;
     :involves [ a :IntakeGasket ] ;
@@ -24368,30 +24368,30 @@
     :dealsWith :problem104211 ;
     ns1:description "STAKED EXHAUST; COMP UP TO 75/80." .
 
-:action104212 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104212 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104212" ;
     :dealsWith :problem104212 ;
     ns1:description "REMOVED & REPLACED RIVETS W/ SCREWS ON BRACKET." .
 
-:action104213 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104213 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104213" ;
     :dealsWith :problem104213 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action104214 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104214 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104214" ;
     :dealsWith :problem104214 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action104215 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104215 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104215" ;
     :dealsWith :problem104215 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKET." .
 
-:action104216 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104216 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104216" ;
     :dealsWith :problem104216 ;
     :involves [ a :IntakeGasket ] ;
@@ -24436,7 +24436,7 @@
     :involves [ a :Baffle ] ;
     ns1:description "DRILLED OUT RIVET, SAFETY WIRED BAFFLE." .
 
-:action104224 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104224 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104224" ;
     :dealsWith :problem104224 ;
     :involves [ a :Gasket ] ;
@@ -24458,13 +24458,13 @@
     :involves [ a :RockerCover ] ;
     ns1:description "INSTALLED NEW SCREW ON ROCKER COVER." .
 
-:action104228 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104228 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104228" ;
     :dealsWith :problem104228 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED INTAKE GASKET." .
 
-:action104229 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104229 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104229" ;
     :dealsWith :problem104229 ;
     :involves [ a :Gasket ] ;
@@ -24481,7 +24481,7 @@
     :involves [ a :BaffleStrip ] ;
     ns1:description "REATTACHED BAFFLE STRIPS." .
 
-:action104232 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104232 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104232" ;
     :dealsWith :problem104232 ;
     :involves [ a :Gasket ] ;
@@ -24492,13 +24492,13 @@
     :dealsWith :problem104233 ;
     ns1:description "INSTALLED NEW HARDWARE." .
 
-:action104234 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104234 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104234" ;
     :dealsWith :problem104234 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action104235 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104235 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104235" ;
     :dealsWith :problem104235 ;
     :involves [ a :Gasket ] ;
@@ -24514,7 +24514,7 @@
     :dealsWith :problem104237 ;
     ns1:description "INSTALLED NEW SCREW." .
 
-:action104238 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104238 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104238" ;
     :dealsWith :problem104238 ;
     :involves [ a :IntakeGasket ] ;
@@ -24626,7 +24626,7 @@
             :atEngine "L" ] ;
     ns1:description "REPLACED CYL ASSY USING NEW LUECO, TORQUED" .
 
-:action104258 a <http://Ameneh.org/aircraft.owl#C/WAction> ;
+:action104258 a <https://w3id.org/zorro#C/WAction> ;
     rdfs:label "action104258" ;
     :dealsWith :problem104258 ;
     ns1:description "C/W  ENGINE INSP AFTER OVERSPEED. COMPRESSIONS:" .
@@ -24781,7 +24781,7 @@
     :involves [ a :Gasket ] ;
     ns1:description "INSTALLED NEW GASKET." .
 
-:action104287 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104287 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104287" ;
     :dealsWith :problem104287 ;
     :involves [ a :BaffleSection ] ;
@@ -24799,7 +24799,7 @@
     :involves [ a :Screw ] ;
     ns1:description "TIGHTENED LOOSE SCREW." .
 
-:action104290 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104290 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104290" ;
     :dealsWith :problem104290 ;
     :involves [ a :Gasket ] ;
@@ -24815,19 +24815,19 @@
     :dealsWith :problem104292 ;
     ns1:description "REMOVED #4 AFT BAFFLE FROM ENGINE. RESECURED BRACKET &" .
 
-:action104293 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104293 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104293" ;
     :dealsWith :problem104293 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action104294 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104294 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104294" ;
     :dealsWith :problem104294 ;
     :involves [ a :IntakeGasket ] ;
     ns1:description "REMOVED & REPLACED W/ NEW INTAKE GASKET." .
 
-:action104295 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104295 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104295" ;
     :dealsWith :problem104295 ;
     :involves [ a :Gasket ] ;
@@ -24996,7 +24996,7 @@
     :involves [ a :BaffleSealMaterial ] ;
     ns1:description "REPLACED BAFFLE SEAL MATERIAL & SECURED W/ POP RIVETS." .
 
-:action104329 a <http://Ameneh.org/aircraft.owl#C/WAction> ;
+:action104329 a <https://w3id.org/zorro#C/WAction> ;
     rdfs:label "action104329" ;
     :dealsWith :problem104329 ;
     ns1:description "C/W LYCOMING  INSP FOR LESS THAN 5% OVERSPEED. V" .
@@ -25175,7 +25175,7 @@
     :dealsWith :problem104362 ;
     ns1:description "REMOVED R/H ENGINE #4 CYL." .
 
-:action104363 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104363 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104363" ;
     :dealsWith :problem104363 ;
     :involves [ a :IntakeGasket ;
@@ -25199,7 +25199,7 @@
     :dealsWith :problem104366 ;
     ns1:description "REPLACED MISSING PLUG." .
 
-:action104367 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104367 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104367" ;
     :dealsWith :problem104367 ;
     :involves [ a :Gasket ] ;
@@ -25228,7 +25228,7 @@
     :involves [ a :CylAssy ] ;
     ns1:description "FINISHED REMOVING CYL ASSY. INSTALLED REPAIRED CYL ASSY" .
 
-:action104372 a <http://Ameneh.org/aircraft.owl#Reck'EdAction> ;
+:action104372 a <https://w3id.org/zorro#Reck'EdAction> ;
     rdfs:label "action104372" ;
     :dealsWith :problem104372 ;
     ns1:description "RECK'ED CLEARANCE, FOUND W/IN SPECS. STARTED INSTALLING" .
@@ -25238,7 +25238,7 @@
     :dealsWith :problem104373 ;
     ns1:description "REINSTALLED INTAKE, ROCKER COVER, EXHAUST & REROUTED HA" .
 
-:action104374 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104374 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104374" ;
     :dealsWith :problem104374 ;
     :involves [ a :Gasket ] ;
@@ -25250,7 +25250,7 @@
     :involves [ a :Bolt ] ;
     ns1:description "INSTALLED BOLT." .
 
-:action104376 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104376 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104376" ;
     :dealsWith :problem104376 ;
     :involves [ a :Gasket ] ;
@@ -25632,7 +25632,7 @@
             :atCylinder 4 ] ;
     ns1:description "REPLACED #4 INTAKE GASKET." .
 
-:action104442 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104442 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104442" ;
     :dealsWith :problem104442 ;
     :involves [ a :Gasket ] ;
@@ -25644,25 +25644,25 @@
     :involves [ a :Gasket ] ;
     ns1:description "REPLACED GASKETS." .
 
-:action104444 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104444 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104444" ;
     :dealsWith :problem104444 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action104445 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104445 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104445" ;
     :dealsWith :problem104445 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action104446 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104446 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104446" ;
     :dealsWith :problem104446 ;
     :involves [ a :SiliconeGasket ] ;
     ns1:description "REMOVED & REPLACED W/ SILICONE GASKET." .
 
-:action104447 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104447 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104447" ;
     :dealsWith :problem104447 ;
     :involves [ a :Gasket ] ;
@@ -25679,7 +25679,7 @@
     :dealsWith :problem104449 ;
     ns1:description "TIGHTENED CLAMPS." .
 
-:action104450 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104450 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104450" ;
     :dealsWith :problem104450 ;
     :involves [ a :RockerCoverGasket ] ;
@@ -25707,38 +25707,38 @@
     :involves [ a :BaffleSeal ] ;
     ns1:description "RESECURED BAFFLE SEAL." .
 
-:action104455 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104455 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104455" ;
     :dealsWith :problem104455 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKETS." .
 
-:action104456 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104456 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104456" ;
     :dealsWith :problem104456 ;
     :involves [ a :BafflePlug ] ;
     ns1:description "REMOVED & REPLACED BAFFLE PLUGS." .
 
-:action104457 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104457 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104457" ;
     :dealsWith :problem104457 ;
     :involves [ a :EngineBaffle ;
             :atEngine "L" ] ;
     ns1:description "REMOVED & REPLACED L/H ENGINE BAFFLE OVER ROCKER COVERS" .
 
-:action104458 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104458 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104458" ;
     :dealsWith :problem104458 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKETS." .
 
-:action104459 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104459 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104459" ;
     :dealsWith :problem104459 ;
     :involves [ a :ChtProbe ] ;
     ns1:description "REMOVED & REPLACED CHT PROBE, RAN A/C, OPS GOOD." .
 
-:action104460 a <http://Ameneh.org/aircraft.owl#Drilled&ReplacedAction> ;
+:action104460 a <https://w3id.org/zorro#Drilled&ReplacedAction> ;
     rdfs:label "action104460" ;
     :dealsWith :problem104460 ;
     :involves [ a :BaffleSeal ] ;
@@ -25948,7 +25948,7 @@
     :dealsWith :problem104506 ;
     ns1:description "CLEANED SCREEN." .
 
-:action104507 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104507 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104507" ;
     :dealsWith :problem104507 ;
     ns1:description "REMOVED & REPLACED GASKET." .
@@ -26008,7 +26008,7 @@
     :dealsWith :problem104518 ;
     ns1:description "REPLACED GASKET." .
 
-:action104519 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104519 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104519" ;
     :dealsWith :problem104519 ;
     ns1:description "REMOVED & REPLACED GASKETS." .
@@ -26358,7 +26358,7 @@
     :involves [ a :Clamp ] ;
     ns1:description "RESECURED CLAMP." .
 
-:action104583 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104583 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104583" ;
     :dealsWith :problem104583 ;
     :involves [ a :Gasket ] ;
@@ -26385,7 +26385,7 @@
     :involves [ a :IntakeGasket ] ;
     ns1:description "INSTALLED NEW INTAKE GASKET." .
 
-:action104588 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104588 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104588" ;
     :dealsWith :problem104588 ;
     :involves [ a :Gasket ] ;
@@ -26401,7 +26401,7 @@
     :dealsWith :problem104590 ;
     ns1:description "LEAK CK GOOD." .
 
-:action104591 a <http://Ameneh.org/aircraft.owl#Cleaned&SealedAction> ;
+:action104591 a <https://w3id.org/zorro#Cleaned&SealedAction> ;
     rdfs:label "action104591" ;
     :dealsWith :problem104591 ;
     ns1:description "CLEANED & SEALED LEAKING BOLT HOLE." .
@@ -26413,13 +26413,13 @@
             :atEngine "R" ] ;
     ns1:description "INSTALLED REPAIRED R/H REAR BAFFLE." .
 
-:action104593 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104593 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104593" ;
     :dealsWith :problem104593 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKETS." .
 
-:action104594 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104594 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104594" ;
     :dealsWith :problem104594 ;
     :involves [ a :IntakeGasket ] ;
@@ -26441,7 +26441,7 @@
     :dealsWith :problem104597 ;
     ns1:description "CLEANED BOTH SNIFFLER VALVES." .
 
-:action104598 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action104598 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action104598" ;
     :dealsWith :problem104598 ;
     ns1:description "REMOVED & REPLACED CHAFE TAPE AS NEEDED." .
@@ -26640,7 +26640,7 @@
     :dealsWith :problem104635 ;
     ns1:description "TRANSFERRED AIRWORTHY PARTS TO REPAIRED BAFFLE ASSY." .
 
-:action104636 a <http://Ameneh.org/aircraft.owl#Ck'EdAction> ;
+:action104636 a <https://w3id.org/zorro#Ck'EdAction> ;
     rdfs:label "action104636" ;
     :dealsWith :problem104636 ;
     ns1:description "CK'ED OK." .
@@ -26866,7 +26866,7 @@
     :dealsWith :problem104677 ;
     ns1:description "APPLIED BLACK SILICONE TO FRONT ENGINE BAFFLE SEAL." .
 
-:action104678 a <http://Ameneh.org/aircraft.owl#C/WAction> ;
+:action104678 a <https://w3id.org/zorro#C/WAction> ;
     rdfs:label "action104678" ;
     :dealsWith :problem104678 ;
     ns1:description "C/W LYCOMING , NO DEFECTS NOTED." .
@@ -27609,7 +27609,7 @@
     :dealsWith :problem104817 ;
     ns1:description "STOP DRILLED." .
 
-:action104818 a <http://Ameneh.org/aircraft.owl#Ops&LeakCkAction> ;
+:action104818 a <https://w3id.org/zorro#Ops&LeakCkAction> ;
     rdfs:label "action104818" ;
     :dealsWith :problem104818 ;
     ns1:description "OPS & LEAK CK GOOD." .
@@ -28420,7 +28420,7 @@
     :dealsWith :problem104976 ;
     ns1:description "LEAK CK GOOD." .
 
-:action104977 a <http://Ameneh.org/aircraft.owl#Ops&LeakCkGoodAction> ;
+:action104977 a <https://w3id.org/zorro#Ops&LeakCkGoodAction> ;
     rdfs:label "action104977" ;
     :dealsWith :problem104977 ;
     ns1:description "OPS & LEAK CK GOOD." .
@@ -28967,7 +28967,7 @@
     :dealsWith :problem105079 ;
     ns1:description "APPLIED RTV TO WORN AREAS & SECURED LOOSE SECTION." .
 
-:action105080 a <http://Ameneh.org/aircraft.owl#Ck'EdAction> ;
+:action105080 a <https://w3id.org/zorro#Ck'EdAction> ;
     rdfs:label "action105080" ;
     :dealsWith :problem105080 ;
     ns1:description "MAG TIMING CK'ED GOOD. BORE SCOPED CYL #4; NO DEFECTS N" .
@@ -29887,19 +29887,19 @@
     :dealsWith :problem105248 ;
     ns1:description "LEAK CK GOOD." .
 
-:action105249 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105249 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105249" ;
     :dealsWith :problem105249 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKETS." .
 
-:action105250 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105250 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105250" ;
     :dealsWith :problem105250 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action105251 a <http://Ameneh.org/aircraft.owl#CleanedOut&InstalledAction> ;
+:action105251 a <https://w3id.org/zorro#CleanedOut&InstalledAction> ;
     rdfs:label "action105251" ;
     :dealsWith :problem105251 ;
     ns1:description "CLEANED OUT & INSTALLED SEALANT." .
@@ -29909,7 +29909,7 @@
     :dealsWith :problem105252 ;
     ns1:description "OIL HAS BEEN DRAINED." .
 
-:action105253 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105253 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105253" ;
     :dealsWith :problem105253 ;
     ns1:description "OPS & LEAK CK GOOD. REMOVED & REPLACED PUSH ROD. REMOVE" .
@@ -29924,7 +29924,7 @@
     :dealsWith :problem105255 ;
     ns1:description "PERFORMED GROUND RUN W/ ENGINE AT OPERATING TEMP. ALL E" .
 
-:action105256 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105256 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105256" ;
     :dealsWith :problem105256 ;
     :involves [ a :Gasket ] ;
@@ -29941,7 +29941,7 @@
     :dealsWith :problem105258 ;
     ns1:description "RAN A/C, ALL CHECKS GOOD." .
 
-:action105259 a <http://Ameneh.org/aircraft.owl#RunUp&LeakCkAction> ;
+:action105259 a <https://w3id.org/zorro#RunUp&LeakCkAction> ;
     rdfs:label "action105259" ;
     :dealsWith :problem105259 ;
     ns1:description "RUN UP & LEAK CK GOOD." .
@@ -30247,7 +30247,7 @@
     :involves [ a :BafflePlug ] ;
     ns1:description "REMOVED & REPLACED BAFFLE PLUGS." .
 
-:action105314 a <http://Ameneh.org/aircraft.owl#RanA/CAction> ;
+:action105314 a <https://w3id.org/zorro#RanA/CAction> ;
     rdfs:label "action105314" ;
     :dealsWith :problem105314 ;
     ns1:description "RAN A/C, NO LEAKS NOTED. OBSERVED A/C FOR SEVERAL HOURS" .
@@ -30520,13 +30520,13 @@
     :dealsWith :problem105366 ;
     ns1:description "REMOVED POWER SECTION FROM R/H ENGINE, VISUALLY INSPECT" .
 
-:action105367 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105367 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105367" ;
     :dealsWith :problem105367 ;
     :involves [ a :BaffleTie ] ;
     ns1:description "REMOVED & REPLACED BAFFLE TIE." .
 
-:action105368 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105368 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105368" ;
     :dealsWith :problem105368 ;
     :involves [ a :BafflePlug ] ;
@@ -30572,18 +30572,18 @@
     :involves [ a :Bolt ] ;
     ns1:description "TIGHTENED BOLT." .
 
-:action105376 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105376 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105376" ;
     :dealsWith :problem105376 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKETS." .
 
-:action105377 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105377 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105377" ;
     :dealsWith :problem105377 ;
     ns1:description "REMOVED & REPLACED W/ NEW GASKETS." .
 
-:action105378 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105378 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105378" ;
     :dealsWith :problem105378 ;
     :involves [ a :Gasket ] ;
@@ -30817,7 +30817,7 @@
     :involves [ a :RingGear ] ;
     ns1:description "INSTALLED RING GEAR & PROP, TORQUED TO SPECS & SAFETIED" .
 
-:action105418 a <http://Ameneh.org/aircraft.owl#Fabricated&InstalledAction> ;
+:action105418 a <https://w3id.org/zorro#Fabricated&InstalledAction> ;
     rdfs:label "action105418" ;
     :dealsWith :problem105418 ;
     ns1:description "FABRICATED & INSTALLED NEW BRACKET." .
@@ -30860,7 +30860,7 @@
     :involves [ a :Gasket ] ;
     ns1:description "REPLACED GASKET." .
 
-:action105425 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105425 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105425" ;
     :dealsWith :problem105425 ;
     :involves [ a :Gasket ] ;
@@ -30872,7 +30872,7 @@
     :involves [ a :Gasket ] ;
     ns1:description "REPLACED GASKET." .
 
-:action105427 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105427 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105427" ;
     :dealsWith :problem105427 ;
     :involves [ a :Gasket ] ;
@@ -30895,13 +30895,13 @@
     :dealsWith :problem105430 ;
     ns1:description "PERFORMED GROUND RUN, MADE SEASONAL ADJUSTMENT TO IDLE" .
 
-:action105431 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105431 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105431" ;
     :dealsWith :problem105431 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action105432 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105432 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105432" ;
     :dealsWith :problem105432 ;
     :involves [ a :PopRivet ] ;
@@ -30912,7 +30912,7 @@
     :dealsWith :problem105433 ;
     ns1:description "CHIP SENT TO LYCOMING FOR ANAYLSIS." .
 
-:action105434 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105434 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105434" ;
     :dealsWith :problem105434 ;
     ns1:description "REMOVED & REPLACED LOOSE RIVETS W/ SCREWS ON R/H FWD EN" .
@@ -30933,19 +30933,19 @@
     :dealsWith :problem105437 ;
     ns1:description "INSTALLED BLACK RTV IN WORN AREAS." .
 
-:action105438 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105438 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105438" ;
     :dealsWith :problem105438 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action105439 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105439 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105439" ;
     :dealsWith :problem105439 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKETS." .
 
-:action105440 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105440 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105440" ;
     :dealsWith :problem105440 ;
     :involves [ a :Spacer ] ;
@@ -31186,13 +31186,13 @@
             :atCylinder 2 ] ;
     ns1:description "INSTALLED #1 CYL SIDE BAFFLE, #2 CYL FWD & SIDE BAFFLES" .
 
-:action105487 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105487 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105487" ;
     :dealsWith :problem105487 ;
     :involves [ a :Gasket ] ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action105488 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105488 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105488" ;
     :dealsWith :problem105488 ;
     :involves [ a :Gasket ] ;
@@ -31210,7 +31210,7 @@
     :involves [ a :Gasket ] ;
     ns1:description "INSTALLED GASKET." .
 
-:action105491 a <http://Ameneh.org/aircraft.owl#Leak&RunUpCkGoodAction> ;
+:action105491 a <https://w3id.org/zorro#Leak&RunUpCkGoodAction> ;
     rdfs:label "action105491" ;
     :dealsWith :problem105491 ;
     ns1:description "LEAK & RUN UP CK GOOD." .
@@ -31226,13 +31226,13 @@
     :dealsWith :problem105493 ;
     ns1:description "INSTALLED CYL BAFFLES & ALL NECESSARY PARTS. C/W AD E 2" .
 
-:action105494 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105494 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105494" ;
     :dealsWith :problem105494 ;
     :involves [ a :IntakeValve ] ;
     ns1:description "REMOVED CYL, FITTED NEW INTAKE VALVE, LAPPED BOTH VALVE" .
 
-:action105495 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105495 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105495" ;
     :dealsWith :problem105495 ;
     :involves [ a :BafflePlug ] ;
@@ -31249,13 +31249,13 @@
     :dealsWith :problem105497 ;
     ns1:description "PERFORMED MAINT HISTORY, INSPECTED FUEL SERVO. TEST RAN" .
 
-:action105498 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105498 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105498" ;
     :dealsWith :problem105498 ;
     :involves [ a :IntakeGasketsSeal ] ;
     ns1:description "REMOVED & REPLACED ALL INTAKE GASKETS & SEALS." .
 
-:action105499 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105499 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105499" ;
     :dealsWith :problem105499 ;
     :involves [ a :Gasket ] ;
@@ -31601,7 +31601,7 @@
     :dealsWith :problem105564 ;
     ns1:description "TIGHTENED BOTH BOLTS." .
 
-:action105565 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105565 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105565" ;
     :dealsWith :problem105565 ;
     ns1:description "REMOVED & REPLACED W/ NEW GASKET." .
@@ -31611,7 +31611,7 @@
     :dealsWith :problem105566 ;
     ns1:description "REPLACED GASKETS." .
 
-:action105567 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105567 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105567" ;
     :dealsWith :problem105567 ;
     ns1:description "REMOVED & REPLACED GASKE." .
@@ -31621,17 +31621,17 @@
     :dealsWith :problem105568 ;
     ns1:description "REPLACED GASKETS." .
 
-:action105569 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105569 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105569" ;
     :dealsWith :problem105569 ;
     ns1:description "REMOVED & REPLACED GASKET." .
 
-:action105570 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105570 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105570" ;
     :dealsWith :problem105570 ;
     ns1:description "REMOVED & REPLACED GASKETS." .
 
-:action105571 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105571 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105571" ;
     :dealsWith :problem105571 ;
     ns1:description "REMOVED & REPLACED INTAKE GASKETS." .
@@ -31651,7 +31651,7 @@
     :dealsWith :problem105574 ;
     ns1:description "REPOSITIONED DRAIN TUBE." .
 
-:action105575 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105575 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105575" ;
     :dealsWith :problem105575 ;
     ns1:description "REMOVED & REPLACED W/ NEW GASKET." .
@@ -32796,7 +32796,7 @@
     :dealsWith :problem105797 ;
     ns1:description "TIGHTENED RIVET." .
 
-:action105799 a <http://Ameneh.org/aircraft.owl#Started&RanAction> ;
+:action105799 a <https://w3id.org/zorro#Started&RanAction> ;
     rdfs:label "action105799" ;
     :dealsWith :problem105799 ;
     ns1:description "STARTED & RAN ENGINE L/H, ALL SYSTEMS W/IN PARAMETERS." .
@@ -33466,7 +33466,7 @@
     :dealsWith :problem105924 ;
     ns1:description "REAMED ALL 4 EXHAUST VALVES, CLEARANCES CK'ED GOOD; CYL" .
 
-:action105925 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105925 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105925" ;
     :dealsWith :problem105925 ;
     :involves [ a :Gasket ] ;
@@ -33523,18 +33523,18 @@
     :dealsWith :problem105935 ;
     ns1:description "REMOVED AFT CYL #3 BAFFLE, PATCHED BAFFLE IAW  SR" .
 
-:action105936 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105936 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105936" ;
     :dealsWith :problem105936 ;
     :involves [ a :CarbHeatShroud ] ;
     ns1:description "REMOVED & REPLACED CARB HEAT SHROUD." .
 
-:action105937 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105937 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105937" ;
     :dealsWith :problem105937 ;
     ns1:description "REMOVED & REPLACED W/ NEW GASKETS." .
 
-:action105938 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action105938 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action105938" ;
     :dealsWith :problem105938 ;
     :involves [ a :Gasket ] ;
@@ -33802,7 +33802,7 @@
     :dealsWith :problem105986 ;
     ns1:description "RAN UP A/C, CLEARED SPARK PLUGS. COULD NOT DUPLICATE DI" .
 
-:action105987 a <http://Ameneh.org/aircraft.owl#Ops&LeakCkAction> ;
+:action105987 a <https://w3id.org/zorro#Ops&LeakCkAction> ;
     rdfs:label "action105987" ;
     :dealsWith :problem105987 ;
     ns1:description "OPS & LEAK CK GOOD." .
@@ -34360,7 +34360,7 @@
     :involves [ a :Gasket ] ;
     ns1:description "REPLACED GASKET." .
 
-:action106087 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action106087 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action106087" ;
     :dealsWith :problem106087 ;
     :involves [ a :Gasket ] ;
@@ -34372,7 +34372,7 @@
     :involves [ a :Screw ] ;
     ns1:description "REINSTALLED SCREW." .
 
-:action106089 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action106089 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action106089" ;
     :dealsWith :problem106089 ;
     :involves [ a :Gasket ] ;
@@ -34618,7 +34618,7 @@
     :dealsWith :problem106136 ;
     ns1:description "INSTALLED GROMMET." .
 
-:action106137 a <http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> ;
+:action106137 a <https://w3id.org/zorro#Removed&ReplacedAction> ;
     rdfs:label "action106137" ;
     :dealsWith :problem106137 ;
     ns1:description "REMOVED & REPLACED BAFFLE PLUGS. INSTALLED BAFFLE PATCH" .
@@ -35847,10 +35847,10 @@
 :CleanProblem rdfs:label "Clean Problem" ;
     rdfs:subClassOf :Problem .
 
-<http://Ameneh.org/aircraft.owl#Cleaned&SealedAction> rdfs:label "Cleaned & Sealed Action" ;
+<https://w3id.org/zorro#Cleaned&SealedAction> rdfs:label "Cleaned & Sealed Action" ;
     rdfs:subClassOf :Action .
 
-<http://Ameneh.org/aircraft.owl#CleanedOut&InstalledAction> rdfs:label "Cleaned Out & Installed Action" ;
+<https://w3id.org/zorro#CleanedOut&InstalledAction> rdfs:label "Cleaned Out & Installed Action" ;
     rdfs:subClassOf :Action .
 
 :CleanedOutAction rdfs:label "Cleaned Out Action" ;
@@ -36042,7 +36042,7 @@
 :DrainedAction rdfs:label "Drained Action" ;
     rdfs:subClassOf :Action .
 
-<http://Ameneh.org/aircraft.owl#Drilled&ReplacedAction> rdfs:label "Drilled & Replaced Action" ;
+<https://w3id.org/zorro#Drilled&ReplacedAction> rdfs:label "Drilled & Replaced Action" ;
     rdfs:subClassOf :Action .
 
 :DropsProblem rdfs:label "Drops Problem" ;
@@ -36283,7 +36283,7 @@
 
 :Eyebolt rdfs:subClassOf :Part .
 
-<http://Ameneh.org/aircraft.owl#Fabricated&InstalledAction> rdfs:label "Fabricated & Installed Action" ;
+<https://w3id.org/zorro#Fabricated&InstalledAction> rdfs:label "Fabricated & Installed Action" ;
     rdfs:subClassOf :Action .
 
 :FailureProblem rdfs:label "Failure Problem" ;
@@ -36586,7 +36586,7 @@
 
 :Insert rdfs:subClassOf :Part .
 
-<http://Ameneh.org/aircraft.owl#Insp'DAction> rdfs:label "Insp'D Action" ;
+<https://w3id.org/zorro#Insp'DAction> rdfs:label "Insp'D Action" ;
     rdfs:subClassOf :Action .
 
 :InspectAction rdfs:label "Inspect Action" ;
@@ -36604,7 +36604,7 @@
 :InstallationAction rdfs:label "Installation Action" ;
     rdfs:subClassOf :Action .
 
-<http://Ameneh.org/aircraft.owl#Installed&TorquedAction> rdfs:label "Installed & Torqued Action" ;
+<https://w3id.org/zorro#Installed&TorquedAction> rdfs:label "Installed & Torqued Action" ;
     rdfs:subClassOf :Action .
 
 :IntakeBoot rdfs:label "intake boot" ;
@@ -36702,7 +36702,7 @@
 
 :Leak rdfs:subClassOf :Part .
 
-<http://Ameneh.org/aircraft.owl#Leak&RunUpCkGoodAction> rdfs:label "Leak & Run Up Ck Good Action" ;
+<https://w3id.org/zorro#Leak&RunUpCkGoodAction> rdfs:label "Leak & Run Up Ck Good Action" ;
     rdfs:subClassOf :Action .
 
 :LeakCheckGoodAction rdfs:label "Leak Check Good Action" ;
@@ -36826,7 +36826,7 @@
 :MisroutedProblem rdfs:label "Misrouted Problem" ;
     rdfs:subClassOf :Problem .
 
-<http://Ameneh.org/aircraft.owl#Missing/LooseProblem> rdfs:label "Missing/Loose Problem" ;
+<https://w3id.org/zorro#Missing/LooseProblem> rdfs:label "Missing/Loose Problem" ;
     rdfs:subClassOf :Problem .
 
 :MixtureControl rdfs:label "mixture control" ;
@@ -36982,10 +36982,10 @@
 :OiltorquemeterMount rdfs:label "oiltorquemeter mount" ;
     rdfs:subClassOf :Mount .
 
-<http://Ameneh.org/aircraft.owl#Ops&LeakCheckAction> rdfs:label "Ops & Leak Check Action" ;
+<https://w3id.org/zorro#Ops&LeakCheckAction> rdfs:label "Ops & Leak Check Action" ;
     rdfs:subClassOf :Action .
 
-<http://Ameneh.org/aircraft.owl#Ops&LeakCkGoodAction> rdfs:label "Ops & Leak Ck Good Action" ;
+<https://w3id.org/zorro#Ops&LeakCkGoodAction> rdfs:label "Ops & Leak Ck Good Action" ;
     rdfs:subClassOf :Action .
 
 :OpsCkAction rdfs:label "Ops Ck Action" ;
@@ -37130,10 +37130,10 @@
 :RanRoughProblem rdfs:label "Ran Rough Problem" ;
     rdfs:subClassOf :Problem .
 
-<http://Ameneh.org/aircraft.owl#RanUp&LeakCk'EdAction> rdfs:label "Ran Up & Leak Ck'Ed Action" ;
+<https://w3id.org/zorro#RanUp&LeakCk'EdAction> rdfs:label "Ran Up & Leak Ck'Ed Action" ;
     rdfs:subClassOf :Action .
 
-<http://Ameneh.org/aircraft.owl#RanUpA/CAction> rdfs:label "Ran Up A/C Action" ;
+<https://w3id.org/zorro#RanUpA/CAction> rdfs:label "Ran Up A/C Action" ;
     rdfs:subClassOf :Action .
 
 :RanUpToOperatingTempsAction rdfs:label "Ran Up To Operating Temps Action" ;
@@ -37174,7 +37174,7 @@
 :RecheckedAction rdfs:label "Rechecked Action" ;
     rdfs:subClassOf :Action .
 
-<http://Ameneh.org/aircraft.owl#Reck'EdAction> rdfs:label "Reck'Ed Action" ;
+<https://w3id.org/zorro#Reck'EdAction> rdfs:label "Reck'Ed Action" ;
     rdfs:subClassOf :Action .
 
 :ReconectedAction rdfs:label "Reconected Action" ;
@@ -37198,16 +37198,16 @@
 :RemoevdAction rdfs:label "Remoevd Action" ;
     rdfs:subClassOf :Action .
 
-<http://Ameneh.org/aircraft.owl#Removed&ReplacdAction> rdfs:label "Removed & Replacd Action" ;
+<https://w3id.org/zorro#Removed&ReplacdAction> rdfs:label "Removed & Replacd Action" ;
     rdfs:subClassOf :Action .
 
-<http://Ameneh.org/aircraft.owl#Removed,Cleaned&InstalledAction> rdfs:label "Removed, Cleaned & Installed Action" ;
+<https://w3id.org/zorro#Removed,Cleaned&InstalledAction> rdfs:label "Removed, Cleaned & Installed Action" ;
     rdfs:subClassOf :Action .
 
-<http://Ameneh.org/aircraft.owl#Removed,Cleaned,InstalledAction> rdfs:label "Removed, Cleaned, Installed Action" ;
+<https://w3id.org/zorro#Removed,Cleaned,InstalledAction> rdfs:label "Removed, Cleaned, Installed Action" ;
     rdfs:subClassOf :Action .
 
-<http://Ameneh.org/aircraft.owl#Removed,Cleaned,ReinstalledAction> rdfs:label "Removed, Cleaned, Reinstalled Action" ;
+<https://w3id.org/zorro#Removed,Cleaned,ReinstalledAction> rdfs:label "Removed, Cleaned, Reinstalled Action" ;
     rdfs:subClassOf :Action .
 
 :RemovedOldAction rdfs:label "Removed Old Action" ;
@@ -37228,7 +37228,7 @@
 :ReplacdAction rdfs:label "Replacd Action" ;
     rdfs:subClassOf :Action .
 
-<http://Ameneh.org/aircraft.owl#Replaced&TightenedAction> rdfs:label "Replaced & Tightened Action" ;
+<https://w3id.org/zorro#Replaced&TightenedAction> rdfs:label "Replaced & Tightened Action" ;
     rdfs:subClassOf :Action .
 
 :ReplacedProblem rdfs:label "Replaced Problem" ;
@@ -37333,7 +37333,7 @@
 :RudderCover rdfs:label "rudder cover" ;
     rdfs:subClassOf :Cover .
 
-<http://Ameneh.org/aircraft.owl#RunUp&LeakCkAction> rdfs:label "Run Up & Leak Ck Action" ;
+<https://w3id.org/zorro#RunUp&LeakCkAction> rdfs:label "Run Up & Leak Ck Action" ;
     rdfs:subClassOf :Action .
 
 :Safetie rdfs:subClassOf :Part .
@@ -37465,7 +37465,7 @@
 :StandbyAssy rdfs:label "standby assy" ;
     rdfs:subClassOf :Assy .
 
-<http://Ameneh.org/aircraft.owl#Started&RanAction> rdfs:label "Started & Ran Action" ;
+<https://w3id.org/zorro#Started&RanAction> rdfs:label "Started & Ran Action" ;
     rdfs:subClassOf :Action .
 
 :StartedRemovingAction rdfs:label "Started Removing Action" ;
@@ -37641,19 +37641,19 @@
 :WiringHolder rdfs:label "wiring holder" ;
     rdfs:subClassOf :Holder .
 
-<http://Ameneh.org/aircraft.owl#Won'TStartProblem> rdfs:label "Won'T Start Problem" ;
+<https://w3id.org/zorro#Won'TStartProblem> rdfs:label "Won'T Start Problem" ;
     rdfs:subClassOf :Problem .
 
-<http://Ameneh.org/aircraft.owl#Won'TTightenProblem> rdfs:label "Won'T Tighten Problem" ;
+<https://w3id.org/zorro#Won'TTightenProblem> rdfs:label "Won'T Tighten Problem" ;
     rdfs:subClassOf :Problem .
 
-<http://Ameneh.org/aircraft.owl#Won'T_StartProblem> rdfs:label "Won'T_Start Problem" ;
+<https://w3id.org/zorro#Won'T_StartProblem> rdfs:label "Won'T_Start Problem" ;
     rdfs:subClassOf :Problem .
 
 :WornOutProblem rdfs:label "Worn Out Problem" ;
     rdfs:subClassOf :Problem .
 
-<http://Ameneh.org/aircraft.owl#Wouldn'TStartProblem> rdfs:label "Wouldn'T Start Problem" ;
+<https://w3id.org/zorro#Wouldn'TStartProblem> rdfs:label "Wouldn'T Start Problem" ;
     rdfs:subClassOf :Problem .
 
 :ZipTiedAction rdfs:label "Zip Tied Action" ;
@@ -42345,19 +42345,19 @@
             :atCylinder 3 ] ;
     ns1:description "#3 & 4 ROCKER GASKETS ARE LEAKING." .
 
-:problem100738 a <http://Ameneh.org/aircraft.owl#Won'TProblem> ;
+:problem100738 a <https://w3id.org/zorro#Won'TProblem> ;
     rdfs:label "problem100738" ;
     ns1:description "A/C WON'T START." .
 
-:problem100739 a <http://Ameneh.org/aircraft.owl#Won'TProblem> ;
+:problem100739 a <https://w3id.org/zorro#Won'TProblem> ;
     rdfs:label "problem100739" ;
     ns1:description "A/C WON'T START." .
 
-:problem100740 a <http://Ameneh.org/aircraft.owl#Won'TProblem> ;
+:problem100740 a <https://w3id.org/zorro#Won'TProblem> ;
     rdfs:label "problem100740" ;
     ns1:description "A/C WON'T START." .
 
-:problem100741 a <http://Ameneh.org/aircraft.owl#Won'T_StartProblem> ;
+:problem100741 a <https://w3id.org/zorro#Won'T_StartProblem> ;
     rdfs:label "problem100741" ;
     ns1:description "A/C WON'T START." .
 
@@ -46081,7 +46081,7 @@
             :atEngine "R" ] ;
     ns1:description "R/H ENG BAFFLE SCREW MISSING." .
 
-:problem101342 a <http://Ameneh.org/aircraft.owl#Wouldn'TStartProblem> ;
+:problem101342 a <https://w3id.org/zorro#Wouldn'TStartProblem> ;
     rdfs:label "problem101342" ;
     ns1:description "A/C WOULDN'T START." .
 
@@ -49932,7 +49932,7 @@
             :atCylinder 2 ] ;
     ns1:description "#2 INTAKE GASKET LEAKING." .
 
-:problem101963 a <http://Ameneh.org/aircraft.owl#Won'TTightenProblem> ;
+:problem101963 a <https://w3id.org/zorro#Won'TTightenProblem> ;
     rdfs:label "problem101963" ;
     :involves [ a :RockerCoverScrew ;
             :atCylinder 4 ] ;
@@ -65386,7 +65386,7 @@
             :atEngine "L" ] ;
     ns1:description "#2 & 4 INTAKES LEAKING ON L/H ENGINE." .
 
-:problem104390 a <http://Ameneh.org/aircraft.owl#Won'TStartProblem> ;
+:problem104390 a <https://w3id.org/zorro#Won'TStartProblem> ;
     rdfs:label "problem104390" ;
     ns1:description "L/H ENG WON'T START." .
 
@@ -70211,7 +70211,7 @@
             :atEngine "L" ] ;
     ns1:description "#1 CYLINDER BAFFLE SEAL NEEDS TO BE REPLACED ON L/H ENGINE." .
 
-:problem105204 a <http://Ameneh.org/aircraft.owl#Missing/LooseProblem> ;
+:problem105204 a <https://w3id.org/zorro#Missing/LooseProblem> ;
     rdfs:label "problem105204" ;
     :involves [ a :CowlSeal ;
             :atEngine "R" ] ;
@@ -76275,7 +76275,7 @@
 :OnProblem rdfs:label "On Problem" ;
     rdfs:subClassOf :Problem .
 
-<http://Ameneh.org/aircraft.owl#Ops&LeakCkAction> rdfs:label "Ops & Leak Ck Action" ;
+<https://w3id.org/zorro#Ops&LeakCkAction> rdfs:label "Ops & Leak Ck Action" ;
     rdfs:subClassOf :Action .
 
 :OverProblem rdfs:label "Over Problem" ;
@@ -76343,7 +76343,7 @@
 :QuickDrain rdfs:label "quick drain" ;
     rdfs:subClassOf :Drain .
 
-<http://Ameneh.org/aircraft.owl#RanA/CAction> rdfs:label "Ran A/C Action" ;
+<https://w3id.org/zorro#RanA/CAction> rdfs:label "Ran A/C Action" ;
     rdfs:subClassOf :Action .
 
 :RearEngineBaffle rdfs:label "rear engine baffle" ;
@@ -76370,7 +76370,7 @@
 :RemovalAction rdfs:label "Removal Action" ;
     rdfs:subClassOf :Action .
 
-<http://Ameneh.org/aircraft.owl#Removed&InstalledAction> rdfs:label "Removed & Installed Action" ;
+<https://w3id.org/zorro#Removed&InstalledAction> rdfs:label "Removed & Installed Action" ;
     rdfs:subClassOf :Action .
 
 :ReqProblem rdfs:label "Req Problem" ;
@@ -76590,13 +76590,13 @@
 :ButtonPlug rdfs:label "button plug" ;
     rdfs:subClassOf :Plug .
 
-<http://Ameneh.org/aircraft.owl#C/WAction> rdfs:label "C/W Action" ;
+<https://w3id.org/zorro#C/WAction> rdfs:label "C/W Action" ;
     rdfs:subClassOf :Action .
 
 :CaseHalve rdfs:label "case halve" ;
     rdfs:subClassOf :Halve .
 
-<http://Ameneh.org/aircraft.owl#Ck'EdAction> rdfs:label "Ck'Ed Action" ;
+<https://w3id.org/zorro#Ck'EdAction> rdfs:label "Ck'Ed Action" ;
     rdfs:subClassOf :Action .
 
 :CollectingProblem rdfs:label "Collecting Problem" ;
@@ -76811,7 +76811,7 @@
 :WeepingProblem rdfs:label "Weeping Problem" ;
     rdfs:subClassOf :Problem .
 
-<http://Ameneh.org/aircraft.owl#Won'TProblem> rdfs:label "Won'T Problem" ;
+<https://w3id.org/zorro#Won'TProblem> rdfs:label "Won'T Problem" ;
     rdfs:subClassOf :Problem .
 
 :Wrap rdfs:subClassOf :Part .
@@ -77816,7 +77816,7 @@
 :LooseProblem rdfs:label "Loose Problem" ;
     rdfs:subClassOf :Problem .
 
-<http://Ameneh.org/aircraft.owl#Removed&ReplacedAction> rdfs:label "Removed & Replaced Action" ;
+<https://w3id.org/zorro#Removed&ReplacedAction> rdfs:label "Removed & Replaced Action" ;
     rdfs:subClassOf :Action .
 
 :Baffle rdfs:label "baffle" ;

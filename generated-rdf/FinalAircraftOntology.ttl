@@ -1,76 +1,76 @@
-@prefix : <http://Ameneh.org/aircraft.owl#> .
+@prefix : <https://w3id.org/zorro#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://Ameneh.org/aircraft.owl#> .
+@base <https://w3id.org/zorro#> .
 
-<http://Ameneh.org/aircraft.owl> rdf:type owl:Ontology.
+<https://w3id.org/zorro> rdf:type owl:Ontology.
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://Ameneh.org/aircraft.owl#address
+###  https://w3id.org/zorro#dealsWith
 :dealsWith rdf:type owl:ObjectProperty ;
          rdfs:domain :Action ;
          rdfs:range :Problem .
 
-###  http://Ameneh.org/aircraft.owl#address
+###  https://w3id.org/zorro#address
 :address rdf:type owl:ObjectProperty ;
          rdfs:domain :WorkAround ;
          rdfs:range :Effect .
 
 
-###  http://Ameneh.org/aircraft.owl#consistOf
+###  https://w3id.org/zorro#consistOf
 :consistOf rdf:type owl:ObjectProperty ;
            rdfs:range :Step ;
            rdfs:domain :Procedure .
 
 
-###  http://Ameneh.org/aircraft.owl#define
+###  https://w3id.org/zorro#define
 :define rdf:type owl:ObjectProperty ;
         rdfs:domain :Function ;
         rdfs:range :Problem .
 
 
-###  http://Ameneh.org/aircraft.owl#dependOn
+###  https://w3id.org/zorro#dependOn
 :dependOn rdf:type owl:ObjectProperty ;
           rdfs:domain :Function ;
           rdfs:range :Function .
 
 
-###  http://Ameneh.org/aircraft.owl#failVia
+###  https://w3id.org/zorro#failVia
 :failVia rdf:type owl:ObjectProperty ;
          rdfs:domain :Component ;
          rdfs:range :Problem .
 
 
-###  http://Ameneh.org/aircraft.owl#hasCause
+###  https://w3id.org/zorro#hasCause
 :hasCause rdf:type owl:ObjectProperty ;
           rdfs:domain :Problem .
 
 
-###  http://Ameneh.org/aircraft.owl#hasFunction
+###  https://w3id.org/zorro#hasFunction
 :hasFunction rdf:type owl:ObjectProperty ;
              rdfs:domain :Component ;
              rdfs:range :Function .
 
 
-###  http://Ameneh.org/aircraft.owl#involve
+###  https://w3id.org/zorro#involve
 :involve rdf:type owl:ObjectProperty ;
          rdfs:domain :Step ;
          rdfs:range :Component .
 
 
-###  http://Ameneh.org/aircraft.owl#resultIn
+###  https://w3id.org/zorro#resultIn
 :resultIn rdf:type owl:ObjectProperty ;
           rdfs:domain :Problem ;
           rdfs:range :Effect .
 
 
-###  http://Ameneh.org/aircraft.owl#solve
+###  https://w3id.org/zorro#solve
 :solve rdf:type owl:ObjectProperty ;
        rdfs:subPropertyOf owl:topObjectProperty ;
        rdfs:domain :Solution ;
@@ -81,13 +81,13 @@
 #    Data properties
 #################################################################
 
-###  http://Ameneh.org/aircraft.owl#hasID
+###  https://w3id.org/zorro#hasID
 :hasID rdf:type owl:DatatypeProperty ;
        rdfs:domain :Problem ;
        rdfs:range xsd:integer .
 
 
-###  http://Ameneh.org/aircraft.owl#hasName
+###  https://w3id.org/zorro#hasName
 :hasName rdf:type owl:DatatypeProperty ;
          rdfs:domain :Problem ;
          rdfs:range xsd:string .
@@ -97,52 +97,52 @@
 #    Classes
 #################################################################
 
-###  http://Ameneh.org/aircraft.owl#Assembly
+###  https://w3id.org/zorro#Assembly
 :Assembly rdf:type owl:Class ;
           rdfs:subClassOf :Component .
 
 
-###  http://Ameneh.org/aircraft.owl#Component
+###  https://w3id.org/zorro#Component
 :Component rdf:type owl:Class ;
            rdfs:subClassOf owl:Thing .
 
 
-###  http://Ameneh.org/aircraft.owl#Effect
+###  https://w3id.org/zorro#Effect
 :Effect rdf:type owl:Class .
 
 
-###  http://Ameneh.org/aircraft.owl#Function
+###  https://w3id.org/zorro#Function
 :Function rdf:type owl:Class .
 
 
-###  http://Ameneh.org/aircraft.owl#Part
+###  https://w3id.org/zorro#Part
 :Part rdf:type owl:Class ;
       rdfs:subClassOf :Component .
 
 
-###  http://Ameneh.org/aircraft.owl#Problem
+###  https://w3id.org/zorro#Problem
 :Problem rdf:type owl:Class .
 
 
-###  http://Ameneh.org/aircraft.owl#Procedure
+###  https://w3id.org/zorro#Procedure
 :Procedure rdf:type owl:Class .
 
 
-###  http://Ameneh.org/aircraft.owl#Solution
+###  https://w3id.org/zorro#Solution
 :Solution rdf:type owl:Class ;
           rdfs:subClassOf :Procedure .
 
 
-###  http://Ameneh.org/aircraft.owl#Step
+###  https://w3id.org/zorro#Step
 :Step rdf:type owl:Class .
 
 
-###  http://Ameneh.org/aircraft.owl#System
+###  https://w3id.org/zorro#System
 :System rdf:type owl:Class ;
         rdfs:subClassOf :Component .
 
 
-###  http://Ameneh.org/aircraft.owl#WorkAround
+###  https://w3id.org/zorro#WorkAround
 :WorkAround rdf:type owl:Class ;
             rdfs:subClassOf :Procedure .
 
@@ -151,15 +151,15 @@
 #    Individuals
 #################################################################
 
-###  http://Ameneh.org/aircraft.owl#screwDriver1
+###  https://w3id.org/zorro#screwDriver1
 :screwDriver1 rdf:type owl:NamedIndividual .
 
 
-###  http://Ameneh.org/aircraft.owl#screwDriver2
+###  https://w3id.org/zorro#screwDriver2
 :screwDriver2 rdf:type owl:NamedIndividual .
 
 
-###  http://Ameneh.org/aircraft.owl#screwDriver3
+###  https://w3id.org/zorro#screwDriver3
 :screwDriver3 rdf:type owl:NamedIndividual .
 
 

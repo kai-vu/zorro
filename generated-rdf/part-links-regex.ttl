@@ -1,4 +1,4 @@
-@prefix : <http://Ameneh.org/aircraft.owl#> .
+@prefix : <https://w3id.org/zorro#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :2IntakeGasket :isMaybe [ :linkCandidate :partnr-71973 ;

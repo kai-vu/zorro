@@ -9,7 +9,7 @@
 import csv, rdflib, re
 
 g = rdflib.Graph()
-base = rdflib.Namespace('http://Ameneh.org/aircraft.owl#')
+base = rdflib.Namespace('https://w3id.org/zorro#')
 g.bind(None, base)
 troubleshooting = csv.DictReader(open('pdf-extracted/troubleshooting.csv'))
 for line in troubleshooting:
@@ -42,7 +42,7 @@ g.serialize('generated-rdf/troubleshooting.ttl', format='ttl')
 import csv, rdflib, re
 
 g = rdflib.Graph()
-base = rdflib.Namespace('http://Ameneh.org/aircraft.owl#')
+base = rdflib.Namespace('https://w3id.org/zorro#')
 g.bind(None, base)
 
 def ensure_superclass_chain(part, cls):
@@ -124,7 +124,7 @@ g.serialize('generated-rdf/part-catalog.ttl', format='ttl')
 import csv, rdflib, re
 
 g = rdflib.Graph()
-base = rdflib.Namespace('http://Ameneh.org/aircraft.owl#')
+base = rdflib.Namespace('https://w3id.org/zorro#')
 g.bind(None, base)
 lines = csv.DictReader(
     open('prompt-extracted/problem-component-function.tsv'),
@@ -264,7 +264,7 @@ def make_event(g, line, event):
 for source in ['regex', 'chatgpt_4o']:
 
   g = rdflib.Graph()
-  base = rdflib.Namespace('http://Ameneh.org/aircraft.owl#')
+  base = rdflib.Namespace('https://w3id.org/zorro#')
   g.bind(None, base)
 
   fname = f'log-extracted/problem_extractions_{source}.csv'
@@ -285,7 +285,7 @@ for source in ['regex', 'chatgpt_4o']:
 
 
 g = rdflib.Graph()
-base = rdflib.Namespace('http://Ameneh.org/aircraft.owl#')
+base = rdflib.Namespace('https://w3id.org/zorro#')
 g.bind(None, base)
 
 for row in open('part-links/part-links-regex.tsv'):
@@ -306,7 +306,7 @@ g.serialize(f'generated-rdf/part-links-regex.ttl', format='ttl')
 import csv, json, rdflib, re, collections
 
 g = rdflib.Graph()
-base = rdflib.Namespace('http://Ameneh.org/aircraft.owl#')
+base = rdflib.Namespace('https://w3id.org/zorro#')
 g.bind(None, base)
 
 for row in open('part-links.tsv'):
