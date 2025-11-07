@@ -1,17 +1,21 @@
-# chat_to_tsv.py
-# Purpose: Run a single chat conversation that yields three TSV files from your templates.
-
 from openai import OpenAI
 import pandas as pd
 import re
 from pathlib import Path
 
 # ---------- Config ----------
-MODEL = "gpt-4o-mini"
-OUT_DIR = Path("prompt-extracted")
+MODEL = "gpt-5-nano"
+OUT_DIR = Path("prompt-extracted-nano")
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-client = OpenAI(api_key=open('openai-key.txt').read().strip())
+client = OpenAI(api_key=open("openai-key.txt").read().strip())
+
+system_prompt = """
+You are an aviation maintenance knowledge engineer. Output TSV only, no prose. 
+Reuse exact strings from prior TSVs unless told otherwise. 
+All functions use short gerund phrases (eg. “regulating fuel flow”). 
+Enforce referential integrity: reject any value not present in the provided lists or prior TSVs.
+"""
 
 # ---------- Helpers ----------
 def strip_code_fences(text: str) -> str:
@@ -28,10 +32,12 @@ def strip_code_fences(text: str) -> str:
     text = re.sub(r"\n?```[a-zA-Z0-9]*\n?", "\n", text)
     return text.strip()
 
+
 def save_tsv(text: str, path: Path) -> None:
     clean = strip_code_fences(text)
     path.write_text(clean, encoding="utf-8")
     print(f"Wrote {path}")
+
 
 # ---------- Load source data ----------
 parts_df = pd.read_csv("pdf-extracted/parts-catalog.csv")
@@ -64,11 +70,18 @@ Output one tsv with three columns:
 the name of the function (exactly), which functions (exactly) it depends on, and 
 which more general parent function of which it is a child (exactly). 
 The first row should be headers: "Function", "dependsOn", "parentFunction".
-Separate multiple functions by semicolon. 
+
+Rules:
+- Function must be exactly one from the previous TSV’s hasFunction column.
+- dependsOn is a semicolon-separated list of Functions from the same set; use empty cell if none.
+- parentFunction is either one Function from the same set or empty if top-level.
+- Do not invent new functions. No explanations.
 """.strip()
 
 trouble_df = pd.read_csv("pdf-extracted/troubleshooting.csv")
-trouble_list = "\n".join("- " + s for s in trouble_df["TROUBLE"].dropna().astype(str).unique())
+trouble_list = "\n".join(
+    "- " + s for s in trouble_df["TROUBLE"].dropna().astype(str).unique()
+)
 
 # Extract probable-cause up to first parenthesis, then dedupe
 cause_series = (
@@ -86,30 +99,26 @@ the problem (exactly), which system or assembly they are related to (exactly),
 and which function of that system or assembly is failing due to the problem (exactly).
 The first row should be headers: "Problem", "ofComponent" and "failingFunction".
 
+Rules:
+- ofComponent must be exactly a Component from Prompt 1.
+- failingFunction must be exactly a Function from Prompt 2 that the component has via hasFunction.
+
+
 {trouble_list}
 {cause_list}
 """.strip()
 
 # ---------- Conversation ----------
 messages = [
-    {
-        "role": "system",
-        "content": (
-            "You are an expert aviation maintenance knowledge engineer. "
-            "Always return valid TSV with the required headers. "
-            "Never include explanations, only the TSV content. "
-            "Use only components and functions mentioned or logically implied by the provided lists. "
-            "Keep function phrases short in gerund form."
-        ),
-    },
+    {"role": "system", "content": system_prompt},
     {"role": "user", "content": prompt1},
 ]
 
-# Turn 1: Components → Functions
+print('Turn 1: Components → Functions')
 resp1 = client.chat.completions.create(
     model=MODEL,
     messages=messages,
-    temperature=0.2,
+    # temperature=0.2,
 )
 tsv1 = resp1.choices[0].message.content
 save_tsv(tsv1, OUT_DIR / "functions.tsv")
@@ -117,24 +126,24 @@ save_tsv(tsv1, OUT_DIR / "functions.tsv")
 # Add assistant content to history so the next prompt can reference it
 messages.append({"role": "assistant", "content": strip_code_fences(tsv1)})
 
-# Turn 2: Function dependencies and hierarchy
+print('Turn 2: Function dependencies and hierarchy')
 messages.append({"role": "user", "content": prompt2})
 resp2 = client.chat.completions.create(
     model=MODEL,
     messages=messages,
-    temperature=0.2,
+    # temperature=0.2,
 )
 tsv2 = resp2.choices[0].message.content
 save_tsv(tsv2, OUT_DIR / "function_dependencies.tsv")
 
 messages.append({"role": "assistant", "content": strip_code_fences(tsv2)})
 
-# Turn 3: Troubles → Component + failing function
+print('Turn 3: Troubles → Component + failing function')
 messages.append({"role": "user", "content": prompt3})
 resp3 = client.chat.completions.create(
     model=MODEL,
     messages=messages,
-    temperature=0.2,
+    # temperature=0.2,
 )
 tsv3 = resp3.choices[0].message.content
 save_tsv(tsv3, OUT_DIR / "problem_component_function.tsv")

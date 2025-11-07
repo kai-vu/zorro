@@ -11,16 +11,18 @@ from sklearn.model_selection import train_test_split
 # In[34]:
 
 
-df = pd.read_csv('/content/Last Annotated problems Aircraft Data - Blad1 (2).csv')
+df = pd.read_csv("/content/Last Annotated problems Aircraft Data - Blad1 (2).csv")
 
 
 # In[35]:
 
 
-training_df = df[(df['LOCATION'].notnull())|(df['PART'].notnull())|(df['TGGEDPROBLEM'].notnull())]
+training_df = df[
+    (df["LOCATION"].notnull()) | (df["PART"].notnull()) | (df["TGGEDPROBLEM"].notnull())
+]
 train, test = train_test_split(training_df, test_size=0.2, random_state=42)
-train.to_csv('train.csv', index=False)
-test.to_csv('test.csv', index=False)
+train.to_csv("train.csv", index=False)
+test.to_csv("test.csv", index=False)
 
 
 # In[4]:
@@ -36,25 +38,29 @@ import csv
 import random
 import spacy
 
+
 def process_csv(input_file, skip_rows=0):
     spacy_training_data = []
-    with open(input_file, newline='') as csvfile:
+    with open(input_file, newline="") as csvfile:
         reader = csv.DictReader(csvfile)
         for index, row in enumerate(reader):
             if index < skip_rows:
                 continue  # Skip the first `skip_rows` rows
 
-            text = row['PROBLEM']
+            text = row["PROBLEM"]
             entities = []
-            for entity_type in ['LOCATION', 'PART', 'TGGEDPROBLEM']:
+            for entity_type in ["LOCATION", "PART", "TGGEDPROBLEM"]:
                 entity = row[entity_type]
-                if entity and entity != 'None':  # Check if entity is not empty or 'None'
+                if (
+                    entity and entity != "None"
+                ):  # Check if entity is not empty or 'None'
                     start = text.find(entity)
                     end = start + len(entity)
                     entities.append((start, end, entity_type))
             if entities:  # Only add to training data if entities were found
                 spacy_training_data.append((text, {"entities": entities}))
     return spacy_training_data
+
 
 nlp = spacy.blank("en")
 
@@ -63,7 +69,7 @@ ner.add_label("LOCATION")
 ner.add_label("PART")
 ner.add_label("TGGEDPROBLEM")
 
-input_file = '/content/train.csv'
+input_file = "/content/train.csv"
 
 spacy_training_data = process_csv(input_file)
 print(len(spacy_training_data), spacy_training_data[0])
@@ -87,7 +93,9 @@ for text, annot in spacy_training_data:
         try:
             span = doc.char_span(start, end, label=label)
             if span is None:
-                print(f"Failed to create span for '{text}' with label '{label}', skipping this annotation.")
+                print(
+                    f"Failed to create span for '{text}' with label '{label}', skipping this annotation."
+                )
             else:
                 spans.append(span)
         except ValueError as e:
@@ -98,7 +106,6 @@ for text, annot in spacy_training_data:
             examples.append(Example.from_dict(doc, {"entities": spans}))
         except ValueError as e:
             print(f"Ignoring annotation for '{text}' due to error: {e}")
-
 
 
 # In[38]:
@@ -122,7 +129,7 @@ print("Trained NER model saved to:", output_dir)
 # Load the trained model from the directory
 loaded_nlp = spacy.load(output_dir)
 
-spacy_test_data = process_csv('/content/test.csv')
+spacy_test_data = process_csv("/content/test.csv")
 # print(len(spacy_test_data))
 
 test_examples = []
@@ -137,7 +144,9 @@ for text, annot in spacy_test_data:
         try:
             span = doc.char_span(start, end, label=label)
             if span is None:
-                print(f"Failed to create span for '{text}' with label '{label}', skipping this annotation.")
+                print(
+                    f"Failed to create span for '{text}' with label '{label}', skipping this annotation."
+                )
             else:
                 spans.append(span)
         except ValueError as e:
@@ -150,7 +159,6 @@ for text, annot in spacy_test_data:
             print(f"Ignoring annotation for '{text}' due to error: {e}")
 
 print(len(test_examples))
-
 
 
 # In[40]:
@@ -171,15 +179,29 @@ print(df.columns)
 
 
 # Filter the dataframe for rows where LOCATION, PART, and TAGGEDPROBLEM are null
-raw_df = df[(df['LOCATION'].isnull())&(df['PART'].isnull())&(df['TGGEDPROBLEM'].isnull())]
+raw_df = df[
+    (df["LOCATION"].isnull()) & (df["PART"].isnull()) & (df["TGGEDPROBLEM"].isnull())
+]
 
 # Create new columns for LOCATION, PART, and TAGGEDPROBLEM based on the predicted entities
-raw_df['Location'] = raw_df['PROBLEM'].apply(lambda prb: ', '.join([ent.text for ent in loaded_nlp(prb).ents if ent.label_ == 'LOCATION']))
-raw_df['Part'] = raw_df['PROBLEM'].apply(lambda prb: ', '.join([ent.text for ent in loaded_nlp(prb).ents if ent.label_ == 'PART']))
-raw_df['Tagged_problem'] = raw_df['PROBLEM'].apply(lambda prb: ', '.join([ent.text for ent in loaded_nlp(prb).ents if ent.label_ == 'TGGEDPROBLEM']))
+raw_df["Location"] = raw_df["PROBLEM"].apply(
+    lambda prb: ", ".join(
+        [ent.text for ent in loaded_nlp(prb).ents if ent.label_ == "LOCATION"]
+    )
+)
+raw_df["Part"] = raw_df["PROBLEM"].apply(
+    lambda prb: ", ".join(
+        [ent.text for ent in loaded_nlp(prb).ents if ent.label_ == "PART"]
+    )
+)
+raw_df["Tagged_problem"] = raw_df["PROBLEM"].apply(
+    lambda prb: ", ".join(
+        [ent.text for ent in loaded_nlp(prb).ents if ent.label_ == "TGGEDPROBLEM"]
+    )
+)
 
 # Now, you have separate columns for each label
-raw_df[['Location', 'Part', 'Tagged_problem']]
+raw_df[["Location", "Part", "Tagged_problem"]]
 
 
 # In[44]:
@@ -191,28 +213,24 @@ import pandas as pd
 # And `raw_df` contains the predictions
 
 # Update the LOCATION column with predicted labels where original labels are missing
-df['LOCATION'] = df['LOCATION'].combine_first(raw_df['Location'])
+df["LOCATION"] = df["LOCATION"].combine_first(raw_df["Location"])
 
 # Update the PART column with predicted labels where original labels are missing
-df['PART'] = df['PART'].combine_first(raw_df['Part'])
+df["PART"] = df["PART"].combine_first(raw_df["Part"])
 
 # Update the TGGEDPROBLEM column with predicted labels where original labels are missing
-df['TGGEDPROBLEM'] = df['TGGEDPROBLEM'].combine_first(raw_df['Tagged_problem'])
+df["TGGEDPROBLEM"] = df["TGGEDPROBLEM"].combine_first(raw_df["Tagged_problem"])
 
 
 # In[45]:
 
 
-df = df.drop(columns=['PROBLEM', 'ACTION'])
+df = df.drop(columns=["PROBLEM", "ACTION"])
 
 # Save the updated dataframe to a CSV file
-df.to_csv('Problem_extraction_NER.csv', index=False)
+df.to_csv("Problem_extraction_NER.csv", index=False)
 
 print("Final labels saved to 'Problem_extraction_NER.csv'")
 
 
 # In[ ]:
-
-
-
-

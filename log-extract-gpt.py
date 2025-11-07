@@ -6,10 +6,11 @@
 
 import pandas as pd
 from itables import show
-df = pd.read_csv('Aircraft_Annotation_DataFile.csv')
+
+df = pd.read_csv("Aircraft_Annotation_DataFile.csv")
 df.columns = [c.lower() for c in df.columns]
-df['problem'] = df['problem'].str.strip('.').str.strip()
-df['action'] = df['action'].str.strip('.').str.strip()
+df["problem"] = df["problem"].str.strip(".").str.strip()
+df["action"] = df["action"].str.strip(".").str.strip()
 show(df)
 
 
@@ -17,7 +18,8 @@ show(df)
 
 
 from openai import OpenAI
-client = OpenAI(api_key=open('openai-key.txt').read().strip())
+
+client = OpenAI(api_key=open("openai-key.txt").read().strip())
 
 prompt = """Given a set of aircraft maintenance problem descriptions, output a json object with an array of problem objects: {"problems":[ problem1, problem2, ... ]}
 Each problem is an object with the following fields:
@@ -34,26 +36,28 @@ If there is no very clear single part identified, don't fill in the field!
 from tqdm import tqdm
 import json, pathlib
 
-cache = pathlib.Path('gpt-cache')
+cache = pathlib.Path("gpt-cache")
 cache.mkdir(parents=True, exist_ok=True)
 
 out = []
 for i in tqdm(range(0, len(df), 20)):
-  lines = df.iloc[i:i+20][['ident', 'problem']].astype(str).apply(' '.join, axis=1)
+    lines = (
+        df.iloc[i : i + 20][["ident", "problem"]].astype(str).apply(" ".join, axis=1)
+    )
 
-  completion = client.chat.completions.create(
-    model="gpt-4o-mini", 
-    temperature= 0,
-    response_format={ "type": "json_object" },
-    messages=[
-      {"role": "system", "content": prompt},
-      {"role": "user", "content": '\n'.join(lines)}
-    ]
-  )
-  c = completion.choices[0].message.content
-  with open(cache / f'problem-{i}.json', 'w') as fw:
-    print(c, file=fw)
-  out += json.loads(c).get('problems', [])
+    completion = client.chat.completions.create(
+        model="gpt-4o-mini",
+        temperature=0,
+        response_format={"type": "json_object"},
+        messages=[
+            {"role": "system", "content": prompt},
+            {"role": "user", "content": "\n".join(lines)},
+        ],
+    )
+    c = completion.choices[0].message.content
+    with open(cache / f"problem-{i}.json", "w") as fw:
+        print(c, file=fw)
+    out += json.loads(c).get("problems", [])
 out
 
 
@@ -61,7 +65,7 @@ out
 
 
 p = pd.DataFrame.from_records(out)
-p.to_csv('log-extracted/problem_extractions_chatgpt_4o.csv', index=None)
+p.to_csv("log-extracted/problem_extractions_chatgpt_4o.csv", index=None)
 show(p)
 
 
@@ -69,7 +73,8 @@ show(p)
 
 
 from openai import OpenAI
-client = OpenAI(api_key=open('openai-key.txt').read().strip())
+
+client = OpenAI(api_key=open("openai-key.txt").read().strip())
 
 prompt = """Given a set of aircraft maintenance action descriptions, output a json object with an array of action objects: {"actions":[ action1, action2, ... ]}
 Each action is an object with the following fields:
@@ -86,26 +91,26 @@ If there is no very clear single part identified, don't fill in the field!
 from tqdm import tqdm
 import json, pathlib
 
-cache = pathlib.Path('gpt-cache')
+cache = pathlib.Path("gpt-cache")
 cache.mkdir(parents=True, exist_ok=True)
 
 act = []
 for i in tqdm(range(0, len(df), 20)):
-  lines = df.iloc[i:i+20][['ident', 'action']].astype(str).apply(' '.join, axis=1)
+    lines = df.iloc[i : i + 20][["ident", "action"]].astype(str).apply(" ".join, axis=1)
 
-  completion = client.chat.completions.create(
-    model="gpt-4o-mini",
-    temperature= 0,
-    response_format={ "type": "json_object" },
-    messages=[
-      {"role": "system", "content": prompt},
-      {"role": "user", "content": '\n'.join(lines)}
-    ]
-  )
-  c = completion.choices[0].message.content
-  with open(cache / f'action-{i}.json', 'w') as fw:
-    print(c, file=fw)
-  act += json.loads(c).get('actions', [])
+    completion = client.chat.completions.create(
+        model="gpt-4o-mini",
+        temperature=0,
+        response_format={"type": "json_object"},
+        messages=[
+            {"role": "system", "content": prompt},
+            {"role": "user", "content": "\n".join(lines)},
+        ],
+    )
+    c = completion.choices[0].message.content
+    with open(cache / f"action-{i}.json", "w") as fw:
+        print(c, file=fw)
+    act += json.loads(c).get("actions", [])
 act
 
 
@@ -113,6 +118,5 @@ act
 
 
 a = pd.DataFrame.from_records(act)
-a.to_csv('log-extracted/action_extractions_chatgpt_4o.csv', index=None)
+a.to_csv("log-extracted/action_extractions_chatgpt_4o.csv", index=None)
 show(a)
-
