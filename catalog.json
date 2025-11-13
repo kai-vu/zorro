@@ -1,0 +1,125 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DataCatalog",
+  "name": "ZORRO Aircraft Maintenance KG",
+  "url": "http://localhost:8000/",
+  "dataset": [
+    {
+      "@type": "Dataset",
+      "name": "FinalAircraftOntology",
+      "identifier": "FinalAircraftOntology",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/turtle",
+          "contentUrl": "http://localhost:8000/generated-rdf/FinalAircraftOntology.ttl"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "extractions_NER",
+      "identifier": "extractions_NER",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/turtle",
+          "contentUrl": "http://localhost:8000/generated-rdf/extractions_NER.ttl"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "extractions_chatgpt_4o",
+      "identifier": "extractions_chatgpt_4o",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/turtle",
+          "contentUrl": "http://localhost:8000/generated-rdf/extractions_chatgpt_4o.ttl"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "extractions_regex",
+      "identifier": "extractions_regex",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/turtle",
+          "contentUrl": "http://localhost:8000/generated-rdf/extractions_regex.ttl"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "functions",
+      "identifier": "functions",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/turtle",
+          "contentUrl": "http://localhost:8000/generated-rdf/functions.ttl"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "part-links-regex-simplified",
+      "identifier": "part-links-regex-simplified",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/turtle",
+          "contentUrl": "http://localhost:8000/generated-rdf/part-links-regex-simplified.ttl"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "part-links-regex",
+      "identifier": "part-links-regex",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/turtle",
+          "contentUrl": "http://localhost:8000/generated-rdf/part-links-regex.ttl"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "parts-catalog",
+      "identifier": "parts-catalog",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/turtle",
+          "contentUrl": "http://localhost:8000/generated-rdf/parts-catalog.ttl"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "troubleshooting",
+      "identifier": "troubleshooting",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/turtle",
+          "contentUrl": "http://localhost:8000/generated-rdf/troubleshooting.ttl"
+        }
+      ]
+    }
+  ],
+  "hasPart": [
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "failure frequency",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "http://localhost:8000/queries/failure_frequency.rq"
+    }
+  ]
+}

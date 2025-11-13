@@ -1,0 +1,207 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>ZORRO Aircraft Maintenance KG playground</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+html,body,#app{height:100%;margin:0;font-family:sans-serif}
+.yasgui .controlbar {
+    display: none !important;
+  }
+</style>
+<link rel="stylesheet" href="https://unpkg.com/@triply/yasgui/build/yasgui.min.css">
+<div id="app" style="height:100vh"></div>
+
+<script src="https://rdf.js.org/comunica-browser/versions/v4/engines/query-sparql/comunica-browser.js"></script>
+<script src="https://unpkg.com/@triply/yasgui/build/yasgui.min.js"></script>
+<script>
+  /** Helpers */
+  const _asArray = (x) => Array.isArray(x) ? x : (x == null ? [] : [x]);
+  const _isType = (node, t) => _asArray(node?.["@type"]).includes(t);
+  const _abs = (u) => new URL(u, location.href).toString();
+  
+  /**
+   * Read a schema.org/DCAT catalog and return normalized nodes.
+   * - datasets: Dataset nodes (for RDF distributions)
+   * - parts:    SoftwareSourceCode (for .sparql example queries)
+   */
+  async function fetchDataCatalog(catalogUrl = "catalog.json") {
+    const res = await fetch(catalogUrl, { headers: { accept: "application/ld+json, application/json" } });
+    const doc = await res.json();
+  
+    // Locate the catalog node
+    let catalog = doc;
+    if (Array.isArray(doc["@graph"])) {
+      catalog = doc["@graph"].find(n => _isType(n, "DataCatalog")) || doc;
+    }
+  
+    // Collect datasets
+    let datasets = [];
+    if (_isType(catalog, "DataCatalog")) {
+      datasets = _asArray(catalog.dataset);
+    } else if (Array.isArray(doc["@graph"])) {
+      datasets = doc["@graph"].filter(n => _isType(n, "Dataset"));
+    } else if (_isType(doc, "Dataset")) {
+      datasets = [doc];
+    }
+  
+    // Collect SoftwareSourceCode parts (queries)
+    const parts = [
+      ..._asArray(catalog.hasPart || []),
+      ...(Array.isArray(doc["@graph"])
+        ? doc["@graph"].filter(n => _isType(n, "SoftwareSourceCode") && (n.isPartOf || n.contentUrl || n.url))
+        : [])
+    ];
+  
+    return { doc, catalog, datasets, parts };
+  }
+  
+  /**
+   * Build Comunica SOURCES from catalog datasets’ distributions.
+   * Returns: [{ type: "file", value: absoluteUrl }, ...]
+   */
+  async function loadComunicaSourcesFromCatalog(catalogUrl = "catalog.json") {
+    const { datasets } = await fetchDataCatalog(catalogUrl);
+  
+    const okTypes = new Set([
+      "text/turtle", "application/trig", "application/n-triples", "application/n-quads",
+      "application/ld+json", "application/rdf+xml"
+    ]);
+  
+    const urls = [];
+    for (const ds of datasets) {
+      for (const dist of _asArray(ds?.distribution)) {
+        const media =
+          dist?.mediaType || dist?.encodingFormat || dist?.["dcat:mediaType"] || dist?.["dcat:format"];
+        const url =
+          dist?.contentUrl || dist?.contentURL || dist?.downloadURL ||
+          dist?.["dcat:downloadURL"] || dist?.url;
+        if (!url) continue;
+        if (!media || okTypes.has(String(media).toLowerCase())) {
+          urls.push(_abs(url));
+        }
+      }
+    }
+  
+    return [...new Set(urls)].map(u => ({ type: "file", value: u }));
+  }
+  
+  /** Wire a Yasgui tab so Run and Cmd/Ctrl-Enter execute Comunica */
+  function wireTabForComunica(tab, engine) {
+    tab.show();                       // ensure instances exist
+    const yasqe = tab.getYasqe();
+    const yasr  = tab.getYasr();
+  
+    async function runWithComunica() {
+      try {
+        const result = await engine.query(yasqe.getValue(), { sources:(await loadComunicaSourcesFromCatalog()) });
+        const media =
+          result.resultType === "bindings" ? "application/sparql-results+json" :
+          result.resultType === "boolean"  ? "application/boolean" :
+                                             "application/trig";
+        const { data } = await engine.resultToString(result, media);
+        const chunks = [];
+        await new Promise((ok, err) => {
+          data.on("data", c => chunks.push(typeof c === "string" ? c : new TextDecoder().decode(c)));
+          data.on("end", ok);
+          data.on("error", err);
+        });
+        yasr.setResponse(chunks.join(""), media);
+      } catch (e) {
+        yasr.setResponse(JSON.stringify({ message: String(e) }), "application/json");
+      }
+    }
+  
+    // Make the built-in Run button call Comunica
+    yasqe.query = runWithComunica;
+  
+    // Make Cmd/Ctrl-Enter call the same runner
+    const existing = yasqe.getOption("extraKeys") || {};
+    yasqe.setOption("extraKeys", Object.assign({}, existing, {
+      "Cmd-Enter": () => { runWithComunica(); return false; },
+      "Ctrl-Enter": () => { runWithComunica(); return false; }
+    }));
+  }
+  
+  /** Add example-query tabs; wire each new tab for Comunica */
+  async function addExampleQueriesFromCatalog(yasgui, engine, catalogUrl = "catalog.json") {
+    const { parts } = await fetchDataCatalog(catalogUrl);
+  
+    // Collect SPARQL files
+    const queries = [];
+    for (const q of _asArray(parts)) {
+      const media = (q?.encodingFormat || q?.programmingLanguage || "").toString().toLowerCase();
+      const url = q?.contentUrl || q?.url;
+      if (!url) continue;
+      if (media.includes("application/sparql-query") || media.includes("sparql")) {
+        const name = (q.name || new URL(url, location.href).pathname.split("/").pop()).trim();
+        queries.push({ name, url: _abs(url) });
+      }
+    }
+    if (!queries.length) return;
+  
+    // Helper to check for existing tab with same name
+    const tabByName = (name) =>
+      (yasgui.getTabs?.() || []).find(t => (t.getName?.() || "").trim() === name);
+  
+    for (const q of queries) {
+      if (tabByName(q.name)) continue;                 // skip duplicates
+      const tab = yasgui.addTab(true);
+      tab.setName(q.name);
+      tab.setQuery(await fetch(q.url).then(r => r.text()));
+    }
+  }
+    
+  function localUrl(p){ return new URL(p, location.href).toString(); }
+
+  const prefixes = {
+    rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    rdfs: "http://www.w3.org/2000/01/rdf-schema#",
+    xsd: "http://www.w3.org/2001/XMLSchema#",
+    owl: "http://www.w3.org/2002/07/owl#",
+    "":  "https://w3id.org/zorro#"
+  };
+  // Yasgui.Yasr.defaults.prefixes = prefixes;
+
+  // Give Yasgui a harmless same-origin endpoint to avoid about:blank CORS errors.
+  const yasgui = new Yasgui(document.getElementById("app"), {
+    requestConfig: { endpoint: location.origin + "/__noop__" },
+    copyEndpointOnNewTab: false
+  });
+
+  const realAddTab = yasgui.addTab.bind(yasgui);
+  yasgui.addTab = function (...args) {
+    const tab = realAddTab(...args);
+    wireTabForComunica(tab, engine);
+    return tab;
+  };
+  // mark tabs as wired once; handles tabs created by restore/session as well
+  yasgui.on("tabChange", (_tabId, tab) => {
+    if (!tab.__wiredForComunica) {
+      wireTabForComunica(tab, engine);
+      tab.__wiredForComunica = true;
+    }
+  });
+
+
+  const tab = yasgui.getTab();
+  const yasqe = tab.yasqe;
+  const yasr  = tab.yasr;
+
+//  yasqe.addPrefixes(prefixes);
+//  yasqe.collapsePrefixes(true);
+
+
+//  yasqe.setValue(`PREFIX : <https://w3id.org/zorro#>
+//PREFIX owl: <http://www.w3.org/2002/07/owl#>
+//PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+//PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+//PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+//SELECT * WHERE { ?s ?p ?o } LIMIT 25
+//  `);
+
+  const engine = new Comunica.QueryEngine();
+
+  // Add tabs from catalog; they’ll be wired automatically
+  addExampleQueriesFromCatalog(yasgui, engine);
+  
+</script>
