@@ -1,8 +1,8 @@
 {
   "@context": "https://schema.org",
   "@type": "DataCatalog",
-  "name": "ZORRO Aircraft Maintenance KG",
-  "url": "http://localhost:8000/",
+  "name": "ZORRO Aircraft KG",
+  "url": "https://kai-vu.github.io/zorro/",
   "dataset": [
     {
       "@type": "Dataset",
@@ -12,7 +12,7 @@
         {
           "@type": "DataDownload",
           "encodingFormat": "text/turtle",
-          "contentUrl": "http://localhost:8000/generated-rdf/FinalAircraftOntology.ttl"
+          "contentUrl": "https://kai-vu.github.io/zorro/generated-rdf/FinalAircraftOntology.ttl"
         }
       ]
     },
@@ -24,7 +24,7 @@
         {
           "@type": "DataDownload",
           "encodingFormat": "text/turtle",
-          "contentUrl": "http://localhost:8000/generated-rdf/extractions_NER.ttl"
+          "contentUrl": "https://kai-vu.github.io/zorro/generated-rdf/extractions_NER.ttl"
         }
       ]
     },
@@ -36,7 +36,7 @@
         {
           "@type": "DataDownload",
           "encodingFormat": "text/turtle",
-          "contentUrl": "http://localhost:8000/generated-rdf/extractions_chatgpt_4o.ttl"
+          "contentUrl": "https://kai-vu.github.io/zorro/generated-rdf/extractions_chatgpt_4o.ttl"
         }
       ]
     },
@@ -48,7 +48,19 @@
         {
           "@type": "DataDownload",
           "encodingFormat": "text/turtle",
-          "contentUrl": "http://localhost:8000/generated-rdf/extractions_regex.ttl"
+          "contentUrl": "https://kai-vu.github.io/zorro/generated-rdf/extractions_regex.ttl"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "final",
+      "identifier": "final",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "application/trig",
+          "contentUrl": "https://kai-vu.github.io/zorro/generated-rdf/final.trig"
         }
       ]
     },
@@ -60,7 +72,7 @@
         {
           "@type": "DataDownload",
           "encodingFormat": "text/turtle",
-          "contentUrl": "http://localhost:8000/generated-rdf/functions.ttl"
+          "contentUrl": "https://kai-vu.github.io/zorro/generated-rdf/functions.ttl"
         }
       ]
     },
@@ -72,7 +84,7 @@
         {
           "@type": "DataDownload",
           "encodingFormat": "text/turtle",
-          "contentUrl": "http://localhost:8000/generated-rdf/part-links-regex-simplified.ttl"
+          "contentUrl": "https://kai-vu.github.io/zorro/generated-rdf/part-links-regex-simplified.ttl"
         }
       ]
     },
@@ -84,7 +96,19 @@
         {
           "@type": "DataDownload",
           "encodingFormat": "text/turtle",
-          "contentUrl": "http://localhost:8000/generated-rdf/part-links-regex.ttl"
+          "contentUrl": "https://kai-vu.github.io/zorro/generated-rdf/part-links-regex.ttl"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "part-links-sssom-regex",
+      "identifier": "part-links-sssom-regex",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "application/trig",
+          "contentUrl": "https://kai-vu.github.io/zorro/generated-rdf/part-links-sssom-regex.trig"
         }
       ]
     },
@@ -96,7 +120,7 @@
         {
           "@type": "DataDownload",
           "encodingFormat": "text/turtle",
-          "contentUrl": "http://localhost:8000/generated-rdf/parts-catalog.ttl"
+          "contentUrl": "https://kai-vu.github.io/zorro/generated-rdf/parts-catalog.ttl"
         }
       ]
     },
@@ -108,7 +132,7 @@
         {
           "@type": "DataDownload",
           "encodingFormat": "text/turtle",
-          "contentUrl": "http://localhost:8000/generated-rdf/troubleshooting.ttl"
+          "contentUrl": "https://kai-vu.github.io/zorro/generated-rdf/troubleshooting.ttl"
         }
       ]
     }
@@ -119,7 +143,7 @@
       "name": "failure frequency",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "http://localhost:8000/queries/failure_frequency.rq"
+      "contentUrl": "https://kai-vu.github.io/zorro/queries/failure_frequency.rq"
     }
   ]
 }
