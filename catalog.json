@@ -54,18 +54,6 @@
     },
     {
       "@type": "Dataset",
-      "name": "final",
-      "identifier": "final",
-      "distribution": [
-        {
-          "@type": "DataDownload",
-          "encodingFormat": "application/trig",
-          "contentUrl": "https://kai-vu.github.io/zorro/generated-rdf/final.trig"
-        }
-      ]
-    },
-    {
-      "@type": "Dataset",
       "name": "functions",
       "identifier": "functions",
       "distribution": [
@@ -97,18 +85,6 @@
           "@type": "DataDownload",
           "encodingFormat": "text/turtle",
           "contentUrl": "https://kai-vu.github.io/zorro/generated-rdf/part-links-regex.ttl"
-        }
-      ]
-    },
-    {
-      "@type": "Dataset",
-      "name": "part-links-sssom-regex",
-      "identifier": "part-links-sssom-regex",
-      "distribution": [
-        {
-          "@type": "DataDownload",
-          "encodingFormat": "application/trig",
-          "contentUrl": "https://kai-vu.github.io/zorro/generated-rdf/part-links-sssom-regex.trig"
         }
       ]
     },
