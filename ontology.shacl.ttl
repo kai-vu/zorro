@@ -1,0 +1,189 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix zorro: <https://w3id.org/zorro/ontology#> .
+
+rdfs:Resource a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( zorro:result_in zorro:depend_on zorro:has_cause zorro:deals_with zorro:fail_via zorro:involve zorro:procedures zorro:address rdf:type zorro:define zorro:has_function zorro:solve zorro:consist_of ) ;
+    sh:targetClass rdfs:Resource .
+
+zorro:Action a sh:NodeShape ;
+    sh:closed true ;
+    sh:description "Generic action; added to preserve domain of deals_with." ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:class zorro:Problem ;
+            sh:description "Action deals with a Problem." ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 0 ;
+            sh:path zorro:deals_with ] ;
+    sh:targetClass zorro:Action .
+
+zorro:Assembly a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:class zorro:Function ;
+            sh:description "Component has required Function." ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 0 ;
+            sh:path zorro:has_function ],
+        [ sh:class zorro:Problem ;
+            sh:description "Component fails via Problem." ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 1 ;
+            sh:path zorro:fail_via ] ;
+    sh:targetClass zorro:Assembly .
+
+zorro:Part a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:class zorro:Function ;
+            sh:description "Component has required Function." ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 0 ;
+            sh:path zorro:has_function ],
+        [ sh:class zorro:Problem ;
+            sh:description "Component fails via Problem." ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 1 ;
+            sh:path zorro:fail_via ] ;
+    sh:targetClass zorro:Part .
+
+zorro:ProcedureBundle a sh:NodeShape ;
+    sh:closed true ;
+    sh:description "Convenience container for instance data if needed." ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:class zorro:Procedure ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 0 ;
+            sh:path zorro:procedures ] ;
+    sh:targetClass zorro:ProcedureBundle .
+
+zorro:Solution a sh:NodeShape ;
+    sh:closed true ;
+    sh:description "Procedure intended to solve a Problem." ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:class zorro:Step ;
+            sh:description "Procedure consists of Step(s)." ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 1 ;
+            sh:path zorro:consist_of ],
+        [ sh:class zorro:Problem ;
+            sh:description "Solution solves Problem." ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 0 ;
+            sh:path zorro:solve ] ;
+    sh:targetClass zorro:Solution .
+
+zorro:System a sh:NodeShape ;
+    sh:closed true ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:class zorro:Problem ;
+            sh:description "Component fails via Problem." ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 1 ;
+            sh:path zorro:fail_via ],
+        [ sh:class zorro:Function ;
+            sh:description "Component has required Function." ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 0 ;
+            sh:path zorro:has_function ] ;
+    sh:targetClass zorro:System .
+
+zorro:WorkAround a sh:NodeShape ;
+    sh:closed true ;
+    sh:description "Temporary or partial mitigation." ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:class zorro:Step ;
+            sh:description "Procedure consists of Step(s)." ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 1 ;
+            sh:path zorro:consist_of ],
+        [ sh:class zorro:Effect ;
+            sh:description "WorkAround addresses an Effect." ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 0 ;
+            sh:path zorro:address ] ;
+    sh:targetClass zorro:WorkAround .
+
+zorro:Component a sh:NodeShape ;
+    sh:closed true ;
+    sh:description "Physical or logical component." ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:class zorro:Problem ;
+            sh:description "Component fails via Problem." ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 1 ;
+            sh:path zorro:fail_via ],
+        [ sh:class zorro:Function ;
+            sh:description "Component has required Function." ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 0 ;
+            sh:path zorro:has_function ] ;
+    sh:targetClass zorro:Component .
+
+zorro:Procedure a sh:NodeShape ;
+    sh:closed true ;
+    sh:description "Procedure describing a sequence of Steps." ;
+    sh:ignoredProperties ( rdf:type zorro:address zorro:solve ) ;
+    sh:property [ sh:class zorro:Step ;
+            sh:description "Procedure consists of Step(s)." ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 0 ;
+            sh:path zorro:consist_of ] ;
+    sh:targetClass zorro:Procedure .
+
+zorro:Effect a sh:NodeShape ;
+    sh:closed true ;
+    sh:description "Consequence observed (symptom or outcome)." ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:targetClass zorro:Effect .
+
+zorro:Step a sh:NodeShape ;
+    sh:closed true ;
+    sh:description "Step within a Procedure." ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:class zorro:Component ;
+            sh:description "Step involves Component(s)." ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 0 ;
+            sh:path zorro:involve ] ;
+    sh:targetClass zorro:Step .
+
+zorro:Function a sh:NodeShape ;
+    sh:closed true ;
+    sh:description "Required function of a component." ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:class zorro:Function ;
+            sh:description "Function depends on another Function." ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 0 ;
+            sh:path zorro:depend_on ],
+        [ sh:class zorro:Problem ;
+            sh:description "Function defines (is used to define) a Problem." ;
+            sh:maxCount 1 ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 1 ;
+            sh:path zorro:define ] ;
+    sh:targetClass zorro:Function .
+
+zorro:Problem a sh:NodeShape ;
+    sh:closed true ;
+    sh:description "Problem observed or inferred during operation/maintenance." ;
+    sh:ignoredProperties ( rdf:type ) ;
+    sh:property [ sh:class zorro:Problem ;
+            sh:description "Problem has cause Problem." ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 0 ;
+            sh:path zorro:has_cause ],
+        [ sh:class zorro:Effect ;
+            sh:description "Problem results in Effect." ;
+            sh:nodeKind sh:BlankNodeOrIRI ;
+            sh:order 1 ;
+            sh:path zorro:result_in ] ;
+    sh:targetClass zorro:Problem .
+
+

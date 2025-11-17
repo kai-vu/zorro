@@ -1,0 +1,270 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix iof-core: <https://spec.industrialontologies.org/iof/ontology/core/Core/> .
+@prefix iof-maint: <https://spec.industrialontologies.org/iof/ontology/maintenance/MaintenanceReferenceOntology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix romain: <https://github.com/HediKarray/ReferenceOntologyOfMaintenance/blob/master/ROMAIN.owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix zorro: <https://w3id.org/zorro/ontology#> .
+
+zorro:Assembly a owl:Class ;
+    rdfs:label "Assembly" ;
+    rdfs:subClassOf zorro:Component ;
+    skos:inScheme <https://w3id.org/zorro/ontology> .
+
+zorro:Part a owl:Class ;
+    rdfs:label "Part" ;
+    rdfs:subClassOf zorro:Component ;
+    skos:inScheme <https://w3id.org/zorro/ontology> .
+
+zorro:ProcedureBundle a owl:Class ;
+    rdfs:label "ProcedureBundle" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty zorro:procedures ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom zorro:Procedure ;
+            owl:onProperty zorro:procedures ],
+        zorro:Thing ;
+    skos:definition "Convenience container for instance data if needed." ;
+    skos:inScheme <https://w3id.org/zorro/ontology> .
+
+zorro:System a owl:Class ;
+    rdfs:label "System" ;
+    rdfs:subClassOf zorro:Component ;
+    skos:inScheme <https://w3id.org/zorro/ontology> .
+
+<https://w3id.org/zorro/ontology.owl.ttl> a owl:Ontology ;
+    rdfs:label "zorro" ;
+    dcterms:title "ZORRO Ontology" ;
+    skos:definition "ZORRO ontology for troubleshooting and maintenance." .
+
+zorro:Action a owl:Class ;
+    rdfs:label "Action" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty zorro:deals_with ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom zorro:Problem ;
+            owl:onProperty zorro:deals_with ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty zorro:deals_with ],
+        zorro:Thing ;
+    skos:definition "Generic action; added to preserve domain of deals_with." ;
+    skos:inScheme <https://w3id.org/zorro/ontology> .
+
+zorro:Solution a owl:Class ;
+    rdfs:label "Solution" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom zorro:Problem ;
+            owl:onProperty zorro:solve ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty zorro:solve ],
+        zorro:Procedure ;
+    skos:definition "Procedure intended to solve a Problem." ;
+    skos:inScheme <https://w3id.org/zorro/ontology> ;
+    skos:relatedMatch iof-maint:MaintenanceActivity .
+
+zorro:WorkAround a owl:Class ;
+    rdfs:label "WorkAround" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty zorro:address ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty zorro:address ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom zorro:Effect ;
+            owl:onProperty zorro:address ],
+        zorro:Procedure ;
+    skos:definition "Temporary or partial mitigation." ;
+    skos:inScheme <https://w3id.org/zorro/ontology> ;
+    skos:relatedMatch iof-maint:SupportingMaintenanceActivity .
+
+zorro:consist_of a owl:ObjectProperty ;
+    rdfs:label "consist_of" ;
+    rdfs:domain zorro:Procedure ;
+    rdfs:range zorro:Step ;
+    skos:definition "Procedure consists of Step(s)." ;
+    skos:inScheme <https://w3id.org/zorro/ontology> .
+
+zorro:depend_on a owl:ObjectProperty ;
+    rdfs:label "depend_on" ;
+    rdfs:domain zorro:Function ;
+    rdfs:range zorro:Function ;
+    skos:definition "Function depends on another Function." ;
+    skos:inScheme <https://w3id.org/zorro/ontology> .
+
+zorro:fail_via a owl:ObjectProperty ;
+    rdfs:label "fail_via" ;
+    rdfs:domain zorro:Component ;
+    rdfs:range zorro:Problem ;
+    skos:definition "Component fails via Problem." ;
+    skos:inScheme <https://w3id.org/zorro/ontology> .
+
+zorro:has_cause a owl:ObjectProperty ;
+    rdfs:label "has_cause" ;
+    rdfs:domain zorro:Problem ;
+    rdfs:range zorro:Problem ;
+    skos:definition "Problem has cause Problem." ;
+    skos:inScheme <https://w3id.org/zorro/ontology> .
+
+zorro:has_function a owl:ObjectProperty ;
+    rdfs:label "has_function" ;
+    rdfs:domain zorro:Component ;
+    rdfs:range zorro:Function ;
+    skos:definition "Component has required Function." ;
+    skos:inScheme <https://w3id.org/zorro/ontology> .
+
+zorro:involve a owl:ObjectProperty ;
+    rdfs:label "involve" ;
+    rdfs:domain zorro:Step ;
+    rdfs:range zorro:Component ;
+    skos:definition "Step involves Component(s)." ;
+    skos:inScheme <https://w3id.org/zorro/ontology> .
+
+zorro:procedures a owl:ObjectProperty ;
+    rdfs:label "procedures" ;
+    skos:inScheme <https://w3id.org/zorro/ontology> .
+
+zorro:result_in a owl:ObjectProperty ;
+    rdfs:label "result_in" ;
+    rdfs:domain zorro:Problem ;
+    rdfs:range zorro:Effect ;
+    skos:definition "Problem results in Effect." ;
+    skos:inScheme <https://w3id.org/zorro/ontology> .
+
+zorro:solve a owl:ObjectProperty ;
+    rdfs:label "solve" ;
+    rdfs:domain zorro:Solution ;
+    rdfs:range zorro:Problem ;
+    skos:definition "Solution solves Problem." ;
+    skos:inScheme <https://w3id.org/zorro/ontology> .
+
+zorro:Step a owl:Class ;
+    rdfs:label "Step" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom zorro:Component ;
+            owl:onProperty zorro:involve ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty zorro:involve ],
+        zorro:Thing ;
+    skos:definition "Step within a Procedure." ;
+    skos:inScheme <https://w3id.org/zorro/ontology> ;
+    skos:relatedMatch romain:Activity .
+
+zorro:address a owl:ObjectProperty ;
+    rdfs:label "address" ;
+    rdfs:domain zorro:WorkAround ;
+    rdfs:range zorro:Effect ;
+    skos:definition "WorkAround addresses an Effect." ;
+    skos:inScheme <https://w3id.org/zorro/ontology> .
+
+zorro:deals_with a owl:ObjectProperty ;
+    rdfs:label "deals_with" ;
+    rdfs:domain zorro:Action ;
+    rdfs:range zorro:Problem ;
+    skos:definition "Action deals with a Problem." ;
+    skos:inScheme <https://w3id.org/zorro/ontology> .
+
+zorro:define a owl:ObjectProperty ;
+    rdfs:label "define" ;
+    rdfs:domain zorro:Function ;
+    rdfs:range zorro:Problem ;
+    skos:definition "Function defines (is used to define) a Problem." ;
+    skos:inScheme <https://w3id.org/zorro/ontology> .
+
+zorro:Effect a owl:Class ;
+    rdfs:label "Effect" ;
+    rdfs:subClassOf zorro:Thing ;
+    skos:closeMatch iof-maint:FailureEffect ;
+    skos:definition "Consequence observed (symptom or outcome)." ;
+    skos:inScheme <https://w3id.org/zorro/ontology> .
+
+zorro:Procedure a owl:Class ;
+    rdfs:label "Procedure" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom zorro:Step ;
+            owl:onProperty zorro:consist_of ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty zorro:consist_of ],
+        zorro:Thing ;
+    skos:closeMatch romain:Procedure,
+        iof-maint:MaintenanceProcedure ;
+    skos:definition "Procedure describing a sequence of Steps." ;
+    skos:inScheme <https://w3id.org/zorro/ontology> .
+
+zorro:Function a owl:Class ;
+    rdfs:label "Function" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom zorro:Function ;
+            owl:onProperty zorro:depend_on ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty zorro:depend_on ],
+        [ a owl:Restriction ;
+            owl:maxCardinality 1 ;
+            owl:onProperty zorro:define ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty zorro:define ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom zorro:Problem ;
+            owl:onProperty zorro:define ],
+        zorro:Thing ;
+    skos:closeMatch romain:Function,
+        iof-maint:RequiredFunction ;
+    skos:definition "Required function of a component." ;
+    skos:inScheme <https://w3id.org/zorro/ontology> .
+
+zorro:Component a owl:Class ;
+    rdfs:label "Component" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom zorro:Function ;
+            owl:onProperty zorro:has_function ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty zorro:has_function ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom zorro:Problem ;
+            owl:onProperty zorro:fail_via ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty zorro:fail_via ],
+        zorro:Thing ;
+    skos:closeMatch romain:Component,
+        iof-core:MaterialComponent ;
+    skos:definition "Physical or logical component." ;
+    skos:inScheme <https://w3id.org/zorro/ontology> .
+
+zorro:Thing a owl:Class ;
+    rdfs:label "Thing" ;
+    skos:exactMatch rdfs:Resource ;
+    skos:inScheme <https://w3id.org/zorro/ontology> .
+
+zorro:Problem a owl:Class ;
+    rdfs:label "Problem" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom zorro:Problem ;
+            owl:onProperty zorro:has_cause ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom zorro:Effect ;
+            owl:onProperty zorro:result_in ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty zorro:result_in ],
+        [ a owl:Restriction ;
+            owl:minCardinality 0 ;
+            owl:onProperty zorro:has_cause ],
+        zorro:Thing ;
+    skos:broadMatch romain:Problem,
+        iof-maint:FailureEffect,
+        iof-maint:FailureEvent ;
+    skos:definition "Problem observed or inferred during operation/maintenance." ;
+    skos:inScheme <https://w3id.org/zorro/ontology> .
+
+

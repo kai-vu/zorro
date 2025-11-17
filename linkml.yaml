@@ -1,0 +1,167 @@
+id: https://w3id.org/zorro/ontology
+name: zorro
+title: ZORRO Ontology
+description: ZORRO ontology for troubleshooting and maintenance.
+prefixes:
+  zorro: https://w3id.org/zorro/ontology#
+  linkml: https://w3id.org/linkml/
+  skos: http://www.w3.org/2004/02/skos/core#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  iof-maint: https://spec.industrialontologies.org/iof/ontology/maintenance/MaintenanceReferenceOntology/
+  iof-core:  https://spec.industrialontologies.org/iof/ontology/core/Core/
+  romain:    https://github.com/HediKarray/ReferenceOntologyOfMaintenance/blob/master/ROMAIN.owl#
+  ido:       https://rds.posccaesar.org/ontology/IDO/
+default_prefix: zorro
+default_range: string
+
+
+slots:
+  deals_with:
+    description: Action deals with a Problem.
+    domain: Action
+    range: Problem
+  address:
+    description: WorkAround addresses an Effect.
+    domain: WorkAround
+    range: Effect
+  consist_of:
+    description: Procedure consists of Step(s).
+    domain: Procedure
+    range: Step
+    multivalued: true
+  define:
+    description: Function defines (is used to define) a Problem.
+    domain: Function
+    range: Problem
+  depend_on:
+    description: Function depends on another Function.
+    domain: Function
+    range: Function
+    multivalued: true
+  fail_via:
+    description: Component fails via Problem.
+    domain: Component
+    range: Problem
+    multivalued: true
+  has_cause:
+    description: Problem has cause Problem.
+    domain: Problem
+    range: Problem
+    multivalued: true
+  has_function:
+    description: Component has required Function.
+    domain: Component
+    range: Function
+    multivalued: true
+  involve:
+    description: Step involves Component(s).
+    domain: Step
+    range: Component
+    multivalued: true
+  result_in:
+    description: Problem results in Effect.
+    domain: Problem
+    range: Effect
+    multivalued: true
+  solve:
+    description: Solution solves Problem.
+    domain: Solution
+    range: Problem
+    multivalued: true
+
+classes:
+  Thing:
+    class_uri: rdfs:Resource
+
+  Component:
+    is_a: Thing
+    description: Physical or logical component.
+    close_mappings:
+      - iof-core:MaterialComponent
+      - romain:Component
+    slots:
+      - has_function
+      - fail_via
+
+  System:
+    is_a: Component
+
+  Assembly:
+    is_a: Component
+
+  Part:
+    is_a: Component
+
+  Function:
+    is_a: Thing
+    description: Required function of a component.
+    close_mappings:
+      - iof-maint:RequiredFunction
+      - romain:Function
+    slots:
+      - depend_on
+      - define
+
+  Problem:
+    is_a: Thing
+    description: Problem observed or inferred during operation/maintenance.
+    broad_mappings:
+      - iof-maint:FailureEvent
+      - iof-maint:FailureEffect
+      - romain:Problem
+    slots:
+      - has_cause
+      - result_in
+
+  Effect:
+    is_a: Thing
+    description: Consequence observed (symptom or outcome).
+    close_mappings:
+      - iof-maint:FailureEffect
+
+  Procedure:
+    is_a: Thing
+    description: Procedure describing a sequence of Steps.
+    close_mappings:
+      - iof-maint:MaintenanceProcedure
+      - romain:Procedure
+    slots:
+      - consist_of
+
+  Solution:
+    is_a: Procedure
+    description: Procedure intended to solve a Problem.
+    related_mappings:
+      - iof-maint:MaintenanceActivity
+    slots:
+      - solve
+
+  WorkAround:
+    is_a: Procedure
+    description: Temporary or partial mitigation.
+    related_mappings:
+      - iof-maint:SupportingMaintenanceActivity
+    slots:
+      - address
+
+  Step:
+    is_a: Thing
+    description: Step within a Procedure.
+    related_mappings:
+      - romain:Activity
+    slots:
+      - involve
+
+  Action:
+    is_a: Thing
+    description: Generic action; added to preserve domain of deals_with.
+    slots:
+      - deals_with
+
+  ProcedureBundle:
+    is_a: Thing
+    description: Convenience container for instance data if needed.
+    attributes:
+      procedures:
+        range: Procedure
+        multivalued: true
