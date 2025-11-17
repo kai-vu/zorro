@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zorro-wp2-aircraft-poc"
+version = "0.1.0"
+description = "Ontology-based Knowledge Graph pipeline for aircraft maintenance research."
+requires-python = ">=3.10"
+dependencies = [
+    "defopt>=6.5",
+    "rdflib>=7.0",
+]
+readme = "README.md"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "ruff>=0.6",
+]
+
