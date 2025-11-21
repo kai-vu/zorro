@@ -1,0 +1,97 @@
+<http://www.ZorroUpperLevelOntology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.ZorroUpperLevelOntology/PartOf
+<http://www.ZorroUpperLevelOntology/PartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ZorroUpperLevelOntology/PartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ZorroUpperLevelOntology/Part> .
+<http://www.ZorroUpperLevelOntology/PartOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ZorroUpperLevelOntology/Assembly> .
+# 
+# http://www.ZorroUpperLevelOntology/defines
+<http://www.ZorroUpperLevelOntology/defines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ZorroUpperLevelOntology/defines> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ZorroUpperLevelOntology/Function> .
+<http://www.ZorroUpperLevelOntology/defines> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ZorroUpperLevelOntology/Problem> .
+# 
+# http://www.ZorroUpperLevelOntology/dependsOn
+<http://www.ZorroUpperLevelOntology/dependsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ZorroUpperLevelOntology/dependsOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ZorroUpperLevelOntology/Function> .
+<http://www.ZorroUpperLevelOntology/dependsOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ZorroUpperLevelOntology/Function> .
+# 
+# http://www.ZorroUpperLevelOntology/failsVia
+<http://www.ZorroUpperLevelOntology/failsVia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ZorroUpperLevelOntology/failsVia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ZorroUpperLevelOntology/Component> .
+<http://www.ZorroUpperLevelOntology/failsVia> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ZorroUpperLevelOntology/Problem> .
+# 
+# http://www.ZorroUpperLevelOntology/hasCause
+<http://www.ZorroUpperLevelOntology/hasCause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ZorroUpperLevelOntology/hasCause> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ZorroUpperLevelOntology/Problem> .
+<http://www.ZorroUpperLevelOntology/hasCause> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ZorroUpperLevelOntology/Cause> .
+# 
+# http://www.ZorroUpperLevelOntology/hasFunction
+<http://www.ZorroUpperLevelOntology/hasFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ZorroUpperLevelOntology/hasFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ZorroUpperLevelOntology/Component> .
+<http://www.ZorroUpperLevelOntology/hasFunction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ZorroUpperLevelOntology/Function> .
+# 
+# http://www.ZorroUpperLevelOntology/inSystem
+<http://www.ZorroUpperLevelOntology/inSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ZorroUpperLevelOntology/inSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ZorroUpperLevelOntology/Assembly> .
+<http://www.ZorroUpperLevelOntology/inSystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ZorroUpperLevelOntology/System> .
+# 
+# http://www.ZorroUpperLevelOntology/involves
+<http://www.ZorroUpperLevelOntology/involves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ZorroUpperLevelOntology/involves> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ZorroUpperLevelOntology/Problem> .
+<http://www.ZorroUpperLevelOntology/involves> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ZorroUpperLevelOntology/Part> .
+# 
+# http://www.ZorroUpperLevelOntology/solves
+<http://www.ZorroUpperLevelOntology/solves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.ZorroUpperLevelOntology/solves> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.ZorroUpperLevelOntology/Solution> .
+<http://www.ZorroUpperLevelOntology/solves> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.ZorroUpperLevelOntology/Problem> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.ZorroUpperLevelOntology/Assembly
+<http://www.ZorroUpperLevelOntology/Assembly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ZorroUpperLevelOntology/Assembly> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ZorroUpperLevelOntology/Component> .
+# 
+# http://www.ZorroUpperLevelOntology/Cause
+<http://www.ZorroUpperLevelOntology/Cause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ZorroUpperLevelOntology/Cause> <http://www.w3.org/2000/01/rdf-schema#comment> "Cause itself  is a problem" .
+# 
+# http://www.ZorroUpperLevelOntology/Component
+<http://www.ZorroUpperLevelOntology/Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ZorroUpperLevelOntology/Component> <http://www.w3.org/2000/01/rdf-schema#comment> "A component can have one or more functions" .
+# 
+# http://www.ZorroUpperLevelOntology/Function
+<http://www.ZorroUpperLevelOntology/Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ZorroUpperLevelOntology/Function> <http://www.w3.org/2000/01/rdf-schema#comment> "A function can be performed by one or several componenets" .
+# 
+# http://www.ZorroUpperLevelOntology/Part
+<http://www.ZorroUpperLevelOntology/Part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ZorroUpperLevelOntology/Part> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ZorroUpperLevelOntology/Component> .
+# 
+# http://www.ZorroUpperLevelOntology/Problem
+<http://www.ZorroUpperLevelOntology/Problem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ZorroUpperLevelOntology/Problem> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.ZorroUpperLevelOntology/Solution> .
+# 
+# http://www.ZorroUpperLevelOntology/Solution
+<http://www.ZorroUpperLevelOntology/Solution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ZorroUpperLevelOntology/Solution> <http://www.w3.org/2000/01/rdf-schema#comment> "Solution solves the cause of the problem" .
+# 
+# http://www.ZorroUpperLevelOntology/System
+<http://www.ZorroUpperLevelOntology/System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.ZorroUpperLevelOntology/System> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ZorroUpperLevelOntology/Component> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
