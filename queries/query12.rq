@@ -1,0 +1,8 @@
+# The given part X can be found (part of) in which assemblies?
+
+SELECT DISTINCT ?assembly
+WHERE {
+  ?part :partNumber "STD-475" ;
+               :partOf ?assembly .  
+}
+

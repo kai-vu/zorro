@@ -1,0 +1,9 @@
+# What is the function of the given component (Assembly and System) ?
+
+select ?system ?function where {
+    ?system rdfs:label "Cranking Section";
+         :hasFunction ?function .}
+select ?assembly ?function where {
+    ?assembly rdfs:label "Accessory Housing Assembly";
+         :hasFunction ?function .}
+

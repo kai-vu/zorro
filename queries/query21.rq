@@ -1,0 +1,15 @@
+
+# Which systems are the most critical (i.e., their failure causes the largest number of 
+dependent failures)?
+
+SELECT ?function ?label (COUNT(DISTINCT ?dependentFunction) AS ?numDependentFunctions) ?correspondingSystem
+WHERE {
+    ?correspondingSystem rdfs:subClassOf :System;
+        :hasFunction ?function.
+    ?function rdfs:subClassOf :Function ;
+            rdfs:label ?label .
+  ?dependentFunction :dependsOn ?function .
+}
+GROUP BY ?function ?label ?correspondingSystem
+ORDER BY DESC(?numDependentFunctions)
+

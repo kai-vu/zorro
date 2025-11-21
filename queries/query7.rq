@@ -1,0 +1,10 @@
+# What are the top 10 frequent problematic part?
+
+SELECT ?part (COUNT(?problem) AS ?Frequency)
+WHERE {
+    ?problem :involves ?part .
+}
+GROUP BY ?part
+ORDER BY DESC(?Frequency)
+LIMIT 10
+

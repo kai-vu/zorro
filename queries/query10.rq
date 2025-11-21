@@ -1,0 +1,8 @@
+# What are all the problem types that can happen for the given part X?
+
+SELECT DISTINCT ?problemType
+WHERE {
+    ?p rdf:type ?problemType;
+        :involves :BAFFLE.
+}
+

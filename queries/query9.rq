@@ -1,0 +1,10 @@
+# What are all the action types taken for the given problem type X in the given part Y?
+
+SELECT DISTINCT ?actionType
+WHERE {
+    ?problem rdf:type :CRACKED ;
+             :involves :BAFFLE .
+    ?action rdf:type ?actionType ;
+                :dealsWith ?problem .
+}
+

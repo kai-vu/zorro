@@ -1,0 +1,6 @@
+# What is the cause of the given problem X?
+
+select ?problem ?cause where {
+    ?problem rdfs:label "Low Oil Pressure";
+         :hasCause ?cause .} 
+

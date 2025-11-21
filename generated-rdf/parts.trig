@@ -1,0 +1,2215 @@
+@prefix : <https://w3id.org/zorro#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/zorro/graph/parts> {
+    :partnr-01L23459 a :PartInstance ;
+        rdfs:label " 25/32 I.D. x 3/8 O.D. x 1/32 thick (Roller tappet engines)" ;
+        rdfs:subClassOf :Washer ;
+        :partNumber "01L23459" ;
+        :partOf :CylinderSection,
+            :ValveAssemblyAndRelatedParts .
+
+    :partnr-03D23350 a :PartInstance ;
+        rdfs:label " Fuel pump" ;
+        rdfs:subClassOf :Cover ;
+        :partNumber "03D23350" ;
+        :partOf :AccessoryDrives,
+            :FuelPumpAssemblyAndAttachingParts .
+
+    :partnr-05K19423-S a :PartInstance ;
+        rdfs:label "NaN"^^xsd:double ;
+        rdfs:subClassOf :ImpellerKit ;
+        :partNumber "05K19423-S" ;
+        :partOf :AccessoryDrives,
+            :OilPumpAssemblyAndAccessoryHousingAttachingParts .
+
+    :partnr-06A19956 a :PartInstance ;
+        rdfs:label " 7/8 I.D. x 1-1/2 O.D. x 5/16 wide" ;
+        rdfs:subClassOf :OilSeal ;
+        :partNumber "06A19956" ;
+        :partOf :AccessoryDrives,
+            :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+    :partnr-06A23493 a :PartInstance ;
+        rdfs:label " Shroud tube (Roller tappet engines)" ;
+        rdfs:subClassOf :Seal ;
+        :partNumber "06A23493" ;
+        :partOf :CylinderSection,
+            :ValveAssemblyAndRelatedParts .
+
+    :partnr-06B23862 a :PartInstance ;
+        rdfs:label " Oil filter adapter" ;
+        rdfs:subClassOf :Gasket ;
+        :partNumber "06B23862" ;
+        :partOf :AccessoryDrives,
+            :OilFilterAssemblyAndOilCoolerBypassValve .
+
+    :partnr-06E19769-0.63 a :PartInstance ;
+        rdfs:label " 5/8 I.D. annular" ;
+        rdfs:subClassOf :Gasket ;
+        :partNumber "06E19769-0.63" ;
+        :partOf :AccessoryDrives,
+            :OilCoolerBypassValveOilPressureScreenAndBreatherFitting .
+
+    :partnr-06E19769-1.00 a :PartInstance ;
+        rdfs:label " Annular, 1.00 I.D." ;
+        rdfs:subClassOf :Gasket ;
+        :partNumber "06E19769-1.00" ;
+        :partOf :LubricationSystem,
+            :OilSumpAssemblyAndOilSuctionScreen .
+
+    :partnr-06E19769-1.25 a :PartInstance ;
+        rdfs:label " 1-1/4 I.D., annular" ;
+        rdfs:subClassOf :Gasket ;
+        :partNumber "06E19769-1.25" ;
+        :partOf :CrankcaseRelatedParts,
+            :PowerSection .
+
+    :partnr-07A19474 a :PartInstance ;
+        rdfs:label " Alternator" ;
+        rdfs:subClassOf :Bracket ;
+        :partNumber "07A19474" ;
+        :partOf :AlternatorMountingAndAttachingParts,
+            :ElectricalPower .
+
+    :partnr-07A21443 a :PartInstance ;
+        rdfs:label " Alternator" ;
+        rdfs:subClassOf :Bracket ;
+        :partNumber "07A21443" ;
+        :partOf :AlternatorMountingAndAttachingParts,
+            :ElectricalPower .
+
+    :partnr-07F23268 a :PartInstance ;
+        rdfs:label " Alternator support" ;
+        rdfs:subClassOf :Strut ;
+        :partNumber "07F23268" ;
+        :partOf :AlternatorMountingAndAttachingParts,
+            :ElectricalPower .
+
+    :partnr-1028-B a :PartInstance ;
+        rdfs:label " 11/16 diameter" ;
+        rdfs:subClassOf :Ball ;
+        :partNumber "1028-B" ;
+        :partOf :CrankcaseRelatedParts,
+            :PowerSection .
+
+    :partnr-1102 a :PartInstance ;
+        rdfs:label " 1/8-27 NPT, allen head" ;
+        rdfs:subClassOf :Plug ;
+        :partNumber "1102" ;
+        :partOf :AccessoryDrives,
+            :AccessoryHousingAssembly,
+            :CrankcaseAssembly,
+            :CylinderAssembly,
+            :CylinderSection,
+            :PowerSection .
+
+    :partnr-1182-E7 a :PartInstance ;
+        rdfs:label " Champion V REM38E" ;
+        rdfs:subClassOf :SparkPlug ;
+        :partNumber "1182-E7" ;
+        :partOf :IgnitionDistributionSystem,
+            :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+    :partnr-11B20061-1SB a :PartInstance ;
+        rdfs:label "NaN"^^xsd:double ;
+        rdfs:subClassOf :CrankcaseAssembly ;
+        :partNumber "11B20061-1SB" ;
+        :partOf :CrankcaseAssembly,
+            :PowerSection .
+
+    :partnr-11B20061-1SB-S a :PartInstance ;
+        rdfs:label "NaN"^^xsd:double ;
+        rdfs:subClassOf :CrankcaseAssemblyKit ;
+        :partNumber "11B20061-1SB-S" ;
+        :partOf :CrankcaseAssembly,
+            :PowerSection .
+
+    :partnr-11B20161-3SL a :PartInstance ;
+        rdfs:label "NaN"^^xsd:double ;
+        rdfs:subClassOf :CrankcaseAssemblyRollerTappetEngines ;
+        :partNumber "11B20161-3SL" ;
+        :partOf :CrankcaseAssembly,
+            :PowerSection .
+
+    :partnr-11B20161-3SL-S a :PartInstance ;
+        rdfs:label "NaN"^^xsd:double ;
+        rdfs:subClassOf :CrankcaseAssemblyKitRollerTappetEngines ;
+        :partNumber "11B20161-3SL-S" ;
+        :partOf :CrankcaseAssembly,
+            :PowerSection .
+
+    :partnr-13B47020 a :PartInstance ;
+        rdfs:label "NaN"^^xsd:double ;
+        rdfs:subClassOf :CrankshaftAssembly ;
+        :partNumber "13B47020" ;
+        :partOf :CrankshaftAssemblyAndRelatedParts,
+            :PowerSection .
+
+    :partnr-13B47024 a :PartInstance ;
+        rdfs:label "NaN"^^xsd:double ;
+        rdfs:subClassOf :CrankshaftAssembly ;
+        :partNumber "13B47024" ;
+        :partOf :CrankshaftAssemblyAndRelatedParts,
+            :PowerSection .
+
+    :partnr-13S19646 a :PartInstance ;
+        rdfs:label " Crankshaft" ;
+        rdfs:subClassOf :Gear ;
+        :partNumber "13S19646" ;
+        :partOf :CrankshaftAssemblyAndRelatedParts,
+            :PowerSection .
+
+    :partnr-14D23915 a :PartInstance ;
+        rdfs:label " 7.00:1 compression ratio" ;
+        rdfs:subClassOf :Piston ;
+        :partNumber "14D23915" ;
+        :partOf :ConnectingRodsPistonsAndRingAssemblies,
+            :CylinderSection .
+
+    :partnr-15B21319 a :PartInstance ;
+        rdfs:label " Hydraulic tappet" ;
+        rdfs:subClassOf :Socket ;
+        :partNumber "15B21319" ;
+        :partOf :CylinderSection,
+            :ValveAssemblyAndRelatedParts .
+
+    :partnr-15B26064 a :PartInstance ;
+        rdfs:label " Hydraulic tappet" ;
+        rdfs:subClassOf :Body ;
+        :partNumber "15B26064" ;
+        :partOf :CrankcaseRelatedParts,
+            :PowerSection .
+
+    :partnr-15B26066 a :PartInstance ;
+        rdfs:label " Hydraulic lifter" ;
+        rdfs:subClassOf :PlungerAssembly ;
+        :partNumber "15B26066" ;
+        :partOf :CylinderSection,
+            :ValveAssemblyAndRelatedParts .
+
+    :partnr-15F19957-08 a :PartInstance ;
+        rdfs:label " Push (A total of 8 required)" ;
+        rdfs:subClassOf :RodAssembly ;
+        :partNumber "15F19957-08" ;
+        :partOf :CylinderRelatedParts,
+            :CylinderSection .
+
+    :partnr-15F19957-09 a :PartInstance ;
+        rdfs:label " Push (A total of 8 required)" ;
+        rdfs:subClassOf :RodAssembly ;
+        :partNumber "15F19957-09" ;
+        :partOf :CylinderRelatedParts,
+            :CylinderSection .
+
+    :partnr-15F19957-10 a :PartInstance ;
+        rdfs:label " Push (A total of 8 required)" ;
+        rdfs:subClassOf :RodAssembly ;
+        :partNumber "15F19957-10" ;
+        :partOf :CylinderRelatedParts,
+            :CylinderSection .
+
+    :partnr-15F19957-11 a :PartInstance ;
+        rdfs:label " Push (A total of 8 required)" ;
+        rdfs:subClassOf :RodAssembly ;
+        :partNumber "15F19957-11" ;
+        :partOf :CylinderRelatedParts,
+            :CylinderSection .
+
+    :partnr-15F19957-12 a :PartInstance ;
+        rdfs:label " Push (A total of 8 required)" ;
+        rdfs:subClassOf :RodAssembly ;
+        :partNumber "15F19957-12" ;
+        :partOf :CylinderRelatedParts,
+            :CylinderSection .
+
+    :partnr-15F19957-13 a :PartInstance ;
+        rdfs:label " Push (A total of 8 required)" ;
+        rdfs:subClassOf :RodAssembly ;
+        :partNumber "15F19957-13" ;
+        :partOf :CylinderRelatedParts,
+            :CylinderSection .
+
+    :partnr-15F19957-14 a :PartInstance ;
+        rdfs:label " Push (A total of 8 required)" ;
+        rdfs:subClassOf :RodAssembly ;
+        :partNumber "15F19957-14" ;
+        :partOf :CylinderRelatedParts,
+            :CylinderSection .
+
+    :partnr-15F19957-15 a :PartInstance ;
+        rdfs:label " Push (A total of 8 required)" ;
+        rdfs:subClassOf :RodAssembly ;
+        :partNumber "15F19957-15" ;
+        :partOf :CylinderRelatedParts,
+            :CylinderSection .
+
+    :partnr-15G23494 a :PartInstance ;
+        rdfs:label " Push rod (Roller tappet engines)" ;
+        rdfs:subClassOf :ShroudTubeAssembly ;
+        :partNumber "15G23494" ;
+        :partOf :CylinderSection,
+            :ValveAssemblyAndRelatedParts .
+
+    :partnr-15M23452 a :PartInstance ;
+        rdfs:label "NaN"^^xsd:double ;
+        rdfs:subClassOf :CamshaftAssemblyRollerTappetEngines ;
+        :partNumber "15M23452" ;
+        :partOf :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+            :PowerSection .
+
+    :partnr-16R22126 a :PartInstance ;
+        rdfs:label " Valve, exhaust" ;
+        rdfs:subClassOf :Guide ;
+        :partNumber "16R22126" ;
+        :partOf :CylinderAssembly,
+            :CylinderSection .
+
+    :partnr-17A23938 a :PartInstance ;
+        rdfs:label " Intake" ;
+        rdfs:subClassOf :Valve ;
+        :partNumber "17A23938" ;
+        :partOf :CylinderSection,
+            :ValveAssemblyAndRelatedParts .
+
+    :partnr-17B23936 a :PartInstance ;
+        rdfs:label " Exhaust (rotator type)" ;
+        rdfs:subClassOf :Valve ;
+        :partNumber "17B23936" ;
+        :partOf :CylinderSection,
+            :ValveAssemblyAndRelatedParts .
+
+    :partnr-17C19386 a :PartInstance ;
+        rdfs:label " Valve stem, exhaust (rotator type)" ;
+        rdfs:subClassOf :Cap ;
+        :partNumber "17C19386" ;
+        :partOf :CylinderSection,
+            :ValveAssemblyAndRelatedParts .
+
+    :partnr-17C21191 a :PartInstance ;
+        rdfs:label " Valve, exhaust (rotator type)" ;
+        rdfs:subClassOf :Key ;
+        :partNumber "17C21191" ;
+        :partOf :CylinderSection,
+            :ValveAssemblyAndRelatedParts .
+
+    :partnr-17F19357 a :PartInstance ;
+        rdfs:label " Valve" ;
+        rdfs:subClassOf :RockerAssembly ;
+        :partNumber "17F19357" ;
+        :partOf :CylinderRelatedParts,
+            :CylinderSection .
+
+    :partnr-18D26098 a :PartInstance ;
+        rdfs:label " Crankshaft" ;
+        rdfs:subClassOf :Bearing ;
+        :partNumber "18D26098" ;
+        :partOf :CrankcaseRelatedParts,
+            :PowerSection .
+
+    :partnr-18M26104 a :PartInstance ;
+        rdfs:label " Connecting rod" ;
+        rdfs:subClassOf :Bearing ;
+        :partNumber "18M26104" ;
+        :partOf :ConnectingRodsPistonsAndRingAssemblies,
+            :CylinderSection .
+
+    :partnr-21A21533-04 a :PartInstance ;
+        rdfs:label " Accessory" ;
+        rdfs:subClassOf :HousingAssembly ;
+        :partNumber "21A21533-04" ;
+        :partOf :AccessoryDrives,
+            :AccessoryHousingAssembly .
+
+    :partnr-25C-10 a :PartInstance ;
+        rdfs:label " 1/4-20 x 1-1/4 long" ;
+        rdfs:subClassOf :Stud ;
+        :partNumber "25C-10" ;
+        :partOf :AccessoryDrives,
+            :OilFilterAssemblyAndOilCoolerBypassValve .
+
+    :partnr-25C-22 a :PartInstance ;
+        rdfs:label " 1/4-20 x 2-3/4 long" ;
+        rdfs:subClassOf :Stud ;
+        :partNumber "25C-22" ;
+        :partOf :AccessoryDrives,
+            :AccessoryHousingAssembly .
+
+    :partnr-25C-8 a :PartInstance ;
+        rdfs:label " 1/4-20 x 1.00 long" ;
+        rdfs:subClassOf :Stud ;
+        :partNumber "25C-8" ;
+        :partOf :CylinderAssembly,
+            :CylinderSection .
+
+    :partnr-31A26041 a :PartInstance ;
+        rdfs:label " 12V., Kelly V ERZ-8011" ;
+        rdfs:subClassOf :StarterAssembly ;
+        :partNumber "31A26041" ;
+        :partOf :CrankingSection,
+            :StarterMotorAndAttachingParts .
+
+    :partnr-31A26043 a :PartInstance ;
+        rdfs:label " 12V., Kelly V ERZ-8012" ;
+        rdfs:subClassOf :StarterAssembly ;
+        :partNumber "31A26043" ;
+        :partOf :CrankingSection,
+            :StarterMotorAndAttachingParts .
+
+    :partnr-31C-12 a :PartInstance ;
+        rdfs:label " 5/16-18 x 1-1/2 long" ;
+        rdfs:subClassOf :Stud ;
+        :partNumber "31C-12" ;
+        :partOf :AccessoryDrives,
+            :AccessoryHousingAssembly,
+            :CrankcaseAssembly,
+            :CylinderAssembly,
+            :CylinderSection,
+            :PowerSection .
+
+    :partnr-31C-13 a :PartInstance ;
+        rdfs:label " 5/16-18 x 1-5/8 long" ;
+        rdfs:subClassOf :Stud ;
+        :partNumber "31C-13" ;
+        :partOf :CrankcaseAssembly,
+            :PowerSection .
+
+    :partnr-31C-15 a :PartInstance ;
+        rdfs:label " 5/16-18 x 1-7/8 long" ;
+        rdfs:subClassOf :Stud ;
+        :partNumber "31C-15" ;
+        :partOf :LubricationSystem,
+            :OilSumpAssemblyAndOilSuctionScreen .
+
+    :partnr-31C-19 a :PartInstance ;
+        rdfs:label " 5/16-18 x 2-3/8 long" ;
+        rdfs:subClassOf :Stud ;
+        :partNumber "31C-19" ;
+        :partOf :AccessoryDrives,
+            :AccessoryHousingAssembly .
+
+    :partnr-31CD-17 a :PartInstance ;
+        rdfs:label " 5/16-18 x 2-1/8 long, drilled" ;
+        rdfs:subClassOf :Stud ;
+        :partNumber "31CD-17" ;
+        :partOf :AccessoryDrives,
+            :AccessoryHousingAssembly .
+
+    :partnr-38-13 a :PartInstance ;
+        rdfs:label " 3/8-16 x 1-5/8 long" ;
+        rdfs:subClassOf :Stud ;
+        :partNumber "38-13" ;
+        :partOf :CrankcaseAssembly,
+            :PowerSection .
+
+    :partnr-383-B a :PartInstance ;
+        rdfs:label " 3/8-24 plain" ;
+        rdfs:subClassOf :Nut ;
+        :partNumber "383-B" ;
+        :partOf :CylinderRelatedParts,
+            :CylinderSection .
+
+    :partnr-38D-17 a :PartInstance ;
+        rdfs:label " 3/8-16 x 2-1/8 long, drilled" ;
+        rdfs:subClassOf :Stud ;
+        :partNumber "38D-17" ;
+        :partOf :CrankcaseAssembly,
+            :PowerSection .
+
+    :partnr-50-15 a :PartInstance ;
+        rdfs:label " 1/2-13 x 1-7/8 long" ;
+        rdfs:subClassOf :Stud ;
+        :partNumber "50-15" ;
+        :partOf :CrankcaseAssembly,
+            :PowerSection .
+
+    :partnr-53E22144 a :PartInstance ;
+        rdfs:label " Temperature control oil cooler bypass" ;
+        rdfs:subClassOf :ValveAssembly ;
+        :partNumber "53E22144" ;
+        :partOf :AccessoryDrives,
+            :OilFilterAssemblyAndOilCoolerBypassValve .
+
+    :partnr-56C23075 a :PartInstance ;
+        rdfs:label " Oil level gage, 15-1/8 long" ;
+        rdfs:subClassOf :Tube ;
+        :partNumber "56C23075" ;
+        :partOf :LubricationSystem,
+            :OilLevelGage .
+
+    :partnr-60009 a :PartInstance ;
+        rdfs:label " Valve, intake" ;
+        rdfs:subClassOf :Key ;
+        :partNumber "60009" ;
+        :partOf :CylinderSection,
+            :ValveAssemblyAndRelatedParts .
+
+    :partnr-60096 a :PartInstance ;
+        rdfs:label " Fuel pump" ;
+        rdfs:subClassOf :Gasket ;
+        :partNumber "60096" ;
+        :partOf :AccessoryDrives,
+            :FuelPumpAssemblyAndAttachingParts .
+
+    :partnr-60430 a :PartInstance ;
+        rdfs:label " Vacuum pump" ;
+        rdfs:subClassOf :Cover ;
+        :partNumber "60430" ;
+        :partOf :AccessoryDrives,
+            :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+    :partnr-60803 a :PartInstance ;
+        rdfs:label " Lifting" ;
+        rdfs:subClassOf :Strap ;
+        :partNumber "60803" ;
+        :partOf :CrankcaseAttachingParts,
+            :PowerSection .
+
+    :partnr-60882 a :PartInstance ;
+        rdfs:label " Starter ring, 10/12 pitch" ;
+        rdfs:subClassOf :Gear ;
+        :partNumber "60882" ;
+        :partOf :CrankshaftAssemblyAndRelatedParts,
+            :PowerSection .
+
+    :partnr-61084 a :PartInstance ;
+        rdfs:label " Oil pressure relief valve" ;
+        rdfs:subClassOf :Spring ;
+        :partNumber "61084" ;
+        :partOf :CrankcaseRelatedParts,
+            :PowerSection .
+
+    :partnr-61098 a :PartInstance ;
+        rdfs:label " Vacuum pump" ;
+        rdfs:subClassOf :AdapterAssembly ;
+        :partNumber "61098" ;
+        :partOf :AccessoryDrives,
+            :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+    :partnr-61173 a :PartInstance ;
+        rdfs:label " Oil pressure housing" ;
+        rdfs:subClassOf :Gasket ;
+        :partNumber "61173" ;
+        :partOf :AccessoryDrives,
+            :OilCoolerBypassValveOilPressureScreenAndBreatherFitting .
+
+    :partnr-61174 a :PartInstance ;
+        rdfs:label " Oil pump drive" ;
+        rdfs:subClassOf :Shaft ;
+        :partNumber "61174" ;
+        :partOf :AccessoryDrives,
+            :OilPumpAssemblyAndAccessoryHousingAttachingParts .
+
+    :partnr-61183 a :PartInstance ;
+        rdfs:label " Accessory adapter" ;
+        rdfs:subClassOf :Gasket ;
+        :partNumber "61183" ;
+        :partOf :AccessoryDrives,
+            :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+    :partnr-61247 a :PartInstance ;
+        rdfs:label " Rocker box" ;
+        rdfs:subClassOf :Cover ;
+        :partNumber "61247" ;
+        :partOf :CylinderRelatedParts,
+            :CylinderSection .
+
+    :partnr-61400 a :PartInstance ;
+        rdfs:label " 1/4-20 x 1-3/16 long" ;
+        rdfs:subClassOf :Stud ;
+        :partNumber "61400" ;
+        :partOf :LubricationSystem,
+            :OilSumpAssemblyAndOilSuctionScreen .
+
+    :partnr-61544 a :PartInstance ;
+        rdfs:label " Fuel pump, long" ;
+        rdfs:subClassOf :Plunger ;
+        :partNumber "61544" ;
+        :partOf :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+            :PowerSection .
+
+    :partnr-61665 a :PartInstance ;
+        rdfs:label " Magneto, impulse" ;
+        rdfs:subClassOf :Gear ;
+        :partNumber "61665" ;
+        :partOf :IgnitionDistributionSystem,
+            :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+    :partnr-61B26213 a :PartInstance ;
+        rdfs:label " MA-4SPA V AV 10-5009" ;
+        rdfs:subClassOf :Carburetor ;
+        :partNumber "61B26213" ;
+        :partOf :CarburetorAssembly,
+            :FuelDistributionSystem .
+
+    :partnr-61B26214 a :PartInstance ;
+        rdfs:label " MA-4SPA V AV 10-5217" ;
+        rdfs:subClassOf :Carburetor ;
+        :partNumber "61B26214" ;
+        :partOf :CarburetorAssembly,
+            :FuelDistributionSystem .
+
+    :partnr-62224 a :PartInstance ;
+        rdfs:label " Magneto adapter" ;
+        rdfs:subClassOf :Gasket ;
+        :partNumber "62224" ;
+        :partOf :IgnitionDistributionSystem,
+            :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+    :partnr-62417 a :PartInstance ;
+        rdfs:label " Oil cooler bypass" ;
+        rdfs:subClassOf :Plug ;
+        :partNumber "62417" ;
+        :partOf :AccessoryDrives,
+            :OilCoolerBypassValveOilPressureScreenAndBreatherFitting .
+
+    :partnr-62817 a :PartInstance ;
+        rdfs:label " Oil pressure" ;
+        rdfs:subClassOf :ScreenAssembly ;
+        :partNumber "62817" ;
+        :partOf :AccessoryDrives,
+            :OilCoolerBypassValveOilPressureScreenAndBreatherFitting .
+
+    :partnr-65441 a :PartInstance ;
+        rdfs:label " Valve spring, lower intake" ;
+        rdfs:subClassOf :Seat ;
+        :partNumber "65441" ;
+        :partOf :CylinderSection,
+            :ValveAssemblyAndRelatedParts .
+
+    :partnr-66224 a :PartInstance ;
+        rdfs:label " Carburetor" ;
+        rdfs:subClassOf :Gasket ;
+        :partNumber "66224" ;
+        :partOf :CarburetorAssembly,
+            :FuelDistributionSystem .
+
+    :partnr-66610 a :PartInstance ;
+        rdfs:label " Rocker shaft" ;
+        rdfs:subClassOf :Bushing ;
+        :partNumber "66610" ;
+        :partOf :CylinderAssembly,
+            :CylinderSection .
+
+    :partnr-66796 a :PartInstance ;
+        rdfs:label " Spark plug, 18-1.5 MM" ;
+        rdfs:subClassOf :Insert ;
+        :partNumber "66796" ;
+        :partOf :CylinderAssembly,
+            :CylinderSection .
+
+    :partnr-66A21765 a :PartInstance ;
+        rdfs:label " V S4LC-21" ;
+        rdfs:subClassOf :Magneto ;
+        :partNumber "66A21765" ;
+        :partOf :IgnitionDistributionSystem,
+            :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+    :partnr-66B21778 a :PartInstance ;
+        rdfs:label " Impulse coupling V S4LC-204" ;
+        rdfs:subClassOf :Magneto ;
+        :partNumber "66B21778" ;
+        :partOf :IgnitionDistributionSystem,
+            :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+    :partnr-68668 a :PartInstance ;
+        rdfs:label " Oil pressure relief valve" ;
+        rdfs:subClassOf :Spring ;
+        :partNumber "68668" ;
+        :partOf :CrankcaseRelatedParts,
+            :PowerSection .
+
+    :partnr-68759 a :PartInstance ;
+        rdfs:label " Oil drain, cylinder no. 1" ;
+        rdfs:subClassOf :TubeAssembly ;
+        :partNumber "68759" ;
+        :partOf :CylinderHeadDrainTubesAndIntercylinderCoolingBaffles,
+            :CylinderSection .
+
+    :partnr-68760 a :PartInstance ;
+        rdfs:label " Oil drain, cylinder no. 2" ;
+        rdfs:subClassOf :TubeAssembly ;
+        :partNumber "68760" ;
+        :partOf :CylinderHeadDrainTubesAndIntercylinderCoolingBaffles,
+            :CylinderSection .
+
+    :partnr-68761 a :PartInstance ;
+        rdfs:label " Oil drain, cylinders no. 3 & 4" ;
+        rdfs:subClassOf :TubeAssembly ;
+        :partNumber "68761" ;
+        :partOf :CylinderHeadDrainTubesAndIntercylinderCoolingBaffles,
+            :CylinderSection .
+
+    :partnr-68987 a :PartInstance ;
+        rdfs:label " Push rod" ;
+        rdfs:subClassOf :ShroudTubeAssembly ;
+        :partNumber "68987" ;
+        :partOf :CylinderSection,
+            :ValveAssemblyAndRelatedParts .
+
+    :partnr-68C19622 a :PartInstance ;
+        rdfs:label " Magneto" ;
+        rdfs:subClassOf :Gear ;
+        :partNumber "68C19622" ;
+        :partOf :IgnitionDistributionSystem,
+            :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+    :partnr-69106 a :PartInstance ;
+        rdfs:label " Governor drive adapter pad" ;
+        rdfs:subClassOf :Cover ;
+        :partNumber "69106" ;
+        :partOf :AccessoryDrives,
+            :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+    :partnr-69510 a :PartInstance ;
+        rdfs:label " Oil pressure screen" ;
+        rdfs:subClassOf :Housing ;
+        :partNumber "69510" ;
+        :partOf :AccessoryDrives,
+            :OilCoolerBypassValveOilPressureScreenAndBreatherFitting .
+
+    :partnr-69551 a :PartInstance ;
+        rdfs:label " Accessory drive adapter" ;
+        rdfs:subClassOf :Gasket ;
+        :partNumber "69551" ;
+        :partOf :AccessoryDrives,
+            :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+    :partnr-69603 a :PartInstance ;
+        rdfs:label " 1-3/4 I.D. x 2-3/16 O.D. x 1-3/4 long" ;
+        rdfs:subClassOf :Hose ;
+        :partNumber "69603" ;
+        :partOf :CylinderSection,
+            :IntakePipesAndAttachingParts .
+
+    :partnr-69675 a :PartInstance ;
+        rdfs:label " Accessory housing oil cooler" ;
+        rdfs:subClassOf :Connector ;
+        :partNumber "69675" ;
+        :partOf :AccessoryDrives,
+            :OilCoolerBypassValveOilPressureScreenAndBreatherFitting .
+
+    :partnr-70310 a :PartInstance ;
+        rdfs:label " Shroud tube" ;
+        rdfs:subClassOf :Seal ;
+        :partNumber "70310" ;
+        :partOf :CylinderSection,
+            :ValveAssemblyAndRelatedParts .
+
+    :partnr-70484 a :PartInstance ;
+        rdfs:label " Oil suction" ;
+        rdfs:subClassOf :Screen ;
+        :partNumber "70484" ;
+        :partOf :LubricationSystem,
+            :OilSumpAssemblyAndOilSuctionScreen .
+
+    :partnr-71140 a :PartInstance ;
+        rdfs:label " Breather" ;
+        rdfs:subClassOf :Fitting ;
+        :partNumber "71140" ;
+        :partOf :AccessoryDrives,
+            :OilCoolerBypassValveOilPressureScreenAndBreatherFitting .
+
+    :partnr-71481 a :PartInstance ;
+        rdfs:label " Oil seal, 3/32 diameter x 4-27/32 I.D." ;
+        rdfs:subClassOf :Ring ;
+        :partNumber "71481" ;
+        :partOf :CylinderRelatedParts,
+            :CylinderSection .
+
+    :partnr-71596 a :PartInstance ;
+        rdfs:label " Accessory drive gear" ;
+        rdfs:subClassOf :Washer ;
+        :partNumber "71596" ;
+        :partOf :AccessoryDrives,
+            :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+    :partnr-71611 a :PartInstance ;
+        rdfs:label " Intercylinder baffle" ;
+        rdfs:subClassOf :Retainer ;
+        :partNumber "71611" ;
+        :partOf :CylinderHeadDrainTubesAndIntercylinderCoolingBaffles,
+            :CylinderSection .
+
+    :partnr-71973 a :PartInstance ;
+        rdfs:label " 2 bolt flange, 1-13/16 I.D." ;
+        rdfs:subClassOf :Gasket ;
+        :partNumber "71973" ;
+        :partOf :CylinderSection,
+            :IntakePipesAndAttachingParts .
+
+    :partnr-72057 a :PartInstance ;
+        rdfs:label " Intake valve" ;
+        rdfs:subClassOf :Seat ;
+        :partNumber "72057" ;
+        :partOf :CylinderAssembly,
+            :CylinderSection .
+
+    :partnr-72058 a :PartInstance ;
+        rdfs:label " Exhaust valve" ;
+        rdfs:subClassOf :Seat ;
+        :partNumber "72058" ;
+        :partOf :CylinderAssembly,
+            :CylinderSection .
+
+    :partnr-72059 a :PartInstance ;
+        rdfs:label " Oil level gage" ;
+        rdfs:subClassOf :Gasket ;
+        :partNumber "72059" ;
+        :partOf :LubricationSystem,
+            :OilLevelGage .
+
+    :partnr-72075 a :PartInstance ;
+        rdfs:label " Oil, 3/32 section x 15/32 I.D." ;
+        rdfs:subClassOf :Seal ;
+        :partNumber "72075" ;
+        :partOf :CrankcaseRelatedParts,
+            :PowerSection .
+
+    :partnr-72091 a :PartInstance ;
+        rdfs:label " Oil seal, 23/64 I.D. x 7/64 diameter" ;
+        rdfs:subClassOf :Ring ;
+        :partNumber "72091" ;
+        :partOf :CrankcaseRelatedParts,
+            :PowerSection .
+
+    :partnr-72198 a :PartInstance ;
+        rdfs:label " Piston pin" ;
+        rdfs:subClassOf :Plug ;
+        :partNumber "72198" ;
+        :partOf :ConnectingRodsPistonsAndRingAssemblies,
+            :CylinderSection .
+
+    :partnr-72566 a :PartInstance ;
+        rdfs:label " Starter ring, 12/14 pitch" ;
+        rdfs:subClassOf :Gear ;
+        :partNumber "72566" ;
+        :partOf :CrankshaftAssemblyAndRelatedParts,
+            :PowerSection .
+
+    :partnr-72569 a :PartInstance ;
+        rdfs:label " Intercylinder" ;
+        rdfs:subClassOf :BaffleAssembly ;
+        :partNumber "72569" ;
+        :partOf :CylinderHeadDrainTubesAndIntercylinderCoolingBaffles,
+            :CylinderSection .
+
+    :partnr-72970 a :PartInstance ;
+        rdfs:label " Vacuum pump driven" ;
+        rdfs:subClassOf :GearAssembly ;
+        :partNumber "72970" ;
+        :partOf :AccessoryDrives,
+            :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+    :partnr-73346 a :PartInstance ;
+        rdfs:label " Intake pipe, upper" ;
+        rdfs:subClassOf :Flange ;
+        :partNumber "73346" ;
+        :partOf :CylinderSection,
+            :IntakePipesAndAttachingParts .
+
+    :partnr-73383 a :PartInstance ;
+        rdfs:label " 5/16 bolt x 1.00" ;
+        rdfs:subClassOf :Lockplate ;
+        :partNumber "73383" ;
+        :partOf :AlternatorMountingAndAttachingParts,
+            :ElectricalPower .
+
+    :partnr-73818 a :PartInstance ;
+        rdfs:label " Accessory housing" ;
+        rdfs:subClassOf :Gasket ;
+        :partNumber "73818" ;
+        :partOf :AccessoryDrives,
+            :AccessoryHousingAssembly .
+
+    :partnr-74065 a :PartInstance ;
+        rdfs:label " Oil level gage seal" ;
+        rdfs:subClassOf :Ring ;
+        :partNumber "74065" ;
+        :partOf :LubricationSystem,
+            :OilLevelGage .
+
+    :partnr-74068 a :PartInstance ;
+        rdfs:label " Oil level gage plug" ;
+        rdfs:subClassOf :Ring ;
+        :partNumber "74068" ;
+        :partOf :LubricationSystem,
+            :OilLevelGage .
+
+    :partnr-74084 a :PartInstance ;
+        rdfs:label " Intake" ;
+        rdfs:subClassOf :Pipe ;
+        :partNumber "74084" ;
+        :partOf :CylinderSection,
+            :IntakePipesAndAttachingParts .
+
+    :partnr-74241 a :PartInstance ;
+        rdfs:label " Piston compression" ;
+        rdfs:subClassOf :Ring ;
+        :partNumber "74241" ;
+        :partOf :ConnectingRodsPistonsAndRingAssemblies,
+            :CylinderSection .
+
+    :partnr-74637 a :PartInstance ;
+        rdfs:label " Valve rocker" ;
+        rdfs:subClassOf :Bushing ;
+        :partNumber "74637" ;
+        :partOf :CylinderRelatedParts,
+            :CylinderSection .
+
+    :partnr-74887 a :PartInstance ;
+        rdfs:label " 33/64 I.D. x 7/8 O.D. x 3/8 thick" ;
+        rdfs:subClassOf :Spacer ;
+        :partNumber "74887" ;
+        :partOf :CylinderRelatedParts,
+            :CylinderSection .
+
+    :partnr-74996 a :PartInstance ;
+        rdfs:label " Crankshaft idler, plain" ;
+        rdfs:subClassOf :GearAssembly ;
+        :partNumber "74996" ;
+        :partOf :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+            :PowerSection .
+
+    :partnr-75072 a :PartInstance ;
+        rdfs:label " Crankshaft idler" ;
+        rdfs:subClassOf :GearAssembly ;
+        :partNumber "75072" ;
+        :partOf :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+            :PowerSection .
+
+    :partnr-75154 a :PartInstance ;
+        rdfs:label " 1/2-13 x 10-1/32 long" ;
+        rdfs:subClassOf :Stud ;
+        :partNumber "75154" ;
+        :partOf :CrankcaseAssembly,
+            :PowerSection .
+
+    :partnr-75380 a :PartInstance ;
+        rdfs:label " Alternator, adjusting" ;
+        rdfs:subClassOf :Link ;
+        :partNumber "75380" ;
+        :partOf :AlternatorMountingAndAttachingParts,
+            :ElectricalPower .
+
+    :partnr-75736 a :PartInstance ;
+        rdfs:label " Oil level gage, 11-9/16 long" ;
+        rdfs:subClassOf :Tube ;
+        :partNumber "75736" ;
+        :partOf :LubricationSystem,
+            :OilLevelGage .
+
+    :partnr-75906 a :PartInstance ;
+        rdfs:label " Rocker box cover" ;
+        rdfs:subClassOf :Gasket ;
+        :partNumber "75906" ;
+        :partOf :CylinderRelatedParts,
+            :CylinderSection .
+
+    :partnr-76121 a :PartInstance ;
+        rdfs:label " Tachometer" ;
+        rdfs:subClassOf :ShaftAssembly ;
+        :partNumber "76121" ;
+        :partOf :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+            :PowerSection .
+
+    :partnr-76220 a :PartInstance ;
+        rdfs:label " 1/2-20 x 10-11/16 long" ;
+        rdfs:subClassOf :Stud ;
+        :partNumber "76220" ;
+        :partOf :CrankcaseAttachingParts,
+            :PowerSection .
+
+    :partnr-76510 a :PartInstance ;
+        rdfs:label " Valve assembly" ;
+        rdfs:subClassOf :Gasket ;
+        :partNumber "76510" ;
+        :partOf :AccessoryDrives,
+            :OilFilterAssemblyAndOilCoolerBypassValve .
+
+    :partnr-76534 a :PartInstance ;
+        rdfs:label " 1-1/8 O.D. x 13/32 I.D. x .005 thick" ;
+        rdfs:subClassOf :Shim ;
+        :partNumber "76534" ;
+        :partOf :AlternatorMountingAndAttachingParts,
+            :ElectricalPower .
+
+    :partnr-76628 a :PartInstance ;
+        rdfs:label " Starter ring gear" ;
+        rdfs:subClassOf :SupportAssembly ;
+        :partNumber "76628" ;
+        :partOf :CrankshaftAssemblyAndRelatedParts,
+            :PowerSection .
+
+    :partnr-76734 a :PartInstance ;
+        rdfs:label "NaN"^^xsd:double ;
+        rdfs:subClassOf :ZipStrap ;
+        :partNumber "76734" ;
+        :partOf :IgnitionDistributionSystem,
+            :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+    :partnr-76908 a :PartInstance ;
+        rdfs:label " Alternator support" ;
+        rdfs:subClassOf :Strut ;
+        :partNumber "76908" ;
+        :partOf :AlternatorMountingAndAttachingParts,
+            :ElectricalPower .
+
+    :partnr-76943 a :PartInstance ;
+        rdfs:label " Valve, intake" ;
+        rdfs:subClassOf :Guide ;
+        :partNumber "76943" ;
+        :partOf :CylinderAssembly,
+            :CylinderSection .
+
+    :partnr-76944 a :PartInstance ;
+        rdfs:label " Starter ring gear" ;
+        rdfs:subClassOf :SupportAssembly ;
+        :partNumber "76944" ;
+        :partOf :CrankshaftAssemblyAndRelatedParts,
+            :PowerSection .
+
+    :partnr-77309 a :PartInstance ;
+        rdfs:label " Crankshaft idler gear" ;
+        rdfs:subClassOf :Bushing ;
+        :partNumber "77309" ;
+        :partOf :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+            :PowerSection .
+
+    :partnr-77467 a :PartInstance ;
+        rdfs:label " Oil pressure relief valve" ;
+        rdfs:subClassOf :Spring ;
+        :partNumber "77467" ;
+        :partOf :CrankcaseRelatedParts,
+            :PowerSection .
+
+    :partnr-77611 a :PartInstance ;
+        rdfs:label " Exhaust flange" ;
+        rdfs:subClassOf :Gasket ;
+        :partNumber "77611" ;
+        :partOf :CylinderAssembly,
+            :CylinderSection .
+
+    :partnr-77808 a :PartInstance ;
+        rdfs:label " Oil pressure relief" ;
+        rdfs:subClassOf :ValveAssembly ;
+        :partNumber "77808" ;
+        :partOf :CrankcaseRelatedParts,
+            :PowerSection .
+
+    :partnr-77852 a :PartInstance ;
+        rdfs:label "NaN"^^xsd:double ;
+        rdfs:subClassOf :OilFilterBaseAssembly ;
+        :partNumber "77852" ;
+        :partOf :AccessoryDrives,
+            :OilFilterAssemblyAndOilCoolerBypassValve .
+
+    :partnr-78027 a :PartInstance ;
+        rdfs:label " Connecting rod" ;
+        rdfs:subClassOf :Bolt ;
+        :partNumber "78027" ;
+        :partOf :ConnectingRodsPistonsAndRingAssemblies,
+            :CylinderSection .
+
+    :partnr-78030-S a :PartInstance ;
+        rdfs:label "NaN"^^xsd:double ;
+        rdfs:subClassOf :ConnectingRodAssembly ;
+        :partNumber "78030-S" ;
+        :partOf :ConnectingRodsPistonsAndRingAssemblies,
+            :CylinderSection .
+
+    :partnr-78531 a :PartInstance ;
+        rdfs:label " Oil pump" ;
+        rdfs:subClassOf :BodyAssembly ;
+        :partNumber "78531" ;
+        :partOf :AccessoryDrives,
+            :OilPumpAssemblyAndAccessoryHousingAttachingParts .
+
+    :partnr-78914 a :PartInstance ;
+        rdfs:label " Intake pipe" ;
+        rdfs:subClassOf :Connection ;
+        :partNumber "78914" ;
+        :partOf :LubricationSystem,
+            :OilSumpAssemblyAndOilSuctionScreen .
+
+    :partnr-8313 a :PartInstance ;
+        rdfs:label " Vacuum pump" ;
+        rdfs:subClassOf :Gasket ;
+        :partNumber "8313" ;
+        :partOf :AccessoryDrives,
+            :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+    :partnr-AN6-14 a :PartInstance ;
+        rdfs:label " 3/8-24 x 1-19/32 long, drilled" ;
+        rdfs:subClassOf :Bolt ;
+        :partNumber "AN6-14" ;
+        :partOf :AlternatorMountingAndAttachingParts,
+            :ElectricalPower .
+
+    :partnr-AN6-16 a :PartInstance ;
+        rdfs:label " 3/8-24 x 1-27/32 long, hex. head" ;
+        rdfs:subClassOf :Bolt ;
+        :partNumber "AN6-16" ;
+        :partOf :AlternatorMountingAndAttachingParts,
+            :ElectricalPower .
+
+    :partnr-AN6-34A a :PartInstance ;
+        rdfs:label " 3/8-24 x 3-19/32 long, hex. head" ;
+        rdfs:subClassOf :Bolt ;
+        :partNumber "AN6-34A" ;
+        :partOf :CrankcaseAttachingParts,
+            :PowerSection .
+
+    :partnr-AN844-10D a :PartInstance ;
+        rdfs:label " Pipe" ;
+        rdfs:subClassOf :Elbow ;
+        :partNumber "AN844-10D" ;
+        :partOf :AccessoryDrives,
+            :OilCoolerBypassValveOilPressureScreenAndBreatherFitting .
+
+    :partnr-AN960-616L a :PartInstance ;
+        rdfs:label " 3/8 plain (thin)" ;
+        rdfs:subClassOf :Washer ;
+        :partNumber "AN960-616L" ;
+        :partOf :CrankcaseAttachingParts,
+            :PowerSection .
+
+    :partnr-LRT23381 a :PartInstance ;
+        rdfs:label " Hydraulic tappet (Roller tappet engines)" ;
+        rdfs:subClassOf :BodyAssembly ;
+        :partNumber "LRT23381" ;
+        :partOf :CrankcaseRelatedParts,
+            :PowerSection .
+
+    :partnr-LW-10077 a :PartInstance ;
+        rdfs:label " Valve spring, upper intake" ;
+        rdfs:subClassOf :Seat ;
+        :partNumber "LW-10077" ;
+        :partOf :CylinderSection,
+            :ValveAssemblyAndRelatedParts .
+
+    :partnr-LW-10729 a :PartInstance ;
+        rdfs:label " Alternator, adjusting" ;
+        rdfs:subClassOf :Link ;
+        :partNumber "LW-10729" ;
+        :partOf :AlternatorMountingAndAttachingParts,
+            :ElectricalPower .
+
+    :partnr-LW-10828 a :PartInstance ;
+        rdfs:label " Oil" ;
+        rdfs:subClassOf :SumpAssembly ;
+        :partNumber "LW-10828" ;
+        :partOf :LubricationSystem,
+            :OilSumpAssemblyAndOilSuctionScreen .
+
+    :partnr-LW-11713 a :PartInstance ;
+        rdfs:label " Oil pressure relief valve" ;
+        rdfs:subClassOf :Spring ;
+        :partNumber "LW-11713" ;
+        :partOf :CrankcaseRelatedParts,
+            :PowerSection .
+
+    :partnr-LW-11795 a :PartInstance ;
+        rdfs:label " Valve, inner" ;
+        rdfs:subClassOf :Spring ;
+        :partNumber "LW-11795" ;
+        :partOf :CylinderSection,
+            :ValveAssemblyAndRelatedParts .
+
+    :partnr-LW-11800 a :PartInstance ;
+        rdfs:label " Valve, outer" ;
+        rdfs:subClassOf :Spring ;
+        :partNumber "LW-11800" ;
+        :partOf :CylinderSection,
+            :ValveAssemblyAndRelatedParts .
+
+    :partnr-LW-11866 a :PartInstance ;
+        rdfs:label " Nut compressor" ;
+        rdfs:subClassOf :Spacer ;
+        :partNumber "LW-11866" ;
+        :partOf :CrankcaseAttachingParts,
+            :PowerSection .
+
+    :partnr-LW-12186 a :PartInstance ;
+        rdfs:label " Connecting rod bolt" ;
+        rdfs:subClassOf :Nut ;
+        :partNumber "LW-12186" ;
+        :partOf :ConnectingRodsPistonsAndRingAssemblies,
+            :CylinderSection .
+
+    :partnr-LW-12272 a :PartInstance ;
+        rdfs:label " Shroud tube" ;
+        rdfs:subClassOf :Lockplate ;
+        :partNumber "LW-12272" ;
+        :partOf :CylinderSection,
+            :ValveAssemblyAndRelatedParts .
+
+    :partnr-LW-12416 a :PartInstance ;
+        rdfs:label " Nitrided" ;
+        rdfs:subClassOf :CylinderAssembly ;
+        :partNumber "LW-12416" ;
+        :partOf :CylinderAssembly,
+            :CylinderSection .
+
+    :partnr-LW-12706 a :PartInstance ;
+        rdfs:label " Magneto, impulse coupling" ;
+        rdfs:subClassOf :Adapter ;
+        :partNumber "LW-12706" ;
+        :partOf :IgnitionDistributionSystem,
+            :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+    :partnr-LW-12892 a :PartInstance ;
+        rdfs:label " Rocker shaft" ;
+        rdfs:subClassOf :ThrustButton ;
+        :partNumber "LW-12892" ;
+        :partOf :CylinderRelatedParts,
+            :CylinderSection .
+
+    :partnr-LW-13215 a :PartInstance ;
+        rdfs:label " Short" ;
+        rdfs:subClassOf :OilFilter ;
+        :partNumber "LW-13215" ;
+        :partOf :AccessoryDrives,
+            :OilFilterAssemblyAndOilCoolerBypassValve .
+
+    :partnr-LW-13323 a :PartInstance ;
+        rdfs:label " Valve, spring, lower exhaust" ;
+        rdfs:subClassOf :Seat ;
+        :partNumber "LW-13323" ;
+        :partOf :CylinderSection,
+            :ValveAssemblyAndRelatedParts .
+
+    :partnr-LW-13353 a :PartInstance ;
+        rdfs:label " Oil sump" ;
+        rdfs:subClassOf :Gasket ;
+        :partNumber "LW-13353" ;
+        :partOf :LubricationSystem,
+            :OilSumpAssemblyAndOilSuctionScreen .
+
+    :partnr-LW-13790 a :PartInstance ;
+        rdfs:label " Valve rocker" ;
+        rdfs:subClassOf :Shaft ;
+        :partNumber "LW-13790" ;
+        :partOf :CylinderRelatedParts,
+            :CylinderSection .
+
+    :partnr-LW-13792 a :PartInstance ;
+        rdfs:label " Crankshaft oil" ;
+        rdfs:subClassOf :Seal ;
+        :partNumber "LW-13792" ;
+        :partOf :CrankcaseRelatedParts,
+            :PowerSection .
+
+    :partnr-LW-13793 a :PartInstance ;
+        rdfs:label " 5/16-18 x 15/16 long, drilled" ;
+        rdfs:subClassOf :Stud ;
+        :partNumber "LW-13793" ;
+        :partOf :CrankcaseAssembly,
+            :PowerSection .
+
+    :partnr-LW-13796 a :PartInstance ;
+        rdfs:label " Crankshaft idler gear" ;
+        rdfs:subClassOf :Shaft ;
+        :partNumber "LW-13796" ;
+        :partOf :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+            :PowerSection .
+
+    :partnr-LW-13923 a :PartInstance ;
+        rdfs:label " Connecting rod, upper" ;
+        rdfs:subClassOf :Bushing ;
+        :partNumber "LW-13923" ;
+        :partOf :ConnectingRodsPistonsAndRingAssemblies,
+            :CylinderSection .
+
+    :partnr-LW-14060 a :PartInstance ;
+        rdfs:label " Two wire" ;
+        rdfs:subClassOf :Clip ;
+        :partNumber "LW-14060" ;
+        :partOf :IgnitionDistributionSystem,
+            :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+    :partnr-LW-14078 a :PartInstance ;
+        rdfs:label " Piston" ;
+        rdfs:subClassOf :Pin ;
+        :partNumber "LW-14078" ;
+        :partOf :ConnectingRodsPistonsAndRingAssemblies,
+            :CylinderSection .
+
+    :partnr-LW-14260 a :PartInstance ;
+        rdfs:label " Oil, tachometer drive" ;
+        rdfs:subClassOf :Seal ;
+        :partNumber "LW-14260" ;
+        :partOf :AccessoryDrives,
+            :OilPumpAssemblyAndAccessoryHousingAttachingParts .
+
+    :partnr-LW-14768 a :PartInstance ;
+        rdfs:label " Oil level" ;
+        rdfs:subClassOf :GageAssembly ;
+        :partNumber "LW-14768" ;
+        :partOf :LubricationSystem,
+            :OilLevelGage .
+
+    :partnr-LW-14995 a :PartInstance ;
+        rdfs:label " Shroud tube" ;
+        rdfs:subClassOf :Spring ;
+        :partNumber "LW-14995" ;
+        :partOf :CylinderSection,
+            :ValveAssemblyAndRelatedParts .
+
+    :partnr-LW-15472 a :PartInstance ;
+        rdfs:label " Dual diaphragm, low pressure" ;
+        rdfs:subClassOf :FuelPump ;
+        :partNumber "LW-15472" ;
+        :partOf :AccessoryDrives,
+            :FuelPumpAssemblyAndAttachingParts .
+
+    :partnr-LW-15592-5-05 a :PartInstance ;
+        rdfs:label " Hose" ;
+        rdfs:subClassOf :Clamp ;
+        :partNumber "LW-15592-5-05" ;
+        :partOf :CylinderHeadDrainTubesAndIntercylinderCoolingBaffles,
+            :CylinderSection .
+
+    :partnr-LW-15592-8-28 a :PartInstance ;
+        rdfs:label " Hose" ;
+        rdfs:subClassOf :Clamp ;
+        :partNumber "LW-15592-8-28" ;
+        :partOf :CylinderSection,
+            :IntakePipesAndAttachingParts .
+
+    :partnr-LW-16475 a :PartInstance ;
+        rdfs:label " Valve spring, upper exhaust (rotator type)" ;
+        rdfs:subClassOf :Seat ;
+        :partNumber "LW-16475" ;
+        :partOf :CylinderSection,
+            :ValveAssemblyAndRelatedParts .
+
+    :partnr-LW-16783-18 a :PartInstance ;
+        rdfs:label " Oil level" ;
+        rdfs:subClassOf :GageAssembly ;
+        :partNumber "LW-16783-18" ;
+        :partOf :LubricationSystem,
+            :OilLevelGage .
+
+    :partnr-LW-18085 a :PartInstance ;
+        rdfs:label " Oil pressure relief valve" ;
+        rdfs:subClassOf :Spring ;
+        :partNumber "LW-18085" ;
+        :partOf :CrankcaseRelatedParts,
+            :PowerSection .
+
+    :partnr-LW-18109 a :PartInstance ;
+        rdfs:label " Oil pump driven" ;
+        rdfs:subClassOf :Impeller ;
+        :partNumber "LW-18109" ;
+        :partOf :AccessoryDrives,
+            :OilPumpAssemblyAndAccessoryHousingAttachingParts .
+
+    :partnr-LW-18110 a :PartInstance ;
+        rdfs:label " Oil pump driven" ;
+        rdfs:subClassOf :ImpellerAssembly ;
+        :partNumber "LW-18110" ;
+        :partOf :AccessoryDrives,
+            :OilPumpAssemblyAndAccessoryHousingAttachingParts .
+
+    :partnr-LW-18639 a :PartInstance ;
+        rdfs:label " Crankshaft gear" ;
+        rdfs:subClassOf :Lockplate ;
+        :partNumber "LW-18639" ;
+        :partOf :CrankshaftAssemblyAndRelatedParts,
+            :PowerSection .
+
+    :partnr-LW-18661 a :PartInstance ;
+        rdfs:label " Shroud tube" ;
+        rdfs:subClassOf :Seal ;
+        :partNumber "LW-18661" ;
+        :partOf :CylinderSection,
+            :ValveAssemblyAndRelatedParts .
+
+    :partnr-LW-18667 a :PartInstance ;
+        rdfs:label " 3/16 diameter x 2-11/32 long" ;
+        rdfs:subClassOf :Pin ;
+        :partNumber "LW-18667" ;
+        :partOf :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+            :PowerSection .
+
+    :partnr-LW-18815-S a :PartInstance ;
+        rdfs:label " Propeller flange, short" ;
+        rdfs:subClassOf :Bushing ;
+        :partNumber "LW-18815-S" ;
+        :partOf :CrankshaftAssemblyAndRelatedParts,
+            :PowerSection .
+
+    :partnr-LW-18817-S a :PartInstance ;
+        rdfs:label " Propeller flange, long" ;
+        rdfs:subClassOf :Bushing ;
+        :partNumber "LW-18817-S" ;
+        :partOf :CrankshaftAssemblyAndRelatedParts,
+            :PowerSection .
+
+    :partnr-LW-18840 a :PartInstance ;
+        rdfs:label "NaN"^^xsd:double ;
+        rdfs:subClassOf :CamshaftAssembly ;
+        :partNumber "LW-18840" ;
+        :partOf :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+            :PowerSection .
+
+    :partnr-LW-18921-S a :PartInstance ;
+        rdfs:label " Propeller flange, long" ;
+        rdfs:subClassOf :Bushing ;
+        :partNumber "LW-18921-S" ;
+        :partOf :CrankshaftAssemblyAndRelatedParts,
+            :PowerSection .
+
+    :partnr-LW-18922-S a :PartInstance ;
+        rdfs:label " Propeller flange, short" ;
+        rdfs:subClassOf :Bushing ;
+        :partNumber "LW-18922-S" ;
+        :partOf :CrankshaftAssemblyAndRelatedParts,
+            :PowerSection .
+
+    :partnr-LW-18959-150-25 a :PartInstance ;
+        rdfs:label " 1-1/2 I.D." ;
+        rdfs:subClassOf :Clamp ;
+        :partNumber "LW-18959-150-25" ;
+        :partOf :IgnitionDistributionSystem,
+            :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+    :partnr-LW-25-0.94 a :PartInstance ;
+        rdfs:label " 1/4-20 x 15/16 long, hex. head" ;
+        rdfs:subClassOf :Bolt ;
+        :partNumber "LW-25-0.94" ;
+        :partOf :AccessoryDrives,
+            :LubricationSystem,
+            :OilPumpAssemblyAndAccessoryHousingAttachingParts,
+            :OilSumpAssemblyAndOilSuctionScreen .
+
+    :partnr-LW-25-1.00 a :PartInstance ;
+        rdfs:label " 1/4-20 x 1.00 long, hex. head" ;
+        rdfs:subClassOf :Bolt ;
+        :partNumber "LW-25-1.00" ;
+        :partOf :AccessoryDrives,
+            :OilCoolerBypassValveOilPressureScreenAndBreatherFitting,
+            :OilFilterAssemblyAndOilCoolerBypassValve .
+
+    :partnr-LW-25-1.13 a :PartInstance ;
+        rdfs:label " 1/4-20 x 1-1/8 long, hex. head" ;
+        rdfs:subClassOf :Bolt ;
+        :partNumber "LW-25-1.13" ;
+        :partOf :AccessoryDrives,
+            :CrankcaseAttachingParts,
+            :LubricationSystem,
+            :OilPumpAssemblyAndAccessoryHousingAttachingParts,
+            :OilSumpAssemblyAndOilSuctionScreen,
+            :PowerSection .
+
+    :partnr-LW-25-1.25 a :PartInstance ;
+        rdfs:label " 1/4-20 x 1-1/4 long, hex. head" ;
+        rdfs:subClassOf :Bolt ;
+        :partNumber "LW-25-1.25" ;
+        :partOf :IgnitionDistributionSystem,
+            :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+    :partnr-LW-25-1.44 a :PartInstance ;
+        rdfs:label " 1/4-20 x 1-7/16 long, hex. head" ;
+        rdfs:subClassOf :Bolt ;
+        :partNumber "LW-25-1.44" ;
+        :partOf :AccessoryDrives,
+            :OilPumpAssemblyAndAccessoryHousingAttachingParts .
+
+    :partnr-LW-25-1.50 a :PartInstance ;
+        rdfs:label " 1/4-20 x 1-1/2 long, hex. head" ;
+        rdfs:subClassOf :Bolt ;
+        :partNumber "LW-25-1.50" ;
+        :partOf :CrankcaseAttachingParts,
+            :PowerSection .
+
+    :partnr-LW-25-1.75 a :PartInstance ;
+        rdfs:label " 1/4-20 x 1-3/4 long, hex. head" ;
+        rdfs:subClassOf :Bolt ;
+        :partNumber "LW-25-1.75" ;
+        :partOf :CrankcaseAttachingParts,
+            :PowerSection .
+
+    :partnr-LW-25S1.50 a :PartInstance ;
+        rdfs:label " 1/4-20 x 1-1/2 long, drilled end" ;
+        rdfs:subClassOf :Bolt ;
+        :partNumber "LW-25S1.50" ;
+        :partOf :CrankcaseAttachingParts,
+            :PowerSection .
+
+    :partnr-LW-31-0.94 a :PartInstance ;
+        rdfs:label " 5/16-18 x 15/16 long, hex. head" ;
+        rdfs:subClassOf :Bolt ;
+        :partNumber "LW-31-0.94" ;
+        :partOf :AlternatorMountingAndAttachingParts,
+            :ElectricalPower .
+
+    :partnr-LW-31-1.16 a :PartInstance ;
+        rdfs:label " 5/16-18 x 1-5/32 long, hex. head" ;
+        rdfs:subClassOf :Bolt ;
+        :partNumber "LW-31-1.16" ;
+        :partOf :CrankingSection,
+            :StarterMotorAndAttachingParts .
+
+    :partnr-LW-31H0.75 a :PartInstance ;
+        rdfs:label " 5/16-18 x 3/4 long, hex. head, drilled" ;
+        rdfs:subClassOf :Bolt ;
+        :partNumber "LW-31H0.75" ;
+        :partOf :AlternatorMountingAndAttachingParts,
+            :ElectricalPower .
+
+    :partnr-LW-31H0.88 a :PartInstance ;
+        rdfs:label " 5/16-18 x 7/8 long, hex. head, drilled" ;
+        rdfs:subClassOf :Bolt ;
+        :partNumber "LW-31H0.88" ;
+        :partOf :AlternatorMountingAndAttachingParts,
+            :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+            :ElectricalPower,
+            :PowerSection .
+
+    :partnr-LW-38-0.75 a :PartInstance ;
+        rdfs:label " 3/8-16 x 3/4 long, hex. head" ;
+        rdfs:subClassOf :Bolt ;
+        :partNumber "LW-38-0.75" ;
+        :partOf :AccessoryDrives,
+            :FuelPumpAssemblyAndAttachingParts .
+
+    :partnr-LW-M-2375 a :PartInstance ;
+        rdfs:label " Spark plug cable" ;
+        rdfs:subClassOf :Plate ;
+        :partNumber "LW-M-2375" ;
+        :partOf :IgnitionDistributionSystem,
+            :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+    :partnr-LW-M-2403 a :PartInstance ;
+        rdfs:label " Left magneto" ;
+        rdfs:subClassOf :HarnessAssembly ;
+        :partNumber "LW-M-2403" ;
+        :partOf :IgnitionDistributionSystem,
+            :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+    :partnr-LW-M-2404 a :PartInstance ;
+        rdfs:label " Right magneto" ;
+        rdfs:subClassOf :HarnessAssembly ;
+        :partNumber "LW-M-2404" ;
+        :partOf :IgnitionDistributionSystem,
+            :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+    :partnr-MS20823-6D a :PartInstance ;
+        rdfs:label " 45o, 3/8 flared tube" ;
+        rdfs:subClassOf :Elbow ;
+        :partNumber "MS20823-6D" ;
+        :partOf :CylinderAssembly,
+            :CylinderSection .
+
+    :partnr-MS21044N06 a :PartInstance ;
+        rdfs:label " No. 6-32 self-locking" ;
+        rdfs:subClassOf :Nut ;
+        :partNumber "MS21044N06" ;
+        :partOf :IgnitionDistributionSystem,
+            :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+    :partnr-STD-1065 a :PartInstance ;
+        rdfs:label " Stepped, 5/16-14 diameter" ;
+        rdfs:subClassOf :Dowel ;
+        :partNumber "STD-1065" ;
+        :partOf :CrankshaftAssemblyAndRelatedParts,
+            :PowerSection .
+
+    :partnr-STD-1211 a :PartInstance ;
+        rdfs:label " 2.00 diameter expansion" ;
+        rdfs:subClassOf :Plug ;
+        :partNumber "STD-1211" ;
+        :partOf :CrankshaftAssemblyAndRelatedParts,
+            :PowerSection .
+
+    :partnr-STD-1339 a :PartInstance ;
+        rdfs:label " 1/16-27 NPT, allen head" ;
+        rdfs:subClassOf :Plug ;
+        :partNumber "STD-1339" ;
+        :partOf :CrankcaseAssembly,
+            :PowerSection .
+
+    :partnr-STD-1353 a :PartInstance ;
+        rdfs:label " No. 10-24 UNC x 3/8 long" ;
+        rdfs:subClassOf :Insert ;
+        :partNumber "STD-1353" ;
+        :partOf :CylinderAssembly,
+            :CylinderSection .
+
+    :partnr-STD-1410 a :PartInstance ;
+        rdfs:label " 5/16-18 plain" ;
+        rdfs:subClassOf :Nut ;
+        :partNumber "STD-1410" ;
+        :partOf :AccessoryDrives,
+            :CarburetorAssembly,
+            :CrankingSection,
+            :CylinderAssembly,
+            :CylinderSection,
+            :FuelDistributionSystem,
+            :IgnitionDistributionSystem,
+            :MagnetosMagnetoDrivesHarnessesAndSparkPlugs,
+            :PropellerGovernorDriveCoverVacuumPumpDriveAndCover,
+            :StarterMotorAndAttachingParts .
+
+    :partnr-STD-1411 a :PartInstance ;
+        rdfs:label " 1/4-20 plain" ;
+        rdfs:subClassOf :Nut ;
+        :partNumber "STD-1411" ;
+        :partOf :AccessoryDrives,
+            :CrankcaseAttachingParts,
+            :CylinderSection,
+            :IgnitionDistributionSystem,
+            :LubricationSystem,
+            :MagnetosMagnetoDrivesHarnessesAndSparkPlugs,
+            :OilFilterAssemblyAndOilCoolerBypassValve,
+            :OilSumpAssemblyAndOilSuctionScreen,
+            :PowerSection,
+            :PropellerGovernorDriveCoverVacuumPumpDriveAndCover,
+            :ValveAssemblyAndRelatedParts .
+
+    :partnr-STD-1420 a :PartInstance ;
+        rdfs:label " 5/16-18 slotted" ;
+        rdfs:subClassOf :Nut ;
+        :partNumber "STD-1420" ;
+        :partOf :AccessoryDrives,
+            :OilPumpAssemblyAndAccessoryHousingAttachingParts .
+
+    :partnr-STD-160 a :PartInstance ;
+        rdfs:label " 1/4 lock, internal teeth" ;
+        rdfs:subClassOf :Washer ;
+        :partNumber "STD-160" ;
+        :partOf :AccessoryDrives,
+            :CrankcaseAttachingParts,
+            :CylinderSection,
+            :IgnitionDistributionSystem,
+            :IntakePipesAndAttachingParts,
+            :LubricationSystem,
+            :MagnetosMagnetoDrivesHarnessesAndSparkPlugs,
+            :OilCoolerBypassValveOilPressureScreenAndBreatherFitting,
+            :OilFilterAssemblyAndOilCoolerBypassValve,
+            :OilPumpAssemblyAndAccessoryHousingAttachingParts,
+            :OilSumpAssemblyAndOilSuctionScreen,
+            :PowerSection,
+            :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+    :partnr-STD-1623 a :PartInstance ;
+        rdfs:label " 1/4-20 UNC x 3/8 long" ;
+        rdfs:subClassOf :Insert ;
+        :partNumber "STD-1623" ;
+        :partOf :CrankcaseAssembly,
+            :PowerSection .
+
+    :partnr-STD-1727 a :PartInstance ;
+        rdfs:label " Plain, 11/32 I.D. x 3/4 O.D." ;
+        rdfs:subClassOf :Washer ;
+        :partNumber "STD-1727" ;
+        :partOf :AlternatorMountingAndAttachingParts,
+            :ElectricalPower,
+            :IgnitionDistributionSystem,
+            :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+    :partnr-STD-1774 a :PartInstance ;
+        rdfs:label " 1/8 diameter x 1/4 long" ;
+        rdfs:subClassOf :Pin ;
+        :partNumber "STD-1774" ;
+        :partOf :AccessoryDrives,
+            :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+    :partnr-STD-1882 a :PartInstance ;
+        rdfs:label " 3/8-16 x 1-9/32 long, socket head, drilled" ;
+        rdfs:subClassOf :Screw ;
+        :partNumber "STD-1882" ;
+        :partOf :AccessoryDrives,
+            :FuelPumpAssemblyAndAttachingParts .
+
+    :partnr-STD-1916 a :PartInstance ;
+        rdfs:label " 1/4-20 x 1-1/8 long, fill. head" ;
+        rdfs:subClassOf :Screw ;
+        :partNumber "STD-1916" ;
+        :partOf :IgnitionDistributionSystem,
+            :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+    :partnr-STD-1925 a :PartInstance ;
+        rdfs:label " 1/4-20 x 5/8 long, pan. head" ;
+        rdfs:subClassOf :Screw ;
+        :partNumber "STD-1925" ;
+        :partOf :CylinderRelatedParts,
+            :CylinderSection .
+
+    :partnr-STD-2090 a :PartInstance ;
+        rdfs:label " 1/2-20 plain" ;
+        rdfs:subClassOf :Nut ;
+        :partNumber "STD-2090" ;
+        :partOf :CylinderRelatedParts,
+            :CylinderSection .
+
+    :partnr-STD-2168 a :PartInstance ;
+        rdfs:label " 5/16-18 NC-3 slotted shear" ;
+        rdfs:subClassOf :Nut ;
+        :partNumber "STD-2168" ;
+        :partOf :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+            :PowerSection .
+
+    :partnr-STD-2180 a :PartInstance ;
+        rdfs:label " 3/8 I.D. x 1-7/8 long" ;
+        rdfs:subClassOf :Hose ;
+        :partNumber "STD-2180" ;
+        :partOf :CylinderHeadDrainTubesAndIntercylinderCoolingBaffles,
+            :CylinderSection .
+
+    :partnr-STD-2231 a :PartInstance ;
+        rdfs:label " Internal retaining (13/16)" ;
+        rdfs:subClassOf :Ring ;
+        :partNumber "STD-2231" ;
+        :partOf :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+            :PowerSection .
+
+    :partnr-STD-2246 a :PartInstance ;
+        rdfs:label " 5/16-24 x 1.00 long" ;
+        rdfs:subClassOf :Bolt ;
+        :partNumber "STD-2246" ;
+        :partOf :CrankshaftAssemblyAndRelatedParts,
+            :PowerSection .
+
+    :partnr-STD-2249 a :PartInstance ;
+        rdfs:label " 1/4-20 slotted" ;
+        rdfs:subClassOf :Nut ;
+        :partNumber "STD-2249" ;
+        :partOf :CrankcaseAttachingParts,
+            :PowerSection .
+
+    :partnr-STD-33 a :PartInstance ;
+        rdfs:label " 3/8 plain" ;
+        rdfs:subClassOf :Washer ;
+        :partNumber "STD-33" ;
+        :partOf :AccessoryDrives,
+            :CrankcaseAttachingParts,
+            :FuelPumpAssemblyAndAttachingParts,
+            :PowerSection .
+
+    :partnr-STD-35 a :PartInstance ;
+        rdfs:label " 5/16 plain" ;
+        rdfs:subClassOf :Washer ;
+        :partNumber "STD-35" ;
+        :partOf :AccessoryDrives,
+            :AlternatorMountingAndAttachingParts,
+            :CarburetorAssembly,
+            :CrankingSection,
+            :CylinderAssembly,
+            :CylinderSection,
+            :ElectricalPower,
+            :FuelDistributionSystem,
+            :OilPumpAssemblyAndAccessoryHousingAttachingParts,
+            :PropellerGovernorDriveCoverVacuumPumpDriveAndCover,
+            :StarterMotorAndAttachingParts .
+
+    :partnr-STD-475 a :PartInstance ;
+        rdfs:label " 5/16 lock, internal teeth" ;
+        rdfs:subClassOf :Washer ;
+        :partNumber "STD-475" ;
+        :partOf :AccessoryDrives,
+            :CarburetorAssembly,
+            :CrankingSection,
+            :CylinderAssembly,
+            :CylinderSection,
+            :FuelDistributionSystem,
+            :IgnitionDistributionSystem,
+            :MagnetosMagnetoDrivesHarnessesAndSparkPlugs,
+            :PropellerGovernorDriveCoverVacuumPumpDriveAndCover,
+            :StarterMotorAndAttachingParts .
+
+    :partnr-STD-514 a :PartInstance ;
+        rdfs:label " 5/16 dia. x 1/2 long" ;
+        rdfs:subClassOf :Dowel ;
+        :partNumber "STD-514" ;
+        :partOf :CrankcaseAssembly,
+            :PowerSection .
+
+    :partnr-STD-551 a :PartInstance ;
+        rdfs:label " 1/2-14 NPT, square head, drilled" ;
+        rdfs:subClassOf :Plug ;
+        :partNumber "STD-551" ;
+        :partOf :LubricationSystem,
+            :OilSumpAssemblyAndOilSuctionScreen .
+
+    :partnr-STD-553 a :PartInstance ;
+        rdfs:label " No. 6-32 x 1/2 long, round head" ;
+        rdfs:subClassOf :Screw ;
+        :partNumber "STD-553" ;
+        :partOf :IgnitionDistributionSystem,
+            :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+    :partnr-STD-557 a :PartInstance ;
+        rdfs:label " 1/2 dia. x 19/32 long, hollow" ;
+        rdfs:subClassOf :Dowel ;
+        :partNumber "STD-557" ;
+        :partOf :CrankcaseAssembly,
+            :PowerSection .
+
+    :partnr-STD-596 a :PartInstance ;
+        rdfs:label " 3/8-24 plain" ;
+        rdfs:subClassOf :Nut ;
+        :partNumber "STD-596" ;
+        :partOf :CrankcaseAttachingParts,
+            :PowerSection .
+
+    :partnr-STD-678 a :PartInstance ;
+        rdfs:label " 3/8 lock, internal teeth" ;
+        rdfs:subClassOf :Washer ;
+        :partNumber "STD-678" ;
+        :partOf :CrankcaseAttachingParts,
+            :PowerSection .
+
+    :partnr-STD-684 a :PartInstance ;
+        rdfs:label " Straight, 3/8 I.D. hose" ;
+        rdfs:subClassOf :Nipple ;
+        :partNumber "STD-684" ;
+        :partOf :CylinderHeadDrainTubesAndIntercylinderCoolingBaffles,
+            :CylinderSection .
+
+    :partnr-STD-690 a :PartInstance ;
+        rdfs:label " 13/16 O.D. x 3/8 I.D. x 1/16 thick" ;
+        rdfs:subClassOf :Washer ;
+        :partNumber "STD-690" ;
+        :partOf :AlternatorMountingAndAttachingParts,
+            :ElectricalPower .
+
+    :partnr-STD-713 a :PartInstance ;
+        rdfs:label " 3/32 diameter x 3/4 long" ;
+        rdfs:subClassOf :CotterPin ;
+        :partNumber "STD-713" ;
+        :partOf :AlternatorMountingAndAttachingParts,
+            :ElectricalPower .
+
+    :partnr-STD-783 a :PartInstance ;
+        rdfs:label " 1/4-18 NPT, allen head" ;
+        rdfs:subClassOf :Plug ;
+        :partNumber "STD-783" ;
+        :partOf :AccessoryDrives,
+            :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+    :partnr-STD-784 a :PartInstance ;
+        rdfs:label " 3/8-18 NPT, allen head" ;
+        rdfs:subClassOf :Plug ;
+        :partNumber "STD-784" ;
+        :partOf :AccessoryDrives,
+            :AccessoryHousingAssembly,
+            :OilCoolerBypassValveOilPressureScreenAndBreatherFitting .
+
+    :partnr-STD-8 a :PartInstance ;
+        rdfs:label " 1/4 plain" ;
+        rdfs:subClassOf :Washer ;
+        :partNumber "STD-8" ;
+        :partOf :AccessoryDrives,
+            :CrankcaseAttachingParts,
+            :CylinderSection,
+            :IgnitionDistributionSystem,
+            :IntakePipesAndAttachingParts,
+            :LubricationSystem,
+            :MagnetosMagnetoDrivesHarnessesAndSparkPlugs,
+            :OilCoolerBypassValveOilPressureScreenAndBreatherFitting,
+            :OilFilterAssemblyAndOilCoolerBypassValve,
+            :OilPumpAssemblyAndAccessoryHousingAttachingParts,
+            :OilSumpAssemblyAndOilSuctionScreen,
+            :PowerSection,
+            :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+    :partnr-STD-872 a :PartInstance ;
+        rdfs:label " 3/8-24 slotted" ;
+        rdfs:subClassOf :Nut ;
+        :partNumber "STD-872" ;
+        :partOf :AlternatorMountingAndAttachingParts,
+            :CrankcaseAttachingParts,
+            :ElectricalPower,
+            :PowerSection .
+
+    :partnr-STD-91 a :PartInstance ;
+        rdfs:label " 1/2-14 NPT, allen head" ;
+        rdfs:subClassOf :Plug ;
+        :partNumber "STD-91" ;
+        :partOf :LubricationSystem,
+            :OilSumpAssemblyAndOilSuctionScreen .
+
+    :Adapter a :Part ;
+        rdfs:label "ADAPTER" ;
+        rdfs:subClassOf :Connector .
+
+    :AdapterAssembly rdfs:subClassOf :Part .
+
+    :BaffleAssembly rdfs:subClassOf :Part .
+
+    :Ball rdfs:subClassOf :Part .
+
+    :Body a :Part ;
+        rdfs:label "BODY" ;
+        rdfs:subClassOf :StructuralComponent .
+
+    :CamshaftAssembly rdfs:subClassOf :Part .
+
+    :CamshaftAssemblyRollerTappetEngines rdfs:subClassOf :Part .
+
+    :Cap a :Part ;
+        rdfs:label "CAP" ;
+        rdfs:subClassOf :StructuralComponent .
+
+    :Clip a :Part ;
+        rdfs:label "CLIP" ;
+        rdfs:subClassOf :Retainer .
+
+    :ConnectingRodAssembly rdfs:subClassOf :Part .
+
+    :Connection a :Part ;
+        rdfs:label "CONNECTION" ;
+        rdfs:subClassOf :Connector .
+
+    :CotterPin rdfs:subClassOf :Part .
+
+    :CrankcaseAssemblyKit rdfs:subClassOf :Part .
+
+    :CrankcaseAssemblyKitRollerTappetEngines rdfs:subClassOf :Part .
+
+    :CrankcaseAssemblyRollerTappetEngines rdfs:subClassOf :Part .
+
+    :Fitting a :Part ;
+        rdfs:label "FITTING" ;
+        rdfs:subClassOf :Connector .
+
+    :Flange a :Part ;
+        rdfs:label "FLANGE" ;
+        rdfs:subClassOf :Connector .
+
+    :FuelPump rdfs:subClassOf :Part .
+
+    :Housing a :Part ;
+        rdfs:label "HOUSING" ;
+        rdfs:subClassOf :StructuralComponent .
+
+    :HousingAssembly rdfs:subClassOf :Part .
+
+    :Impeller a :Part ;
+        rdfs:label "IMPELLER" ;
+        rdfs:subClassOf :RotaryComponent .
+
+    :ImpellerAssembly rdfs:subClassOf :Part .
+
+    :ImpellerKit rdfs:subClassOf :Part .
+
+    :Nipple a :Part ;
+        rdfs:label "NIPPLE" ;
+        rdfs:subClassOf :Connector .
+
+    :OilFilter rdfs:subClassOf :Part .
+
+    :OilFilterBaseAssembly rdfs:subClassOf :Part .
+
+    :OilSeal rdfs:subClassOf :Part .
+
+    :Pipe a :Part ;
+        rdfs:label "PIPE" ;
+        rdfs:subClassOf :Connector .
+
+    :Piston a :Part ;
+        rdfs:label "PISTON" ;
+        rdfs:subClassOf :FlowComponent .
+
+    :Plate a :Part ;
+        rdfs:label "PLATE" ;
+        rdfs:subClassOf :StructuralComponent .
+
+    :Plunger a :Part ;
+        rdfs:label "PLUNGER" ;
+        rdfs:subClassOf :FlowComponent .
+
+    :PlungerAssembly rdfs:subClassOf :Part .
+
+    :RockerAssembly rdfs:subClassOf :Part .
+
+    :Screen rdfs:subClassOf :Part .
+
+    :ScreenAssembly rdfs:subClassOf :Part .
+
+    :ShaftAssembly rdfs:subClassOf :Part .
+
+    :Shim a :Part ;
+        rdfs:label "SHIM" ;
+        rdfs:subClassOf :Separator .
+
+    :Socket a :Part ;
+        rdfs:label "SOCKET" ;
+        rdfs:subClassOf :Connector .
+
+    :SparkPlug rdfs:subClassOf :Part .
+
+    :Strap a :Part ;
+        rdfs:label "STRAP" ;
+        rdfs:subClassOf :StructuralComponent .
+
+    :SumpAssembly rdfs:subClassOf :Part .
+
+    :ThrustButton rdfs:subClassOf :Part .
+
+    :ZipStrap rdfs:subClassOf :Part .
+
+    :Bearing a :Part ;
+        rdfs:label "BEARING" ;
+        rdfs:subClassOf :RotaryComponent .
+
+    :BodyAssembly rdfs:subClassOf :Part .
+
+    :Bracket a :Part ;
+        rdfs:label "BRACKET" ;
+        rdfs:subClassOf :StructuralComponent .
+
+    :Carburetor rdfs:subClassOf :Part .
+
+    :CrankshaftAssembly rdfs:subClassOf :Part .
+
+    :Elbow a :Part ;
+        rdfs:label "ELBOW" ;
+        rdfs:subClassOf :Connector .
+
+    :GageAssembly rdfs:subClassOf :Part .
+
+    :Guide a :Part ;
+        rdfs:label "GUIDE" ;
+        rdfs:subClassOf :StructuralComponent .
+
+    :HarnessAssembly rdfs:subClassOf :Part .
+
+    :Hose a :Part ;
+        rdfs:label "HOSE" ;
+        rdfs:subClassOf :Connector .
+
+    :Key rdfs:subClassOf :Part .
+
+    :Link rdfs:subClassOf :Part .
+
+    :Magneto rdfs:subClassOf :Part .
+
+    :ShroudTubeAssembly rdfs:subClassOf :Part .
+
+    :Spacer a :Part ;
+        rdfs:label "SPACER" ;
+        rdfs:subClassOf :Separator .
+
+    :StarterAssembly rdfs:subClassOf :Part .
+
+    :Strut a :Part ;
+        rdfs:label "STRUT" ;
+        rdfs:subClassOf :StructuralComponent .
+
+    :SupportAssembly rdfs:subClassOf :Part .
+
+    :Tube a :Part ;
+        rdfs:label "TUBE" ;
+        rdfs:subClassOf :Connector .
+
+    :Valve a :Part ;
+        rdfs:label "VALVE" ;
+        rdfs:subClassOf :FlowComponent .
+
+    :ValveAssembly rdfs:subClassOf :Part .
+
+    :Clamp a :Part ;
+        rdfs:label "CLAMP" ;
+        rdfs:subClassOf :Connector .
+
+    :Dowel a :Part ;
+        rdfs:label "DOWEL" ;
+        rdfs:subClassOf :Fastener .
+
+    :FlowComponent rdfs:label "Flow Component" ;
+        rdfs:subClassOf :Part .
+
+    :GearAssembly rdfs:subClassOf :Part .
+
+    :Insert rdfs:subClassOf :Part .
+
+    :Lockplate a :Part ;
+        rdfs:label "LOCKPLATE" ;
+        rdfs:subClassOf :StructuralComponent .
+
+    :Pin a :Part ;
+        rdfs:label "PIN" ;
+        rdfs:subClassOf :Fastener .
+
+    :Retainer rdfs:label "Retainer" ;
+        rdfs:subClassOf :Part .
+
+    :Separator rdfs:label "Separator" ;
+        rdfs:subClassOf :Part .
+
+    :Shaft a :Part ;
+        rdfs:label "SHAFT" ;
+        rdfs:subClassOf :RotaryComponent .
+
+    :TubeAssembly rdfs:subClassOf :Part .
+
+    :Cover a :Part ;
+        rdfs:label "COVER" ;
+        rdfs:subClassOf :StructuralComponent .
+
+    :Screw a :Part ;
+        rdfs:label "SCREW" ;
+        rdfs:subClassOf :Fastener .
+
+    :Gear a :Part ;
+        rdfs:label "GEAR" ;
+        rdfs:subClassOf :RotaryComponent .
+
+    :RotaryComponent rdfs:label "Rotary Component" ;
+        rdfs:subClassOf :Part .
+
+    :CarburetorAssembly a :Assembly ;
+        rdfs:label "Carburetor Assembly" .
+
+    :CrankingSection a :System ;
+        rdfs:label "Cranking Section" .
+
+    :FuelDistributionSystem a :System ;
+        rdfs:label "Fuel Distribution System" .
+
+    :FuelPumpAssemblyAndAttachingParts a :Assembly ;
+        rdfs:label "Fuel Pump Assembly And Attaching Parts" .
+
+    :Ring a :Part ;
+        rdfs:label "RING" ;
+        rdfs:subClassOf :Retainer .
+
+    :Seat rdfs:subClassOf :Part .
+
+    :StarterMotorAndAttachingParts a :Assembly ;
+        rdfs:label "Starter Motor And Attaching Parts" .
+
+    :Fastener rdfs:label "Fastener" ;
+        rdfs:subClassOf :Part .
+
+    :IntakePipesAndAttachingParts a :Assembly ;
+        rdfs:label "Intake Pipes And Attaching Parts" .
+
+    :OilLevelGage a :Assembly ;
+        rdfs:label "Oil Level Gage" .
+
+    :AccessoryHousingAssembly a :Assembly ;
+        rdfs:label "Accessory Housing Assembly" .
+
+    :Bushing a :Part ;
+        rdfs:label "BUSHING" ;
+        rdfs:subClassOf :RotaryComponent .
+
+    :CylinderHeadDrainTubesAndIntercylinderCoolingBaffles a :Assembly ;
+        rdfs:label "Cylinder Head Drain Tubes And Intercylinder Cooling Baffles" .
+
+    :RodAssembly rdfs:subClassOf :Part .
+
+    :Seal rdfs:label "Seal" ;
+        rdfs:subClassOf :Part .
+
+    :Spring a :Part ;
+        rdfs:label "SPRING" ;
+        rdfs:subClassOf :Separator .
+
+    :ConnectingRodsPistonsAndRingAssemblies a :Assembly ;
+        rdfs:label "Connecting Rods, Pistons And Ring Assemblies" .
+
+    :Plug a :Part ;
+        rdfs:label "PLUG" ;
+        rdfs:subClassOf :Seal .
+
+    :OilFilterAssemblyAndOilCoolerBypassValve a :Assembly ;
+        rdfs:label "Oil Filter Assembly And Oil Cooler Bypass Valve" .
+
+    :StructuralComponent rdfs:label "Structural Component" ;
+        rdfs:subClassOf :Part .
+
+    :Nut a :Part ;
+        rdfs:label "NUT" ;
+        rdfs:subClassOf :Fastener .
+
+    :Washer a :Part ;
+        rdfs:label "WASHER" ;
+        rdfs:subClassOf :Fastener .
+
+    :Connector rdfs:label "Connector" ;
+        rdfs:subClassOf :Part .
+
+    :CrankshaftIdlerGearsTachometerDriveAndCamshaft a :Assembly ;
+        rdfs:label "Crankshaft Idler Gears, Tachometer Drive And Camshaft" .
+
+    :OilCoolerBypassValveOilPressureScreenAndBreatherFitting a :Assembly ;
+        rdfs:label "Oil Cooler Bypass Valve, Oil Pressure Screen And Breather Fitting" .
+
+    :OilPumpAssemblyAndAccessoryHousingAttachingParts a :Assembly ;
+        rdfs:label "Oil Pump Assembly And Accessory Housing Attaching Parts" .
+
+    :CrankcaseRelatedParts a :Assembly ;
+        rdfs:label "Crankcase Related Parts" .
+
+    :OilSumpAssemblyAndOilSuctionScreen a :Assembly ;
+        rdfs:label "Oil Sump Assembly And Oil Suction Screen" .
+
+    :CrankshaftAssemblyAndRelatedParts a :Assembly ;
+        rdfs:label "Crankshaft Assembly And Related Parts" .
+
+    :Stud a :Part ;
+        rdfs:label "STUD" ;
+        rdfs:subClassOf :Fastener .
+
+    :CrankcaseAssembly a :Assembly ;
+        rdfs:label "Crankcase Assembly" ;
+        rdfs:subClassOf :Part .
+
+    :CrankcaseAttachingParts a :Assembly ;
+        rdfs:label "Crankcase Attaching Parts" .
+
+    :CylinderAssembly a :Assembly ;
+        rdfs:label "Cylinder Assembly" ;
+        rdfs:subClassOf :Part .
+
+    :PropellerGovernorDriveCoverVacuumPumpDriveAndCover a :Assembly ;
+        rdfs:label "Propeller Governor Drive Cover, Vacuum Pump Drive And Cover" .
+
+    :AlternatorMountingAndAttachingParts a :Assembly ;
+        rdfs:label "Alternator Mounting And Attaching Parts" .
+
+    :Bolt a :Part ;
+        rdfs:label "BOLT" ;
+        rdfs:subClassOf :Fastener .
+
+    :ElectricalPower a :System ;
+        rdfs:label "Electrical Power" .
+
+    :Gasket a :Part ;
+        rdfs:label "GASKET" ;
+        rdfs:subClassOf :Seal .
+
+    :CylinderRelatedParts a :Assembly ;
+        rdfs:label "Cylinder Related Parts" .
+
+    :LubricationSystem a :System ;
+        rdfs:label "Lubrication System" .
+
+    :ValveAssemblyAndRelatedParts a :Assembly ;
+        rdfs:label "Valve Assembly And Related Parts" .
+
+    :IgnitionDistributionSystem a :System ;
+        rdfs:label "Ignition Distribution System" .
+
+    :MagnetosMagnetoDrivesHarnessesAndSparkPlugs a :Assembly ;
+        rdfs:label "Magnetos, Magneto Drives, Harnesses And Spark Plugs" .
+
+    :AccessoryDrives a :System ;
+        rdfs:label "Accessory Drives" .
+
+    :PowerSection a :System ;
+        rdfs:label "Power Section" .
+
+    :CylinderSection a :System ;
+        rdfs:label "Cylinder Section" .
+
+    :Part rdfs:subClassOf :Part .
+}
+

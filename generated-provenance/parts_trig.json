@@ -1,0 +1,75 @@
+{
+  "provenance": [
+    {
+      "id": "https://w3id.org/zorro#run/parts_trig/20251118T091815",
+      "type": "prov:Activity",
+      "startedAtTime": "2025-11-18T09:18:15.431543+00:00",
+      "endedAtTime": "2025-11-18T09:18:15.640791+00:00",
+      "wasAssociatedWith": "https://w3id.org/zorro#agent/__main__.py",
+      "used": [
+        {
+          "id": "https://w3id.org/zorro#src/prompt-extracted/part-classes.tsv",
+          "type": "prov:Entity",
+          "format": "text/tab-separated-values",
+          "extent": 861,
+          "modified": "2024-08-23T11:12:57.352572+00:00",
+          "identifier": "sha256:4954e5898f52abb43cfb794fd281b3fe00f09147edae73ee2cb29a4b842be7c2"
+        },
+        {
+          "id": "https://w3id.org/zorro#src/pdf-extracted/parts-catalog.csv",
+          "type": "prov:Entity",
+          "format": "text/csv",
+          "extent": 29626,
+          "modified": "2024-08-23T13:46:59.616745+00:00",
+          "identifier": "sha256:6c0f822668e0d7b81d96debaea0486ca48eeec373c43c006f8e057bd84f6dcfb"
+        },
+        "https://w3id.org/zorro#env/20251118T091815"
+      ]
+    },
+    {
+      "id": "https://w3id.org/zorro#agent/__main__.py",
+      "type": [
+        "prov:Agent",
+        "prov:SoftwareAgent"
+      ],
+      "label": "__main__.py",
+      "hasVersion": "7017703ffca7229a0f0af9129fb259f2f09cfe3e",
+      "source": "https://github.com/kai-vu/zorro-wp2-aircraft-poc.git"
+    },
+    {
+      "id": "https://w3id.org/zorro#out//private/var/folders/wt/_t6jgd1d72l3qpg6nfbg6f8h0000gn/T/pytest-of-benno/pytest-18/test_parts_trig0/parts.trig",
+      "type": "prov:Entity",
+      "format": "application/trig",
+      "extent": 71839,
+      "modified": "2025-11-18T09:18:15.640556+00:00",
+      "wasGeneratedBy": "https://w3id.org/zorro#run/parts_trig/20251118T091815"
+    },
+    {
+      "id": "https://w3id.org/zorro#env/20251118T091815",
+      "type": [
+        "prov:Entity",
+        "prov:Collection"
+      ],
+      "label": "Python environment",
+      "title": "makeprov",
+      "hasVersion": "0.2.0",
+      "requires": [
+        {
+          "id": "https://pypi.org/project/pytest/",
+          "type": "rdfs:Resource",
+          "label": "pytest"
+        },
+        {
+          "id": "https://pypi.org/project/rdflib/",
+          "type": "rdfs:Resource",
+          "label": "rdflib>=6.0"
+        },
+        {
+          "id": "https://pypi.org/project/pyshacl/",
+          "type": "rdfs:Resource",
+          "label": "pyshacl>=0.20"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "provenance": [
+    {
+      "id": "https://w3id.org/zorro#run/functions_trig/20251118T091815",
+      "type": "prov:Activity",
+      "startedAtTime": "2025-11-18T09:18:15.877878+00:00",
+      "endedAtTime": "2025-11-18T09:18:15.975697+00:00",
+      "wasAssociatedWith": "https://w3id.org/zorro#agent/__main__.py",
+      "used": [
+        {
+          "id": "https://w3id.org/zorro#src/prompt-extracted/problem-component-function.tsv",
+          "type": "prov:Entity",
+          "format": "text/tab-separated-values",
+          "extent": 4050,
+          "modified": "2024-08-23T13:48:24.556841+00:00",
+          "identifier": "sha256:040e3bd41e064ea333dc898e3378c3e535ec7f03c2833fd4464a5cf6beb68496"
+        },
+        {
+          "id": "https://w3id.org/zorro#src/prompt-extracted/functions.tsv",
+          "type": "prov:Entity",
+          "format": "text/tab-separated-values",
+          "extent": 2119,
+          "modified": "2024-08-23T13:46:52.608872+00:00",
+          "identifier": "sha256:ee618e9840e3bd9ba065b5ec8093f8495cf04d460d03f9b37aa0477f89256363"
+        },
+        {
+          "id": "https://w3id.org/zorro#src/prompt-extracted/subfunction.tsv",
+          "type": "prov:Entity",
+          "format": "text/tab-separated-values",
+          "extent": 4091,
+          "modified": "2024-08-23T09:15:57.778074+00:00",
+          "identifier": "sha256:7c39081400e6555b5ab65ace81c326ffb7084481014c65ae9d26957ced70c248"
+        },
+        {
+          "id": "https://w3id.org/zorro#src/prompt-extracted/dependsOn.tsv",
+          "type": "prov:Entity",
+          "format": "text/tab-separated-values",
+          "extent": 2934,
+          "modified": "2024-08-23T13:50:30.136905+00:00",
+          "identifier": "sha256:3a7c22dc97800617608ced7210764bdbe7e77193c850524546509b1a3daa0914"
+        },
+        "https://w3id.org/zorro#env/20251118T091815"
+      ]
+    },
+    {
+      "id": "https://w3id.org/zorro#agent/__main__.py",
+      "type": [
+        "prov:Agent",
+        "prov:SoftwareAgent"
+      ],
+      "label": "__main__.py",
+      "hasVersion": "7017703ffca7229a0f0af9129fb259f2f09cfe3e",
+      "source": "https://github.com/kai-vu/zorro-wp2-aircraft-poc.git"
+    },
+    {
+      "id": "https://w3id.org/zorro#out//private/var/folders/wt/_t6jgd1d72l3qpg6nfbg6f8h0000gn/T/pytest-of-benno/pytest-18/test_functions_trig0/functions.trig",
+      "type": "prov:Entity",
+      "format": "application/trig",
+      "extent": 25744,
+      "modified": "2025-11-18T09:18:15.975491+00:00",
+      "wasGeneratedBy": "https://w3id.org/zorro#run/functions_trig/20251118T091815"
+    },
+    {
+      "id": "https://w3id.org/zorro#env/20251118T091815",
+      "type": [
+        "prov:Entity",
+        "prov:Collection"
+      ],
+      "label": "Python environment",
+      "title": "makeprov",
+      "hasVersion": "0.2.0",
+      "requires": [
+        {
+          "id": "https://pypi.org/project/pytest/",
+          "type": "rdfs:Resource",
+          "label": "pytest"
+        },
+        {
+          "id": "https://pypi.org/project/rdflib/",
+          "type": "rdfs:Resource",
+          "label": "rdflib>=6.0"
+        },
+        {
+          "id": "https://pypi.org/project/pyshacl/",
+          "type": "rdfs:Resource",
+          "label": "pyshacl>=0.20"
+        }
+      ]
+    }
+  ]
+}

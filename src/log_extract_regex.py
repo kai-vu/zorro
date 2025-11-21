@@ -1,245 +1,241 @@
-#!/usr/bin/env python
-# coding: utf-8
+"""Regex-based extraction of maintenance problems and actions.
 
-# # Knowledge Graphs Workshop: Pattern exercise
-#
-# First, we'll load the dataset and do some basic pre-processing.
-# Then we'll show the table in a handy interface.
+The legacy notebook code is refactored into two provenance-aware rules that
+emit CSV outputs compatible with downstream linking. Patterns are kept intact,
+but the logic is wrapped in functions so we can test and orchestrate them.
+"""
 
-# In[1]:
+from __future__ import annotations
 
-
-import pandas as pd
-import numpy as np
-from itables import show
-
-df = pd.read_csv("Aircraft_Annotation_DataFile.csv")
-df.columns = [c.lower() for c in df.columns]
-df["problem"] = df["problem"].str.strip(".").str.strip()
-df["action"] = df["action"].str.strip(".").str.strip()
-show(df)
-
-
-# ## Define a pattern for Problem strings
-#
-# In this example pattern, we extract the location of the problem, the part, and a problem keyword.
-#
-# Try to modify the pattern to extract more problem types, or make a different kind of problem pattern!
-
-# In[28]:
-
-
-loc_pat = "(?:(?:L|R)/H ?(?:REAR )?(?:AFT )?(?:ENG(?:INE)?,? ?)?)?(?:CYL(?:INDER)? ?)?(?:ALL )?(?:#?\d(?: ?. \d)*)?(?: CYL(?:INDER)? ?)?"
-problem_pat = (
-    "^"
-    # The location often mentions the engine side and cylinder number
-    f"(?P<loc1>{loc_pat})? ?"
-    # A part name ends with a letter, ignore the last "S" (for plural words)
-    "(?P<part>\w[ \w]+?)S?,? "
-    f"(?:ON )?(?P<loc2>{loc_pat})? ?"
-    # Match the verb but don't extract it
-    "(?:IS |ARE |HAS |HAVE |APPEARS TO BE )?(?:A )?(?:POSSIBLE )?(?:EVIDENCE OF )?(?:COMING )?(?:SEVERAL )?(?:SHOWS SIGNS OF )?"
-    # Some pre-defined problem keywords to match
-    "(?P<problem>(?:OIL )?LEAK(?:ING)?S?|LOOSE|TORN|CRACKED|BROKEN|DAMAGED?|WORN|MISSING|BAD|SHEAR(?:ED)?|BROKE|STUCK|STICK(?:ING)?|DIRTY|DEAD|FAILED|NEEDS?|.*COMPRESSION.*)"
-    f",? ?(?:ON )?(?P<loc3>{loc_pat})? ?"
-    "(?P<rest>.*)"
-)
-problem_extractions = pe = df["problem"].str.extract(problem_pat)
-problem_extractions["part"].replace(
-    {"HA": "", "INDER": "", "I": "", "INE": "", "ON": ""}, inplace=True
-)
-
-
-def join_cols(row):
-    return " ".join(row[~row.isna()].values.astype(str)) or np.nan
-
-
-pe["location"] = pe[["loc1", "loc2", "loc3"]].apply(join_cols, axis=1)
-pe.drop(columns=["loc1", "loc2", "loc3"], inplace=True)
-
-for r in ["CYLINDER", "ENGINE", "CYL", "ENG", "#", ",", "&", "(", ")"]:
-    pe["location"] = pe["location"].str.replace(r, "")
-pe["location"] = pe["location"].str.replace("ALL", "1 2 3 4")
-pe["cylinders"] = (
-    pe["location"]
-    .str.extractall("(\d)")[0]
-    .groupby(level=0)
-    .apply(lambda x: " ".join(set(x)))
-)
-pe["engine"] = pe["location"].str.replace("\d", "", regex=True).str.strip()
-pe.drop(columns=["location"], inplace=True)
-
-# Fix compression
-comp = ~pe["problem"].isna() & pe["problem"].str.contains("COMPRESSION")
-pe.loc[comp, "rest"] = pe[comp]["problem"] + pe[comp]["rest"]
-pe.loc[comp, "problem"] = "COMPRESSION"
-pe.insert(0, "id", df["ident"])
-
-# Filter parts
-ts = pd.read_csv("prompt-extracted/part-classes.tsv", sep="\t")["Part"]
-ptc = pe["part"].dropna().apply(lambda x: x.split()[-1] if x else None).value_counts()
-ok_parts = set(ptc[ptc.index.difference(ts)].sort_values().tail(10).index) | set(ts)
-filter_parts = lambda x: x if x and x.split()[-1] in ok_parts else None
-pe["part"] = pe["part"].fillna("").apply(filter_parts)
-
-pe.to_csv("problem_extractions_regex.csv", index=None)
-
-
-# Show the most common problem extractions
-show(problem_extractions.fillna("").value_counts())
-
-
-# In[5]:
-
-
-pc = pe["part"].value_counts().drop(["ENGINE"])
-part_pat = "|".join(pc[(pc.index.str.len() > 3) & (pc >= 3)].index)
-locs = pe["location"].str.replace(" +", " ", regex=True).str.strip().unique()
-loc_pat = "|".join(locs[pd.Series(locs).str.len() > 1])
-df_nopart_noloc = df.loc[
-    (df["problem"].str.count(part_pat) == 0) & (df["problem"].str.count(loc_pat) == 0)
-]
-df_nopart_noloc["problem"].to_csv("problems_nopart_noloc.csv", index=None)
-show(df_nopart_noloc)
-
-
-# In[4]:
-
-
-# Show non-matching problems
-problems_nomatch = df["problem"].loc[problem_extractions.isna().all(axis=1)]
-problems_nomatch.to_csv("problems_nomatch.csv", index=None)
-show(problems_nomatch.value_counts().rename("count"))
-
-
-# ## Define a pattern for Action strings
-#
-# In this example pattern, we extract the location of the action, the part, and an action keyword.
-#
-# Try to modify the pattern to extract more action types, or make a different kind of action pattern!
-
-# In[36]:
-
-
-action_pat = (
-    "^(?:REMOVED & )?(?:RE)?"
-    # Pre-defined action keywords
-    "(?P<action>REPLACED|TIGHTENED|SECURED|ATTACHED|FASTENED|TORQUED|CLEANED|STOP DRILLED) ?"
-    # The location often mentions the engine side and cylinder number
-    "(?P<location>(?:(?:L|R)/H (?:ENG )?)?(?:CYL ?)?(?:#?\d(?: ?. \d)*)(?: CYL ?)?)? ?"
-    # Often, replacements mention "W/ NEW"; ignore it
-    "(?:W/ )?(?:NEW )?"
-    # A part name ends with a letter, ignore the last "S" (for plural words)
-    "(?P<part>[^,.]*?\w)S?"
-    "(?: W/ .*)?(?:[,.] .*)?$"
-)
-action_extractions = ae = df["action"].str.extract(action_pat)
-ae.insert(0, "id", df["ident"])
-
-for r in ["CYLINDER", "ENGINE", "CYL", "ENG", "#", ",", "&", "(", ")"]:
-    ae["location"] = ae["location"].str.replace(r, "")
-ae["location"] = ae["location"].str.replace("ALL", "1 2 3 4")
-ae["cylinders"] = (
-    ae["location"]
-    .str.extractall("(\d)")[0]
-    .groupby(level=0)
-    .apply(lambda x: " ".join(set(x)))
-)
-ae["engine"] = ae["location"].str.replace("\d", "", regex=True).str.strip()
-ae.drop(columns=["location"], inplace=True)
-
-
-# Filter parts
-ts = pd.read_csv("prompt-extracted/part-classes.tsv", sep="\t")["Part"]
-ptc = ae["part"].dropna().apply(lambda x: x.split()[-1] if x else None).value_counts()
-ok_parts = set(ptc[ptc.index.difference(ts)].sort_values().tail(10).index) | set(ts)
-filter_parts = lambda x: x if x and x.split()[-1] in ok_parts else None
-ae["part"] = ae["part"].fillna("").apply(filter_parts)
-
-action_extractions.to_csv("action_extractions_regex.csv", index=None)
-
-show(action_extractions.fillna("").value_counts())
-
-
-# In[33]:
-
-
-# Show non-matching actions
-show(df["action"].loc[action_extractions.isna().all(axis=1)])
-
-
-# ## Loading extractions into graph
-#
-# Now, we'll transform our extractions into graphs and load them into the Knowledge Graph.
-
-# In[ ]:
-
-
-from helperFunctions import obj_to_triples
+import logging
 import re
-from rdflib import Graph, URIRef, BNode, Literal, RDF, RDFS, DC, Namespace
+from dataclasses import dataclass
+from pathlib import Path
+import pandas as pd
+from makeprov import InPath, OutPath, rule
 
-ZORRO = Namespace("https://zorro-project.nl/example/")
+LOGGER = logging.getLogger(__name__)
 
+LOC_PAT = (
+    r"(?:(?:L|R)/H ?(?:REAR )?(?:AFT )?(?:ENG(?:INE)?,? ?)?)?"
+    r"(?:CYL(?:INDER)? ?)?(?:ALL )?(?:#?\d(?: ?. \d)*)?(?: CYL(?:INDER)? ?)?"
+)
+PROBLEM_PATTERN = re.compile(
+    r"^"
+    rf"(?P<loc1>{LOC_PAT})? ?"
+    r"(?P<part>\w[ \w]+?)S?,? "
+    rf"(?:ON )?(?P<loc2>{LOC_PAT})? ?"
+    r"(?:IS |ARE |HAS |HAVE |APPEARS TO BE )?(?:A )?(?:POSSIBLE )?"
+    r"(?:EVIDENCE OF )?(?:COMING )?(?:SEVERAL )?(?:SHOWS SIGNS OF )?"
+    r"(?P<problem>(?:OIL )?LEAK(?:ING)?S?|LOOSE|TORN|CRACKED|BROKEN|DAMAGED?"
+    r"|WORN|MISSING|BAD|SHEAR(?:ED)?|BROKE|STUCK|STICK(?:ING)?|DIRTY|DEAD|FAILED"
+    r"|NEEDS?|.*COMPRESSION.*)"
+    rf",? ?(?:ON )?(?P<loc3>{LOC_PAT})? ?"
+    r"(?P<rest>.*)",
+    flags=re.IGNORECASE,
+)
 
-def create_problem_obj(row):
-    ent = ZORRO[f"problem{row.ident}"]
-
-    problem_match = re.search(problem_pat, row.problem)
-    problem_fields = problem_match.groupdict() if problem_match else {}
-    action_match = re.search(action_pat, row.action)
-    action_fields = action_match.groupdict() if action_match else {}
-
-    def camelcase(fields, name):
-        # Convert string into a clean CamelCase name
-        return re.subn("\W", "", fields.get(name, "").title())[0]
-
-    return {
-        "@id": ent,
-        RDF.type: ZORRO[camelcase(problem_fields, "problem") + "Problem"],
-        DC.description: Literal(row.problem),
-        ZORRO.involvedPart: (
-            {
-                RDF.type: ZORRO[camelcase(problem_fields, "part") + "Part"],
-                ZORRO.location: Literal((problem_fields.get("location") or "").strip()),
-            }
-            if problem_fields.get("part")
-            else None
-        ),
-        ZORRO.requiredAction: {
-            DC.description: Literal(row.action),
-            RDF.type: ZORRO[camelcase(action_fields, "action") + "Action"],
-            ZORRO.involvedPart: (
-                {
-                    RDF.type: ZORRO[camelcase(action_fields, "part") + "Part"],
-                    ZORRO.location: Literal(
-                        (action_fields.get("location") or "").strip()
-                    ),
-                }
-                if action_fields.get("part")
-                else None
-            ),
-        },
-    }
+ACTION_PATTERN = re.compile(
+    r"^(?:REMOVED & )?(?:RE)?"
+    r"(?P<action>REPLACED|TIGHTENED|SECURED|ATTACHED|FASTENED|TORQUED|CLEANED|STOP DRILLED) ?"
+    r"(?P<location>(?:(?:L|R)/H (?:ENG )?)?(?:CYL ?)?(?:#?\d(?: ?. \d)*)(?: CYL ?)?)? ?"
+    r"(?:W/ )?(?:NEW )?"
+    r"(?P<part>[^,.]*?\w)S?"
+    r"(?: W/ .*)?(?:[,.] .*)?$",
+    flags=re.IGNORECASE,
+)
 
 
-# Show the turtle serialization of the first 5 extractions
-g = Graph()
-g.namespace_manager.bind("", ZORRO)
-for obj in df.head(5).apply(create_problem_obj, axis=1):
-    for t in obj_to_triples(obj):
-        g.add(t)
-print(g.serialize())
+def _clean_logs(raw_logs: pd.DataFrame) -> pd.DataFrame:
+    """Normalize maintenance log columns."""
+    logs = raw_logs.copy()
+    logs.columns = [c.lower() for c in logs.columns]
+    for column in ("problem", "action"):
+        logs[column] = logs[column].astype(str).str.strip(".").str.strip()
+    logs["ident"] = logs["ident"].astype(str)
+    return logs
 
 
-# In[ ]:
+def _join_locations(row: pd.Series) -> str:
+    """Join non-empty location fragments."""
+    values = [value for value in row if isinstance(value, str) and value.strip()]
+    return " ".join(values)
 
 
-# Run on entire dataset, takes a few seconds!
-g = Graph()
-g.namespace_manager.bind("", zorro)
-for obj in df.apply(create_problem_obj, axis=1):
-    for t in obj_to_triples(obj):
-        g.add(t)
-g.serialize("pattern_graph.ttl")
+def _clean_location(text: str | float) -> str | None:
+    """Remove boilerplate tokens from location text."""
+    if not isinstance(text, str):
+        return None
+    cleaned = text
+    for token in ["CYLINDER", "ENGINE", "CYL", "ENG", "#", ",", "&", "(", ")"]:
+        cleaned = cleaned.replace(token, "")
+    cleaned = cleaned.replace("ALL", "1 2 3 4")
+    cleaned = re.sub(r"\s+", " ", cleaned).strip()
+    return cleaned or None
 
+
+def _split_cylinders(location: pd.Series) -> pd.Series:
+    """Extract cylinder numbers from a location column."""
+    cylinders = (
+        location.fillna("")
+        .str.extractall(r"(\d)")
+        .groupby(level=0)
+        .agg(lambda x: " ".join(sorted(set(x))))
+    )
+    return cylinders
+
+
+def _filter_parts(series: pd.Series, reference: pd.Series, tail_count: int) -> pd.Series:
+    """Restrict extracted parts to acceptable head nouns."""
+    head_counts = (
+        series.dropna()
+        .astype(str)
+        .apply(lambda x: x.split()[-1] if x else "")
+        .value_counts()
+    )
+    whitelist = set(reference.dropna().astype(str))
+    whitelist.update(
+        head_counts[head_counts.index.difference(whitelist)].sort_values().tail(
+            tail_count
+        ).index
+    )
+
+    def keep(value: str | float) -> str | None:
+        if not isinstance(value, str):
+            return None
+        tokens = value.split()
+        return value if tokens and tokens[-1] in whitelist else None
+
+    return series.fillna("").apply(keep)
+
+
+def _write_csv(frame: pd.DataFrame, destination: OutPath) -> None:
+    """Persist dataframe with consistent encoding."""
+    Path(destination).parent.mkdir(parents=True, exist_ok=True)
+    frame.to_csv(destination, index=False)
+
+
+@dataclass(slots=True)
+class RegexExtractionConfig:
+    """Configuration shared by both regex extraction rules."""
+
+    part_whitelist_tail: int = 10
+    include_rest_column: bool = True
+
+
+@rule(
+    name="problem_extractions_regex",
+    base_iri="https://w3id.org/zorro#",
+    prov_dir="generated-provenance",
+)
+def extract_problems_regex(
+    logs_csv: InPath = InPath("Aircraft_Annotation_DataFile.csv"),
+    part_classes_tsv: InPath = InPath("prompt-extracted/part-classes.tsv"),
+    output_csv: OutPath = OutPath("log-extracted/problem_extractions_regex.csv"),
+    *,
+    config: RegexExtractionConfig = RegexExtractionConfig(),
+) -> pd.DataFrame:
+    """Extract problem mentions using hand-crafted regular expressions.
+
+    Args:
+        logs_csv: Path to the aircraft maintenance log CSV.
+        part_classes_tsv: TSV containing acceptable part head nouns.
+        output_csv: Destination path for the extracted problems.
+        config: Additional options controlling filtering behaviour.
+
+    Returns:
+        DataFrame containing regex-based problem extractions.
+    """
+    LOGGER.info("Loading logs from %s", logs_csv)
+    logs = _clean_logs(pd.read_csv(logs_csv))
+
+    LOGGER.info("Applying problem regex")
+    extracted = logs["problem"].str.extract(PROBLEM_PATTERN)
+    extracted["id"] = logs["ident"]
+    extracted["location"] = extracted[["loc1", "loc2", "loc3"]].apply(
+        _join_locations, axis=1
+    )
+    extracted["location"] = extracted["location"].apply(_clean_location)
+    extracted["cylinders"] = _split_cylinders(extracted["location"])
+    extracted["engine"] = (
+        extracted["location"]
+        .fillna("")
+        .str.replace(r"\d", "", regex=True)
+        .str.strip()
+        .replace("", pd.NA)
+    )
+
+    LOGGER.info("Filtering part names")
+    part_classes = pd.read_csv(part_classes_tsv, sep="\t")["Part"]
+    extracted["part"] = _filter_parts(
+        extracted["part"].str.upper(), part_classes, config.part_whitelist_tail
+    )
+
+    if not config.include_rest_column:
+        extracted["rest"] = ""
+
+    result = extracted[
+        ["id", "part", "problem", "rest", "cylinders", "engine"]
+    ].fillna("")
+
+    LOGGER.info("Writing problem extractions to %s", output_csv)
+    _write_csv(result, output_csv)
+    return result
+
+
+@rule(
+    name="action_extractions_regex",
+    base_iri="https://w3id.org/zorro#",
+    prov_dir="generated-provenance",
+)
+def extract_actions_regex(
+    logs_csv: InPath = InPath("Aircraft_Annotation_DataFile.csv"),
+    part_classes_tsv: InPath = InPath("prompt-extracted/part-classes.tsv"),
+    output_csv: OutPath = OutPath("log-extracted/action_extractions_regex.csv"),
+    *,
+    config: RegexExtractionConfig = RegexExtractionConfig(include_rest_column=False),
+) -> pd.DataFrame:
+    """Extract action mentions using regular expressions.
+
+    Args:
+        logs_csv: Path to the aircraft maintenance log CSV.
+        part_classes_tsv: TSV containing acceptable part head nouns.
+        output_csv: Destination path for regex-based action extractions.
+        config: Additional options controlling filtering behaviour.
+
+    Returns:
+        DataFrame containing regex-based action extractions.
+    """
+    LOGGER.info("Loading logs from %s", logs_csv)
+    logs = _clean_logs(pd.read_csv(logs_csv))
+
+    LOGGER.info("Applying action regex")
+    extracted = logs["action"].str.extract(ACTION_PATTERN)
+    extracted["id"] = logs["ident"]
+    extracted["location"] = extracted["location"].apply(_clean_location)
+    extracted["cylinders"] = _split_cylinders(extracted["location"])
+    extracted["engine"] = (
+        extracted["location"]
+        .fillna("")
+        .str.replace(r"\d", "", regex=True)
+        .str.strip()
+        .replace("", pd.NA)
+    )
+
+    LOGGER.info("Filtering part names")
+    part_classes = pd.read_csv(part_classes_tsv, sep="\t")["Part"]
+    extracted["part"] = _filter_parts(
+        extracted["part"].str.upper(), part_classes, config.part_whitelist_tail
+    )
+
+    result = extracted[["id", "action", "part", "cylinders", "engine"]].fillna("")
+
+    LOGGER.info("Writing action extractions to %s", output_csv)
+    _write_csv(result, output_csv)
+    return result
+
+
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
+    extract_problems_regex()
+    extract_actions_regex()

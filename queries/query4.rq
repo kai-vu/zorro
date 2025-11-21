@@ -1,0 +1,6 @@
+# What functions does the function X depends on ?
+
+select  ?function1 ?function2 where {
+    ?function1 rdfs:label "Housing combustion process";
+         :dependsOn ?function2 .}
+

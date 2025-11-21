@@ -1,0 +1,12 @@
+
+# What are the top 10 frequent problem descriptions and action descriptions with their 
+frequency? 
+SELECT ?problemDescription (COUNT(?problemDescription) AS ?Pfrequency)
+WHERE {
+    ?problem dc:description ?problemDescription;
+           rdf:type :Problem.
+}
+GROUP BY ?problemDescription
+ORDER BY DESC(?Pfrequency)
+LIMIT 10
+

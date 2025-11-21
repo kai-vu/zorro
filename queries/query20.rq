@@ -1,0 +1,11 @@
+# For a given system X, what are all dependent functions?
+
+SELECT DISTINCT ?dependentFunctions ?label
+WHERE {
+  ?system rdfs:label "Power Section";
+          rdfs:subClassOf :System;
+          :hasFunction ?function1.
+  ?function1 rdfs:label ?funclabel.
+  ?dependentFunctions   :dependsOn+ ?function1;
+                rdfs:label ?label .}
+

@@ -1,0 +1,8 @@
+# The given problem type X can happen with which parts?
+
+SELECT DISTINCT ?part 
+WHERE {
+    ?problem rdf:type :LEAKING ;
+            :involves ?part .
+}
+

@@ -1,0 +1,8 @@
+# In which system is the given assembly X located?
+
+SELECT ?system
+WHERE {
+    ?a :inSystem ?system;
+               rdfs:label "Carburetor Assembly";
+               rdfs:subClassOf :Assembly .}
+

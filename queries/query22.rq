@@ -1,0 +1,8 @@
+# All the actions taken to solve the given problem X at Location Y? 
+
+SELECT ?action ?description
+WHERE {
+    ?problem rdf:type :LEAKING;
+             :atLocation "#4".
+    ?action :dealsWith ?problem;
+             dc:description ?description.}

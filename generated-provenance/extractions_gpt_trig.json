@@ -1,0 +1,83 @@
+{
+  "provenance": [
+    {
+      "id": "https://w3id.org/zorro#run/extractions_gpt_trig/20251118T083034",
+      "type": "prov:Activity",
+      "startedAtTime": "2025-11-18T08:30:34.127694+00:00",
+      "endedAtTime": "2025-11-18T08:30:39.383258+00:00",
+      "wasAssociatedWith": "https://w3id.org/zorro#agent/<stdin>",
+      "used": [
+        {
+          "id": "https://w3id.org/zorro#src/log-extracted/problem_extractions_chatgpt_4o.csv",
+          "type": "prov:Entity",
+          "format": "text/csv",
+          "extent": 231942,
+          "modified": "2024-09-11T11:29:18.264158+00:00",
+          "identifier": "sha256:4cfceda818c356b0aa0b3776667869bfcd9de57c4ebae3fbb3ea3beba069d3e8"
+        },
+        {
+          "id": "https://w3id.org/zorro#src/log-extracted/action_extractions_chatgpt_4o.csv",
+          "type": "prov:Entity",
+          "format": "text/csv",
+          "extent": 232876,
+          "modified": "2024-08-30T09:03:52.843292+00:00",
+          "identifier": "sha256:0400fa4907ba483087da8d8d9fdb2d7a012a8d002a4587b64b9fc78d002c8430"
+        },
+        {
+          "id": "https://w3id.org/zorro#src/Aircraft_Annotation_DataFile.csv",
+          "type": "prov:Entity",
+          "format": "text/csv",
+          "extent": 504992,
+          "modified": "2024-08-21T08:04:21.013661+00:00",
+          "identifier": "sha256:a70daa27ba9c44a68617d69be1352be7fde003145ca142cbe0b7b51e197c6c3a"
+        },
+        "https://w3id.org/zorro#env/20251118T083034"
+      ]
+    },
+    {
+      "id": "https://w3id.org/zorro#agent/<stdin>",
+      "type": [
+        "prov:Agent",
+        "prov:SoftwareAgent"
+      ],
+      "label": "<stdin>",
+      "hasVersion": "7017703ffca7229a0f0af9129fb259f2f09cfe3e",
+      "source": "https://github.com/kai-vu/zorro-wp2-aircraft-poc.git"
+    },
+    {
+      "id": "https://w3id.org/zorro#out/generated-rdf/extractions_chatgpt_4o.trig",
+      "type": "prov:Entity",
+      "format": "application/trig",
+      "extent": 2904808,
+      "modified": "2025-11-18T08:30:39.379968+00:00",
+      "wasGeneratedBy": "https://w3id.org/zorro#run/extractions_gpt_trig/20251118T083034"
+    },
+    {
+      "id": "https://w3id.org/zorro#env/20251118T083034",
+      "type": [
+        "prov:Entity",
+        "prov:Collection"
+      ],
+      "label": "Python environment",
+      "title": "makeprov",
+      "hasVersion": "0.2.0",
+      "requires": [
+        {
+          "id": "https://pypi.org/project/pytest/",
+          "type": "rdfs:Resource",
+          "label": "pytest"
+        },
+        {
+          "id": "https://pypi.org/project/rdflib/",
+          "type": "rdfs:Resource",
+          "label": "rdflib>=6.0"
+        },
+        {
+          "id": "https://pypi.org/project/pyshacl/",
+          "type": "rdfs:Resource",
+          "label": "pyshacl>=0.20"
+        }
+      ]
+    }
+  ]
+}

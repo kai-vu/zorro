@@ -1,0 +1,83 @@
+{
+  "provenance": [
+    {
+      "id": "https://w3id.org/zorro#run/ner_train_model/20251118T091750",
+      "type": "prov:Activity",
+      "startedAtTime": "2025-11-18T09:17:50.182185+00:00",
+      "endedAtTime": "2025-11-18T09:17:52.998682+00:00",
+      "wasAssociatedWith": "https://w3id.org/zorro#agent/__main__.py",
+      "used": [
+        {
+          "id": "https://w3id.org/zorro#src/Annotated problems Aircraft Data.csv",
+          "type": "prov:Entity",
+          "format": "text/csv",
+          "extent": 534658,
+          "modified": "2024-08-21T11:58:15.098447+00:00",
+          "identifier": "sha256:f8f83a5362a2172c2f5555c866172899f3250808cdbc7ce4118eafdcba1ada09"
+        },
+        "https://w3id.org/zorro#env/20251118T091750"
+      ]
+    },
+    {
+      "id": "https://w3id.org/zorro#agent/__main__.py",
+      "type": [
+        "prov:Agent",
+        "prov:SoftwareAgent"
+      ],
+      "label": "__main__.py",
+      "hasVersion": "7017703ffca7229a0f0af9129fb259f2f09cfe3e",
+      "source": "https://github.com/kai-vu/zorro-wp2-aircraft-poc.git"
+    },
+    {
+      "id": "https://w3id.org/zorro#out//private/var/folders/wt/_t6jgd1d72l3qpg6nfbg6f8h0000gn/T/pytest-of-benno/pytest-18/test_train_and_predict_ner0/ner_model",
+      "type": "prov:Entity",
+      "format": "application/octet-stream",
+      "extent": 224,
+      "modified": "2025-11-18T09:17:52.988114+00:00",
+      "wasGeneratedBy": "https://w3id.org/zorro#run/ner_train_model/20251118T091750"
+    },
+    {
+      "id": "https://w3id.org/zorro#out//private/var/folders/wt/_t6jgd1d72l3qpg6nfbg6f8h0000gn/T/pytest-of-benno/pytest-18/test_train_and_predict_ner0/train.csv",
+      "type": "prov:Entity",
+      "format": "text/csv",
+      "extent": 422330,
+      "modified": "2025-11-18T09:17:50.860425+00:00",
+      "wasGeneratedBy": "https://w3id.org/zorro#run/ner_train_model/20251118T091750"
+    },
+    {
+      "id": "https://w3id.org/zorro#out//private/var/folders/wt/_t6jgd1d72l3qpg6nfbg6f8h0000gn/T/pytest-of-benno/pytest-18/test_train_and_predict_ner0/test.csv",
+      "type": "prov:Entity",
+      "format": "text/csv",
+      "extent": 105452,
+      "modified": "2025-11-18T09:17:50.867832+00:00",
+      "wasGeneratedBy": "https://w3id.org/zorro#run/ner_train_model/20251118T091750"
+    },
+    {
+      "id": "https://w3id.org/zorro#env/20251118T091750",
+      "type": [
+        "prov:Entity",
+        "prov:Collection"
+      ],
+      "label": "Python environment",
+      "title": "makeprov",
+      "hasVersion": "0.2.0",
+      "requires": [
+        {
+          "id": "https://pypi.org/project/pytest/",
+          "type": "rdfs:Resource",
+          "label": "pytest"
+        },
+        {
+          "id": "https://pypi.org/project/rdflib/",
+          "type": "rdfs:Resource",
+          "label": "rdflib>=6.0"
+        },
+        {
+          "id": "https://pypi.org/project/pyshacl/",
+          "type": "rdfs:Resource",
+          "label": "pyshacl>=0.20"
+        }
+      ]
+    }
+  ]
+}

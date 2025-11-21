@@ -1,0 +1,6 @@
+# What is the frequency of the given problem type X?
+
+SELECT  (COUNT(?problem) AS ?CRACKEDCount)
+WHERE {
+  ?problem rdf:type :CRACKED . }
+

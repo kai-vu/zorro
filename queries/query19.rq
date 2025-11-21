@@ -1,0 +1,18 @@
+# Which functions depend directly or indirectly on function X? 
+
+And  Which functions does function X depend on, directly or indirectly?
+SELECT DISTINCT ?dependency ?label
+WHERE {
+  ?function rdfs:label "Generating engine power" .
+  ?dependency :dependsOn+ ?function;
+              rdfs:label ?label ;
+              rdfs:subClassOf :Function .}
+
+SELECT DISTINCT ?dependency ?label
+WHERE {
+  ?function rdfs:label "Generating engine power" ;
+            :dependsOn+ ?dependency;
+            rdfs:subClassOf :Function .
+  ?dependency rdfs:label ?label .
+   }
+

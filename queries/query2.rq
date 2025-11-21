@@ -1,0 +1,6 @@
+# What is the solution for the given problem X?
+
+select ?problem ?solution where {
+    ?problem rdfs:label "Low Oil Pressure";
+         :hasCause ?solution .}
+

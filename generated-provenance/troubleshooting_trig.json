@@ -1,0 +1,67 @@
+{
+  "provenance": [
+    {
+      "id": "https://w3id.org/zorro#run/troubleshooting_trig/20251118T091815",
+      "type": "prov:Activity",
+      "startedAtTime": "2025-11-18T09:18:15.276746+00:00",
+      "endedAtTime": "2025-11-18T09:18:15.308978+00:00",
+      "wasAssociatedWith": "https://w3id.org/zorro#agent/__main__.py",
+      "used": [
+        {
+          "id": "https://w3id.org/zorro#src/pdf-extracted/troubleshooting.csv",
+          "type": "prov:Entity",
+          "format": "text/csv",
+          "extent": 5330,
+          "modified": "2024-08-23T13:25:34.268438+00:00",
+          "identifier": "sha256:be7cbb8ab6452eebd4c338565d5fcd39efc56fa9e3338a7a8b4f600c2ff34a19"
+        },
+        "https://w3id.org/zorro#env/20251118T091815"
+      ]
+    },
+    {
+      "id": "https://w3id.org/zorro#agent/__main__.py",
+      "type": [
+        "prov:Agent",
+        "prov:SoftwareAgent"
+      ],
+      "label": "__main__.py",
+      "hasVersion": "7017703ffca7229a0f0af9129fb259f2f09cfe3e",
+      "source": "https://github.com/kai-vu/zorro-wp2-aircraft-poc.git"
+    },
+    {
+      "id": "https://w3id.org/zorro#out//private/var/folders/wt/_t6jgd1d72l3qpg6nfbg6f8h0000gn/T/pytest-of-benno/pytest-18/test_troubleshooting_trig0/troubleshooting.trig",
+      "type": "prov:Entity",
+      "format": "application/trig",
+      "extent": 15699,
+      "modified": "2025-11-18T09:18:15.308770+00:00",
+      "wasGeneratedBy": "https://w3id.org/zorro#run/troubleshooting_trig/20251118T091815"
+    },
+    {
+      "id": "https://w3id.org/zorro#env/20251118T091815",
+      "type": [
+        "prov:Entity",
+        "prov:Collection"
+      ],
+      "label": "Python environment",
+      "title": "makeprov",
+      "hasVersion": "0.2.0",
+      "requires": [
+        {
+          "id": "https://pypi.org/project/pytest/",
+          "type": "rdfs:Resource",
+          "label": "pytest"
+        },
+        {
+          "id": "https://pypi.org/project/rdflib/",
+          "type": "rdfs:Resource",
+          "label": "rdflib>=6.0"
+        },
+        {
+          "id": "https://pypi.org/project/pyshacl/",
+          "type": "rdfs:Resource",
+          "label": "pyshacl>=0.20"
+        }
+      ]
+    }
+  ]
+}

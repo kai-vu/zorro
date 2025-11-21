@@ -1,0 +1,6 @@
+# Which parts are contained in the given assembly X?
+
+SELECT ?parts
+WHERE {
+    ?parts :partOf :AccessoryHousingAssembly. }
+

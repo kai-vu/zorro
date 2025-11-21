@@ -1,0 +1,11 @@
+# What are the top 10 frequent problem types?
+
+SELECT ?problemType (COUNT(?problemType) AS ?Pfrequency)
+WHERE {
+    ?p rdf:type ?problemType.
+    ?problemType rdfs:subClassOf :Problem.
+}
+GROUP BY ?problemType
+ORDER BY DESC(?Pfrequency)
+LIMIT 10
+

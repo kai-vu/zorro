@@ -1,0 +1,11 @@
+# Which problems share the same cause?
+
+SELECT ?cause (GROUP_CONCAT(DISTINCT ?problem; separator=", ") AS ?problems)
+       (COUNT(DISTINCT ?problem) AS ?problemCount)
+WHERE {
+    ?problem :hasCause ?cause .
+}
+GROUP BY ?cause
+HAVING (COUNT(DISTINCT ?problem) > 1)
+ORDER BY DESC(?problemCount)
+

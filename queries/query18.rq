@@ -1,0 +1,8 @@
+#   Which problems are associated with the given location X?
+
+SELECT ?problem
+WHERE {
+    ?problem rdf:type :Problem;
+             :atLocation "#2 & 4 CYL".
+}
+

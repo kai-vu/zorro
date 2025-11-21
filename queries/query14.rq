@@ -1,0 +1,8 @@
+# Which components implement the given function X?
+
+
+SELECT ?component
+WHERE {
+    ?component :hasFunction :TransferringPowerWithinEngine. 
+}
+
