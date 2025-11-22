@@ -1,0 +1,21 @@
+# What part types are involved in problems most frequently?
+
+PREFIX : <https://w3id.org/zorro#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?partTypeLabel (COUNT(?problem) AS ?ProblemCount)
+WHERE {
+    ?problem :involves ?part .
+    ?part rdf:type ?partType .
+    OPTIONAL { ?partType rdfs:label ?label . }
+    BIND(
+        COALESCE(
+            ?label,
+            REPLACE(STR(?partType), ".+#", "")
+        ) AS ?partTypeLabel
+    )
+}
+GROUP BY ?partTypeLabel
+ORDER BY DESC(?ProblemCount)
+LIMIT 10

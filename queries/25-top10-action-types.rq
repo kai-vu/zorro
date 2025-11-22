@@ -1,0 +1,21 @@
+# Which maintenance action types are most frequently recorded?
+
+PREFIX : <https://w3id.org/zorro#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?actionTypeLabel (COUNT(?action) AS ?ActionCount)
+WHERE {
+    ?action :dealsWith ?problem ;
+            rdf:type ?actionType .
+    OPTIONAL { ?actionType rdfs:label ?label . }
+    BIND(
+        COALESCE(
+            ?label,
+            REPLACE(STR(?actionType), ".+#", "")
+        ) AS ?actionTypeLabel
+    )
+}
+GROUP BY ?actionTypeLabel
+ORDER BY DESC(?ActionCount)
+LIMIT 10

@@ -10,6 +10,13 @@ requires-python = ">=3.10"
 dependencies = [
     "defopt>=6.5",
     "rdflib>=7.0",
+    "pandas>=2.3",
+    "numpy>=2.3",
+    "scikit-learn>=1.7",
+    "sssom>=0.4.17",
+    "makeprov>=0.1",
+    "spacy>=3.7",
+    "matplotlib>=3.9",
 ]
 readme = "README.md"
 
@@ -18,4 +25,3 @@ dev = [
     "pytest>=7.4",
     "ruff>=0.6",
 ]
-

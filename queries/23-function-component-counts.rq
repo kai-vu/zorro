@@ -1,0 +1,20 @@
+# How many components implement each function?
+
+PREFIX : <https://w3id.org/zorro#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?functionName (COUNT(?component) AS ?ComponentCount)
+WHERE {
+    ?component rdfs:subClassOf :Component ;
+               :hasFunction ?function .
+    OPTIONAL { ?function rdfs:label ?functionLabel . }
+    BIND(
+        COALESCE(
+            ?functionLabel,
+            REPLACE(STR(?function), ".+#", "")
+        ) AS ?functionName
+    )
+}
+GROUP BY ?functionName
+ORDER BY DESC(?ComponentCount)

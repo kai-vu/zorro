@@ -267,6 +267,27 @@
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
       "contentUrl": "https://w3id.org/zorro/aircraft#/queries/22-actions-for-leaking-at-4.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "23-function-component-counts",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/23-function-component-counts.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "24-top10-problematic-part-types",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/24-top10-problematic-part-types.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "25-top10-action-types",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/25-top10-action-types.rq"
     }
   ]
 }

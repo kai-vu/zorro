@@ -1,6 +1,6 @@
 
 # What is the frequency of all the problem type at each location (which Cylinder or 
-Engine)?
+# Engine)?
 SELECT ?problemType ?location (COUNT(?p) AS ?Frequency)
 WHERE {
     ?p rdf:type ?problemType ;
@@ -8,4 +8,3 @@ WHERE {
 }
 GROUP BY ?problemType ?location
 ORDER BY DESC(?Frequency)
-
