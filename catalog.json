@@ -1,0 +1,272 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DataCatalog",
+  "name": "AKGAM",
+  "url": "https://w3id.org/zorro/aircraft#",
+  "dataset": [
+    {
+      "@type": "Dataset",
+      "name": "FinalAircraftOntology",
+      "identifier": "FinalAircraftOntology",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/turtle",
+          "contentUrl": "https://w3id.org/zorro/aircraft#/generated-rdf/FinalAircraftOntology.ttl"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "extractions_NER",
+      "identifier": "extractions_NER",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/turtle",
+          "contentUrl": "https://w3id.org/zorro/aircraft#/generated-rdf/extractions_NER.ttl"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "extractions_chatgpt_4o",
+      "identifier": "extractions_chatgpt_4o",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/turtle",
+          "contentUrl": "https://w3id.org/zorro/aircraft#/generated-rdf/extractions_chatgpt_4o.ttl"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "extractions_regex",
+      "identifier": "extractions_regex",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/turtle",
+          "contentUrl": "https://w3id.org/zorro/aircraft#/generated-rdf/extractions_regex.ttl"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "functions",
+      "identifier": "functions",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/turtle",
+          "contentUrl": "https://w3id.org/zorro/aircraft#/generated-rdf/functions.ttl"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "part-links-regex-simplified",
+      "identifier": "part-links-regex-simplified",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/turtle",
+          "contentUrl": "https://w3id.org/zorro/aircraft#/generated-rdf/part-links-regex-simplified.ttl"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "part-links-regex",
+      "identifier": "part-links-regex",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/turtle",
+          "contentUrl": "https://w3id.org/zorro/aircraft#/generated-rdf/part-links-regex.ttl"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "parts-catalog",
+      "identifier": "parts-catalog",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/turtle",
+          "contentUrl": "https://w3id.org/zorro/aircraft#/generated-rdf/parts-catalog.ttl"
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "troubleshooting",
+      "identifier": "troubleshooting",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/turtle",
+          "contentUrl": "https://w3id.org/zorro/aircraft#/generated-rdf/troubleshooting.ttl"
+        }
+      ]
+    }
+  ],
+  "hasPart": [
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "01-cause-low-oil-pressure",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/01-cause-low-oil-pressure.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "02-solution-low-oil-pressure",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/02-solution-low-oil-pressure.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "03-component-functions",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/03-component-functions.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "04-function-depends-on-housing-combustion",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/04-function-depends-on-housing-combustion.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "05-top10-problem-types",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/05-top10-problem-types.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "06-frequency-cracked",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/06-frequency-cracked.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "07-top10-problematic-parts",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/07-top10-problematic-parts.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "08-parts-for-leaking",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/08-parts-for-leaking.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "09-action-types-cracked-baffle",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/09-action-types-cracked-baffle.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "10-problem-types-for-baffle",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/10-problem-types-for-baffle.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "11-problemtype-frequency-by-location",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/11-problemtype-frequency-by-location.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "12-part-assemblies-STD-475",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/12-part-assemblies-STD-475.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "13-top10-problem-descriptions",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/13-top10-problem-descriptions.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "14-components-transferring-power",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/14-components-transferring-power.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "15-parts-in-accessory-housing",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/15-parts-in-accessory-housing.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "16-system-for-carburetor-assembly",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/16-system-for-carburetor-assembly.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "17-problems-shared-causes",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/17-problems-shared-causes.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "18-problems-at-2-and-4-cyl",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/18-problems-at-2-and-4-cyl.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "19-function-dependencies-generating-engine-power",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/19-function-dependencies-generating-engine-power.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "20-dependent-functions-power-section",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/20-dependent-functions-power-section.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "21-most-critical-systems",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/21-most-critical-systems.rq"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "22-actions-for-leaking-at-4",
+      "programmingLanguage": "SPARQL",
+      "encodingFormat": "application/sparql-query",
+      "contentUrl": "https://w3id.org/zorro/aircraft#/queries/22-actions-for-leaking-at-4.rq"
+    }
+  ]
+}
