@@ -51,7 +51,7 @@ The text similarity function we use is the cosine similarity of TFIDF bag-of-wor
 If you use the resources presented in this repository, please cite:
 
 ```bibtex
-
+```
 ### Contact
 Should you have any questions, please contact Ameneh Naghdipour at a.naghdipour@vu.nl
 
