@@ -47,6 +47,27 @@ We then calculate the similarities of the extracted part name with the candidate
 
 The text similarity function we use is the cosine similarity of TFIDF bag-of-words vectors.
 
+### Citation
+If you use the resources presented in this repository, please cite:
+
+```bibtex
+@inproceedings{Naghdipour:2026,
+ author =    {Ameneh Naghdipour, Benno Kruit, Jieying Chen, and Stefan Schlobach},
+ title =     {AKGAM: A Public Dataset of Annotations
+and Knowledge Graph for Aircraft Maintenance},
+ 
+ year =      {2026},
+ pages =     {},
+ doi =       {},
+ publisher = {}
+}
+```
+### Contact
+Should you have any questions, please contact Ameneh Naghdipour at a.naghdipour@vu.nl
+
+
+
+
 ## References
 ### MaintNet
 Akhbardeh, F., Desell, T., & Zampieri, M. (2020, December). MaintNet: A Collaborative Open-Source Library for Predictive Maintenance Language Resources. In Proceedings of the 28th International Conference on Computational Linguistics: System Demonstrations (pp. 7-11).
