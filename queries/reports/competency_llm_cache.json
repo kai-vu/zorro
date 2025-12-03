@@ -85,11 +85,208 @@
       ]
     ]
   },
+  "31e0959d6b0cba6d7bcdab4ed5e12ef8c5d139fa28518c7b10a061d7ce5c4e87": {
+    "columns": [
+      "problem",
+      "cause"
+    ],
+    "rows": [
+      [
+        "Low Oil Pressure",
+        "Air lock or dirt in relief valve"
+      ],
+      [
+        "Low Oil Pressure",
+        "Defective pressure gage"
+      ],
+      [
+        "Low Oil Pressure",
+        "High Oil Temperature"
+      ],
+      [
+        "Low Oil Pressure",
+        "Insufficient oil"
+      ],
+      [
+        "Low Oil Pressure",
+        "Leak in suction line or pressure line"
+      ],
+      [
+        "Low Oil Pressure",
+        "Stoppage in oil pump intake passage"
+      ]
+    ]
+  },
+  "339b6b542ab2d42535490f9d9546c354d510589c014136fc68406da46bf2d3dd": {
+    "columns": [
+      "relationship",
+      "dependency",
+      "dependencyLabel"
+    ],
+    "rows": [
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#GeneratingPower",
+        "Generating power"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#GeneratingPower",
+        "Generating power"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#GeneratingPower",
+        "Generating power"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#GeneratingPower",
+        "Generating power"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#GeneratingPower",
+        "Generating power"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#AccurateOilPressureReading",
+        "Accurate oil pressure reading"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#AccurateTemperatureReading",
+        "Accurate temperature reading"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#AdequateLubrication",
+        "Adequate lubrication"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#CoolingEngineWithAirflow",
+        "Cooling engine with airflow"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#LubricatingEngineComponents",
+        "Lubricating engine components"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#MaintainingOilPressure",
+        "Maintaining oil pressure"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#OilDistribution",
+        "Oil distribution"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#OilTemperatureRegulation",
+        "Oil temperature regulation"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#ProperCooling",
+        "Proper cooling"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#ProperEngineCooling",
+        "Proper engine cooling"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#ProperLubrication",
+        "Proper lubrication"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#ProperOilFlow",
+        "Proper oil flow"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#ProperOilPressureRegulation",
+        "Proper oil pressure regulation"
+      ]
+    ]
+  },
+  "36b97ed0ec266b7367d49406f064f4ec9427f952811634e29d39874c586f2611": {
+    "columns": [
+      "function",
+      "functionLabel",
+      "system",
+      "dependentFunctionCount"
+    ],
+    "rows": []
+  },
+  "40757f6d199b314a60f4183804e2d30648a76141bc4b3de076b77f4b9e9911b3": {
+    "columns": [
+      "component"
+    ],
+    "rows": []
+  },
   "407a5c88c699e79c5ea333c264c52000e5b4f0b4ad07f4a56a6a5acea1276693": {
     "columns": [
       "DependsOn"
     ],
     "rows": []
+  },
+  "40a242c861531614aafc473daa4204ad21796f63ea0a47bf5d7b177adcd2a18a": {
+    "columns": [
+      "cause",
+      "problemList",
+      "problemCount"
+    ],
+    "rows": [
+      [
+        "Defective ignition wire",
+        [
+          "Failure of Engine to Start",
+          "Low Power and Uneven Running"
+        ],
+        2
+      ],
+      [
+        "Defective spark plugs",
+        [
+          "Failure of Engine to Start",
+          "Low Power and Uneven Running"
+        ],
+        2
+      ],
+      [
+        "Improper fuel",
+        [
+          "Failure of Engine to Develop Full Power",
+          "Low Power and Uneven Running"
+        ],
+        2
+      ],
+      [
+        "Leak in induction system",
+        [
+          "Failure of Engine to Develop Full Power",
+          "Failure of Engine to Idle Properly"
+        ],
+        2
+      ]
+    ]
+  },
+  "42193dc9866f87a2c3a7c7830aeadfb78f8ccb225f68946b326a78d66af425c5": {
+    "columns": [
+      "system"
+    ],
+    "rows": [
+      [
+        "Fuel Distribution System"
+      ]
+    ]
   },
   "50abd984faad1d58bf945282e6f58015417a7f8117aa4a13787cd06281a41f1d": {
     "columns": [
@@ -175,6 +372,197 @@
       ]
     ]
   },
+  "8f0bec30267906a7e157582a14be3fe50b81c06ebe64f798d9b387514b0eec02": {
+    "columns": [
+      "problem",
+      "solution"
+    ],
+    "rows": [
+      [
+        "Low Oil Pressure",
+        "Check line for obstruction. Clean suction strainer."
+      ],
+      [
+        "Low Oil Pressure",
+        "Remove and clean oil pressure relief valve."
+      ],
+      [
+        "Low Oil Pressure",
+        "Replace."
+      ]
+    ]
+  },
+  "a321d369ecc797186b8725e890853293b97de2437c2a2b7d8a1666bda889ac58": {
+    "columns": [
+      "functionName",
+      "ComponentCount"
+    ],
+    "rows": [
+      [
+        "MixingAndRegulatingFuel-Air",
+        1
+      ],
+      [
+        "HousingAndSupportingCombustion",
+        1
+      ],
+      [
+        "HousingMainEngine",
+        1
+      ],
+      [
+        "CollectingAndScreeningOil",
+        1
+      ],
+      [
+        "FilteringOilAndControllingFlow",
+        1
+      ],
+      [
+        "SecuringCrankcaseComponents",
+        1
+      ],
+      [
+        "SecuringAndSupportingAlternator",
+        1
+      ],
+      [
+        "PumpingOilAndAttachingHousing",
+        1
+      ],
+      [
+        "PumpingFuelAndSecuringComponents",
+        1
+      ],
+      [
+        "DirectingAir-FuelMixture",
+        1
+      ],
+      [
+        "DistributingIgnitionAndSparks",
+        1
+      ],
+      [
+        "ConvertingLinearToRotationalMotion",
+        1
+      ],
+      [
+        "CoveringDrivesAndProvidingHousing",
+        1
+      ],
+      [
+        "DistributingIgnitionToCylinders",
+        1
+      ],
+      [
+        "IgnitionTiming",
+        1
+      ],
+      [
+        "IgnitionTimingAndDistribution",
+        1
+      ],
+      [
+        "IgnitionTransfer",
+        1
+      ],
+      [
+        "CorrectFuelType",
+        1
+      ],
+      [
+        "DistributingFuel-AirMixture",
+        1
+      ],
+      [
+        "FuelDelivery",
+        1
+      ],
+      [
+        "FuelDistribution",
+        1
+      ],
+      [
+        "FuelAirMixtureControl",
+        1
+      ],
+      [
+        "FuelAirMixtureDistribution",
+        1
+      ],
+      [
+        "ManagingAir-FuelMixtureIntake",
+        1
+      ],
+      [
+        "AssistingEngineStart",
+        1
+      ],
+      [
+        "Air-FuelIntake",
+        1
+      ],
+      [
+        "Air-FuelIntakeControl",
+        1
+      ],
+      [
+        "Air-FuelMixtureContamination",
+        1
+      ],
+      [
+        "AirIntakeRestriction",
+        1
+      ],
+      [
+        "ManagingAirFuelMixtureIntake",
+        1
+      ],
+      [
+        "ProperAir-FuelIntake",
+        1
+      ],
+      [
+        "BalancedCylinderCompression",
+        1
+      ],
+      [
+        "ContainingCylindersAndRelatedParts",
+        1
+      ],
+      [
+        "CylinderOperation",
+        1
+      ],
+      [
+        "ProperCylinderSealing",
+        1
+      ],
+      [
+        "CoreEngineFunctionality",
+        1
+      ],
+      [
+        "EngineStability",
+        1
+      ],
+      [
+        "PowerOutput",
+        1
+      ],
+      [
+        "SmoothEngineOperation",
+        1
+      ]
+    ]
+  },
+  "a33c5f050fbe6eeb4fcd4c731b9ea4748610864a616283508e09fa033fcb7d24": {
+    "columns": [
+      "dependentFunction",
+      "dependentFunctionLabel"
+    ],
+    "rows": []
+  },
   "a50e9ad1a14737189b84875200fe257fd3f1a79fc91d99bed2fb436f67181e0d": {
     "columns": [
       "Function"
@@ -242,6 +630,50 @@
       ]
     ]
   },
+  "d9bcf459ecc0568fd781fe675c9eb7f1ed65f48cf63757d291a23842446217f4": {
+    "columns": [
+      "assembly"
+    ],
+    "rows": [
+      [
+        "AccessoryDrives"
+      ],
+      [
+        "CarburetorAssembly"
+      ],
+      [
+        "CrankingSection"
+      ],
+      [
+        "CylinderAssembly"
+      ],
+      [
+        "CylinderSection"
+      ],
+      [
+        "FuelDistributionSystem"
+      ],
+      [
+        "IgnitionDistributionSystem"
+      ],
+      [
+        "MagnetosMagnetoDrivesHarnessesAndSparkPlugs"
+      ],
+      [
+        "PropellerGovernorDriveCoverVacuumPumpDriveAndCover"
+      ],
+      [
+        "StarterMotorAndAttachingParts"
+      ]
+    ]
+  },
+  "e2a260673ab5e23e7e0c5b9946809f39299d482f45d68f84bfe3be18b095c627": {
+    "columns": [
+      "function",
+      "dependency"
+    ],
+    "rows": []
+  },
   "f4c83d766cf559e903d9b674db594de2322ba26d82a58ea8d4d13455a6a682d8": {
     "columns": [
       "Cause",
@@ -251,6 +683,36 @@
       [
         "Leak in induction system",
         "Failure of Engine to Develop Full Power; Failure of Engine to Idle Properly"
+      ]
+    ]
+  },
+  "f8eb29fa6d75fe4ebedc23a3d2aef773df108734536e2d97a608e800a23bce45": {
+    "columns": [
+      "part"
+    ],
+    "rows": [
+      [
+        "partnr-21A21533-04"
+      ]
+    ]
+  },
+  "fd7f3dad68b33ca04f301ccce53a0227c7325e793242de73583e1bdbc83e6ff0": {
+    "columns": [
+      "component",
+      "function"
+    ],
+    "rows": [
+      [
+        "Cranking Section",
+        "Facilitating engine start"
+      ],
+      [
+        "Cranking Section",
+        "Initiating engine start"
+      ],
+      [
+        "Accessory Housing Assembly",
+        "Housing accessories and drives"
       ]
     ]
   },

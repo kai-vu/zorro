@@ -1,0 +1,1002 @@
+{
+  "context_hash": "c7efebcb7ae35fd9b2155221596ed6dd60694db105e8ffabce731fa6264879d4",
+  "generated": "2025-12-03 16:03:20 UTC",
+  "macro": {
+    "f1": 0.23076923076923078,
+    "precision": 0.23076923076923078,
+    "recall": 0.3076923076923077
+  },
+  "micro": {
+    "f1": NaN,
+    "precision": 0.0,
+    "recall": 0.0
+  },
+  "results": [
+    {
+      "columns": [
+        "problem",
+        "cause"
+      ],
+      "f1": 0.0,
+      "fn": 6,
+      "fp": 6,
+      "gold_rows": [
+        [
+          "https://w3id.org/zorro#LowOilPressure",
+          "https://w3id.org/zorro#AirLockOrDirtInReliefValve"
+        ],
+        [
+          "https://w3id.org/zorro#LowOilPressure",
+          "https://w3id.org/zorro#DefectivePressureGage"
+        ],
+        [
+          "https://w3id.org/zorro#LowOilPressure",
+          "https://w3id.org/zorro#HighOilTemperature"
+        ],
+        [
+          "https://w3id.org/zorro#LowOilPressure",
+          "https://w3id.org/zorro#InsufficientOil"
+        ],
+        [
+          "https://w3id.org/zorro#LowOilPressure",
+          "https://w3id.org/zorro#LeakInSuctionLineOrPressureLine"
+        ],
+        [
+          "https://w3id.org/zorro#LowOilPressure",
+          "https://w3id.org/zorro#StoppageInOilPumpIntakePassage"
+        ]
+      ],
+      "precision": 0.0,
+      "pred_rows": [
+        [
+          "Low Oil Pressure",
+          "Air lock or dirt in relief valve"
+        ],
+        [
+          "Low Oil Pressure",
+          "Defective pressure gage"
+        ],
+        [
+          "Low Oil Pressure",
+          "High Oil Temperature"
+        ],
+        [
+          "Low Oil Pressure",
+          "Insufficient oil"
+        ],
+        [
+          "Low Oil Pressure",
+          "Leak in suction line or pressure line"
+        ],
+        [
+          "Low Oil Pressure",
+          "Stoppage in oil pump intake passage"
+        ]
+      ],
+      "query_path": "queries/documentation/01-cause-low-oil-pressure.rq",
+      "question": "Which causes are documented for the problem \"Low Oil Pressure\"?",
+      "recall": 0.0,
+      "tp": 0
+    },
+    {
+      "columns": [
+        "problem",
+        "solution"
+      ],
+      "f1": 0.0,
+      "fn": 6,
+      "fp": 3,
+      "gold_rows": [
+        [
+          "https://w3id.org/zorro#LowOilPressure",
+          "https://w3id.org/zorro#CheckGasketBetweenAccessoryHousingAndCrankcase"
+        ],
+        [
+          "https://w3id.org/zorro#LowOilPressure",
+          "https://w3id.org/zorro#CheckLineForObstructionCleanSuctionStrainer"
+        ],
+        [
+          "https://w3id.org/zorro#LowOilPressure",
+          "https://w3id.org/zorro#FillToProperLevelWithRecomMendedOil"
+        ],
+        [
+          "https://w3id.org/zorro#LowOilPressure",
+          "https://w3id.org/zorro#RemoveAndCleanOilPressureReliefValve"
+        ],
+        [
+          "https://w3id.org/zorro#LowOilPressure",
+          "https://w3id.org/zorro#Replace"
+        ],
+        [
+          "https://w3id.org/zorro#LowOilPressure",
+          "https://w3id.org/zorro#SeeHighOilTemperatureInTroubleColumn"
+        ]
+      ],
+      "precision": 0.0,
+      "pred_rows": [
+        [
+          "Low Oil Pressure",
+          "Check line for obstruction. Clean suction strainer."
+        ],
+        [
+          "Low Oil Pressure",
+          "Remove and clean oil pressure relief valve."
+        ],
+        [
+          "Low Oil Pressure",
+          "Replace."
+        ]
+      ],
+      "query_path": "queries/documentation/02-solution-low-oil-pressure.rq",
+      "question": "Which solutions address the problem \"Low Oil Pressure\"?",
+      "recall": 0.0,
+      "tp": 0
+    },
+    {
+      "columns": [
+        "component",
+        "function"
+      ],
+      "f1": 0.0,
+      "fn": 3,
+      "fp": 3,
+      "gold_rows": [
+        [
+          "https://w3id.org/zorro#AccessoryHousingAssembly",
+          "https://w3id.org/zorro#HousingAccessoriesAndDrives"
+        ],
+        [
+          "https://w3id.org/zorro#CrankingSection",
+          "https://w3id.org/zorro#FacilitatingEngineStart"
+        ],
+        [
+          "https://w3id.org/zorro#CrankingSection",
+          "https://w3id.org/zorro#InitiatingEngineStart"
+        ]
+      ],
+      "precision": 0.0,
+      "pred_rows": [
+        [
+          "Accessory Housing Assembly",
+          "Housing accessories and drives"
+        ],
+        [
+          "Cranking Section",
+          "Facilitating engine start"
+        ],
+        [
+          "Cranking Section",
+          "Initiating engine start"
+        ]
+      ],
+      "query_path": "queries/documentation/03-component-functions.rq",
+      "question": "Which functions are assigned to the Cranking Section and the Accessory Housing Assembly?",
+      "recall": 0.0,
+      "tp": 0
+    },
+    {
+      "columns": [
+        "function",
+        "dependency"
+      ],
+      "f1": 1.0,
+      "fn": 0,
+      "fp": 0,
+      "gold_rows": [],
+      "precision": 1.0,
+      "pred_rows": [],
+      "query_path": "queries/documentation/04-function-depends-on-housing-combustion.rq",
+      "question": "Which functions does \"Housing and supporting combustion\" depend on?",
+      "recall": 1.0,
+      "tp": 0
+    },
+    {
+      "columns": [
+        "assembly"
+      ],
+      "f1": 0.0,
+      "fn": 10,
+      "fp": 10,
+      "gold_rows": [
+        [
+          "https://w3id.org/zorro#AccessoryDrives"
+        ],
+        [
+          "https://w3id.org/zorro#CarburetorAssembly"
+        ],
+        [
+          "https://w3id.org/zorro#CrankingSection"
+        ],
+        [
+          "https://w3id.org/zorro#CylinderAssembly"
+        ],
+        [
+          "https://w3id.org/zorro#CylinderSection"
+        ],
+        [
+          "https://w3id.org/zorro#FuelDistributionSystem"
+        ],
+        [
+          "https://w3id.org/zorro#IgnitionDistributionSystem"
+        ],
+        [
+          "https://w3id.org/zorro#MagnetosMagnetoDrivesHarnessesAndSparkPlugs"
+        ],
+        [
+          "https://w3id.org/zorro#PropellerGovernorDriveCoverVacuumPumpDriveAndCover"
+        ],
+        [
+          "https://w3id.org/zorro#StarterMotorAndAttachingParts"
+        ]
+      ],
+      "precision": 0.0,
+      "pred_rows": [
+        [
+          "AccessoryDrives"
+        ],
+        [
+          "CarburetorAssembly"
+        ],
+        [
+          "CrankingSection"
+        ],
+        [
+          "CylinderAssembly"
+        ],
+        [
+          "CylinderSection"
+        ],
+        [
+          "FuelDistributionSystem"
+        ],
+        [
+          "IgnitionDistributionSystem"
+        ],
+        [
+          "MagnetosMagnetoDrivesHarnessesAndSparkPlugs"
+        ],
+        [
+          "PropellerGovernorDriveCoverVacuumPumpDriveAndCover"
+        ],
+        [
+          "StarterMotorAndAttachingParts"
+        ]
+      ],
+      "query_path": "queries/documentation/05-part-assemblies-std-475.rq",
+      "question": "Which assemblies include part number \"STD-475\"?",
+      "recall": 0.0,
+      "tp": 0
+    },
+    {
+      "columns": [
+        "component"
+      ],
+      "f1": 0.0,
+      "fn": 1,
+      "fp": 0,
+      "gold_rows": [
+        [
+          "https://w3id.org/zorro#AccessoryDrives"
+        ]
+      ],
+      "precision": 0.0,
+      "pred_rows": [],
+      "query_path": "queries/documentation/06-components-transferring-power.rq",
+      "question": "Which components are responsible for driving power to accessories?",
+      "recall": 1.0,
+      "tp": 0
+    },
+    {
+      "columns": [
+        "part"
+      ],
+      "f1": 0.0,
+      "fn": 8,
+      "fp": 1,
+      "gold_rows": [
+        [
+          "https://w3id.org/zorro#partnr-1102"
+        ],
+        [
+          "https://w3id.org/zorro#partnr-21A21533-04"
+        ],
+        [
+          "https://w3id.org/zorro#partnr-25C-22"
+        ],
+        [
+          "https://w3id.org/zorro#partnr-31C-12"
+        ],
+        [
+          "https://w3id.org/zorro#partnr-31C-19"
+        ],
+        [
+          "https://w3id.org/zorro#partnr-31CD-17"
+        ],
+        [
+          "https://w3id.org/zorro#partnr-73818"
+        ],
+        [
+          "https://w3id.org/zorro#partnr-STD-784"
+        ]
+      ],
+      "precision": 0.0,
+      "pred_rows": [
+        [
+          "partnr-21A21533-04"
+        ]
+      ],
+      "query_path": "queries/documentation/07-parts-in-accessory-housing.rq",
+      "question": "Which parts belong to the Accessory Housing Assembly?",
+      "recall": 0.0,
+      "tp": 0
+    },
+    {
+      "columns": [
+        "system"
+      ],
+      "f1": 0.0,
+      "fn": 0,
+      "fp": 1,
+      "gold_rows": [],
+      "precision": 0.0,
+      "pred_rows": [
+        [
+          "Fuel Distribution System"
+        ]
+      ],
+      "query_path": "queries/documentation/08-system-for-carburetor-assembly.rq",
+      "question": "Which system contains the Carburetor Assembly?",
+      "recall": 0.0,
+      "tp": 0
+    },
+    {
+      "columns": [
+        "cause",
+        "problemList",
+        "problemCount"
+      ],
+      "f1": 0.0,
+      "fn": 6,
+      "fp": 4,
+      "gold_rows": [
+        [
+          "https://w3id.org/zorro#DefectiveIgnitionWire",
+          "https://w3id.org/zorro#LowPowerAndUnevenRunning, https://w3id.org/zorro#FailureOfEngineToStart",
+          "2"
+        ],
+        [
+          "https://w3id.org/zorro#DefectiveSparkPlugs",
+          "https://w3id.org/zorro#LowPowerAndUnevenRunning, https://w3id.org/zorro#FailureOfEngineToStart",
+          "2"
+        ],
+        [
+          "https://w3id.org/zorro#FailingOrFailedBearings",
+          "https://w3id.org/zorro#ExcessiveOilConsumption, https://w3id.org/zorro#HighOilTemperature",
+          "2"
+        ],
+        [
+          "https://w3id.org/zorro#ImproperFuel",
+          "https://w3id.org/zorro#FailureOfEngineToDevelopFullPower, https://w3id.org/zorro#LowPowerAndUnevenRunning",
+          "2"
+        ],
+        [
+          "https://w3id.org/zorro#LeakInInductionSystem",
+          "https://w3id.org/zorro#FailureOfEngineToDevelopFullPower, https://w3id.org/zorro#FailureOfEngineToIdleProperly",
+          "2"
+        ],
+        [
+          "https://w3id.org/zorro#LowGradeOfOil",
+          "https://w3id.org/zorro#ExcessiveOilConsumption, https://w3id.org/zorro#HighOilTemperature",
+          "2"
+        ]
+      ],
+      "precision": 0.0,
+      "pred_rows": [
+        [
+          "Defective ignition wire",
+          "['Failure of Engine to Start', 'Low Power and Uneven Running']",
+          "2"
+        ],
+        [
+          "Defective spark plugs",
+          "['Failure of Engine to Start', 'Low Power and Uneven Running']",
+          "2"
+        ],
+        [
+          "Improper fuel",
+          "['Failure of Engine to Develop Full Power', 'Low Power and Uneven Running']",
+          "2"
+        ],
+        [
+          "Leak in induction system",
+          "['Failure of Engine to Develop Full Power', 'Failure of Engine to Idle Properly']",
+          "2"
+        ]
+      ],
+      "query_path": "queries/documentation/09-problems-shared-causes.rq",
+      "question": "Which documented problems share the same cause?",
+      "recall": 0.0,
+      "tp": 0
+    },
+    {
+      "columns": [
+        "relationship",
+        "dependency",
+        "dependencyLabel"
+      ],
+      "f1": 0.0,
+      "fn": 0,
+      "fp": 14,
+      "gold_rows": [],
+      "precision": 0.0,
+      "pred_rows": [
+        [
+          "dependsOn",
+          "https://w3id.org/zorro#AccurateOilPressureReading",
+          "Accurate oil pressure reading"
+        ],
+        [
+          "dependsOn",
+          "https://w3id.org/zorro#AccurateTemperatureReading",
+          "Accurate temperature reading"
+        ],
+        [
+          "dependsOn",
+          "https://w3id.org/zorro#AdequateLubrication",
+          "Adequate lubrication"
+        ],
+        [
+          "dependsOn",
+          "https://w3id.org/zorro#CoolingEngineWithAirflow",
+          "Cooling engine with airflow"
+        ],
+        [
+          "dependsOn",
+          "https://w3id.org/zorro#GeneratingPower",
+          "Generating power"
+        ],
+        [
+          "dependsOn",
+          "https://w3id.org/zorro#LubricatingEngineComponents",
+          "Lubricating engine components"
+        ],
+        [
+          "dependsOn",
+          "https://w3id.org/zorro#MaintainingOilPressure",
+          "Maintaining oil pressure"
+        ],
+        [
+          "dependsOn",
+          "https://w3id.org/zorro#OilDistribution",
+          "Oil distribution"
+        ],
+        [
+          "dependsOn",
+          "https://w3id.org/zorro#OilTemperatureRegulation",
+          "Oil temperature regulation"
+        ],
+        [
+          "dependsOn",
+          "https://w3id.org/zorro#ProperCooling",
+          "Proper cooling"
+        ],
+        [
+          "dependsOn",
+          "https://w3id.org/zorro#ProperEngineCooling",
+          "Proper engine cooling"
+        ],
+        [
+          "dependsOn",
+          "https://w3id.org/zorro#ProperLubrication",
+          "Proper lubrication"
+        ],
+        [
+          "dependsOn",
+          "https://w3id.org/zorro#ProperOilFlow",
+          "Proper oil flow"
+        ],
+        [
+          "dependsOn",
+          "https://w3id.org/zorro#ProperOilPressureRegulation",
+          "Proper oil pressure regulation"
+        ]
+      ],
+      "query_path": "queries/documentation/10-function-dependencies-generating-engine-power.rq",
+      "question": "Which functions depend on \"Generating power\", and which functions does \"Generating power\" depend on?",
+      "recall": 0.0,
+      "tp": 0
+    },
+    {
+      "columns": [
+        "dependentFunction",
+        "dependentFunctionLabel"
+      ],
+      "f1": 1.0,
+      "fn": 0,
+      "fp": 0,
+      "gold_rows": [],
+      "precision": 1.0,
+      "pred_rows": [],
+      "query_path": "queries/documentation/11-dependent-functions-power-section.rq",
+      "question": "Which functions ultimately depend on the functions of the Power Section?",
+      "recall": 1.0,
+      "tp": 0
+    },
+    {
+      "columns": [
+        "function",
+        "functionLabel",
+        "system",
+        "dependentFunctionCount"
+      ],
+      "f1": 1.0,
+      "fn": 0,
+      "fp": 0,
+      "gold_rows": [],
+      "precision": 1.0,
+      "pred_rows": [],
+      "query_path": "queries/documentation/12-most-critical-systems.rq",
+      "question": "Which systems are most critical based on how many functions depend on them?",
+      "recall": 1.0,
+      "tp": 0
+    },
+    {
+      "columns": [
+        "functionName",
+        "ComponentCount"
+      ],
+      "f1": 0.0,
+      "fn": 71,
+      "fp": 39,
+      "gold_rows": [
+        [
+          "Accurate oil pressure reading",
+          "1"
+        ],
+        [
+          "Accurate temperature reading",
+          "1"
+        ],
+        [
+          "Adequate lubrication",
+          "1"
+        ],
+        [
+          "Air intake restriction",
+          "1"
+        ],
+        [
+          "Air-fuel intake",
+          "1"
+        ],
+        [
+          "Air-fuel intake control",
+          "1"
+        ],
+        [
+          "Air-fuel mixture contamination",
+          "1"
+        ],
+        [
+          "Assisting engine start",
+          "1"
+        ],
+        [
+          "Balanced cylinder compression",
+          "1"
+        ],
+        [
+          "Collecting and screening oil",
+          "1"
+        ],
+        [
+          "Containing cylinders and related parts",
+          "1"
+        ],
+        [
+          "Controlling intake and exhaust flow",
+          "1"
+        ],
+        [
+          "Converting linear to rotational motion",
+          "1"
+        ],
+        [
+          "Cooling engine with airflow",
+          "1"
+        ],
+        [
+          "Core engine functionality",
+          "1"
+        ],
+        [
+          "Correct fuel type",
+          "1"
+        ],
+        [
+          "Covering drives and providing housing",
+          "1"
+        ],
+        [
+          "Cylinder operation",
+          "1"
+        ],
+        [
+          "Directing air-fuel mixture",
+          "1"
+        ],
+        [
+          "Distributing fuel-air mixture",
+          "1"
+        ],
+        [
+          "Distributing ignition and sparks",
+          "1"
+        ],
+        [
+          "Distributing ignition to cylinders",
+          "1"
+        ],
+        [
+          "Draining and cooling cylinders",
+          "1"
+        ],
+        [
+          "Driving and timing components",
+          "1"
+        ],
+        [
+          "Driving power to accessories",
+          "1"
+        ],
+        [
+          "Engine stability",
+          "1"
+        ],
+        [
+          "Excessive fuel during start",
+          "1"
+        ],
+        [
+          "Facilitating engine start",
+          "1"
+        ],
+        [
+          "Filtering oil and controlling flow",
+          "1"
+        ],
+        [
+          "Fuel delivery",
+          "1"
+        ],
+        [
+          "Fuel distribution",
+          "1"
+        ],
+        [
+          "Fuel-air mixture control",
+          "1"
+        ],
+        [
+          "Fuel-air mixture distribution",
+          "1"
+        ],
+        [
+          "Housing accessories and drives",
+          "1"
+        ],
+        [
+          "Housing and supporting combustion",
+          "1"
+        ],
+        [
+          "Housing main engine",
+          "1"
+        ],
+        [
+          "Housing main power components",
+          "1"
+        ],
+        [
+          "Ignition timing",
+          "1"
+        ],
+        [
+          "Ignition timing and distribution",
+          "1"
+        ],
+        [
+          "Ignition transfer",
+          "1"
+        ],
+        [
+          "Initiating engine start",
+          "2"
+        ],
+        [
+          "Lubricating engine components",
+          "1"
+        ],
+        [
+          "Maintaining oil pressure",
+          "1"
+        ],
+        [
+          "Managing air-fuel mixture intake",
+          "1"
+        ],
+        [
+          "Measuring oil quantity",
+          "1"
+        ],
+        [
+          "Mixing and regulating fuel-air",
+          "1"
+        ],
+        [
+          "Oil distribution",
+          "1"
+        ],
+        [
+          "Oil temperature regulation",
+          "1"
+        ],
+        [
+          "Power output",
+          "1"
+        ],
+        [
+          "Power supply for starting",
+          "1"
+        ],
+        [
+          "Proper air-fuel intake",
+          "1"
+        ],
+        [
+          "Proper air-fuel mixture",
+          "1"
+        ],
+        [
+          "Proper cooling",
+          "1"
+        ],
+        [
+          "Proper cylinder sealing",
+          "1"
+        ],
+        [
+          "Proper engine cooling",
+          "1"
+        ],
+        [
+          "Proper ignition",
+          "1"
+        ],
+        [
+          "Proper ignition timing",
+          "1"
+        ],
+        [
+          "Proper ignition timing and distribution",
+          "1"
+        ],
+        [
+          "Proper lubrication",
+          "1"
+        ],
+        [
+          "Proper oil flow",
+          "1"
+        ],
+        [
+          "Proper oil pressure regulation",
+          "1"
+        ],
+        [
+          "Providing electrical power",
+          "1"
+        ],
+        [
+          "Pumping fuel and securing components",
+          "1"
+        ],
+        [
+          "Pumping oil and attaching housing",
+          "1"
+        ],
+        [
+          "Regulating oil flow and pressure",
+          "1"
+        ],
+        [
+          "Securing and supporting alternator",
+          "1"
+        ],
+        [
+          "Securing crankcase components",
+          "1"
+        ],
+        [
+          "Smooth engine operation",
+          "1"
+        ],
+        [
+          "Supporting crankcase operation",
+          "1"
+        ],
+        [
+          "Supporting cylinder operation",
+          "1"
+        ],
+        [
+          "Transmitting motion and sealing chamber",
+          "1"
+        ]
+      ],
+      "precision": 0.0,
+      "pred_rows": [
+        [
+          "Air-FuelIntake",
+          "1"
+        ],
+        [
+          "Air-FuelIntakeControl",
+          "1"
+        ],
+        [
+          "Air-FuelMixtureContamination",
+          "1"
+        ],
+        [
+          "AirIntakeRestriction",
+          "1"
+        ],
+        [
+          "AssistingEngineStart",
+          "1"
+        ],
+        [
+          "BalancedCylinderCompression",
+          "1"
+        ],
+        [
+          "CollectingAndScreeningOil",
+          "1"
+        ],
+        [
+          "ContainingCylindersAndRelatedParts",
+          "1"
+        ],
+        [
+          "ConvertingLinearToRotationalMotion",
+          "1"
+        ],
+        [
+          "CoreEngineFunctionality",
+          "1"
+        ],
+        [
+          "CorrectFuelType",
+          "1"
+        ],
+        [
+          "CoveringDrivesAndProvidingHousing",
+          "1"
+        ],
+        [
+          "CylinderOperation",
+          "1"
+        ],
+        [
+          "DirectingAir-FuelMixture",
+          "1"
+        ],
+        [
+          "DistributingFuel-AirMixture",
+          "1"
+        ],
+        [
+          "DistributingIgnitionAndSparks",
+          "1"
+        ],
+        [
+          "DistributingIgnitionToCylinders",
+          "1"
+        ],
+        [
+          "EngineStability",
+          "1"
+        ],
+        [
+          "FilteringOilAndControllingFlow",
+          "1"
+        ],
+        [
+          "FuelAirMixtureControl",
+          "1"
+        ],
+        [
+          "FuelAirMixtureDistribution",
+          "1"
+        ],
+        [
+          "FuelDelivery",
+          "1"
+        ],
+        [
+          "FuelDistribution",
+          "1"
+        ],
+        [
+          "HousingAndSupportingCombustion",
+          "1"
+        ],
+        [
+          "HousingMainEngine",
+          "1"
+        ],
+        [
+          "IgnitionTiming",
+          "1"
+        ],
+        [
+          "IgnitionTimingAndDistribution",
+          "1"
+        ],
+        [
+          "IgnitionTransfer",
+          "1"
+        ],
+        [
+          "ManagingAir-FuelMixtureIntake",
+          "1"
+        ],
+        [
+          "ManagingAirFuelMixtureIntake",
+          "1"
+        ],
+        [
+          "MixingAndRegulatingFuel-Air",
+          "1"
+        ],
+        [
+          "PowerOutput",
+          "1"
+        ],
+        [
+          "ProperAir-FuelIntake",
+          "1"
+        ],
+        [
+          "ProperCylinderSealing",
+          "1"
+        ],
+        [
+          "PumpingFuelAndSecuringComponents",
+          "1"
+        ],
+        [
+          "PumpingOilAndAttachingHousing",
+          "1"
+        ],
+        [
+          "SecuringAndSupportingAlternator",
+          "1"
+        ],
+        [
+          "SecuringCrankcaseComponents",
+          "1"
+        ],
+        [
+          "SmoothEngineOperation",
+          "1"
+        ]
+      ],
+      "query_path": "queries/documentation/13-function-component-counts.rq",
+      "question": "How many components implement each function?",
+      "recall": 0.0,
+      "tp": 0
+    }
+  ]
+}
