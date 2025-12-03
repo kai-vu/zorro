@@ -8,6 +8,17 @@ This way, we can integrate extractions from the historical records with maintena
 
 The KG structure can be seen as 3 layers: the *schema*, *domain knowledge*, and *historical records*, which are described below.
 
+## Build & Validation
+
+- Run the end-to-end workflow with `python -m src.build_all`. The makeprov CLI orchestrates the prompt extractions, regex extractions, part linking (SSSOM TSV + TriG) and RDF graph synthesis, skipping steps that are already up to date.
+- Individual stages can be executed directly by calling the decorated rules, for example `python -m log_extract_regex`, `python -m log_extract_gpt` (uses cached OpenAI completions by default), `python -m log_extract_ner` (trains + runs spaCy), or `python -m make_rdf`.
+- Validate outputs with `python -m pytest`, which parses the generated TriG datasets and the SSSOM TSV to ensure schema compliance.
+
+## Query Exploration
+
+- Run `python -m src.sparql_bar_chart` to execute the default top-problem query (`queries/05-top10-problem-types.rq`) against the GPT extraction graph and render a horizontal bar chart (`query_bar_chart.png`).
+- Tweak the visualization with options such as `--top-n`, `--orientation`, `--wrap-width`, or `--style` (see `python -m src.sparql_bar_chart --help`).
+
 ## Schema
 (see paper)
 
