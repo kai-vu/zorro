@@ -1,11 +1,14 @@
 # For a given system X, what are all dependent functions?
 
-SELECT DISTINCT ?dependentFunctions ?label
-WHERE {
-  ?system rdfs:label "Power Section";
-          rdfs:subClassOf :System;
-          :hasFunction ?function1.
-  ?function1 rdfs:label ?funclabel.
-  ?dependentFunctions   :dependsOn+ ?function1;
-                rdfs:label ?label .}
+PREFIX : <https://w3id.org/zorro#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
+SELECT DISTINCT ?dependentFunction ?dependentFunctionLabel
+WHERE {
+    BIND(:PowerSection AS ?system)
+    ?system :hasFunction ?function .
+    ?dependentFunction :dependsOn+ ?function ;
+                       rdf:type :Function ;
+                       rdfs:label ?dependentFunctionLabel .
+}

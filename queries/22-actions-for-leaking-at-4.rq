@@ -1,8 +1,14 @@
-# All the actions taken to solve the given problem X at Location Y? 
+# All the actions taken to solve the given problem X at location Y?
+
+PREFIX : <https://w3id.org/zorro#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?action ?description
 WHERE {
-    ?problem rdf:type :LEAKING;
-             :atLocation "#4".
-    ?action :dealsWith ?problem;
-             dc:description ?description.}
+    ?problem rdf:type :LeakingProblem ;
+             :atLocation :Cylinder4 .
+    ?action :dealsWith ?problem ;
+            dc:description ?description .
+}

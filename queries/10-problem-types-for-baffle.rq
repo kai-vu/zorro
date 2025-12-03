@@ -1,8 +1,12 @@
 # What are all the problem types that can happen for the given part X?
 
+PREFIX : <https://w3id.org/zorro#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
 SELECT DISTINCT ?problemType
 WHERE {
-    ?p rdf:type ?problemType;
-        :involves :BAFFLE.
+    VALUES ?targetPart { :Baffle :EngineBaffle }
+    ?problem rdf:type ?problemType ;
+             :involves ?targetPart .
 }
-

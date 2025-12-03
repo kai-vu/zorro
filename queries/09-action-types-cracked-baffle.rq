@@ -1,10 +1,14 @@
 # What are all the action types taken for the given problem type X in the given part Y?
 
+PREFIX : <https://w3id.org/zorro#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
 SELECT DISTINCT ?actionType
 WHERE {
-    ?problem rdf:type :CRACKED ;
-             :involves :BAFFLE .
+    VALUES ?targetPart { :Baffle :EngineBaffle }
+    ?problem rdf:type :CrackedProblem ;
+             :involves ?targetPart .
     ?action rdf:type ?actionType ;
-                :dealsWith ?problem .
+            :dealsWith ?problem .
 }
-

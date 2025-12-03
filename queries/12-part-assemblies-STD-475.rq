@@ -1,8 +1,11 @@
 # The given part X can be found (part of) in which assemblies?
 
+PREFIX : <https://w3id.org/zorro#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
 SELECT DISTINCT ?assembly
 WHERE {
-  ?part :partNumber "STD-475" ;
-               :partOf ?assembly .  
+    ?part :partNumber "STD-475" ;
+          :partOf ?assembly .
 }
-

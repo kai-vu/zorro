@@ -16,57 +16,111 @@ default_range: string
 
 
 slots:
-  deals_with:
-    description: Action deals with a Problem.
-    domain: Action
-    range: Problem
-  address:
-    description: WorkAround addresses an Effect.
-    domain: WorkAround
-    range: Effect
-  consist_of:
-    description: Procedure consists of Step(s).
-    domain: Procedure
-    range: Step
-    multivalued: true
-  define:
-    description: Function defines (is used to define) a Problem.
-    domain: Function
-    range: Problem
-  depend_on:
-    description: Function depends on another Function.
-    domain: Function
-    range: Function
-    multivalued: true
-  fail_via:
-    description: Component fails via Problem.
-    domain: Component
-    range: Problem
-    multivalued: true
   has_cause:
-    description: Problem has cause Problem.
+    slot_uri: zorro:hasCause
+    description: Problem has associated cause.
     domain: Problem
+    range: Problem
+    multivalued: true
+  addresses:
+    slot_uri: zorro:addresses
+    description: Solution addresses a problem.
+    domain: Solution
+    range: Problem
+    multivalued: true
+  solves:
+    slot_uri: zorro:solves
+    description: Solution resolves a problem.
+    domain: Solution
     range: Problem
     multivalued: true
   has_function:
-    description: Component has required Function.
+    slot_uri: zorro:hasFunction
+    description: Component has required function.
     domain: Component
     range: Function
     multivalued: true
+  addresses_problem:
+    slot_uri: zorro:addressesProblem
+    description: Function mitigates a problem.
+    domain: Function
+    range: Problem
+    multivalued: true
+  depends_on:
+    slot_uri: zorro:dependsOn
+    description: Entity depends on another entity.
+    domain: Thing
+    range: Thing
+    multivalued: true
+  sub_function_of:
+    slot_uri: zorro:subFunctionOf
+    description: Function is a sub-function of another function.
+    domain: Function
+    range: Function
+    multivalued: true
+  deals_with:
+    slot_uri: zorro:dealsWith
+    description: Action deals with a problem.
+    domain: Action
+    range: Problem
+    multivalued: true
+  involves:
+    slot_uri: zorro:involves
+    description: Event involves a component or part.
+    domain: Thing
+    range: Thing
+    multivalued: true
+  at_location:
+    slot_uri: zorro:atLocation
+    description: Problem occurs at a specific location.
+    domain: Problem
+    range: Location
+    multivalued: true
+  location:
+    slot_uri: zorro:location
+    description: Literal representation of the reported location.
+    domain: Problem
+    range: string
+    multivalued: true
+  part_of:
+    slot_uri: zorro:partOf
+    description: Component is part of another component.
+    domain: Component
+    range: Component
+    multivalued: true
+  part_number:
+    slot_uri: zorro:partNumber
+    description: Manufacturer part number for a part instance.
+    domain: PartInstance
+    range: string
+  consist_of:
+    slot_uri: zorro:consistOf
+    description: Procedure consists of steps.
+    domain: Procedure
+    range: Step
+    multivalued: true
   involve:
-    description: Step involves Component(s).
+    slot_uri: zorro:involve
+    description: Step involves components.
     domain: Step
     range: Component
     multivalued: true
+  define:
+    slot_uri: zorro:define
+    description: Function defines a problem.
+    domain: Function
+    range: Problem
+  fail_via:
+    slot_uri: zorro:failVia
+    description: Component fails via problem.
+    domain: Component
+    range: Problem
+    multivalued: true
   result_in:
-    description: Problem results in Effect.
+    slot_uri: zorro:resultIn
+    description: Problem results in an effect.
     domain: Problem
     range: Effect
-    multivalued: true
-  solve:
-    description: Solution solves Problem.
-    domain: Solution
-    range: Problem
     multivalued: true
 
 classes:
@@ -81,6 +135,8 @@ classes:
       - romain:Component
     slots:
       - has_function
+      - depends_on
+      - part_of
       - fail_via
 
   System:
@@ -99,7 +155,9 @@ classes:
       - iof-maint:RequiredFunction
       - romain:Function
     slots:
-      - depend_on
+      - depends_on
+      - sub_function_of
+      - addresses_problem
       - define
 
   Problem:
@@ -112,6 +170,9 @@ classes:
     slots:
       - has_cause
       - result_in
+      - involves
+      - at_location
+      - location
 
   Effect:
     is_a: Thing
@@ -134,7 +195,8 @@ classes:
     related_mappings:
       - iof-maint:MaintenanceActivity
     slots:
-      - solve
+      - solves
+      - addresses
 
   WorkAround:
     is_a: Procedure
@@ -142,7 +204,7 @@ classes:
     related_mappings:
       - iof-maint:SupportingMaintenanceActivity
     slots:
-      - address
+      - addresses
 
   Step:
     is_a: Thing
@@ -157,6 +219,26 @@ classes:
     description: Generic action; added to preserve domain of deals_with.
     slots:
       - deals_with
+      - involves
+
+  PartInstance:
+    is_a: Part
+    description: Individual part catalog entry.
+    slots:
+      - part_number
+      - part_of
+
+  Cause:
+    is_a: Thing
+    description: Probable cause identified in troubleshooting data.
+
+  Remedy:
+    is_a: Solution
+    description: Remedy recommended for a problem.
+
+  Location:
+    is_a: Thing
+    description: Abstract location indicator (engine, cylinder, etc.).
 
   ProcedureBundle:
     is_a: Thing

@@ -2064,16 +2064,12 @@
         rdfs:subClassOf :Part .
 
     :CarburetorAssembly a :Assembly ;
-        rdfs:label "Carburetor Assembly" .
-
-    :CrankingSection a :System ;
-        rdfs:label "Cranking Section" .
-
-    :FuelDistributionSystem a :System ;
-        rdfs:label "Fuel Distribution System" .
+        rdfs:label "Carburetor Assembly" ;
+        :partOf :FuelDistributionSystem .
 
     :FuelPumpAssemblyAndAttachingParts a :Assembly ;
-        rdfs:label "Fuel Pump Assembly And Attaching Parts" .
+        rdfs:label "Fuel Pump Assembly And Attaching Parts" ;
+        :partOf :AccessoryDrives .
 
     :Ring a :Part ;
         rdfs:label "RING" ;
@@ -2082,26 +2078,37 @@
     :Seat rdfs:subClassOf :Part .
 
     :StarterMotorAndAttachingParts a :Assembly ;
-        rdfs:label "Starter Motor And Attaching Parts" .
+        rdfs:label "Starter Motor And Attaching Parts" ;
+        :partOf :CrankingSection .
+
+    :CrankingSection a :System ;
+        rdfs:label "Cranking Section" .
 
     :Fastener rdfs:label "Fastener" ;
         rdfs:subClassOf :Part .
 
+    :FuelDistributionSystem a :System ;
+        rdfs:label "Fuel Distribution System" .
+
     :IntakePipesAndAttachingParts a :Assembly ;
-        rdfs:label "Intake Pipes And Attaching Parts" .
+        rdfs:label "Intake Pipes And Attaching Parts" ;
+        :partOf :CylinderSection .
 
     :OilLevelGage a :Assembly ;
-        rdfs:label "Oil Level Gage" .
+        rdfs:label "Oil Level Gage" ;
+        :partOf :LubricationSystem .
 
     :AccessoryHousingAssembly a :Assembly ;
-        rdfs:label "Accessory Housing Assembly" .
+        rdfs:label "Accessory Housing Assembly" ;
+        :partOf :AccessoryDrives .
 
     :Bushing a :Part ;
         rdfs:label "BUSHING" ;
         rdfs:subClassOf :RotaryComponent .
 
     :CylinderHeadDrainTubesAndIntercylinderCoolingBaffles a :Assembly ;
-        rdfs:label "Cylinder Head Drain Tubes And Intercylinder Cooling Baffles" .
+        rdfs:label "Cylinder Head Drain Tubes And Intercylinder Cooling Baffles" ;
+        :partOf :CylinderSection .
 
     :RodAssembly rdfs:subClassOf :Part .
 
@@ -2113,14 +2120,16 @@
         rdfs:subClassOf :Separator .
 
     :ConnectingRodsPistonsAndRingAssemblies a :Assembly ;
-        rdfs:label "Connecting Rods, Pistons And Ring Assemblies" .
+        rdfs:label "Connecting Rods, Pistons And Ring Assemblies" ;
+        :partOf :CylinderSection .
 
     :Plug a :Part ;
         rdfs:label "PLUG" ;
         rdfs:subClassOf :Seal .
 
     :OilFilterAssemblyAndOilCoolerBypassValve a :Assembly ;
-        rdfs:label "Oil Filter Assembly And Oil Cooler Bypass Valve" .
+        rdfs:label "Oil Filter Assembly And Oil Cooler Bypass Valve" ;
+        :partOf :AccessoryDrives .
 
     :StructuralComponent rdfs:label "Structural Component" ;
         rdfs:subClassOf :Part .
@@ -2137,22 +2146,28 @@
         rdfs:subClassOf :Part .
 
     :CrankshaftIdlerGearsTachometerDriveAndCamshaft a :Assembly ;
-        rdfs:label "Crankshaft Idler Gears, Tachometer Drive And Camshaft" .
+        rdfs:label "Crankshaft Idler Gears, Tachometer Drive And Camshaft" ;
+        :partOf :PowerSection .
 
     :OilCoolerBypassValveOilPressureScreenAndBreatherFitting a :Assembly ;
-        rdfs:label "Oil Cooler Bypass Valve, Oil Pressure Screen And Breather Fitting" .
+        rdfs:label "Oil Cooler Bypass Valve, Oil Pressure Screen And Breather Fitting" ;
+        :partOf :AccessoryDrives .
 
     :OilPumpAssemblyAndAccessoryHousingAttachingParts a :Assembly ;
-        rdfs:label "Oil Pump Assembly And Accessory Housing Attaching Parts" .
+        rdfs:label "Oil Pump Assembly And Accessory Housing Attaching Parts" ;
+        :partOf :AccessoryDrives .
 
     :CrankcaseRelatedParts a :Assembly ;
-        rdfs:label "Crankcase Related Parts" .
+        rdfs:label "Crankcase Related Parts" ;
+        :partOf :PowerSection .
 
     :OilSumpAssemblyAndOilSuctionScreen a :Assembly ;
-        rdfs:label "Oil Sump Assembly And Oil Suction Screen" .
+        rdfs:label "Oil Sump Assembly And Oil Suction Screen" ;
+        :partOf :LubricationSystem .
 
     :CrankshaftAssemblyAndRelatedParts a :Assembly ;
-        rdfs:label "Crankshaft Assembly And Related Parts" .
+        rdfs:label "Crankshaft Assembly And Related Parts" ;
+        :partOf :PowerSection .
 
     :Stud a :Part ;
         rdfs:label "STUD" ;
@@ -2160,46 +2175,54 @@
 
     :CrankcaseAssembly a :Assembly ;
         rdfs:label "Crankcase Assembly" ;
-        rdfs:subClassOf :Part .
+        rdfs:subClassOf :Part ;
+        :partOf :PowerSection .
 
     :CrankcaseAttachingParts a :Assembly ;
-        rdfs:label "Crankcase Attaching Parts" .
+        rdfs:label "Crankcase Attaching Parts" ;
+        :partOf :PowerSection .
 
     :CylinderAssembly a :Assembly ;
         rdfs:label "Cylinder Assembly" ;
-        rdfs:subClassOf :Part .
+        rdfs:subClassOf :Part ;
+        :partOf :CylinderSection .
 
     :PropellerGovernorDriveCoverVacuumPumpDriveAndCover a :Assembly ;
-        rdfs:label "Propeller Governor Drive Cover, Vacuum Pump Drive And Cover" .
+        rdfs:label "Propeller Governor Drive Cover, Vacuum Pump Drive And Cover" ;
+        :partOf :AccessoryDrives .
 
     :AlternatorMountingAndAttachingParts a :Assembly ;
-        rdfs:label "Alternator Mounting And Attaching Parts" .
+        rdfs:label "Alternator Mounting And Attaching Parts" ;
+        :partOf :ElectricalPower .
 
     :Bolt a :Part ;
         rdfs:label "BOLT" ;
         rdfs:subClassOf :Fastener .
-
-    :ElectricalPower a :System ;
-        rdfs:label "Electrical Power" .
 
     :Gasket a :Part ;
         rdfs:label "GASKET" ;
         rdfs:subClassOf :Seal .
 
     :CylinderRelatedParts a :Assembly ;
-        rdfs:label "Cylinder Related Parts" .
+        rdfs:label "Cylinder Related Parts" ;
+        :partOf :CylinderSection .
+
+    :ElectricalPower a :System ;
+        rdfs:label "Electrical Power" .
+
+    :ValveAssemblyAndRelatedParts a :Assembly ;
+        rdfs:label "Valve Assembly And Related Parts" ;
+        :partOf :CylinderSection .
 
     :LubricationSystem a :System ;
         rdfs:label "Lubrication System" .
 
-    :ValveAssemblyAndRelatedParts a :Assembly ;
-        rdfs:label "Valve Assembly And Related Parts" .
+    :MagnetosMagnetoDrivesHarnessesAndSparkPlugs a :Assembly ;
+        rdfs:label "Magnetos, Magneto Drives, Harnesses And Spark Plugs" ;
+        :partOf :IgnitionDistributionSystem .
 
     :IgnitionDistributionSystem a :System ;
         rdfs:label "Ignition Distribution System" .
-
-    :MagnetosMagnetoDrivesHarnessesAndSparkPlugs a :Assembly ;
-        rdfs:label "Magnetos, Magneto Drives, Harnesses And Spark Plugs" .
 
     :AccessoryDrives a :System ;
         rdfs:label "Accessory Drives" .

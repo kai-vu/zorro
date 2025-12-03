@@ -1,18 +1,26 @@
-# Which functions depend directly or indirectly on function X? 
+# Which functions depend directly or indirectly on function X?
+# And which functions does function X depend on, directly or indirectly?
 
-And  Which functions does function X depend on, directly or indirectly?
-SELECT DISTINCT ?dependency ?label
+PREFIX : <https://w3id.org/zorro#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?relationship ?dependency ?dependencyLabel
 WHERE {
-  ?function rdfs:label "Generating engine power" .
-  ?dependency :dependsOn+ ?function;
-              rdfs:label ?label ;
-              rdfs:subClassOf :Function .}
-
-SELECT DISTINCT ?dependency ?label
-WHERE {
-  ?function rdfs:label "Generating engine power" ;
-            :dependsOn+ ?dependency;
-            rdfs:subClassOf :Function .
-  ?dependency rdfs:label ?label .
-   }
-
+    BIND(:GeneratingPower AS ?focusFunction)
+    ?focusFunction rdf:type :Function .
+    {
+        BIND("dependedOnBy" AS ?relationship)
+        ?dependency :dependsOn+ ?focusFunction ;
+                    rdf:type :Function ;
+                    rdfs:label ?dependencyLabel .
+    }
+    UNION
+    {
+        BIND("dependsOn" AS ?relationship)
+        ?focusFunction :dependsOn+ ?dependency .
+        ?dependency rdf:type :Function ;
+                    rdfs:label ?dependencyLabel .
+    }
+}
+ORDER BY ?relationship ?dependencyLabel

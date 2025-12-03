@@ -1,11 +1,14 @@
 # What are the top 10 frequent problem types?
 
-SELECT ?problemType (COUNT(?problemType) AS ?Pfrequency)
+PREFIX : <https://w3id.org/zorro#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?problemType (COUNT(?problemType) AS ?problemTypeFrequency)
 WHERE {
-    ?p rdf:type ?problemType.
-    ?problemType rdfs:subClassOf :Problem.
+    ?problem rdf:type ?problemType .
+    ?problemType rdfs:subClassOf :Problem .
 }
 GROUP BY ?problemType
-ORDER BY DESC(?Pfrequency)
+ORDER BY DESC(?problemTypeFrequency)
 LIMIT 10
-

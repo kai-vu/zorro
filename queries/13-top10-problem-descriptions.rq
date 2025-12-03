@@ -1,15 +1,14 @@
+# What are the top 10 frequent problem descriptions and action descriptions with their frequency?
 
-# What are the top 10 frequent problem descriptions and action descriptions with their 
-# frequency? 
-# PREFIX declarations ensure consistent namespace resolution.
+PREFIX : <https://w3id.org/zorro#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-SELECT ?problemDescription (COUNT(?problemDescription) AS ?Pfrequency)
+SELECT ?problemDescription (COUNT(?problemDescription) AS ?problemFrequency)
 WHERE {
-    ?problem dc:description ?problemDescription;
-           rdf:type :Problem.
+    ?problem dc:description ?problemDescription ;
+             rdf:type :Problem .
 }
 GROUP BY ?problemDescription
-ORDER BY DESC(?Pfrequency)
+ORDER BY DESC(?problemFrequency)
 LIMIT 10

@@ -1,6 +1,11 @@
-# What functions does the function X depends on ?
+# What functions does the function X depend on?
 
-select  ?function1 ?function2 where {
-    ?function1 rdfs:label "Housing combustion process";
-         :dependsOn ?function2 .}
+PREFIX : <https://w3id.org/zorro#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
+SELECT ?function ?dependency
+WHERE {
+    BIND(:HousingAndSupportingCombustion AS ?function)
+    ?function :dependsOn ?dependency .
+}

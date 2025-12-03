@@ -1,14 +1,14 @@
 {
   "provenance": [
     {
-      "id": "https://w3id.org/zorro#run/functions_trig/20251118T091815",
+      "id": "https://w3id.org/zorro#<stdin>#functions_trig-20251203T1401",
       "type": "prov:Activity",
-      "startedAtTime": "2025-11-18T09:18:15.877878+00:00",
-      "endedAtTime": "2025-11-18T09:18:15.975697+00:00",
-      "wasAssociatedWith": "https://w3id.org/zorro#agent/__main__.py",
+      "startedAtTime": "2025-12-03T14:01:43.357014+00:00",
+      "endedAtTime": "2025-12-03T14:01:43.476768+00:00",
+      "wasAssociatedWith": "https://w3id.org/zorro#<stdin>",
       "used": [
         {
-          "id": "https://w3id.org/zorro#src/prompt-extracted/problem-component-function.tsv",
+          "id": "https://w3id.org/zorro#prompt-extracted/problem-component-function.tsv",
           "type": "prov:Entity",
           "format": "text/tab-separated-values",
           "extent": 4050,
@@ -16,15 +16,15 @@
           "identifier": "sha256:040e3bd41e064ea333dc898e3378c3e535ec7f03c2833fd4464a5cf6beb68496"
         },
         {
-          "id": "https://w3id.org/zorro#src/prompt-extracted/functions.tsv",
+          "id": "https://w3id.org/zorro#prompt-extracted/functions.tsv",
           "type": "prov:Entity",
           "format": "text/tab-separated-values",
-          "extent": 2119,
-          "modified": "2024-08-23T13:46:52.608872+00:00",
-          "identifier": "sha256:ee618e9840e3bd9ba065b5ec8093f8495cf04d460d03f9b37aa0477f89256363"
+          "extent": 2151,
+          "modified": "2025-12-03T14:00:53.714015+00:00",
+          "identifier": "sha256:0a38cb3c7c0e81f3ac7e5e8fffaecda6f4a2787d487c662de3a2d615ca4c4501"
         },
         {
-          "id": "https://w3id.org/zorro#src/prompt-extracted/subfunction.tsv",
+          "id": "https://w3id.org/zorro#prompt-extracted/subfunction.tsv",
           "type": "prov:Entity",
           "format": "text/tab-separated-values",
           "extent": 4091,
@@ -32,58 +32,5274 @@
           "identifier": "sha256:7c39081400e6555b5ab65ace81c326ffb7084481014c65ae9d26957ced70c248"
         },
         {
-          "id": "https://w3id.org/zorro#src/prompt-extracted/dependsOn.tsv",
+          "id": "https://w3id.org/zorro#prompt-extracted/dependsOn.tsv",
           "type": "prov:Entity",
           "format": "text/tab-separated-values",
           "extent": 2934,
           "modified": "2024-08-23T13:50:30.136905+00:00",
           "identifier": "sha256:3a7c22dc97800617608ced7210764bdbe7e77193c850524546509b1a3daa0914"
         },
-        "https://w3id.org/zorro#env/20251118T091815"
+        "https://w3id.org/zorro#env-20251203T1401"
       ]
     },
     {
-      "id": "https://w3id.org/zorro#agent/__main__.py",
+      "id": "https://w3id.org/zorro#<stdin>",
       "type": [
         "prov:Agent",
-        "prov:SoftwareAgent"
+        "prov:SoftwareAgent",
+        "schema:SoftwareSourceCode"
       ],
-      "label": "__main__.py",
-      "hasVersion": "7017703ffca7229a0f0af9129fb259f2f09cfe3e",
+      "label": "<stdin>",
+      "hasVersion": "d4fff7388f62a0fb3d9c5bce9c16d4f1a2359448",
       "source": "https://github.com/kai-vu/zorro-wp2-aircraft-poc.git"
     },
     {
-      "id": "https://w3id.org/zorro#out//private/var/folders/wt/_t6jgd1d72l3qpg6nfbg6f8h0000gn/T/pytest-of-benno/pytest-18/test_functions_trig0/functions.trig",
+      "id": "https://w3id.org/zorro#generated-rdf/functions.trig",
       "type": "prov:Entity",
-      "format": "application/trig",
-      "extent": 25744,
-      "modified": "2025-11-18T09:18:15.975491+00:00",
-      "wasGeneratedBy": "https://w3id.org/zorro#run/functions_trig/20251118T091815"
+      "format": "application/octet-stream",
+      "extent": 52526,
+      "modified": "2025-12-03T14:01:43.476562+00:00",
+      "wasGeneratedBy": "https://w3id.org/zorro#<stdin>#functions_trig-20251203T1401"
     },
     {
-      "id": "https://w3id.org/zorro#env/20251118T091815",
+      "id": "https://w3id.org/zorro#env-20251203T1401",
       "type": [
         "prov:Entity",
         "prov:Collection"
       ],
       "label": "Python environment",
       "title": "makeprov",
-      "hasVersion": "0.2.0",
+      "hasVersion": "0.4.2",
       "requires": [
         {
-          "id": "https://pypi.org/project/pytest/",
-          "type": "rdfs:Resource",
-          "label": "pytest"
-        },
+          "id": "https://pypi.org/project/parse/",
+          "type": "schema:SoftwareSourceCode",
+          "label": "parse>=1.20"
+        }
+      ]
+    },
+    {
+      "id": "https://w3id.org/zorro#graph-functions_trig",
+      "type": "prov:Entity",
+      "wasGeneratedBy": "https://w3id.org/zorro#<stdin>#functions_trig-20251203T1401",
+      "wasAttributedTo": "https://w3id.org/zorro#<stdin>",
+      "generatedAtTime": "2025-12-03T14:01:43.476768+00:00",
+      "@graph": [
         {
-          "id": "https://pypi.org/project/rdflib/",
-          "type": "rdfs:Resource",
-          "label": "rdflib>=6.0"
-        },
-        {
-          "id": "https://pypi.org/project/pyshacl/",
-          "type": "rdfs:Resource",
-          "label": "pyshacl>=0.20"
+          "@graph": [
+            {
+              "@id": "https://w3id.org/zorro#PumpingFuelAndSecuringComponents",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Pumping fuel and securing components"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#DistributingFuel-AirMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDelivery"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CorrectFuelType"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelMixtureContamination"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AirIntakeRestriction"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntakeControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ManagingAir-FuelMixtureIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelIntake"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#ManagingFuel-AirMixture"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#FilteringOilAndControllingFlow",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Filtering oil and controlling flow"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#AccurateOilPressureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilTemperatureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilPressureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AdequateLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilFlow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingOilPressure"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#Air-FuelIntakeControl",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Air-fuel intake control"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#ThrottleLeverOutOfAdjustment"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#DistributingFuel-AirMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDelivery"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CorrectFuelType"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureDistribution"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#SupportingCombustion"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#SecuringCrankcaseComponents",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Securing crankcase components"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainEngine"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingEngineStability"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#LowGradeOfOil",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Low grade of oil"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ExcessiveFuelDuringStart",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Excessive fuel during start"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#Overpriming"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#DistributingFuel-AirMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDelivery"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CorrectFuelType"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelMixtureContamination"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AirIntakeRestriction"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntakeControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ManagingAir-FuelMixtureIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelIntake"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#ManagingFuel-AirMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#Fuel-AirMixtureDistribution",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Fuel-air mixture distribution"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#FailureOfEngineToIdleProperly"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelMixtureContamination"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AirIntakeRestriction"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntakeControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ManagingAir-FuelMixtureIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#InitiatingEngineStart",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Initiating engine start"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#FailureOfEngineToStart"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerSupplyForStarting"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProvidingElectricalPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FacilitatingEngineStart"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#InitiatingEngineStart"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#FacilitatingEngineStart"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#PowerSupplyForStarting",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Power supply for starting"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#DefectiveBattery"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#FacilitatingEngineStart"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#InitiatingEngineStart"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#FacilitatingEngineStart"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CrankingSection",
+              "@type": [
+                "https://w3id.org/zorro#Component"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Cranking Section"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#ElectricalPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerSection"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#InitiatingEngineStart"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FacilitatingEngineStart"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#AirIntakeRestriction",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Air intake restriction"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#RestrictionInAirScoop"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#DistributingFuel-AirMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDelivery"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CorrectFuelType"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureDistribution"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngine"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#MaintainingEngineStability",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Maintaining engine stability"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#DistributingIgnition",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Distributing ignition"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#FaultyIgnitionSystem",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Faulty ignition system"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CoreEngineOperations",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Core Engine Operations"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#UnevenCylinderCompression",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Uneven cylinder compression"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#OilFilterAssemblyAndOilCoolerBypassValve",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#LubricationSystem"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#FilteringOilAndControllingFlow"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#Air-FuelIntake",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Air-fuel intake"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#FailureOfEngineToIdleProperly"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LackOfFuel"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#DistributingFuel-AirMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDelivery"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CorrectFuelType"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureDistribution"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#DrivingAndTimingComponents",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Driving and timing components"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EnsuringSmoothOperation"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#RoughEngine",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Rough Engine"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CrankshaftAssembly",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerSection"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricationSystem"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#ConvertingLinearToRotationalMotion"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#BalancedCylinderCompression",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Balanced cylinder compression"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#UnevenCompression"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#UnevenCylinderCompression"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateOilPressureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilTemperatureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilPressureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AdequateLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilFlow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingOilPressure"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#SupportingCombustion"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#FuelDelivery",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Fuel delivery"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#ImproperFuelFlow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#InsufficientFuelPressure"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LackOfSufficientFuelFlow"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelMixtureContamination"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AirIntakeRestriction"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntakeControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ManagingAir-FuelMixtureIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#ManagingFuel-AirMixture"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ProperFuelType",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Proper fuel type"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#ManagingFuel-AirMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EnsuringSmoothOperation"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CorrectFuelType",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Correct fuel type"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#ImproperFuel"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelMixtureContamination"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AirIntakeRestriction"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntakeControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ManagingAir-FuelMixtureIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#DrivingPowerToAccessories",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Driving power to accessories"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#MaintainingOilPressure",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Maintaining oil pressure"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#LowOilPressure"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#OilLevelGage",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#LubricationSystem"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#MeasuringOilQuantity"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#OilPumpAssemblyAndAccessoryHousingAttachingParts",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#LubricationSystem"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccessoryDrives"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#PumpingOilAndAttachingHousing"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CylinderSection",
+              "@type": [
+                "https://w3id.org/zorro#Component"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Cylinder Section"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#CoolingSystem"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricationSystem"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerSection"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#ProperCylinderSealing"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CylinderOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#BalancedCylinderCompression"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ContainingCylindersAndRelatedParts"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#FacilitatingEngineStart",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Facilitating engine start"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerSupplyForStarting"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProvidingElectricalPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineOperations"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ProperAir-FuelIntake",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Proper air-fuel intake"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#FailureOfEngineToDevelopFullPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LackOfSufficientFuelFlow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LeakInInductionSystem"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#DistributingFuel-AirMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDelivery"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CorrectFuelType"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureDistribution"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#SupportingCombustion"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ElectricalPower",
+              "@type": [
+                "https://w3id.org/zorro#Component"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Electrical Power"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#CrankingSection"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerSupplyForStarting"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProvidingElectricalPower"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#DefectivePressureGage",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Defective pressure gage"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#FuelPumpAssemblyAndAttachingParts",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#FuelDistributionSystem"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#InductionSystem"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#PumpingFuelAndSecuringComponents"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#SupportingCylinderOperation",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Supporting cylinder operation"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#ProperCylinderSealing"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ContainingCylindersAndRelatedParts"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CylinderOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#BalancedCylinderCompression"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#SupportingCombustion"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CollectingAndScreeningOil",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Collecting and screening oil"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#AccurateOilPressureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilTemperatureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilPressureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AdequateLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilFlow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingOilPressure"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#FaultyIgnition",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Faulty ignition"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#PowerGeneration",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Power Generation"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#DistributingIgnitionToCylinders",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Distributing ignition to cylinders"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#DrivingPowerToAccessories"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#DistributingIgnition"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#HousingAccessoriesAndDrives",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Housing accessories and drives"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#DrivingPowerToAccessories"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ExcessiveOilConsumption",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Excessive Oil Consumption"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CylinderAndCombustionOperations",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Cylinder and Combustion Operations"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ImproperOperationOfMagnetoBreaker",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Improper operation of magneto breaker"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ProperIgnition",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Proper ignition"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#DefectiveSparkPlugTerminalConnectors"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#DefectiveSparkPlugs"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#DrivingPowerToAccessories"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#DistributingIgnition"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CylinderRelatedParts",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#CylinderSection"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingSystem"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#SupportingCylinderOperation"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#DefectiveIgnitionWire",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Defective ignition wire"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#LowPowerAndUnevenRunning",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Low Power and Uneven Running"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#IncorrectIdleAdjustment",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Incorrect idle adjustment"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#DistributingIgnitionAndSparks",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Distributing ignition and sparks"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#IgnitionTimingAndDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#IgnitionTiming"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#DistributingIgnitionToCylinders"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperIgnitionTiming"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperIgnitionTimingAndDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#IgnitionTransfer"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperIgnition"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#DrivingPowerToAccessories"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#DistributingIgnition"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CrankcaseAttachingParts",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#CrankcaseAssembly"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#SecuringCrankcaseComponents"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#StoppageInOilPumpIntakePassage",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Stoppage in oil pump intake passage"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#UnevenCompression",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Uneven compression"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#FailureOfRingsToSeat",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Failure of rings to seat"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#FuelDistributionSystem",
+              "@type": [
+                "https://w3id.org/zorro#Component"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Fuel Distribution System"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#InductionSystem"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerSection"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CorrectFuelType"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDelivery"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#DistributingFuel-AirMixture"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#RestrictionInAirScoop",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Restriction in air scoop"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#IgnitionDistributionSystem",
+              "@type": [
+                "https://w3id.org/zorro#Component"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Ignition Distribution System"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#AccessoryDrives"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerSection"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#IgnitionTransfer"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperIgnition"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperIgnitionTiming"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperIgnitionTimingAndDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#IgnitionTiming"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#IgnitionTimingAndDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#DistributingIgnitionToCylinders"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#WornPistonRings",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Worn piston rings"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ConnectingRodsPistonsAndRingAssemblies",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerSection"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CylinderSection"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#TransmittingMotionAndSealingChamber"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#IncorrectInstallationOfPistonRings",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Incorrect installation of piston rings"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CrankcaseRelatedParts",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#CrankcaseAssembly"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#SupportingCrankcaseOperation"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#PrimingSystem",
+              "@type": [
+                "https://w3id.org/zorro#Component"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Priming System"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#FuelDistributionSystem"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#InductionSystem"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#ExcessiveFuelDuringStart"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AssistingEngineStart"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#Fuel-AirMixtureControl",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Fuel-air mixture control"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#IncorrectIdleAdjustment"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#IncorrectIdleMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Overpriming"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelMixtureContamination"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AirIntakeRestriction"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntakeControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ManagingAir-FuelMixtureIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#ManagingFuel-AirMixture"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CylinderHeadDrainTubesAndIntercylinderCoolingBaffles",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#CylinderSection"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingSystem"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#DrainingAndCoolingCylinders"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ConvertingLinearToRotationalMotion",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Converting linear to rotational motion"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateOilPressureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilTemperatureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilPressureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AdequateLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilFlow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingOilPressure"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#SupportingCombustion",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Supporting combustion"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#CylinderAndCombustionOperations"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#InsufficientAirCooling",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Insufficient air cooling"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#StarterMotorAndAttachingParts",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#CrankingSection"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ElectricalPower"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#InitiatingEngineStart"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#PropellerGovernorDriveCoverVacuumPumpDriveAndCover",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#AccessoryDrives"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerSection"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#CoveringDrivesAndProvidingHousing"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#AccurateOilPressureReading",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Accurate oil pressure reading"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#DefectivePressureGage"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EnsuringSmoothOperation"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#DefectiveSparkPlugTerminalConnectors",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Defective spark plug terminal connectors"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#LubricatingEngineComponents",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Lubricating engine components"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#GeneratingPower",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Generating power"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#AccurateOilPressureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilTemperatureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilPressureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AdequateLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilFlow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingOilPressure"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerGeneration"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#FuelDistribution",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Fuel distribution"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#LackOfFuel"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelMixtureContamination"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AirIntakeRestriction"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntakeControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ManagingAir-FuelMixtureIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#ManagingFuel-AirMixture"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CoveringDrivesAndProvidingHousing",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Covering drives and providing housing"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#DrivingPowerToAccessories"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingEngineStability"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#SmoothEngineOperation",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Smooth engine operation"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#FailingOrFailedBearings"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#AccurateOilPressureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilTemperatureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilPressureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AdequateLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilFlow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingOilPressure"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#EnsuringSmoothOperation"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ValveAssembly",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerSection"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CylinderSection"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#ControllingIntakeAndExhaustFlow"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#AccessoryDrives",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerSection"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#DrivingPowerToAccessories"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#MixtureTooRich",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Mixture too rich"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#IntakePipesAndAttachingParts",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#InductionSystem"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDistributionSystem"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#DirectingAir-FuelMixture"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ContainingCylindersAndRelatedParts",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Containing cylinders and related parts"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateOilPressureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilTemperatureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilPressureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AdequateLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilFlow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingOilPressure"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#SupportingCombustion"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#LeakInInductionSystem",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Leak in induction system"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#DefectiveSparkPlugs",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Defective spark plugs"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#MagnetosMagnetoDrivesHarnessesAndSparkPlugs",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#IgnitionDistributionSystem"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccessoryDrives"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#DistributingIgnitionAndSparks"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#DefectiveMountingBushings",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Defective mounting bushings"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ProperIgnitionTimingAndDistribution",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Proper ignition timing and distribution"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#FaultyIgnitionSystem"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#DrivingPowerToAccessories"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#DistributingIgnition"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#LowOilPressure",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Low Oil Pressure"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#MonitoringAndControl",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Monitoring and Control"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#FailureOfEngineToIdleProperly",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Failure of Engine to Idle Properly"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#MeasuringOilQuantity",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Measuring oil quantity"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#AccurateOilPressureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilTemperatureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilPressureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AdequateLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilFlow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingOilPressure"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngine"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CylinderOperation",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Cylinder operation"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#ExcessiveOilConsumption"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#RoughEngine"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateOilPressureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilTemperatureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilPressureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AdequateLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilFlow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingOilPressure"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#SupportingCombustion"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EnsuringSmoothOperation"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ThrottleLeverOutOfAdjustment",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Throttle lever out of adjustment"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#LeakInSuctionLineOrPressureLine",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Leak in suction line or pressure line"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ImproperFuel",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Improper fuel"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#PowerOutput",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Power output"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#FailureOfEngineToDevelopFullPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LowPowerAndUnevenRunning"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#AccurateOilPressureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilTemperatureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilPressureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AdequateLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilFlow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingOilPressure"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#PumpingOilAndAttachingHousing",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Pumping oil and attaching housing"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#AccurateOilPressureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilTemperatureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilPressureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AdequateLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilFlow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingOilPressure"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#DrivingPowerToAccessories"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#TransmittingMotionAndSealingChamber",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Transmitting motion and sealing chamber"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperCylinderSealing"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ContainingCylindersAndRelatedParts"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CylinderOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#BalancedCylinderCompression"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#SupportingCombustion"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#WaterInCarburetor",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Water in carburetor"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#InsufficientFuelPressure",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Insufficient fuel pressure"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#OilTemperatureRegulation",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Oil temperature regulation"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#HighOilTemperature"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngine"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ProperLubrication",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Proper lubrication"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#FailingOrFailedBearings"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LowGradeOfOil"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#MagnetoBreakerPointsNotWorkingProperly",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Magneto breaker points not working properly"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ProperAir-FuelMixture",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Proper air-fuel mixture"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#MixtureTooLean"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#MixtureTooRich"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelMixtureContamination"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AirIntakeRestriction"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntakeControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ManagingAir-FuelMixtureIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#ManagingFuel-AirMixture"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#Overpriming",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Overpriming"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#HousingAndSupportingCombustion",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Housing and supporting combustion"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#ProperCylinderSealing"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ContainingCylindersAndRelatedParts"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CylinderOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#BalancedCylinderCompression"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateOilPressureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilTemperatureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilPressureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AdequateLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilFlow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingOilPressure"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#SupportingCombustion"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#HighOilTemperature",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "High Oil Temperature"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#AirLockOrDirtInReliefValve",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Air lock or dirt in relief valve"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CloggedOilLinesOrStrainers",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Clogged oil lines or strainers"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#InductionSystem",
+              "@type": [
+                "https://w3id.org/zorro#Component"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Induction System"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerSection"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDistributionSystem"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AirIntakeRestriction"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntakeControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelMixtureContamination"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ManagingAir-FuelMixtureIntake"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CoreEngineFunctionality",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Core engine functionality"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#InternalFailure"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#AccurateOilPressureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilTemperatureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilPressureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AdequateLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilFlow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingOilPressure"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#EnsuringSmoothOperation"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#MixingAndRegulatingFuel-Air",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Mixing and regulating fuel-air"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#DistributingFuel-AirMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDelivery"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CorrectFuelType"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelMixtureContamination"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AirIntakeRestriction"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntakeControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ManagingAir-FuelMixtureIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelIntake"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#ManagingFuel-AirMixture"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#InsufficientOil",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Insufficient oil"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#OilCoolerBypassValveOilPressureScreenAndBreatherFitting",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#LubricationSystem"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#RegulatingOilFlowAndPressure"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#HousingMainEngine",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Housing main engine"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateOilPressureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilTemperatureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilPressureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AdequateLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilFlow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingOilPressure"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#AlternatorMountingAndAttachingParts",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#ElectricalPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccessoryDrives"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#SecuringAndSupportingAlternator"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#AccessoryHousingAssembly",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#AccessoryDrives"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerSection"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#HousingAccessoriesAndDrives"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ExcessiveBlow-By",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Excessive blow-by"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#OilSumpAssemblyAndOilSuctionScreen",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#LubricationSystem"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerSection"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#CollectingAndScreeningOil"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CrankshaftIdlerGearsTachometerDriveAndCamshaft",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerSection"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#DrivingAndTimingComponents"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#DefectiveTemperatureGage",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Defective temperature gage"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#AssistingEngineStart",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Assisting engine start"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#DistributingFuel-AirMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDelivery"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CorrectFuelType"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelMixtureContamination"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AirIntakeRestriction"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntakeControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ManagingAir-FuelMixtureIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelIntake"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#FacilitatingEngineStart"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CoolingSystem",
+              "@type": [
+                "https://w3id.org/zorro#Component"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Cooling System"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerSection"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ProperEngineCooling",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Proper engine cooling"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#InsufficientAirCooling"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngine"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CylinderAssembly",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#CylinderSection"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingSystem"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricationSystem"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#HousingAndSupportingCombustion"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ProperCylinderSealing",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Proper cylinder sealing"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#ExcessiveBlow-By"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FailureOfRingsToSeat"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#IncorrectInstallationOfPistonRings"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#WornPistonRings"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateOilPressureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilTemperatureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilPressureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AdequateLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilFlow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingOilPressure"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#SupportingCombustion"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#FailingOrFailedBearings",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Failing or failed bearings"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#IgnitionTimingAndDistribution",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Ignition timing and distribution"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#LowPowerAndUnevenRunning"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#DrivingPowerToAccessories"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#DistributingIgnition"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ControllingIntakeAndExhaustFlow",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Controlling intake and exhaust flow"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperCylinderSealing"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ContainingCylindersAndRelatedParts"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CylinderOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#BalancedCylinderCompression"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#SupportingCombustion"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#HousingMainEngineComponents",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Housing main engine components"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#EnsuringSmoothOperation"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#LackOfFuel",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Lack of fuel"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#SecuringAndSupportingAlternator",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Securing and supporting alternator"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerSupplyForStarting"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProvidingElectricalPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#DrivingPowerToAccessories"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingEngineStability"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ManagingFuel-AirMixture",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Managing fuel-air mixture"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CrankcaseAssembly",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerSection"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricationSystem"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingSystem"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainEngine"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CarburetorAssembly",
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#FuelDistributionSystem"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#InductionSystem"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#MixingAndRegulatingFuel-Air"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CrackedEngineMount",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Cracked engine mount"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#LackOfSufficientFuelFlow",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Lack of sufficient fuel flow"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CoolingAndLubrication",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Cooling and Lubrication"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#DrainingAndCoolingCylinders",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Draining and cooling cylinders"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#ProperCylinderSealing"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ContainingCylindersAndRelatedParts"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CylinderOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#BalancedCylinderCompression"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#SupportingCombustion"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#PowerSection",
+              "@type": [
+                "https://w3id.org/zorro#Component"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Power Section"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#LubricationSystem"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingSystem"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ProperIgnitionTiming",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Proper ignition timing"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#FaultyIgnition"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#DrivingPowerToAccessories"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#DistributingIgnition"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#IgnitionTransfer",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Ignition transfer"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#DefectiveIgnitionWire"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#DrivingPowerToAccessories"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#DistributingIgnition"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#DirectingAir-FuelMixture",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Directing air-fuel mixture"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelMixtureContamination"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AirIntakeRestriction"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntakeControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ManagingAir-FuelMixtureIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#DistributingFuel-AirMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDelivery"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CorrectFuelType"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureDistribution"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#ManagingFuel-AirMixture"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#OilDistribution",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Oil distribution"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#ExcessiveOilConsumption"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ProvidingElectricalPower",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Providing electrical power"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#FailureOfEngineToStart"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#FacilitatingEngineStart"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#InitiatingEngineStart"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#Air-FuelMixtureContamination",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Air-fuel mixture contamination"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#WaterInCarburetor"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#DistributingFuel-AirMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDelivery"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CorrectFuelType"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureDistribution"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#RegulatingOilFlowAndPressure",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Regulating oil flow and pressure"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#AccurateOilPressureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilTemperatureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilPressureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AdequateLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilFlow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingOilPressure"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Cooling engine with airflow"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngine"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#DefectiveBattery",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Defective battery"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ProperCooling",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Proper cooling"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#HighOilTemperature"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngine"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EnsuringSmoothOperation"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#HousingMainPowerComponents",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Housing main power components"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#AccurateOilPressureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilTemperatureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilPressureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AdequateLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilFlow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingOilPressure"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#AccurateTemperatureReading",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Accurate temperature reading"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#DefectiveTemperatureGage"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngine"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EnsuringSmoothOperation"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#LubricationSystem",
+              "@type": [
+                "https://w3id.org/zorro#Component"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Lubrication System"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerSection"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingSystem"
+                }
+              ],
+              "https://w3id.org/zorro#hasFunction": [
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilPressureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilFlow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateOilPressureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilTemperatureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AdequateLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingOilPressure"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#CoolingEngine",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Cooling engine"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#CoolingAndLubrication"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ProperOilFlow",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Proper oil flow"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#CloggedOilLinesOrStrainers"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LeakInSuctionLineOrPressureLine"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#StoppageInOilPumpIntakePassage"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#FailureOfEngineToStart",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Failure of Engine to Start"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#EngineStability",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Engine stability"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#CrackedEngineMount"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#DefectiveMountingBushings"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#AccurateOilPressureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilTemperatureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilPressureRegulation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AdequateLubrication"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperOilFlow"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#OilDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingOilPressure"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingEngineStability"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#IgnitionTiming",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Ignition timing"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#ImproperOperationOfMagnetoBreaker"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#MagnetoBreakerPointsNotWorkingProperly"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#RoughEngine"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#DrivingPowerToAccessories"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#DistributingIgnition"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#InternalFailure",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Internal failure"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ImproperFuelFlow",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Improper fuel flow"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#SupportingCrankcaseOperation",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Supporting crankcase operation"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainEngine"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#MaintainingEngineStability"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EnsuringSmoothOperation"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#IncorrectIdleMixture",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Incorrect idle mixture"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#EnsuringSmoothOperation",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Ensuring smooth operation"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#MonitoringAndControl"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#DistributingFuel-AirMixture",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Distributing fuel-air mixture"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelMixtureContamination"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AirIntakeRestriction"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntakeControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ManagingAir-FuelMixtureIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Air-FuelIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelIntake"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#ManagingFuel-AirMixture"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ManagingAir-FuelMixtureIntake",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Managing air-fuel mixture intake"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureControl"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#DistributingFuel-AirMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDistribution"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#FuelDelivery"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CorrectFuelType"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperAir-FuelMixture"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#Fuel-AirMixtureDistribution"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#ManagingFuel-AirMixture"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#ProperOilPressureRegulation",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Proper oil pressure regulation"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#AirLockOrDirtInReliefValve"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#AdequateLubrication",
+              "@type": [
+                "https://w3id.org/zorro#Function"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Adequate lubrication"
+                }
+              ],
+              "https://w3id.org/zorro#addressesProblem": [
+                {
+                  "@id": "https://w3id.org/zorro#InsufficientOil"
+                }
+              ],
+              "https://w3id.org/zorro#dependsOn": [
+                {
+                  "@id": "https://w3id.org/zorro#PowerOutput"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#HousingMainPowerComponents"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoreEngineFunctionality"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#GeneratingPower"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#SmoothEngineOperation"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#EngineStability"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#AccurateTemperatureReading"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#ProperEngineCooling"
+                },
+                {
+                  "@id": "https://w3id.org/zorro#CoolingEngineWithAirflow"
+                }
+              ],
+              "https://w3id.org/zorro#subFunctionOf": [
+                {
+                  "@id": "https://w3id.org/zorro#LubricatingEngineComponents"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#FailureOfEngineToDevelopFullPower",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Failure of Engine to Develop Full Power"
+                }
+              ]
+            },
+            {
+              "@id": "https://w3id.org/zorro#MixtureTooLean",
+              "@type": [
+                "https://w3id.org/zorro#Problem"
+              ],
+              "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                  "@value": "Mixture too lean"
+                }
+              ]
+            }
+          ],
+          "@id": "https://w3id.org/zorro/graph/functions"
         }
       ]
     }

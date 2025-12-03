@@ -1,8 +1,12 @@
 # In which system is the given assembly X located?
 
+PREFIX : <https://w3id.org/zorro#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
 SELECT ?system
 WHERE {
-    ?a :inSystem ?system;
-               rdfs:label "Carburetor Assembly";
-               rdfs:subClassOf :Assembly .}
-
+    BIND(:CarburetorAssembly AS ?assembly)
+    ?assembly :partOf ?system .
+    ?system rdf:type :System .
+}

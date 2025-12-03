@@ -1,8 +1,10 @@
 # Which components implement the given function X?
 
+PREFIX : <https://w3id.org/zorro#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?component
 WHERE {
-    ?component :hasFunction :TransferringPowerWithinEngine. 
+    ?component :hasFunction :DrivingPowerToAccessories .
 }
-

@@ -1,14 +1,16 @@
+# Which systems are the most critical (i.e., their failure causes the largest number of dependent failures)?
 
-# Which systems are the most critical (i.e., their failure causes the largest number of 
-# dependent failures)?
+PREFIX : <https://w3id.org/zorro#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?function ?label (COUNT(DISTINCT ?dependentFunction) AS ?numDependentFunctions) ?correspondingSystem
+SELECT ?function ?functionLabel ?system (COUNT(DISTINCT ?dependentFunction) AS ?dependentFunctionCount)
 WHERE {
-    ?correspondingSystem rdfs:subClassOf :System;
-        :hasFunction ?function.
-    ?function rdfs:subClassOf :Function ;
-            rdfs:label ?label .
-  ?dependentFunction :dependsOn ?function .
+    ?system rdf:type :System ;
+            :hasFunction ?function .
+    ?function rdf:type :Function ;
+             rdfs:label ?functionLabel .
+    ?dependentFunction :dependsOn ?function .
 }
-GROUP BY ?function ?label ?correspondingSystem
-ORDER BY DESC(?numDependentFunctions)
+GROUP BY ?function ?functionLabel ?system
+ORDER BY DESC(?dependentFunctionCount)

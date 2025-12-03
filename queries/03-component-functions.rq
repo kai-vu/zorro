@@ -1,9 +1,11 @@
-# What is the function of the given component (Assembly and System) ?
+# What is the function of the given component (Assembly and System)?
 
-select ?system ?function where {
-    ?system rdfs:label "Cranking Section";
-         :hasFunction ?function .}
-select ?assembly ?function where {
-    ?assembly rdfs:label "Accessory Housing Assembly";
-         :hasFunction ?function .}
+PREFIX : <https://w3id.org/zorro#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
+SELECT ?component ?function
+WHERE {
+    VALUES ?component { :CrankingSection :AccessoryHousingAssembly }
+    ?component :hasFunction ?function .
+}

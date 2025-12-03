@@ -1,10 +1,14 @@
+# What is the frequency of all the problem types at each location (which Cylinder or Engine)?
 
-# What is the frequency of all the problem type at each location (which Cylinder or 
-# Engine)?
-SELECT ?problemType ?location (COUNT(?p) AS ?Frequency)
+PREFIX : <https://w3id.org/zorro#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?problemType ?location ?locationLabel (COUNT(?problem) AS ?frequency)
 WHERE {
-    ?p rdf:type ?problemType ;
-       :atLocation ?location .
+    ?problem rdf:type ?problemType ;
+             :atLocation ?location .
+    OPTIONAL { ?location rdfs:label ?locationLabel }
 }
-GROUP BY ?problemType ?location
-ORDER BY DESC(?Frequency)
+GROUP BY ?problemType ?location ?locationLabel
+ORDER BY DESC(?frequency)

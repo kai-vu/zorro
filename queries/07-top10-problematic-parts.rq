@@ -1,10 +1,13 @@
-# What are the top 10 frequent problematic part?
+# What are the top 10 frequent problematic parts?
 
-SELECT ?part (COUNT(?problem) AS ?Frequency)
+PREFIX : <https://w3id.org/zorro#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?part (COUNT(?problem) AS ?problemFrequency)
 WHERE {
     ?problem :involves ?part .
 }
 GROUP BY ?part
-ORDER BY DESC(?Frequency)
+ORDER BY DESC(?problemFrequency)
 LIMIT 10
-

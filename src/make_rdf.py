@@ -5,6 +5,7 @@ from __future__ import annotations
 import csv
 import logging
 import re
+from collections import defaultdict
 from dataclasses import dataclass
 import pandas as pd
 from makeprov import InPath, OutPath, build, rule
@@ -156,6 +157,7 @@ def build_parts_graph(
         graph.add((system, RDFS.label, Literal(row["Section"])))
         graph.add((assembly, RDF.type, config.base.Assembly))
         graph.add((assembly, RDFS.label, Literal(row["Figure"])))
+        graph.add((assembly, config.base.partOf, system))
 
         graph.add((part_uri, RDF.type, config.base.PartInstance))
         graph.add((part_uri, RDFS.label, Literal(row["Specifics"] or row["Type"])))
@@ -216,6 +218,7 @@ def build_functions_graph(
         Serialized RDF dataset containing the functions graph.
     """
     dataset, graph = _new_dataset("functions")
+    component_functions: dict[URIRef, set[URIRef]] = defaultdict(set)
 
     pc_df = pd.read_csv(problem_component_function_tsv, sep="\t")
     for _, row in pc_df.iterrows():
@@ -230,12 +233,14 @@ def build_functions_graph(
         graph.add((component_uri, RDFS.label, Literal(row["functionOf"])))
         graph.add((component_uri, config.base.hasFunction, function_uri))
         graph.add((function_uri, config.base.addressesProblem, problem_uri))
+        component_functions[component_uri].add(function_uri)
 
     func_df = pd.read_csv(functions_tsv, sep="\t")
     for _, row in func_df.iterrows():
         component_uri = config.base[iri_slug(row["Component"])]
         function_uri = _add_function(graph, row["hasFunction"], config.base)
         graph.add((component_uri, config.base.hasFunction, function_uri))
+        component_functions[component_uri].add(function_uri)
 
     sub_df = pd.read_csv(subfunction_tsv, sep="\t")
     for _, row in sub_df.iterrows():
@@ -248,6 +253,9 @@ def build_functions_graph(
         a = config.base[iri_slug(row["Component"])]
         b = config.base[iri_slug(row["dependsOn"])]
         graph.add((a, config.base.dependsOn, b))
+        for func_a in component_functions.get(a, set()):
+            for func_b in component_functions.get(b, set()):
+                graph.add((func_a, config.base.dependsOn, func_b))
 
     return _write_dataset(dataset, trig_out)
 
@@ -282,15 +290,29 @@ def _add_event(
         graph.add((state_uri, RDFS.label, Literal(row[kind.lower()])))
 
     if row.get("part"):
-        part_uri = base[iri_slug(row["part"])]
-        graph.add((event_uri, base.involvesPart, part_uri))
-        graph.add((part_uri, RDF.type, base.PartMention))
-        graph.add((part_uri, RDFS.label, Literal(row["part"])))
+        part_label = row["part"].strip()
+        if part_label:
+            part_uri = base[iri_slug(part_label)]
+            graph.add((event_uri, base.involves, part_uri))
+            graph.add((part_uri, RDFS.label, Literal(part_label)))
 
     if row.get("cylinders"):
-        graph.add((event_uri, base.affectsCylinder, Literal(row["cylinders"])))
+        graph.add((event_uri, base.location, Literal(row["cylinders"])))
+        for match in sorted({number for number in re.findall(r"\d+", row["cylinders"])}):
+            loc_label = f"Cylinder {match}"
+            loc_uri = base[iri_slug(loc_label)]
+            graph.add((event_uri, base.atLocation, loc_uri))
+            graph.add((loc_uri, RDFS.label, Literal(loc_label)))
+            graph.add((loc_uri, RDF.type, base.Location))
     if row.get("engine"):
-        graph.add((event_uri, base.affectsEngine, Literal(row["engine"])))
+        engine_label = row["engine"].strip()
+        if engine_label:
+            graph.add((event_uri, base.location, Literal(engine_label)))
+            loc_label = f"Engine {engine_label}"
+            loc_uri = base[iri_slug(loc_label)]
+            graph.add((event_uri, base.atLocation, loc_uri))
+            graph.add((loc_uri, RDFS.label, Literal(loc_label)))
+            graph.add((loc_uri, RDF.type, base.Location))
 
     return event_uri
 
