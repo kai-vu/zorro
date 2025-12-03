@@ -20,6 +20,8 @@ The KG structure can be seen as 3 layers: the *schema*, *domain knowledge*, and 
 - Tweak the visualization with options such as `--top-n`, `--orientation`, `--wrap-width`, or `--style` (see `python -m src.sparql_bar_chart --help`).
 
 ## Schema
+The ontology specification draft is available at https://w3id.org/ZorroOntology
+The paper that explain the construction of the schema is available at https://ceur-ws.org/Vol-3830/paper1sim.pdf
 (see paper)
 
 ## Domain Knowledge
@@ -57,6 +59,17 @@ We then calculate the similarities of the extracted part name with the candidate
     - Else, we collect the descriptions of all neighboring parts in the same assembly for each candidate part. Then we return the similarities between the extracted part name and these texts.
 
 The text similarity function we use is the cosine similarity of TFIDF bag-of-words vectors.
+
+### Citation
+If you use the resources presented in this repository, please cite:
+
+```bibtex
+```
+### Contact
+Should you have any questions, please contact Ameneh Naghdipour at a.naghdipour@vu.nl
+
+
+
 
 ## References
 ### MaintNet
