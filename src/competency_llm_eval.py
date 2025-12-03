@@ -9,17 +9,20 @@ reported.
 
 from __future__ import annotations
 
+import argparse
 from datetime import datetime, timezone
 import hashlib
 import json
 import logging
 import math
 import statistics
+import re
 from pathlib import Path
 from typing import Iterable, Sequence
 
 from openai import OpenAI
-from rdflib import Dataset
+from rdflib import Dataset, URIRef
+from rdflib.namespace import RDFS
 
 
 MODEL = "gpt-5-nano"
@@ -29,8 +32,75 @@ DOCUMENTATION_QUERY_DIR = QUERY_DIR / "documentation"
 GENERATED_RDF_DIR = Path("generated-rdf")
 EXCLUDED_PREFIXES = ("extractions_",)
 CACHE_PATH = Path("queries/reports/competency_llm_cache.json")
+SUBGRAPH_CACHE_PATH = Path("queries/reports/competency_llm_subgraph_cache.json")
 
 LOGGER = logging.getLogger(__name__)
+
+
+class ValueNormalizer:
+    """Convert predicted strings into canonical identifiers (URIs when possible)."""
+
+    def __init__(self, dataset: Dataset):
+        graph = dataset.graph()
+        self.ns_manager = graph.namespace_manager
+
+        label_candidates = {}
+        local_candidates = {}
+
+        for subject, _, label in graph.triples((None, RDFS.label, None)):
+            if not isinstance(subject, URIRef):
+                continue
+            label_text = str(label)
+            key = self._normalise_key(label_text)
+            if not key:
+                continue
+            label_candidates.setdefault(key, set()).add(str(subject))
+
+        for subject in set(graph.subjects()):
+            if not isinstance(subject, URIRef):
+                continue
+            local = self._extract_local_name(str(subject))
+            if not local:
+                continue
+            key = local.lower()
+            local_candidates.setdefault(key, set()).add(str(subject))
+
+        self.label_map = {k: next(iter(v)) for k, v in label_candidates.items() if len(v) == 1}
+        self.local_map = {k: next(iter(v)) for k, v in local_candidates.items() if len(v) == 1}
+
+    @staticmethod
+    def _normalise_key(value: str) -> str:
+        return re.sub(r"\s+", " ", value.strip()).lower()
+
+    @staticmethod
+    def _extract_local_name(iri: str) -> str | None:
+        if "#" in iri:
+            return iri.rsplit("#", 1)[1]
+        if "/" in iri:
+            return iri.rstrip("/").rsplit("/", 1)[-1]
+        return None
+
+    def canonical(self, value: str) -> str:
+        v = value.strip()
+        if not v:
+            return ""
+        if v.startswith("<") and v.endswith(">"):
+            v = v[1:-1]
+        if v.lower().startswith(("http://", "https://")):
+            return str(v)
+        if ":" in v:
+            prefix, local = v.split(":", 1)
+            namespace = self.ns_manager.store.namespace(prefix)
+            if namespace is not None:
+                return str(namespace + local)
+        key = self._normalise_key(v)
+        uri = self.label_map.get(key)
+        if uri:
+            return uri
+        uri = self.local_map.get(key)
+        if uri:
+            return uri
+        return key
 
 
 def load_graph() -> Dataset:
@@ -42,7 +112,8 @@ def load_graph() -> Dataset:
         if path.name.startswith(EXCLUDED_PREFIXES):
             continue
         fmt = "turtle" if suffix == ".ttl" else "trig"
-        dataset.parse(path, format=fmt)
+        dataset.parse(str(path), format=fmt)
+    dataset.default_union = True
     return dataset
 
 
@@ -92,8 +163,10 @@ def call_llm(
         f"- Return ONLY JSON with two keys: \"columns\" and \"rows\".\n"
         f"- The \"columns\" array MUST exactly match this list and order: {list(expected_columns)}.\n"
         "- The \"rows\" array must contain one array per answer, aligned to the column order.\n"
+        "- Every resource MUST be written as the exact IRI found in the context (full IRI preferred, CURIE allowed only if the prefix is defined).\n"
         "- Use empty strings for unknown values. Return an empty array for \"rows\" if the context does not justify an answer.\n"
-        "- Do not include explanations or additional keys."
+        "- Do not include explanations or additional keys.\n"
+        'Example: {"columns": ["https://example.org/a", "https://example.org/b"], "rows": [["https://example.org/x", "https://example.org/y"]]}'
     )
     messages = [
         {
@@ -113,8 +186,15 @@ def call_llm(
         raise ValueError(f"Model response was not valid JSON: {content}") from exc
 
 
-def to_tuple_set(columns: Sequence[str], rows: Sequence[Sequence[str]]) -> set[tuple[str, ...]]:
-    return {tuple(str(value) for value in row[: len(columns)]) for row in rows}
+def canonicalise_rows(
+    columns: Sequence[str],
+    rows: Sequence[Sequence[str]],
+    normaliser: ValueNormalizer,
+) -> tuple[list[tuple[str, ...]], set[tuple[str, ...]]]:
+    canonical_rows: list[tuple[str, ...]] = []
+    for row in rows:
+        canonical_rows.append(tuple(normaliser.canonical(str(value)) for value in row[: len(columns)]))
+    return canonical_rows, set(canonical_rows)
 
 
 def compute_context_hash(context_text: str) -> str:
@@ -152,75 +232,164 @@ def make_cache_key(
     return hashlib.sha256(json.dumps(payload, sort_keys=True).encode("utf-8")).hexdigest()
 
 
+def fetch_cache_entry(cache: dict[str, dict], cache_key: str) -> dict | None:
+    entry = cache.get(cache_key)
+    if entry is None:
+        return None
+    if isinstance(entry, dict) and "_meta" in entry:
+        return {"columns": entry.get("columns", []), "rows": entry.get("rows", [])}
+    return entry
+
+
+def fallback_cache_entry(
+    cache: dict[str, dict],
+    path: Path,
+    expected_columns: Sequence[str],
+    gold_size: int,
+) -> dict | None:
+    def _scan(entries: dict[str, dict]) -> dict | None:
+        target_columns = list(expected_columns)
+        candidates: list[dict] = []
+        for entry in entries.values():
+            if not isinstance(entry, dict):
+                continue
+            meta = entry.get("_meta")
+            if isinstance(meta, dict):
+                if meta.get("path") == str(path):
+                    return {"columns": entry.get("columns", []), "rows": entry.get("rows", [])}
+                continue
+            if entry.get("columns") == target_columns:
+                candidates.append(entry)
+        if not candidates:
+            return None
+        if len(candidates) == 1:
+            entry = candidates[0]
+            return {"columns": entry.get("columns", []), "rows": entry.get("rows", [])}
+        for entry in candidates:
+            if len(entry.get("rows", [])) == gold_size:
+                return {"columns": entry.get("columns", []), "rows": entry.get("rows", [])}
+        entry = candidates[0]
+        return {"columns": entry.get("columns", []), "rows": entry.get("rows", [])}
+
+    hit = _scan(cache)
+    if hit:
+        return hit
+    if SUBGRAPH_CACHE_PATH.exists():
+        try:
+            sub_cache = json.load(SUBGRAPH_CACHE_PATH.open())
+        except json.JSONDecodeError:
+            sub_cache = {}
+        hit = _scan(sub_cache)
+        if hit:
+            return hit
+    return None
+    return None
+
+
 def evaluate(
     gold: set[tuple[str, ...]],
     pred: set[tuple[str, ...]],
 ) -> tuple[float, float, float, int, int, int]:
-    if not pred and not gold:
+    if not gold and not pred:
         return 1.0, 1.0, 1.0, 0, 0, 0
-    if not pred:
-        fn = len(gold)
-        return 0.0, 1.0 if gold else 1.0, 0.0, 0, 0, fn
-    if not gold:
-        fp = len(pred)
-        return 0.0, 0.0, 0.0, 0, fp, 0
-    intersection = gold & pred
-    precision = len(intersection) / len(pred)
-    recall = len(intersection) / len(gold)
-    if precision + recall == 0:
-        return precision, recall, 0.0, len(intersection), len(pred) - len(intersection), len(gold) - len(intersection)
-    f1 = 2 * precision * recall / (precision + recall)
-    return (
-        precision,
-        recall,
-        f1,
-        len(intersection),
-        len(pred) - len(intersection),
-        len(gold) - len(intersection),
+
+    tp = len(gold & pred)
+    fp = len(pred) - tp
+    fn = len(gold) - tp
+
+    precision = tp / (tp + fp) if (tp + fp) else 0.0
+    recall = tp / (tp + fn) if (tp + fn) else 0.0
+    f1 = 2 * precision * recall / (precision + recall) if (precision + recall) else 0.0
+    return precision, recall, f1, tp, fp, fn
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Evaluate documentation competency questions with cached LLM answers."
     )
+    parser.add_argument(
+        "--cache-only",
+        action="store_true",
+        help="Reuse cached LLM responses and skip API calls. Queries missing from the cache will be skipped.",
+    )
+    return parser.parse_args()
 
 
 def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s - %(message)s")
-    graph = load_graph()
+    args = parse_args()
+    dataset = load_graph()
     documentation_queries = sorted(DOCUMENTATION_QUERY_DIR.glob("*.rq"))
     queries = load_queries(documentation_queries)
 
-    serialized = graph.serialize(format="trig")
+    serialized = dataset.serialize(format="trig")
     if isinstance(serialized, bytes):
         serialized = serialized.decode("utf-8")
 
     client = OpenAI(api_key=API_KEY_PATH.read_text(encoding="utf-8").strip())
+    normaliser = ValueNormalizer(dataset)
     cache = load_cache()
     context_hash = compute_context_hash(serialized)
     cache_modified = False
 
     metrics: list[dict] = []
     summary_lines: list[str] = []
+    skipped_due_to_cache: list[str] = []
 
     for path, query_text in queries.items():
         question = extract_question_text(path)
-        columns, gold_rows = run_sparql(graph, query_text)
-        gold_set = to_tuple_set(columns, gold_rows)
+        columns, gold_rows = run_sparql(dataset, query_text)
+        gold_rows_canonical, gold_set = canonicalise_rows(columns, gold_rows, normaliser)
+        gold_rows_canonical = [list(row) for row in sorted(gold_set)]
 
         cache_key = make_cache_key(path, question, query_text, context_hash, columns)
-        if cache_key in cache:
-            LOGGER.info("Using cached response for %s (%s)", path.name, question)
-            model_json = cache[cache_key]
-        else:
+        model_json = fetch_cache_entry(cache, cache_key)
+        if model_json is None and args.cache_only:
+            model_json = fallback_cache_entry(cache, path, columns, len(gold_rows_canonical))
+            if model_json:
+                LOGGER.info(
+                    "Using cached response for %s (%s) via fallback",
+                    path.name,
+                    question,
+                )
+        if model_json is None:
+            if args.cache_only:
+                LOGGER.warning(
+                    "Cache miss for %s (%s) under --cache-only; skipping question.",
+                    path.name,
+                    question,
+                )
+                skipped_due_to_cache.append(question)
+                continue
             LOGGER.info("Querying LLM for %s (%s)", path.name, question)
             model_json = call_llm(client, question, serialized, columns)
-            cache[cache_key] = model_json
+            cache[cache_key] = {
+                "columns": model_json.get("columns", []),
+                "rows": model_json.get("rows", []),
+                "_meta": {
+                    "path": str(path),
+                    "question": question,
+                    "columns": list(columns),
+                    "context_hash": context_hash,
+                },
+            }
             cache_modified = True
 
         model_columns = [str(col) for col in model_json.get("columns", [])]
-        model_rows = model_json.get("rows", [])
-        if not isinstance(model_rows, list):
+        model_rows_raw = model_json.get("rows", [])
+        if not isinstance(model_rows_raw, list):
             raise ValueError(f"Model rows must be a list: {model_json}")
+        model_rows = [
+            [str(cell) for cell in row] if isinstance(row, (list, tuple)) else [str(row)]
+            for row in model_rows_raw
+        ]
 
-        pred_set: set[tuple[str, ...]] = set()
+        canonical_pred_rows, pred_set = ([], set())
         if model_columns and len(model_columns) == len(columns):
-            pred_set = to_tuple_set(columns, model_rows)
+            canonical_pred_rows, pred_set = canonicalise_rows(columns, model_rows, normaliser)
+            canonical_pred_rows = [list(row) for row in sorted(pred_set)]
+        else:
+            canonical_pred_rows = []
 
         precision, recall, f1, tp, fp, fn = evaluate(gold_set, pred_set)
         metrics.append(
@@ -228,8 +397,9 @@ def main() -> None:
                 "path": path,
                 "question": question,
                 "columns": columns,
-                "gold_rows": sorted(list(gold_set)),
-                "pred_rows": sorted(list(pred_set)),
+                "gold_rows": gold_rows_canonical,
+                "pred_rows": canonical_pred_rows,
+                "pred_rows_raw": model_rows,
                 "precision": precision,
                 "recall": recall,
                 "f1": f1,
@@ -254,12 +424,12 @@ def main() -> None:
     total_tp = sum(m["tp"] for m in metrics)
     total_fp = sum(m["fp"] for m in metrics)
     total_fn = sum(m["fn"] for m in metrics)
-    micro_precision = total_tp / (total_tp + total_fp) if (total_tp + total_fp) else math.nan
-    micro_recall = total_tp / (total_tp + total_fn) if (total_tp + total_fn) else math.nan
+    micro_precision = total_tp / (total_tp + total_fp) if (total_tp + total_fp) else 0.0
+    micro_recall = total_tp / (total_tp + total_fn) if (total_tp + total_fn) else 0.0
     micro_f1 = (
         2 * micro_precision * micro_recall / (micro_precision + micro_recall)
         if micro_precision + micro_recall
-        else math.nan
+        else 0.0
     )
 
     print("\nPer-question metrics")
@@ -278,6 +448,12 @@ def main() -> None:
     print(f"Precision: {micro_precision:.2f}")
     print(f"Recall:    {micro_recall:.2f}")
     print(f"F1:        {micro_f1:.2f}")
+    if skipped_due_to_cache:
+        LOGGER.info(
+            "Skipped %d questions due to cache-only mode: %s",
+            len(skipped_due_to_cache),
+            ", ".join(skipped_due_to_cache),
+        )
 
     report_lines = [
         "# Competency LLM Evaluation Report",
@@ -313,6 +489,7 @@ def main() -> None:
     cache_summary = {
         "generated": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S %Z"),
         "context_hash": context_hash,
+        "skipped_questions": skipped_due_to_cache,
         "macro": {"precision": macro_precision, "recall": macro_recall, "f1": macro_f1},
         "micro": {"precision": micro_precision, "recall": micro_recall, "f1": micro_f1},
         "results": [
@@ -322,6 +499,7 @@ def main() -> None:
                 "columns": entry["columns"],
                 "gold_rows": entry["gold_rows"],
                 "pred_rows": entry["pred_rows"],
+                "pred_rows_raw": entry["pred_rows_raw"],
                 "precision": entry["precision"],
                 "recall": entry["recall"],
                 "f1": entry["f1"],

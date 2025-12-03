@@ -1,15 +1,15 @@
 {
-  "context_hash": "c7efebcb7ae35fd9b2155221596ed6dd60694db105e8ffabce731fa6264879d4",
-  "generated": "2025-12-03 16:03:20 UTC",
+  "context_hash": "03e1fd34ea8aa11831f346c3513f196e9d281726fe2aafd1d06af0ee7712fb53",
+  "generated": "2025-12-03 20:29:34 UTC",
   "macro": {
-    "f1": 0.23076923076923078,
-    "precision": 0.23076923076923078,
-    "recall": 0.3076923076923077
+    "f1": 0.26604506604506606,
+    "precision": 0.38461538461538464,
+    "recall": 0.24769404803341455
   },
   "micro": {
-    "f1": NaN,
-    "precision": 0.0,
-    "recall": 0.0
+    "f1": 0.1598173515981735,
+    "precision": 0.32710280373831774,
+    "recall": 0.10574018126888217
   },
   "results": [
     {
@@ -48,6 +48,32 @@
       ],
       "precision": 0.0,
       "pred_rows": [
+        [
+          "low oil pressure",
+          "air lock or dirt in relief valve"
+        ],
+        [
+          "low oil pressure",
+          "defective pressure gage"
+        ],
+        [
+          "low oil pressure",
+          "high oil temperature"
+        ],
+        [
+          "low oil pressure",
+          "insufficient oil"
+        ],
+        [
+          "low oil pressure",
+          "leak in suction line or pressure line"
+        ],
+        [
+          "low oil pressure",
+          "stoppage in oil pump intake passage"
+        ]
+      ],
+      "pred_rows_raw": [
         [
           "Low Oil Pressure",
           "Air lock or dirt in relief valve"
@@ -115,6 +141,20 @@
       "precision": 0.0,
       "pred_rows": [
         [
+          "low oil pressure",
+          "check line for obstruction. clean suction strainer."
+        ],
+        [
+          "low oil pressure",
+          "remove and clean oil pressure relief valve."
+        ],
+        [
+          "low oil pressure",
+          "replace."
+        ]
+      ],
+      "pred_rows_raw": [
+        [
           "Low Oil Pressure",
           "Check line for obstruction. Clean suction strainer."
         ],
@@ -137,9 +177,9 @@
         "component",
         "function"
       ],
-      "f1": 0.0,
-      "fn": 3,
-      "fp": 3,
+      "f1": 1.0,
+      "fn": 0,
+      "fp": 0,
       "gold_rows": [
         [
           "https://w3id.org/zorro#AccessoryHousingAssembly",
@@ -154,41 +194,255 @@
           "https://w3id.org/zorro#InitiatingEngineStart"
         ]
       ],
-      "precision": 0.0,
+      "precision": 1.0,
       "pred_rows": [
         [
-          "Accessory Housing Assembly",
-          "Housing accessories and drives"
+          "https://w3id.org/zorro#AccessoryHousingAssembly",
+          "https://w3id.org/zorro#HousingAccessoriesAndDrives"
         ],
         [
-          "Cranking Section",
-          "Facilitating engine start"
+          "https://w3id.org/zorro#CrankingSection",
+          "https://w3id.org/zorro#FacilitatingEngineStart"
         ],
         [
-          "Cranking Section",
-          "Initiating engine start"
+          "https://w3id.org/zorro#CrankingSection",
+          "https://w3id.org/zorro#InitiatingEngineStart"
+        ]
+      ],
+      "pred_rows_raw": [
+        [
+          "https://w3id.org/zorro#CrankingSection",
+          "https://w3id.org/zorro#FacilitatingEngineStart"
+        ],
+        [
+          "https://w3id.org/zorro#CrankingSection",
+          "https://w3id.org/zorro#InitiatingEngineStart"
+        ],
+        [
+          "https://w3id.org/zorro#AccessoryHousingAssembly",
+          "https://w3id.org/zorro#HousingAccessoriesAndDrives"
         ]
       ],
       "query_path": "queries/documentation/03-component-functions.rq",
       "question": "Which functions are assigned to the Cranking Section and the Accessory Housing Assembly?",
-      "recall": 0.0,
-      "tp": 0
+      "recall": 1.0,
+      "tp": 3
     },
     {
       "columns": [
         "function",
         "dependency"
       ],
-      "f1": 1.0,
-      "fn": 0,
+      "f1": 0.9696969696969697,
+      "fn": 1,
       "fp": 0,
-      "gold_rows": [],
+      "gold_rows": [
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#AccurateOilPressureReading"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#AccurateTemperatureReading"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#AdequateLubrication"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#BalancedCylinderCompression"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#ContainingCylindersAndRelatedParts"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#CoolingEngineWithAirflow"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#CylinderOperation"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#LubricatingEngineComponents"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#MaintainingOilPressure"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#OilDistribution"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#OilTemperatureRegulation"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#ProperCooling"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#ProperCylinderSealing"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#ProperEngineCooling"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#ProperLubrication"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#ProperOilFlow"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#ProperOilPressureRegulation"
+        ]
+      ],
       "precision": 1.0,
-      "pred_rows": [],
+      "pred_rows": [
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#AccurateOilPressureReading"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#AccurateTemperatureReading"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#AdequateLubrication"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#BalancedCylinderCompression"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#ContainingCylindersAndRelatedParts"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#CoolingEngineWithAirflow"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#CylinderOperation"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#LubricatingEngineComponents"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#MaintainingOilPressure"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#OilDistribution"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#OilTemperatureRegulation"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#ProperCooling"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#ProperEngineCooling"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#ProperLubrication"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#ProperOilFlow"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#ProperOilPressureRegulation"
+        ]
+      ],
+      "pred_rows_raw": [
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#AccurateOilPressureReading"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#AccurateTemperatureReading"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#AdequateLubrication"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#BalancedCylinderCompression"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#ContainingCylindersAndRelatedParts"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#CoolingEngineWithAirflow"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#CylinderOperation"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#LubricatingEngineComponents"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#MaintainingOilPressure"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#OilDistribution"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#OilTemperatureRegulation"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#ProperCooling"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#ProperEngineCooling"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#ProperLubrication"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#ProperOilFlow"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#ProperOilPressureRegulation"
+        ]
+      ],
       "query_path": "queries/documentation/04-function-depends-on-housing-combustion.rq",
       "question": "Which functions does \"Housing and supporting combustion\" depend on?",
-      "recall": 1.0,
-      "tp": 0
+      "recall": 0.9411764705882353,
+      "tp": 16
     },
     {
       "columns": [
@@ -232,6 +486,38 @@
       "precision": 0.0,
       "pred_rows": [
         [
+          "accessorydrives"
+        ],
+        [
+          "carburetorassembly"
+        ],
+        [
+          "crankingsection"
+        ],
+        [
+          "cylinderassembly"
+        ],
+        [
+          "cylindersection"
+        ],
+        [
+          "fueldistributionsystem"
+        ],
+        [
+          "ignitiondistributionsystem"
+        ],
+        [
+          "magnetosmagnetodrivesharnessesandsparkplugs"
+        ],
+        [
+          "propellergovernordrivevacuumpumpdriveandcover"
+        ],
+        [
+          "startermotorandattachingparts"
+        ]
+      ],
+      "pred_rows_raw": [
+        [
           "AccessoryDrives"
         ],
         [
@@ -256,7 +542,7 @@
           "MagnetosMagnetoDrivesHarnessesAndSparkPlugs"
         ],
         [
-          "PropellerGovernorDriveCoverVacuumPumpDriveAndCover"
+          "PropellerGovernorDriveVacuumPumpDriveAndCover"
         ],
         [
           "StarterMotorAndAttachingParts"
@@ -271,28 +557,37 @@
       "columns": [
         "component"
       ],
-      "f1": 0.0,
-      "fn": 1,
+      "f1": 1.0,
+      "fn": 0,
       "fp": 0,
       "gold_rows": [
         [
           "https://w3id.org/zorro#AccessoryDrives"
         ]
       ],
-      "precision": 0.0,
-      "pred_rows": [],
+      "precision": 1.0,
+      "pred_rows": [
+        [
+          "https://w3id.org/zorro#AccessoryDrives"
+        ]
+      ],
+      "pred_rows_raw": [
+        [
+          "https://w3id.org/zorro#AccessoryDrives"
+        ]
+      ],
       "query_path": "queries/documentation/06-components-transferring-power.rq",
       "question": "Which components are responsible for driving power to accessories?",
       "recall": 1.0,
-      "tp": 0
+      "tp": 1
     },
     {
       "columns": [
         "part"
       ],
-      "f1": 0.0,
-      "fn": 8,
-      "fp": 1,
+      "f1": 0.2222222222222222,
+      "fn": 7,
+      "fp": 0,
       "gold_rows": [
         [
           "https://w3id.org/zorro#partnr-1102"
@@ -319,27 +614,41 @@
           "https://w3id.org/zorro#partnr-STD-784"
         ]
       ],
-      "precision": 0.0,
+      "precision": 1.0,
       "pred_rows": [
         [
-          "partnr-21A21533-04"
+          "https://w3id.org/zorro#partnr-21A21533-04"
+        ]
+      ],
+      "pred_rows_raw": [
+        [
+          "https://w3id.org/zorro#partnr-21A21533-04"
         ]
       ],
       "query_path": "queries/documentation/07-parts-in-accessory-housing.rq",
       "question": "Which parts belong to the Accessory Housing Assembly?",
-      "recall": 0.0,
-      "tp": 0
+      "recall": 0.125,
+      "tp": 1
     },
     {
       "columns": [
         "system"
       ],
       "f1": 0.0,
-      "fn": 0,
+      "fn": 1,
       "fp": 1,
-      "gold_rows": [],
+      "gold_rows": [
+        [
+          "https://w3id.org/zorro#FuelDistributionSystem"
+        ]
+      ],
       "precision": 0.0,
       "pred_rows": [
+        [
+          "fuel distribution system"
+        ]
+      ],
+      "pred_rows_raw": [
         [
           "Fuel Distribution System"
         ]
@@ -393,6 +702,28 @@
       "precision": 0.0,
       "pred_rows": [
         [
+          "defective ignition wire",
+          "['failure of engine to start', 'low power and uneven running']",
+          "2"
+        ],
+        [
+          "defective spark plugs",
+          "['failure of engine to start', 'low power and uneven running']",
+          "2"
+        ],
+        [
+          "improper fuel",
+          "['failure of engine to develop full power', 'low power and uneven running']",
+          "2"
+        ],
+        [
+          "leak in induction system",
+          "['failure of engine to develop full power', 'failure of engine to idle properly']",
+          "2"
+        ]
+      ],
+      "pred_rows_raw": [
+        [
           "Defective ignition wire",
           "['Failure of Engine to Start', 'Low Power and Uneven Running']",
           "2"
@@ -424,12 +755,565 @@
         "dependency",
         "dependencyLabel"
       ],
-      "f1": 0.0,
-      "fn": 0,
-      "fp": 14,
-      "gold_rows": [],
-      "precision": 0.0,
+      "f1": 0.2666666666666667,
+      "fn": 77,
+      "fp": 0,
+      "gold_rows": [
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#AccurateOilPressureReading",
+          "accurate oil pressure reading"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#AccurateTemperatureReading",
+          "accurate temperature reading"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#AdequateLubrication",
+          "adequate lubrication"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#Air-FuelIntake",
+          "air-fuel intake"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#Air-FuelIntakeControl",
+          "air-fuel intake control"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#Air-FuelMixtureContamination",
+          "air-fuel mixture contamination"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#AirIntakeRestriction",
+          "air intake restriction"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#AssistingEngineStart",
+          "assisting engine start"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#BalancedCylinderCompression",
+          "balanced cylinder compression"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#CollectingAndScreeningOil",
+          "collecting and screening oil"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#ContainingCylindersAndRelatedParts",
+          "containing cylinders and related parts"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#ControllingIntakeAndExhaustFlow",
+          "controlling intake and exhaust flow"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#ConvertingLinearToRotationalMotion",
+          "converting linear to rotational motion"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#CoolingEngineWithAirflow",
+          "cooling engine with airflow"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#CoreEngineFunctionality",
+          "core engine functionality"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#CorrectFuelType",
+          "correct fuel type"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#CoveringDrivesAndProvidingHousing",
+          "covering drives and providing housing"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#CylinderOperation",
+          "cylinder operation"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#DirectingAir-FuelMixture",
+          "directing air-fuel mixture"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#DistributingFuel-AirMixture",
+          "distributing fuel-air mixture"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#DistributingIgnitionAndSparks",
+          "distributing ignition and sparks"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#DistributingIgnitionToCylinders",
+          "distributing ignition to cylinders"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#DrainingAndCoolingCylinders",
+          "draining and cooling cylinders"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#DrivingAndTimingComponents",
+          "driving and timing components"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#DrivingPowerToAccessories",
+          "driving power to accessories"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#EngineStability",
+          "engine stability"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#ExcessiveFuelDuringStart",
+          "excessive fuel during start"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#FacilitatingEngineStart",
+          "facilitating engine start"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#FilteringOilAndControllingFlow",
+          "filtering oil and controlling flow"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#Fuel-AirMixtureControl",
+          "fuel-air mixture control"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#Fuel-AirMixtureDistribution",
+          "fuel-air mixture distribution"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#FuelDelivery",
+          "fuel delivery"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#FuelDistribution",
+          "fuel distribution"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#GeneratingPower",
+          "generating power"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#HousingAccessoriesAndDrives",
+          "housing accessories and drives"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "housing and supporting combustion"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#HousingMainEngine",
+          "housing main engine"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#HousingMainPowerComponents",
+          "housing main power components"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#IgnitionTiming",
+          "ignition timing"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#IgnitionTimingAndDistribution",
+          "ignition timing and distribution"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#IgnitionTransfer",
+          "ignition transfer"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#InitiatingEngineStart",
+          "initiating engine start"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#LubricatingEngineComponents",
+          "lubricating engine components"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#MaintainingOilPressure",
+          "maintaining oil pressure"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#ManagingAir-FuelMixtureIntake",
+          "managing air-fuel mixture intake"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#MeasuringOilQuantity",
+          "measuring oil quantity"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#MixingAndRegulatingFuel-Air",
+          "mixing and regulating fuel-air"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#OilDistribution",
+          "oil distribution"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#OilTemperatureRegulation",
+          "oil temperature regulation"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#PowerOutput",
+          "power output"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#PowerSupplyForStarting",
+          "power supply for starting"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#ProperAir-FuelIntake",
+          "proper air-fuel intake"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#ProperAir-FuelMixture",
+          "proper air-fuel mixture"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#ProperCooling",
+          "proper cooling"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#ProperCylinderSealing",
+          "proper cylinder sealing"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#ProperEngineCooling",
+          "proper engine cooling"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#ProperIgnition",
+          "proper ignition"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#ProperIgnitionTiming",
+          "proper ignition timing"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#ProperIgnitionTimingAndDistribution",
+          "proper ignition timing and distribution"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#ProperLubrication",
+          "proper lubrication"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#ProperOilFlow",
+          "proper oil flow"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#ProperOilPressureRegulation",
+          "proper oil pressure regulation"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#ProvidingElectricalPower",
+          "providing electrical power"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#PumpingFuelAndSecuringComponents",
+          "pumping fuel and securing components"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#PumpingOilAndAttachingHousing",
+          "pumping oil and attaching housing"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#RegulatingOilFlowAndPressure",
+          "regulating oil flow and pressure"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#SecuringAndSupportingAlternator",
+          "securing and supporting alternator"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#SecuringCrankcaseComponents",
+          "securing crankcase components"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#SmoothEngineOperation",
+          "smooth engine operation"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#SupportingCrankcaseOperation",
+          "supporting crankcase operation"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#SupportingCylinderOperation",
+          "supporting cylinder operation"
+        ],
+        [
+          "dependedonby",
+          "https://w3id.org/zorro#TransmittingMotionAndSealingChamber",
+          "transmitting motion and sealing chamber"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#AccurateOilPressureReading",
+          "accurate oil pressure reading"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#AccurateTemperatureReading",
+          "accurate temperature reading"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#AdequateLubrication",
+          "adequate lubrication"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#CoolingEngineWithAirflow",
+          "cooling engine with airflow"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#CoreEngineFunctionality",
+          "core engine functionality"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#EngineStability",
+          "engine stability"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#GeneratingPower",
+          "generating power"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#HousingMainPowerComponents",
+          "housing main power components"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#LubricatingEngineComponents",
+          "lubricating engine components"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#MaintainingOilPressure",
+          "maintaining oil pressure"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#OilDistribution",
+          "oil distribution"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#OilTemperatureRegulation",
+          "oil temperature regulation"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#PowerOutput",
+          "power output"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#ProperCooling",
+          "proper cooling"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#ProperEngineCooling",
+          "proper engine cooling"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#ProperLubrication",
+          "proper lubrication"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#ProperOilFlow",
+          "proper oil flow"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#ProperOilPressureRegulation",
+          "proper oil pressure regulation"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#SmoothEngineOperation",
+          "smooth engine operation"
+        ]
+      ],
+      "precision": 1.0,
       "pred_rows": [
+        [
+          "dependson",
+          "https://w3id.org/zorro#AccurateOilPressureReading",
+          "accurate oil pressure reading"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#AccurateTemperatureReading",
+          "accurate temperature reading"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#AdequateLubrication",
+          "adequate lubrication"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#CoolingEngineWithAirflow",
+          "cooling engine with airflow"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#GeneratingPower",
+          "generating power"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#LubricatingEngineComponents",
+          "lubricating engine components"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#MaintainingOilPressure",
+          "maintaining oil pressure"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#OilDistribution",
+          "oil distribution"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#OilTemperatureRegulation",
+          "oil temperature regulation"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#ProperCooling",
+          "proper cooling"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#ProperEngineCooling",
+          "proper engine cooling"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#ProperLubrication",
+          "proper lubrication"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#ProperOilFlow",
+          "proper oil flow"
+        ],
+        [
+          "dependson",
+          "https://w3id.org/zorro#ProperOilPressureRegulation",
+          "proper oil pressure regulation"
+        ]
+      ],
+      "pred_rows_raw": [
+        [
+          "dependsOn",
+          "https://w3id.org/zorro#GeneratingPower",
+          "Generating power"
+        ],
+        [
+          "dependsOn",
+          "https://w3id.org/zorro#GeneratingPower",
+          "Generating power"
+        ],
+        [
+          "dependsOn",
+          "https://w3id.org/zorro#GeneratingPower",
+          "Generating power"
+        ],
+        [
+          "dependsOn",
+          "https://w3id.org/zorro#GeneratingPower",
+          "Generating power"
+        ],
+        [
+          "dependsOn",
+          "https://w3id.org/zorro#GeneratingPower",
+          "Generating power"
+        ],
         [
           "dependsOn",
           "https://w3id.org/zorro#AccurateOilPressureReading",
@@ -449,11 +1333,6 @@
           "dependsOn",
           "https://w3id.org/zorro#CoolingEngineWithAirflow",
           "Cooling engine with airflow"
-        ],
-        [
-          "dependsOn",
-          "https://w3id.org/zorro#GeneratingPower",
-          "Generating power"
         ],
         [
           "dependsOn",
@@ -503,23 +1382,313 @@
       ],
       "query_path": "queries/documentation/10-function-dependencies-generating-engine-power.rq",
       "question": "Which functions depend on \"Generating power\", and which functions does \"Generating power\" depend on?",
-      "recall": 0.0,
-      "tp": 0
+      "recall": 0.15384615384615385,
+      "tp": 14
     },
     {
       "columns": [
         "dependentFunction",
         "dependentFunctionLabel"
       ],
-      "f1": 1.0,
-      "fn": 0,
+      "f1": 0.0,
+      "fn": 72,
       "fp": 0,
-      "gold_rows": [],
-      "precision": 1.0,
+      "gold_rows": [
+        [
+          "https://w3id.org/zorro#AccurateOilPressureReading",
+          "accurate oil pressure reading"
+        ],
+        [
+          "https://w3id.org/zorro#AccurateTemperatureReading",
+          "accurate temperature reading"
+        ],
+        [
+          "https://w3id.org/zorro#AdequateLubrication",
+          "adequate lubrication"
+        ],
+        [
+          "https://w3id.org/zorro#Air-FuelIntake",
+          "air-fuel intake"
+        ],
+        [
+          "https://w3id.org/zorro#Air-FuelIntakeControl",
+          "air-fuel intake control"
+        ],
+        [
+          "https://w3id.org/zorro#Air-FuelMixtureContamination",
+          "air-fuel mixture contamination"
+        ],
+        [
+          "https://w3id.org/zorro#AirIntakeRestriction",
+          "air intake restriction"
+        ],
+        [
+          "https://w3id.org/zorro#AssistingEngineStart",
+          "assisting engine start"
+        ],
+        [
+          "https://w3id.org/zorro#BalancedCylinderCompression",
+          "balanced cylinder compression"
+        ],
+        [
+          "https://w3id.org/zorro#CollectingAndScreeningOil",
+          "collecting and screening oil"
+        ],
+        [
+          "https://w3id.org/zorro#ContainingCylindersAndRelatedParts",
+          "containing cylinders and related parts"
+        ],
+        [
+          "https://w3id.org/zorro#ControllingIntakeAndExhaustFlow",
+          "controlling intake and exhaust flow"
+        ],
+        [
+          "https://w3id.org/zorro#ConvertingLinearToRotationalMotion",
+          "converting linear to rotational motion"
+        ],
+        [
+          "https://w3id.org/zorro#CoolingEngineWithAirflow",
+          "cooling engine with airflow"
+        ],
+        [
+          "https://w3id.org/zorro#CoreEngineFunctionality",
+          "core engine functionality"
+        ],
+        [
+          "https://w3id.org/zorro#CorrectFuelType",
+          "correct fuel type"
+        ],
+        [
+          "https://w3id.org/zorro#CoveringDrivesAndProvidingHousing",
+          "covering drives and providing housing"
+        ],
+        [
+          "https://w3id.org/zorro#CylinderOperation",
+          "cylinder operation"
+        ],
+        [
+          "https://w3id.org/zorro#DirectingAir-FuelMixture",
+          "directing air-fuel mixture"
+        ],
+        [
+          "https://w3id.org/zorro#DistributingFuel-AirMixture",
+          "distributing fuel-air mixture"
+        ],
+        [
+          "https://w3id.org/zorro#DistributingIgnitionAndSparks",
+          "distributing ignition and sparks"
+        ],
+        [
+          "https://w3id.org/zorro#DistributingIgnitionToCylinders",
+          "distributing ignition to cylinders"
+        ],
+        [
+          "https://w3id.org/zorro#DrainingAndCoolingCylinders",
+          "draining and cooling cylinders"
+        ],
+        [
+          "https://w3id.org/zorro#DrivingAndTimingComponents",
+          "driving and timing components"
+        ],
+        [
+          "https://w3id.org/zorro#DrivingPowerToAccessories",
+          "driving power to accessories"
+        ],
+        [
+          "https://w3id.org/zorro#EngineStability",
+          "engine stability"
+        ],
+        [
+          "https://w3id.org/zorro#ExcessiveFuelDuringStart",
+          "excessive fuel during start"
+        ],
+        [
+          "https://w3id.org/zorro#FacilitatingEngineStart",
+          "facilitating engine start"
+        ],
+        [
+          "https://w3id.org/zorro#FilteringOilAndControllingFlow",
+          "filtering oil and controlling flow"
+        ],
+        [
+          "https://w3id.org/zorro#Fuel-AirMixtureControl",
+          "fuel-air mixture control"
+        ],
+        [
+          "https://w3id.org/zorro#Fuel-AirMixtureDistribution",
+          "fuel-air mixture distribution"
+        ],
+        [
+          "https://w3id.org/zorro#FuelDelivery",
+          "fuel delivery"
+        ],
+        [
+          "https://w3id.org/zorro#FuelDistribution",
+          "fuel distribution"
+        ],
+        [
+          "https://w3id.org/zorro#GeneratingPower",
+          "generating power"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAccessoriesAndDrives",
+          "housing accessories and drives"
+        ],
+        [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "housing and supporting combustion"
+        ],
+        [
+          "https://w3id.org/zorro#HousingMainEngine",
+          "housing main engine"
+        ],
+        [
+          "https://w3id.org/zorro#HousingMainPowerComponents",
+          "housing main power components"
+        ],
+        [
+          "https://w3id.org/zorro#IgnitionTiming",
+          "ignition timing"
+        ],
+        [
+          "https://w3id.org/zorro#IgnitionTimingAndDistribution",
+          "ignition timing and distribution"
+        ],
+        [
+          "https://w3id.org/zorro#IgnitionTransfer",
+          "ignition transfer"
+        ],
+        [
+          "https://w3id.org/zorro#InitiatingEngineStart",
+          "initiating engine start"
+        ],
+        [
+          "https://w3id.org/zorro#LubricatingEngineComponents",
+          "lubricating engine components"
+        ],
+        [
+          "https://w3id.org/zorro#MaintainingOilPressure",
+          "maintaining oil pressure"
+        ],
+        [
+          "https://w3id.org/zorro#ManagingAir-FuelMixtureIntake",
+          "managing air-fuel mixture intake"
+        ],
+        [
+          "https://w3id.org/zorro#MeasuringOilQuantity",
+          "measuring oil quantity"
+        ],
+        [
+          "https://w3id.org/zorro#MixingAndRegulatingFuel-Air",
+          "mixing and regulating fuel-air"
+        ],
+        [
+          "https://w3id.org/zorro#OilDistribution",
+          "oil distribution"
+        ],
+        [
+          "https://w3id.org/zorro#OilTemperatureRegulation",
+          "oil temperature regulation"
+        ],
+        [
+          "https://w3id.org/zorro#PowerOutput",
+          "power output"
+        ],
+        [
+          "https://w3id.org/zorro#PowerSupplyForStarting",
+          "power supply for starting"
+        ],
+        [
+          "https://w3id.org/zorro#ProperAir-FuelIntake",
+          "proper air-fuel intake"
+        ],
+        [
+          "https://w3id.org/zorro#ProperAir-FuelMixture",
+          "proper air-fuel mixture"
+        ],
+        [
+          "https://w3id.org/zorro#ProperCooling",
+          "proper cooling"
+        ],
+        [
+          "https://w3id.org/zorro#ProperCylinderSealing",
+          "proper cylinder sealing"
+        ],
+        [
+          "https://w3id.org/zorro#ProperEngineCooling",
+          "proper engine cooling"
+        ],
+        [
+          "https://w3id.org/zorro#ProperIgnition",
+          "proper ignition"
+        ],
+        [
+          "https://w3id.org/zorro#ProperIgnitionTiming",
+          "proper ignition timing"
+        ],
+        [
+          "https://w3id.org/zorro#ProperIgnitionTimingAndDistribution",
+          "proper ignition timing and distribution"
+        ],
+        [
+          "https://w3id.org/zorro#ProperLubrication",
+          "proper lubrication"
+        ],
+        [
+          "https://w3id.org/zorro#ProperOilFlow",
+          "proper oil flow"
+        ],
+        [
+          "https://w3id.org/zorro#ProperOilPressureRegulation",
+          "proper oil pressure regulation"
+        ],
+        [
+          "https://w3id.org/zorro#ProvidingElectricalPower",
+          "providing electrical power"
+        ],
+        [
+          "https://w3id.org/zorro#PumpingFuelAndSecuringComponents",
+          "pumping fuel and securing components"
+        ],
+        [
+          "https://w3id.org/zorro#PumpingOilAndAttachingHousing",
+          "pumping oil and attaching housing"
+        ],
+        [
+          "https://w3id.org/zorro#RegulatingOilFlowAndPressure",
+          "regulating oil flow and pressure"
+        ],
+        [
+          "https://w3id.org/zorro#SecuringAndSupportingAlternator",
+          "securing and supporting alternator"
+        ],
+        [
+          "https://w3id.org/zorro#SecuringCrankcaseComponents",
+          "securing crankcase components"
+        ],
+        [
+          "https://w3id.org/zorro#SmoothEngineOperation",
+          "smooth engine operation"
+        ],
+        [
+          "https://w3id.org/zorro#SupportingCrankcaseOperation",
+          "supporting crankcase operation"
+        ],
+        [
+          "https://w3id.org/zorro#SupportingCylinderOperation",
+          "supporting cylinder operation"
+        ],
+        [
+          "https://w3id.org/zorro#TransmittingMotionAndSealingChamber",
+          "transmitting motion and sealing chamber"
+        ]
+      ],
+      "precision": 0.0,
       "pred_rows": [],
+      "pred_rows_raw": [],
       "query_path": "queries/documentation/11-dependent-functions-power-section.rq",
       "question": "Which functions ultimately depend on the functions of the Power Section?",
-      "recall": 1.0,
+      "recall": 0.0,
       "tp": 0
     },
     {
@@ -529,15 +1698,355 @@
         "system",
         "dependentFunctionCount"
       ],
-      "f1": 1.0,
-      "fn": 0,
-      "fp": 0,
-      "gold_rows": [],
-      "precision": 1.0,
-      "pred_rows": [],
+      "f1": 0.0,
+      "fn": 38,
+      "fp": 9,
+      "gold_rows": [
+        [
+          "https://w3id.org/zorro#AccurateOilPressureReading",
+          "accurate oil pressure reading",
+          "https://w3id.org/zorro#LubricationSystem",
+          "18"
+        ],
+        [
+          "https://w3id.org/zorro#AdequateLubrication",
+          "adequate lubrication",
+          "https://w3id.org/zorro#LubricationSystem",
+          "18"
+        ],
+        [
+          "https://w3id.org/zorro#BalancedCylinderCompression",
+          "balanced cylinder compression",
+          "https://w3id.org/zorro#CylinderSection",
+          "5"
+        ],
+        [
+          "https://w3id.org/zorro#ContainingCylindersAndRelatedParts",
+          "containing cylinders and related parts",
+          "https://w3id.org/zorro#CylinderSection",
+          "5"
+        ],
+        [
+          "https://w3id.org/zorro#CoreEngineFunctionality",
+          "core engine functionality",
+          "https://w3id.org/zorro#PowerSection",
+          "48"
+        ],
+        [
+          "https://w3id.org/zorro#CorrectFuelType",
+          "correct fuel type",
+          "https://w3id.org/zorro#FuelDistributionSystem",
+          "11"
+        ],
+        [
+          "https://w3id.org/zorro#CylinderOperation",
+          "cylinder operation",
+          "https://w3id.org/zorro#CylinderSection",
+          "5"
+        ],
+        [
+          "https://w3id.org/zorro#DistributingFuel-AirMixture",
+          "distributing fuel-air mixture",
+          "https://w3id.org/zorro#FuelDistributionSystem",
+          "11"
+        ],
+        [
+          "https://w3id.org/zorro#DistributingIgnitionToCylinders",
+          "distributing ignition to cylinders",
+          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "1"
+        ],
+        [
+          "https://w3id.org/zorro#DrivingPowerToAccessories",
+          "driving power to accessories",
+          "https://w3id.org/zorro#AccessoryDrives",
+          "12"
+        ],
+        [
+          "https://w3id.org/zorro#EngineStability",
+          "engine stability",
+          "https://w3id.org/zorro#PowerSection",
+          "48"
+        ],
+        [
+          "https://w3id.org/zorro#FacilitatingEngineStart",
+          "facilitating engine start",
+          "https://w3id.org/zorro#CrankingSection",
+          "3"
+        ],
+        [
+          "https://w3id.org/zorro#Fuel-AirMixtureControl",
+          "fuel-air mixture control",
+          "https://w3id.org/zorro#FuelDistributionSystem",
+          "11"
+        ],
+        [
+          "https://w3id.org/zorro#Fuel-AirMixtureDistribution",
+          "fuel-air mixture distribution",
+          "https://w3id.org/zorro#FuelDistributionSystem",
+          "11"
+        ],
+        [
+          "https://w3id.org/zorro#FuelDelivery",
+          "fuel delivery",
+          "https://w3id.org/zorro#FuelDistributionSystem",
+          "11"
+        ],
+        [
+          "https://w3id.org/zorro#FuelDistribution",
+          "fuel distribution",
+          "https://w3id.org/zorro#FuelDistributionSystem",
+          "11"
+        ],
+        [
+          "https://w3id.org/zorro#GeneratingPower",
+          "generating power",
+          "https://w3id.org/zorro#PowerSection",
+          "48"
+        ],
+        [
+          "https://w3id.org/zorro#HousingMainPowerComponents",
+          "housing main power components",
+          "https://w3id.org/zorro#PowerSection",
+          "48"
+        ],
+        [
+          "https://w3id.org/zorro#IgnitionTiming",
+          "ignition timing",
+          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "1"
+        ],
+        [
+          "https://w3id.org/zorro#IgnitionTimingAndDistribution",
+          "ignition timing and distribution",
+          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "1"
+        ],
+        [
+          "https://w3id.org/zorro#IgnitionTransfer",
+          "ignition transfer",
+          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "1"
+        ],
+        [
+          "https://w3id.org/zorro#InitiatingEngineStart",
+          "initiating engine start",
+          "https://w3id.org/zorro#CrankingSection",
+          "3"
+        ],
+        [
+          "https://w3id.org/zorro#LubricatingEngineComponents",
+          "lubricating engine components",
+          "https://w3id.org/zorro#LubricationSystem",
+          "18"
+        ],
+        [
+          "https://w3id.org/zorro#MaintainingOilPressure",
+          "maintaining oil pressure",
+          "https://w3id.org/zorro#LubricationSystem",
+          "18"
+        ],
+        [
+          "https://w3id.org/zorro#OilDistribution",
+          "oil distribution",
+          "https://w3id.org/zorro#LubricationSystem",
+          "18"
+        ],
+        [
+          "https://w3id.org/zorro#OilTemperatureRegulation",
+          "oil temperature regulation",
+          "https://w3id.org/zorro#LubricationSystem",
+          "18"
+        ],
+        [
+          "https://w3id.org/zorro#PowerOutput",
+          "power output",
+          "https://w3id.org/zorro#PowerSection",
+          "48"
+        ],
+        [
+          "https://w3id.org/zorro#PowerSupplyForStarting",
+          "power supply for starting",
+          "https://w3id.org/zorro#ElectricalPower",
+          "3"
+        ],
+        [
+          "https://w3id.org/zorro#ProperAir-FuelMixture",
+          "proper air-fuel mixture",
+          "https://w3id.org/zorro#FuelDistributionSystem",
+          "11"
+        ],
+        [
+          "https://w3id.org/zorro#ProperCylinderSealing",
+          "proper cylinder sealing",
+          "https://w3id.org/zorro#CylinderSection",
+          "5"
+        ],
+        [
+          "https://w3id.org/zorro#ProperIgnition",
+          "proper ignition",
+          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "1"
+        ],
+        [
+          "https://w3id.org/zorro#ProperIgnitionTiming",
+          "proper ignition timing",
+          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "1"
+        ],
+        [
+          "https://w3id.org/zorro#ProperIgnitionTimingAndDistribution",
+          "proper ignition timing and distribution",
+          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "1"
+        ],
+        [
+          "https://w3id.org/zorro#ProperLubrication",
+          "proper lubrication",
+          "https://w3id.org/zorro#LubricationSystem",
+          "18"
+        ],
+        [
+          "https://w3id.org/zorro#ProperOilFlow",
+          "proper oil flow",
+          "https://w3id.org/zorro#LubricationSystem",
+          "18"
+        ],
+        [
+          "https://w3id.org/zorro#ProperOilPressureRegulation",
+          "proper oil pressure regulation",
+          "https://w3id.org/zorro#LubricationSystem",
+          "18"
+        ],
+        [
+          "https://w3id.org/zorro#ProvidingElectricalPower",
+          "providing electrical power",
+          "https://w3id.org/zorro#ElectricalPower",
+          "3"
+        ],
+        [
+          "https://w3id.org/zorro#SmoothEngineOperation",
+          "smooth engine operation",
+          "https://w3id.org/zorro#PowerSection",
+          "48"
+        ]
+      ],
+      "precision": 0.0,
+      "pred_rows": [
+        [
+          "https://w3id.org/zorro#AccurateOilPressureReading",
+          "accurate oil pressure reading",
+          "https://w3id.org/zorro#LubricationSystem",
+          "9"
+        ],
+        [
+          "https://w3id.org/zorro#AdequateLubrication",
+          "adequate lubrication",
+          "https://w3id.org/zorro#LubricationSystem",
+          "9"
+        ],
+        [
+          "https://w3id.org/zorro#LubricatingEngineComponents",
+          "lubricating engine components",
+          "https://w3id.org/zorro#LubricationSystem",
+          "9"
+        ],
+        [
+          "https://w3id.org/zorro#MaintainingOilPressure",
+          "maintaining oil pressure",
+          "https://w3id.org/zorro#LubricationSystem",
+          "9"
+        ],
+        [
+          "https://w3id.org/zorro#OilDistribution",
+          "oil distribution",
+          "https://w3id.org/zorro#LubricationSystem",
+          "9"
+        ],
+        [
+          "https://w3id.org/zorro#OilTemperatureRegulation",
+          "oil temperature regulation",
+          "https://w3id.org/zorro#LubricationSystem",
+          "9"
+        ],
+        [
+          "https://w3id.org/zorro#ProperLubrication",
+          "proper lubrication",
+          "https://w3id.org/zorro#LubricationSystem",
+          "9"
+        ],
+        [
+          "https://w3id.org/zorro#ProperOilFlow",
+          "proper oil flow",
+          "https://w3id.org/zorro#LubricationSystem",
+          "9"
+        ],
+        [
+          "https://w3id.org/zorro#ProperOilPressureRegulation",
+          "proper oil pressure regulation",
+          "https://w3id.org/zorro#LubricationSystem",
+          "9"
+        ]
+      ],
+      "pred_rows_raw": [
+        [
+          "https://w3id.org/zorro#AccurateOilPressureReading",
+          "Accurate oil pressure reading",
+          "https://w3id.org/zorro#LubricationSystem",
+          "9"
+        ],
+        [
+          "https://w3id.org/zorro#AdequateLubrication",
+          "Adequate lubrication",
+          "https://w3id.org/zorro#LubricationSystem",
+          "9"
+        ],
+        [
+          "https://w3id.org/zorro#LubricatingEngineComponents",
+          "Lubricating engine components",
+          "https://w3id.org/zorro#LubricationSystem",
+          "9"
+        ],
+        [
+          "https://w3id.org/zorro#MaintainingOilPressure",
+          "Maintaining oil pressure",
+          "https://w3id.org/zorro#LubricationSystem",
+          "9"
+        ],
+        [
+          "https://w3id.org/zorro#OilDistribution",
+          "Oil distribution",
+          "https://w3id.org/zorro#LubricationSystem",
+          "9"
+        ],
+        [
+          "https://w3id.org/zorro#OilTemperatureRegulation",
+          "Oil temperature regulation",
+          "https://w3id.org/zorro#LubricationSystem",
+          "9"
+        ],
+        [
+          "https://w3id.org/zorro#ProperLubrication",
+          "Proper lubrication",
+          "https://w3id.org/zorro#LubricationSystem",
+          "9"
+        ],
+        [
+          "https://w3id.org/zorro#ProperOilFlow",
+          "Proper oil flow",
+          "https://w3id.org/zorro#LubricationSystem",
+          "9"
+        ],
+        [
+          "https://w3id.org/zorro#ProperOilPressureRegulation",
+          "Proper oil pressure regulation",
+          "https://w3id.org/zorro#LubricationSystem",
+          "9"
+        ]
+      ],
       "query_path": "queries/documentation/12-most-critical-systems.rq",
       "question": "Which systems are most critical based on how many functions depend on them?",
-      "recall": 1.0,
+      "recall": 0.0,
       "tp": 0
     },
     {
@@ -546,296 +2055,558 @@
         "ComponentCount"
       ],
       "f1": 0.0,
-      "fn": 71,
+      "fn": 72,
       "fp": 39,
       "gold_rows": [
         [
-          "Accurate oil pressure reading",
+          "accurate oil pressure reading",
           "1"
         ],
         [
-          "Accurate temperature reading",
+          "accurate temperature reading",
           "1"
         ],
         [
-          "Adequate lubrication",
+          "adequate lubrication",
           "1"
         ],
         [
-          "Air intake restriction",
+          "air intake restriction",
           "1"
         ],
         [
-          "Air-fuel intake",
-          "1"
-        ],
-        [
-          "Air-fuel intake control",
-          "1"
-        ],
-        [
-          "Air-fuel mixture contamination",
-          "1"
-        ],
-        [
-          "Assisting engine start",
-          "1"
-        ],
-        [
-          "Balanced cylinder compression",
-          "1"
-        ],
-        [
-          "Collecting and screening oil",
-          "1"
-        ],
-        [
-          "Containing cylinders and related parts",
-          "1"
-        ],
-        [
-          "Controlling intake and exhaust flow",
-          "1"
-        ],
-        [
-          "Converting linear to rotational motion",
-          "1"
-        ],
-        [
-          "Cooling engine with airflow",
-          "1"
-        ],
-        [
-          "Core engine functionality",
-          "1"
-        ],
-        [
-          "Correct fuel type",
-          "1"
-        ],
-        [
-          "Covering drives and providing housing",
-          "1"
-        ],
-        [
-          "Cylinder operation",
-          "1"
-        ],
-        [
-          "Directing air-fuel mixture",
-          "1"
-        ],
-        [
-          "Distributing fuel-air mixture",
-          "1"
-        ],
-        [
-          "Distributing ignition and sparks",
-          "1"
-        ],
-        [
-          "Distributing ignition to cylinders",
-          "1"
-        ],
-        [
-          "Draining and cooling cylinders",
-          "1"
-        ],
-        [
-          "Driving and timing components",
-          "1"
-        ],
-        [
-          "Driving power to accessories",
-          "1"
-        ],
-        [
-          "Engine stability",
-          "1"
-        ],
-        [
-          "Excessive fuel during start",
-          "1"
-        ],
-        [
-          "Facilitating engine start",
-          "1"
-        ],
-        [
-          "Filtering oil and controlling flow",
-          "1"
-        ],
-        [
-          "Fuel delivery",
-          "1"
-        ],
-        [
-          "Fuel distribution",
-          "1"
-        ],
-        [
-          "Fuel-air mixture control",
-          "1"
-        ],
-        [
-          "Fuel-air mixture distribution",
-          "1"
-        ],
-        [
-          "Housing accessories and drives",
-          "1"
-        ],
-        [
-          "Housing and supporting combustion",
-          "1"
-        ],
-        [
-          "Housing main engine",
-          "1"
-        ],
-        [
-          "Housing main power components",
-          "1"
-        ],
-        [
-          "Ignition timing",
-          "1"
-        ],
-        [
-          "Ignition timing and distribution",
-          "1"
-        ],
-        [
-          "Ignition transfer",
-          "1"
-        ],
-        [
-          "Initiating engine start",
+          "air-fuel intake",
           "2"
         ],
         [
-          "Lubricating engine components",
+          "air-fuel intake control",
+          "2"
+        ],
+        [
+          "air-fuel mixture contamination",
+          "2"
+        ],
+        [
+          "assisting engine start",
           "1"
         ],
         [
-          "Maintaining oil pressure",
+          "balanced cylinder compression",
           "1"
         ],
         [
-          "Managing air-fuel mixture intake",
+          "collecting and screening oil",
           "1"
         ],
         [
-          "Measuring oil quantity",
+          "containing cylinders and related parts",
           "1"
         ],
         [
-          "Mixing and regulating fuel-air",
+          "controlling intake and exhaust flow",
           "1"
         ],
         [
-          "Oil distribution",
+          "converting linear to rotational motion",
           "1"
         ],
         [
-          "Oil temperature regulation",
+          "cooling engine with airflow",
           "1"
         ],
         [
-          "Power output",
+          "core engine functionality",
           "1"
         ],
         [
-          "Power supply for starting",
+          "correct fuel type",
           "1"
         ],
         [
-          "Proper air-fuel intake",
+          "covering drives and providing housing",
           "1"
         ],
         [
-          "Proper air-fuel mixture",
+          "cylinder operation",
           "1"
         ],
         [
-          "Proper cooling",
+          "directing air-fuel mixture",
+          "2"
+        ],
+        [
+          "distributing fuel-air mixture",
+          "2"
+        ],
+        [
+          "distributing ignition and sparks",
           "1"
         ],
         [
-          "Proper cylinder sealing",
+          "distributing ignition to cylinders",
           "1"
         ],
         [
-          "Proper engine cooling",
+          "draining and cooling cylinders",
           "1"
         ],
         [
-          "Proper ignition",
+          "driving and timing components",
           "1"
         ],
         [
-          "Proper ignition timing",
+          "driving power to accessories",
           "1"
         ],
         [
-          "Proper ignition timing and distribution",
+          "engine stability",
           "1"
         ],
         [
-          "Proper lubrication",
+          "excessive fuel during start",
           "1"
         ],
         [
-          "Proper oil flow",
+          "facilitating engine start",
           "1"
         ],
         [
-          "Proper oil pressure regulation",
+          "filtering oil and controlling flow",
           "1"
         ],
         [
-          "Providing electrical power",
+          "fuel delivery",
           "1"
         ],
         [
-          "Pumping fuel and securing components",
+          "fuel distribution",
           "1"
         ],
         [
-          "Pumping oil and attaching housing",
+          "fuel-air mixture control",
+          "2"
+        ],
+        [
+          "fuel-air mixture distribution",
+          "2"
+        ],
+        [
+          "generating power",
           "1"
         ],
         [
-          "Regulating oil flow and pressure",
+          "housing accessories and drives",
           "1"
         ],
         [
-          "Securing and supporting alternator",
+          "housing and supporting combustion",
           "1"
         ],
         [
-          "Securing crankcase components",
+          "housing main engine",
           "1"
         ],
         [
-          "Smooth engine operation",
+          "housing main power components",
           "1"
         ],
         [
-          "Supporting crankcase operation",
+          "ignition timing",
           "1"
         ],
         [
-          "Supporting cylinder operation",
+          "ignition timing and distribution",
           "1"
         ],
         [
-          "Transmitting motion and sealing chamber",
+          "ignition transfer",
+          "1"
+        ],
+        [
+          "initiating engine start",
+          "2"
+        ],
+        [
+          "lubricating engine components",
+          "1"
+        ],
+        [
+          "maintaining oil pressure",
+          "1"
+        ],
+        [
+          "managing air-fuel mixture intake",
+          "2"
+        ],
+        [
+          "measuring oil quantity",
+          "1"
+        ],
+        [
+          "mixing and regulating fuel-air",
+          "2"
+        ],
+        [
+          "oil distribution",
+          "1"
+        ],
+        [
+          "oil temperature regulation",
+          "1"
+        ],
+        [
+          "power output",
+          "1"
+        ],
+        [
+          "power supply for starting",
+          "1"
+        ],
+        [
+          "proper air-fuel intake",
+          "2"
+        ],
+        [
+          "proper air-fuel mixture",
+          "2"
+        ],
+        [
+          "proper cooling",
+          "1"
+        ],
+        [
+          "proper cylinder sealing",
+          "1"
+        ],
+        [
+          "proper engine cooling",
+          "1"
+        ],
+        [
+          "proper ignition",
+          "1"
+        ],
+        [
+          "proper ignition timing",
+          "1"
+        ],
+        [
+          "proper ignition timing and distribution",
+          "1"
+        ],
+        [
+          "proper lubrication",
+          "1"
+        ],
+        [
+          "proper oil flow",
+          "1"
+        ],
+        [
+          "proper oil pressure regulation",
+          "1"
+        ],
+        [
+          "providing electrical power",
+          "1"
+        ],
+        [
+          "pumping fuel and securing components",
+          "1"
+        ],
+        [
+          "pumping oil and attaching housing",
+          "1"
+        ],
+        [
+          "regulating oil flow and pressure",
+          "1"
+        ],
+        [
+          "securing and supporting alternator",
+          "1"
+        ],
+        [
+          "securing crankcase components",
+          "1"
+        ],
+        [
+          "smooth engine operation",
+          "1"
+        ],
+        [
+          "supporting crankcase operation",
+          "1"
+        ],
+        [
+          "supporting cylinder operation",
+          "1"
+        ],
+        [
+          "transmitting motion and sealing chamber",
           "1"
         ]
       ],
       "precision": 0.0,
       "pred_rows": [
+        [
+          "air-fuelintake",
+          "1"
+        ],
+        [
+          "air-fuelintakecontrol",
+          "1"
+        ],
+        [
+          "air-fuelmixturecontamination",
+          "1"
+        ],
+        [
+          "airintakerestriction",
+          "1"
+        ],
+        [
+          "assistingenginestart",
+          "1"
+        ],
+        [
+          "balancedcylindercompression",
+          "1"
+        ],
+        [
+          "collectingandscreeningoil",
+          "1"
+        ],
+        [
+          "containingcylindersandrelatedparts",
+          "1"
+        ],
+        [
+          "convertinglineartorotationalmotion",
+          "1"
+        ],
+        [
+          "coreenginefunctionality",
+          "1"
+        ],
+        [
+          "correctfueltype",
+          "1"
+        ],
+        [
+          "coveringdrivesandprovidinghousing",
+          "1"
+        ],
+        [
+          "cylinderoperation",
+          "1"
+        ],
+        [
+          "directingair-fuelmixture",
+          "1"
+        ],
+        [
+          "distributingfuel-airmixture",
+          "1"
+        ],
+        [
+          "distributingignitionandsparks",
+          "1"
+        ],
+        [
+          "distributingignitiontocylinders",
+          "1"
+        ],
+        [
+          "enginestability",
+          "1"
+        ],
+        [
+          "filteringoilandcontrollingflow",
+          "1"
+        ],
+        [
+          "fuelairmixturecontrol",
+          "1"
+        ],
+        [
+          "fuelairmixturedistribution",
+          "1"
+        ],
+        [
+          "fueldelivery",
+          "1"
+        ],
+        [
+          "fueldistribution",
+          "1"
+        ],
+        [
+          "housingandsupportingcombustion",
+          "1"
+        ],
+        [
+          "housingmainengine",
+          "1"
+        ],
+        [
+          "ignitiontiming",
+          "1"
+        ],
+        [
+          "ignitiontiminganddistribution",
+          "1"
+        ],
+        [
+          "ignitiontransfer",
+          "1"
+        ],
+        [
+          "managingair-fuelmixtureintake",
+          "1"
+        ],
+        [
+          "managingairfuelmixtureintake",
+          "1"
+        ],
+        [
+          "mixingandregulatingfuel-air",
+          "1"
+        ],
+        [
+          "poweroutput",
+          "1"
+        ],
+        [
+          "properair-fuelintake",
+          "1"
+        ],
+        [
+          "propercylindersealing",
+          "1"
+        ],
+        [
+          "pumpingfuelandsecuringcomponents",
+          "1"
+        ],
+        [
+          "pumpingoilandattachinghousing",
+          "1"
+        ],
+        [
+          "securingandsupportingalternator",
+          "1"
+        ],
+        [
+          "securingcrankcasecomponents",
+          "1"
+        ],
+        [
+          "smoothengineoperation",
+          "1"
+        ]
+      ],
+      "pred_rows_raw": [
+        [
+          "MixingAndRegulatingFuel-Air",
+          "1"
+        ],
+        [
+          "HousingAndSupportingCombustion",
+          "1"
+        ],
+        [
+          "HousingMainEngine",
+          "1"
+        ],
+        [
+          "CollectingAndScreeningOil",
+          "1"
+        ],
+        [
+          "FilteringOilAndControllingFlow",
+          "1"
+        ],
+        [
+          "SecuringCrankcaseComponents",
+          "1"
+        ],
+        [
+          "SecuringAndSupportingAlternator",
+          "1"
+        ],
+        [
+          "PumpingOilAndAttachingHousing",
+          "1"
+        ],
+        [
+          "PumpingFuelAndSecuringComponents",
+          "1"
+        ],
+        [
+          "DirectingAir-FuelMixture",
+          "1"
+        ],
+        [
+          "DistributingIgnitionAndSparks",
+          "1"
+        ],
+        [
+          "ConvertingLinearToRotationalMotion",
+          "1"
+        ],
+        [
+          "CoveringDrivesAndProvidingHousing",
+          "1"
+        ],
+        [
+          "DistributingIgnitionToCylinders",
+          "1"
+        ],
+        [
+          "IgnitionTiming",
+          "1"
+        ],
+        [
+          "IgnitionTimingAndDistribution",
+          "1"
+        ],
+        [
+          "IgnitionTransfer",
+          "1"
+        ],
+        [
+          "CorrectFuelType",
+          "1"
+        ],
+        [
+          "DistributingFuel-AirMixture",
+          "1"
+        ],
+        [
+          "FuelDelivery",
+          "1"
+        ],
+        [
+          "FuelDistribution",
+          "1"
+        ],
+        [
+          "FuelAirMixtureControl",
+          "1"
+        ],
+        [
+          "FuelAirMixtureDistribution",
+          "1"
+        ],
+        [
+          "ManagingAir-FuelMixtureIntake",
+          "1"
+        ],
+        [
+          "AssistingEngineStart",
+          "1"
+        ],
         [
           "Air-FuelIntake",
           "1"
@@ -853,115 +2624,7 @@
           "1"
         ],
         [
-          "AssistingEngineStart",
-          "1"
-        ],
-        [
-          "BalancedCylinderCompression",
-          "1"
-        ],
-        [
-          "CollectingAndScreeningOil",
-          "1"
-        ],
-        [
-          "ContainingCylindersAndRelatedParts",
-          "1"
-        ],
-        [
-          "ConvertingLinearToRotationalMotion",
-          "1"
-        ],
-        [
-          "CoreEngineFunctionality",
-          "1"
-        ],
-        [
-          "CorrectFuelType",
-          "1"
-        ],
-        [
-          "CoveringDrivesAndProvidingHousing",
-          "1"
-        ],
-        [
-          "CylinderOperation",
-          "1"
-        ],
-        [
-          "DirectingAir-FuelMixture",
-          "1"
-        ],
-        [
-          "DistributingFuel-AirMixture",
-          "1"
-        ],
-        [
-          "DistributingIgnitionAndSparks",
-          "1"
-        ],
-        [
-          "DistributingIgnitionToCylinders",
-          "1"
-        ],
-        [
-          "EngineStability",
-          "1"
-        ],
-        [
-          "FilteringOilAndControllingFlow",
-          "1"
-        ],
-        [
-          "FuelAirMixtureControl",
-          "1"
-        ],
-        [
-          "FuelAirMixtureDistribution",
-          "1"
-        ],
-        [
-          "FuelDelivery",
-          "1"
-        ],
-        [
-          "FuelDistribution",
-          "1"
-        ],
-        [
-          "HousingAndSupportingCombustion",
-          "1"
-        ],
-        [
-          "HousingMainEngine",
-          "1"
-        ],
-        [
-          "IgnitionTiming",
-          "1"
-        ],
-        [
-          "IgnitionTimingAndDistribution",
-          "1"
-        ],
-        [
-          "IgnitionTransfer",
-          "1"
-        ],
-        [
-          "ManagingAir-FuelMixtureIntake",
-          "1"
-        ],
-        [
           "ManagingAirFuelMixtureIntake",
-          "1"
-        ],
-        [
-          "MixingAndRegulatingFuel-Air",
-          "1"
-        ],
-        [
-          "PowerOutput",
           "1"
         ],
         [
@@ -969,23 +2632,31 @@
           "1"
         ],
         [
+          "BalancedCylinderCompression",
+          "1"
+        ],
+        [
+          "ContainingCylindersAndRelatedParts",
+          "1"
+        ],
+        [
+          "CylinderOperation",
+          "1"
+        ],
+        [
           "ProperCylinderSealing",
           "1"
         ],
         [
-          "PumpingFuelAndSecuringComponents",
+          "CoreEngineFunctionality",
           "1"
         ],
         [
-          "PumpingOilAndAttachingHousing",
+          "EngineStability",
           "1"
         ],
         [
-          "SecuringAndSupportingAlternator",
-          "1"
-        ],
-        [
-          "SecuringCrankcaseComponents",
+          "PowerOutput",
           "1"
         ],
         [
@@ -998,5 +2669,6 @@
       "recall": 0.0,
       "tp": 0
     }
-  ]
+  ],
+  "skipped_questions": []
 }
