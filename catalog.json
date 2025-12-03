@@ -119,175 +119,175 @@
       "name": "01-cause-low-oil-pressure",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/01-cause-low-oil-pressure.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/documentation/01-cause-low-oil-pressure.rq"
     },
     {
       "@type": "SoftwareSourceCode",
       "name": "02-solution-low-oil-pressure",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/02-solution-low-oil-pressure.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/documentation/02-solution-low-oil-pressure.rq"
     },
     {
       "@type": "SoftwareSourceCode",
       "name": "03-component-functions",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/03-component-functions.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/documentation/03-component-functions.rq"
     },
     {
       "@type": "SoftwareSourceCode",
       "name": "04-function-depends-on-housing-combustion",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/04-function-depends-on-housing-combustion.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/documentation/04-function-depends-on-housing-combustion.rq"
     },
     {
       "@type": "SoftwareSourceCode",
-      "name": "05-top10-problem-types",
+      "name": "05-part-assemblies-std-475",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/05-top10-problem-types.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/documentation/05-part-assemblies-std-475.rq"
     },
     {
       "@type": "SoftwareSourceCode",
-      "name": "06-frequency-cracked",
+      "name": "06-components-transferring-power",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/06-frequency-cracked.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/documentation/06-components-transferring-power.rq"
     },
     {
       "@type": "SoftwareSourceCode",
-      "name": "07-top10-problematic-parts",
+      "name": "07-parts-in-accessory-housing",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/07-top10-problematic-parts.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/documentation/07-parts-in-accessory-housing.rq"
     },
     {
       "@type": "SoftwareSourceCode",
-      "name": "08-parts-for-leaking",
+      "name": "08-system-for-carburetor-assembly",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/08-parts-for-leaking.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/documentation/08-system-for-carburetor-assembly.rq"
     },
     {
       "@type": "SoftwareSourceCode",
-      "name": "09-action-types-cracked-baffle",
+      "name": "09-problems-shared-causes",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/09-action-types-cracked-baffle.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/documentation/09-problems-shared-causes.rq"
     },
     {
       "@type": "SoftwareSourceCode",
-      "name": "10-problem-types-for-baffle",
+      "name": "10-function-dependencies-generating-engine-power",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/10-problem-types-for-baffle.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/documentation/10-function-dependencies-generating-engine-power.rq"
     },
     {
       "@type": "SoftwareSourceCode",
-      "name": "11-problemtype-frequency-by-location",
+      "name": "11-dependent-functions-power-section",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/11-problemtype-frequency-by-location.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/documentation/11-dependent-functions-power-section.rq"
     },
     {
       "@type": "SoftwareSourceCode",
-      "name": "12-part-assemblies-STD-475",
+      "name": "12-most-critical-systems",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/12-part-assemblies-STD-475.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/documentation/12-most-critical-systems.rq"
     },
     {
       "@type": "SoftwareSourceCode",
-      "name": "13-top10-problem-descriptions",
+      "name": "13-function-component-counts",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/13-top10-problem-descriptions.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/documentation/13-function-component-counts.rq"
     },
     {
       "@type": "SoftwareSourceCode",
-      "name": "14-components-transferring-power",
+      "name": "01-top10-problem-types",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/14-components-transferring-power.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/logbook/01-top10-problem-types.rq"
     },
     {
       "@type": "SoftwareSourceCode",
-      "name": "15-parts-in-accessory-housing",
+      "name": "02-frequency-cracked",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/15-parts-in-accessory-housing.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/logbook/02-frequency-cracked.rq"
     },
     {
       "@type": "SoftwareSourceCode",
-      "name": "16-system-for-carburetor-assembly",
+      "name": "03-top10-problematic-parts",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/16-system-for-carburetor-assembly.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/logbook/03-top10-problematic-parts.rq"
     },
     {
       "@type": "SoftwareSourceCode",
-      "name": "17-problems-shared-causes",
+      "name": "04-parts-for-leaking",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/17-problems-shared-causes.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/logbook/04-parts-for-leaking.rq"
     },
     {
       "@type": "SoftwareSourceCode",
-      "name": "18-problems-at-2-and-4-cyl",
+      "name": "05-action-types-cracked-baffle",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/18-problems-at-2-and-4-cyl.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/logbook/05-action-types-cracked-baffle.rq"
     },
     {
       "@type": "SoftwareSourceCode",
-      "name": "19-function-dependencies-generating-engine-power",
+      "name": "06-problem-types-for-baffle",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/19-function-dependencies-generating-engine-power.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/logbook/06-problem-types-for-baffle.rq"
     },
     {
       "@type": "SoftwareSourceCode",
-      "name": "20-dependent-functions-power-section",
+      "name": "07-problemtype-frequency-by-location",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/20-dependent-functions-power-section.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/logbook/07-problemtype-frequency-by-location.rq"
     },
     {
       "@type": "SoftwareSourceCode",
-      "name": "21-most-critical-systems",
+      "name": "08-top10-problem-descriptions",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/21-most-critical-systems.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/logbook/08-top10-problem-descriptions.rq"
     },
     {
       "@type": "SoftwareSourceCode",
-      "name": "22-actions-for-leaking-at-4",
+      "name": "09-problems-at-2-and-4-cyl",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/22-actions-for-leaking-at-4.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/logbook/09-problems-at-2-and-4-cyl.rq"
     },
     {
       "@type": "SoftwareSourceCode",
-      "name": "23-function-component-counts",
+      "name": "10-actions-for-leaking-at-4",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/23-function-component-counts.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/logbook/10-actions-for-leaking-at-4.rq"
     },
     {
       "@type": "SoftwareSourceCode",
-      "name": "24-top10-problematic-part-types",
+      "name": "11-top10-problematic-part-types",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/24-top10-problematic-part-types.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/logbook/11-top10-problematic-part-types.rq"
     },
     {
       "@type": "SoftwareSourceCode",
-      "name": "25-top10-action-types",
+      "name": "12-top10-action-types",
       "programmingLanguage": "SPARQL",
       "encodingFormat": "application/sparql-query",
-      "contentUrl": "https://w3id.org/zorro#/queries/25-top10-action-types.rq"
+      "contentUrl": "https://w3id.org/zorro#/queries/logbook/12-top10-action-types.rq"
     }
   ]
 }

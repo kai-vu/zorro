@@ -8,6 +8,7 @@ summarizing execution status and result counts.
 from __future__ import annotations
 
 import argparse
+import json
 import logging
 import textwrap
 import time
@@ -49,6 +50,8 @@ class QueryTestResult:
     row_count: int | None
     duration_seconds: float
     note: str | None = None
+    columns: list[str] | None = None
+    row_values: list[tuple[str, ...]] | None = None
 
     @property
     def display_name(self) -> str:
@@ -85,8 +88,11 @@ def parse_args(argv: Sequence[str] | None = None) -> QueryEvaluationConfig:
     parser.add_argument(
         "--report-path",
         type=Path,
-        default=Path("reports/competency-report.md"),
-        help="Path where the markdown report will be written (default: reports/competency-report.md).",
+        default=Path("queries/reports/competency-report.md"),
+        help=(
+            "Path where the markdown report will be written "
+            "(default: queries/reports/competency-report.md)."
+        ),
     )
     parser.add_argument(
         "--log-level",
@@ -152,6 +158,11 @@ def execute_query(graph: ConjunctiveGraph, query_path: Path) -> QueryTestResult:
         result: Result = graph.query(query_text)
         # Materialize results to ensure we capture row counts now.
         rows = list(result)
+        columns = [str(var) for var in result.vars]
+        row_values = [
+            tuple("" if value is None else str(value) for value in record)
+            for record in rows
+        ]
         duration = time.perf_counter() - start
         status = "pass" if rows else "empty"
         note = None
@@ -160,9 +171,11 @@ def execute_query(graph: ConjunctiveGraph, query_path: Path) -> QueryTestResult:
         return QueryTestResult(
             query_path=query_path,
             status=status,
-            row_count=len(rows),
+            row_count=len(row_values),
             duration_seconds=duration,
             note=note,
+            columns=columns,
+            row_values=row_values,
         )
     except Exception as exc:  # noqa: BLE001
         duration = time.perf_counter() - start
@@ -174,6 +187,8 @@ def execute_query(graph: ConjunctiveGraph, query_path: Path) -> QueryTestResult:
             row_count=None,
             duration_seconds=duration,
             note=note,
+            columns=None,
+            row_values=None,
         )
 
 
@@ -193,6 +208,8 @@ def evaluate_queries(graph: ConjunctiveGraph, query_dir: Path) -> list[QueryTest
 
     results: list[QueryTestResult] = []
     for query_path in sorted(query_dir.rglob("*.rq")):
+        if query_dir.parent.name.startswith('.'):
+            continue
         results.append(execute_query(graph, query_path))
     return results
 
@@ -206,6 +223,20 @@ def render_report(results: Iterable[QueryTestResult], output_path: Path) -> None
     """
 
     results = list(results)
+
+    def extract_question(result: QueryTestResult) -> str:
+        for line in result.query_path.read_text(encoding="utf-8").splitlines():
+            stripped = line.strip()
+            if stripped.startswith("#"):
+                return stripped.lstrip("#").strip()
+        return result.query_path.stem
+
+    grouped: dict[str, list[QueryTestResult]] = {}
+    for result in results:
+        relative = result.query_path.relative_to(Path("queries"))
+        category = relative.parts[0] if len(relative.parts) > 1 else "."
+        grouped.setdefault(category, []).append(result)
+
     passed = sum(1 for result in results if result.status == "pass")
     empty = sum(1 for result in results if result.status == "empty")
     errored = sum(1 for result in results if result.status == "error")
@@ -219,22 +250,50 @@ def render_report(results: Iterable[QueryTestResult], output_path: Path) -> None
         f"- Passed: {passed}",
         f"- Empty: {empty}",
         f"- Errors: {errored}",
-        "",
-        "| Query | Status | Rows | Duration (s) | Notes |",
-        "| --- | --- | ---: | ---: | --- |",
     ]
 
-    row_lines: list[str] = []
-    for result in results:
-        row_count_str = "" if result.row_count is None else str(result.row_count)
-        duration_str = f"{result.duration_seconds:.3f}"
-        note = result.note or ""
-        row_lines.append(
-            f"| {result.display_name} | {result.status} | {row_count_str} | {duration_str} | {note} |"
-        )
+    table_lines: list[str] = []
+    for category in sorted(grouped):
+        table_lines.append(f"\n## {category.capitalize()} Queries\n")
+        table_lines.append("| Question | Status | Rows | Duration (s) | Notes |")
+        table_lines.append("| --- | --- | ---: | ---: | --- |")
+        for result in sorted(grouped[category], key=lambda r: r.query_path.name):
+            question = extract_question(result)
+            row_count_str = "" if result.row_count is None else str(result.row_count)
+            duration_str = f"{result.duration_seconds:.3f}"
+            note = result.note or ""
+            table_lines.append(
+                f"| {question} | {result.status} | {row_count_str} | {duration_str} | {note} |"
+            )
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    output_path.write_text("\n".join(header_lines + row_lines) + "\n", encoding="utf-8")
+    output_path.write_text("\n".join(header_lines + table_lines) + "\n", encoding="utf-8")
+
+    cache_payload = {
+        "generated": timestamp,
+        "total": len(results),
+        "passed": passed,
+        "empty": empty,
+        "errors": errored,
+        "results": {
+            category: [
+                {
+                    "question": extract_question(result),
+                    "query_path": str(result.query_path),
+                    "status": result.status,
+                    "row_count": result.row_count,
+                    "duration_seconds": result.duration_seconds,
+                    "note": result.note,
+                    "columns": result.columns or [],
+                    "rows": [list(row) for row in (result.row_values or [])],
+                }
+                for result in sorted(grouped[category], key=lambda r: r.query_path.name)
+            ]
+            for category in sorted(grouped)
+        },
+    }
+    cache_path = output_path.with_name("competency_sparql_cache.json")
+    cache_path.write_text(json.dumps(cache_payload, indent=2, sort_keys=True), encoding="utf-8")
     LOGGER.info("Wrote report to %s", output_path)
 
 

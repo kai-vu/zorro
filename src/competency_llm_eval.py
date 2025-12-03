@@ -27,7 +27,7 @@ QUERY_DIR = Path("queries")
 DOCUMENTATION_QUERY_DIR = QUERY_DIR / "documentation"
 GENERATED_RDF_DIR = Path("generated-rdf")
 EXCLUDED_PREFIXES = ("extractions_",)
-CACHE_PATH = Path("reports/competency_llm_cache.json")
+CACHE_PATH = Path("queries/reports/competency_llm_cache.json")
 
 LOGGER = logging.getLogger(__name__)
 
