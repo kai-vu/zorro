@@ -1,5 +1,4 @@
-# Which functions depend directly or indirectly on function X?
-# And which functions does function X depend on, directly or indirectly?
+# Which functions depend on "Generating power", and which functions does "Generating power" depend on?
 
 PREFIX : <https://w3id.org/zorro#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>

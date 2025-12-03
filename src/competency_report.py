@@ -192,7 +192,7 @@ def evaluate_queries(graph: ConjunctiveGraph, query_dir: Path) -> list[QueryTest
         raise FileNotFoundError(f"Query directory does not exist: {query_dir}")
 
     results: list[QueryTestResult] = []
-    for query_path in sorted(query_dir.glob("*.rq")):
+    for query_path in sorted(query_dir.rglob("*.rq")):
         results.append(execute_query(graph, query_path))
     return results
 

@@ -1,4 +1,4 @@
-# What are the top 10 frequent problem types?
+# Which problem types appear most frequently in the logbook extracts?
 
 PREFIX : <https://w3id.org/zorro#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>

@@ -1,10 +1,11 @@
-# Which components implement the given function X?
+# Which parts appear in logbook problems classified as leaking?
 
 PREFIX : <https://w3id.org/zorro#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?component
+SELECT DISTINCT ?part
 WHERE {
-    ?component :hasFunction :DrivingPowerToAccessories .
+    ?problem rdf:type :LeakingProblem ;
+             :involves ?part .
 }

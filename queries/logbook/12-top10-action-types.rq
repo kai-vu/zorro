@@ -1,4 +1,4 @@
-# Which maintenance action types are most frequently recorded?
+# Which maintenance action types are most frequently recorded in the logbook?
 
 PREFIX : <https://w3id.org/zorro#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>

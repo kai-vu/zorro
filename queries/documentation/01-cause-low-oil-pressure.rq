@@ -1,12 +1,11 @@
-# What is the solution for the given problem X?
+# Which causes are documented for the problem "Low Oil Pressure"?
 
 PREFIX : <https://w3id.org/zorro#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?problem ?solution
+SELECT ?problem ?cause
 WHERE {
     BIND(:LowOilPressure AS ?problem)
     ?problem :hasCause ?cause .
-    ?solution :solves ?cause .
 }

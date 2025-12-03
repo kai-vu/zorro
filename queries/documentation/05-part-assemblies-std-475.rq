@@ -1,11 +1,11 @@
-# The given problem type X can happen with which parts?
+# Which assemblies include part number "STD-475"?
 
 PREFIX : <https://w3id.org/zorro#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT DISTINCT ?part
+SELECT DISTINCT ?assembly
 WHERE {
-    ?problem rdf:type :LeakingProblem ;
-             :involves ?part .
+    ?part :partNumber "STD-475" ;
+          :partOf ?assembly .
 }

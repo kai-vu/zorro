@@ -1,4 +1,4 @@
-# What is the frequency of the given problem type X?
+# How many logbook problems are classified as cracked?
 
 PREFIX : <https://w3id.org/zorro#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>

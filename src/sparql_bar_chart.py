@@ -77,7 +77,7 @@ def parse_args(argv: Sequence[str] | None = None) -> SPARQLPlotConfig:
     parser.add_argument(
         "--query",
         type=Path,
-        default=Path("queries/05-top10-problem-types.rq"),
+        default=Path("queries/logbook/01-top10-problem-types.rq"),
         help="Path to the SPARQL query file.",
     )
     parser.add_argument(

@@ -1,4 +1,4 @@
-# All the actions taken to solve the given problem X at location Y?
+# Which actions were taken for leaking problems at cylinder 4?
 
 PREFIX : <https://w3id.org/zorro#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>

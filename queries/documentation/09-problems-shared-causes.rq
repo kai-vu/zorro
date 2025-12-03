@@ -1,4 +1,4 @@
-# Which problems share the same cause?
+# Which documented problems share the same cause?
 
 PREFIX : <https://w3id.org/zorro#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>

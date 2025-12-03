@@ -1,4 +1,4 @@
-# What are all the problem types that can happen for the given part X?
+# Which problem types occur for the baffle component in the logbook?
 
 PREFIX : <https://w3id.org/zorro#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>

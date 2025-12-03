@@ -1,4 +1,4 @@
-# What are all the action types taken for the given problem type X in the given part Y?
+# Which action types are recorded for cracked baffle problems in the logbook?
 
 PREFIX : <https://w3id.org/zorro#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>

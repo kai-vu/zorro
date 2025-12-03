@@ -1,4 +1,4 @@
-# What part types are involved in problems most frequently?
+# Which part types are most frequently associated with problems in the logbook?
 
 PREFIX : <https://w3id.org/zorro#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>

@@ -1,4 +1,4 @@
-# What are the top 10 frequent problem descriptions and action descriptions with their frequency?
+# Which problem descriptions occur most frequently in the logbook extracts?
 
 PREFIX : <https://w3id.org/zorro#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>

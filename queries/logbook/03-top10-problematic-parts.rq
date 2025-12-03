@@ -1,4 +1,4 @@
-# What are the top 10 frequent problematic parts?
+# Which 10 parts are most frequently involved in logbook problem reports?
 
 PREFIX : <https://w3id.org/zorro#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>

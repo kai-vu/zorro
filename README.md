@@ -16,9 +16,10 @@ The KG structure can be seen as 3 layers: the *schema*, *domain knowledge*, and 
 
 ## Query Exploration
 
-- Run `python -m src.sparql_bar_chart` to execute the default top-problem query (`queries/05-top10-problem-types.rq`) against the GPT extraction graph and render a horizontal bar chart (`query_bar_chart.png`).
+- Run `python -m src.sparql_bar_chart` to execute the default top-problem query (`queries/logbook/01-top10-problem-types.rq`) against the GPT extraction graph and render a horizontal bar chart (`query_bar_chart.png`).
 - Tweak the visualization with options such as `--top-n`, `--orientation`, `--wrap-width`, or `--style` (see `python -m src.sparql_bar_chart --help`).
-- Produce a markdown regression report for all competency questions with `python -m src.competency_report`. Use `--report-path` to control the output location (defaults to `reports/competency-report.md`).
+- Produce a markdown regression report for all competency questions with `python -m src.competency_report`. Use `--report-path` to control the output location (defaults to `reports/competency-report.md`). Queries are grouped under `queries/documentation/` (documentation-derived knowledge) and `queries/logbook/` (logbook-derived knowledge).
+- Benchmark LLM answers to documentation-focused competency questions with `python -m src.competency_llm_eval`. This script feeds the model the full non-extraction RDF graph and reports precision/recall/F1 against the SPARQL gold answers.
 
 ## Schema
 The ontology specification draft is available at https://w3id.org/ZorroOntology

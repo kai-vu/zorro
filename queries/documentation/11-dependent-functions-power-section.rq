@@ -1,4 +1,4 @@
-# For a given system X, what are all dependent functions?
+# Which functions ultimately depend on the functions of the Power Section?
 
 PREFIX : <https://w3id.org/zorro#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>

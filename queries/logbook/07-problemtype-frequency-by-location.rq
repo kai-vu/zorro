@@ -1,4 +1,4 @@
-# What is the frequency of all the problem types at each location (which Cylinder or Engine)?
+# How often does each problem type appear at each recorded location (cylinder or engine)?
 
 PREFIX : <https://w3id.org/zorro#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>

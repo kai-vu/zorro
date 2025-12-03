@@ -1,0 +1,267 @@
+{
+  "00a3fc175c7101a8438b05fd6e065c6b55968bf492fb584e20fadf0c4c318a9a": {
+    "columns": [
+      "assembly"
+    ],
+    "rows": [
+      [
+        "AccessoryDrives"
+      ],
+      [
+        "CarburetorAssembly"
+      ],
+      [
+        "CrankingSection"
+      ],
+      [
+        "CylinderAssembly"
+      ],
+      [
+        "CylinderSection"
+      ],
+      [
+        "FuelDistributionSystem"
+      ],
+      [
+        "IgnitionDistributionSystem"
+      ],
+      [
+        "MagnetosMagnetoDrivesHarnessesAndSparkPlugs"
+      ],
+      [
+        "PropellerGovernorDriveVacuumPumpDriveAndCover"
+      ],
+      [
+        "StarterMotorAndAttachingParts"
+      ]
+    ]
+  },
+  "0486b6a105ec230cb88f4f61d27c77a7c1e28a13ab6660ab02115c39a012ff00": {
+    "columns": [
+      "System",
+      "DependentFunctionCount"
+    ],
+    "rows": []
+  },
+  "1189909e70f9c116d41d205420933ff560fae14fe2ec38017677fe8174656298": {
+    "columns": [
+      "Entity",
+      "Function"
+    ],
+    "rows": [
+      [
+        "Cranking Section",
+        "Facilitating engine start"
+      ],
+      [
+        "Cranking Section",
+        "Initiating engine start"
+      ],
+      [
+        "Accessory Housing Assembly",
+        "Housing accessories and drives"
+      ]
+    ]
+  },
+  "1cced796e29c1d3ed885e352f9bcc9b5c6c584b26bc19e49118bf310e37930f7": {
+    "columns": [
+      "Remedy"
+    ],
+    "rows": [
+      [
+        "Check gasket between accessory housing and crankcase. "
+      ],
+      [
+        "Check line for obstruction. Clean suction strainer. "
+      ],
+      [
+        "Remove and clean oil pressure relief valve. "
+      ],
+      [
+        "Replace. "
+      ],
+      [
+        "See High Oil Temperature in Trouble column. "
+      ]
+    ]
+  },
+  "407a5c88c699e79c5ea333c264c52000e5b4f0b4ad07f4a56a6a5acea1276693": {
+    "columns": [
+      "DependsOn"
+    ],
+    "rows": []
+  },
+  "50abd984faad1d58bf945282e6f58015417a7f8117aa4a13787cd06281a41f1d": {
+    "columns": [
+      "partNumber",
+      "label"
+    ],
+    "rows": [
+      [
+        "21A21533-04",
+        "Accessory"
+      ]
+    ]
+  },
+  "6ad1f4799e64d6740dacf93aeba3b6ea67a26810ea321296e98bae31e38963de": {
+    "columns": [
+      "HousingMainEngine",
+      "HousingAndSupportingCombustion",
+      "CollectingAndScreeningOil",
+      "PumpingOilAndAttachingHousing",
+      "RegulatingOilFlowAndPressure",
+      "FilteringOilAndControllingFlow",
+      "MeasuringOilQuantity",
+      "CoreEngineFunctionality",
+      "EngineStability",
+      "HousingMainPowerComponents",
+      "PowerOutput",
+      "SmoothEngineOperation",
+      "DistributingIgnitionToCylinders",
+      "IgnitionTiming",
+      "IgnitionTimingAndDistribution",
+      "IgnitionTransfer",
+      "ProperIgnition",
+      "ProperIgnitionTiming",
+      "ProperIgnitionTimingAndDistribution",
+      "DistributingIgnitionAndSparks",
+      "DistributingFuel-AirMixture",
+      "FuelDelivery",
+      "FuelDistribution",
+      "CorrectFuelType",
+      "FuelAirMixtureControl",
+      "FuelAirMixtureDistribution",
+      "ProperAirFuelMixture"
+    ],
+    "rows": [
+      [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ]
+    ]
+  },
+  "850ff474c6dcb653a3a994a4e7502114ab0eb727bb1edc7be9db74bba0918df9": {
+    "columns": [
+      "system"
+    ],
+    "rows": [
+      [
+        "Fuel Distribution System"
+      ]
+    ]
+  },
+  "a50e9ad1a14737189b84875200fe257fd3f1a79fc91d99bed2fb436f67181e0d": {
+    "columns": [
+      "Function"
+    ],
+    "rows": [
+      [
+        "CoreEngineFunctionality"
+      ],
+      [
+        "EngineStability"
+      ],
+      [
+        "HousingMainPowerComponents"
+      ],
+      [
+        "PowerOutput"
+      ],
+      [
+        "SmoothEngineOperation"
+      ]
+    ]
+  },
+  "a659d4346ffcd5c7b967017798d06af4857beefd1ff4ec1343e80a8805afe2ab": {
+    "columns": [
+      "Cause"
+    ],
+    "rows": [
+      [
+        "Air lock or dirt in relief valve"
+      ],
+      [
+        "Defective pressure gage"
+      ],
+      [
+        "High Oil Temperature"
+      ],
+      [
+        "Insufficient oil"
+      ],
+      [
+        "Leak in suction line or pressure line"
+      ],
+      [
+        "Stoppage in oil pump intake passage"
+      ]
+    ]
+  },
+  "d09ddbea8fb6e2b3cead0dd4f37fb78163adba929bfdd728546bd3539ffc0673": {
+    "columns": [
+      "Function",
+      "Relation"
+    ],
+    "rows": [
+      [
+        "Power output",
+        "subFunctionOf Generating power"
+      ],
+      [
+        "Housing main power components",
+        "subFunctionOf Generating power"
+      ],
+      [
+        "Generating power",
+        "dependsOn Accurate oil pressure reading, Accurate temperature reading, Adequate lubrication, Cooling engine with airflow, Lubricating engine components, Maintaining oil pressure, Oil distribution, Oil temperature regulation, Proper cooling, Proper engine cooling, Proper lubrication, Proper oil flow, Proper oil pressure regulation"
+      ]
+    ]
+  },
+  "f4c83d766cf559e903d9b674db594de2322ba26d82a58ea8d4d13455a6a682d8": {
+    "columns": [
+      "Cause",
+      "Problems"
+    ],
+    "rows": [
+      [
+        "Leak in induction system",
+        "Failure of Engine to Develop Full Power; Failure of Engine to Idle Properly"
+      ]
+    ]
+  },
+  "fdc070082838a9c5d18f03998a3d1bb8b31725acc0e1ace3223ebcfe0be11ab2": {
+    "columns": [
+      "Component"
+    ],
+    "rows": [
+      [
+        "Accessory Drives"
+      ]
+    ]
+  }
+}

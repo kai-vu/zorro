@@ -1,4 +1,4 @@
-# Which problems are associated with the given location X?
+# Which problems are reported at both cylinder 2 and cylinder 4?
 
 PREFIX : <https://w3id.org/zorro#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
