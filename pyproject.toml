@@ -17,6 +17,7 @@ dependencies = [
     "makeprov>=0.1",
     "spacy>=3.7",
     "matplotlib>=3.9",
+    "requests>=2.31",
 ]
 readme = "README.md"
 
