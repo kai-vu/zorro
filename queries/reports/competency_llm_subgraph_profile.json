@@ -1,0 +1,869 @@
+{
+  "generated": "2025-12-04 08:52:58 UTC",
+  "profiles": [
+    {
+      "context_hash": "3722068f57d38ad4ebabfb72f291fbbe6e5f64b1f38e88e97828ece05885a632",
+      "query_path": "queries/documentation/01-cause-low-oil-pressure.rq",
+      "question": "Which causes are documented for the problem \"Low Oil Pressure\"?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 15,
+          "uri": 218
+        },
+        "predicate_breakdown": [
+          {
+            "count": 74,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 57,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 28,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 15,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 14,
+            "predicate": "https://w3id.org/zorro#hasCause"
+          },
+          {
+            "count": 13,
+            "predicate": "https://w3id.org/zorro#addresses"
+          },
+          {
+            "count": 8,
+            "predicate": "https://w3id.org/zorro#addressesProblem"
+          },
+          {
+            "count": 8,
+            "predicate": "https://w3id.org/zorro#defines"
+          },
+          {
+            "count": 6,
+            "predicate": "https://w3id.org/zorro#solves"
+          },
+          {
+            "count": 4,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+          },
+          {
+            "count": 6,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#LowOilPressure, https://w3id.org/zorro#hasCause])",
+        "seeds": [
+          "https://w3id.org/zorro#LowOilPressure",
+          "https://w3id.org/zorro#hasCause"
+        ],
+        "subject_term_types": {
+          "uri": 233
+        },
+        "triple_count": 233
+      },
+      "subgraph_path": "queries/reports/subgraph-profiles/01-cause-low-oil-pressure.ttl"
+    },
+    {
+      "context_hash": "3722068f57d38ad4ebabfb72f291fbbe6e5f64b1f38e88e97828ece05885a632",
+      "query_path": "queries/documentation/02-solution-low-oil-pressure.rq",
+      "question": "Which solutions address the problem \"Low Oil Pressure\"?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 15,
+          "uri": 218
+        },
+        "predicate_breakdown": [
+          {
+            "count": 74,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 57,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 28,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 15,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 14,
+            "predicate": "https://w3id.org/zorro#hasCause"
+          },
+          {
+            "count": 13,
+            "predicate": "https://w3id.org/zorro#addresses"
+          },
+          {
+            "count": 8,
+            "predicate": "https://w3id.org/zorro#addressesProblem"
+          },
+          {
+            "count": 8,
+            "predicate": "https://w3id.org/zorro#defines"
+          },
+          {
+            "count": 6,
+            "predicate": "https://w3id.org/zorro#solves"
+          },
+          {
+            "count": 4,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+          },
+          {
+            "count": 6,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#LowOilPressure, https://w3id.org/zorro#hasCause, https://w3id.org/zorro#solves])",
+        "seeds": [
+          "https://w3id.org/zorro#LowOilPressure",
+          "https://w3id.org/zorro#hasCause",
+          "https://w3id.org/zorro#solves"
+        ],
+        "subject_term_types": {
+          "uri": 233
+        },
+        "triple_count": 233
+      },
+      "subgraph_path": "queries/reports/subgraph-profiles/02-solution-low-oil-pressure.ttl"
+    },
+    {
+      "context_hash": "1a8fb438e3207c0dca1bf07be6b00ba99cdbd0a7266aed9ef9d6f5f85125193a",
+      "query_path": "queries/documentation/03-component-functions.rq",
+      "question": "Which functions are assigned to the Cranking Section and the Accessory Housing Assembly?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 51,
+          "uri": 610
+        },
+        "predicate_breakdown": [
+          {
+            "count": 209,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 155,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 154,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 58,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 37,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 14,
+            "predicate": "https://w3id.org/zorro#partNumber"
+          },
+          {
+            "count": 13,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 5,
+            "predicate": "https://w3id.org/zorro#linkCandidate"
+          },
+          {
+            "count": 4,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+          },
+          {
+            "count": 4,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 8,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#AccessoryHousingAssembly, https://w3id.org/zorro#CrankingSection, https://w3id.org/zorro#hasFunction])",
+        "seeds": [
+          "https://w3id.org/zorro#AccessoryHousingAssembly",
+          "https://w3id.org/zorro#CrankingSection",
+          "https://w3id.org/zorro#hasFunction"
+        ],
+        "subject_term_types": {
+          "bnode": 5,
+          "uri": 656
+        },
+        "triple_count": 661
+      },
+      "subgraph_path": "queries/reports/subgraph-profiles/03-component-functions.ttl"
+    },
+    {
+      "context_hash": "6e3039d886c3cbfe5e6bbe1c45ccf560df22e448db5fd722dc366bbb62e0ce28",
+      "query_path": "queries/documentation/04-function-depends-on-housing-combustion.rq",
+      "question": "Which functions does \"Housing and supporting combustion\" depend on?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 20,
+          "uri": 663
+        },
+        "predicate_breakdown": [
+          {
+            "count": 379,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 87,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 75,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 38,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 22,
+            "predicate": "https://w3id.org/zorro#defines"
+          },
+          {
+            "count": 22,
+            "predicate": "https://w3id.org/zorro#addressesProblem"
+          },
+          {
+            "count": 20,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 18,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 17,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 2,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+          },
+          {
+            "count": 3,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#HousingAndSupportingCombustion, https://w3id.org/zorro#dependsOn])",
+        "seeds": [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#dependsOn"
+        ],
+        "subject_term_types": {
+          "bnode": 1,
+          "uri": 682
+        },
+        "triple_count": 683
+      },
+      "subgraph_path": "queries/reports/subgraph-profiles/04-function-depends-on-housing-combustion.ttl"
+    },
+    {
+      "context_hash": "dd3d51d2face41314816a7fb4a2d4210bf8039cc0eb1ddcc2926aa91775ad8e2",
+      "query_path": "queries/documentation/05-part-assemblies-std-475.rq",
+      "question": "Which assemblies include part number \"STD-475\"?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 14,
+          "uri": 619
+        },
+        "predicate_breakdown": [
+          {
+            "count": 265,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 255,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 34,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 33,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 31,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 13,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 1,
+            "predicate": "https://w3id.org/zorro#linkCandidate"
+          },
+          {
+            "count": 1,
+            "predicate": "https://w3id.org/zorro#partNumber"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#partNumber, https://w3id.org/zorro#partOf, https://w3id.org/zorro#partnr-STD-475])",
+        "seeds": [
+          "https://w3id.org/zorro#partNumber",
+          "https://w3id.org/zorro#partOf",
+          "https://w3id.org/zorro#partnr-STD-475"
+        ],
+        "subject_term_types": {
+          "bnode": 1,
+          "uri": 632
+        },
+        "triple_count": 633
+      },
+      "subgraph_path": "queries/reports/subgraph-profiles/05-part-assemblies-std-475.ttl"
+    },
+    {
+      "context_hash": "258a8a4b35d7ec8b5efa8f609c72d125b8de430b73c7ea47a93e50de3b276364",
+      "query_path": "queries/documentation/06-components-transferring-power.rq",
+      "question": "Which components are responsible for driving power to accessories?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 20,
+          "uri": 760
+        },
+        "predicate_breakdown": [
+          {
+            "count": 403,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 110,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 109,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 62,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 20,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 20,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 19,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 15,
+            "predicate": "https://w3id.org/zorro#defines"
+          },
+          {
+            "count": 15,
+            "predicate": "https://w3id.org/zorro#addressesProblem"
+          },
+          {
+            "count": 4,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+          },
+          {
+            "count": 3,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#DrivingPowerToAccessories, https://w3id.org/zorro#hasFunction])",
+        "seeds": [
+          "https://w3id.org/zorro#DrivingPowerToAccessories",
+          "https://w3id.org/zorro#hasFunction"
+        ],
+        "subject_term_types": {
+          "uri": 780
+        },
+        "triple_count": 780
+      },
+      "subgraph_path": "queries/reports/subgraph-profiles/06-components-transferring-power.ttl"
+    },
+    {
+      "context_hash": "bbc2938ea83f023afade29b3eb932dbdf5c2a7081c12e582aafbe1eeae17880f",
+      "query_path": "queries/documentation/07-parts-in-accessory-housing.rq",
+      "question": "Which parts belong to the Accessory Housing Assembly?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 28,
+          "uri": 321
+        },
+        "predicate_breakdown": [
+          {
+            "count": 156,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 72,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 46,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 31,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 20,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 8,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 8,
+            "predicate": "https://w3id.org/zorro#partNumber"
+          },
+          {
+            "count": 3,
+            "predicate": "https://w3id.org/zorro#linkCandidate"
+          },
+          {
+            "count": 2,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+          },
+          {
+            "count": 2,
+            "predicate": "https://w3id.org/zorro#isProbably"
+          },
+          {
+            "count": 1,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#AccessoryHousingAssembly, https://w3id.org/zorro#partOf])",
+        "seeds": [
+          "https://w3id.org/zorro#AccessoryHousingAssembly",
+          "https://w3id.org/zorro#partOf"
+        ],
+        "subject_term_types": {
+          "bnode": 3,
+          "uri": 346
+        },
+        "triple_count": 349
+      },
+      "subgraph_path": "queries/reports/subgraph-profiles/07-parts-in-accessory-housing.ttl"
+    },
+    {
+      "context_hash": "1c6fe7125801bd0d726b812061513f3200576ebbab6cfd68f02e37af9ed19404",
+      "query_path": "queries/documentation/08-system-for-carburetor-assembly.rq",
+      "question": "Which system contains the Carburetor Assembly?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 30,
+          "uri": 593
+        },
+        "predicate_breakdown": [
+          {
+            "count": 327,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 76,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 69,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 59,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 55,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 24,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 6,
+            "predicate": "https://w3id.org/zorro#partNumber"
+          },
+          {
+            "count": 2,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+          },
+          {
+            "count": 2,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 1,
+            "predicate": "https://w3id.org/zorro#linkCandidate"
+          },
+          {
+            "count": 2,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#CarburetorAssembly, https://w3id.org/zorro#System, https://w3id.org/zorro#partOf, https://w3id.org/zorro#type])",
+        "seeds": [
+          "https://w3id.org/zorro#CarburetorAssembly",
+          "https://w3id.org/zorro#System",
+          "https://w3id.org/zorro#partOf",
+          "https://w3id.org/zorro#type"
+        ],
+        "subject_term_types": {
+          "bnode": 1,
+          "uri": 622
+        },
+        "triple_count": 623
+      },
+      "subgraph_path": "queries/reports/subgraph-profiles/08-system-for-carburetor-assembly.ttl"
+    },
+    {
+      "context_hash": "11e4dbb1cf933a7268f04825c7ff6d9f743ddde4178e8ed6a1455b17d80d8164",
+      "query_path": "queries/documentation/09-problems-shared-causes.rq",
+      "question": "Which documented problems share the same cause?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "uri": 120
+        },
+        "predicate_breakdown": [
+          {
+            "count": 61,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 51,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 4,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+          },
+          {
+            "count": 4,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#hasCause])",
+        "seeds": [
+          "https://w3id.org/zorro#hasCause"
+        ],
+        "subject_term_types": {
+          "uri": 120
+        },
+        "triple_count": 120
+      },
+      "subgraph_path": "queries/reports/subgraph-profiles/09-problems-shared-causes.ttl"
+    },
+    {
+      "context_hash": "ad2745612f7f60e04f0d6090550da694d68d1e7049a4fe75d8e601a6441aea3f",
+      "query_path": "queries/documentation/10-function-dependencies-generating-engine-power.rq",
+      "question": "Which functions depend on \"Generating power\", and which functions does \"Generating power\" depend on?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 97,
+          "uri": 1318
+        },
+        "predicate_breakdown": [
+          {
+            "count": 762,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 101,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 97,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 93,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 84,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 79,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 73,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 60,
+            "predicate": "https://w3id.org/zorro#defines"
+          },
+          {
+            "count": 60,
+            "predicate": "https://w3id.org/zorro#addressesProblem"
+          },
+          {
+            "count": 3,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+          },
+          {
+            "count": 3,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#Function, https://w3id.org/zorro#GeneratingPower, https://w3id.org/zorro#dependsOn, https://w3id.org/zorro#label, https://w3id.org/zorro#type])",
+        "seeds": [
+          "https://w3id.org/zorro#Function",
+          "https://w3id.org/zorro#GeneratingPower",
+          "https://w3id.org/zorro#dependsOn",
+          "https://w3id.org/zorro#label",
+          "https://w3id.org/zorro#type"
+        ],
+        "subject_term_types": {
+          "uri": 1415
+        },
+        "triple_count": 1415
+      },
+      "subgraph_path": "queries/reports/subgraph-profiles/10-function-dependencies-generating-engine-power.ttl"
+    },
+    {
+      "context_hash": "ddb50ae4b19275a1c15dc2d3631b8d8e9d2aab50c7262a16a5d6b7fd44c8783e",
+      "query_path": "queries/documentation/11-dependent-functions-power-section.rq",
+      "question": "Which functions ultimately depend on the functions of the Power Section?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 336,
+          "uri": 2028
+        },
+        "predicate_breakdown": [
+          {
+            "count": 804,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 432,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 262,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 208,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 204,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 93,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 84,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 74,
+            "predicate": "https://w3id.org/zorro#partNumber"
+          },
+          {
+            "count": 60,
+            "predicate": "https://w3id.org/zorro#addressesProblem"
+          },
+          {
+            "count": 60,
+            "predicate": "https://w3id.org/zorro#defines"
+          },
+          {
+            "count": 83,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#Function, https://w3id.org/zorro#PowerSection, https://w3id.org/zorro#dependsOn, https://w3id.org/zorro#hasFunction, https://w3id.org/zorro#label, https://w3id.org/zorro#type])",
+        "seeds": [
+          "https://w3id.org/zorro#Function",
+          "https://w3id.org/zorro#PowerSection",
+          "https://w3id.org/zorro#dependsOn",
+          "https://w3id.org/zorro#hasFunction",
+          "https://w3id.org/zorro#label",
+          "https://w3id.org/zorro#type"
+        ],
+        "subject_term_types": {
+          "bnode": 57,
+          "uri": 2307
+        },
+        "triple_count": 2364
+      },
+      "subgraph_path": "queries/reports/subgraph-profiles/11-dependent-functions-power-section.ttl"
+    },
+    {
+      "context_hash": "9d9a19b7cdc4f7d19ed2fef60b3d59d58b3cf5b5387b5f0cab5b8fe6b467f8e3",
+      "query_path": "queries/documentation/12-most-critical-systems.rq",
+      "question": "Which systems are most critical based on how many functions depend on them?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 104,
+          "uri": 1651
+        },
+        "predicate_breakdown": [
+          {
+            "count": 796,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 308,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 125,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 117,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 104,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 93,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 84,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 60,
+            "predicate": "https://w3id.org/zorro#defines"
+          },
+          {
+            "count": 60,
+            "predicate": "https://w3id.org/zorro#addressesProblem"
+          },
+          {
+            "count": 4,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+          },
+          {
+            "count": 4,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#Function, https://w3id.org/zorro#System, https://w3id.org/zorro#dependsOn, https://w3id.org/zorro#hasFunction, https://w3id.org/zorro#label, https://w3id.org/zorro#type])",
+        "seeds": [
+          "https://w3id.org/zorro#Function",
+          "https://w3id.org/zorro#System",
+          "https://w3id.org/zorro#dependsOn",
+          "https://w3id.org/zorro#hasFunction",
+          "https://w3id.org/zorro#label",
+          "https://w3id.org/zorro#type"
+        ],
+        "subject_term_types": {
+          "uri": 1755
+        },
+        "triple_count": 1755
+      },
+      "subgraph_path": "queries/reports/subgraph-profiles/12-most-critical-systems.ttl"
+    },
+    {
+      "context_hash": "a817a09d5f4dd4b72e7ae716c476724fb8035bc4ec4c731256238ff09c436d56",
+      "query_path": "queries/documentation/13-function-component-counts.rq",
+      "question": "How many components implement each function?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 32,
+          "uri": 1160
+        },
+        "predicate_breakdown": [
+          {
+            "count": 566,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 200,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 191,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 84,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 62,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 35,
+            "predicate": "https://w3id.org/zorro#linkCandidate"
+          },
+          {
+            "count": 32,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 13,
+            "predicate": "https://w3id.org/zorro#isProbably"
+          },
+          {
+            "count": 5,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+          },
+          {
+            "count": 4,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#Component, https://w3id.org/zorro#hasFunction, https://w3id.org/zorro#label, https://w3id.org/zorro#subClassOf])",
+        "seeds": [
+          "https://w3id.org/zorro#Component",
+          "https://w3id.org/zorro#hasFunction",
+          "https://w3id.org/zorro#label",
+          "https://w3id.org/zorro#subClassOf"
+        ],
+        "subject_term_types": {
+          "bnode": 35,
+          "uri": 1157
+        },
+        "triple_count": 1192
+      },
+      "subgraph_path": "queries/reports/subgraph-profiles/13-function-component-counts.ttl"
+    }
+  ],
+  "subgraph_depth": 1
+}

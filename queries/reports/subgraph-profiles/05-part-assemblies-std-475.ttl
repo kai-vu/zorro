@@ -1,0 +1,913 @@
+@prefix : <https://w3id.org/zorro#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:AccessoryHousingAssembly :dependsOn :AccessoryDrives ;
+    :partOf :AccessoryDrives .
+
+:AlternatorMountingAndAttachingParts :dependsOn :AccessoryDrives .
+
+:ConnectingRodsPistonsAndRingAssemblies :dependsOn :CylinderSection ;
+    :partOf :CylinderSection .
+
+:CylinderHeadDrainTubesAndIntercylinderCoolingBaffles :dependsOn :CylinderSection ;
+    :partOf :CylinderSection .
+
+:CylinderRelatedParts :dependsOn :CylinderSection ;
+    :partOf :CylinderSection .
+
+:FuelPumpAssemblyAndAttachingParts :dependsOn :FuelDistributionSystem ;
+    :partOf :AccessoryDrives .
+
+:IntakePipesAndAttachingParts :dependsOn :FuelDistributionSystem ;
+    :partOf :CylinderSection .
+
+:OilCoolerBypassValveOilPressureScreenAndBreatherFitting :partOf :AccessoryDrives .
+
+:OilFilterAssemblyAndOilCoolerBypassValve :partOf :AccessoryDrives .
+
+:OilPumpAssemblyAndAccessoryHousingAttachingParts :dependsOn :AccessoryDrives ;
+    :partOf :AccessoryDrives .
+
+:PrimingSystem :dependsOn :FuelDistributionSystem .
+
+:ValveAssembly :dependsOn :CylinderSection .
+
+:ValveAssemblyAndRelatedParts :partOf :CylinderSection .
+
+:partnr-01L23459 a :PartInstance ;
+    rdfs:subClassOf :Washer ;
+    :partOf :CylinderSection .
+
+:partnr-03D23350 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-05K19423-S a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-06A19956 a :PartInstance ;
+    :partOf :AccessoryDrives,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-06A23493 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-06B23862 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-06E19769-0.63 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-06E19769-1.00 a :PartInstance .
+
+:partnr-06E19769-1.25 a :PartInstance .
+
+:partnr-07A19474 a :PartInstance .
+
+:partnr-07A21443 a :PartInstance .
+
+:partnr-07F23268 a :PartInstance .
+
+:partnr-1028-B a :PartInstance .
+
+:partnr-1102 a :PartInstance ;
+    :partOf :AccessoryDrives,
+        :CylinderAssembly,
+        :CylinderSection .
+
+:partnr-1182-E7 a :PartInstance ;
+    :partOf :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+:partnr-11B20061-1SB a :PartInstance .
+
+:partnr-11B20061-1SB-S a :PartInstance .
+
+:partnr-11B20161-3SL a :PartInstance .
+
+:partnr-11B20161-3SL-S a :PartInstance .
+
+:partnr-13B47020 a :PartInstance .
+
+:partnr-13B47024 a :PartInstance .
+
+:partnr-13S19646 a :PartInstance .
+
+:partnr-14D23915 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-15B21319 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-15B26064 a :PartInstance .
+
+:partnr-15B26066 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-15F19957-08 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-15F19957-09 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-15F19957-10 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-15F19957-11 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-15F19957-12 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-15F19957-13 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-15F19957-14 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-15F19957-15 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-15G23494 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-15M23452 a :PartInstance .
+
+:partnr-16R22126 a :PartInstance ;
+    :partOf :CylinderAssembly,
+        :CylinderSection .
+
+:partnr-17A23938 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-17B23936 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-17C19386 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-17C21191 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-17F19357 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-18D26098 a :PartInstance .
+
+:partnr-18M26104 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-21A21533-04 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-25C-10 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-25C-22 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-25C-8 a :PartInstance ;
+    :partOf :CylinderAssembly,
+        :CylinderSection .
+
+:partnr-31A26041 a :PartInstance ;
+    :partOf :CrankingSection,
+        :StarterMotorAndAttachingParts .
+
+:partnr-31A26043 a :PartInstance ;
+    :partOf :CrankingSection,
+        :StarterMotorAndAttachingParts .
+
+:partnr-31C-12 a :PartInstance ;
+    :partOf :AccessoryDrives,
+        :CylinderAssembly,
+        :CylinderSection .
+
+:partnr-31C-13 a :PartInstance .
+
+:partnr-31C-15 a :PartInstance .
+
+:partnr-31C-19 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-31CD-17 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-38-13 a :PartInstance .
+
+:partnr-383-B a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-38D-17 a :PartInstance .
+
+:partnr-50-15 a :PartInstance .
+
+:partnr-53E22144 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-56C23075 a :PartInstance .
+
+:partnr-60009 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-60096 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-60430 a :PartInstance ;
+    :partOf :AccessoryDrives,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-60803 a :PartInstance .
+
+:partnr-60882 a :PartInstance .
+
+:partnr-61084 a :PartInstance .
+
+:partnr-61098 a :PartInstance ;
+    :partOf :AccessoryDrives,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-61173 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-61174 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-61183 a :PartInstance ;
+    :partOf :AccessoryDrives,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-61247 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-61400 a :PartInstance .
+
+:partnr-61544 a :PartInstance .
+
+:partnr-61665 a :PartInstance ;
+    :partOf :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+:partnr-61B26213 a :PartInstance ;
+    :partOf :CarburetorAssembly,
+        :FuelDistributionSystem .
+
+:partnr-61B26214 a :PartInstance ;
+    :partOf :CarburetorAssembly,
+        :FuelDistributionSystem .
+
+:partnr-62224 a :PartInstance ;
+    :partOf :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+:partnr-62417 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-62817 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-65441 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-66224 a :PartInstance ;
+    :partOf :CarburetorAssembly,
+        :FuelDistributionSystem .
+
+:partnr-66610 a :PartInstance ;
+    :partOf :CylinderAssembly,
+        :CylinderSection .
+
+:partnr-66796 a :PartInstance ;
+    :partOf :CylinderAssembly,
+        :CylinderSection .
+
+:partnr-66A21765 a :PartInstance ;
+    :partOf :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+:partnr-66B21778 a :PartInstance ;
+    :partOf :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+:partnr-68668 a :PartInstance .
+
+:partnr-68759 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-68760 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-68761 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-68987 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-68C19622 a :PartInstance ;
+    :partOf :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+:partnr-69106 a :PartInstance ;
+    :partOf :AccessoryDrives,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-69510 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-69551 a :PartInstance ;
+    :partOf :AccessoryDrives,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-69603 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-69675 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-70310 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-70484 a :PartInstance .
+
+:partnr-71140 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-71481 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-71596 a :PartInstance ;
+    rdfs:subClassOf :Washer ;
+    :partOf :AccessoryDrives,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-71611 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-71973 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-72057 a :PartInstance ;
+    :partOf :CylinderAssembly,
+        :CylinderSection .
+
+:partnr-72058 a :PartInstance ;
+    :partOf :CylinderAssembly,
+        :CylinderSection .
+
+:partnr-72059 a :PartInstance .
+
+:partnr-72075 a :PartInstance .
+
+:partnr-72091 a :PartInstance .
+
+:partnr-72198 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-72566 a :PartInstance .
+
+:partnr-72569 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-72970 a :PartInstance ;
+    :partOf :AccessoryDrives,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-73346 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-73383 a :PartInstance .
+
+:partnr-73818 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-74065 a :PartInstance .
+
+:partnr-74068 a :PartInstance .
+
+:partnr-74084 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-74241 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-74637 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-74887 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-74996 a :PartInstance .
+
+:partnr-75072 a :PartInstance .
+
+:partnr-75154 a :PartInstance .
+
+:partnr-75380 a :PartInstance .
+
+:partnr-75736 a :PartInstance .
+
+:partnr-75906 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-76121 a :PartInstance .
+
+:partnr-76220 a :PartInstance .
+
+:partnr-76510 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-76534 a :PartInstance .
+
+:partnr-76628 a :PartInstance .
+
+:partnr-76734 a :PartInstance ;
+    :partOf :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+:partnr-76908 a :PartInstance .
+
+:partnr-76943 a :PartInstance ;
+    :partOf :CylinderAssembly,
+        :CylinderSection .
+
+:partnr-76944 a :PartInstance .
+
+:partnr-77309 a :PartInstance .
+
+:partnr-77467 a :PartInstance .
+
+:partnr-77611 a :PartInstance ;
+    :partOf :CylinderAssembly,
+        :CylinderSection .
+
+:partnr-77808 a :PartInstance .
+
+:partnr-77852 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-78027 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-78030-S a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-78531 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-78914 a :PartInstance .
+
+:partnr-8313 a :PartInstance ;
+    :partOf :AccessoryDrives,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-AN6-14 a :PartInstance .
+
+:partnr-AN6-16 a :PartInstance .
+
+:partnr-AN6-34A a :PartInstance .
+
+:partnr-AN844-10D a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-AN960-616L a :PartInstance ;
+    rdfs:subClassOf :Washer .
+
+:partnr-LRT23381 a :PartInstance .
+
+:partnr-LW-10077 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-LW-10729 a :PartInstance .
+
+:partnr-LW-10828 a :PartInstance .
+
+:partnr-LW-11713 a :PartInstance .
+
+:partnr-LW-11795 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-LW-11800 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-LW-11866 a :PartInstance .
+
+:partnr-LW-12186 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-LW-12272 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-LW-12416 a :PartInstance ;
+    rdfs:subClassOf :CylinderAssembly ;
+    :partOf :CylinderAssembly,
+        :CylinderSection .
+
+:partnr-LW-12706 a :PartInstance ;
+    :partOf :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+:partnr-LW-12892 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-LW-13215 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-LW-13323 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-LW-13353 a :PartInstance .
+
+:partnr-LW-13790 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-LW-13792 a :PartInstance .
+
+:partnr-LW-13793 a :PartInstance .
+
+:partnr-LW-13796 a :PartInstance .
+
+:partnr-LW-13923 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-LW-14060 a :PartInstance ;
+    :partOf :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+:partnr-LW-14078 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-LW-14260 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-LW-14768 a :PartInstance .
+
+:partnr-LW-14995 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-LW-15472 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-LW-15592-5-05 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-LW-15592-8-28 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-LW-16475 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-LW-16783-18 a :PartInstance .
+
+:partnr-LW-18085 a :PartInstance .
+
+:partnr-LW-18109 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-LW-18110 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-LW-18639 a :PartInstance .
+
+:partnr-LW-18661 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-LW-18667 a :PartInstance .
+
+:partnr-LW-18815-S a :PartInstance .
+
+:partnr-LW-18817-S a :PartInstance .
+
+:partnr-LW-18840 a :PartInstance .
+
+:partnr-LW-18921-S a :PartInstance .
+
+:partnr-LW-18922-S a :PartInstance .
+
+:partnr-LW-18959-150-25 a :PartInstance ;
+    :partOf :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+:partnr-LW-25-0.94 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-LW-25-1.00 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-LW-25-1.13 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-LW-25-1.25 a :PartInstance ;
+    :partOf :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+:partnr-LW-25-1.44 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-LW-25-1.50 a :PartInstance .
+
+:partnr-LW-25-1.75 a :PartInstance .
+
+:partnr-LW-25S1.50 a :PartInstance .
+
+:partnr-LW-31-0.94 a :PartInstance .
+
+:partnr-LW-31-1.16 a :PartInstance ;
+    :partOf :CrankingSection,
+        :StarterMotorAndAttachingParts .
+
+:partnr-LW-31H0.75 a :PartInstance .
+
+:partnr-LW-31H0.88 a :PartInstance .
+
+:partnr-LW-38-0.75 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-LW-M-2375 a :PartInstance ;
+    :partOf :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+:partnr-LW-M-2403 a :PartInstance ;
+    :partOf :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+:partnr-LW-M-2404 a :PartInstance ;
+    :partOf :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+:partnr-MS20823-6D a :PartInstance ;
+    :partOf :CylinderAssembly,
+        :CylinderSection .
+
+:partnr-MS21044N06 a :PartInstance ;
+    :partOf :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+:partnr-STD-1065 a :PartInstance .
+
+:partnr-STD-1211 a :PartInstance .
+
+:partnr-STD-1339 a :PartInstance .
+
+:partnr-STD-1353 a :PartInstance ;
+    :partOf :CylinderAssembly,
+        :CylinderSection .
+
+:partnr-STD-1410 a :PartInstance ;
+    :partOf :AccessoryDrives,
+        :CarburetorAssembly,
+        :CrankingSection,
+        :CylinderAssembly,
+        :CylinderSection,
+        :FuelDistributionSystem,
+        :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover,
+        :StarterMotorAndAttachingParts .
+
+:partnr-STD-1411 a :PartInstance ;
+    :partOf :AccessoryDrives,
+        :CylinderSection,
+        :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-STD-1420 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-STD-160 a :PartInstance ;
+    rdfs:subClassOf :Washer ;
+    :partOf :AccessoryDrives,
+        :CylinderSection,
+        :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-STD-1623 a :PartInstance .
+
+:partnr-STD-1727 a :PartInstance ;
+    rdfs:subClassOf :Washer ;
+    :partOf :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+:partnr-STD-1774 a :PartInstance ;
+    :partOf :AccessoryDrives,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-STD-1882 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-STD-1916 a :PartInstance ;
+    :partOf :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+:partnr-STD-1925 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-STD-2090 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-STD-2168 a :PartInstance .
+
+:partnr-STD-2180 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-STD-2231 a :PartInstance .
+
+:partnr-STD-2246 a :PartInstance .
+
+:partnr-STD-2249 a :PartInstance .
+
+:partnr-STD-33 a :PartInstance ;
+    rdfs:subClassOf :Washer ;
+    :partOf :AccessoryDrives .
+
+:partnr-STD-35 a :PartInstance ;
+    rdfs:subClassOf :Washer ;
+    :partOf :AccessoryDrives,
+        :CarburetorAssembly,
+        :CrankingSection,
+        :CylinderAssembly,
+        :CylinderSection,
+        :FuelDistributionSystem,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover,
+        :StarterMotorAndAttachingParts .
+
+:partnr-STD-475 a :PartInstance ;
+    rdfs:label " 5/16 lock, internal teeth",
+        "5/16 lock, internal teeth washer" ;
+    rdfs:subClassOf :Washer ;
+    :partNumber "STD-475" ;
+    :partOf :AccessoryDrives,
+        :CarburetorAssembly,
+        :CrankingSection,
+        :CylinderAssembly,
+        :CylinderSection,
+        :FuelDistributionSystem,
+        :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover,
+        :StarterMotorAndAttachingParts .
+
+:partnr-STD-514 a :PartInstance .
+
+:partnr-STD-551 a :PartInstance .
+
+:partnr-STD-553 a :PartInstance ;
+    :partOf :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs .
+
+:partnr-STD-557 a :PartInstance .
+
+:partnr-STD-596 a :PartInstance .
+
+:partnr-STD-678 a :PartInstance ;
+    rdfs:subClassOf :Washer .
+
+:partnr-STD-684 a :PartInstance ;
+    :partOf :CylinderSection .
+
+:partnr-STD-690 a :PartInstance ;
+    rdfs:subClassOf :Washer .
+
+:partnr-STD-713 a :PartInstance .
+
+:partnr-STD-783 a :PartInstance ;
+    :partOf :AccessoryDrives,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-STD-784 a :PartInstance ;
+    :partOf :AccessoryDrives .
+
+:partnr-STD-8 a :PartInstance ;
+    rdfs:subClassOf :Washer ;
+    :partOf :AccessoryDrives,
+        :CylinderSection,
+        :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-STD-872 a :PartInstance .
+
+:partnr-STD-91 a :PartInstance .
+
+:ElectricalPower :dependsOn :CrankingSection .
+
+:InductionSystem :dependsOn :FuelDistributionSystem .
+
+:CarburetorAssembly a :Assembly ;
+    rdfs:label "Carburetor Assembly" ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :dependsOn :FuelDistributionSystem,
+        :InductionSystem ;
+    :hasFunction :MixingAndRegulatingFuel-Air,
+        :MixingAndRegulatingFuelAir ;
+    :partOf :FuelDistributionSystem .
+
+:StarterMotorAndAttachingParts a :Assembly ;
+    rdfs:label "Starter Motor And Attaching Parts" ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :dependsOn :CrankingSection,
+        :ElectricalPower ;
+    :hasFunction :InitiatingEngineStart ;
+    :partOf :CrankingSection .
+
+:CrankingSection a :Component,
+        :System ;
+    rdfs:label "Cranking Section" ;
+    rdfs:subClassOf :Component,
+        :System ;
+    :dependsOn :ElectricalPower,
+        :PowerSection ;
+    :hasFunction :FacilitatingEngineStart,
+        :InitiatingEngineStart .
+
+:Washer a :Part ;
+    rdfs:label "WASHER" ;
+    rdfs:subClassOf :Fastener .
+
+:FuelDistributionSystem a :Component,
+        :System ;
+    rdfs:label "Fuel Distribution System" ;
+    rdfs:subClassOf :Component,
+        :System ;
+    :dependsOn :InductionSystem,
+        :PowerSection ;
+    :hasFunction :CorrectFuelType,
+        :DistributingFuel-AirMixture,
+        :DistributingFuelAirMixture,
+        :Fuel-AirMixtureControl,
+        :Fuel-AirMixtureDistribution,
+        :FuelAirMixtureControl,
+        :FuelAirMixtureDistribution,
+        :FuelDelivery,
+        :FuelDistribution,
+        :ProperAir-FuelMixture,
+        :ProperAirFuelMixture .
+
+:PropellerGovernorDriveCoverVacuumPumpDriveAndCover a :Assembly ;
+    rdfs:label "Propeller Governor Drive Cover, Vacuum Pump Drive And Cover" ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :dependsOn :AccessoryDrives,
+        :PowerSection ;
+    :hasFunction :CoveringDrivesAndProvidingHousing ;
+    :partOf :AccessoryDrives .
+
+:CylinderAssembly a :Assembly ;
+    rdfs:label "Cylinder Assembly" ;
+    rdfs:subClassOf :Assembly,
+        :Component,
+        :Part ;
+    :dependsOn :CoolingSystem,
+        :CylinderSection,
+        :LubricationSystem ;
+    :hasFunction :HousingAndSupportingCombustion ;
+    :partOf :CylinderSection .
+
+:MagnetosMagnetoDrivesHarnessesAndSparkPlugs a :Assembly ;
+    rdfs:label "Magnetos, Magneto Drives, Harnesses And Spark Plugs" ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :dependsOn :AccessoryDrives,
+        :IgnitionDistributionSystem ;
+    :hasFunction :DistributingIgnitionAndSparks ;
+    :partOf :IgnitionDistributionSystem .
+
+:IgnitionDistributionSystem a :Component,
+        :System ;
+    rdfs:label "Ignition Distribution System" ;
+    rdfs:subClassOf :Component,
+        :System ;
+    :dependsOn :AccessoryDrives,
+        :PowerSection ;
+    :hasFunction :DistributingIgnitionToCylinders,
+        :IgnitionTiming,
+        :IgnitionTimingAndDistribution,
+        :IgnitionTransfer,
+        :ProperIgnition,
+        :ProperIgnitionTiming,
+        :ProperIgnitionTimingAndDistribution .
+
+:AccessoryDrives a :System ;
+    rdfs:label "Accessory Drives" ;
+    rdfs:subClassOf :Component,
+        :System ;
+    :dependsOn :PowerSection ;
+    :hasFunction :DrivingPowerToAccessories .
+
+:CylinderSection a :Component,
+        :System ;
+    rdfs:label "Cylinder Section" ;
+    rdfs:subClassOf :Component,
+        :System ;
+    :dependsOn :CoolingSystem,
+        :LubricationSystem,
+        :PowerSection ;
+    :hasFunction :BalancedCylinderCompression,
+        :ContainingCylindersAndRelatedParts,
+        :CylinderOperation,
+        :ProperCylinderSealing .
+
+[] :linkCandidate :CylinderAssembly .
+

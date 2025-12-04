@@ -1,0 +1,3237 @@
+{
+  "10f08ecf82b3369d75f80dd925bb4b3e1129a815044b073ae15e68c3650a60d4": {
+    "_meta": {
+      "columns": [
+        "system"
+      ],
+      "context_hash": "1c6fe7125801bd0d726b812061513f3200576ebbab6cfd68f02e37af9ed19404",
+      "depth": 1,
+      "path": "queries/documentation/08-system-for-carburetor-assembly.rq",
+      "question": "Which system contains the Carburetor Assembly?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 30,
+          "uri": 593
+        },
+        "predicate_breakdown": [
+          {
+            "count": 327,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 76,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 69,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 59,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 55,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 24,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 6,
+            "predicate": "https://w3id.org/zorro#partNumber"
+          },
+          {
+            "count": 2,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 2,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+          },
+          {
+            "count": 1,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+          },
+          {
+            "count": 2,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#CarburetorAssembly, https://w3id.org/zorro#System, https://w3id.org/zorro#partOf, https://w3id.org/zorro#type])",
+        "seeds": [
+          "https://w3id.org/zorro#CarburetorAssembly",
+          "https://w3id.org/zorro#System",
+          "https://w3id.org/zorro#partOf",
+          "https://w3id.org/zorro#type"
+        ],
+        "subject_term_types": {
+          "bnode": 1,
+          "uri": 622
+        },
+        "triple_count": 623
+      }
+    },
+    "columns": [
+      "system"
+    ],
+    "rows": [
+      [
+        "https://w3id.org/zorro#FuelDistributionSystem"
+      ]
+    ]
+  },
+  "1803106e36949b4308ee0d1ed29f865fcee7e6eb18caf2cda79e8625e8763efd": {
+    "_meta": {
+      "columns": [
+        "function",
+        "functionLabel",
+        "system",
+        "dependentFunctionCount"
+      ],
+      "context_hash": "23160be030bab4aa3f0ffbfce79f3ea68c46ecffba319b02c19ca284e00e6cbf",
+      "depth": 2,
+      "path": "queries/documentation/12-most-critical-systems.rq",
+      "question": "Which systems are most critical based on how many functions depend on them?",
+      "subgraph_monitoring": {
+        "depth": 2,
+        "object_term_types": {
+          "literal": 931,
+          "uri": 3819
+        },
+        "predicate_breakdown": [
+          {
+            "count": 806,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 681,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 603,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 545,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 529,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 521,
+            "predicate": "https://w3id.org/zorro#linkCandidate"
+          },
+          {
+            "count": 348,
+            "predicate": "https://w3id.org/zorro#isProbably"
+          },
+          {
+            "count": 250,
+            "predicate": "https://w3id.org/zorro#partNumber"
+          },
+          {
+            "count": 93,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 84,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 290,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=2, seeds=[https://w3id.org/zorro#Function, https://w3id.org/zorro#System, https://w3id.org/zorro#dependsOn, https://w3id.org/zorro#hasFunction, https://w3id.org/zorro#label, https://w3id.org/zorro#type])",
+        "seeds": [
+          "https://w3id.org/zorro#Function",
+          "https://w3id.org/zorro#System",
+          "https://w3id.org/zorro#dependsOn",
+          "https://w3id.org/zorro#hasFunction",
+          "https://w3id.org/zorro#label",
+          "https://w3id.org/zorro#type"
+        ],
+        "subject_term_types": {
+          "bnode": 521,
+          "uri": 4229
+        },
+        "triple_count": 4750
+      }
+    },
+    "columns": [
+      "function",
+      "functionLabel",
+      "system",
+      "dependentFunctionCount"
+    ],
+    "rows": [
+      [
+        "https://w3id.org/zorro#AccurateOilPressureReading",
+        "Accurate oil pressure reading",
+        "https://w3id.org/zorro#LubricationSystem",
+        9
+      ],
+      [
+        "https://w3id.org/zorro#AdequateLubrication",
+        "Adequate lubrication",
+        "https://w3id.org/zorro#LubricationSystem",
+        9
+      ],
+      [
+        "https://w3id.org/zorro#LubricatingEngineComponents",
+        "Lubricating engine components",
+        "https://w3id.org/zorro#LubricationSystem",
+        9
+      ],
+      [
+        "https://w3id.org/zorro#MaintainingOilPressure",
+        "Maintaining oil pressure",
+        "https://w3id.org/zorro#LubricationSystem",
+        9
+      ],
+      [
+        "https://w3id.org/zorro#OilDistribution",
+        "Oil distribution",
+        "https://w3id.org/zorro#LubricationSystem",
+        9
+      ],
+      [
+        "https://w3id.org/zorro#OilTemperatureRegulation",
+        "Oil temperature regulation",
+        "https://w3id.org/zorro#LubricationSystem",
+        9
+      ],
+      [
+        "https://w3id.org/zorro#ProperLubrication",
+        "Proper lubrication",
+        "https://w3id.org/zorro#LubricationSystem",
+        9
+      ],
+      [
+        "https://w3id.org/zorro#ProperOilFlow",
+        "Proper oil flow",
+        "https://w3id.org/zorro#LubricationSystem",
+        9
+      ],
+      [
+        "https://w3id.org/zorro#ProperOilPressureRegulation",
+        "Proper oil pressure regulation",
+        "https://w3id.org/zorro#LubricationSystem",
+        9
+      ]
+    ]
+  },
+  "1a666541983bad974db99b854a60921619bdf943a39e2366ec3480c247fb7a37": {
+    "_meta": {
+      "columns": [
+        "component"
+      ],
+      "context_hash": "a6d612b2cda5272b792ba2858ed90f278fc327fd5c028f6c4418513d18172bf9",
+      "depth": 2,
+      "path": "queries/documentation/06-components-transferring-power.rq",
+      "question": "Which components are responsible for driving power to accessories?",
+      "subgraph_monitoring": {
+        "depth": 2,
+        "object_term_types": {
+          "literal": 310,
+          "uri": 2598
+        },
+        "predicate_breakdown": [
+          {
+            "count": 806,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 567,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 272,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 269,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 254,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 180,
+            "predicate": "https://w3id.org/zorro#linkCandidate"
+          },
+          {
+            "count": 129,
+            "predicate": "https://w3id.org/zorro#isProbably"
+          },
+          {
+            "count": 93,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 84,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 60,
+            "predicate": "https://w3id.org/zorro#addressesProblem"
+          },
+          {
+            "count": 194,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=2, seeds=[https://w3id.org/zorro#DrivingPowerToAccessories, https://w3id.org/zorro#hasFunction])",
+        "seeds": [
+          "https://w3id.org/zorro#DrivingPowerToAccessories",
+          "https://w3id.org/zorro#hasFunction"
+        ],
+        "subject_term_types": {
+          "bnode": 180,
+          "uri": 2728
+        },
+        "triple_count": 2908
+      }
+    },
+    "columns": [
+      "component"
+    ],
+    "rows": [
+      [
+        "https://w3id.org/zorro#AccessoryDrives"
+      ]
+    ]
+  },
+  "20f7d081ca20ff0044daae2545ed533e66b11e82ae5b216f3e6926ee50b109d5": {
+    "_meta": {
+      "columns": [
+        "dependentFunction",
+        "dependentFunctionLabel"
+      ],
+      "context_hash": "ff053d1233b3f3caa7be830cf9977bd8d844bcd3b34339bba3009c234aeb9a1b",
+      "depth": 2,
+      "path": "queries/documentation/11-dependent-functions-power-section.rq",
+      "question": "Which functions ultimately depend on the functions of the Power Section?",
+      "subgraph_monitoring": {
+        "depth": 2,
+        "object_term_types": {
+          "bnode": 59,
+          "literal": 909,
+          "uri": 3778
+        },
+        "predicate_breakdown": [
+          {
+            "count": 806,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 673,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 603,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 556,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 529,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 493,
+            "predicate": "https://w3id.org/zorro#linkCandidate"
+          },
+          {
+            "count": 324,
+            "predicate": "https://w3id.org/zorro#isProbably"
+          },
+          {
+            "count": 236,
+            "predicate": "https://w3id.org/zorro#partNumber"
+          },
+          {
+            "count": 93,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 84,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 349,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=2, seeds=[https://w3id.org/zorro#Function, https://w3id.org/zorro#PowerSection, https://w3id.org/zorro#dependsOn, https://w3id.org/zorro#hasFunction, https://w3id.org/zorro#label, https://w3id.org/zorro#type])",
+        "seeds": [
+          "https://w3id.org/zorro#Function",
+          "https://w3id.org/zorro#PowerSection",
+          "https://w3id.org/zorro#dependsOn",
+          "https://w3id.org/zorro#hasFunction",
+          "https://w3id.org/zorro#label",
+          "https://w3id.org/zorro#type"
+        ],
+        "subject_term_types": {
+          "bnode": 493,
+          "uri": 4253
+        },
+        "triple_count": 4746
+      }
+    },
+    "columns": [
+      "dependentFunction",
+      "dependentFunctionLabel"
+    ],
+    "rows": []
+  },
+  "39b13be0dce2649a3a42b50ce661fa9f74a1a958d64d90ec8a260af63c53bd26": {
+    "_meta": {
+      "columns": [
+        "function",
+        "dependency"
+      ],
+      "context_hash": "6e3039d886c3cbfe5e6bbe1c45ccf560df22e448db5fd722dc366bbb62e0ce28",
+      "depth": 1,
+      "path": "queries/documentation/04-function-depends-on-housing-combustion.rq",
+      "question": "Which functions does \"Housing and supporting combustion\" depend on?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 20,
+          "uri": 663
+        },
+        "predicate_breakdown": [
+          {
+            "count": 379,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 87,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 75,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 38,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 22,
+            "predicate": "https://w3id.org/zorro#defines"
+          },
+          {
+            "count": 22,
+            "predicate": "https://w3id.org/zorro#addressesProblem"
+          },
+          {
+            "count": 20,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 18,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 17,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 2,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+          },
+          {
+            "count": 3,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#HousingAndSupportingCombustion, https://w3id.org/zorro#dependsOn])",
+        "seeds": [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#dependsOn"
+        ],
+        "subject_term_types": {
+          "bnode": 1,
+          "uri": 682
+        },
+        "triple_count": 683
+      }
+    },
+    "columns": [
+      "function",
+      "dependency"
+    ],
+    "rows": [
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#AccurateOilPressureReading"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#AccurateTemperatureReading"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#AdequateLubrication"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#BalancedCylinderCompression"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#ContainingCylindersAndRelatedParts"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#CoolingEngineWithAirflow"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#CylinderOperation"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#LubricatingEngineComponents"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#MaintainingOilPressure"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#OilDistribution"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#OilTemperatureRegulation"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#ProperCooling"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#ProperCylinderSealing"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#ProperEngineCooling"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#ProperLubrication"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#ProperOilFlow"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#ProperOilPressureRegulation"
+      ]
+    ]
+  },
+  "3b05e78640ee41f0a51b714d6905270975ba6268daababa4617a1c577a06c458": {
+    "_meta": {
+      "columns": [
+        "function",
+        "functionLabel",
+        "system",
+        "dependentFunctionCount"
+      ],
+      "context_hash": "9d9a19b7cdc4f7d19ed2fef60b3d59d58b3cf5b5387b5f0cab5b8fe6b467f8e3",
+      "depth": 1,
+      "path": "queries/documentation/12-most-critical-systems.rq",
+      "question": "Which systems are most critical based on how many functions depend on them?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 104,
+          "uri": 1651
+        },
+        "predicate_breakdown": [
+          {
+            "count": 796,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 308,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 125,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 117,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 104,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 93,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 84,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 60,
+            "predicate": "https://w3id.org/zorro#addressesProblem"
+          },
+          {
+            "count": 60,
+            "predicate": "https://w3id.org/zorro#defines"
+          },
+          {
+            "count": 4,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+          },
+          {
+            "count": 4,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#Function, https://w3id.org/zorro#System, https://w3id.org/zorro#dependsOn, https://w3id.org/zorro#hasFunction, https://w3id.org/zorro#label, https://w3id.org/zorro#type])",
+        "seeds": [
+          "https://w3id.org/zorro#Function",
+          "https://w3id.org/zorro#System",
+          "https://w3id.org/zorro#dependsOn",
+          "https://w3id.org/zorro#hasFunction",
+          "https://w3id.org/zorro#label",
+          "https://w3id.org/zorro#type"
+        ],
+        "subject_term_types": {
+          "uri": 1755
+        },
+        "triple_count": 1755
+      }
+    },
+    "columns": [
+      "function",
+      "functionLabel",
+      "system",
+      "dependentFunctionCount"
+    ],
+    "rows": [
+      [
+        "https://w3id.org/zorro#DrivingPowerToAccessories",
+        "Driving power to accessories",
+        "https://w3id.org/zorro#AccessoryDrives",
+        "1"
+      ],
+      [
+        "https://w3id.org/zorro#PowerSupplyForStarting",
+        "Power supply for starting",
+        "https://w3id.org/zorro#ElectricalPower",
+        "2"
+      ],
+      [
+        "https://w3id.org/zorro#ProvidingElectricalPower",
+        "Providing electrical power",
+        "https://w3id.org/zorro#ElectricalPower",
+        "2"
+      ],
+      [
+        "https://w3id.org/zorro#CorrectFuelType",
+        "Correct fuel type",
+        "https://w3id.org/zorro#FuelDistributionSystem",
+        "11"
+      ],
+      [
+        "https://w3id.org/zorro#DistributingFuel-AirMixture",
+        "Distributing fuel-air mixture",
+        "https://w3id.org/zorro#FuelDistributionSystem",
+        "11"
+      ],
+      [
+        "https://w3id.org/zorro#DistributingFuelAirMixture",
+        "Distributing fuel-air mixture",
+        "https://w3id.org/zorro#FuelDistributionSystem",
+        "11"
+      ],
+      [
+        "https://w3id.org/zorro#Fuel-AirMixtureControl",
+        "Fuel-air mixture control",
+        "https://w3id.org/zorro#FuelDistributionSystem",
+        "11"
+      ],
+      [
+        "https://w3id.org/zorro#Fuel-AirMixtureDistribution",
+        "Fuel-air mixture distribution",
+        "https://w3id.org/zorro#FuelDistributionSystem",
+        "11"
+      ],
+      [
+        "https://w3id.org/zorro#FuelAirMixtureControl",
+        "Fuel-air mixture control",
+        "https://w3id.org/zorro#FuelDistributionSystem",
+        "11"
+      ],
+      [
+        "https://w3id.org/zorro#FuelAirMixtureDistribution",
+        "Fuel-air mixture distribution",
+        "https://w3id.org/zorro#FuelDistributionSystem",
+        "11"
+      ],
+      [
+        "https://w3id.org/zorro#FuelDelivery",
+        "Fuel delivery",
+        "https://w3id.org/zorro#FuelDistributionSystem",
+        "11"
+      ],
+      [
+        "https://w3id.org/zorro#FuelDistribution",
+        "Fuel distribution",
+        "https://w3id.org/zorro#FuelDistributionSystem",
+        "11"
+      ],
+      [
+        "https://w3id.org/zorro#ProperAir-FuelMixture",
+        "Proper air-fuel mixture",
+        "https://w3id.org/zorro#FuelDistributionSystem",
+        "11"
+      ],
+      [
+        "https://w3id.org/zorro#ProperAirFuelMixture",
+        "Proper air-fuel mixture",
+        "https://w3id.org/zorro#FuelDistributionSystem",
+        "11"
+      ],
+      [
+        "https://w3id.org/zorro#BalancedCylinderCompression",
+        "Balanced cylinder compression",
+        "https://w3id.org/zorro#CylinderSection",
+        "4"
+      ],
+      [
+        "https://w3id.org/zorro#ContainingCylindersAndRelatedParts",
+        "Containing cylinders and related parts",
+        "https://w3id.org/zorro#CylinderSection",
+        "4"
+      ],
+      [
+        "https://w3id.org/zorro#CylinderOperation",
+        "Cylinder operation",
+        "https://w3id.org/zorro#CylinderSection",
+        "4"
+      ],
+      [
+        "https://w3id.org/zorro#ProperCylinderSealing",
+        "Proper cylinder sealing",
+        "https://w3id.org/zorro#CylinderSection",
+        "4"
+      ],
+      [
+        "https://w3id.org/zorro#CoreEngineFunctionality",
+        "Core engine functionality",
+        "https://w3id.org/zorro#PowerSection",
+        "6"
+      ],
+      [
+        "https://w3id.org/zorro#EngineStability",
+        "Engine stability",
+        "https://w3id.org/zorro#PowerSection",
+        "6"
+      ],
+      [
+        "https://w3id.org/zorro#GeneratingPower",
+        "Generating power",
+        "https://w3id.org/zorro#PowerSection",
+        "6"
+      ],
+      [
+        "https://w3id.org/zorro#HousingMainPowerComponents",
+        "Housing main power components",
+        "https://w3id.org/zorro#PowerSection",
+        "6"
+      ],
+      [
+        "https://w3id.org/zorro#PowerOutput",
+        "Power output",
+        "https://w3id.org/zorro#PowerSection",
+        "6"
+      ],
+      [
+        "https://w3id.org/zorro#SmoothEngineOperation",
+        "Smooth engine operation",
+        "https://w3id.org/zorro#PowerSection",
+        "6"
+      ],
+      [
+        "https://w3id.org/zorro#DistributingIgnitionToCylinders",
+        "Distributing ignition to cylinders",
+        "https://w3id.org/zorro#IgnitionDistributionSystem",
+        "7"
+      ],
+      [
+        "https://w3id.org/zorro#IgnitionTiming",
+        "Ignition timing",
+        "https://w3id.org/zorro#IgnitionDistributionSystem",
+        "7"
+      ],
+      [
+        "https://w3id.org/zorro#IgnitionTimingAndDistribution",
+        "Ignition timing and distribution",
+        "https://w3id.org/zorro#IgnitionDistributionSystem",
+        "7"
+      ],
+      [
+        "https://w3id.org/zorro#IgnitionTransfer",
+        "Ignition transfer",
+        "https://w3id.org/zorro#IgnitionDistributionSystem",
+        "7"
+      ],
+      [
+        "https://w3id.org/zorro#ProperIgnition",
+        "Proper ignition",
+        "https://w3id.org/zorro#IgnitionDistributionSystem",
+        "7"
+      ],
+      [
+        "https://w3id.org/zorro#ProperIgnitionTiming",
+        "Proper ignition timing",
+        "https://w3id.org/zorro#IgnitionDistributionSystem",
+        "7"
+      ],
+      [
+        "https://w3id.org/zorro#ProperIgnitionTimingAndDistribution",
+        "Proper ignition timing and distribution",
+        "https://w3id.org/zorro#IgnitionDistributionSystem",
+        "7"
+      ],
+      [
+        "https://w3id.org/zorro#AccurateOilPressureReading",
+        "Accurate oil pressure reading",
+        "https://w3id.org/zorro#LubricationSystem",
+        "9"
+      ],
+      [
+        "https://w3id.org/zorro#AdequateLubrication",
+        "Adequate lubrication",
+        "https://w3id.org/zorro#LubricationSystem",
+        "9"
+      ],
+      [
+        "https://w3id.org/zorro#LubricatingEngineComponents",
+        "Lubricating engine components",
+        "https://w3id.org/zorro#LubricationSystem",
+        "9"
+      ],
+      [
+        "https://w3id.org/zorro#MaintainingOilPressure",
+        "Maintaining oil pressure",
+        "https://w3id.org/zorro#LubricationSystem",
+        "9"
+      ],
+      [
+        "https://w3id.org/zorro#OilDistribution",
+        "Oil distribution",
+        "https://w3id.org/zorro#LubricationSystem",
+        "9"
+      ],
+      [
+        "https://w3id.org/zorro#OilTemperatureRegulation",
+        "Oil temperature regulation",
+        "https://w3id.org/zorro#LubricationSystem",
+        "9"
+      ],
+      [
+        "https://w3id.org/zorro#ProperLubrication",
+        "Proper lubrication",
+        "https://w3id.org/zorro#LubricationSystem",
+        "9"
+      ],
+      [
+        "https://w3id.org/zorro#ProperOilFlow",
+        "Proper oil flow",
+        "https://w3id.org/zorro#LubricationSystem",
+        "9"
+      ],
+      [
+        "https://w3id.org/zorro#ProperOilPressureRegulation",
+        "Proper oil pressure regulation",
+        "https://w3id.org/zorro#LubricationSystem",
+        "9"
+      ],
+      [
+        "https://w3id.org/zorro#FacilitatingEngineStart",
+        "Facilitating engine start",
+        "https://w3id.org/zorro#CrankingSection",
+        "2"
+      ],
+      [
+        "https://w3id.org/zorro#InitiatingEngineStart",
+        "Initiating engine start",
+        "https://w3id.org/zorro#CrankingSection",
+        "2"
+      ]
+    ]
+  },
+  "3d4110d57ce7e9b02dbe9a4098c505e2eda86924057491f81c6568fde3f6edcd": {
+    "_meta": {
+      "columns": [
+        "part"
+      ],
+      "context_hash": "bbc2938ea83f023afade29b3eb932dbdf5c2a7081c12e582aafbe1eeae17880f",
+      "depth": 1,
+      "path": "queries/documentation/07-parts-in-accessory-housing.rq",
+      "question": "Which parts belong to the Accessory Housing Assembly?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 28,
+          "uri": 321
+        },
+        "predicate_breakdown": [
+          {
+            "count": 156,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 72,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 46,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 31,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 20,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 8,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 8,
+            "predicate": "https://w3id.org/zorro#partNumber"
+          },
+          {
+            "count": 3,
+            "predicate": "https://w3id.org/zorro#linkCandidate"
+          },
+          {
+            "count": 2,
+            "predicate": "https://w3id.org/zorro#isProbably"
+          },
+          {
+            "count": 2,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+          },
+          {
+            "count": 1,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#AccessoryHousingAssembly, https://w3id.org/zorro#partOf])",
+        "seeds": [
+          "https://w3id.org/zorro#AccessoryHousingAssembly",
+          "https://w3id.org/zorro#partOf"
+        ],
+        "subject_term_types": {
+          "bnode": 3,
+          "uri": 346
+        },
+        "triple_count": 349
+      }
+    },
+    "columns": [
+      "part"
+    ],
+    "rows": [
+      [
+        "https://w3id.org/zorro#partnr-1102"
+      ],
+      [
+        "https://w3id.org/zorro#partnr-21A21533-04"
+      ],
+      [
+        "https://w3id.org/zorro#partnr-31C-12"
+      ],
+      [
+        "https://w3id.org/zorro#partnr-31CD-17"
+      ],
+      [
+        "https://w3id.org/zorro#partnr-73818"
+      ],
+      [
+        "https://w3id.org/zorro#partnr-STD-784"
+      ]
+    ]
+  },
+  "452f1771eb7961ddb7c6382a743f2e7bbc43d3fb3616aa4202bb20b8fc974d21": {
+    "_meta": {
+      "columns": [
+        "part"
+      ],
+      "context_hash": "2bf64c6727e73fe904de3c8c0749ec8dbc8d5e7b618dca1211886b2b8116e93a",
+      "depth": 2,
+      "path": "queries/documentation/07-parts-in-accessory-housing.rq",
+      "question": "Which parts belong to the Accessory Housing Assembly?",
+      "subgraph_monitoring": {
+        "depth": 2,
+        "object_term_types": {
+          "bnode": 2,
+          "literal": 414,
+          "uri": 2289
+        },
+        "predicate_breakdown": [
+          {
+            "count": 603,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 440,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 433,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 335,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 291,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 221,
+            "predicate": "https://w3id.org/zorro#linkCandidate"
+          },
+          {
+            "count": 143,
+            "predicate": "https://w3id.org/zorro#isProbably"
+          },
+          {
+            "count": 123,
+            "predicate": "https://w3id.org/zorro#partNumber"
+          },
+          {
+            "count": 84,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 9,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 23,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=2, seeds=[https://w3id.org/zorro#AccessoryHousingAssembly, https://w3id.org/zorro#partOf])",
+        "seeds": [
+          "https://w3id.org/zorro#AccessoryHousingAssembly",
+          "https://w3id.org/zorro#partOf"
+        ],
+        "subject_term_types": {
+          "bnode": 221,
+          "uri": 2484
+        },
+        "triple_count": 2705
+      }
+    },
+    "columns": [
+      "part"
+    ],
+    "rows": [
+      [
+        "https://w3id.org/zorro#partnr-21A21533-04"
+      ]
+    ]
+  },
+  "45bba42ab0d743eff303c3fc5e5ef54f055f6222c552a24e504f3fb5f7bd19c7": {
+    "_meta": {
+      "columns": [
+        "component",
+        "function"
+      ],
+      "context_hash": "1a8fb438e3207c0dca1bf07be6b00ba99cdbd0a7266aed9ef9d6f5f85125193a",
+      "depth": 1,
+      "path": "queries/documentation/03-component-functions.rq",
+      "question": "Which functions are assigned to the Cranking Section and the Accessory Housing Assembly?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 51,
+          "uri": 610
+        },
+        "predicate_breakdown": [
+          {
+            "count": 209,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 155,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 154,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 58,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 37,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 14,
+            "predicate": "https://w3id.org/zorro#partNumber"
+          },
+          {
+            "count": 13,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 5,
+            "predicate": "https://w3id.org/zorro#linkCandidate"
+          },
+          {
+            "count": 4,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+          },
+          {
+            "count": 4,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 8,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#AccessoryHousingAssembly, https://w3id.org/zorro#CrankingSection, https://w3id.org/zorro#hasFunction])",
+        "seeds": [
+          "https://w3id.org/zorro#AccessoryHousingAssembly",
+          "https://w3id.org/zorro#CrankingSection",
+          "https://w3id.org/zorro#hasFunction"
+        ],
+        "subject_term_types": {
+          "bnode": 5,
+          "uri": 656
+        },
+        "triple_count": 661
+      }
+    },
+    "columns": [
+      "component",
+      "function"
+    ],
+    "rows": [
+      [
+        "https://w3id.org/zorro#CrankingSection",
+        "https://w3id.org/zorro#FacilitatingEngineStart"
+      ],
+      [
+        "https://w3id.org/zorro#CrankingSection",
+        "https://w3id.org/zorro#InitiatingEngineStart"
+      ],
+      [
+        "https://w3id.org/zorro#AccessoryHousingAssembly",
+        "https://w3id.org/zorro#HousingAccessoriesAndDrives"
+      ]
+    ]
+  },
+  "46f9fd082040dd0f74f49790fc901a3ba0446697a6af712b895e0e5058f0b6ab": {
+    "_meta": {
+      "columns": [
+        "problem",
+        "cause"
+      ],
+      "context_hash": "4db800a8299253986528c9bc2af68dd57f4c86cbdfc786f2e57820816fc0e89e",
+      "depth": 2,
+      "path": "queries/documentation/01-cause-low-oil-pressure.rq",
+      "question": "Which causes are documented for the problem \"Low Oil Pressure\"?",
+      "subgraph_monitoring": {
+        "depth": 2,
+        "object_term_types": {
+          "literal": 100,
+          "uri": 1392
+        },
+        "predicate_breakdown": [
+          {
+            "count": 577,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 252,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 173,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 100,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 60,
+            "predicate": "https://w3id.org/zorro#addressesProblem"
+          },
+          {
+            "count": 60,
+            "predicate": "https://w3id.org/zorro#defines"
+          },
+          {
+            "count": 52,
+            "predicate": "https://w3id.org/zorro#hasCause"
+          },
+          {
+            "count": 50,
+            "predicate": "https://w3id.org/zorro#solves"
+          },
+          {
+            "count": 49,
+            "predicate": "https://w3id.org/zorro#addresses"
+          },
+          {
+            "count": 39,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 80,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=2, seeds=[https://w3id.org/zorro#LowOilPressure, https://w3id.org/zorro#hasCause])",
+        "seeds": [
+          "https://w3id.org/zorro#LowOilPressure",
+          "https://w3id.org/zorro#hasCause"
+        ],
+        "subject_term_types": {
+          "uri": 1492
+        },
+        "triple_count": 1492
+      }
+    },
+    "columns": [
+      "problem",
+      "cause"
+    ],
+    "rows": [
+      [
+        "Low Oil Pressure",
+        "Air lock or dirt in relief valve"
+      ],
+      [
+        "Low Oil Pressure",
+        "Defective pressure gage"
+      ],
+      [
+        "Low Oil Pressure",
+        "High Oil Temperature"
+      ],
+      [
+        "Low Oil Pressure",
+        "Insufficient oil"
+      ],
+      [
+        "Low Oil Pressure",
+        "Leak in suction line or pressure line"
+      ],
+      [
+        "Low Oil Pressure",
+        "Stoppage in oil pump intake passage"
+      ]
+    ]
+  },
+  "5cd1289dd33e425761dd39b72385ee889b2b588cf00c95478766ac2e3bc14c79": {
+    "_meta": {
+      "columns": [
+        "system"
+      ],
+      "context_hash": "cc9ed19f8a22f96da291233fee3cd12803eb5c8f20d7619b5e0c8986bbb5d13b",
+      "depth": 2,
+      "path": "queries/documentation/08-system-for-carburetor-assembly.rq",
+      "question": "Which system contains the Carburetor Assembly?",
+      "subgraph_monitoring": {
+        "depth": 2,
+        "object_term_types": {
+          "bnode": 1,
+          "literal": 843,
+          "uri": 3577
+        },
+        "predicate_breakdown": [
+          {
+            "count": 788,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 603,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 593,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 548,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 521,
+            "predicate": "https://w3id.org/zorro#linkCandidate"
+          },
+          {
+            "count": 482,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 348,
+            "predicate": "https://w3id.org/zorro#isProbably"
+          },
+          {
+            "count": 250,
+            "predicate": "https://w3id.org/zorro#partNumber"
+          },
+          {
+            "count": 84,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 69,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 135,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=2, seeds=[https://w3id.org/zorro#CarburetorAssembly, https://w3id.org/zorro#System, https://w3id.org/zorro#partOf, https://w3id.org/zorro#type])",
+        "seeds": [
+          "https://w3id.org/zorro#CarburetorAssembly",
+          "https://w3id.org/zorro#System",
+          "https://w3id.org/zorro#partOf",
+          "https://w3id.org/zorro#type"
+        ],
+        "subject_term_types": {
+          "bnode": 521,
+          "uri": 3900
+        },
+        "triple_count": 4421
+      }
+    },
+    "columns": [
+      "system"
+    ],
+    "rows": [
+      [
+        "Fuel Distribution System"
+      ]
+    ]
+  },
+  "7581bd84e31d68b1fd0879fc05d7fb21e3fc2b6ae550c9dbcdfdb9bfc69ea0b4": {
+    "_meta": {
+      "columns": [
+        "functionName",
+        "ComponentCount"
+      ],
+      "context_hash": "a817a09d5f4dd4b72e7ae716c476724fb8035bc4ec4c731256238ff09c436d56",
+      "depth": 1,
+      "path": "queries/documentation/13-function-component-counts.rq",
+      "question": "How many components implement each function?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 32,
+          "uri": 1160
+        },
+        "predicate_breakdown": [
+          {
+            "count": 566,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 200,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 191,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 84,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 62,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 35,
+            "predicate": "https://w3id.org/zorro#linkCandidate"
+          },
+          {
+            "count": 32,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 13,
+            "predicate": "https://w3id.org/zorro#isProbably"
+          },
+          {
+            "count": 5,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+          },
+          {
+            "count": 4,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#Component, https://w3id.org/zorro#hasFunction, https://w3id.org/zorro#label, https://w3id.org/zorro#subClassOf])",
+        "seeds": [
+          "https://w3id.org/zorro#Component",
+          "https://w3id.org/zorro#hasFunction",
+          "https://w3id.org/zorro#label",
+          "https://w3id.org/zorro#subClassOf"
+        ],
+        "subject_term_types": {
+          "bnode": 35,
+          "uri": 1157
+        },
+        "triple_count": 1192
+      }
+    },
+    "columns": [
+      "functionName",
+      "ComponentCount"
+    ],
+    "rows": [
+      [
+        "https://w3id.org/zorro#AccurateOilPressureReading",
+        "1"
+      ],
+      [
+        "https://w3id.org/zorro#AssistingEngineStart",
+        "1"
+      ],
+      [
+        "https://w3id.org/zorro#ExcessiveFuelDuringStart",
+        "1"
+      ],
+      [
+        "https://w3id.org/zorro#DirectingAir-FuelMixture",
+        "1"
+      ],
+      [
+        "https://w3id.org/zorro#DirectingAirFuelMixture",
+        "1"
+      ],
+      [
+        "https://w3id.org/zorro#HousingMainEngine",
+        "1"
+      ],
+      [
+        "https://w3id.org/zorro#HousingMainPowerComponents",
+        "1"
+      ],
+      [
+        "https://w3id.org/zorro#PowerSupplyForStarting",
+        "1"
+      ],
+      [
+        "https://w3id.org/zorro#ProvidingElectricalPower",
+        "1"
+      ],
+      [
+        "https://w3id.org/zorro#CoreEngineFunctionality",
+        "1"
+      ],
+      [
+        "https://w3id.org/zorro#EngineStability",
+        "1"
+      ],
+      [
+        "https://w3id.org/zorro#GeneratingPower",
+        "1"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "1"
+      ],
+      [
+        "https://w3id.org/zorro#PumpingFuelAndSecuringComponents",
+        "1"
+      ],
+      [
+        "https://w3id.org/zorro#MixingAndRegulatingFuel-Air",
+        "1"
+      ],
+      [
+        "https://w3id.org/zorro#MixingAndRegulatingFuelAir",
+        "1"
+      ],
+      [
+        "https://w3id.org/zorro#PumpingOilAndAttachingHousing",
+        "1"
+      ],
+      [
+        "https://w3id.org/zorro#CollectingAndScreeningOil",
+        "1"
+      ]
+    ]
+  },
+  "78d57cd25aae154d5d374b7447383720f5bf3eec4ea1672803e91eeb765dbcae": {
+    "_meta": {
+      "columns": [
+        "assembly"
+      ],
+      "context_hash": "dd3d51d2face41314816a7fb4a2d4210bf8039cc0eb1ddcc2926aa91775ad8e2",
+      "depth": 1,
+      "path": "queries/documentation/05-part-assemblies-std-475.rq",
+      "question": "Which assemblies include part number \"STD-475\"?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 14,
+          "uri": 619
+        },
+        "predicate_breakdown": [
+          {
+            "count": 265,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 255,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 34,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 33,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 31,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 13,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 1,
+            "predicate": "https://w3id.org/zorro#linkCandidate"
+          },
+          {
+            "count": 1,
+            "predicate": "https://w3id.org/zorro#partNumber"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#partNumber, https://w3id.org/zorro#partOf, https://w3id.org/zorro#partnr-STD-475])",
+        "seeds": [
+          "https://w3id.org/zorro#partNumber",
+          "https://w3id.org/zorro#partOf",
+          "https://w3id.org/zorro#partnr-STD-475"
+        ],
+        "subject_term_types": {
+          "bnode": 1,
+          "uri": 632
+        },
+        "triple_count": 633
+      }
+    },
+    "columns": [
+      "assembly"
+    ],
+    "rows": [
+      [
+        "https://w3id.org/zorro#CarburetorAssembly"
+      ],
+      [
+        "https://w3id.org/zorro#CylinderAssembly"
+      ],
+      [
+        "https://w3id.org/zorro#MagnetosMagnetoDrivesHarnessesAndSparkPlugs"
+      ],
+      [
+        "https://w3id.org/zorro#PropellerGovernorDriveCoverVacuumPumpDriveAndCover"
+      ],
+      [
+        "https://w3id.org/zorro#StarterMotorAndAttachingParts"
+      ]
+    ]
+  },
+  "852a7daa5273afb092444e05668f81b200501a8d87d9c9bd4768b11b8a7fc85a": {
+    "_meta": {
+      "columns": [
+        "component"
+      ],
+      "context_hash": "258a8a4b35d7ec8b5efa8f609c72d125b8de430b73c7ea47a93e50de3b276364",
+      "depth": 1,
+      "path": "queries/documentation/06-components-transferring-power.rq",
+      "question": "Which components are responsible for driving power to accessories?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 20,
+          "uri": 760
+        },
+        "predicate_breakdown": [
+          {
+            "count": 403,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 110,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 109,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 62,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 20,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 20,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 19,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 15,
+            "predicate": "https://w3id.org/zorro#addressesProblem"
+          },
+          {
+            "count": 15,
+            "predicate": "https://w3id.org/zorro#defines"
+          },
+          {
+            "count": 4,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+          },
+          {
+            "count": 3,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#DrivingPowerToAccessories, https://w3id.org/zorro#hasFunction])",
+        "seeds": [
+          "https://w3id.org/zorro#DrivingPowerToAccessories",
+          "https://w3id.org/zorro#hasFunction"
+        ],
+        "subject_term_types": {
+          "uri": 780
+        },
+        "triple_count": 780
+      }
+    },
+    "columns": [
+      "component"
+    ],
+    "rows": [
+      [
+        "https://w3id.org/zorro#AccessoryDrives"
+      ]
+    ]
+  },
+  "86da6fc4f77c758260ee7722779d2f4ebad3086396e3fef06be7353a14993c6b": {
+    "_meta": {
+      "columns": [
+        "functionName",
+        "ComponentCount"
+      ],
+      "context_hash": "972ac69249b113ca64fd669a46b3a9d6842427ed824d3dcd2016f399399b414d",
+      "depth": 2,
+      "path": "queries/documentation/13-function-component-counts.rq",
+      "question": "How many components implement each function?",
+      "subgraph_monitoring": {
+        "depth": 2,
+        "object_term_types": {
+          "bnode": 44,
+          "literal": 931,
+          "uri": 3677
+        },
+        "predicate_breakdown": [
+          {
+            "count": 806,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 681,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 603,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 588,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 521,
+            "predicate": "https://w3id.org/zorro#linkCandidate"
+          },
+          {
+            "count": 490,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 348,
+            "predicate": "https://w3id.org/zorro#isProbably"
+          },
+          {
+            "count": 250,
+            "predicate": "https://w3id.org/zorro#partNumber"
+          },
+          {
+            "count": 93,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 84,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 188,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=2, seeds=[https://w3id.org/zorro#Component, https://w3id.org/zorro#hasFunction, https://w3id.org/zorro#label, https://w3id.org/zorro#subClassOf])",
+        "seeds": [
+          "https://w3id.org/zorro#Component",
+          "https://w3id.org/zorro#hasFunction",
+          "https://w3id.org/zorro#label",
+          "https://w3id.org/zorro#subClassOf"
+        ],
+        "subject_term_types": {
+          "bnode": 521,
+          "uri": 4131
+        },
+        "triple_count": 4652
+      }
+    },
+    "columns": [
+      "functionName",
+      "ComponentCount"
+    ],
+    "rows": [
+      [
+        "MixingAndRegulatingFuel-Air",
+        1
+      ],
+      [
+        "HousingAndSupportingCombustion",
+        1
+      ],
+      [
+        "HousingMainEngine",
+        1
+      ],
+      [
+        "CollectingAndScreeningOil",
+        1
+      ],
+      [
+        "FilteringOilAndControllingFlow",
+        1
+      ],
+      [
+        "SecuringCrankcaseComponents",
+        1
+      ],
+      [
+        "SecuringAndSupportingAlternator",
+        1
+      ],
+      [
+        "PumpingOilAndAttachingHousing",
+        1
+      ],
+      [
+        "PumpingFuelAndSecuringComponents",
+        1
+      ],
+      [
+        "DirectingAir-FuelMixture",
+        1
+      ],
+      [
+        "DistributingIgnitionAndSparks",
+        1
+      ],
+      [
+        "ConvertingLinearToRotationalMotion",
+        1
+      ],
+      [
+        "CoveringDrivesAndProvidingHousing",
+        1
+      ],
+      [
+        "DistributingIgnitionToCylinders",
+        1
+      ],
+      [
+        "IgnitionTiming",
+        1
+      ],
+      [
+        "IgnitionTimingAndDistribution",
+        1
+      ],
+      [
+        "IgnitionTransfer",
+        1
+      ],
+      [
+        "CorrectFuelType",
+        1
+      ],
+      [
+        "DistributingFuel-AirMixture",
+        1
+      ],
+      [
+        "FuelDelivery",
+        1
+      ],
+      [
+        "FuelDistribution",
+        1
+      ],
+      [
+        "FuelAirMixtureControl",
+        1
+      ],
+      [
+        "FuelAirMixtureDistribution",
+        1
+      ],
+      [
+        "ManagingAir-FuelMixtureIntake",
+        1
+      ],
+      [
+        "AssistingEngineStart",
+        1
+      ],
+      [
+        "Air-FuelIntake",
+        1
+      ],
+      [
+        "Air-FuelIntakeControl",
+        1
+      ],
+      [
+        "Air-FuelMixtureContamination",
+        1
+      ],
+      [
+        "AirIntakeRestriction",
+        1
+      ],
+      [
+        "ManagingAirFuelMixtureIntake",
+        1
+      ],
+      [
+        "ProperAir-FuelIntake",
+        1
+      ],
+      [
+        "BalancedCylinderCompression",
+        1
+      ],
+      [
+        "ContainingCylindersAndRelatedParts",
+        1
+      ],
+      [
+        "CylinderOperation",
+        1
+      ],
+      [
+        "ProperCylinderSealing",
+        1
+      ],
+      [
+        "CoreEngineFunctionality",
+        1
+      ],
+      [
+        "EngineStability",
+        1
+      ],
+      [
+        "PowerOutput",
+        1
+      ],
+      [
+        "SmoothEngineOperation",
+        1
+      ]
+    ]
+  },
+  "9fb9026fa6ed2dc76811b1f87dd8032c82b164f7162101a370a3b4e4fe978c7b": {
+    "_meta": {
+      "columns": [
+        "function",
+        "dependency"
+      ],
+      "context_hash": "ffe0a723156730336d171026189fd00b871d09f308044f52a17ca990ac656e41",
+      "depth": 2,
+      "path": "queries/documentation/04-function-depends-on-housing-combustion.rq",
+      "question": "Which functions does \"Housing and supporting combustion\" depend on?",
+      "subgraph_monitoring": {
+        "depth": 2,
+        "object_term_types": {
+          "literal": 170,
+          "uri": 1758
+        },
+        "predicate_breakdown": [
+          {
+            "count": 769,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 229,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 223,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 159,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 154,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 93,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 84,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 60,
+            "predicate": "https://w3id.org/zorro#defines"
+          },
+          {
+            "count": 60,
+            "predicate": "https://w3id.org/zorro#addressesProblem"
+          },
+          {
+            "count": 23,
+            "predicate": "https://w3id.org/zorro#hasCause"
+          },
+          {
+            "count": 74,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=2, seeds=[https://w3id.org/zorro#HousingAndSupportingCombustion, https://w3id.org/zorro#dependsOn])",
+        "seeds": [
+          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/zorro#dependsOn"
+        ],
+        "subject_term_types": {
+          "bnode": 7,
+          "uri": 1921
+        },
+        "triple_count": 1928
+      }
+    },
+    "columns": [
+      "function",
+      "dependency"
+    ],
+    "rows": [
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#AccurateOilPressureReading"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#AccurateTemperatureReading"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#AdequateLubrication"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#BalancedCylinderCompression"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#ContainingCylindersAndRelatedParts"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#CoolingEngineWithAirflow"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#CylinderOperation"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#LubricatingEngineComponents"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#MaintainingOilPressure"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#OilDistribution"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#OilTemperatureRegulation"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#ProperCooling"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#ProperEngineCooling"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#ProperLubrication"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#ProperOilFlow"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAndSupportingCombustion",
+        "https://w3id.org/zorro#ProperOilPressureRegulation"
+      ]
+    ]
+  },
+  "9fd6b82ccfdbdd0e82c77f0231da40d81ca425714deb2a444211891b4e1d5020": {
+    "_meta": {
+      "columns": [
+        "problem",
+        "solution"
+      ],
+      "context_hash": "4db800a8299253986528c9bc2af68dd57f4c86cbdfc786f2e57820816fc0e89e",
+      "depth": 2,
+      "path": "queries/documentation/02-solution-low-oil-pressure.rq",
+      "question": "Which solutions address the problem \"Low Oil Pressure\"?",
+      "subgraph_monitoring": {
+        "depth": 2,
+        "object_term_types": {
+          "literal": 100,
+          "uri": 1392
+        },
+        "predicate_breakdown": [
+          {
+            "count": 577,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 252,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 173,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 100,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 60,
+            "predicate": "https://w3id.org/zorro#defines"
+          },
+          {
+            "count": 60,
+            "predicate": "https://w3id.org/zorro#addressesProblem"
+          },
+          {
+            "count": 52,
+            "predicate": "https://w3id.org/zorro#hasCause"
+          },
+          {
+            "count": 50,
+            "predicate": "https://w3id.org/zorro#solves"
+          },
+          {
+            "count": 49,
+            "predicate": "https://w3id.org/zorro#addresses"
+          },
+          {
+            "count": 39,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 80,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=2, seeds=[https://w3id.org/zorro#LowOilPressure, https://w3id.org/zorro#hasCause, https://w3id.org/zorro#solves])",
+        "seeds": [
+          "https://w3id.org/zorro#LowOilPressure",
+          "https://w3id.org/zorro#hasCause",
+          "https://w3id.org/zorro#solves"
+        ],
+        "subject_term_types": {
+          "uri": 1492
+        },
+        "triple_count": 1492
+      }
+    },
+    "columns": [
+      "problem",
+      "solution"
+    ],
+    "rows": [
+      [
+        "Low Oil Pressure",
+        "Check line for obstruction. Clean suction strainer."
+      ],
+      [
+        "Low Oil Pressure",
+        "Remove and clean oil pressure relief valve."
+      ],
+      [
+        "Low Oil Pressure",
+        "Replace."
+      ]
+    ]
+  },
+  "a69f7102cf512256c5c87355115e075af6cc13cd950f42a471ddffaa958725b7": {
+    "_meta": {
+      "columns": [
+        "relationship",
+        "dependency",
+        "dependencyLabel"
+      ],
+      "context_hash": "266f52bf32f3659501fdf1940e5693eb67e0b56649b128a4061560fa6dabf513",
+      "depth": 2,
+      "path": "queries/documentation/10-function-dependencies-generating-engine-power.rq",
+      "question": "Which functions depend on \"Generating power\", and which functions does \"Generating power\" depend on?",
+      "subgraph_monitoring": {
+        "depth": 2,
+        "object_term_types": {
+          "literal": 402,
+          "uri": 2695
+        },
+        "predicate_breakdown": [
+          {
+            "count": 806,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 582,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 371,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 353,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 328,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 93,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 87,
+            "predicate": "https://w3id.org/zorro#linkCandidate"
+          },
+          {
+            "count": 84,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 74,
+            "predicate": "https://w3id.org/zorro#partNumber"
+          },
+          {
+            "count": 60,
+            "predicate": "https://w3id.org/zorro#defines"
+          },
+          {
+            "count": 259,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=2, seeds=[https://w3id.org/zorro#Function, https://w3id.org/zorro#GeneratingPower, https://w3id.org/zorro#dependsOn, https://w3id.org/zorro#label, https://w3id.org/zorro#type])",
+        "seeds": [
+          "https://w3id.org/zorro#Function",
+          "https://w3id.org/zorro#GeneratingPower",
+          "https://w3id.org/zorro#dependsOn",
+          "https://w3id.org/zorro#label",
+          "https://w3id.org/zorro#type"
+        ],
+        "subject_term_types": {
+          "bnode": 87,
+          "uri": 3010
+        },
+        "triple_count": 3097
+      }
+    },
+    "columns": [
+      "relationship",
+      "dependency",
+      "dependencyLabel"
+    ],
+    "rows": [
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#GeneratingPower",
+        "Generating power"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#GeneratingPower",
+        "Generating power"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#GeneratingPower",
+        "Generating power"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#GeneratingPower",
+        "Generating power"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#GeneratingPower",
+        "Generating power"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#AccurateOilPressureReading",
+        "Accurate oil pressure reading"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#AccurateTemperatureReading",
+        "Accurate temperature reading"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#AdequateLubrication",
+        "Adequate lubrication"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#CoolingEngineWithAirflow",
+        "Cooling engine with airflow"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#LubricatingEngineComponents",
+        "Lubricating engine components"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#MaintainingOilPressure",
+        "Maintaining oil pressure"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#OilDistribution",
+        "Oil distribution"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#OilTemperatureRegulation",
+        "Oil temperature regulation"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#ProperCooling",
+        "Proper cooling"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#ProperEngineCooling",
+        "Proper engine cooling"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#ProperLubrication",
+        "Proper lubrication"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#ProperOilFlow",
+        "Proper oil flow"
+      ],
+      [
+        "dependsOn",
+        "https://w3id.org/zorro#ProperOilPressureRegulation",
+        "Proper oil pressure regulation"
+      ]
+    ]
+  },
+  "b1b8b1b78d1f4bdd7902a5340758605f32b88f0b76cbd68b11790c841310991e": {
+    "_meta": {
+      "columns": [
+        "component",
+        "function"
+      ],
+      "context_hash": "d5444b71116dec10b411f172086023e65c7a55ed3c09784a5404806385f7ee29",
+      "depth": 2,
+      "path": "queries/documentation/03-component-functions.rq",
+      "question": "Which functions are assigned to the Cranking Section and the Accessory Housing Assembly?",
+      "subgraph_monitoring": {
+        "depth": 2,
+        "object_term_types": {
+          "bnode": 4,
+          "literal": 560,
+          "uri": 2969
+        },
+        "predicate_breakdown": [
+          {
+            "count": 806,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 603,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 442,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 419,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 364,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 250,
+            "predicate": "https://w3id.org/zorro#linkCandidate"
+          },
+          {
+            "count": 167,
+            "predicate": "https://w3id.org/zorro#isProbably"
+          },
+          {
+            "count": 141,
+            "predicate": "https://w3id.org/zorro#partNumber"
+          },
+          {
+            "count": 93,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 84,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 164,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=2, seeds=[https://w3id.org/zorro#AccessoryHousingAssembly, https://w3id.org/zorro#CrankingSection, https://w3id.org/zorro#hasFunction])",
+        "seeds": [
+          "https://w3id.org/zorro#AccessoryHousingAssembly",
+          "https://w3id.org/zorro#CrankingSection",
+          "https://w3id.org/zorro#hasFunction"
+        ],
+        "subject_term_types": {
+          "bnode": 250,
+          "uri": 3283
+        },
+        "triple_count": 3533
+      }
+    },
+    "columns": [
+      "component",
+      "function"
+    ],
+    "rows": [
+      [
+        "https://w3id.org/zorro#CrankingSection",
+        "https://w3id.org/zorro#FacilitatingEngineStart"
+      ],
+      [
+        "https://w3id.org/zorro#CrankingSection",
+        "https://w3id.org/zorro#InitiatingEngineStart"
+      ],
+      [
+        "https://w3id.org/zorro#AccessoryHousingAssembly",
+        "https://w3id.org/zorro#HousingAccessoriesAndDrives"
+      ]
+    ]
+  },
+  "b517dc92af8f7e000aeb43d5f11cdf5583783b1a7c1fd1ced2dc1989146aadfd": {
+    "_meta": {
+      "columns": [
+        "cause",
+        "problemList",
+        "problemCount"
+      ],
+      "context_hash": "e1ab83e8d0d63045e98b48025d42ff35bbea59b897c8b9a61fbabd8f3208600f",
+      "depth": 2,
+      "path": "queries/documentation/09-problems-shared-causes.rq",
+      "question": "Which documented problems share the same cause?",
+      "subgraph_monitoring": {
+        "depth": 2,
+        "object_term_types": {
+          "literal": 56,
+          "uri": 464
+        },
+        "predicate_breakdown": [
+          {
+            "count": 116,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 60,
+            "predicate": "https://w3id.org/zorro#defines"
+          },
+          {
+            "count": 60,
+            "predicate": "https://w3id.org/zorro#addressesProblem"
+          },
+          {
+            "count": 56,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 52,
+            "predicate": "https://w3id.org/zorro#hasCause"
+          },
+          {
+            "count": 51,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 50,
+            "predicate": "https://w3id.org/zorro#solves"
+          },
+          {
+            "count": 49,
+            "predicate": "https://w3id.org/zorro#addresses"
+          },
+          {
+            "count": 13,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+          },
+          {
+            "count": 12,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+          },
+          {
+            "count": 1,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=2, seeds=[https://w3id.org/zorro#hasCause])",
+        "seeds": [
+          "https://w3id.org/zorro#hasCause"
+        ],
+        "subject_term_types": {
+          "uri": 520
+        },
+        "triple_count": 520
+      }
+    },
+    "columns": [
+      "cause",
+      "problemList",
+      "problemCount"
+    ],
+    "rows": [
+      [
+        "Defective ignition wire",
+        [
+          "Failure of Engine to Start",
+          "Low Power and Uneven Running"
+        ],
+        2
+      ],
+      [
+        "Defective spark plugs",
+        [
+          "Failure of Engine to Start",
+          "Low Power and Uneven Running"
+        ],
+        2
+      ],
+      [
+        "Improper fuel",
+        [
+          "Failure of Engine to Develop Full Power",
+          "Low Power and Uneven Running"
+        ],
+        2
+      ],
+      [
+        "Leak in induction system",
+        [
+          "Failure of Engine to Develop Full Power",
+          "Failure of Engine to Idle Properly"
+        ],
+        2
+      ]
+    ]
+  },
+  "b77e361e0f2d34309f8558d1024f8509c43ba24ef25cb64645a7dbae74427609": {
+    "_meta": {
+      "columns": [
+        "dependentFunction",
+        "dependentFunctionLabel"
+      ],
+      "context_hash": "ddb50ae4b19275a1c15dc2d3631b8d8e9d2aab50c7262a16a5d6b7fd44c8783e",
+      "depth": 1,
+      "path": "queries/documentation/11-dependent-functions-power-section.rq",
+      "question": "Which functions ultimately depend on the functions of the Power Section?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 336,
+          "uri": 2028
+        },
+        "predicate_breakdown": [
+          {
+            "count": 804,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 432,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 262,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 208,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 204,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 93,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 84,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 74,
+            "predicate": "https://w3id.org/zorro#partNumber"
+          },
+          {
+            "count": 60,
+            "predicate": "https://w3id.org/zorro#addressesProblem"
+          },
+          {
+            "count": 60,
+            "predicate": "https://w3id.org/zorro#defines"
+          },
+          {
+            "count": 83,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#Function, https://w3id.org/zorro#PowerSection, https://w3id.org/zorro#dependsOn, https://w3id.org/zorro#hasFunction, https://w3id.org/zorro#label, https://w3id.org/zorro#type])",
+        "seeds": [
+          "https://w3id.org/zorro#Function",
+          "https://w3id.org/zorro#PowerSection",
+          "https://w3id.org/zorro#dependsOn",
+          "https://w3id.org/zorro#hasFunction",
+          "https://w3id.org/zorro#label",
+          "https://w3id.org/zorro#type"
+        ],
+        "subject_term_types": {
+          "bnode": 57,
+          "uri": 2307
+        },
+        "triple_count": 2364
+      }
+    },
+    "columns": [
+      "https://w3id.org/zorro#dependentFunction",
+      "https://w3id.org/zorro#dependentFunctionLabel"
+    ],
+    "rows": [
+      [
+        "https://w3id.org/zorro#PumpingFuelAndSecuringComponents",
+        "Pumping fuel and securing components"
+      ],
+      [
+        "https://w3id.org/zorro#DistributingIgnition",
+        "Distributing ignition"
+      ],
+      [
+        "https://w3id.org/zorro#DrivingAndTimingComponents",
+        "Driving and timing components"
+      ],
+      [
+        "https://w3id.org/zorro#DistributingIgnitionToCylinders",
+        "Distributing ignition to cylinders"
+      ],
+      [
+        "https://w3id.org/zorro#IgnitionTiming",
+        "Ignition timing"
+      ],
+      [
+        "https://w3id.org/zorro#IgnitionTimingAndDistribution",
+        "Ignition timing and distribution"
+      ],
+      [
+        "https://w3id.org/zorro#IgnitionTransfer",
+        "Ignition transfer"
+      ],
+      [
+        "https://w3id.org/zorro#DistributingFuel-AirMixture",
+        "Distributing fuel-air mixture"
+      ],
+      [
+        "https://w3id.org/zorro#FuelDelivery",
+        "Fuel delivery"
+      ],
+      [
+        "https://w3id.org/zorro#FuelDistribution",
+        "Fuel distribution"
+      ],
+      [
+        "https://w3id.org/zorro#Air-FuelIntake",
+        "Air-fuel intake"
+      ],
+      [
+        "https://w3id.org/zorro#Air-FuelIntakeControl",
+        "Air-fuel intake control"
+      ],
+      [
+        "https://w3id.org/zorro#Air-FuelMixtureContamination",
+        "Air-fuel mixture contamination"
+      ],
+      [
+        "https://w3id.org/zorro#Fuel-AirMixtureControl",
+        "Fuel-air mixture control"
+      ],
+      [
+        "https://w3id.org/zorro#Fuel-AirMixtureDistribution",
+        "Fuel-air mixture distribution"
+      ],
+      [
+        "https://w3id.org/zorro#OilTemperatureRegulation",
+        "Oil temperature regulation"
+      ],
+      [
+        "https://w3id.org/zorro#RegulatingOilFlowAndPressure",
+        "Regulating oil flow and pressure"
+      ],
+      [
+        "https://w3id.org/zorro#MeasuringOilQuantity",
+        "Measuring oil quantity"
+      ],
+      [
+        "https://w3id.org/zorro#MaintainingOilPressure",
+        "Maintaining oil pressure"
+      ],
+      [
+        "https://w3id.org/zorro#OilDistribution",
+        "Oil distribution"
+      ],
+      [
+        "https://w3id.org/zorro#ProperLubrication",
+        "Proper lubrication"
+      ],
+      [
+        "https://w3id.org/zorro#ProperOilFlow",
+        "Proper oil flow"
+      ],
+      [
+        "https://w3id.org/zorro#ProperOilPressureRegulation",
+        "Proper oil pressure regulation"
+      ]
+    ]
+  },
+  "d25f710284f420a0da4e64e9911da729c009406da4179210c6ab3b4e7e03ce9e": {
+    "_meta": {
+      "columns": [
+        "problem",
+        "solution"
+      ],
+      "context_hash": "3722068f57d38ad4ebabfb72f291fbbe6e5f64b1f38e88e97828ece05885a632",
+      "depth": 1,
+      "path": "queries/documentation/02-solution-low-oil-pressure.rq",
+      "question": "Which solutions address the problem \"Low Oil Pressure\"?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 15,
+          "uri": 218
+        },
+        "predicate_breakdown": [
+          {
+            "count": 74,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 57,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 28,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 15,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 14,
+            "predicate": "https://w3id.org/zorro#hasCause"
+          },
+          {
+            "count": 13,
+            "predicate": "https://w3id.org/zorro#addresses"
+          },
+          {
+            "count": 8,
+            "predicate": "https://w3id.org/zorro#defines"
+          },
+          {
+            "count": 8,
+            "predicate": "https://w3id.org/zorro#addressesProblem"
+          },
+          {
+            "count": 6,
+            "predicate": "https://w3id.org/zorro#solves"
+          },
+          {
+            "count": 4,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+          },
+          {
+            "count": 6,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#LowOilPressure, https://w3id.org/zorro#hasCause, https://w3id.org/zorro#solves])",
+        "seeds": [
+          "https://w3id.org/zorro#LowOilPressure",
+          "https://w3id.org/zorro#hasCause",
+          "https://w3id.org/zorro#solves"
+        ],
+        "subject_term_types": {
+          "uri": 233
+        },
+        "triple_count": 233
+      }
+    },
+    "columns": [
+      "problem",
+      "solution"
+    ],
+    "rows": [
+      [
+        "https://w3id.org/zorro#LowOilPressure",
+        "https://w3id.org/zorro#CheckGasketBetweenAccessoryHousingAndCrankcase"
+      ],
+      [
+        "https://w3id.org/zorro#LowOilPressure",
+        "https://w3id.org/zorro#CheckLineForObstructionCleanSuctionStrainer"
+      ],
+      [
+        "https://w3id.org/zorro#LowOilPressure",
+        "https://w3id.org/zorro#FillToProperLevelWithRecom-MendedOil"
+      ],
+      [
+        "https://w3id.org/zorro#LowOilPressure",
+        "https://w3id.org/zorro#Replace"
+      ],
+      [
+        "https://w3id.org/zorro#LowOilPressure",
+        "https://w3id.org/zorro#SeeHighOilTemperatureInTroubleColumn"
+      ],
+      [
+        "https://w3id.org/zorro#LowOilPressure",
+        "https://w3id.org/zorro#RemoveAndCleanOilPressureReliefValve"
+      ]
+    ]
+  },
+  "e190d9bd2ab15d71534b54f5c0d0a25929d83f8edf577b230cd93c752fb4a4ea": {
+    "_meta": {
+      "columns": [
+        "relationship",
+        "dependency",
+        "dependencyLabel"
+      ],
+      "context_hash": "ad2745612f7f60e04f0d6090550da694d68d1e7049a4fe75d8e601a6441aea3f",
+      "depth": 1,
+      "path": "queries/documentation/10-function-dependencies-generating-engine-power.rq",
+      "question": "Which functions depend on \"Generating power\", and which functions does \"Generating power\" depend on?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 97,
+          "uri": 1318
+        },
+        "predicate_breakdown": [
+          {
+            "count": 762,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 101,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 97,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 93,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 84,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 79,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 73,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 60,
+            "predicate": "https://w3id.org/zorro#addressesProblem"
+          },
+          {
+            "count": 60,
+            "predicate": "https://w3id.org/zorro#defines"
+          },
+          {
+            "count": 3,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+          },
+          {
+            "count": 3,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#Function, https://w3id.org/zorro#GeneratingPower, https://w3id.org/zorro#dependsOn, https://w3id.org/zorro#label, https://w3id.org/zorro#type])",
+        "seeds": [
+          "https://w3id.org/zorro#Function",
+          "https://w3id.org/zorro#GeneratingPower",
+          "https://w3id.org/zorro#dependsOn",
+          "https://w3id.org/zorro#label",
+          "https://w3id.org/zorro#type"
+        ],
+        "subject_term_types": {
+          "uri": 1415
+        },
+        "triple_count": 1415
+      }
+    },
+    "columns": [
+      "relationship",
+      "dependency",
+      "dependencyLabel"
+    ],
+    "rows": [
+      [
+        "https://w3id.org/zorro#DrivingPowerToAccessories",
+        "https://w3id.org/zorro#GeneratingPower",
+        "Generating power"
+      ],
+      [
+        "https://w3id.org/zorro#HousingAccessoriesAndDrives",
+        "https://w3id.org/zorro#GeneratingPower",
+        "Generating power"
+      ],
+      [
+        "https://w3id.org/zorro#GeneratingPower",
+        "https://w3id.org/zorro#AccurateOilPressureReading",
+        "Accurate oil pressure reading"
+      ],
+      [
+        "https://w3id.org/zorro#GeneratingPower",
+        "https://w3id.org/zorro#AccurateTemperatureReading",
+        "Accurate temperature reading"
+      ],
+      [
+        "https://w3id.org/zorro#GeneratingPower",
+        "https://w3id.org/zorro#AdequateLubrication",
+        "Adequate lubrication"
+      ],
+      [
+        "https://w3id.org/zorro#GeneratingPower",
+        "https://w3id.org/zorro#CoolingEngineWithAirflow",
+        "Cooling engine with airflow"
+      ],
+      [
+        "https://w3id.org/zorro#GeneratingPower",
+        "https://w3id.org/zorro#LubricatingEngineComponents",
+        "Lubricating engine components"
+      ],
+      [
+        "https://w3id.org/zorro#GeneratingPower",
+        "https://w3id.org/zorro#MaintainingOilPressure",
+        "Maintaining oil pressure"
+      ],
+      [
+        "https://w3id.org/zorro#GeneratingPower",
+        "https://w3id.org/zorro#OilDistribution",
+        "Oil distribution"
+      ],
+      [
+        "https://w3id.org/zorro#GeneratingPower",
+        "https://w3id.org/zorro#OilTemperatureRegulation",
+        "Oil temperature regulation"
+      ],
+      [
+        "https://w3id.org/zorro#GeneratingPower",
+        "https://w3id.org/zorro#ProperCooling",
+        "Proper cooling"
+      ],
+      [
+        "https://w3id.org/zorro#GeneratingPower",
+        "https://w3id.org/zorro#ProperEngineCooling",
+        "Proper engine cooling"
+      ],
+      [
+        "https://w3id.org/zorro#GeneratingPower",
+        "https://w3id.org/zorro#ProperLubrication",
+        "Proper lubrication"
+      ],
+      [
+        "https://w3id.org/zorro#GeneratingPower",
+        "https://w3id.org/zorro#ProperOilFlow",
+        "Proper oil flow"
+      ],
+      [
+        "https://w3id.org/zorro#GeneratingPower",
+        "https://w3id.org/zorro#ProperOilPressureRegulation",
+        "Proper oil pressure regulation"
+      ],
+      [
+        "https://w3id.org/zorro#GeneratingPower",
+        "https://w3id.org/zorro#SmoothEngineOperation",
+        "Smooth engine operation"
+      ]
+    ]
+  },
+  "f1a747133f3ed81d187320b47e02ec96962c222012474d3c93d0526712b5231f": {
+    "_meta": {
+      "columns": [
+        "assembly"
+      ],
+      "context_hash": "b017b04c76393583a1921015eeb20b92eda0c06457a8d2e7b47a0c18d1393c3c",
+      "depth": 2,
+      "path": "queries/documentation/05-part-assemblies-std-475.rq",
+      "question": "Which assemblies include part number \"STD-475\"?",
+      "subgraph_monitoring": {
+        "depth": 2,
+        "object_term_types": {
+          "literal": 809,
+          "uri": 2831
+        },
+        "predicate_breakdown": [
+          {
+            "count": 603,
+            "predicate": "https://w3id.org/zorro#partOf"
+          },
+          {
+            "count": 559,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 511,
+            "predicate": "https://w3id.org/zorro#linkCandidate"
+          },
+          {
+            "count": 431,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 405,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 363,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 348,
+            "predicate": "https://w3id.org/zorro#isProbably"
+          },
+          {
+            "count": 250,
+            "predicate": "https://w3id.org/zorro#partNumber"
+          },
+          {
+            "count": 77,
+            "predicate": "https://w3id.org/zorro#hasFunction"
+          },
+          {
+            "count": 32,
+            "predicate": "https://w3id.org/zorro#subFunctionOf"
+          },
+          {
+            "count": 61,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=2, seeds=[https://w3id.org/zorro#partNumber, https://w3id.org/zorro#partOf, https://w3id.org/zorro#partnr-STD-475])",
+        "seeds": [
+          "https://w3id.org/zorro#partNumber",
+          "https://w3id.org/zorro#partOf",
+          "https://w3id.org/zorro#partnr-STD-475"
+        ],
+        "subject_term_types": {
+          "bnode": 511,
+          "uri": 3129
+        },
+        "triple_count": 3640
+      }
+    },
+    "columns": [
+      "assembly"
+    ],
+    "rows": [
+      [
+        "AccessoryDrives"
+      ],
+      [
+        "CarburetorAssembly"
+      ],
+      [
+        "CrankingSection"
+      ],
+      [
+        "CylinderAssembly"
+      ],
+      [
+        "CylinderSection"
+      ],
+      [
+        "FuelDistributionSystem"
+      ],
+      [
+        "IgnitionDistributionSystem"
+      ],
+      [
+        "MagnetosMagnetoDrivesHarnessesAndSparkPlugs"
+      ],
+      [
+        "PropellerGovernorDriveVacuumPumpDriveAndCover"
+      ],
+      [
+        "StarterMotorAndAttachingParts"
+      ]
+    ]
+  },
+  "f803a8c04fe29a8c225c6d2c259f02e53a7e7d16b4ac0328a15d9a4ffbe86851": {
+    "_meta": {
+      "columns": [
+        "problem",
+        "cause"
+      ],
+      "context_hash": "3722068f57d38ad4ebabfb72f291fbbe6e5f64b1f38e88e97828ece05885a632",
+      "depth": 1,
+      "path": "queries/documentation/01-cause-low-oil-pressure.rq",
+      "question": "Which causes are documented for the problem \"Low Oil Pressure\"?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "literal": 15,
+          "uri": 218
+        },
+        "predicate_breakdown": [
+          {
+            "count": 74,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 57,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 28,
+            "predicate": "https://w3id.org/zorro#dependsOn"
+          },
+          {
+            "count": 15,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#label"
+          },
+          {
+            "count": 14,
+            "predicate": "https://w3id.org/zorro#hasCause"
+          },
+          {
+            "count": 13,
+            "predicate": "https://w3id.org/zorro#addresses"
+          },
+          {
+            "count": 8,
+            "predicate": "https://w3id.org/zorro#defines"
+          },
+          {
+            "count": 8,
+            "predicate": "https://w3id.org/zorro#addressesProblem"
+          },
+          {
+            "count": 6,
+            "predicate": "https://w3id.org/zorro#solves"
+          },
+          {
+            "count": 4,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+          },
+          {
+            "count": 6,
+            "predicate": "__other__"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#LowOilPressure, https://w3id.org/zorro#hasCause])",
+        "seeds": [
+          "https://w3id.org/zorro#LowOilPressure",
+          "https://w3id.org/zorro#hasCause"
+        ],
+        "subject_term_types": {
+          "uri": 233
+        },
+        "triple_count": 233
+      }
+    },
+    "columns": [
+      "problem",
+      "cause"
+    ],
+    "rows": [
+      [
+        "https://w3id.org/zorro#LowOilPressure",
+        "https://w3id.org/zorro#AirLockOrDirtInReliefValve"
+      ],
+      [
+        "https://w3id.org/zorro#LowOilPressure",
+        "https://w3id.org/zorro#DefectivePressureGage"
+      ],
+      [
+        "https://w3id.org/zorro#LowOilPressure",
+        "https://w3id.org/zorro#HighOilTemperature"
+      ],
+      [
+        "https://w3id.org/zorro#LowOilPressure",
+        "https://w3id.org/zorro#InsufficientOil"
+      ],
+      [
+        "https://w3id.org/zorro#LowOilPressure",
+        "https://w3id.org/zorro#LeakInSuctionLineOrPressureLine"
+      ],
+      [
+        "https://w3id.org/zorro#LowOilPressure",
+        "https://w3id.org/zorro#StoppageInOilPumpIntakePassage"
+      ]
+    ]
+  },
+  "fca536b074fda6d889c71b2a87754a0c4ab2e49713a537a64ae108fd45409bc3": {
+    "_meta": {
+      "columns": [
+        "cause",
+        "problemList",
+        "problemCount"
+      ],
+      "context_hash": "11e4dbb1cf933a7268f04825c7ff6d9f743ddde4178e8ed6a1455b17d80d8164",
+      "depth": 1,
+      "path": "queries/documentation/09-problems-shared-causes.rq",
+      "question": "Which documented problems share the same cause?",
+      "subgraph_monitoring": {
+        "depth": 1,
+        "object_term_types": {
+          "uri": 120
+        },
+        "predicate_breakdown": [
+          {
+            "count": 61,
+            "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+          },
+          {
+            "count": 51,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+          },
+          {
+            "count": 4,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
+          },
+          {
+            "count": 4,
+            "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
+          }
+        ],
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#hasCause])",
+        "seeds": [
+          "https://w3id.org/zorro#hasCause"
+        ],
+        "subject_term_types": {
+          "uri": 120
+        },
+        "triple_count": 120
+      }
+    },
+    "columns": [
+      "cause",
+      "problemList",
+      "problemCount"
+    ],
+    "rows": []
+  }
+}

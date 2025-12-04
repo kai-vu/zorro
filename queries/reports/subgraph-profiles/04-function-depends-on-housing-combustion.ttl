@@ -1,0 +1,808 @@
+@prefix : <https://w3id.org/zorro#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Air-FuelIntake a :Function .
+
+:Air-FuelIntakeControl a :Function ;
+    :subFunctionOf :SupportingCombustion .
+
+:Air-FuelMixtureContamination a :Function .
+
+:AirFuelIntake rdfs:subClassOf :Function .
+
+:AirFuelIntakeControl rdfs:subClassOf :Function ;
+    :subFunctionOf :SupportingCombustion .
+
+:AirFuelMixtureContamination rdfs:subClassOf :Function .
+
+:AirIntakeRestriction a :Function ;
+    rdfs:subClassOf :Function .
+
+:AssistingEngineStart a :Function ;
+    rdfs:subClassOf :Function .
+
+:CollectingAndScreeningOil a :Function ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AdequateLubrication,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:ControllingIntakeAndExhaustFlow a :Function ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :BalancedCylinderCompression,
+        :ContainingCylindersAndRelatedParts,
+        :CylinderOperation,
+        :ProperCylinderSealing ;
+    :subFunctionOf :SupportingCombustion .
+
+:ConvertingLinearToRotationalMotion a :Function ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AdequateLubrication,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation .
+
+:CoolingAndLubrication a :Function .
+
+:CoreEngineOperations a :Function .
+
+:CorrectFuelType a :Function ;
+    rdfs:subClassOf :Function .
+
+:CoveringDrivesAndProvidingHousing a :Function ;
+    rdfs:subClassOf :Function .
+
+:DirectingAir-FuelMixture a :Function .
+
+:DirectingAirFuelMixture rdfs:subClassOf :Function .
+
+:DistributingFuel-AirMixture a :Function .
+
+:DistributingFuelAirMixture rdfs:subClassOf :Function .
+
+:DistributingIgnition a :Function .
+
+:DistributingIgnitionAndSparks a :Function ;
+    rdfs:subClassOf :Function .
+
+:DistributingIgnitionToCylinders a :Function ;
+    rdfs:subClassOf :Function .
+
+:DrainingAndCoolingCylinders a :Function ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateTemperatureReading,
+        :BalancedCylinderCompression,
+        :ContainingCylindersAndRelatedParts,
+        :CoolingEngineWithAirflow,
+        :CylinderOperation,
+        :ProperCooling,
+        :ProperCylinderSealing,
+        :ProperEngineCooling ;
+    :subFunctionOf :LubricatingEngineComponents,
+        :SupportingCombustion .
+
+:DrivingAndTimingComponents a :Function ;
+    rdfs:subClassOf :Function .
+
+:DrivingPowerToAccessories a :Function ;
+    rdfs:subClassOf :Function .
+
+:ExcessiveFuelDuringStart a :Function ;
+    rdfs:subClassOf :Function ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:FacilitatingEngineStart a :Function ;
+    rdfs:subClassOf :Function .
+
+:FilteringOilAndControllingFlow a :Function ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AdequateLubrication,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:Fuel-AirMixtureControl a :Function .
+
+:Fuel-AirMixtureDistribution a :Function .
+
+:FuelAirMixtureControl rdfs:subClassOf :Function .
+
+:FuelAirMixtureDistribution rdfs:subClassOf :Function .
+
+:FuelDelivery a :Function ;
+    rdfs:subClassOf :Function .
+
+:FuelDistribution a :Function ;
+    rdfs:subClassOf :Function .
+
+:HousingAccessoriesAndDrives a :Function ;
+    rdfs:subClassOf :Function .
+
+:HousingMainEngine a :Function ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :CoolingEngineWithAirflow,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation .
+
+:HousingMainEngineComponents a :Function .
+
+:IgnitionTiming a :Function ;
+    rdfs:subClassOf :Function .
+
+:IgnitionTimingAndDistribution a :Function ;
+    rdfs:subClassOf :Function .
+
+:IgnitionTransfer a :Function ;
+    rdfs:subClassOf :Function .
+
+:InitiatingEngineStart a :Function ;
+    rdfs:subClassOf :Function .
+
+:MaintainingEngineStability a :Function .
+
+:ManagingAir-FuelMixtureIntake a :Function .
+
+:ManagingAirFuelMixtureIntake rdfs:subClassOf :Function .
+
+:ManagingFuel-AirMixture a :Function .
+
+:MeasuringOilQuantity a :Function ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AdequateLubrication,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:MixingAndRegulatingFuel-Air a :Function .
+
+:MixingAndRegulatingFuelAir rdfs:subClassOf :Function .
+
+:MonitoringAndControl a :Function .
+
+:PowerGeneration a :Function .
+
+:PowerSupplyForStarting a :Function ;
+    rdfs:subClassOf :Function .
+
+:ProperAir-FuelIntake a :Function ;
+    :subFunctionOf :SupportingCombustion .
+
+:ProperAir-FuelMixture a :Function .
+
+:ProperAirFuelIntake rdfs:subClassOf :Function ;
+    :subFunctionOf :SupportingCombustion .
+
+:ProperAirFuelMixture rdfs:subClassOf :Function .
+
+:ProperFuelType a :Function .
+
+:ProperIgnition a :Function ;
+    rdfs:subClassOf :Function .
+
+:ProperIgnitionTiming a :Function ;
+    rdfs:subClassOf :Function .
+
+:ProperIgnitionTimingAndDistribution a :Function ;
+    rdfs:subClassOf :Function .
+
+:ProvidingElectricalPower a :Function ;
+    rdfs:subClassOf :Function .
+
+:PumpingFuelAndSecuringComponents a :Function ;
+    rdfs:subClassOf :Function .
+
+:PumpingOilAndAttachingHousing a :Function ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AdequateLubrication,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:RegulatingOilFlowAndPressure a :Function ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AdequateLubrication,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:SecuringAndSupportingAlternator a :Function ;
+    rdfs:subClassOf :Function .
+
+:SecuringCrankcaseComponents a :Function ;
+    rdfs:subClassOf :Function .
+
+:SupportingCrankcaseOperation a :Function ;
+    rdfs:subClassOf :Function .
+
+:SupportingCylinderOperation a :Function ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateTemperatureReading,
+        :BalancedCylinderCompression,
+        :ContainingCylindersAndRelatedParts,
+        :CoolingEngineWithAirflow,
+        :CylinderOperation,
+        :ProperCooling,
+        :ProperCylinderSealing,
+        :ProperEngineCooling ;
+    :subFunctionOf :SupportingCombustion .
+
+:TransmittingMotionAndSealingChamber a :Function ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :BalancedCylinderCompression,
+        :ContainingCylindersAndRelatedParts,
+        :CylinderOperation,
+        :ProperCylinderSealing ;
+    :subFunctionOf :SupportingCombustion .
+
+:define rdfs:domain :Function .
+
+:dependOn rdfs:domain :Function ;
+    rdfs:range :Function .
+
+:hasFunction rdfs:range :Function .
+
+:partnr-1102 :partOf :CylinderAssembly .
+
+:partnr-16R22126 :partOf :CylinderAssembly .
+
+:partnr-25C-8 :partOf :CylinderAssembly .
+
+:partnr-31C-12 :partOf :CylinderAssembly .
+
+:partnr-66610 :partOf :CylinderAssembly .
+
+:partnr-66796 :partOf :CylinderAssembly .
+
+:partnr-72057 :partOf :CylinderAssembly .
+
+:partnr-72058 :partOf :CylinderAssembly .
+
+:partnr-76943 :partOf :CylinderAssembly .
+
+:partnr-77611 :partOf :CylinderAssembly .
+
+:partnr-LW-12416 rdfs:subClassOf :CylinderAssembly ;
+    :partOf :CylinderAssembly .
+
+:partnr-MS20823-6D :partOf :CylinderAssembly .
+
+:partnr-STD-1353 :partOf :CylinderAssembly .
+
+:partnr-STD-1410 :partOf :CylinderAssembly .
+
+:partnr-STD-35 :partOf :CylinderAssembly .
+
+:partnr-STD-475 :partOf :CylinderAssembly .
+
+:CoolingSystem :hasFunction :AccurateTemperatureReading,
+        :CoolingEngineWithAirflow,
+        :ProperCooling,
+        :ProperEngineCooling .
+
+:CylinderAndCombustionOperations a :Function .
+
+:HousingAndSupportingCombustion a :Function ;
+    rdfs:label "Housing and supporting combustion" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :BalancedCylinderCompression,
+        :ContainingCylindersAndRelatedParts,
+        :CoolingEngineWithAirflow,
+        :CylinderOperation,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperCooling,
+        :ProperCylinderSealing,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation ;
+    :subFunctionOf :SupportingCombustion .
+
+:LubricationSystem :hasFunction :AccurateOilPressureReading,
+        :AdequateLubrication,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation .
+
+:CylinderSection :hasFunction :BalancedCylinderCompression,
+        :ContainingCylindersAndRelatedParts,
+        :CylinderOperation,
+        :ProperCylinderSealing .
+
+:EnsuringSmoothOperation a :Function .
+
+:CoolingEngine a :Function .
+
+:BalancedCylinderCompression a :Function ;
+    rdfs:label "Balanced cylinder compression" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :UnevenCompression,
+        :UnevenCylinderCompression ;
+    :defines :UnevenCompression,
+        :UnevenCylinderCompression ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation,
+        :SmoothEngineOperation ;
+    :subFunctionOf :SupportingCombustion .
+
+:ContainingCylindersAndRelatedParts a :Function ;
+    rdfs:label "Containing cylinders and related parts" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation,
+        :SmoothEngineOperation ;
+    :subFunctionOf :SupportingCombustion .
+
+:CylinderOperation a :Function ;
+    rdfs:label "Cylinder operation" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :ExcessiveOilConsumption,
+        :RoughEngine ;
+    :defines :ExcessiveOilConsumption,
+        :RoughEngine ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation,
+        :SmoothEngineOperation ;
+    :subFunctionOf :EnsuringSmoothOperation,
+        :SupportingCombustion .
+
+:ProperCylinderSealing a :Function ;
+    rdfs:label "Proper cylinder sealing" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :ExcessiveBlow-By,
+        :FailureOfRingsToSeat,
+        :IncorrectInstallationOfPistonRings,
+        :WornPistonRings ;
+    :defines :ExcessiveBlowBy,
+        :FailureOfRingsToSeat,
+        :IncorrectInstallationOfPistonRings,
+        :WornPistonRings ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation,
+        :SmoothEngineOperation ;
+    :subFunctionOf :SupportingCombustion .
+
+:SupportingCombustion a :Function ;
+    rdfs:label "Supporting combustion" ;
+    :subFunctionOf :CylinderAndCombustionOperations .
+
+:CoreEngineFunctionality a :Function ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :CoolingEngineWithAirflow,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation .
+
+:EngineStability a :Function ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :CoolingEngineWithAirflow,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation .
+
+:GeneratingPower a :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :CoolingEngineWithAirflow,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation .
+
+:HousingMainPowerComponents a :Function ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :CoolingEngineWithAirflow,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation .
+
+:PowerOutput a :Function ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :CoolingEngineWithAirflow,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation .
+
+:SmoothEngineOperation a :Function ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :CoolingEngineWithAirflow,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation .
+
+:CylinderAssembly a :Assembly ;
+    rdfs:label "Cylinder Assembly" ;
+    rdfs:subClassOf :Assembly,
+        :Component,
+        :Part ;
+    :dependsOn :CoolingSystem,
+        :CylinderSection,
+        :LubricationSystem ;
+    :hasFunction :HousingAndSupportingCombustion ;
+    :partOf :CylinderSection .
+
+:AccurateOilPressureReading a :Function ;
+    rdfs:label "Accurate oil pressure reading" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :DefectivePressureGage ;
+    :defines :DefectivePressureGage ;
+    :dependsOn :AccurateTemperatureReading,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :SmoothEngineOperation ;
+    :subFunctionOf :EnsuringSmoothOperation,
+        :LubricatingEngineComponents .
+
+:AdequateLubrication a :Function ;
+    rdfs:label "Adequate lubrication" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :InsufficientOil ;
+    :defines :InsufficientOil ;
+    :dependsOn :AccurateTemperatureReading,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :SmoothEngineOperation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:MaintainingOilPressure a :Function ;
+    rdfs:label "Maintaining oil pressure" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :LowOilPressure ;
+    :defines :LowOilPressure ;
+    :dependsOn :AccurateTemperatureReading,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :SmoothEngineOperation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:OilDistribution a :Function ;
+    rdfs:label "Oil distribution" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :ExcessiveOilConsumption ;
+    :defines :ExcessiveOilConsumption ;
+    :dependsOn :AccurateTemperatureReading,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :SmoothEngineOperation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:OilTemperatureRegulation a :Function ;
+    rdfs:label "Oil temperature regulation" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :HighOilTemperature ;
+    :defines :HighOilTemperature ;
+    :dependsOn :AccurateTemperatureReading,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :SmoothEngineOperation ;
+    :subFunctionOf :CoolingEngine .
+
+:ProperLubrication a :Function ;
+    rdfs:label "Proper lubrication" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :FailingOrFailedBearings,
+        :LowGradeOfOil ;
+    :defines :FailingOrFailedBearings,
+        :LowGradeOfOil ;
+    :dependsOn :AccurateTemperatureReading,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :SmoothEngineOperation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:ProperOilFlow a :Function ;
+    rdfs:label "Proper oil flow" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :CloggedOilLinesOrStrainers,
+        :LeakInSuctionLineOrPressureLine,
+        :StoppageInOilPumpIntakePassage ;
+    :defines :CloggedOilLinesOrStrainers,
+        :LeakInSuctionLineOrPressureLine,
+        :StoppageInOilPumpIntakePassage ;
+    :dependsOn :AccurateTemperatureReading,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :SmoothEngineOperation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:ProperOilPressureRegulation a :Function ;
+    rdfs:label "Proper oil pressure regulation" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :AirLockOrDirtInReliefValve ;
+    :defines :AirLockOrDirtInReliefValve ;
+    :dependsOn :AccurateTemperatureReading,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :SmoothEngineOperation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:AccurateTemperatureReading a :Function ;
+    rdfs:label "Accurate temperature reading" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :DefectiveTemperatureGage ;
+    :defines :DefectiveTemperatureGage ;
+    :dependsOn :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :SmoothEngineOperation ;
+    :subFunctionOf :CoolingEngine,
+        :EnsuringSmoothOperation .
+
+:CoolingEngineWithAirflow a :Function ;
+    rdfs:label "Cooling engine with airflow" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :SmoothEngineOperation ;
+    :subFunctionOf :CoolingEngine .
+
+:ProperCooling a :Function ;
+    rdfs:label "Proper cooling" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :HighOilTemperature ;
+    :defines :HighOilTemperature ;
+    :dependsOn :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :SmoothEngineOperation ;
+    :subFunctionOf :CoolingEngine,
+        :EnsuringSmoothOperation .
+
+:ProperEngineCooling a :Function ;
+    rdfs:label "Proper engine cooling" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :InsufficientAirCooling ;
+    :defines :InsufficientAirCooling ;
+    :dependsOn :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :SmoothEngineOperation ;
+    :subFunctionOf :CoolingEngine .
+
+:LubricatingEngineComponents a :Function ;
+    rdfs:label "Lubricating engine components" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateTemperatureReading,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :SmoothEngineOperation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:Function a owl:Class .
+
+[] :linkCandidate :CylinderAssembly .
+

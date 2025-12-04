@@ -1,0 +1,2834 @@
+@prefix : <https://w3id.org/zorro#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:AftCrankcaseSpinBolt :isProbably :partnr-LW-25-1.50 .
+
+:BaffleSpring :isProbably :partnr-61084 .
+
+:BottomBaffleWireSpring :isProbably :partnr-61084 .
+
+:CarburetorAssembly rdfs:subClassOf :Component ;
+    :dependsOn :FuelDistributionSystem,
+        :InductionSystem ;
+    :hasFunction :MixingAndRegulatingFuel-Air,
+        :MixingAndRegulatingFuelAir ;
+    :partOf :FuelDistributionSystem .
+
+:CrankshaftFrontSeal :isProbably :partnr-LW-13792 .
+
+:CrankshaftSeal :isProbably :partnr-LW-13792 .
+
+:CylinderHeadDrainTubesAndIntercylinderCoolingBaffles rdfs:subClassOf :Component ;
+    :dependsOn :CoolingSystem,
+        :CylinderSection ;
+    :hasFunction :DrainingAndCoolingCylinders ;
+    :partOf :CylinderSection .
+
+:CylinderRelatedParts rdfs:subClassOf :Component ;
+    :dependsOn :CoolingSystem,
+        :CylinderSection ;
+    :hasFunction :SupportingCylinderOperation ;
+    :partOf :CylinderSection .
+
+:Effect a owl:Class .
+
+:EngGroundinStrapBolt :isProbably :partnr-LW-25-1.50 .
+
+:FrontCrankshaftOilSeal :isProbably :partnr-LW-13792 .
+
+:GroundingStrapBolt :isProbably :partnr-LW-25-1.50 .
+
+:HousingMainEngineComponents a :Function ;
+    rdfs:label "Housing main engine components" ;
+    :subFunctionOf :EnsuringSmoothOperation .
+
+:IntakeBolt :isProbably :partnr-LW-25-1.13 .
+
+:IntakeTubeBolt :isProbably :partnr-LW-25-1.13 .
+
+:LiftingEyeBolt :isProbably :partnr-LW-25-1.50 .
+
+:NlgDownLockAftTrunnionBolt :isProbably :partnr-LW-25-1.75 .
+
+:OilLevelGage rdfs:subClassOf :Component ;
+    :dependsOn :LubricationSystem ;
+    :hasFunction :MeasuringOilQuantity ;
+    :partOf :LubricationSystem .
+
+:PhenolicSpacer :isProbably :partnr-LW-11866 .
+
+:PossibleCrankshaftOilSeal :isProbably :partnr-LW-13792 .
+
+:PrimingSystem a :Component ;
+    rdfs:subClassOf :Component ;
+    :dependsOn :FuelDistributionSystem,
+        :InductionSystem ;
+    :hasFunction :AssistingEngineStart,
+        :ExcessiveFuelDuringStart .
+
+:Procedure a owl:Class .
+
+:ProperFuelType a :Function ;
+    rdfs:label "Proper fuel type" ;
+    :subFunctionOf :EnsuringSmoothOperation,
+        :ManagingFuel-AirMixture,
+        :ManagingFuelAirMixture .
+
+:RockerShaftPlug :isProbably :partnr-1102 .
+
+:RockerShaftThrustPlug :isProbably :partnr-1102 .
+
+:Solution a owl:Class .
+
+:StarterMotorAndAttachingParts rdfs:subClassOf :Component ;
+    :dependsOn :CrankingSection ;
+    :hasFunction :InitiatingEngineStart ;
+    :partOf :CrankingSection .
+
+:StarterRingGear :isProbably :partnr-60882 .
+
+:Step a owl:Class .
+
+:TopLiftingBracketCaseHalfBolt :isProbably :partnr-LW-25-1.50 .
+
+:WorkAround a owl:Class .
+
+:address a owl:ObjectProperty .
+
+:consistOf a owl:ObjectProperty .
+
+:dealsWith a owl:ObjectProperty .
+
+:define a owl:ObjectProperty ;
+    rdfs:domain :Function ;
+    rdfs:range :Problem .
+
+:dependOn a owl:ObjectProperty ;
+    rdfs:domain :Function ;
+    rdfs:range :Function .
+
+:failVia a owl:ObjectProperty ;
+    rdfs:domain :Component .
+
+:hasCause a owl:ObjectProperty .
+
+:hasFunction a owl:ObjectProperty ;
+    rdfs:domain :Component ;
+    rdfs:range :Function .
+
+:involve a owl:ObjectProperty ;
+    rdfs:range :Component .
+
+:partnr-01L23459 :partOf :CylinderSection .
+
+:partnr-03D23350 :partOf :AccessoryDrives .
+
+:partnr-05K19423-S :partOf :AccessoryDrives .
+
+:partnr-06A19956 :partOf :AccessoryDrives,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-06A23493 :partOf :CylinderSection .
+
+:partnr-06B23862 :partOf :AccessoryDrives .
+
+:partnr-06E19769-0.63 :partOf :AccessoryDrives .
+
+:partnr-06E19769-1.00 :partOf :LubricationSystem,
+        :OilSumpAssemblyAndOilSuctionScreen .
+
+:partnr-06E19769-1.25 a :PartInstance ;
+    rdfs:label " 1-1/4 I.D., annular",
+        "1-1/4 I.D., annular gasket" ;
+    rdfs:subClassOf :Gasket ;
+    :partNumber "06E19769-1.25" ;
+    :partOf :CrankcaseRelatedParts,
+        :PowerSection .
+
+:partnr-1028-B a :PartInstance ;
+    rdfs:label " 11/16 diameter",
+        "11/16 diameter ball" ;
+    rdfs:subClassOf :Ball ;
+    :partNumber "1028-B" ;
+    :partOf :CrankcaseRelatedParts,
+        :PowerSection .
+
+:partnr-1182-E7 :partOf :IgnitionDistributionSystem .
+
+:partnr-11B20061-1SB a :PartInstance ;
+    rdfs:label "NaN"^^xsd:double,
+        " crankcase assembly" ;
+    rdfs:subClassOf :CrankcaseAssembly ;
+    :partNumber "11B20061-1SB" ;
+    :partOf :CrankcaseAssembly,
+        :PowerSection .
+
+:partnr-11B20061-1SB-S a :PartInstance ;
+    rdfs:label "NaN"^^xsd:double,
+        " crankcase assembly kit" ;
+    rdfs:subClassOf :CrankcaseAssemblyKit ;
+    :partNumber "11B20061-1SB-S" ;
+    :partOf :CrankcaseAssembly,
+        :PowerSection .
+
+:partnr-11B20161-3SL a :PartInstance ;
+    rdfs:label "NaN"^^xsd:double,
+        " crankcase assembly (roller tappet engines)" ;
+    rdfs:subClassOf :CrankcaseAssemblyRollerTappetEngines ;
+    :partNumber "11B20161-3SL" ;
+    :partOf :CrankcaseAssembly,
+        :PowerSection .
+
+:partnr-11B20161-3SL-S a :PartInstance ;
+    rdfs:label "NaN"^^xsd:double,
+        " crankcase assembly kit (roller tappet engines)" ;
+    rdfs:subClassOf :CrankcaseAssemblyKitRollerTappetEngines ;
+    :partNumber "11B20161-3SL-S" ;
+    :partOf :CrankcaseAssembly,
+        :PowerSection .
+
+:partnr-13B47020 a :PartInstance ;
+    rdfs:label "NaN"^^xsd:double,
+        " crankshaft assembly" ;
+    rdfs:subClassOf :CrankshaftAssembly ;
+    :partNumber "13B47020" ;
+    :partOf :CrankshaftAssemblyAndRelatedParts,
+        :PowerSection .
+
+:partnr-13B47024 a :PartInstance ;
+    rdfs:label "NaN"^^xsd:double,
+        " crankshaft assembly" ;
+    rdfs:subClassOf :CrankshaftAssembly ;
+    :partNumber "13B47024" ;
+    :partOf :CrankshaftAssemblyAndRelatedParts,
+        :PowerSection .
+
+:partnr-13S19646 a :PartInstance ;
+    rdfs:label " Crankshaft",
+        "Crankshaft gear" ;
+    rdfs:subClassOf :Gear ;
+    :partNumber "13S19646" ;
+    :partOf :CrankshaftAssemblyAndRelatedParts,
+        :PowerSection .
+
+:partnr-14D23915 :partOf :ConnectingRodsPistonsAndRingAssemblies,
+        :CylinderSection .
+
+:partnr-15B21319 :partOf :CylinderSection .
+
+:partnr-15B26064 a :PartInstance ;
+    rdfs:label " Hydraulic tappet",
+        "Hydraulic tappet body" ;
+    rdfs:subClassOf :Body ;
+    :partNumber "15B26064" ;
+    :partOf :CrankcaseRelatedParts,
+        :PowerSection .
+
+:partnr-15B26066 :partOf :CylinderSection .
+
+:partnr-15F19957-08 :partOf :CylinderSection .
+
+:partnr-15F19957-09 :partOf :CylinderSection .
+
+:partnr-15F19957-10 :partOf :CylinderSection .
+
+:partnr-15F19957-11 :partOf :CylinderSection .
+
+:partnr-15F19957-12 :partOf :CylinderSection .
+
+:partnr-15F19957-13 :partOf :CylinderSection .
+
+:partnr-15F19957-14 :partOf :CylinderSection .
+
+:partnr-15F19957-15 :partOf :CylinderSection .
+
+:partnr-15G23494 :partOf :CylinderSection .
+
+:partnr-15M23452 a :PartInstance ;
+    rdfs:label "NaN"^^xsd:double,
+        " camshaft assembly (roller tappet engines)" ;
+    rdfs:subClassOf :CamshaftAssemblyRollerTappetEngines ;
+    :partNumber "15M23452" ;
+    :partOf :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+        :PowerSection .
+
+:partnr-16R22126 :partOf :CylinderSection .
+
+:partnr-17A23938 :partOf :CylinderSection .
+
+:partnr-17B23936 :partOf :CylinderSection .
+
+:partnr-17C19386 :partOf :CylinderSection .
+
+:partnr-17C21191 :partOf :CylinderSection .
+
+:partnr-17F19357 :partOf :CylinderSection .
+
+:partnr-18D26098 a :PartInstance ;
+    rdfs:label " Crankshaft",
+        "Crankshaft bearing" ;
+    rdfs:subClassOf :Bearing ;
+    :partNumber "18D26098" ;
+    :partOf :CrankcaseRelatedParts,
+        :PowerSection .
+
+:partnr-18M26104 :partOf :ConnectingRodsPistonsAndRingAssemblies,
+        :CylinderSection .
+
+:partnr-21A21533-04 :partOf :AccessoryDrives,
+        :AccessoryHousingAssembly .
+
+:partnr-25C-10 :partOf :AccessoryDrives .
+
+:partnr-25C-22 :partOf :AccessoryDrives,
+        :AccessoryHousingAssembly .
+
+:partnr-25C-8 :partOf :CylinderSection .
+
+:partnr-31A26041 :partOf :CrankingSection .
+
+:partnr-31A26043 :partOf :CrankingSection .
+
+:partnr-31C-12 a :PartInstance ;
+    rdfs:label " 5/16-18 x 1-1/2 long",
+        "5/16-18 x 1-1/2 long stud" ;
+    rdfs:subClassOf :Stud ;
+    :partNumber "31C-12" ;
+    :partOf :AccessoryDrives,
+        :AccessoryHousingAssembly,
+        :CrankcaseAssembly,
+        :CylinderAssembly,
+        :CylinderSection,
+        :PowerSection .
+
+:partnr-31C-13 a :PartInstance ;
+    rdfs:label " 5/16-18 x 1-5/8 long",
+        "5/16-18 x 1-5/8 long stud" ;
+    rdfs:subClassOf :Stud ;
+    :partNumber "31C-13" ;
+    :partOf :CrankcaseAssembly,
+        :PowerSection .
+
+:partnr-31C-15 :partOf :LubricationSystem,
+        :OilSumpAssemblyAndOilSuctionScreen .
+
+:partnr-31C-19 :partOf :AccessoryDrives,
+        :AccessoryHousingAssembly .
+
+:partnr-31CD-17 :partOf :AccessoryDrives,
+        :AccessoryHousingAssembly .
+
+:partnr-38-13 a :PartInstance ;
+    rdfs:label " 3/8-16 x 1-5/8 long",
+        "3/8-16 x 1-5/8 long stud" ;
+    rdfs:subClassOf :Stud ;
+    :partNumber "38-13" ;
+    :partOf :CrankcaseAssembly,
+        :PowerSection .
+
+:partnr-383-B :partOf :CylinderSection .
+
+:partnr-38D-17 a :PartInstance ;
+    rdfs:label " 3/8-16 x 2-1/8 long, drilled",
+        "3/8-16 x 2-1/8 long, drilled stud" ;
+    rdfs:subClassOf :Stud ;
+    :partNumber "38D-17" ;
+    :partOf :CrankcaseAssembly,
+        :PowerSection .
+
+:partnr-50-15 a :PartInstance ;
+    rdfs:label " 1/2-13 x 1-7/8 long",
+        "1/2-13 x 1-7/8 long stud" ;
+    rdfs:subClassOf :Stud ;
+    :partNumber "50-15" ;
+    :partOf :CrankcaseAssembly,
+        :PowerSection .
+
+:partnr-53E22144 rdfs:subClassOf :ValveAssembly ;
+    :partOf :AccessoryDrives .
+
+:partnr-56C23075 :partOf :LubricationSystem .
+
+:partnr-60009 :partOf :CylinderSection .
+
+:partnr-60096 :partOf :AccessoryDrives .
+
+:partnr-60430 :partOf :AccessoryDrives,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-60803 a :PartInstance ;
+    rdfs:label " Lifting",
+        "Lifting strap" ;
+    rdfs:subClassOf :Strap ;
+    :partNumber "60803" ;
+    :partOf :CrankcaseAttachingParts,
+        :PowerSection .
+
+:partnr-61098 :partOf :AccessoryDrives,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-61173 :partOf :AccessoryDrives .
+
+:partnr-61174 :partOf :AccessoryDrives .
+
+:partnr-61183 :partOf :AccessoryDrives,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-61247 :partOf :CylinderSection .
+
+:partnr-61400 :partOf :LubricationSystem,
+        :OilSumpAssemblyAndOilSuctionScreen .
+
+:partnr-61544 a :PartInstance ;
+    rdfs:label " Fuel pump, long",
+        "Fuel pump, long plunger" ;
+    rdfs:subClassOf :Plunger ;
+    :partNumber "61544" ;
+    :partOf :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+        :PowerSection .
+
+:partnr-61665 :partOf :IgnitionDistributionSystem .
+
+:partnr-61B26213 :partOf :FuelDistributionSystem .
+
+:partnr-61B26214 :partOf :FuelDistributionSystem .
+
+:partnr-62224 :partOf :IgnitionDistributionSystem .
+
+:partnr-62417 :partOf :AccessoryDrives .
+
+:partnr-62817 :partOf :AccessoryDrives .
+
+:partnr-65441 :partOf :CylinderSection .
+
+:partnr-66224 :partOf :FuelDistributionSystem .
+
+:partnr-66610 :partOf :CylinderSection .
+
+:partnr-66796 :partOf :CylinderSection .
+
+:partnr-66A21765 :partOf :IgnitionDistributionSystem .
+
+:partnr-66B21778 :partOf :IgnitionDistributionSystem .
+
+:partnr-68668 a :PartInstance ;
+    rdfs:label " Oil pressure relief valve",
+        "Oil pressure relief valve spring" ;
+    rdfs:subClassOf :Spring ;
+    :partNumber "68668" ;
+    :partOf :CrankcaseRelatedParts,
+        :PowerSection .
+
+:partnr-68759 :partOf :CylinderSection .
+
+:partnr-68760 :partOf :CylinderSection .
+
+:partnr-68761 :partOf :CylinderSection .
+
+:partnr-68987 :partOf :CylinderSection .
+
+:partnr-68C19622 :partOf :IgnitionDistributionSystem .
+
+:partnr-69106 :partOf :AccessoryDrives,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-69510 :partOf :AccessoryDrives .
+
+:partnr-69551 :partOf :AccessoryDrives,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-69603 :partOf :CylinderSection .
+
+:partnr-69675 :partOf :AccessoryDrives .
+
+:partnr-70310 :partOf :CylinderSection .
+
+:partnr-70484 :partOf :LubricationSystem,
+        :OilSumpAssemblyAndOilSuctionScreen .
+
+:partnr-71140 :partOf :AccessoryDrives .
+
+:partnr-71481 :partOf :CylinderSection .
+
+:partnr-71596 :partOf :AccessoryDrives,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-71611 :partOf :CylinderSection .
+
+:partnr-71973 :partOf :CylinderSection .
+
+:partnr-72057 :partOf :CylinderSection .
+
+:partnr-72058 :partOf :CylinderSection .
+
+:partnr-72059 :partOf :LubricationSystem .
+
+:partnr-72091 a :PartInstance ;
+    rdfs:label " Oil seal, 23/64 I.D. x 7/64 diameter",
+        "Oil seal, 23/64 I.D. x 7/64 diameter ring" ;
+    rdfs:subClassOf :Ring ;
+    :partNumber "72091" ;
+    :partOf :CrankcaseRelatedParts,
+        :PowerSection .
+
+:partnr-72198 :partOf :ConnectingRodsPistonsAndRingAssemblies,
+        :CylinderSection .
+
+:partnr-72569 :partOf :CylinderSection .
+
+:partnr-72970 :partOf :AccessoryDrives,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-73346 :partOf :CylinderSection .
+
+:partnr-73818 :partOf :AccessoryDrives,
+        :AccessoryHousingAssembly .
+
+:partnr-74065 :partOf :LubricationSystem .
+
+:partnr-74068 :partOf :LubricationSystem .
+
+:partnr-74084 :partOf :CylinderSection .
+
+:partnr-74241 :partOf :ConnectingRodsPistonsAndRingAssemblies,
+        :CylinderSection .
+
+:partnr-74637 :partOf :CylinderSection .
+
+:partnr-74887 :partOf :CylinderSection .
+
+:partnr-74996 a :PartInstance ;
+    rdfs:label " Crankshaft idler, plain",
+        "Crankshaft idler, plain gear assembly" ;
+    rdfs:subClassOf :GearAssembly ;
+    :partNumber "74996" ;
+    :partOf :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+        :PowerSection .
+
+:partnr-75072 a :PartInstance ;
+    rdfs:label " Crankshaft idler",
+        "Crankshaft idler gear assembly" ;
+    rdfs:subClassOf :GearAssembly ;
+    :partNumber "75072" ;
+    :partOf :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+        :PowerSection .
+
+:partnr-75154 a :PartInstance ;
+    rdfs:label " 1/2-13 x 10-1/32 long",
+        "1/2-13 x 10-1/32 long stud" ;
+    rdfs:subClassOf :Stud ;
+    :partNumber "75154" ;
+    :partOf :CrankcaseAssembly,
+        :PowerSection .
+
+:partnr-75736 :partOf :LubricationSystem .
+
+:partnr-75906 :partOf :CylinderSection .
+
+:partnr-76121 a :PartInstance ;
+    rdfs:label " Tachometer",
+        "Tachometer shaft assembly" ;
+    rdfs:subClassOf :ShaftAssembly ;
+    :partNumber "76121" ;
+    :partOf :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+        :PowerSection .
+
+:partnr-76220 a :PartInstance ;
+    rdfs:label " 1/2-20 x 10-11/16 long",
+        "1/2-20 x 10-11/16 long stud" ;
+    rdfs:subClassOf :Stud ;
+    :partNumber "76220" ;
+    :partOf :CrankcaseAttachingParts,
+        :PowerSection .
+
+:partnr-76510 :partOf :AccessoryDrives .
+
+:partnr-76628 a :PartInstance ;
+    rdfs:label " Starter ring gear",
+        "Starter ring gear support assembly" ;
+    rdfs:subClassOf :SupportAssembly ;
+    :partNumber "76628" ;
+    :partOf :CrankshaftAssemblyAndRelatedParts,
+        :PowerSection .
+
+:partnr-76734 :partOf :IgnitionDistributionSystem .
+
+:partnr-76943 :partOf :CylinderSection .
+
+:partnr-76944 a :PartInstance ;
+    rdfs:label " Starter ring gear",
+        "Starter ring gear support assembly" ;
+    rdfs:subClassOf :SupportAssembly ;
+    :partNumber "76944" ;
+    :partOf :CrankshaftAssemblyAndRelatedParts,
+        :PowerSection .
+
+:partnr-77309 a :PartInstance ;
+    rdfs:label " Crankshaft idler gear",
+        "Crankshaft idler gear bushing" ;
+    rdfs:subClassOf :Bushing ;
+    :partNumber "77309" ;
+    :partOf :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+        :PowerSection .
+
+:partnr-77467 a :PartInstance ;
+    rdfs:label " Oil pressure relief valve",
+        "Oil pressure relief valve spring" ;
+    rdfs:subClassOf :Spring ;
+    :partNumber "77467" ;
+    :partOf :CrankcaseRelatedParts,
+        :PowerSection .
+
+:partnr-77611 :partOf :CylinderSection .
+
+:partnr-77808 a :PartInstance ;
+    rdfs:label " Oil pressure relief",
+        "Oil pressure relief valve assembly" ;
+    rdfs:subClassOf :ValveAssembly ;
+    :partNumber "77808" ;
+    :partOf :CrankcaseRelatedParts,
+        :PowerSection .
+
+:partnr-77852 :partOf :AccessoryDrives .
+
+:partnr-78027 :partOf :ConnectingRodsPistonsAndRingAssemblies,
+        :CylinderSection .
+
+:partnr-78030-S :partOf :ConnectingRodsPistonsAndRingAssemblies,
+        :CylinderSection .
+
+:partnr-78531 :partOf :AccessoryDrives .
+
+:partnr-78914 :partOf :LubricationSystem,
+        :OilSumpAssemblyAndOilSuctionScreen .
+
+:partnr-8313 :partOf :AccessoryDrives,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-AN844-10D :partOf :AccessoryDrives .
+
+:partnr-AN960-616L a :PartInstance ;
+    rdfs:label " 3/8 plain (thin)",
+        "3/8 plain (thin) washer" ;
+    rdfs:subClassOf :Washer ;
+    :partNumber "AN960-616L" ;
+    :partOf :CrankcaseAttachingParts,
+        :PowerSection .
+
+:partnr-LRT23381 a :PartInstance ;
+    rdfs:label " Hydraulic tappet (Roller tappet engines)",
+        "Hydraulic tappet (Roller tappet engines) body assembly" ;
+    rdfs:subClassOf :BodyAssembly ;
+    :partNumber "LRT23381" ;
+    :partOf :CrankcaseRelatedParts,
+        :PowerSection .
+
+:partnr-LW-10077 :partOf :CylinderSection .
+
+:partnr-LW-10828 :partOf :LubricationSystem,
+        :OilSumpAssemblyAndOilSuctionScreen .
+
+:partnr-LW-11713 a :PartInstance ;
+    rdfs:label " Oil pressure relief valve",
+        "Oil pressure relief valve spring" ;
+    rdfs:subClassOf :Spring ;
+    :partNumber "LW-11713" ;
+    :partOf :CrankcaseRelatedParts,
+        :PowerSection .
+
+:partnr-LW-11795 :partOf :CylinderSection .
+
+:partnr-LW-11800 :partOf :CylinderSection .
+
+:partnr-LW-12186 :partOf :ConnectingRodsPistonsAndRingAssemblies,
+        :CylinderSection .
+
+:partnr-LW-12272 :partOf :CylinderSection .
+
+:partnr-LW-12416 :partOf :CylinderSection .
+
+:partnr-LW-12706 :partOf :IgnitionDistributionSystem .
+
+:partnr-LW-12892 :partOf :CylinderSection .
+
+:partnr-LW-13215 :partOf :AccessoryDrives .
+
+:partnr-LW-13323 :partOf :CylinderSection .
+
+:partnr-LW-13353 :partOf :LubricationSystem,
+        :OilSumpAssemblyAndOilSuctionScreen .
+
+:partnr-LW-13790 :partOf :CylinderSection .
+
+:partnr-LW-13793 a :PartInstance ;
+    rdfs:label " 5/16-18 x 15/16 long, drilled",
+        "5/16-18 x 15/16 long, drilled stud" ;
+    rdfs:subClassOf :Stud ;
+    :partNumber "LW-13793" ;
+    :partOf :CrankcaseAssembly,
+        :PowerSection .
+
+:partnr-LW-13796 a :PartInstance ;
+    rdfs:label " Crankshaft idler gear",
+        "Crankshaft idler gear shaft" ;
+    rdfs:subClassOf :Shaft ;
+    :partNumber "LW-13796" ;
+    :partOf :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+        :PowerSection .
+
+:partnr-LW-13923 :partOf :ConnectingRodsPistonsAndRingAssemblies,
+        :CylinderSection .
+
+:partnr-LW-14060 :partOf :IgnitionDistributionSystem .
+
+:partnr-LW-14078 :partOf :ConnectingRodsPistonsAndRingAssemblies,
+        :CylinderSection .
+
+:partnr-LW-14260 :partOf :AccessoryDrives .
+
+:partnr-LW-14768 :partOf :LubricationSystem .
+
+:partnr-LW-14995 :partOf :CylinderSection .
+
+:partnr-LW-15472 :partOf :AccessoryDrives .
+
+:partnr-LW-15592-5-05 :partOf :CylinderSection .
+
+:partnr-LW-15592-8-28 :partOf :CylinderSection .
+
+:partnr-LW-16475 :partOf :CylinderSection .
+
+:partnr-LW-16783-18 :partOf :LubricationSystem .
+
+:partnr-LW-18085 a :PartInstance ;
+    rdfs:label " Oil pressure relief valve",
+        "Oil pressure relief valve spring" ;
+    rdfs:subClassOf :Spring ;
+    :partNumber "LW-18085" ;
+    :partOf :CrankcaseRelatedParts,
+        :PowerSection .
+
+:partnr-LW-18109 :partOf :AccessoryDrives .
+
+:partnr-LW-18110 :partOf :AccessoryDrives .
+
+:partnr-LW-18639 a :PartInstance ;
+    rdfs:label " Crankshaft gear",
+        "Crankshaft gear lockplate" ;
+    rdfs:subClassOf :Lockplate ;
+    :partNumber "LW-18639" ;
+    :partOf :CrankshaftAssemblyAndRelatedParts,
+        :PowerSection .
+
+:partnr-LW-18661 :partOf :CylinderSection .
+
+:partnr-LW-18667 a :PartInstance ;
+    rdfs:label " 3/16 diameter x 2-11/32 long",
+        "3/16 diameter x 2-11/32 long pin" ;
+    rdfs:subClassOf :Pin ;
+    :partNumber "LW-18667" ;
+    :partOf :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+        :PowerSection .
+
+:partnr-LW-18815-S a :PartInstance ;
+    rdfs:label " Propeller flange, short",
+        "Propeller flange, short bushing" ;
+    rdfs:subClassOf :Bushing ;
+    :partNumber "LW-18815-S" ;
+    :partOf :CrankshaftAssemblyAndRelatedParts,
+        :PowerSection .
+
+:partnr-LW-18817-S a :PartInstance ;
+    rdfs:label " Propeller flange, long",
+        "Propeller flange, long bushing" ;
+    rdfs:subClassOf :Bushing ;
+    :partNumber "LW-18817-S" ;
+    :partOf :CrankshaftAssemblyAndRelatedParts,
+        :PowerSection .
+
+:partnr-LW-18840 a :PartInstance ;
+    rdfs:label "NaN"^^xsd:double,
+        " camshaft assembly" ;
+    rdfs:subClassOf :CamshaftAssembly ;
+    :partNumber "LW-18840" ;
+    :partOf :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+        :PowerSection .
+
+:partnr-LW-18921-S a :PartInstance ;
+    rdfs:label " Propeller flange, long",
+        "Propeller flange, long bushing" ;
+    rdfs:subClassOf :Bushing ;
+    :partNumber "LW-18921-S" ;
+    :partOf :CrankshaftAssemblyAndRelatedParts,
+        :PowerSection .
+
+:partnr-LW-18922-S a :PartInstance ;
+    rdfs:label " Propeller flange, short",
+        "Propeller flange, short bushing" ;
+    rdfs:subClassOf :Bushing ;
+    :partNumber "LW-18922-S" ;
+    :partOf :CrankshaftAssemblyAndRelatedParts,
+        :PowerSection .
+
+:partnr-LW-18959-150-25 :partOf :IgnitionDistributionSystem .
+
+:partnr-LW-25-0.94 :partOf :AccessoryDrives,
+        :LubricationSystem,
+        :OilSumpAssemblyAndOilSuctionScreen .
+
+:partnr-LW-25-1.00 :partOf :AccessoryDrives .
+
+:partnr-LW-25-1.25 :partOf :IgnitionDistributionSystem .
+
+:partnr-LW-25-1.44 :partOf :AccessoryDrives .
+
+:partnr-LW-31-1.16 :partOf :CrankingSection .
+
+:partnr-LW-38-0.75 :partOf :AccessoryDrives .
+
+:partnr-LW-M-2375 :partOf :IgnitionDistributionSystem .
+
+:partnr-LW-M-2403 :partOf :IgnitionDistributionSystem .
+
+:partnr-LW-M-2404 :partOf :IgnitionDistributionSystem .
+
+:partnr-MS20823-6D :partOf :CylinderSection .
+
+:partnr-MS21044N06 :partOf :IgnitionDistributionSystem .
+
+:partnr-STD-1065 a :PartInstance ;
+    rdfs:label " Stepped, 5/16-14 diameter",
+        "Stepped, 5/16-14 diameter dowel" ;
+    rdfs:subClassOf :Dowel ;
+    :partNumber "STD-1065" ;
+    :partOf :CrankshaftAssemblyAndRelatedParts,
+        :PowerSection .
+
+:partnr-STD-1339 a :PartInstance ;
+    rdfs:label " 1/16-27 NPT, allen head",
+        "1/16-27 NPT, allen head plug" ;
+    rdfs:subClassOf :Plug ;
+    :partNumber "STD-1339" ;
+    :partOf :CrankcaseAssembly,
+        :PowerSection .
+
+:partnr-STD-1353 :partOf :CylinderSection .
+
+:partnr-STD-1410 :partOf :AccessoryDrives,
+        :CrankingSection,
+        :CylinderSection,
+        :FuelDistributionSystem,
+        :IgnitionDistributionSystem,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-STD-1411 a :PartInstance ;
+    rdfs:label " 1/4-20 plain",
+        "1/4-20 plain nut" ;
+    rdfs:subClassOf :Nut ;
+    :partNumber "STD-1411" ;
+    :partOf :AccessoryDrives,
+        :CrankcaseAttachingParts,
+        :CylinderSection,
+        :IgnitionDistributionSystem,
+        :LubricationSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs,
+        :OilFilterAssemblyAndOilCoolerBypassValve,
+        :OilSumpAssemblyAndOilSuctionScreen,
+        :PowerSection,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover,
+        :ValveAssemblyAndRelatedParts .
+
+:partnr-STD-1420 :partOf :AccessoryDrives .
+
+:partnr-STD-160 a :PartInstance ;
+    rdfs:label " 1/4 lock, internal teeth",
+        "1/4 lock, internal teeth washer" ;
+    rdfs:subClassOf :Washer ;
+    :partNumber "STD-160" ;
+    :partOf :AccessoryDrives,
+        :CrankcaseAttachingParts,
+        :CylinderSection,
+        :IgnitionDistributionSystem,
+        :IntakePipesAndAttachingParts,
+        :LubricationSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs,
+        :OilCoolerBypassValveOilPressureScreenAndBreatherFitting,
+        :OilFilterAssemblyAndOilCoolerBypassValve,
+        :OilPumpAssemblyAndAccessoryHousingAttachingParts,
+        :OilSumpAssemblyAndOilSuctionScreen,
+        :PowerSection,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-STD-1623 a :PartInstance ;
+    rdfs:label " 1/4-20 UNC x 3/8 long",
+        "1/4-20 UNC x 3/8 long insert" ;
+    rdfs:subClassOf :Insert ;
+    :partNumber "STD-1623" ;
+    :partOf :CrankcaseAssembly,
+        :PowerSection .
+
+:partnr-STD-1727 :partOf :IgnitionDistributionSystem .
+
+:partnr-STD-1774 :partOf :AccessoryDrives,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-STD-1882 :partOf :AccessoryDrives .
+
+:partnr-STD-1916 :partOf :IgnitionDistributionSystem .
+
+:partnr-STD-1925 :partOf :CylinderSection .
+
+:partnr-STD-2090 :partOf :CylinderSection .
+
+:partnr-STD-2168 a :PartInstance ;
+    rdfs:label " 5/16-18 NC-3 slotted shear",
+        "5/16-18 NC-3 slotted shear nut" ;
+    rdfs:subClassOf :Nut ;
+    :partNumber "STD-2168" ;
+    :partOf :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+        :PowerSection .
+
+:partnr-STD-2180 :partOf :CylinderSection .
+
+:partnr-STD-2231 a :PartInstance ;
+    rdfs:label " Internal retaining (13/16)",
+        "Internal retaining (13/16) ring" ;
+    rdfs:subClassOf :Ring ;
+    :partNumber "STD-2231" ;
+    :partOf :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+        :PowerSection .
+
+:partnr-STD-2246 a :PartInstance ;
+    rdfs:label " 5/16-24 x 1.00 long",
+        "5/16-24 x 1.00 long bolt" ;
+    rdfs:subClassOf :Bolt ;
+    :partNumber "STD-2246" ;
+    :partOf :CrankshaftAssemblyAndRelatedParts,
+        :PowerSection .
+
+:partnr-STD-2249 a :PartInstance ;
+    rdfs:label " 1/4-20 slotted",
+        "1/4-20 slotted nut" ;
+    rdfs:subClassOf :Nut ;
+    :partNumber "STD-2249" ;
+    :partOf :CrankcaseAttachingParts,
+        :PowerSection .
+
+:partnr-STD-33 a :PartInstance ;
+    rdfs:label " 3/8 plain",
+        "3/8 plain washer" ;
+    rdfs:subClassOf :Washer ;
+    :partNumber "STD-33" ;
+    :partOf :AccessoryDrives,
+        :CrankcaseAttachingParts,
+        :FuelPumpAssemblyAndAttachingParts,
+        :PowerSection .
+
+:partnr-STD-35 :partOf :AccessoryDrives,
+        :CrankingSection,
+        :CylinderSection,
+        :FuelDistributionSystem,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-STD-475 :partOf :AccessoryDrives,
+        :CrankingSection,
+        :CylinderSection,
+        :FuelDistributionSystem,
+        :IgnitionDistributionSystem,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-STD-514 a :PartInstance ;
+    rdfs:label " 5/16 dia. x 1/2 long",
+        "5/16 dia. x 1/2 long dowel" ;
+    rdfs:subClassOf :Dowel ;
+    :partNumber "STD-514" ;
+    :partOf :CrankcaseAssembly,
+        :PowerSection .
+
+:partnr-STD-551 :partOf :LubricationSystem,
+        :OilSumpAssemblyAndOilSuctionScreen .
+
+:partnr-STD-553 :partOf :IgnitionDistributionSystem .
+
+:partnr-STD-557 a :PartInstance ;
+    rdfs:label " 1/2 dia. x 19/32 long, hollow",
+        "1/2 dia. x 19/32 long, hollow dowel" ;
+    rdfs:subClassOf :Dowel ;
+    :partNumber "STD-557" ;
+    :partOf :CrankcaseAssembly,
+        :PowerSection .
+
+:partnr-STD-596 a :PartInstance ;
+    rdfs:label " 3/8-24 plain",
+        "3/8-24 plain nut" ;
+    rdfs:subClassOf :Nut ;
+    :partNumber "STD-596" ;
+    :partOf :CrankcaseAttachingParts,
+        :PowerSection .
+
+:partnr-STD-678 a :PartInstance ;
+    rdfs:label " 3/8 lock, internal teeth",
+        "3/8 lock, internal teeth washer" ;
+    rdfs:subClassOf :Washer ;
+    :partNumber "STD-678" ;
+    :partOf :CrankcaseAttachingParts,
+        :PowerSection .
+
+:partnr-STD-684 :partOf :CylinderSection .
+
+:partnr-STD-783 :partOf :AccessoryDrives,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-STD-784 :partOf :AccessoryDrives,
+        :AccessoryHousingAssembly .
+
+:partnr-STD-8 a :PartInstance ;
+    rdfs:label " 1/4 plain",
+        "1/4 plain washer" ;
+    rdfs:subClassOf :Washer ;
+    :partNumber "STD-8" ;
+    :partOf :AccessoryDrives,
+        :CrankcaseAttachingParts,
+        :CylinderSection,
+        :IgnitionDistributionSystem,
+        :IntakePipesAndAttachingParts,
+        :LubricationSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs,
+        :OilCoolerBypassValveOilPressureScreenAndBreatherFitting,
+        :OilFilterAssemblyAndOilCoolerBypassValve,
+        :OilPumpAssemblyAndAccessoryHousingAttachingParts,
+        :OilSumpAssemblyAndOilSuctionScreen,
+        :PowerSection,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover .
+
+:partnr-STD-872 a :PartInstance ;
+    rdfs:label " 3/8-24 slotted",
+        "3/8-24 slotted nut" ;
+    rdfs:subClassOf :Nut ;
+    :partNumber "STD-872" ;
+    :partOf :AlternatorMountingAndAttachingParts,
+        :CrankcaseAttachingParts,
+        :ElectricalPower,
+        :PowerSection .
+
+:partnr-STD-91 :partOf :LubricationSystem,
+        :OilSumpAssemblyAndOilSuctionScreen .
+
+:resultIn a owl:ObjectProperty .
+
+:solve a owl:ObjectProperty .
+
+:AirFuelIntake rdfs:label "Air-fuel intake" ;
+    rdfs:subClassOf :Function ;
+    :defines :FailureOfEngineToIdleProperly,
+        :LackOfFuel .
+
+:AirFuelIntakeControl rdfs:label "Air-fuel intake control" ;
+    rdfs:subClassOf :Function ;
+    :defines :ThrottleLeverOutOfAdjustment ;
+    :subFunctionOf :SupportingCombustion .
+
+:AirFuelMixtureContamination rdfs:label "Air-fuel mixture contamination" ;
+    rdfs:subClassOf :Function ;
+    :defines :WaterInCarburetor .
+
+:AssistingEngineStart a :Function ;
+    rdfs:label "Assisting engine start" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :Air-FuelIntake,
+        :Air-FuelIntakeControl,
+        :Air-FuelMixtureContamination,
+        :AirIntakeRestriction,
+        :CorrectFuelType,
+        :DistributingFuel-AirMixture,
+        :Fuel-AirMixtureControl,
+        :Fuel-AirMixtureDistribution,
+        :FuelDelivery,
+        :FuelDistribution,
+        :ManagingAir-FuelMixtureIntake,
+        :ProperAir-FuelIntake,
+        :ProperAir-FuelMixture ;
+    :subFunctionOf :FacilitatingEngineStart .
+
+:CollectingAndScreeningOil a :Function ;
+    rdfs:label "Collecting and screening oil" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AdequateLubrication,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :PowerOutput,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation,
+        :SmoothEngineOperation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:ControllingIntakeAndExhaustFlow a :Function ;
+    rdfs:label "Controlling intake and exhaust flow" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :BalancedCylinderCompression,
+        :ContainingCylindersAndRelatedParts,
+        :CoreEngineFunctionality,
+        :CylinderOperation,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperCylinderSealing,
+        :SmoothEngineOperation ;
+    :subFunctionOf :SupportingCombustion .
+
+:ConvertingLinearToRotationalMotion a :Function ;
+    rdfs:label "Converting linear to rotational motion" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AdequateLubrication,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :PowerOutput,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation,
+        :SmoothEngineOperation ;
+    :subFunctionOf :GeneratingPower .
+
+:CoolingAndLubrication a :Function ;
+    rdfs:label "Cooling and Lubrication" .
+
+:CoreEngineOperations a :Function ;
+    rdfs:label "Core Engine Operations" .
+
+:CoveringDrivesAndProvidingHousing a :Function ;
+    rdfs:label "Covering drives and providing housing" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :CoreEngineFunctionality,
+        :DrivingPowerToAccessories,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :SmoothEngineOperation ;
+    :subFunctionOf :MaintainingEngineStability .
+
+:CylinderAndCombustionOperations a :Function ;
+    rdfs:label "Cylinder and Combustion Operations" .
+
+:DirectingAir-FuelMixture a :Function ;
+    rdfs:label "Directing air-fuel mixture" ;
+    :dependsOn :Air-FuelIntake,
+        :Air-FuelIntakeControl,
+        :Air-FuelMixtureContamination,
+        :AirIntakeRestriction,
+        :CorrectFuelType,
+        :DistributingFuel-AirMixture,
+        :Fuel-AirMixtureControl,
+        :Fuel-AirMixtureDistribution,
+        :FuelDelivery,
+        :FuelDistribution,
+        :ManagingAir-FuelMixtureIntake,
+        :ProperAir-FuelIntake,
+        :ProperAir-FuelMixture ;
+    :subFunctionOf :ManagingFuel-AirMixture .
+
+:DirectingAirFuelMixture rdfs:label "Directing air-fuel mixture" ;
+    rdfs:subClassOf :Function ;
+    :subFunctionOf :ManagingFuelAirMixture .
+
+:DistributingFuelAirMixture rdfs:label "Distributing fuel-air mixture" ;
+    rdfs:subClassOf :Function ;
+    :subFunctionOf :ManagingFuelAirMixture .
+
+:DistributingIgnitionAndSparks a :Function ;
+    rdfs:label "Distributing ignition and sparks" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :DistributingIgnitionToCylinders,
+        :DrivingPowerToAccessories,
+        :IgnitionTiming,
+        :IgnitionTimingAndDistribution,
+        :IgnitionTransfer,
+        :ProperIgnition,
+        :ProperIgnitionTiming,
+        :ProperIgnitionTimingAndDistribution ;
+    :subFunctionOf :DistributingIgnition .
+
+:DrainingAndCoolingCylinders a :Function ;
+    rdfs:label "Draining and cooling cylinders" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateTemperatureReading,
+        :BalancedCylinderCompression,
+        :ContainingCylindersAndRelatedParts,
+        :CoolingEngineWithAirflow,
+        :CylinderOperation,
+        :ProperCooling,
+        :ProperCylinderSealing,
+        :ProperEngineCooling ;
+    :subFunctionOf :LubricatingEngineComponents,
+        :SupportingCombustion .
+
+:DrivingAndTimingComponents a :Function ;
+    rdfs:label "Driving and timing components" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :SmoothEngineOperation ;
+    :subFunctionOf :EnsuringSmoothOperation,
+        :GeneratingPower .
+
+:ExcessiveFuelDuringStart a :Function ;
+    rdfs:label "Excessive fuel during start" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :Overpriming ;
+    :defines :Overpriming ;
+    :dependsOn :Air-FuelIntake,
+        :Air-FuelIntakeControl,
+        :Air-FuelMixtureContamination,
+        :AirIntakeRestriction,
+        :CorrectFuelType,
+        :DistributingFuel-AirMixture,
+        :Fuel-AirMixtureControl,
+        :Fuel-AirMixtureDistribution,
+        :FuelDelivery,
+        :FuelDistribution,
+        :ManagingAir-FuelMixtureIntake,
+        :ProperAir-FuelIntake,
+        :ProperAir-FuelMixture ;
+    :subFunctionOf :LubricatingEngineComponents,
+        :ManagingFuel-AirMixture,
+        :ManagingFuelAirMixture .
+
+:FilteringOilAndControllingFlow a :Function ;
+    rdfs:label "Filtering oil and controlling flow" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AdequateLubrication,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:FuelAirMixtureControl rdfs:label "Fuel-air mixture control" ;
+    rdfs:subClassOf :Function ;
+    :defines :IncorrectIdleAdjustment,
+        :IncorrectIdleMixture,
+        :Overpriming ;
+    :subFunctionOf :ManagingFuelAirMixture .
+
+:FuelAirMixtureDistribution rdfs:label "Fuel-air mixture distribution" ;
+    rdfs:subClassOf :Function ;
+    :defines :FailureOfEngineToIdleProperly .
+
+:FuelPumpAssemblyAndAttachingParts rdfs:subClassOf :Component ;
+    :dependsOn :FuelDistributionSystem,
+        :InductionSystem ;
+    :hasFunction :PumpingFuelAndSecuringComponents ;
+    :partOf :AccessoryDrives .
+
+:HousingAccessoriesAndDrives a :Function ;
+    rdfs:label "Housing accessories and drives" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :CoreEngineFunctionality,
+        :DrivingPowerToAccessories,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :SmoothEngineOperation .
+
+:HousingAndSupportingCombustion a :Function ;
+    rdfs:label "Housing and supporting combustion" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :BalancedCylinderCompression,
+        :ContainingCylindersAndRelatedParts,
+        :CoolingEngineWithAirflow,
+        :CylinderOperation,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperCooling,
+        :ProperCylinderSealing,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation ;
+    :subFunctionOf :SupportingCombustion .
+
+:ManagingAirFuelMixtureIntake rdfs:label "Managing air-fuel mixture intake" ;
+    rdfs:subClassOf :Function ;
+    :subFunctionOf :ManagingFuelAirMixture .
+
+:MeasuringOilQuantity a :Function ;
+    rdfs:label "Measuring oil quantity" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AdequateLubrication,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation ;
+    :subFunctionOf :CoolingEngine,
+        :LubricatingEngineComponents .
+
+:MixingAndRegulatingFuel-Air a :Function ;
+    rdfs:label "Mixing and regulating fuel-air" ;
+    :dependsOn :Air-FuelIntake,
+        :Air-FuelIntakeControl,
+        :Air-FuelMixtureContamination,
+        :AirIntakeRestriction,
+        :CorrectFuelType,
+        :DistributingFuel-AirMixture,
+        :Fuel-AirMixtureControl,
+        :Fuel-AirMixtureDistribution,
+        :FuelDelivery,
+        :FuelDistribution,
+        :ManagingAir-FuelMixtureIntake,
+        :ProperAir-FuelIntake,
+        :ProperAir-FuelMixture ;
+    :subFunctionOf :ManagingFuel-AirMixture .
+
+:MixingAndRegulatingFuelAir rdfs:label "Mixing and regulating fuel-air" ;
+    rdfs:subClassOf :Function ;
+    :subFunctionOf :ManagingFuelAirMixture .
+
+:MonitoringAndControl a :Function ;
+    rdfs:label "Monitoring and Control" .
+
+:PowerGeneration a :Function ;
+    rdfs:label "Power Generation" .
+
+:Problem a owl:Class .
+
+:ProperAirFuelIntake rdfs:label "Proper air-fuel intake" ;
+    rdfs:subClassOf :Function ;
+    :defines :FailureOfEngineToDevelopFullPower,
+        :LackOfSufficientFuelFlow,
+        :LeakInInductionSystem ;
+    :subFunctionOf :SupportingCombustion .
+
+:ProperAirFuelMixture rdfs:label "Proper air-fuel mixture" ;
+    rdfs:subClassOf :Function ;
+    :defines :MixtureTooLean,
+        :MixtureTooRich ;
+    :subFunctionOf :ManagingFuelAirMixture .
+
+:PumpingFuelAndSecuringComponents a :Function ;
+    rdfs:label "Pumping fuel and securing components" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :Air-FuelIntake,
+        :Air-FuelIntakeControl,
+        :Air-FuelMixtureContamination,
+        :AirIntakeRestriction,
+        :CorrectFuelType,
+        :DistributingFuel-AirMixture,
+        :Fuel-AirMixtureControl,
+        :Fuel-AirMixtureDistribution,
+        :FuelDelivery,
+        :FuelDistribution,
+        :ManagingAir-FuelMixtureIntake,
+        :ProperAir-FuelIntake,
+        :ProperAir-FuelMixture ;
+    :subFunctionOf :ManagingFuel-AirMixture,
+        :ManagingFuelAirMixture .
+
+:PumpingOilAndAttachingHousing a :Function ;
+    rdfs:label "Pumping oil and attaching housing" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AdequateLubrication,
+        :DrivingPowerToAccessories,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:RegulatingOilFlowAndPressure a :Function ;
+    rdfs:label "Regulating oil flow and pressure" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AdequateLubrication,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:SecuringAndSupportingAlternator a :Function ;
+    rdfs:label "Securing and supporting alternator" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :DrivingPowerToAccessories,
+        :PowerSupplyForStarting,
+        :ProvidingElectricalPower ;
+    :subFunctionOf :MaintainingEngineStability .
+
+:SecuringCrankcaseComponents a :Function ;
+    rdfs:label "Securing crankcase components" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :HousingMainEngine ;
+    :subFunctionOf :MaintainingEngineStability .
+
+:SupportingCrankcaseOperation a :Function ;
+    rdfs:label "Supporting crankcase operation" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :HousingMainEngine ;
+    :subFunctionOf :EnsuringSmoothOperation,
+        :MaintainingEngineStability .
+
+:SupportingCylinderOperation a :Function ;
+    rdfs:label "Supporting cylinder operation" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateTemperatureReading,
+        :BalancedCylinderCompression,
+        :ContainingCylindersAndRelatedParts,
+        :CoolingEngineWithAirflow,
+        :CylinderOperation,
+        :ProperCooling,
+        :ProperCylinderSealing,
+        :ProperEngineCooling ;
+    :subFunctionOf :SupportingCombustion .
+
+:TransmittingMotionAndSealingChamber a :Function ;
+    rdfs:label "Transmitting motion and sealing chamber" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :BalancedCylinderCompression,
+        :ContainingCylindersAndRelatedParts,
+        :CoreEngineFunctionality,
+        :CylinderOperation,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperCylinderSealing,
+        :SmoothEngineOperation ;
+    :subFunctionOf :SupportingCombustion .
+
+:ValveAssemblyAndRelatedParts :partOf :CylinderSection .
+
+:partnr-72566 a :PartInstance ;
+    rdfs:label " Starter ring, 12/14 pitch",
+        "Starter ring, 12/14 pitch gear" ;
+    rdfs:subClassOf :Gear ;
+    :partNumber "72566" ;
+    :partOf :CrankshaftAssemblyAndRelatedParts,
+        :PowerSection .
+
+:partnr-LW-31H0.88 a :PartInstance ;
+    rdfs:label " 5/16-18 x 7/8 long, hex. head, drilled",
+        "5/16-18 x 7/8 long, hex. head, drilled bolt" ;
+    rdfs:subClassOf :Bolt ;
+    :partNumber "LW-31H0.88" ;
+    :partOf :AlternatorMountingAndAttachingParts,
+        :CrankshaftIdlerGearsTachometerDriveAndCamshaft,
+        :ElectricalPower,
+        :PowerSection .
+
+:partnr-STD-1211 a :PartInstance ;
+    rdfs:label " 2.00 diameter expansion",
+        "2.00 diameter expansion plug" ;
+    rdfs:subClassOf :Plug ;
+    :partNumber "STD-1211" ;
+    :partOf :CrankshaftAssemblyAndRelatedParts,
+        :PowerSection .
+
+:AlternatorMountingAndAttachingParts rdfs:subClassOf :Component ;
+    :dependsOn :AccessoryDrives ;
+    :hasFunction :SecuringAndSupportingAlternator .
+
+:CrankshaftAssembly rdfs:subClassOf :Component,
+        :Part ;
+    :dependsOn :LubricationSystem,
+        :PowerSection ;
+    :hasFunction :ConvertingLinearToRotationalMotion .
+
+:CylinderAssembly rdfs:subClassOf :Component ;
+    :dependsOn :CoolingSystem,
+        :CylinderSection,
+        :LubricationSystem ;
+    :hasFunction :HousingAndSupportingCombustion ;
+    :partOf :CylinderSection .
+
+:DistributingIgnitionToCylinders a :Function ;
+    rdfs:label "Distributing ignition to cylinders" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :CoreEngineFunctionality,
+        :DrivingPowerToAccessories,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :SmoothEngineOperation ;
+    :subFunctionOf :DistributingIgnition .
+
+:IgnitionTiming a :Function ;
+    rdfs:label "Ignition timing" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :ImproperOperationOfMagnetoBreaker,
+        :MagnetoBreakerPointsNotWorkingProperly,
+        :RoughEngine ;
+    :defines :ImproperOperationOfMagnetoBreaker,
+        :MagnetoBreakerPointsNotWorkingProperly,
+        :RoughEngine ;
+    :dependsOn :CoreEngineFunctionality,
+        :DrivingPowerToAccessories,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :SmoothEngineOperation ;
+    :subFunctionOf :DistributingIgnition .
+
+:IgnitionTimingAndDistribution a :Function ;
+    rdfs:label "Ignition timing and distribution" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :LowPowerAndUnevenRunning ;
+    :defines :LowPowerAndUnevenRunning ;
+    :dependsOn :CoreEngineFunctionality,
+        :DrivingPowerToAccessories,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :SmoothEngineOperation ;
+    :subFunctionOf :DistributingIgnition .
+
+:IgnitionTransfer a :Function ;
+    rdfs:label "Ignition transfer" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :DefectiveIgnitionWire ;
+    :defines :DefectiveIgnitionWire ;
+    :dependsOn :CoreEngineFunctionality,
+        :DrivingPowerToAccessories,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :SmoothEngineOperation ;
+    :subFunctionOf :DistributingIgnition .
+
+:IntakePipesAndAttachingParts rdfs:subClassOf :Component ;
+    :dependsOn :FuelDistributionSystem,
+        :InductionSystem ;
+    :hasFunction :DirectingAir-FuelMixture,
+        :DirectingAirFuelMixture ;
+    :partOf :CylinderSection .
+
+:OilCoolerBypassValveOilPressureScreenAndBreatherFitting rdfs:subClassOf :Component ;
+    :dependsOn :LubricationSystem ;
+    :hasFunction :RegulatingOilFlowAndPressure ;
+    :partOf :AccessoryDrives .
+
+:ProperIgnition a :Function ;
+    rdfs:label "Proper ignition" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :DefectiveSparkPlugTerminalConnectors,
+        :DefectiveSparkPlugs ;
+    :defines :DefectiveSparkPlugTerminalConnectors,
+        :DefectiveSparkPlugs ;
+    :dependsOn :CoreEngineFunctionality,
+        :DrivingPowerToAccessories,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :SmoothEngineOperation ;
+    :subFunctionOf :DistributingIgnition .
+
+:ProperIgnitionTiming a :Function ;
+    rdfs:label "Proper ignition timing" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :FaultyIgnition ;
+    :defines :FaultyIgnition ;
+    :dependsOn :CoreEngineFunctionality,
+        :DrivingPowerToAccessories,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :SmoothEngineOperation ;
+    :subFunctionOf :DistributingIgnition .
+
+:ProperIgnitionTimingAndDistribution a :Function ;
+    rdfs:label "Proper ignition timing and distribution" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :FaultyIgnitionSystem ;
+    :defines :FaultyIgnitionSystem ;
+    :dependsOn :CoreEngineFunctionality,
+        :DrivingPowerToAccessories,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :SmoothEngineOperation ;
+    :subFunctionOf :DistributingIgnition .
+
+:ValveAssembly rdfs:subClassOf :Component,
+        :Part ;
+    :dependsOn :CylinderSection,
+        :PowerSection ;
+    :hasFunction :ControllingIntakeAndExhaustFlow .
+
+:partnr-60882 a :PartInstance ;
+    rdfs:label " Starter ring, 10/12 pitch",
+        "Starter ring, 10/12 pitch gear" ;
+    rdfs:subClassOf :Gear ;
+    :partNumber "60882" ;
+    :partOf :CrankshaftAssemblyAndRelatedParts,
+        :PowerSection .
+
+:partnr-LW-11866 a :PartInstance ;
+    rdfs:label " Nut compressor",
+        "Nut compressor spacer" ;
+    rdfs:subClassOf :Spacer ;
+    :partNumber "LW-11866" ;
+    :partOf :CrankcaseAttachingParts,
+        :PowerSection .
+
+:ElectricalPower a :Component,
+        :System ;
+    rdfs:subClassOf :Component,
+        :System ;
+    :dependsOn :CrankingSection ;
+    :hasFunction :PowerSupplyForStarting,
+        :ProvidingElectricalPower .
+
+:HousingMainEngine a :Function ;
+    rdfs:label "Housing main engine" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation,
+        :SmoothEngineOperation .
+
+:MagnetosMagnetoDrivesHarnessesAndSparkPlugs rdfs:subClassOf :Component ;
+    :dependsOn :AccessoryDrives,
+        :IgnitionDistributionSystem ;
+    :hasFunction :DistributingIgnitionAndSparks ;
+    :partOf :IgnitionDistributionSystem .
+
+:OilFilterAssemblyAndOilCoolerBypassValve rdfs:subClassOf :Component ;
+    :dependsOn :LubricationSystem ;
+    :hasFunction :FilteringOilAndControllingFlow ;
+    :partOf :AccessoryDrives .
+
+:OilPumpAssemblyAndAccessoryHousingAttachingParts rdfs:subClassOf :Component ;
+    :dependsOn :AccessoryDrives,
+        :LubricationSystem ;
+    :hasFunction :PumpingOilAndAttachingHousing ;
+    :partOf :AccessoryDrives .
+
+:Part a owl:Class ;
+    rdfs:subClassOf :Component .
+
+:partnr-72075 a :PartInstance ;
+    rdfs:label " Oil, 3/32 section x 15/32 I.D.",
+        "Oil, 3/32 section x 15/32 I.D. seal" ;
+    rdfs:subClassOf :Seal ;
+    :partNumber "72075" ;
+    :partOf :CrankcaseRelatedParts,
+        :PowerSection .
+
+:PowerSupplyForStarting a :Function ;
+    rdfs:label "Power supply for starting" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :DefectiveBattery ;
+    :defines :DefectiveBattery ;
+    :dependsOn :FacilitatingEngineStart,
+        :InitiatingEngineStart ;
+    :subFunctionOf :FacilitatingEngineStart .
+
+:ProvidingElectricalPower a :Function ;
+    rdfs:label "Providing electrical power" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :FailureOfEngineToStart ;
+    :defines :FailureOfEngineToStart ;
+    :dependsOn :FacilitatingEngineStart,
+        :InitiatingEngineStart .
+
+:partnr-1102 a :PartInstance ;
+    rdfs:label " 1/8-27 NPT, allen head",
+        "1/8-27 NPT, allen head plug" ;
+    rdfs:subClassOf :Plug ;
+    :partNumber "1102" ;
+    :partOf :AccessoryDrives,
+        :AccessoryHousingAssembly,
+        :CrankcaseAssembly,
+        :CylinderAssembly,
+        :CylinderSection,
+        :PowerSection .
+
+:partnr-61084 a :PartInstance ;
+    rdfs:label " Oil pressure relief valve",
+        "Oil pressure relief valve spring" ;
+    rdfs:subClassOf :Spring ;
+    :partNumber "61084" ;
+    :partOf :CrankcaseRelatedParts,
+        :PowerSection .
+
+:InductionSystem a :Component ;
+    rdfs:label "Induction System" ;
+    rdfs:subClassOf :Component ;
+    :dependsOn :FuelDistributionSystem,
+        :PowerSection ;
+    :hasFunction :Air-FuelIntake,
+        :Air-FuelIntakeControl,
+        :Air-FuelMixtureContamination,
+        :AirFuelIntake,
+        :AirFuelIntakeControl,
+        :AirFuelMixtureContamination,
+        :AirIntakeRestriction,
+        :ManagingAir-FuelMixtureIntake,
+        :ManagingAirFuelMixtureIntake,
+        :ProperAir-FuelIntake,
+        :ProperAirFuelIntake .
+
+:InitiatingEngineStart a :Function ;
+    rdfs:label "Initiating engine start" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :FailureOfEngineToStart ;
+    :defines :FailureOfEngineToStart ;
+    :dependsOn :CoreEngineFunctionality,
+        :EngineStability,
+        :FacilitatingEngineStart,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :InitiatingEngineStart,
+        :PowerOutput,
+        :PowerSupplyForStarting,
+        :ProvidingElectricalPower,
+        :SmoothEngineOperation ;
+    :subFunctionOf :FacilitatingEngineStart .
+
+:MaintainingEngineStability a :Function ;
+    rdfs:label "Maintaining engine stability" .
+
+:BalancedCylinderCompression a :Function ;
+    rdfs:label "Balanced cylinder compression" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :UnevenCompression,
+        :UnevenCylinderCompression ;
+    :defines :UnevenCompression,
+        :UnevenCylinderCompression ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation,
+        :SmoothEngineOperation ;
+    :subFunctionOf :SupportingCombustion .
+
+:ContainingCylindersAndRelatedParts a :Function ;
+    rdfs:label "Containing cylinders and related parts" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation,
+        :SmoothEngineOperation ;
+    :subFunctionOf :SupportingCombustion .
+
+:CylinderOperation a :Function ;
+    rdfs:label "Cylinder operation" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :ExcessiveOilConsumption,
+        :RoughEngine ;
+    :defines :ExcessiveOilConsumption,
+        :RoughEngine ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation,
+        :SmoothEngineOperation ;
+    :subFunctionOf :EnsuringSmoothOperation,
+        :SupportingCombustion .
+
+:ProperCylinderSealing a :Function ;
+    rdfs:label "Proper cylinder sealing" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :ExcessiveBlow-By,
+        :FailureOfRingsToSeat,
+        :IncorrectInstallationOfPistonRings,
+        :WornPistonRings ;
+    :defines :ExcessiveBlowBy,
+        :FailureOfRingsToSeat,
+        :IncorrectInstallationOfPistonRings,
+        :WornPistonRings ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation,
+        :SmoothEngineOperation ;
+    :subFunctionOf :SupportingCombustion .
+
+:partnr-AN6-34A a :PartInstance ;
+    rdfs:label " 3/8-24 x 3-19/32 long, hex. head",
+        "3/8-24 x 3-19/32 long, hex. head bolt" ;
+    rdfs:subClassOf :Bolt ;
+    :partNumber "AN6-34A" ;
+    :partOf :CrankcaseAttachingParts,
+        :PowerSection .
+
+:partnr-LW-25S1.50 a :PartInstance ;
+    rdfs:label " 1/4-20 x 1-1/2 long, drilled end",
+        "1/4-20 x 1-1/2 long, drilled end bolt" ;
+    rdfs:subClassOf :Bolt ;
+    :partNumber "LW-25S1.50" ;
+    :partOf :CrankcaseAttachingParts,
+        :PowerSection .
+
+:CoolingEngine a :Function ;
+    rdfs:label "Cooling engine" ;
+    :subFunctionOf :CoolingAndLubrication .
+
+:CoolingSystem a :Component ;
+    rdfs:label "Cooling System" ;
+    rdfs:subClassOf :Component ;
+    :dependsOn :PowerSection ;
+    :hasFunction :AccurateTemperatureReading,
+        :CoolingEngineWithAirflow,
+        :ProperCooling,
+        :ProperEngineCooling .
+
+:FacilitatingEngineStart a :Function ;
+    rdfs:label "Facilitating engine start" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :PowerSupplyForStarting,
+        :ProvidingElectricalPower,
+        :SmoothEngineOperation ;
+    :subFunctionOf :CoreEngineOperations .
+
+:partnr-LW-25-1.75 a :PartInstance ;
+    rdfs:label " 1/4-20 x 1-3/4 long, hex. head",
+        "1/4-20 x 1-3/4 long, hex. head bolt" ;
+    rdfs:subClassOf :Bolt ;
+    :partNumber "LW-25-1.75" ;
+    :partOf :CrankcaseAttachingParts,
+        :PowerSection .
+
+:AccessoryHousingAssembly a :Assembly ;
+    rdfs:label "Accessory Housing Assembly" ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :dependsOn :AccessoryDrives,
+        :PowerSection ;
+    :hasFunction :HousingAccessoriesAndDrives ;
+    :partOf :AccessoryDrives .
+
+:DistributingIgnition a :Function ;
+    rdfs:label "Distributing ignition" .
+
+:ConnectingRodsPistonsAndRingAssemblies a :Assembly ;
+    rdfs:label "Connecting Rods, Pistons And Ring Assemblies" ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :dependsOn :CylinderSection,
+        :PowerSection ;
+    :hasFunction :TransmittingMotionAndSealingChamber ;
+    :partOf :CylinderSection .
+
+:CrankingSection a :Component,
+        :System ;
+    rdfs:label "Cranking Section" ;
+    rdfs:subClassOf :Component,
+        :System ;
+    :dependsOn :ElectricalPower,
+        :PowerSection ;
+    :hasFunction :FacilitatingEngineStart,
+        :InitiatingEngineStart .
+
+:EnsuringSmoothOperation a :Function ;
+    rdfs:label "Ensuring smooth operation" ;
+    :subFunctionOf :MonitoringAndControl .
+
+:ManagingFuel-AirMixture a :Function ;
+    rdfs:label "Managing fuel-air mixture" .
+
+:partnr-LW-13792 a :PartInstance ;
+    rdfs:label " Crankshaft oil",
+        "Crankshaft oil seal" ;
+    rdfs:subClassOf :Seal ;
+    :partNumber "LW-13792" ;
+    :partOf :CrankcaseRelatedParts,
+        :PowerSection .
+
+:partnr-LW-25-1.13 a :PartInstance ;
+    rdfs:label " 1/4-20 x 1-1/8 long, hex. head",
+        "1/4-20 x 1-1/8 long, hex. head bolt" ;
+    rdfs:subClassOf :Bolt ;
+    :partNumber "LW-25-1.13" ;
+    :partOf :AccessoryDrives,
+        :CrankcaseAttachingParts,
+        :LubricationSystem,
+        :OilPumpAssemblyAndAccessoryHousingAttachingParts,
+        :OilSumpAssemblyAndOilSuctionScreen,
+        :PowerSection .
+
+:partnr-LW-25-1.50 a :PartInstance ;
+    rdfs:label " 1/4-20 x 1-1/2 long, hex. head",
+        "1/4-20 x 1-1/2 long, hex. head bolt" ;
+    rdfs:subClassOf :Bolt ;
+    :partNumber "LW-25-1.50" ;
+    :partOf :CrankcaseAttachingParts,
+        :PowerSection .
+
+:CorrectFuelType a :Function ;
+    rdfs:label "Correct fuel type" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :ImproperFuel ;
+    :defines :ImproperFuel ;
+    :dependsOn :Air-FuelIntake,
+        :Air-FuelIntakeControl,
+        :Air-FuelMixtureContamination,
+        :AirIntakeRestriction,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :ManagingAir-FuelMixtureIntake,
+        :PowerOutput,
+        :ProperAir-FuelIntake,
+        :SmoothEngineOperation .
+
+:CrankshaftIdlerGearsTachometerDriveAndCamshaft a :Assembly ;
+    rdfs:label "Crankshaft Idler Gears, Tachometer Drive And Camshaft" ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :dependsOn :PowerSection ;
+    :hasFunction :DrivingAndTimingComponents ;
+    :partOf :PowerSection .
+
+:DistributingFuel-AirMixture a :Function ;
+    rdfs:label "Distributing fuel-air mixture" ;
+    :dependsOn :Air-FuelIntake,
+        :Air-FuelIntakeControl,
+        :Air-FuelMixtureContamination,
+        :AirIntakeRestriction,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :ManagingAir-FuelMixtureIntake,
+        :PowerOutput,
+        :ProperAir-FuelIntake,
+        :SmoothEngineOperation ;
+    :subFunctionOf :ManagingFuel-AirMixture .
+
+:Fuel-AirMixtureControl a :Function ;
+    rdfs:label "Fuel-air mixture control" ;
+    :addressesProblem :IncorrectIdleAdjustment,
+        :IncorrectIdleMixture,
+        :Overpriming ;
+    :dependsOn :Air-FuelIntake,
+        :Air-FuelIntakeControl,
+        :Air-FuelMixtureContamination,
+        :AirIntakeRestriction,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :ManagingAir-FuelMixtureIntake,
+        :PowerOutput,
+        :ProperAir-FuelIntake,
+        :SmoothEngineOperation ;
+    :subFunctionOf :ManagingFuel-AirMixture .
+
+:Fuel-AirMixtureDistribution a :Function ;
+    rdfs:label "Fuel-air mixture distribution" ;
+    :addressesProblem :FailureOfEngineToIdleProperly ;
+    :dependsOn :Air-FuelIntake,
+        :Air-FuelIntakeControl,
+        :Air-FuelMixtureContamination,
+        :AirIntakeRestriction,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :ManagingAir-FuelMixtureIntake,
+        :PowerOutput,
+        :ProperAir-FuelIntake,
+        :SmoothEngineOperation .
+
+:FuelDelivery a :Function ;
+    rdfs:label "Fuel delivery" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :ImproperFuelFlow,
+        :InsufficientFuelPressure,
+        :LackOfSufficientFuelFlow ;
+    :defines :ImproperFuelFlow,
+        :InsufficientFuelPressure,
+        :LackOfSufficientFuelFlow ;
+    :dependsOn :Air-FuelIntake,
+        :Air-FuelIntakeControl,
+        :Air-FuelMixtureContamination,
+        :AirIntakeRestriction,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :ManagingAir-FuelMixtureIntake,
+        :PowerOutput,
+        :ProperAir-FuelIntake,
+        :SmoothEngineOperation ;
+    :subFunctionOf :ManagingFuel-AirMixture,
+        :ManagingFuelAirMixture .
+
+:FuelDistribution a :Function ;
+    rdfs:label "Fuel distribution" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :LackOfFuel ;
+    :defines :LackOfFuel ;
+    :dependsOn :Air-FuelIntake,
+        :Air-FuelIntakeControl,
+        :Air-FuelMixtureContamination,
+        :AirIntakeRestriction,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :ManagingAir-FuelMixtureIntake,
+        :PowerOutput,
+        :ProperAir-FuelIntake,
+        :SmoothEngineOperation ;
+    :subFunctionOf :ManagingFuel-AirMixture,
+        :ManagingFuelAirMixture .
+
+:FuelDistributionSystem a :Component,
+        :System ;
+    rdfs:label "Fuel Distribution System" ;
+    rdfs:subClassOf :Component,
+        :System ;
+    :dependsOn :InductionSystem,
+        :PowerSection ;
+    :hasFunction :CorrectFuelType,
+        :DistributingFuel-AirMixture,
+        :DistributingFuelAirMixture,
+        :Fuel-AirMixtureControl,
+        :Fuel-AirMixtureDistribution,
+        :FuelAirMixtureControl,
+        :FuelAirMixtureDistribution,
+        :FuelDelivery,
+        :FuelDistribution,
+        :ProperAir-FuelMixture,
+        :ProperAirFuelMixture .
+
+:ProperAir-FuelMixture a :Function ;
+    rdfs:label "Proper air-fuel mixture" ;
+    :addressesProblem :MixtureTooLean,
+        :MixtureTooRich ;
+    :dependsOn :Air-FuelIntake,
+        :Air-FuelIntakeControl,
+        :Air-FuelMixtureContamination,
+        :AirIntakeRestriction,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :ManagingAir-FuelMixtureIntake,
+        :PowerOutput,
+        :ProperAir-FuelIntake,
+        :SmoothEngineOperation ;
+    :subFunctionOf :ManagingFuel-AirMixture .
+
+:Air-FuelIntake a :Function ;
+    rdfs:label "Air-fuel intake" ;
+    :addressesProblem :FailureOfEngineToIdleProperly,
+        :LackOfFuel ;
+    :dependsOn :CoreEngineFunctionality,
+        :CorrectFuelType,
+        :DistributingFuel-AirMixture,
+        :EngineStability,
+        :Fuel-AirMixtureControl,
+        :Fuel-AirMixtureDistribution,
+        :FuelDelivery,
+        :FuelDistribution,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperAir-FuelMixture,
+        :SmoothEngineOperation .
+
+:Air-FuelIntakeControl a :Function ;
+    rdfs:label "Air-fuel intake control" ;
+    :addressesProblem :ThrottleLeverOutOfAdjustment ;
+    :dependsOn :CoreEngineFunctionality,
+        :CorrectFuelType,
+        :DistributingFuel-AirMixture,
+        :EngineStability,
+        :Fuel-AirMixtureControl,
+        :Fuel-AirMixtureDistribution,
+        :FuelDelivery,
+        :FuelDistribution,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperAir-FuelMixture,
+        :SmoothEngineOperation ;
+    :subFunctionOf :SupportingCombustion .
+
+:Air-FuelMixtureContamination a :Function ;
+    rdfs:label "Air-fuel mixture contamination" ;
+    :addressesProblem :WaterInCarburetor ;
+    :dependsOn :CoreEngineFunctionality,
+        :CorrectFuelType,
+        :DistributingFuel-AirMixture,
+        :EngineStability,
+        :Fuel-AirMixtureControl,
+        :Fuel-AirMixtureDistribution,
+        :FuelDelivery,
+        :FuelDistribution,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperAir-FuelMixture,
+        :SmoothEngineOperation .
+
+:AirIntakeRestriction a :Function ;
+    rdfs:label "Air intake restriction" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :RestrictionInAirScoop ;
+    :defines :RestrictionInAirScoop ;
+    :dependsOn :CoreEngineFunctionality,
+        :CorrectFuelType,
+        :DistributingFuel-AirMixture,
+        :EngineStability,
+        :Fuel-AirMixtureControl,
+        :Fuel-AirMixtureDistribution,
+        :FuelDelivery,
+        :FuelDistribution,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperAir-FuelMixture,
+        :SmoothEngineOperation ;
+    :subFunctionOf :CoolingEngine .
+
+:DrivingPowerToAccessories a :Function ;
+    rdfs:label "Driving power to accessories" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :SmoothEngineOperation ;
+    :subFunctionOf :GeneratingPower .
+
+:ManagingAir-FuelMixtureIntake a :Function ;
+    rdfs:label "Managing air-fuel mixture intake" ;
+    :dependsOn :CoreEngineFunctionality,
+        :CorrectFuelType,
+        :DistributingFuel-AirMixture,
+        :EngineStability,
+        :Fuel-AirMixtureControl,
+        :Fuel-AirMixtureDistribution,
+        :FuelDelivery,
+        :FuelDistribution,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperAir-FuelMixture,
+        :SmoothEngineOperation ;
+    :subFunctionOf :ManagingFuel-AirMixture .
+
+:ProperAir-FuelIntake a :Function ;
+    rdfs:label "Proper air-fuel intake" ;
+    :addressesProblem :FailureOfEngineToDevelopFullPower,
+        :LackOfSufficientFuelFlow,
+        :LeakInInductionSystem ;
+    :dependsOn :CoreEngineFunctionality,
+        :CorrectFuelType,
+        :DistributingFuel-AirMixture,
+        :EngineStability,
+        :Fuel-AirMixtureControl,
+        :Fuel-AirMixtureDistribution,
+        :FuelDelivery,
+        :FuelDistribution,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperAir-FuelMixture,
+        :SmoothEngineOperation ;
+    :subFunctionOf :SupportingCombustion .
+
+:SupportingCombustion a :Function ;
+    rdfs:label "Supporting combustion" ;
+    :subFunctionOf :CylinderAndCombustionOperations .
+
+:CrankcaseRelatedParts a :Assembly ;
+    rdfs:label "Crankcase Related Parts" ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :dependsOn :CrankcaseAssembly ;
+    :hasFunction :SupportingCrankcaseOperation ;
+    :partOf :PowerSection .
+
+:CrankshaftAssemblyAndRelatedParts a :Assembly ;
+    rdfs:label "Crankshaft Assembly And Related Parts" ;
+    rdfs:subClassOf :Assembly ;
+    :partOf :PowerSection .
+
+:System a owl:Class ;
+    rdfs:subClassOf :Component .
+
+:CrankcaseAttachingParts a :Assembly ;
+    rdfs:label "Crankcase Attaching Parts" ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :dependsOn :CrankcaseAssembly ;
+    :hasFunction :SecuringCrankcaseComponents ;
+    :partOf :PowerSection .
+
+:PropellerGovernorDriveCoverVacuumPumpDriveAndCover a :Assembly ;
+    rdfs:label "Propeller Governor Drive Cover, Vacuum Pump Drive And Cover" ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :dependsOn :AccessoryDrives,
+        :PowerSection ;
+    :hasFunction :CoveringDrivesAndProvidingHousing ;
+    :partOf :AccessoryDrives .
+
+:Assembly a owl:Class ;
+    rdfs:subClassOf :Component .
+
+:AccurateOilPressureReading a :Function ;
+    rdfs:label "Accurate oil pressure reading" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :DefectivePressureGage ;
+    :defines :DefectivePressureGage ;
+    :dependsOn :AccurateTemperatureReading,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :SmoothEngineOperation ;
+    :subFunctionOf :EnsuringSmoothOperation,
+        :LubricatingEngineComponents .
+
+:AdequateLubrication a :Function ;
+    rdfs:label "Adequate lubrication" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :InsufficientOil ;
+    :defines :InsufficientOil ;
+    :dependsOn :AccurateTemperatureReading,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :SmoothEngineOperation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:CrankcaseAssembly a :Assembly ;
+    rdfs:label "Crankcase Assembly" ;
+    rdfs:subClassOf :Assembly,
+        :Component,
+        :Part ;
+    :dependsOn :CoolingSystem,
+        :LubricationSystem,
+        :PowerSection ;
+    :hasFunction :HousingMainEngine ;
+    :partOf :PowerSection .
+
+:MaintainingOilPressure a :Function ;
+    rdfs:label "Maintaining oil pressure" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :LowOilPressure ;
+    :defines :LowOilPressure ;
+    :dependsOn :AccurateTemperatureReading,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :SmoothEngineOperation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:OilDistribution a :Function ;
+    rdfs:label "Oil distribution" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :ExcessiveOilConsumption ;
+    :defines :ExcessiveOilConsumption ;
+    :dependsOn :AccurateTemperatureReading,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :SmoothEngineOperation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:OilSumpAssemblyAndOilSuctionScreen a :Assembly ;
+    rdfs:label "Oil Sump Assembly And Oil Suction Screen" ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :dependsOn :LubricationSystem,
+        :PowerSection ;
+    :hasFunction :CollectingAndScreeningOil ;
+    :partOf :LubricationSystem .
+
+:OilTemperatureRegulation a :Function ;
+    rdfs:label "Oil temperature regulation" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :HighOilTemperature ;
+    :defines :HighOilTemperature ;
+    :dependsOn :AccurateTemperatureReading,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :SmoothEngineOperation ;
+    :subFunctionOf :CoolingEngine .
+
+:ProperLubrication a :Function ;
+    rdfs:label "Proper lubrication" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :FailingOrFailedBearings,
+        :LowGradeOfOil ;
+    :defines :FailingOrFailedBearings,
+        :LowGradeOfOil ;
+    :dependsOn :AccurateTemperatureReading,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :SmoothEngineOperation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:ProperOilFlow a :Function ;
+    rdfs:label "Proper oil flow" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :CloggedOilLinesOrStrainers,
+        :LeakInSuctionLineOrPressureLine,
+        :StoppageInOilPumpIntakePassage ;
+    :defines :CloggedOilLinesOrStrainers,
+        :LeakInSuctionLineOrPressureLine,
+        :StoppageInOilPumpIntakePassage ;
+    :dependsOn :AccurateTemperatureReading,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :SmoothEngineOperation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:ProperOilPressureRegulation a :Function ;
+    rdfs:label "Proper oil pressure regulation" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :AirLockOrDirtInReliefValve ;
+    :defines :AirLockOrDirtInReliefValve ;
+    :dependsOn :AccurateTemperatureReading,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :SmoothEngineOperation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:AccurateTemperatureReading a :Function ;
+    rdfs:label "Accurate temperature reading" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :DefectiveTemperatureGage ;
+    :defines :DefectiveTemperatureGage ;
+    :dependsOn :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :SmoothEngineOperation ;
+    :subFunctionOf :CoolingEngine,
+        :EnsuringSmoothOperation .
+
+:CoolingEngineWithAirflow a :Function ;
+    rdfs:label "Cooling engine with airflow" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :SmoothEngineOperation ;
+    :subFunctionOf :CoolingEngine .
+
+:ProperCooling a :Function ;
+    rdfs:label "Proper cooling" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :HighOilTemperature ;
+    :defines :HighOilTemperature ;
+    :dependsOn :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :SmoothEngineOperation ;
+    :subFunctionOf :CoolingEngine,
+        :EnsuringSmoothOperation .
+
+:ProperEngineCooling a :Function ;
+    rdfs:label "Proper engine cooling" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :InsufficientAirCooling ;
+    :defines :InsufficientAirCooling ;
+    :dependsOn :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :SmoothEngineOperation ;
+    :subFunctionOf :CoolingEngine .
+
+:IgnitionDistributionSystem a :Component,
+        :System ;
+    rdfs:label "Ignition Distribution System" ;
+    rdfs:subClassOf :Component,
+        :System ;
+    :dependsOn :AccessoryDrives,
+        :PowerSection ;
+    :hasFunction :DistributingIgnitionToCylinders,
+        :IgnitionTiming,
+        :IgnitionTimingAndDistribution,
+        :IgnitionTransfer,
+        :ProperIgnition,
+        :ProperIgnitionTiming,
+        :ProperIgnitionTimingAndDistribution .
+
+:LubricationSystem a :Component,
+        :System ;
+    rdfs:label "Lubrication System" ;
+    rdfs:subClassOf :Component,
+        :System ;
+    :dependsOn :CoolingSystem,
+        :PowerSection ;
+    :hasFunction :AccurateOilPressureReading,
+        :AdequateLubrication,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation .
+
+:LubricatingEngineComponents a :Function ;
+    rdfs:label "Lubricating engine components" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateTemperatureReading,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :SmoothEngineOperation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:CoreEngineFunctionality a :Function ;
+    rdfs:label "Core engine functionality" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :InternalFailure ;
+    :defines :InternalFailure ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :CoolingEngineWithAirflow,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation ;
+    :subFunctionOf :EnsuringSmoothOperation .
+
+:EngineStability a :Function ;
+    rdfs:label "Engine stability" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :CrackedEngineMount,
+        :DefectiveMountingBushings ;
+    :defines :CrackedEngineMount,
+        :DefectiveMountingBushings ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :CoolingEngineWithAirflow,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation ;
+    :subFunctionOf :MaintainingEngineStability .
+
+:HousingMainPowerComponents a :Function ;
+    rdfs:label "Housing main power components" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :CoolingEngineWithAirflow,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation ;
+    :subFunctionOf :GeneratingPower .
+
+:PowerOutput a :Function ;
+    rdfs:label "Power output" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :FailureOfEngineToDevelopFullPower,
+        :LowPowerAndUnevenRunning ;
+    :defines :FailureOfEngineToDevelopFullPower,
+        :LowPowerAndUnevenRunning ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :CoolingEngineWithAirflow,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation ;
+    :subFunctionOf :GeneratingPower .
+
+:SmoothEngineOperation a :Function ;
+    rdfs:label "Smooth engine operation" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :FailingOrFailedBearings ;
+    :defines :FailingOrFailedBearings ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :CoolingEngineWithAirflow,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation ;
+    :subFunctionOf :EnsuringSmoothOperation .
+
+:Component a owl:Class ;
+    rdfs:subClassOf owl:Thing .
+
+:GeneratingPower a :Function ;
+    rdfs:label "Generating power" ;
+    :dependsOn :AccurateOilPressureReading,
+        :AccurateTemperatureReading,
+        :AdequateLubrication,
+        :CoolingEngineWithAirflow,
+        :LubricatingEngineComponents,
+        :MaintainingOilPressure,
+        :OilDistribution,
+        :OilTemperatureRegulation,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :ProperLubrication,
+        :ProperOilFlow,
+        :ProperOilPressureRegulation ;
+    :subFunctionOf :PowerGeneration .
+
+:AccessoryDrives a :System ;
+    rdfs:label "Accessory Drives" ;
+    rdfs:subClassOf :Component,
+        :System ;
+    :dependsOn :PowerSection ;
+    :hasFunction :DrivingPowerToAccessories .
+
+:CylinderSection a :Component,
+        :System ;
+    rdfs:label "Cylinder Section" ;
+    rdfs:subClassOf :Component,
+        :System ;
+    :dependsOn :CoolingSystem,
+        :LubricationSystem,
+        :PowerSection ;
+    :hasFunction :BalancedCylinderCompression,
+        :ContainingCylindersAndRelatedParts,
+        :CylinderOperation,
+        :ProperCylinderSealing .
+
+:PowerSection a :Component,
+        :System ;
+    rdfs:label "Power Section" ;
+    rdfs:subClassOf :Component,
+        :System ;
+    :dependsOn :CoolingSystem,
+        :LubricationSystem ;
+    :hasFunction :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :SmoothEngineOperation .
+
+:Function a owl:Class .
+
+[] :linkCandidate :partnr-61084 .
+
+[] :linkCandidate :OilSumpAssemblyAndOilSuctionScreen .
+
+[] :linkCandidate :partnr-LW-13792 .
+
+[] :linkCandidate :partnr-LW-13792 .
+
+[] :linkCandidate :partnr-LW-25S1.50 .
+
+[] :linkCandidate :partnr-LW-25-1.50 .
+
+[] :linkCandidate :partnr-LW-25S1.50 .
+
+[] :linkCandidate :partnr-LW-25-1.50 .
+
+[] :linkCandidate :partnr-AN6-34A .
+
+[] :linkCandidate :partnr-LW-25-1.75 .
+
+[] :linkCandidate :partnr-LW-25-1.13 .
+
+[] :linkCandidate :partnr-LW-25-1.75 .
+
+[] :linkCandidate :partnr-LW-25-1.13 .
+
+[] :linkCandidate :partnr-AN6-34A .
+
+[] :linkCandidate :partnr-LW-25-1.13 .
+
+[] :linkCandidate :partnr-STD-1211 .
+
+[] :linkCandidate :partnr-LW-13792 .
+
+[] :linkCandidate :partnr-LW-13792 .
+
+[] :linkCandidate :partnr-72075 .
+
+[] :linkCandidate :partnr-LW-25-1.75 .
+
+[] :linkCandidate :partnr-LW-25-1.13 .
+
+[] :linkCandidate :partnr-LW-25S1.50 .
+
+[] :linkCandidate :partnr-LW-25-1.50 .
+
+[] :linkCandidate :partnr-AN6-34A .
+
+[] :linkCandidate :partnr-LW-25-1.13 .
+
+[] :linkCandidate :partnr-LW-25-1.13 .
+
+[] :linkCandidate :OilSumpAssemblyAndOilSuctionScreen .
+
+[] :linkCandidate :partnr-LW-25-1.50 .
+
+[] :linkCandidate :partnr-LW-25-1.13 .
+
+[] :linkCandidate :partnr-LW-25-1.75 .
+
+[] :linkCandidate :partnr-AN6-34A .
+
+[] :linkCandidate :partnr-LW-25S1.50 .
+
+[] :linkCandidate :partnr-AN6-34A .
+
+[] :linkCandidate :partnr-LW-25-1.75 .
+
+[] :linkCandidate :partnr-LW-25S1.50 .
+
+[] :linkCandidate :partnr-LW-25-1.13 .
+
+[] :linkCandidate :partnr-LW-25-1.50 .
+
+[] :linkCandidate :OilSumpAssemblyAndOilSuctionScreen .
+
+[] :linkCandidate :partnr-72075 .
+
+[] :linkCandidate :partnr-LW-13792 .
+
+[] :linkCandidate :partnr-72075 .
+
+[] :linkCandidate :partnr-LW-13792 .
+
+[] :linkCandidate :partnr-LW-11866 .
+
+[] :linkCandidate :OilSumpAssemblyAndOilSuctionScreen .
+
+[] :linkCandidate :partnr-LW-13792 .
+
+[] :linkCandidate :partnr-1102 .
+
+[] :linkCandidate :partnr-1102 .
+
+[] :linkCandidate :partnr-72566 .
+
+[] :linkCandidate :partnr-60882 .
+
+[] :linkCandidate :partnr-LW-31H0.88 .
+
+[] :linkCandidate :partnr-LW-25S1.50 .
+
+[] :linkCandidate :partnr-LW-25-1.75 .
+
+[] :linkCandidate :partnr-AN6-34A .
+
+[] :linkCandidate :partnr-LW-25-1.50 .
+
+[] :linkCandidate :partnr-LW-25-1.13 .
+
+[] :linkCandidate :partnr-61084 .
+
+[] :linkCandidate :OilSumpAssemblyAndOilSuctionScreen .
+

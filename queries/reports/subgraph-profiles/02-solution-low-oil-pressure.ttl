@@ -1,0 +1,346 @@
+@prefix : <https://w3id.org/zorro#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:AccurateOilPressureReading :addressesProblem :DefectivePressureGage ;
+    :defines :DefectivePressureGage .
+
+:AdequateLubrication :addressesProblem :InsufficientOil ;
+    :defines :InsufficientOil .
+
+:BalancedCylinderCompression :dependsOn :MaintainingOilPressure .
+
+:CheckAirInletAndOutletForDeformationOrObstruction :addresses :HighOilTemperature .
+
+:CheckGasketBetweenAccessoryHousingAndCrankcase a :Remedy ;
+    rdfs:label "Check gasket between accessory housing and crankcase. " ;
+    rdfs:subClassOf :Solution ;
+    :addresses :LowOilPressure ;
+    :solves :LeakInSuctionLineOrPressureLine .
+
+:CheckLineForObstructionCleanSuctionStrainer a :Remedy ;
+    rdfs:label "Check line for obstruction. Clean suction strainer. " ;
+    rdfs:subClassOf :Solution ;
+    :addresses :LowOilPressure ;
+    :solves :StoppageInOilPumpIntakePassage .
+
+:CollectingAndScreeningOil :dependsOn :MaintainingOilPressure .
+
+:ContainingCylindersAndRelatedParts :dependsOn :MaintainingOilPressure .
+
+:ConvertingLinearToRotationalMotion :dependsOn :MaintainingOilPressure .
+
+:CrackedEngineMount a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:CylinderOperation :dependsOn :MaintainingOilPressure .
+
+:DefectiveBattery a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:DefectiveIgnitionWire a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:DefectiveMountingBushings a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:DefectiveSparkPlugTerminalConnectors a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:DefectiveSparkPlugs a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:ExamineSumpForMetalPar-TiclesIfFoundOverhaulOfEngineIsIndicated :addresses :HighOilTemperature .
+
+:ExcessiveOilConsumption a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:FailureOfEngineToDevelopFullPower a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:FailureOfEngineToIdleProperly a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:FailureOfEngineToStart a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:FailureOfRingsToSeat a :Problem .
+
+:FailureOfRingsToSeatNewNitridedCylinders rdfs:subClassOf :Problem .
+
+:FaultyIgnition a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:FaultyIgnitionSystem a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:FillToProperLevelWithRecom-MendedOil a :Remedy ;
+    rdfs:label "Fill to proper level with recom- mended oil. " ;
+    :addresses :LowOilPressure .
+
+:FillToProperLevelWithRecomMendedOil :solves :InsufficientOil .
+
+:FillToProperLevelWithSpecifiedOil :addresses :HighOilTemperature .
+
+:FilteringOilAndControllingFlow :dependsOn :MaintainingOilPressure .
+
+:HousingAndSupportingCombustion :dependsOn :MaintainingOilPressure .
+
+:HousingMainEngine :dependsOn :MaintainingOilPressure .
+
+:ImproperFuel a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:ImproperFuelFlow a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:ImproperOperationOfMagnetoBreaker a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:IncorrectIdleAdjustment a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:IncorrectIdleMixture a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:IncorrectInstallationOfPistonRings a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:InsufficientFuelPressure a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:InternalFailure a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:LackOfFuel a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:LackOfSufficientFuelFlow a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:LeakInInductionSystem a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:LeaksInInductionSystem rdfs:subClassOf :Problem .
+
+:LowPowerAndUnevenRunning a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:LubricationSystem :hasFunction :MaintainingOilPressure .
+
+:MagnetoBreakerPointsNotWorkingProperly a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:MeasuringOilQuantity :dependsOn :MaintainingOilPressure .
+
+:MixtureTooLean a :Problem .
+
+:MixtureTooLeanIndicatedByOverheatingOrBackfiring rdfs:subClassOf :Problem .
+
+:MixtureTooRich a :Problem .
+
+:MixtureTooRichIndicatedBySluggishOperationRedExhaustFlame rdfs:subClassOf :Problem .
+
+:OilTemperatureRegulation :addressesProblem :HighOilTemperature ;
+    :defines :HighOilTemperature .
+
+:Overpriming a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:ProperCylinderSealing :dependsOn :MaintainingOilPressure .
+
+:ProperOilFlow :addressesProblem :LeakInSuctionLineOrPressureLine,
+        :StoppageInOilPumpIntakePassage ;
+    :defines :LeakInSuctionLineOrPressureLine,
+        :StoppageInOilPumpIntakePassage .
+
+:ProperOilPressureRegulation :addressesProblem :AirLockOrDirtInReliefValve ;
+    :defines :AirLockOrDirtInReliefValve .
+
+:PumpingOilAndAttachingHousing :dependsOn :MaintainingOilPressure .
+
+:RegulatingOilFlowAndPressure :dependsOn :MaintainingOilPressure .
+
+:RemoveAndCleanOilPressureReliefValve a :Remedy ;
+    rdfs:label "Remove and clean oil pressure relief valve. " ;
+    rdfs:subClassOf :Solution ;
+    :addresses :LowOilPressure ;
+    :solves :AirLockOrDirtInReliefValve .
+
+:RemoveAndCleanOilStrainers :addresses :HighOilTemperature .
+
+:Replace a :Remedy ;
+    rdfs:label "Replace. " ;
+    rdfs:subClassOf :Solution ;
+    :addresses :LowOilPressure ;
+    :solves :DefectivePressureGage .
+
+:ReplaceGage :addresses :HighOilTemperature .
+
+:ReplaceWithOilConformingToSpecifications :addresses :HighOilTemperature .
+
+:RestrictionInAirScoop a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:RoughEngine a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:SeeHighOilTemperatureInTroubleColumn a :Remedy ;
+    rdfs:label "See High Oil Temperature in Trouble column. " ;
+    rdfs:subClassOf :Solution ;
+    :addresses :LowOilPressure ;
+    :solves :HighOilTemperature .
+
+:ThrottleLeverOutOfAdjustment a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:UnevenCompression a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:UnevenCylinderCompression a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:UsuallyCausedByWornOrStuckRings :addresses :HighOilTemperature .
+
+:WaterInCarburetor a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:WornPistonRings a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:address a owl:ObjectProperty .
+
+:consistOf a owl:ObjectProperty .
+
+:dealsWith a owl:ObjectProperty ;
+    rdfs:range :Problem .
+
+:define a owl:ObjectProperty ;
+    rdfs:range :Problem .
+
+:dependOn a owl:ObjectProperty .
+
+:failVia a owl:ObjectProperty ;
+    rdfs:range :Problem .
+
+:hasCause a owl:ObjectProperty ;
+    rdfs:domain :Problem .
+
+:hasFunction a owl:ObjectProperty .
+
+:hasID rdfs:domain :Problem .
+
+:hasName rdfs:domain :Problem .
+
+:involve a owl:ObjectProperty .
+
+:resultIn a owl:ObjectProperty ;
+    rdfs:domain :Problem .
+
+:solve a owl:ObjectProperty ;
+    rdfs:range :Problem .
+
+:CloggedOilLinesOrStrainers a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:CoreEngineFunctionality :dependsOn :MaintainingOilPressure .
+
+:DefectiveTemperatureGage a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:EngineStability :dependsOn :MaintainingOilPressure .
+
+:ExcessiveBlow-By a :Problem .
+
+:ExcessiveBlowBy rdfs:subClassOf :Problem .
+
+:FailingOrFailedBearings a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:GeneratingPower :dependsOn :MaintainingOilPressure .
+
+:HousingMainPowerComponents :dependsOn :MaintainingOilPressure .
+
+:InsufficientAirCooling a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:InsufficientOilSupply rdfs:subClassOf :Problem .
+
+:LowGradeOfOil a :Problem ;
+    rdfs:subClassOf :Problem .
+
+:PowerOutput :dependsOn :MaintainingOilPressure .
+
+:ProperCooling :addressesProblem :HighOilTemperature ;
+    :defines :HighOilTemperature .
+
+:SmoothEngineOperation :dependsOn :MaintainingOilPressure .
+
+:AirLockOrDirtInReliefValve a :Cause,
+        :Problem ;
+    rdfs:label "Air lock or dirt in relief valve" ;
+    rdfs:subClassOf :Problem .
+
+:DefectivePressureGage a :Cause,
+        :Problem ;
+    rdfs:label "Defective pressure gage" ;
+    rdfs:subClassOf :Problem .
+
+:InsufficientOil a :Cause,
+        :Problem ;
+    rdfs:label "Insufficient oil" ;
+    rdfs:subClassOf :Problem .
+
+:LeakInSuctionLineOrPressureLine a :Cause,
+        :Problem ;
+    rdfs:label "Leak in suction line or pressure line" ;
+    rdfs:subClassOf :Problem .
+
+:StoppageInOilPumpIntakePassage a :Cause,
+        :Problem ;
+    rdfs:label "Stoppage in oil pump intake passage" ;
+    rdfs:subClassOf :Problem .
+
+:LowOilPressure a :Problem ;
+    rdfs:label "Low Oil Pressure" ;
+    rdfs:subClassOf :Problem ;
+    :hasCause :AirLockOrDirtInReliefValve,
+        :DefectivePressureGage,
+        :HighOilTemperature,
+        :InsufficientOil,
+        :LeakInSuctionLineOrPressureLine,
+        :StoppageInOilPumpIntakePassage .
+
+:HighOilTemperature a :Cause,
+        :Problem ;
+    rdfs:label "High Oil Temperature",
+        "High oil temperature" ;
+    rdfs:subClassOf :Problem ;
+    :hasCause :CloggedOilLinesOrStrainers,
+        :DefectiveTemperatureGage,
+        :ExcessiveBlow-By,
+        :ExcessiveBlowBy,
+        :FailingOrFailedBearings,
+        :InsufficientAirCooling,
+        :InsufficientOilSupply,
+        :LowGradeOfOil .
+
+:MaintainingOilPressure a :Function ;
+    rdfs:label "Maintaining oil pressure" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :LowOilPressure ;
+    :defines :LowOilPressure ;
+    :dependsOn :AccurateTemperatureReading,
+        :CoolingEngineWithAirflow,
+        :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :ProperCooling,
+        :ProperEngineCooling,
+        :SmoothEngineOperation ;
+    :subFunctionOf :LubricatingEngineComponents .
+
+:Problem a owl:Class .
+

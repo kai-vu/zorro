@@ -1,0 +1,962 @@
+@prefix : <https://w3id.org/zorro#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:AccurateOilPressureReading a :Function ;
+    rdfs:subClassOf :Function .
+
+:AccurateTemperatureReading a :Function ;
+    rdfs:subClassOf :Function .
+
+:AdequateLubrication a :Function ;
+    rdfs:subClassOf :Function .
+
+:Air-FuelIntake a :Function .
+
+:Air-FuelIntakeControl a :Function .
+
+:Air-FuelMixtureContamination a :Function .
+
+:AirFuelIntake rdfs:subClassOf :Function .
+
+:AirFuelIntakeControl rdfs:subClassOf :Function .
+
+:AirFuelMixtureContamination rdfs:subClassOf :Function .
+
+:AirIntakeRestriction a :Function ;
+    rdfs:subClassOf :Function .
+
+:AssistingEngineStart a :Function ;
+    rdfs:subClassOf :Function ;
+    :subFunctionOf :FacilitatingEngineStart .
+
+:BalancedCylinderCompression a :Function ;
+    rdfs:subClassOf :Function .
+
+:CollectingAndScreeningOil a :Function ;
+    rdfs:subClassOf :Function .
+
+:ConnectingRodsPistonsAndRingAssemblies a :Assembly ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :dependsOn :PowerSection .
+
+:ContainingCylindersAndRelatedParts a :Function ;
+    rdfs:subClassOf :Function .
+
+:ControllingIntakeAndExhaustFlow a :Function ;
+    rdfs:subClassOf :Function .
+
+:ConvertingLinearToRotationalMotion a :Function ;
+    rdfs:subClassOf :Function .
+
+:CoolingAndLubrication a :Function .
+
+:CoolingEngine a :Function .
+
+:CoolingEngineWithAirflow a :Function ;
+    rdfs:subClassOf :Function .
+
+:CorrectFuelType a :Function ;
+    rdfs:subClassOf :Function .
+
+:CoveringDrivesAndProvidingHousing a :Function ;
+    rdfs:subClassOf :Function .
+
+:CrankcaseAttachingParts a :Assembly ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :partOf :PowerSection .
+
+:CrankcaseRelatedParts a :Assembly ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :partOf :PowerSection .
+
+:CrankshaftAssembly rdfs:subClassOf :Component ;
+    :dependsOn :PowerSection .
+
+:CrankshaftAssemblyAndRelatedParts a :Assembly ;
+    rdfs:subClassOf :Assembly ;
+    :partOf :PowerSection .
+
+:CrankshaftIdlerGearsTachometerDriveAndCamshaft a :Assembly ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :dependsOn :PowerSection ;
+    :partOf :PowerSection .
+
+:CylinderAndCombustionOperations a :Function .
+
+:CylinderHeadDrainTubesAndIntercylinderCoolingBaffles a :Assembly ;
+    rdfs:subClassOf :Assembly,
+        :Component .
+
+:CylinderOperation a :Function ;
+    rdfs:subClassOf :Function .
+
+:CylinderRelatedParts a :Assembly ;
+    rdfs:subClassOf :Assembly,
+        :Component .
+
+:DirectingAir-FuelMixture a :Function .
+
+:DirectingAirFuelMixture rdfs:subClassOf :Function .
+
+:DistributingFuel-AirMixture a :Function .
+
+:DistributingFuelAirMixture rdfs:subClassOf :Function .
+
+:DistributingIgnition a :Function .
+
+:DistributingIgnitionAndSparks a :Function ;
+    rdfs:subClassOf :Function .
+
+:DistributingIgnitionToCylinders a :Function ;
+    rdfs:subClassOf :Function .
+
+:DrainingAndCoolingCylinders a :Function ;
+    rdfs:subClassOf :Function .
+
+:DrivingAndTimingComponents a :Function ;
+    rdfs:subClassOf :Function .
+
+:EnsuringSmoothOperation a :Function .
+
+:ExcessiveFuelDuringStart a :Function ;
+    rdfs:subClassOf :Function .
+
+:FilteringOilAndControllingFlow a :Function ;
+    rdfs:subClassOf :Function .
+
+:Fuel-AirMixtureControl a :Function .
+
+:Fuel-AirMixtureDistribution a :Function .
+
+:FuelAirMixtureControl rdfs:subClassOf :Function .
+
+:FuelAirMixtureDistribution rdfs:subClassOf :Function .
+
+:FuelDelivery a :Function ;
+    rdfs:subClassOf :Function .
+
+:FuelDistribution a :Function ;
+    rdfs:subClassOf :Function .
+
+:FuelPumpAssemblyAndAttachingParts a :Assembly ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :partOf :AccessoryDrives .
+
+:HousingAndSupportingCombustion a :Function ;
+    rdfs:subClassOf :Function .
+
+:HousingMainEngine a :Function ;
+    rdfs:subClassOf :Function .
+
+:HousingMainEngineComponents a :Function .
+
+:IgnitionTiming a :Function ;
+    rdfs:subClassOf :Function .
+
+:IgnitionTimingAndDistribution a :Function ;
+    rdfs:subClassOf :Function .
+
+:IgnitionTransfer a :Function ;
+    rdfs:subClassOf :Function .
+
+:InductionSystem a :Component ;
+    rdfs:subClassOf :Component ;
+    :dependsOn :PowerSection .
+
+:IntakePipesAndAttachingParts a :Assembly ;
+    rdfs:subClassOf :Assembly,
+        :Component .
+
+:LubricatingEngineComponents a :Function ;
+    rdfs:subClassOf :Function .
+
+:MaintainingEngineStability a :Function .
+
+:MaintainingOilPressure a :Function ;
+    rdfs:subClassOf :Function .
+
+:ManagingAir-FuelMixtureIntake a :Function .
+
+:ManagingAirFuelMixtureIntake rdfs:subClassOf :Function .
+
+:ManagingFuel-AirMixture a :Function .
+
+:MeasuringOilQuantity a :Function ;
+    rdfs:subClassOf :Function .
+
+:MixingAndRegulatingFuel-Air a :Function .
+
+:MixingAndRegulatingFuelAir rdfs:subClassOf :Function .
+
+:MonitoringAndControl a :Function .
+
+:OilDistribution a :Function ;
+    rdfs:subClassOf :Function .
+
+:OilFilterAssemblyAndOilCoolerBypassValve a :Assembly ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :partOf :AccessoryDrives .
+
+:OilLevelGage a :Assembly ;
+    rdfs:subClassOf :Assembly,
+        :Component .
+
+:OilSumpAssemblyAndOilSuctionScreen a :Assembly ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :dependsOn :PowerSection .
+
+:OilTemperatureRegulation a :Function ;
+    rdfs:subClassOf :Function .
+
+:Part rdfs:subClassOf :Component .
+
+:PowerGeneration a :Function .
+
+:PrimingSystem a :Component ;
+    rdfs:subClassOf :Component .
+
+:ProperAir-FuelIntake a :Function .
+
+:ProperAir-FuelMixture a :Function .
+
+:ProperAirFuelIntake rdfs:subClassOf :Function .
+
+:ProperAirFuelMixture rdfs:subClassOf :Function .
+
+:ProperCooling a :Function ;
+    rdfs:subClassOf :Function .
+
+:ProperCylinderSealing a :Function ;
+    rdfs:subClassOf :Function .
+
+:ProperEngineCooling a :Function ;
+    rdfs:subClassOf :Function .
+
+:ProperFuelType a :Function .
+
+:ProperIgnition a :Function ;
+    rdfs:subClassOf :Function .
+
+:ProperIgnitionTiming a :Function ;
+    rdfs:subClassOf :Function .
+
+:ProperIgnitionTimingAndDistribution a :Function ;
+    rdfs:subClassOf :Function .
+
+:ProperLubrication a :Function ;
+    rdfs:subClassOf :Function .
+
+:ProperOilFlow a :Function ;
+    rdfs:subClassOf :Function .
+
+:ProperOilPressureRegulation a :Function ;
+    rdfs:subClassOf :Function .
+
+:PumpingFuelAndSecuringComponents a :Function ;
+    rdfs:subClassOf :Function .
+
+:PumpingOilAndAttachingHousing a :Function ;
+    rdfs:subClassOf :Function .
+
+:RegulatingOilFlowAndPressure a :Function ;
+    rdfs:subClassOf :Function .
+
+:RockerShaftPlug :isProbably :partnr-1102 .
+
+:RockerShaftThrustPlug :isProbably :partnr-1102 .
+
+:SecuringAndSupportingAlternator a :Function ;
+    rdfs:subClassOf :Function .
+
+:SecuringCrankcaseComponents a :Function ;
+    rdfs:subClassOf :Function .
+
+:SupportingCombustion a :Function .
+
+:SupportingCrankcaseOperation a :Function ;
+    rdfs:subClassOf :Function .
+
+:SupportingCylinderOperation a :Function ;
+    rdfs:subClassOf :Function .
+
+:TransmittingMotionAndSealingChamber a :Function ;
+    rdfs:subClassOf :Function .
+
+:ValveAssembly rdfs:subClassOf :Component ;
+    :dependsOn :PowerSection .
+
+:ValveAssemblyAndRelatedParts a :Assembly ;
+    rdfs:subClassOf :Assembly .
+
+:address a owl:ObjectProperty .
+
+:consistOf a owl:ObjectProperty .
+
+:dealsWith a owl:ObjectProperty .
+
+:define a owl:ObjectProperty ;
+    rdfs:domain :Function .
+
+:dependOn a owl:ObjectProperty ;
+    rdfs:domain :Function ;
+    rdfs:range :Function .
+
+:failVia a owl:ObjectProperty ;
+    rdfs:domain :Component .
+
+:hasCause a owl:ObjectProperty .
+
+:hasFunction a owl:ObjectProperty ;
+    rdfs:domain :Component ;
+    rdfs:range :Function .
+
+:involve a owl:ObjectProperty ;
+    rdfs:range :Component .
+
+:partnr-03D23350 :partOf :AccessoryDrives .
+
+:partnr-05K19423-S :partOf :AccessoryDrives .
+
+:partnr-06A19956 :partOf :AccessoryDrives .
+
+:partnr-06B23862 :partOf :AccessoryDrives .
+
+:partnr-06E19769-0.63 :partOf :AccessoryDrives .
+
+:partnr-06E19769-1.25 :partOf :PowerSection .
+
+:partnr-07A19474 :partOf :ElectricalPower .
+
+:partnr-07A21443 :partOf :ElectricalPower .
+
+:partnr-07F23268 :partOf :ElectricalPower .
+
+:partnr-1028-B :partOf :PowerSection .
+
+:partnr-11B20061-1SB :partOf :PowerSection .
+
+:partnr-11B20061-1SB-S :partOf :PowerSection .
+
+:partnr-11B20161-3SL :partOf :PowerSection .
+
+:partnr-11B20161-3SL-S :partOf :PowerSection .
+
+:partnr-13B47020 :partOf :PowerSection .
+
+:partnr-13B47024 :partOf :PowerSection .
+
+:partnr-13S19646 :partOf :PowerSection .
+
+:partnr-15B26064 :partOf :PowerSection .
+
+:partnr-15M23452 :partOf :PowerSection .
+
+:partnr-18D26098 :partOf :PowerSection .
+
+:partnr-21A21533-04 a :PartInstance ;
+    rdfs:label " Accessory",
+        "Accessory housing assembly" ;
+    rdfs:subClassOf :HousingAssembly ;
+    :partNumber "21A21533-04" ;
+    :partOf :AccessoryDrives,
+        :AccessoryHousingAssembly .
+
+:partnr-25C-10 :partOf :AccessoryDrives .
+
+:partnr-25C-22 a :PartInstance ;
+    rdfs:label " 1/4-20 x 2-3/4 long",
+        "1/4-20 x 2-3/4 long stud" ;
+    rdfs:subClassOf :Stud ;
+    :partNumber "25C-22" ;
+    :partOf :AccessoryDrives,
+        :AccessoryHousingAssembly .
+
+:partnr-31A26041 a :PartInstance ;
+    rdfs:label " 12V., Kelly V ERZ-8011",
+        "12V., Kelly V ERZ-8011 starter assembly" ;
+    rdfs:subClassOf :StarterAssembly ;
+    :partNumber "31A26041" ;
+    :partOf :CrankingSection,
+        :StarterMotorAndAttachingParts .
+
+:partnr-31A26043 a :PartInstance ;
+    rdfs:label " 12V., Kelly V ERZ-8012",
+        "12V., Kelly V ERZ-8012 starter assembly" ;
+    rdfs:subClassOf :StarterAssembly ;
+    :partNumber "31A26043" ;
+    :partOf :CrankingSection,
+        :StarterMotorAndAttachingParts .
+
+:partnr-31C-12 a :PartInstance ;
+    rdfs:label " 5/16-18 x 1-1/2 long",
+        "5/16-18 x 1-1/2 long stud" ;
+    rdfs:subClassOf :Stud ;
+    :partNumber "31C-12" ;
+    :partOf :AccessoryDrives,
+        :AccessoryHousingAssembly,
+        :CrankcaseAssembly,
+        :CylinderAssembly,
+        :CylinderSection,
+        :PowerSection .
+
+:partnr-31C-13 :partOf :PowerSection .
+
+:partnr-31C-19 a :PartInstance ;
+    rdfs:label " 5/16-18 x 2-3/8 long",
+        "5/16-18 x 2-3/8 long stud" ;
+    rdfs:subClassOf :Stud ;
+    :partNumber "31C-19" ;
+    :partOf :AccessoryDrives,
+        :AccessoryHousingAssembly .
+
+:partnr-31CD-17 a :PartInstance ;
+    rdfs:label " 5/16-18 x 2-1/8 long, drilled",
+        "5/16-18 x 2-1/8 long, drilled stud" ;
+    rdfs:subClassOf :Stud ;
+    :partNumber "31CD-17" ;
+    :partOf :AccessoryDrives,
+        :AccessoryHousingAssembly .
+
+:partnr-38-13 :partOf :PowerSection .
+
+:partnr-38D-17 :partOf :PowerSection .
+
+:partnr-50-15 :partOf :PowerSection .
+
+:partnr-53E22144 :partOf :AccessoryDrives .
+
+:partnr-60096 :partOf :AccessoryDrives .
+
+:partnr-60430 :partOf :AccessoryDrives .
+
+:partnr-60803 :partOf :PowerSection .
+
+:partnr-60882 :partOf :PowerSection .
+
+:partnr-61084 :partOf :PowerSection .
+
+:partnr-61098 :partOf :AccessoryDrives .
+
+:partnr-61173 :partOf :AccessoryDrives .
+
+:partnr-61174 :partOf :AccessoryDrives .
+
+:partnr-61183 :partOf :AccessoryDrives .
+
+:partnr-61544 :partOf :PowerSection .
+
+:partnr-62417 :partOf :AccessoryDrives .
+
+:partnr-62817 :partOf :AccessoryDrives .
+
+:partnr-68668 :partOf :PowerSection .
+
+:partnr-69106 :partOf :AccessoryDrives .
+
+:partnr-69510 :partOf :AccessoryDrives .
+
+:partnr-69551 :partOf :AccessoryDrives .
+
+:partnr-69675 :partOf :AccessoryDrives .
+
+:partnr-71140 :partOf :AccessoryDrives .
+
+:partnr-71596 :partOf :AccessoryDrives .
+
+:partnr-72075 :partOf :PowerSection .
+
+:partnr-72091 :partOf :PowerSection .
+
+:partnr-72566 :partOf :PowerSection .
+
+:partnr-72970 :partOf :AccessoryDrives .
+
+:partnr-73383 :partOf :ElectricalPower .
+
+:partnr-73818 a :PartInstance ;
+    rdfs:label " Accessory housing",
+        "Accessory housing gasket" ;
+    rdfs:subClassOf :Gasket ;
+    :partNumber "73818" ;
+    :partOf :AccessoryDrives,
+        :AccessoryHousingAssembly .
+
+:partnr-74996 :partOf :PowerSection .
+
+:partnr-75072 :partOf :PowerSection .
+
+:partnr-75154 :partOf :PowerSection .
+
+:partnr-75380 :partOf :ElectricalPower .
+
+:partnr-76121 :partOf :PowerSection .
+
+:partnr-76220 :partOf :PowerSection .
+
+:partnr-76510 :partOf :AccessoryDrives .
+
+:partnr-76534 :partOf :ElectricalPower .
+
+:partnr-76628 :partOf :PowerSection .
+
+:partnr-76908 :partOf :ElectricalPower .
+
+:partnr-76944 :partOf :PowerSection .
+
+:partnr-77309 :partOf :PowerSection .
+
+:partnr-77467 :partOf :PowerSection .
+
+:partnr-77808 :partOf :PowerSection .
+
+:partnr-77852 :partOf :AccessoryDrives .
+
+:partnr-78531 :partOf :AccessoryDrives .
+
+:partnr-8313 :partOf :AccessoryDrives .
+
+:partnr-AN6-14 :partOf :ElectricalPower .
+
+:partnr-AN6-16 :partOf :ElectricalPower .
+
+:partnr-AN6-34A :partOf :PowerSection .
+
+:partnr-AN844-10D :partOf :AccessoryDrives .
+
+:partnr-AN960-616L :partOf :PowerSection .
+
+:partnr-LRT23381 :partOf :PowerSection .
+
+:partnr-LW-10729 :partOf :ElectricalPower .
+
+:partnr-LW-11713 :partOf :PowerSection .
+
+:partnr-LW-11866 :partOf :PowerSection .
+
+:partnr-LW-13215 :partOf :AccessoryDrives .
+
+:partnr-LW-13792 :partOf :PowerSection .
+
+:partnr-LW-13793 :partOf :PowerSection .
+
+:partnr-LW-13796 :partOf :PowerSection .
+
+:partnr-LW-14260 :partOf :AccessoryDrives .
+
+:partnr-LW-15472 :partOf :AccessoryDrives .
+
+:partnr-LW-18085 :partOf :PowerSection .
+
+:partnr-LW-18109 :partOf :AccessoryDrives .
+
+:partnr-LW-18110 :partOf :AccessoryDrives .
+
+:partnr-LW-18639 :partOf :PowerSection .
+
+:partnr-LW-18667 :partOf :PowerSection .
+
+:partnr-LW-18815-S :partOf :PowerSection .
+
+:partnr-LW-18817-S :partOf :PowerSection .
+
+:partnr-LW-18840 :partOf :PowerSection .
+
+:partnr-LW-18921-S :partOf :PowerSection .
+
+:partnr-LW-18922-S :partOf :PowerSection .
+
+:partnr-LW-25-0.94 :partOf :AccessoryDrives .
+
+:partnr-LW-25-1.00 :partOf :AccessoryDrives .
+
+:partnr-LW-25-1.13 :partOf :AccessoryDrives,
+        :PowerSection .
+
+:partnr-LW-25-1.44 :partOf :AccessoryDrives .
+
+:partnr-LW-25-1.50 :partOf :PowerSection .
+
+:partnr-LW-25-1.75 :partOf :PowerSection .
+
+:partnr-LW-25S1.50 :partOf :PowerSection .
+
+:partnr-LW-31-0.94 :partOf :ElectricalPower .
+
+:partnr-LW-31H0.75 :partOf :ElectricalPower .
+
+:partnr-LW-31H0.88 :partOf :ElectricalPower,
+        :PowerSection .
+
+:partnr-LW-38-0.75 :partOf :AccessoryDrives .
+
+:partnr-STD-1065 :partOf :PowerSection .
+
+:partnr-STD-1211 :partOf :PowerSection .
+
+:partnr-STD-1339 :partOf :PowerSection .
+
+:partnr-STD-1411 :partOf :AccessoryDrives,
+        :PowerSection .
+
+:partnr-STD-1420 :partOf :AccessoryDrives .
+
+:partnr-STD-160 :partOf :AccessoryDrives,
+        :PowerSection .
+
+:partnr-STD-1623 :partOf :PowerSection .
+
+:partnr-STD-1727 :partOf :ElectricalPower .
+
+:partnr-STD-1774 :partOf :AccessoryDrives .
+
+:partnr-STD-1882 :partOf :AccessoryDrives .
+
+:partnr-STD-2168 :partOf :PowerSection .
+
+:partnr-STD-2231 :partOf :PowerSection .
+
+:partnr-STD-2246 :partOf :PowerSection .
+
+:partnr-STD-2249 :partOf :PowerSection .
+
+:partnr-STD-33 :partOf :AccessoryDrives,
+        :PowerSection .
+
+:partnr-STD-35 a :PartInstance ;
+    rdfs:label " 5/16 plain",
+        "5/16 plain washer" ;
+    rdfs:subClassOf :Washer ;
+    :partNumber "STD-35" ;
+    :partOf :AccessoryDrives,
+        :AlternatorMountingAndAttachingParts,
+        :CarburetorAssembly,
+        :CrankingSection,
+        :CylinderAssembly,
+        :CylinderSection,
+        :ElectricalPower,
+        :FuelDistributionSystem,
+        :OilPumpAssemblyAndAccessoryHousingAttachingParts,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover,
+        :StarterMotorAndAttachingParts .
+
+:partnr-STD-475 a :PartInstance ;
+    rdfs:label " 5/16 lock, internal teeth",
+        "5/16 lock, internal teeth washer" ;
+    rdfs:subClassOf :Washer ;
+    :partNumber "STD-475" ;
+    :partOf :AccessoryDrives,
+        :CarburetorAssembly,
+        :CrankingSection,
+        :CylinderAssembly,
+        :CylinderSection,
+        :FuelDistributionSystem,
+        :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover,
+        :StarterMotorAndAttachingParts .
+
+:partnr-STD-514 :partOf :PowerSection .
+
+:partnr-STD-557 :partOf :PowerSection .
+
+:partnr-STD-596 :partOf :PowerSection .
+
+:partnr-STD-678 :partOf :PowerSection .
+
+:partnr-STD-690 :partOf :ElectricalPower .
+
+:partnr-STD-713 :partOf :ElectricalPower .
+
+:partnr-STD-783 :partOf :AccessoryDrives .
+
+:partnr-STD-8 :partOf :AccessoryDrives,
+        :PowerSection .
+
+:partnr-STD-872 :partOf :ElectricalPower,
+        :PowerSection .
+
+:resultIn a owl:ObjectProperty .
+
+:solve a owl:ObjectProperty .
+
+:AlternatorMountingAndAttachingParts a :Assembly ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :dependsOn :AccessoryDrives,
+        :ElectricalPower ;
+    :partOf :ElectricalPower .
+
+:CoolingSystem a :Component ;
+    rdfs:subClassOf :Component ;
+    :dependsOn :PowerSection .
+
+:CoreEngineOperations a :Function .
+
+:HousingAccessoriesAndDrives a :Function ;
+    rdfs:label "Housing accessories and drives" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :CoreEngineFunctionality,
+        :DrivingPowerToAccessories,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :SmoothEngineOperation .
+
+:LubricationSystem a :Component,
+        :System ;
+    rdfs:subClassOf :Component,
+        :System ;
+    :dependsOn :PowerSection .
+
+:Nut :isProbably :partnr-STD-1410 .
+
+:OilCoolerBypassValveOilPressureScreenAndBreatherFitting a :Assembly ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :partOf :AccessoryDrives .
+
+:OilPumpAssemblyAndAccessoryHousingAttachingParts a :Assembly ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :dependsOn :AccessoryDrives ;
+    :partOf :AccessoryDrives .
+
+:partnr-LW-31-1.16 a :PartInstance ;
+    rdfs:label " 5/16-18 x 1-5/32 long, hex. head",
+        "5/16-18 x 1-5/32 long, hex. head bolt" ;
+    rdfs:subClassOf :Bolt ;
+    :partNumber "LW-31-1.16" ;
+    :partOf :CrankingSection,
+        :StarterMotorAndAttachingParts .
+
+:partnr-STD-784 a :PartInstance ;
+    rdfs:label " 3/8-18 NPT, allen head",
+        "3/8-18 NPT, allen head plug" ;
+    rdfs:subClassOf :Plug ;
+    :partNumber "STD-784" ;
+    :partOf :AccessoryDrives,
+        :AccessoryHousingAssembly,
+        :OilCoolerBypassValveOilPressureScreenAndBreatherFitting .
+
+:CrankcaseAssembly a :Assembly ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :dependsOn :PowerSection ;
+    :partOf :PowerSection .
+
+:DrivingPowerToAccessories a :Function ;
+    rdfs:subClassOf :Function .
+
+:IgnitionDistributionSystem a :Component,
+        :System ;
+    rdfs:subClassOf :Component,
+        :System ;
+    :dependsOn :AccessoryDrives,
+        :PowerSection .
+
+:MagnetosMagnetoDrivesHarnessesAndSparkPlugs a :Assembly ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :dependsOn :AccessoryDrives .
+
+:partnr-STD-1410 a :PartInstance ;
+    rdfs:label " 5/16-18 plain",
+        "5/16-18 plain nut" ;
+    rdfs:subClassOf :Nut ;
+    :partNumber "STD-1410" ;
+    :partOf :AccessoryDrives,
+        :CarburetorAssembly,
+        :CrankingSection,
+        :CylinderAssembly,
+        :CylinderSection,
+        :FuelDistributionSystem,
+        :IgnitionDistributionSystem,
+        :MagnetosMagnetoDrivesHarnessesAndSparkPlugs,
+        :PropellerGovernorDriveCoverVacuumPumpDriveAndCover,
+        :StarterMotorAndAttachingParts .
+
+:CarburetorAssembly a :Assembly ;
+    rdfs:subClassOf :Assembly,
+        :Component .
+
+:FuelDistributionSystem a :Component,
+        :System ;
+    rdfs:subClassOf :Component,
+        :System ;
+    :dependsOn :PowerSection .
+
+:PowerSupplyForStarting a :Function ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :FacilitatingEngineStart,
+        :InitiatingEngineStart ;
+    :subFunctionOf :FacilitatingEngineStart .
+
+:PropellerGovernorDriveCoverVacuumPumpDriveAndCover a :Assembly ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :dependsOn :AccessoryDrives,
+        :PowerSection ;
+    :partOf :AccessoryDrives .
+
+:ProvidingElectricalPower a :Function ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :FacilitatingEngineStart,
+        :InitiatingEngineStart .
+
+:CoreEngineFunctionality a :Function ;
+    rdfs:subClassOf :Function .
+
+:EngineStability a :Function ;
+    rdfs:subClassOf :Function .
+
+:GeneratingPower a :Function .
+
+:HousingMainPowerComponents a :Function ;
+    rdfs:subClassOf :Function .
+
+:PowerOutput a :Function ;
+    rdfs:subClassOf :Function .
+
+:SmoothEngineOperation a :Function ;
+    rdfs:subClassOf :Function .
+
+:partnr-1102 a :PartInstance ;
+    rdfs:label " 1/8-27 NPT, allen head",
+        "1/8-27 NPT, allen head plug" ;
+    rdfs:subClassOf :Plug ;
+    :partNumber "1102" ;
+    :partOf :AccessoryDrives,
+        :AccessoryHousingAssembly,
+        :CrankcaseAssembly,
+        :CylinderAssembly,
+        :CylinderSection,
+        :PowerSection .
+
+:CylinderAssembly a :Assembly ;
+    rdfs:subClassOf :Assembly,
+        :Component .
+
+:CylinderSection a :Component,
+        :System ;
+    rdfs:subClassOf :Component,
+        :System ;
+    :dependsOn :PowerSection .
+
+:InitiatingEngineStart a :Function ;
+    rdfs:label "Initiating engine start" ;
+    rdfs:subClassOf :Function ;
+    :addressesProblem :FailureOfEngineToStart ;
+    :defines :FailureOfEngineToStart ;
+    :dependsOn :CoreEngineFunctionality,
+        :EngineStability,
+        :FacilitatingEngineStart,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :InitiatingEngineStart,
+        :PowerOutput,
+        :PowerSupplyForStarting,
+        :ProvidingElectricalPower,
+        :SmoothEngineOperation ;
+    :subFunctionOf :FacilitatingEngineStart .
+
+:StarterMotorAndAttachingParts a :Assembly ;
+    rdfs:label "Starter Motor And Attaching Parts" ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :dependsOn :CrankingSection,
+        :ElectricalPower ;
+    :hasFunction :InitiatingEngineStart ;
+    :partOf :CrankingSection .
+
+:FacilitatingEngineStart a :Function ;
+    rdfs:label "Facilitating engine start" ;
+    rdfs:subClassOf :Function ;
+    :dependsOn :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :PowerSupplyForStarting,
+        :ProvidingElectricalPower,
+        :SmoothEngineOperation ;
+    :subFunctionOf :CoreEngineOperations .
+
+:AccessoryHousingAssembly a :Assembly ;
+    rdfs:label "Accessory Housing Assembly" ;
+    rdfs:subClassOf :Assembly,
+        :Component ;
+    :dependsOn :AccessoryDrives,
+        :PowerSection ;
+    :hasFunction :HousingAccessoriesAndDrives ;
+    :partOf :AccessoryDrives .
+
+:CrankingSection a :Component,
+        :System ;
+    rdfs:label "Cranking Section" ;
+    rdfs:subClassOf :Component,
+        :System ;
+    :dependsOn :ElectricalPower,
+        :PowerSection ;
+    :hasFunction :FacilitatingEngineStart,
+        :InitiatingEngineStart .
+
+:System a owl:Class ;
+    rdfs:subClassOf :Component .
+
+:ElectricalPower a :Component,
+        :System ;
+    rdfs:label "Electrical Power" ;
+    rdfs:subClassOf :Component,
+        :System ;
+    :dependsOn :CrankingSection ;
+    :hasFunction :PowerSupplyForStarting,
+        :ProvidingElectricalPower .
+
+:Assembly a owl:Class ;
+    rdfs:subClassOf :Component .
+
+:Component a owl:Class ;
+    rdfs:subClassOf owl:Thing .
+
+:AccessoryDrives a :System ;
+    rdfs:label "Accessory Drives" ;
+    rdfs:subClassOf :Component,
+        :System ;
+    :dependsOn :PowerSection ;
+    :hasFunction :DrivingPowerToAccessories .
+
+:PowerSection a :Component,
+        :System ;
+    rdfs:label "Power Section" ;
+    rdfs:subClassOf :Component,
+        :System ;
+    :dependsOn :CoolingSystem,
+        :LubricationSystem ;
+    :hasFunction :CoreEngineFunctionality,
+        :EngineStability,
+        :GeneratingPower,
+        :HousingMainPowerComponents,
+        :PowerOutput,
+        :SmoothEngineOperation .
+
+:Function a owl:Class .
+
+[] :linkCandidate :partnr-STD-784 .
+
+[] :linkCandidate :partnr-LW-31-1.16 .
+
+[] :linkCandidate :partnr-STD-1410 .
+
+[] :linkCandidate :partnr-1102 .
+
+[] :linkCandidate :partnr-1102 .
+
