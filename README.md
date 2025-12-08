@@ -22,7 +22,7 @@ The KG structure can be seen as 3 layers: the *schema*, *domain knowledge*, and 
 - Benchmark LLM answers to documentation-focused competency questions with `python -m src.competency_llm_eval`. By default it extracts depth-1 subgraphs per question; add `--depth N` to widen the neighbourhood, `--full-graph` to fall back to the legacy whole-graph mode, `--model NAME` to pick a different API deployment, `--lenience FRACTION` to permit proportional per-row mismatches during scoring, `--cache-only` to avoid new calls, or `--profile-subgraphs` to dump only the retrieved subgraphs (Turtle under a depth/model/lenience-specific directory) plus JSON telemetry. Outputs are written to `queries/reports/competency_llm_depth-<depth|full>_model-<model>_lenience-<fraction>_{cache,results,report}.json/md`, which capture the retrieval request, triple breakdown, lenience setting, and evaluation metrics for reproducibility.
 
 ## Schema
-The ontology specification draft is available at https://w3id.org/ZorroOntology
+The ontology specification draft is available at https://w3id.org/ZorroOntology.
 The paper that explain the construction of the schema is available at https://ceur-ws.org/Vol-3830/paper1sim.pdf
 (see paper)
 
