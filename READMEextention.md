@@ -19,8 +19,8 @@ The KG structure can be seen as 3 layers: the *schema*, *domain knowledge*, and 
 - Benchmark LLM answers to documentation-focused competency questions with `python -m src.competency_llm_eval`. By default it extracts depth-1 subgraphs per question; add `--depth N` to widen the neighbourhood, `--full-graph` to fall back to the legacy whole-graph mode, `--model NAME` to pick a different API deployment, `--lenience FRACTION` to permit proportional per-row mismatches during scoring, `--cache-only` to avoid new calls, or `--profile-subgraphs` to dump only the retrieved subgraphs (Turtle under a depth/model/lenience-specific directory) plus JSON telemetry. Outputs are written to `queries/reports/competency_llm_depth-<depth|full>_model-<model>_lenience-<fraction>_{cache,results,report}.json/md`, which capture the retrieval request, triple breakdown, lenience setting, and evaluation metrics for reproducibility.
 
 ## Schema
-The ontology specification draft is available at https://w3id.org/ZorroOntology.
-The paper that explain the construction of the schema is available at https://ceur-ws.org/Vol-3830/paper1sim.pdf
+The ontology specification draft is available at (https://w3id.org/ZorroOntology).
+The paper that explain the construction of the schema is available at (https://ceur-ws.org/Vol-3830/paper1sim.pdf).
 (see paper)
 
 ## Domain Knowledge
@@ -59,6 +59,7 @@ The text similarity function we use is the cosine similarity of TFIDF bag-of-wor
 
 ## Annotated Corpus
 We construct an annotated corpus from real aircraft engine maintenance logbooks. Each record in this dataset consists of an identifier, a free-text problem description, and the corresponding maintenance action.  To support KG construction, we extract five diagnostic entities from each entry: problem type, faulty component, location, action type, and action part. These labels capture the essential information required for downstream semantic modelling. To establish ground truth, 500 records were manually annotated. These examples served as ten-shot in-context prompt demonstrations for GPT-4.1-mini, which annotated the remaining 5,669 records. All the annotation were then manually reviewed and corrected, yielding a fully validated corpus suitable as  a ground truth. 
+The whole annotated corpus is available at (https://doi.org/10.5281/zenodo.17815628).
 
 
 ## Citation
