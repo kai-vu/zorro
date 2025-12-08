@@ -1,5 +1,5 @@
 # Zorro Maintenance KG Proof-of-Concept 
-## (The extention of this work in available at (https://github.com/kai-vu/zorro/blob/main/README.md))
+## (The extention of this work in available at (https://github.com/kai-vu/zorro/blob/main/READMEextention.md))
 
 This project aims to explore approaches for constructing, querying and visualizing a Knowledge Graph (KG) for industrial maintenance applications.
 
