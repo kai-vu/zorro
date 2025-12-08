@@ -49,6 +49,7 @@ We then calculate the similarities of the extracted part name with the candidate
 The text similarity function we use is the cosine similarity of TFIDF bag-of-words vectors.
 
 ## References
--NaghdiPour, A., Kruit, B., Chen,J., and Schlobach, S. (2024). Knowledge Representation and Engineering for Smart Diagnosis of Cyber Physical Systems. SOFLIM2KG-SemIIM@ISWC.
--NaghdiPour, A., Kruit, B., Chen,J., and Schlobach, S. (2024). Intelligent Fault Diagnosis of Cyber Physical Systems using Knowledge Graphs. International Conference Knowledge Engineering and Knowledge Management.
--Akhbardeh, F., Desell, T., & Zampieri, M. (2020, December). MaintNet: A Collaborative Open-Source Library for Predictive Maintenance Language Resources. In Proceedings of the 28th International Conference on Computational Linguistics: System Demonstrations (pp. 7-11).
+- NaghdiPour, A., Kruit, B., Chen,J., and Schlobach, S. (2024). Knowledge Representation and Engineering for Smart Diagnosis of Cyber Physical Systems. SOFLIM2KG-SemIIM@ISWC.
+
+- NaghdiPour, A., Kruit, B., Chen,J., and Schlobach, S. (2024). Intelligent Fault Diagnosis of Cyber Physical Systems using Knowledge Graphs. International Conference Knowledge Engineering and Knowledge Management.
+- Akhbardeh, F., Desell, T., & Zampieri, M. (2020, December). MaintNet: A Collaborative Open-Source Library for Predictive Maintenance Language Resources. In Proceedings of the 28th International Conference on Computational Linguistics: System Demonstrations (pp. 7-11).
