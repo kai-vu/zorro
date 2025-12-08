@@ -75,7 +75,7 @@ Should you have any questions, please contact Ameneh Naghdipour at a.naghdipour@
 
 
 
-## References
+### References
 - NaghdiPour, A., Kruit, B., Chen,J., and Schlobach, S. (2024). Knowledge Representation and Engineering for Smart Diagnosis of Cyber Physical Systems. SOFLIM2KG-SemIIM@ISWC.
 - NaghdiPour, A., Kruit, B., Chen,J., and Schlobach, S. (2024). Intelligent Fault Diagnosis of Cyber Physical Systems using Knowledge Graphs. International Conference Knowledge Engineering and Knowledge Management.
 - Akhbardeh, F., Desell, T., & Zampieri, M. (2020, December). MaintNet: A Collaborative Open-Source Library for Predictive Maintenance Language Resources. In Proceedings of the 28th International Conference on Computational Linguistics: System Demonstrations (pp. 7-11).
