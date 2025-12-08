@@ -44,8 +44,6 @@ Then, we enriched this data by treating *GPT4 as a Proxy Expert*, asking it for 
 
 ## Historical Records
 We extract information from [**MaintNet**](https://people.rit.edu/fa3019/MaintNet/data_aviation.html) ([Akhbardeh et al.](#maintnet)) records of free text fields describing problems and actions.
-We are interested in mentioned parts, their location (engine and cylinder), and the failure type.
-To do this we use 3 approaches: regular expressions, NER, and GPT4.
 
 ### Part links
 We link extracted part names to parts from the part catalog.
@@ -61,6 +59,10 @@ We then calculate the similarities of the extracted part name with the candidate
     - Else, we collect the descriptions of all neighboring parts in the same assembly for each candidate part. Then we return the similarities between the extracted part name and these texts.
 
 The text similarity function we use is the cosine similarity of TFIDF bag-of-words vectors.
+
+## Annotated Corpus
+We construct an annotated corpus from real aircraft engine maintenance logbooks. Each record in this dataset consists of an identifier, a free-text problem description, and the corresponding maintenance action.  To support KG construction, we extract five diagnostic entities from each entry: problem type, faulty component, location, action type, and action part. These labels capture the essential information required for downstream semantic modelling. To establish ground truth, 500 records were manually annotated. These examples served as ten-shot in-context prompt demonstrations for GPT-4.1-mini, which annotated the remaining 5,669 records. All the annotation were then manually reviewed and corrected, yielding a fully validated corpus suitable as  a ground truth. 
+
 
 ## Citation
 If you use the resources presented in this repository, please cite:
