@@ -1,4 +1,4 @@
-# Zorro Maintenance KG Proof-of-Concept
+# Zorro Maintenance KG Proof-of-Concept (The extention of this work in available here)
 
 This project aims to explore approaches for constructing, querying and visualizing a Knowledge Graph (KG) for industrial maintenance applications.
 
