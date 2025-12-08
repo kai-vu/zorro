@@ -10,7 +10,8 @@ This way, we can integrate extractions from the historical records with maintena
 The KG structure can be seen as 3 layers: the *schema*, *domain knowledge*, and *historical records*, which are described below.
 
 ## Schema
-(see paper)
+The ontology specification draft is available at (https://w3id.org/ZorroOntology). 
+The paper that explain the construction of the schema is available at (https://ceur-ws.org/Vol-3830/paper1sim.pdf)
 
 ## Domain Knowledge
 We extracted two tables from documents about the Lycoming O-320 engine:
