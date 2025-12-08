@@ -3,7 +3,6 @@
 We introduce AKGAM, a publicly available resource designed to address these gaps. AKGAM includes: (i) an LLM-assisted, manually verified annotated corpus of
 aircraft maintenance logbooks; (ii) an ontology-governed, provenance-rich fault-diagnosis KG built from publicly available datasets, developed and validated with CPS domain experts; and (iii) a set of competency questions (CQs) that formalize core diagnostic and troubleshooting tasks. AKGAM provides triple-level provenance, a reproducible population pipeline, and a lightweight CQ execution interface. By offering the first CPS KG with full schema governance and end-to-end provenance, AKGAM enables systematic development and benchmarking of KG-based diagnostic methods under realistic CPS conditions.
 
-The KG structure can be seen as 3 layers: the *schema*, *domain knowledge*, and *historical records*, which are described below.
 
 ## Build & Validation
 
