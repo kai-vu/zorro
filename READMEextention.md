@@ -64,8 +64,8 @@ The text similarity function we use is the cosine similarity of TFIDF bag-of-wor
 From these weighted candidates, we derive a simplified semantic mapping in SKOS format. High-confidence matches are expressed as skos:exactMatch, while lower-confidence but plausible correspondences are encoded as skos:closeMatch or skos:broadMatch.
 
 ### Provenance
-Provenance is central to the design of  AKGAM: it supports reproducibility, enables auditing of extraction and linking decisions, and it also allows industrial partners to trace each KG assertion back to its original documents. We capture provenance using PROVO, modeling every major pipeline step. Extraction, linking, assembly, and validation as a "prov:Activity", while datasets, intermediate artifacts, mappings, and KG exports are represented as "prov:Entity". 
-Software components and human curators are modelled as "prov:Agent".
+Provenance is central to the design of  AKGAM: it supports reproducibility, enables auditing of extraction and linking decisions, and it also allows industrial partners to trace each KG assertion back to its original documents. We capture provenance using `PROVO`, modeling every major pipeline step. Extraction, linking, assembly, and validation as a `prov:Activity`, while datasets, intermediate artifacts, mappings, and KG exports are represented as`prov:Entity`. 
+Software components and human curators are modelled as `prov:Agent`.
 
 ## Citation
 If you use the resources presented in this repository, please cite:
