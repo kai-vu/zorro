@@ -1,7 +1,7 @@
 # Zorro Maintenance KG Proof-of-Concept 
 ## (The (README.ME) extention of this work in available at (https://github.com/kai-vu/zorro/blob/main/READMEextention.md))
 
-This project aims to explore approaches for constructing, querying and visualizing a Knowledge Graph (KG) for industrial maintenance applications. Our initial work focuses on developing the upper-level ontology and the fault-diagnosis framework. The results of this first phase can be found in the following publications
+This project aims to explore approaches for constructing, querying and visualizing a Knowledge Graph (KG) for industrial maintenance applications. Our initial work focuses on developing the upper-level ontology and the fault-diagnosis framework. The results of this first phase can be found in the following publications:
 - (https://ceur-ws.org/Vol-3967/PD_paper_172.pdf) 
 - (https://ceur-ws.org/Vol-3830/paper1sim.pdf)
 
