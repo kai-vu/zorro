@@ -1,10 +1,16 @@
-# AKGAM
+# AKGAM: A Public Dataset of Annotations and Knowledge Graph for Aircraft Maintenance
 
-We introduce AKGAM, a publicly available resource designed to address these gaps. AKGAM includes: (i) an LLM-assisted, manually verified annotated corpus of
-aircraft maintenance logbooks; (ii) an ontology-governed, provenance-rich fault-diagnosis KG built from publicly available datasets, developed and validated with CPS domain experts; and (iii) a set of competency questions (CQs) that formalize core diagnostic and troubleshooting tasks. AKGAM provides triple-level provenance, a reproducible population pipeline, and a lightweight CQ execution interface. By offering the first CPS KG with full schema governance and end-to-end provenance, AKGAM enables systematic development and benchmarking of KG-based diagnostic methods under realistic CPS conditions.
+We introduce AKGAM, a publicly available resource which includes: 
+- An LLM-assisted, manually verified annotated corpus of aircraft maintenance logbooks
+- An ontology-governed, provenance-rich fault-diagnosis KG built from publicly available datasets, developed and validated with Cyber Physical System (CPS) domain experts
+- A set of competency questions (CQs) that formalize core diagnostic and troubleshooting tasks.
 
+AKGAM provides triple-level provenance, a reproducible population pipeline, and a lightweight CQ execution interface. By offering the first CPS KG with full schema governance and end-to-end provenance, AKGAM enables systematic development and benchmarking of KG-based diagnostic methods under realistic CPS conditions.
 
-## Build & Validation
+## Annotated Corpus
+We construct an annotated corpus from real aircraft engine maintenance logbooks. Each record in this dataset consists of an identifier, a free-text problem description, and the corresponding maintenance action.  To support KG construction, we extract five diagnostic entities from each entry: problem type, faulty component, location, action type, and action part. These labels capture the essential information required for downstream semantic modelling. To establish ground truth, 500 records were manually annotated. These examples served as ten-shot in-context prompt demonstrations for GPT-4.1-mini, which annotated the remaining 5,669 records. All the annotation were then manually reviewed and corrected, yielding a fully validated corpus suitable as a ground truth. The whole annotated corpus is available at (https://doi.org/10.5281/zenodo.17903357).
+
+## Knowledge graph construction
 
 - Run the end-to-end workflow with `python -m src.build_all`. The makeprov CLI orchestrates the prompt extractions, regex extractions, part linking (SSSOM TSV + TriG) and RDF graph synthesis, skipping steps that are already up to date.
 - Individual stages can be executed directly by calling the decorated rules, for example `python -m log_extract_regex`, `python -m log_extract_gpt` (uses cached OpenAI completions by default), `python -m log_extract_ner` (trains + runs spaCy), or `python -m make_rdf`.
@@ -20,7 +26,6 @@ aircraft maintenance logbooks; (ii) an ontology-governed, provenance-rich fault-
 ## Schema
 The ontology specification draft is available at (https://w3id.org/ZorroOntology).
 The paper that explain the construction of the schema is available at (https://ceur-ws.org/Vol-3830/paper1sim.pdf).
-(see paper)
 
 ## Domain Knowledge
 We extracted two tables from documents about the Lycoming O-320 engine:
@@ -56,10 +61,11 @@ We then calculate the similarities of the extracted part name with the candidate
 
 The text similarity function we use is the cosine similarity of TFIDF bag-of-words vectors.
 
-## Annotated Corpus
-We construct an annotated corpus from real aircraft engine maintenance logbooks. Each record in this dataset consists of an identifier, a free-text problem description, and the corresponding maintenance action.  To support KG construction, we extract five diagnostic entities from each entry: problem type, faulty component, location, action type, and action part. These labels capture the essential information required for downstream semantic modelling. To establish ground truth, 500 records were manually annotated. These examples served as ten-shot in-context prompt demonstrations for GPT-4.1-mini, which annotated the remaining 5,669 records. All the annotation were then manually reviewed and corrected, yielding a fully validated corpus suitable as  a ground truth. 
-The whole annotated corpus is available at (https://doi.org/10.5281/zenodo.17815628).
+From these weighted candidates, we derive a simplified semantic mapping in SKOS format. High-confidence matches are expressed as skos:exactMatch, while lower-confidence but plausible correspondences are encoded as skos:closeMatch or skos:broadMatch.
 
+### Provenance
+Provenance is central to the design of  AKGAM: it supports reproducibility, enables auditing of extraction and linking decisions, and it also allows industrial partners to trace each KG assertion back to its original documents. We capture provenance using PROVO, modeling every major pipeline step. Extraction, linking, assembly, and validation as a "prov:Activity", while datasets, intermediate artifacts, mappings, and KG exports are represented as "prov:Entity". 
+Software components and human curators are modelled as "prov:Agent".
 
 ## Citation
 If you use the resources presented in this repository, please cite:
