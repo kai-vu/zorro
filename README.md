@@ -4,7 +4,7 @@
 This project aims to explore approaches for constructing, querying and visualizing a Knowledge Graph (KG) for industrial maintenance applications. Our initial work focuses on developing the upper-level ontology and the fault-diagnosis framework. The results of this first phase can be found in the following publications
 - (https://ceur-ws.org/Vol-3967/PD_paper_172.pdf) 
 - (https://ceur-ws.org/Vol-3830/paper1sim.pdf)
-- 
+
 An extended “README” that accompanies this work is available here: (https://github.com/kai-vu/zorro/blob/main/READMEextention.md))
 
 The project constitutes a proof-of-concept implementation in the domain of aircraft engine maintenance, using data from [MaintNet](https://people.rit.edu/fa3019/MaintNet/data_aviation.html) ([Akhbardeh et al.](#maintnet)) maintenance records (logbooks / log sheets). Observing that this data primarily concerned Lycoming engines from the [University of North Dakota Aviation Program](https://aero.und.edu/aviation/we-offer/airplanes.html), we constructed a KG with a logical, physical, and functional view of the [Lycoming O-320](https://en.wikipedia.org/wiki/Lycoming_O-320) engine, as well as associated troubleshooting information.
