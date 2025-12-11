@@ -1,17 +1,22 @@
 # Zorro Maintenance KG Proof-of-Concept 
 ## (The (README.ME) extention of this work in available at (https://github.com/kai-vu/zorro/blob/main/READMEextention.md))
 
-This project aims to explore approaches for constructing, querying and visualizing a Knowledge Graph (KG) for industrial maintenance applications.
+This project aims to explore approaches for constructing, querying and visualizing a Knowledge Graph (KG) for industrial maintenance applications. Our initial work focuses on developing the upper-level ontology and the fault-diagnosis framework. The results of this first phase can be found in the following publications
+- (https://ceur-ws.org/Vol-3967/PD_paper_172.pdf) 
+- (https://ceur-ws.org/Vol-3830/paper1sim.pdf)
+- 
+An extended “README” that accompanies this work is available here: (https://github.com/kai-vu/zorro/blob/main/READMEextention.md))
 
-It constitutes a proof-of-concept implementation in the domain of aircraft engine maintenance, using data from [MaintNet](https://people.rit.edu/fa3019/MaintNet/data_aviation.html) ([Akhbardeh et al.](#maintnet)) maintenance records (logbooks / log sheets). Observing that this data primarily concerned Lycoming engines from the [University of North Dakota Aviation Program](https://aero.und.edu/aviation/we-offer/airplanes.html), we constructed a KG with a logical, physical, and functional view of the [Lycoming O-320](https://en.wikipedia.org/wiki/Lycoming_O-320) engine, as well as associated troubleshooting information.
+The project constitutes a proof-of-concept implementation in the domain of aircraft engine maintenance, using data from [MaintNet](https://people.rit.edu/fa3019/MaintNet/data_aviation.html) ([Akhbardeh et al.](#maintnet)) maintenance records (logbooks / log sheets). Observing that this data primarily concerned Lycoming engines from the [University of North Dakota Aviation Program](https://aero.und.edu/aviation/we-offer/airplanes.html), we constructed a KG with a logical, physical, and functional view of the [Lycoming O-320](https://en.wikipedia.org/wiki/Lycoming_O-320) engine, as well as associated troubleshooting information.
 
 This way, we can integrate extractions from the historical records with maintenance knowledge to gain insights into failure frequencies, causes, and patterns.
 
 The KG structure can be seen as 3 layers: the *schema*, *domain knowledge*, and *historical records*, which are described below.
 
 ## Schema
-The ontology specification draft is available at (https://w3id.org/ZorroOntology). 
-The paper that explain the construction of the schema is available at (https://ceur-ws.org/Vol-3830/paper1sim.pdf)
+we developed an upper-level ontology, called ZORRO for fault diagnosis through:
+(i) systematic analysis of public and private fault diagnosis datasets, (ii) consultations with domain experts from two industrial partners, and (iii) a comprehensive review of maintenance ontologies, including ROMAIN, IDO, and IOF-Maint. 
+ZORRO integrates both design and operation perspectives and captures components, functions, problems, causes, actions, and—critically—the dependency structure between functions, which is central for fault propagation reasoning. These choices allow ZORRO to serve as the semantic backbone for constructing our knowledge graph.
 
 ## Domain Knowledge
 We extracted two tables from documents about the Lycoming O-320 engine:
