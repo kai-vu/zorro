@@ -10,7 +10,7 @@ AKGAM provides triple-level provenance, a reproducible population pipeline, and 
 ## Annotated Corpus
 We construct an annotated corpus from real aircraft engine maintenance logbooks. Each record in this dataset consists of an identifier, a free-text problem description, and the corresponding maintenance action.  To support KG construction, we extract five diagnostic entities from each entry: problem type, faulty component, location, action type, and action part. These labels capture the essential information required for downstream semantic modelling. To establish ground truth, 500 records were manually annotated. These examples served as ten-shot in-context prompt demonstrations for GPT-4.1-mini, which annotated the remaining 5,669 records. All the annotation were then manually reviewed and corrected, yielding a fully validated corpus suitable as a ground truth. The whole annotated corpus is available at (https://doi.org/10.5281/zenodo.17903357).
 
-## Knowledge graph construction
+## Knowledge Graph Construction
 
 - Run the end-to-end workflow with `python -m src.build_all`. The makeprov CLI orchestrates the prompt extractions, regex extractions, part linking (SSSOM TSV + TriG) and RDF graph synthesis, skipping steps that are already up to date.
 - Individual stages can be executed directly by calling the decorated rules, for example `python -m log_extract_regex`, `python -m log_extract_gpt` (uses cached OpenAI completions by default), `python -m log_extract_ner` (trains + runs spaCy), or `python -m make_rdf`.
@@ -46,7 +46,7 @@ Then, we enriched this data by treating *GPT4 as a Proxy Expert*, asking it for 
 ## Historical Records
 We extract information from [**MaintNet**](https://people.rit.edu/fa3019/MaintNet/data_aviation.html) ([Akhbardeh et al.](#maintnet)) records of free text fields describing problems and actions.
 
-### Part links
+### Part Links
 We link extracted part names to parts from the part catalog.
 
 One of the methods is called Filtered Contextual Bag-of-Words matching.
