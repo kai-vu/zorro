@@ -97,7 +97,9 @@
 
 ###  http://w3id.org/ZorroOntology/Problem
 :Problem rdf:type owl:Class ;
-         owl:disjointWith :Solution .
+         owl:disjointWith :Solution;
+owl:disjointWith :Function;
+owl:disjointWith :Component.
 
 
 ###  http://w3id.org/ZorroOntology/Solution
