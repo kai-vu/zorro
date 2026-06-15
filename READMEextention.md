@@ -4,10 +4,13 @@
 [![User-Interface](https://img.shields.io/badge/SPARQL-CQs-orange)](https://kai-vu.github.io/zorro/query.html)
 [![License](https://img.shields.io/badge/License-CC--BY_4.0-lightgrey)](https://creativecommons.org/licenses/by/4.0/)
 
-We introduce AKGAM, a publicly available resource which includes: 
-- An LLM-assisted, manually verified annotated corpus of aircraft maintenance logbooks
-- An ontology-governed, provenance-rich fault-diagnosis KG built from publicly available datasets, developed and validated with Cyber Physical System (CPS) domain experts
-- A set of competency questions (CQs) that formalize core diagnostic and troubleshooting tasks.
+
+**License**: CC-BY 4.0  **Version**: v1.0.0 (see ontology for version) **Persistent identifier**: 
+https://w3id.org/ZorroOntology (registered via perma-id/w3id.org) **User inteface**:  https://kai-vu.github.io/zorro/query.html
+**Zenodo DOI**: https://doi.org/10.5281/zenodo.17815628 **Repository**: https://github.com/kai-vu/zorro
+
+
+## Introduction
 
 AKGAM provides triple-level provenance, a reproducible population pipeline, and a lightweight CQ execution interface. By offering the first CPS KG with full schema governance and end-to-end provenance, AKGAM enables systematic development and benchmarking of KG-based diagnostic methods under realistic CPS conditions.
 
