@@ -174,8 +174,11 @@
 
     <owl:Class rdf:about="http://w3id.org/ZorroOntology/Problem">
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Solution"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Function"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Component"/>
     </owl:Class>
-    
+
+
 
 
     <!-- http://w3id.org/ZorroOntology/Solution -->
