@@ -1,7 +1,7 @@
 # AKGAM: A Public Dataset of Annotations and Knowledge Graph for Aircraft Maintenance
 [![Ontology](https://img.shields.io/badge/Ontology-W3ID-success)](https://w3id.org/ZorroOntology)
 [![KG](https://img.shields.io/badge/KG-RDF-blue)](https://doi.org/10.5281/zenodo.1781562)
-[![User-Interface](https://img.shields.io/badge/SPARQL-CQs-orange)](ce https://kai-vu.github.io/zorro/query.html)
+[![User-Interface](https://img.shields.io/badge/SPARQL-CQs-orange)](https://kai-vu.github.io/zorro/query.html)
 [![License](https://img.shields.io/badge/License-CC--BY_4.0-lightgrey)](https://creativecommons.org/licenses/by/4.0/)
 
 We introduce AKGAM, a publicly available resource which includes: 
