@@ -12,12 +12,13 @@ https://w3id.org/ZorroOntology (registered via perma-id/w3id.org) **User intefac
 
 ## Introduction
 
-AKGAM provides triple-level provenance, a reproducible population pipeline, and a lightweight CQ execution interface. By offering the first CPS KG with full schema governance and end-to-end provenance, AKGAM enables systematic development and benchmarking of KG-based diagnostic methods under realistic CPS conditions.
+AKGAM provides a knowledge graph (KG), an annotated corpus, a reproducible population pipeline, and a lightweight competency question (CQ) execution interface. By offering the first Cyber Pysical Ssystem (CPs) KG with full schema governance and end-to-end provenance, AKGAM enables systematic development and benchmarking of KG-based diagnostic methods under realistic CPS conditions.
 
 ## Annotated Corpus
 We construct an annotated corpus from real aircraft engine maintenance logbooks. Each record in this dataset consists of an identifier, a free-text problem description, and the corresponding maintenance action.  To support KG construction, we extract five diagnostic entities from each entry: problem type, faulty component, location, action type, and action part. These labels capture the essential information required for downstream semantic modelling. To establish ground truth, 500 records were manually annotated. These examples served as ten-shot in-context prompt demonstrations for GPT-4.1-mini, which annotated the remaining 5,669 records. All the annotation were then manually reviewed and corrected, yielding a fully validated corpus suitable as a ground truth. The whole annotated corpus is available at (https://doi.org/10.5281/zenodo.17903357).
 
 ## How to run and reuse
+**Exploring the AKGAM knowledge graph**
 The AKGAM knowledge graph can be explored in two ways: (1) through a local GraphDB installation, or (2) through the online query interface.
 1. Uploading the KG in GraphDB. Go through the following steps:
    - Install GraphDB from: https://graphdb.ontotext.com/
@@ -27,22 +28,19 @@ The AKGAM knowledge graph can be explored in two ways: (1) through a local Graph
    - The query results can be inspected directly in GraphDB or exported for further analysis.
 3. Using the User interface available at: https://kai-vu.github.io/zorro/query.html.
 This interface contains a collection of preloaded competency-question queries used in the paper.
-
-The AKGAM knowledge graph can be constructed as follow:
-- Run the end-to-end workflow with `python -m src.build_all`. The makeprov CLI orchestrates the prompt extractions, regex extractions, part linking (SSSOM TSV + TriG) and RDF graph synthesis, skipping steps that are already up to date.
-- Individual stages can be executed directly by calling the decorated rules, for example `python -m log_extract_regex`, `python -m log_extract_gpt` (uses cached OpenAI completions by default), `python -m log_extract_ner` (trains + runs spaCy), or `python -m make_rdf`.
-- Validate outputs with `python -m pytest`, which parses the generated TriG datasets and the SSSOM TSV to ensure schema compliance.
-
-## Query Exploration
-
 - Run `python -m src.sparql_bar_chart` to execute the default top-problem query (`queries/logbook/01-top10-problem-types.rq`) against the GPT extraction graph and render a horizontal bar chart (`query_bar_chart.png`).
 - Tweak the visualization with options such as `--top-n`, `--orientation`, `--wrap-width`, or `--style` (see `python -m src.sparql_bar_chart --help`).
 - Produce a markdown regression report for all competency questions with `python -m src.competency_report`. Use `--report-path` to control the output location (defaults to `queries/reports/competency-report.md`). Queries are grouped under `queries/documentation/` (documentation-derived knowledge) and `queries/logbook/` (logbook-derived knowledge).
 - Benchmark LLM answers to documentation-focused competency questions with `python -m src.competency_llm_eval`. By default it extracts depth-1 subgraphs per question; add `--depth N` to widen the neighbourhood, `--full-graph` to fall back to the legacy whole-graph mode, `--model NAME` to pick a different API deployment, `--lenience FRACTION` to permit proportional per-row mismatches during scoring, `--cache-only` to avoid new calls, or `--profile-subgraphs` to dump only the retrieved subgraphs (Turtle under a depth/model/lenience-specific directory) plus JSON telemetry. Outputs are written to `queries/reports/competency_llm_depth-<depth|full>_model-<model>_lenience-<fraction>_{cache,results,report}.json/md`, which capture the retrieval request, triple breakdown, lenience setting, and evaluation metrics for reproducibility.
 
-## Schema
-The ontology specification draft is available at (https://w3id.org/ZorroOntology).
-The paper that explain the construction of the schema is available at (https://ceur-ws.org/Vol-3830/paper1sim.pdf).
+
+**Constring the AKGAM knowledge graph**
+The AKGAM knowledge graph can be constructed as follow:
+- Run the end-to-end workflow with `python -m src.build_all`. The makeprov CLI orchestrates the prompt extractions, regex extractions, part linking (SSSOM TSV + TriG) and RDF graph synthesis, skipping steps that are already up to date.
+- Individual stages can be executed directly by calling the decorated rules, for example `python -m log_extract_regex`, `python -m log_extract_gpt` (uses cached OpenAI completions by default), `python -m log_extract_ner` (trains + runs spaCy), or `python -m make_rdf`.
+- Validate outputs with `python -m pytest`, which parses the generated TriG datasets and the SSSOM TSV to ensure schema compliance.
+
+
 
 ## Domain Knowledge
 We extracted two tables from documents about the Lycoming O-320 engine:
