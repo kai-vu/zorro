@@ -1,5 +1,5 @@
 # Zorro Maintenance KG Proof-of-Concept 
-## The project has been further extended into a resource paper called "AKGAM: A Public Dataset of Annotations and Knowledge Graph for Aircraft Maintenance", currently under review at the International Semantic Web Conference (ISWC). The  corresponding README file in available at (https://github.com/kai-vu/zorro/blob/main/READMEextention.md))
+## The project has been further extended into a resource paper called "AKGAM: A Public Dataset of Annotations and Knowledge Graph for Aircraft Maintenance", currently under review at the International Semantic Web Conference (ISWC). The  corresponding README file is available at (https://github.com/kai-vu/zorro/blob/main/READMEextention.md))
 
 This project aims to explore approaches for constructing, querying and visualizing a Knowledge Graph (KG) for industrial maintenance applications. Our initial work focuses on developing the upper-level ontology and the fault-diagnosis framework. The results of this first phase can be found in the following publications:
 - (https://ceur-ws.org/Vol-3967/PD_paper_172.pdf) 
