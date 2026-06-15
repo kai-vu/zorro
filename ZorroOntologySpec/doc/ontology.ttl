@@ -1,66 +1,66 @@
-@prefix : <http://www.ZorroUpperLevelOntology/> .
+@prefix : <http://w3id.org/ZorroOntology/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.ZorroUpperLevelOntology/> .
+@base <http://w3id.org/ZorroOntology/> .
 
-<http://www.ZorroUpperLevelOntology/> rdf:type owl:Ontology .
+<http://w3id.org/ZorroOntology/> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.ZorroUpperLevelOntology/PartOf
+###  http://w3id.org/ZorroOntology/PartOf
 :PartOf rdf:type owl:ObjectProperty ;
         rdfs:domain :Part ;
         rdfs:range :Assembly .
 
 
-###  http://www.ZorroUpperLevelOntology/defines
+###  http://w3id.org/ZorroOntology/defines
 :defines rdf:type owl:ObjectProperty ;
          rdfs:domain :Function ;
          rdfs:range :Problem .
 
 
-###  http://www.ZorroUpperLevelOntology/dependsOn
+###  http://w3id.org/ZorroOntology/dependsOn
 :dependsOn rdf:type owl:ObjectProperty ;
            rdfs:domain :Function ;
            rdfs:range :Function .
 
 
-###  http://www.ZorroUpperLevelOntology/failsVia
+###  http://w3id.org/ZorroOntology/failsVia
 :failsVia rdf:type owl:ObjectProperty ;
           rdfs:domain :Component ;
           rdfs:range :Problem .
 
 
-###  http://www.ZorroUpperLevelOntology/hasCause
+###  http://w3id.org/ZorroOntology/hasCause
 :hasCause rdf:type owl:ObjectProperty ;
           rdfs:domain :Problem ;
           rdfs:range :Cause .
 
 
-###  http://www.ZorroUpperLevelOntology/hasFunction
+###  http://w3id.org/ZorroOntology/hasFunction
 :hasFunction rdf:type owl:ObjectProperty ;
              rdfs:domain :Component ;
              rdfs:range :Function .
 
 
-###  http://www.ZorroUpperLevelOntology/inSystem
+###  http://w3id.org/ZorroOntology/inSystem
 :inSystem rdf:type owl:ObjectProperty ;
           rdfs:domain :Assembly ;
           rdfs:range :System .
 
 
-###  http://www.ZorroUpperLevelOntology/involves
+###  http://w3id.org/ZorroOntology/involves
 :involves rdf:type owl:ObjectProperty ;
           rdfs:domain :Problem ;
           rdfs:range :Part .
 
 
-###  http://www.ZorroUpperLevelOntology/solves
+###  http://w3id.org/ZorroOntology/solves
 :solves rdf:type owl:ObjectProperty ;
         rdfs:domain :Solution ;
         rdfs:range :Problem .
@@ -70,42 +70,42 @@
 #    Classes
 #################################################################
 
-###  http://www.ZorroUpperLevelOntology/Assembly
+###  http://w3id.org/ZorroOntology/Assembly
 :Assembly rdf:type owl:Class ;
           rdfs:subClassOf :Component .
 
 
-###  http://www.ZorroUpperLevelOntology/Cause
+###  http://w3id.org/ZorroOntology/Cause
 :Cause rdf:type owl:Class ;
        rdfs:comment "Cause itself  is a problem" .
 
 
-###  http://www.ZorroUpperLevelOntology/Component
+###  http://w3id.org/ZorroOntology/Component
 :Component rdf:type owl:Class ;
            rdfs:comment "A component can have one or more functions" .
 
 
-###  http://www.ZorroUpperLevelOntology/Function
+###  http://w3id.org/ZorroOntology/Function
 :Function rdf:type owl:Class ;
           rdfs:comment "A function can be performed by one or several componenets" .
 
 
-###  http://www.ZorroUpperLevelOntology/Part
+###  http://w3id.org/ZorroOntology/Part
 :Part rdf:type owl:Class ;
       rdfs:subClassOf :Component .
 
 
-###  http://www.ZorroUpperLevelOntology/Problem
+###  http://w3id.org/ZorroOntology/Problem
 :Problem rdf:type owl:Class ;
          owl:disjointWith :Solution .
 
 
-###  http://www.ZorroUpperLevelOntology/Solution
+###  http://w3id.org/ZorroOntology/Solution
 :Solution rdf:type owl:Class ;
           rdfs:comment "Solution solves the cause of the problem" .
 
 
-###  http://www.ZorroUpperLevelOntology/System
+###  http://w3id.org/ZorroOntology/System
 :System rdf:type owl:Class ;
         rdfs:subClassOf :Component .
 
