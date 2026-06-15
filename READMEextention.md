@@ -13,11 +13,11 @@ We construct an annotated corpus from real aircraft engine maintenance logbooks.
 ## How to run and reuse
 The AKGAM knowledge graph can be explored in two ways: (1) through a local GraphDB installation, or (2) through the online query interface.
 1. Uploading the KG in GraphDB. Go through the following steps:
-   -Install GraphDB from: https://graphdb.ontotext.com/
-   -Create a new GraphDB repository.
-   -Upload all the files contained in the following folders: "generated-rdf" , "prompt extracted", and "part-links".
-   -open the GraphDB SPARQL editor. Copy the SPARQL queries that exist in the issues tab on this Github project.
-   -The query results can be inspected directly in GraphDB or exported for further analysis.
+   - Install GraphDB from: https://graphdb.ontotext.com/
+   - Create a new GraphDB repository.
+   - Upload all the files contained in the following folders: "generated-rdf" , "prompt extracted", and "part-links".
+   - open the GraphDB SPARQL editor. Copy the SPARQL queries that exist in the issues tab on this Github project.
+   - The query results can be inspected directly in GraphDB or exported for further analysis.
 3. Using the User interface available at: e https://kai-vu.github.io/zorro/query.html.
 This interface contains a collection of preloaded competency-question queries used in the paper.
 
