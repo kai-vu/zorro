@@ -10,8 +10,18 @@ AKGAM provides triple-level provenance, a reproducible population pipeline, and 
 ## Annotated Corpus
 We construct an annotated corpus from real aircraft engine maintenance logbooks. Each record in this dataset consists of an identifier, a free-text problem description, and the corresponding maintenance action.  To support KG construction, we extract five diagnostic entities from each entry: problem type, faulty component, location, action type, and action part. These labels capture the essential information required for downstream semantic modelling. To establish ground truth, 500 records were manually annotated. These examples served as ten-shot in-context prompt demonstrations for GPT-4.1-mini, which annotated the remaining 5,669 records. All the annotation were then manually reviewed and corrected, yielding a fully validated corpus suitable as a ground truth. The whole annotated corpus is available at (https://doi.org/10.5281/zenodo.17903357).
 
-## Knowledge Graph Construction
+## How to run and reuse
+The AKGAM knowledge graph can be explored in two ways: (1) through a local GraphDB installation, or (2) through the online query interface.
+1. Uploading the KG in GraphDB. Go through the following steps:
+   -Install GraphDB from: https://graphdb.ontotext.com/
+   -Create a new GraphDB repository.
+   -Upload all the files contained in the following folders: "generated-rdf" , "prompt extracted", and "part-links".
+   -open the GraphDB SPARQL editor. Copy the SPARQL queries that exist in the issues tab on this Github project.
+   -The query results can be inspected directly in GraphDB or exported for further analysis.
+3. Using the User interface available at: e https://kai-vu.github.io/zorro/query.html.
+This interface contains a collection of preloaded competency-question queries used in the paper.
 
+The AKGAM knowledge graph can be constructed as follow:
 - Run the end-to-end workflow with `python -m src.build_all`. The makeprov CLI orchestrates the prompt extractions, regex extractions, part linking (SSSOM TSV + TriG) and RDF graph synthesis, skipping steps that are already up to date.
 - Individual stages can be executed directly by calling the decorated rules, for example `python -m log_extract_regex`, `python -m log_extract_gpt` (uses cached OpenAI completions by default), `python -m log_extract_ner` (trains + runs spaCy), or `python -m make_rdf`.
 - Validate outputs with `python -m pytest`, which parses the generated TriG datasets and the SSSOM TSV to ensure schema compliance.
