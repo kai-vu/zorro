@@ -26,13 +26,10 @@ The AKGAM knowledge graph can be explored in two ways: (1) through a local Graph
    - Upload all the files contained in the following folders: "generated-rdf" , "prompt-extracted", and "part-links".
    - Open the GraphDB SPARQL editor. Copy the SPARQL queries that exist in the issues tab on this Github project.
    - The query results can be inspected directly in GraphDB or exported for further analysis.
-3. Using the User interface available at: https://kai-vu.github.io/zorro/query.html.
-This interface contains a collection of preloaded competency-question queries used in the paper.
-- Run `python -m src.sparql_bar_chart` to execute the default top-problem query (`queries/logbook/01-top10-problem-types.rq`) against the GPT extraction graph and render a horizontal bar chart (`query_bar_chart.png`).
-- Tweak the visualization with options such as `--top-n`, `--orientation`, `--wrap-width`, or `--style` (see `python -m src.sparql_bar_chart --help`).
-- Produce a markdown regression report for all competency questions with `python -m src.competency_report`. Use `--report-path` to control the output location (defaults to `queries/reports/competency-report.md`). Queries are grouped under `queries/documentation/` (documentation-derived knowledge) and `queries/logbook/` (logbook-derived knowledge).
-- Benchmark LLM answers to documentation-focused competency questions with `python -m src.competency_llm_eval`. By default it extracts depth-1 subgraphs per question; add `--depth N` to widen the neighbourhood, `--full-graph` to fall back to the legacy whole-graph mode, `--model NAME` to pick a different API deployment, `--lenience FRACTION` to permit proportional per-row mismatches during scoring, `--cache-only` to avoid new calls, or `--profile-subgraphs` to dump only the retrieved subgraphs (Turtle under a depth/model/lenience-specific directory) plus JSON telemetry. Outputs are written to `queries/reports/competency_llm_depth-<depth|full>_model-<model>_lenience-<fraction>_{cache,results,report}.json/md`, which capture the retrieval request, triple breakdown, lenience setting, and evaluation metrics for reproducibility.
-
+2. Using the User interface available at: https://kai-vu.github.io/zorro/query.html. This interface contains a collection of preloaded competency-question queries used in the paper.
+   - Run `python -m src.sparql_bar_chart` to execute the default top-problem query (`queries/logbook/01-top10-problem-types.rq`) against the GPT extraction graph and render a horizontal bar chart (`query_bar_chart.png`).
+   - Tweak the visualization with options such as `--top-n`, `--orientation`, `--wrap-width`, or `--style` (see `python -m src.sparql_bar_chart --help`).
+   - Produce a markdown regression report for all competency questions with `python -m src.competency_report`. Use `--report-path` to control the output location (defaults to `queries/reports/competency-report.md`). Queries are grouped under `queries/documentation/` (documentation-derived knowledge) and `queries/logbook/` (logbook-derived knowledge).
 
 **Constring the AKGAM knowledge graph**
 The AKGAM knowledge graph can be constructed as follow:
@@ -40,7 +37,8 @@ The AKGAM knowledge graph can be constructed as follow:
 - Individual stages can be executed directly by calling the decorated rules, for example `python -m log_extract_regex`, `python -m log_extract_gpt` (uses cached OpenAI completions by default), `python -m log_extract_ner` (trains + runs spaCy), or `python -m make_rdf`.
 - Validate outputs with `python -m pytest`, which parses the generated TriG datasets and the SSSOM TSV to ensure schema compliance.
 
-
+**Benchmark LLM answers**
+- Benchmark LLM answers to documentation-focused competency questions with `python -m src.competency_llm_eval`. By default it extracts depth-1 subgraphs per question; add `--depth N` to widen the neighbourhood, `--full-graph` to fall back to the legacy whole-graph mode, `--model NAME` to pick a different API deployment, `--lenience FRACTION` to permit proportional per-row mismatches during scoring, `--cache-only` to avoid new calls, or `--profile-subgraphs` to dump only the retrieved subgraphs (Turtle under a depth/model/lenience-specific directory) plus JSON telemetry. Outputs are written to `queries/reports/competency_llm_depth-<depth|full>_model-<model>_lenience-<fraction>_{cache,results,report}.json/md`, which capture the retrieval request, triple breakdown, lenience setting, and evaluation metrics for reproducibility.
 
 ## Domain Knowledge
 We extracted two tables from documents about the Lycoming O-320 engine:
