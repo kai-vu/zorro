@@ -78,10 +78,14 @@ Provenance is central to the design of  AKGAM: it supports reproducibility, enab
 Software components and human curators are modelled as `prov:Agent`.
 
 ## Citation
-If you use the resources presented in this repository, please cite:
+If you reuse AKGAM, please cite the accompanying paper. It is currently under review at ISWC 2026 Resources Track; BibTeX will be added once the venue assigns a citation key.
 
 ```bibtex
 ```
+
+## Licence 
+The entire AKGAM components (the ontology, knowledge graph, competency question, annotated corpus) are released under Creative Commons Attribution 4.0 (CC-BY 4.0). 
+
 ## Contact
 Should you have any questions, please contact Ameneh Naghdipour at a.naghdipour@vu.nl.
 
