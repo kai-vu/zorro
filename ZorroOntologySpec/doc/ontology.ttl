@@ -77,17 +77,27 @@
 
 ###  http://w3id.org/ZorroOntology/Cause
 :Cause rdf:type owl:Class ;
-       rdfs:comment "Cause itself  is a problem" .
+       rdfs:comment "Cause itself  is a problem" ;
+        owl:disjointWith :Solution;
+        owl:disjointWith :Function;
+        owl:disjointWith :Component.
+
 
 
 ###  http://w3id.org/ZorroOntology/Component
 :Component rdf:type owl:Class ;
-           rdfs:comment "A component can have one or more functions" .
+           rdfs:comment "A component can have one or more functions" ;
+        owl:disjointWith :Solution;
+        owl:disjointWith :Function;
+        owl:disjointWith :Problem.
 
 
 ###  http://w3id.org/ZorroOntology/Function
 :Function rdf:type owl:Class ;
-          rdfs:comment "A function can be performed by one or several componenets" .
+          rdfs:comment "A function can be performed by one or several componenets" ;
+owl:disjointWith :Solution;
+        owl:disjointWith :Problem;
+        owl:disjointWith :Component.
 
 
 ###  http://w3id.org/ZorroOntology/Part
@@ -97,14 +107,18 @@
 
 ###  http://w3id.org/ZorroOntology/Problem
 :Problem rdf:type owl:Class ;
-         owl:disjointWith :Solution;
-owl:disjointWith :Function;
-owl:disjointWith :Component.
+        owl:disjointWith :Solution;
+        owl:disjointWith :Function;
+        owl:disjointWith :Component.
 
 
 ###  http://w3id.org/ZorroOntology/Solution
 :Solution rdf:type owl:Class ;
-          rdfs:comment "Solution solves the cause of the problem" .
+          rdfs:comment "Solution solves the cause of the problem" ;
+        owl:disjointWith :Problem;
+        owl:disjointWith :Function;
+        owl:disjointWith :Component;
+        owl:disjointWith :Cause.
 
 
 ###  http://w3id.org/ZorroOntology/System
