@@ -45,7 +45,14 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://w3id.org/ZorroOntology/Solution"
-  } ]
+    },
+    {
+      "@id": "http://w3id.org/ZorroOntology/Function"
+    },
+    {
+      "@id": "http://w3id.org/ZorroOntology/Component"
+    }
+   ]
 }, {
   "@id" : "http://w3id.org/ZorroOntology/Solution",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
