@@ -138,6 +138,9 @@
 
     <owl:Class rdf:about="http://w3id.org/ZorroOntology/Cause">
         <rdfs:comment>Cause itself  is a problem</rdfs:comment>
+          <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Solution"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Component"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Function"/>
     </owl:Class>
     
 
@@ -147,6 +150,10 @@
 
     <owl:Class rdf:about="http://w3id.org/ZorroOntology/Component">
         <rdfs:comment>A component can have one or more functions</rdfs:comment>
+<owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Solution"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Cause"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Function"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Problem"/>
     </owl:Class>
     
 
@@ -156,6 +163,11 @@
 
     <owl:Class rdf:about="http://w3id.org/ZorroOntology/Function">
         <rdfs:comment>A function can be performed by one or several componenets</rdfs:comment>
+        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Solution"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Cause"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Component"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Problem"/>
+
     </owl:Class>
     
 
@@ -186,6 +198,10 @@
 
     <owl:Class rdf:about="http://w3id.org/ZorroOntology/Solution">
         <rdfs:comment>Solution solves the cause of the problem</rdfs:comment>
+        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Problem"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Cause"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Function"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Component"/>
     </owl:Class>
     
 
