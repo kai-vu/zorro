@@ -84,7 +84,7 @@ Software components and human curators are modelled as `prov:Agent`.
 ## Scope and Limit Statement
 This resource provides a knowledge graph, an annotated corpus, and a pipeline for constructing both resources. The annotated corpus can be used as ground truth for the evaluation of automatic information extraction methods as well as for ontology population.
 
-The KG is domain-specific and was designed primarily to support fault diagnosis tasks. Although the released KG was instantiaed from aviation maintenance data, the underlying ontology was designed at a level of abstraction that makes it applicable to a broader range of fault-diagnosis domains involving industrial equipment and machinery.
+The KG is domain-specific and was designed primarily to support fault diagnosis tasks. Although the released KG was instantiaed from aviation maintenance data, the underlying ontology and CQs were designed at a level of abstraction that makes it applicable to a broader range of fault-diagnosis domains involving industrial equipment and machinery.
 We acknowledge that the KG is more suitable for research on domain-specific knowledge graphs than for general-purpose knowledge graph applications that covers multiple domains or broad world knowledge.
 
 
