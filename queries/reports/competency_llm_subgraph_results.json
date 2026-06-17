@@ -22,81 +22,81 @@
       "fp": 0,
       "gold_rows": [
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#AirLockOrDirtInReliefValve"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#AirLockOrDirtInReliefValve"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#DefectivePressureGage"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#DefectivePressureGage"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#HighOilTemperature"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#HighOilTemperature"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#InsufficientOil"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#InsufficientOil"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#LeakInSuctionLineOrPressureLine"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#LeakInSuctionLineOrPressureLine"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#StoppageInOilPumpIntakePassage"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#StoppageInOilPumpIntakePassage"
         ]
       ],
       "precision": 1.0,
       "pred_rows": [
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#AirLockOrDirtInReliefValve"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#AirLockOrDirtInReliefValve"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#DefectivePressureGage"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#DefectivePressureGage"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#HighOilTemperature"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#HighOilTemperature"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#InsufficientOil"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#InsufficientOil"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#LeakInSuctionLineOrPressureLine"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#LeakInSuctionLineOrPressureLine"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#StoppageInOilPumpIntakePassage"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#StoppageInOilPumpIntakePassage"
         ]
       ],
       "pred_rows_raw": [
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#AirLockOrDirtInReliefValve"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#AirLockOrDirtInReliefValve"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#DefectivePressureGage"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#DefectivePressureGage"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#HighOilTemperature"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#HighOilTemperature"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#InsufficientOil"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#InsufficientOil"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#LeakInSuctionLineOrPressureLine"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#LeakInSuctionLineOrPressureLine"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#StoppageInOilPumpIntakePassage"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#StoppageInOilPumpIntakePassage"
         ]
       ],
       "query_path": "queries/documentation/01-cause-low-oil-pressure.rq",
@@ -119,7 +119,7 @@
           },
           {
             "count": 28,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 15,
@@ -127,23 +127,23 @@
           },
           {
             "count": 14,
-            "predicate": "https://w3id.org/zorro#hasCause"
+            "predicate": "https://w3id.org/ZorroOntology#hasCause"
           },
           {
             "count": 13,
-            "predicate": "https://w3id.org/zorro#addresses"
+            "predicate": "https://w3id.org/ZorroOntology#addresses"
           },
           {
             "count": 8,
-            "predicate": "https://w3id.org/zorro#defines"
+            "predicate": "https://w3id.org/ZorroOntology#defines"
           },
           {
             "count": 8,
-            "predicate": "https://w3id.org/zorro#addressesProblem"
+            "predicate": "https://w3id.org/ZorroOntology#addressesProblem"
           },
           {
             "count": 6,
-            "predicate": "https://w3id.org/zorro#solves"
+            "predicate": "https://w3id.org/ZorroOntology#solves"
           },
           {
             "count": 4,
@@ -154,10 +154,10 @@
             "predicate": "__other__"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#LowOilPressure, https://w3id.org/zorro#hasCause])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#LowOilPressure, https://w3id.org/ZorroOntology#hasCause])",
         "seeds": [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#hasCause"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#hasCause"
         ],
         "subject_term_types": {
           "uri": 233
@@ -177,81 +177,81 @@
       "fp": 1,
       "gold_rows": [
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#CheckGasketBetweenAccessoryHousingAndCrankcase"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#CheckGasketBetweenAccessoryHousingAndCrankcase"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#CheckLineForObstructionCleanSuctionStrainer"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#CheckLineForObstructionCleanSuctionStrainer"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#FillToProperLevelWithRecomMendedOil"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#FillToProperLevelWithRecomMendedOil"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#RemoveAndCleanOilPressureReliefValve"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#RemoveAndCleanOilPressureReliefValve"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#Replace"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#Replace"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#SeeHighOilTemperatureInTroubleColumn"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#SeeHighOilTemperatureInTroubleColumn"
         ]
       ],
       "precision": 0.8333333333333334,
       "pred_rows": [
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#CheckGasketBetweenAccessoryHousingAndCrankcase"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#CheckGasketBetweenAccessoryHousingAndCrankcase"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#CheckLineForObstructionCleanSuctionStrainer"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#CheckLineForObstructionCleanSuctionStrainer"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#FillToProperLevelWithRecom-MendedOil"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#FillToProperLevelWithRecom-MendedOil"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#RemoveAndCleanOilPressureReliefValve"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#RemoveAndCleanOilPressureReliefValve"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#Replace"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#Replace"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#SeeHighOilTemperatureInTroubleColumn"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#SeeHighOilTemperatureInTroubleColumn"
         ]
       ],
       "pred_rows_raw": [
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#CheckGasketBetweenAccessoryHousingAndCrankcase"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#CheckGasketBetweenAccessoryHousingAndCrankcase"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#CheckLineForObstructionCleanSuctionStrainer"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#CheckLineForObstructionCleanSuctionStrainer"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#FillToProperLevelWithRecom-MendedOil"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#FillToProperLevelWithRecom-MendedOil"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#Replace"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#Replace"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#SeeHighOilTemperatureInTroubleColumn"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#SeeHighOilTemperatureInTroubleColumn"
         ],
         [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#RemoveAndCleanOilPressureReliefValve"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#RemoveAndCleanOilPressureReliefValve"
         ]
       ],
       "query_path": "queries/documentation/02-solution-low-oil-pressure.rq",
@@ -274,7 +274,7 @@
           },
           {
             "count": 28,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 15,
@@ -282,23 +282,23 @@
           },
           {
             "count": 14,
-            "predicate": "https://w3id.org/zorro#hasCause"
+            "predicate": "https://w3id.org/ZorroOntology#hasCause"
           },
           {
             "count": 13,
-            "predicate": "https://w3id.org/zorro#addresses"
+            "predicate": "https://w3id.org/ZorroOntology#addresses"
           },
           {
             "count": 8,
-            "predicate": "https://w3id.org/zorro#defines"
+            "predicate": "https://w3id.org/ZorroOntology#defines"
           },
           {
             "count": 8,
-            "predicate": "https://w3id.org/zorro#addressesProblem"
+            "predicate": "https://w3id.org/ZorroOntology#addressesProblem"
           },
           {
             "count": 6,
-            "predicate": "https://w3id.org/zorro#solves"
+            "predicate": "https://w3id.org/ZorroOntology#solves"
           },
           {
             "count": 4,
@@ -309,11 +309,11 @@
             "predicate": "__other__"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#LowOilPressure, https://w3id.org/zorro#hasCause, https://w3id.org/zorro#solves])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#LowOilPressure, https://w3id.org/ZorroOntology#hasCause, https://w3id.org/ZorroOntology#solves])",
         "seeds": [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#hasCause",
-          "https://w3id.org/zorro#solves"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#hasCause",
+          "https://w3id.org/ZorroOntology#solves"
         ],
         "subject_term_types": {
           "uri": 233
@@ -333,45 +333,45 @@
       "fp": 0,
       "gold_rows": [
         [
-          "https://w3id.org/zorro#AccessoryHousingAssembly",
-          "https://w3id.org/zorro#HousingAccessoriesAndDrives"
+          "https://w3id.org/ZorroOntology#AccessoryHousingAssembly",
+          "https://w3id.org/ZorroOntology#HousingAccessoriesAndDrives"
         ],
         [
-          "https://w3id.org/zorro#CrankingSection",
-          "https://w3id.org/zorro#FacilitatingEngineStart"
+          "https://w3id.org/ZorroOntology#CrankingSection",
+          "https://w3id.org/ZorroOntology#FacilitatingEngineStart"
         ],
         [
-          "https://w3id.org/zorro#CrankingSection",
-          "https://w3id.org/zorro#InitiatingEngineStart"
+          "https://w3id.org/ZorroOntology#CrankingSection",
+          "https://w3id.org/ZorroOntology#InitiatingEngineStart"
         ]
       ],
       "precision": 1.0,
       "pred_rows": [
         [
-          "https://w3id.org/zorro#AccessoryHousingAssembly",
-          "https://w3id.org/zorro#HousingAccessoriesAndDrives"
+          "https://w3id.org/ZorroOntology#AccessoryHousingAssembly",
+          "https://w3id.org/ZorroOntology#HousingAccessoriesAndDrives"
         ],
         [
-          "https://w3id.org/zorro#CrankingSection",
-          "https://w3id.org/zorro#FacilitatingEngineStart"
+          "https://w3id.org/ZorroOntology#CrankingSection",
+          "https://w3id.org/ZorroOntology#FacilitatingEngineStart"
         ],
         [
-          "https://w3id.org/zorro#CrankingSection",
-          "https://w3id.org/zorro#InitiatingEngineStart"
+          "https://w3id.org/ZorroOntology#CrankingSection",
+          "https://w3id.org/ZorroOntology#InitiatingEngineStart"
         ]
       ],
       "pred_rows_raw": [
         [
-          "https://w3id.org/zorro#CrankingSection",
-          "https://w3id.org/zorro#FacilitatingEngineStart"
+          "https://w3id.org/ZorroOntology#CrankingSection",
+          "https://w3id.org/ZorroOntology#FacilitatingEngineStart"
         ],
         [
-          "https://w3id.org/zorro#CrankingSection",
-          "https://w3id.org/zorro#InitiatingEngineStart"
+          "https://w3id.org/ZorroOntology#CrankingSection",
+          "https://w3id.org/ZorroOntology#InitiatingEngineStart"
         ],
         [
-          "https://w3id.org/zorro#AccessoryHousingAssembly",
-          "https://w3id.org/zorro#HousingAccessoriesAndDrives"
+          "https://w3id.org/ZorroOntology#AccessoryHousingAssembly",
+          "https://w3id.org/ZorroOntology#HousingAccessoriesAndDrives"
         ]
       ],
       "query_path": "queries/documentation/03-component-functions.rq",
@@ -386,7 +386,7 @@
         "predicate_breakdown": [
           {
             "count": 209,
-            "predicate": "https://w3id.org/zorro#partOf"
+            "predicate": "https://w3id.org/ZorroOntology#partOf"
           },
           {
             "count": 155,
@@ -398,7 +398,7 @@
           },
           {
             "count": 58,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 37,
@@ -406,15 +406,15 @@
           },
           {
             "count": 14,
-            "predicate": "https://w3id.org/zorro#partNumber"
+            "predicate": "https://w3id.org/ZorroOntology#partNumber"
           },
           {
             "count": 13,
-            "predicate": "https://w3id.org/zorro#hasFunction"
+            "predicate": "https://w3id.org/ZorroOntology#hasFunction"
           },
           {
             "count": 5,
-            "predicate": "https://w3id.org/zorro#linkCandidate"
+            "predicate": "https://w3id.org/ZorroOntology#linkCandidate"
           },
           {
             "count": 4,
@@ -422,18 +422,18 @@
           },
           {
             "count": 4,
-            "predicate": "https://w3id.org/zorro#subFunctionOf"
+            "predicate": "https://w3id.org/ZorroOntology#subFunctionOf"
           },
           {
             "count": 8,
             "predicate": "__other__"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#AccessoryHousingAssembly, https://w3id.org/zorro#CrankingSection, https://w3id.org/zorro#hasFunction])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#AccessoryHousingAssembly, https://w3id.org/ZorroOntology#CrankingSection, https://w3id.org/ZorroOntology#hasFunction])",
         "seeds": [
-          "https://w3id.org/zorro#AccessoryHousingAssembly",
-          "https://w3id.org/zorro#CrankingSection",
-          "https://w3id.org/zorro#hasFunction"
+          "https://w3id.org/ZorroOntology#AccessoryHousingAssembly",
+          "https://w3id.org/ZorroOntology#CrankingSection",
+          "https://w3id.org/ZorroOntology#hasFunction"
         ],
         "subject_term_types": {
           "bnode": 5,
@@ -454,213 +454,213 @@
       "fp": 0,
       "gold_rows": [
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#AccurateOilPressureReading"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#AccurateOilPressureReading"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#AccurateTemperatureReading"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#AccurateTemperatureReading"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#AdequateLubrication"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#AdequateLubrication"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#BalancedCylinderCompression"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#BalancedCylinderCompression"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#ContainingCylindersAndRelatedParts"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#ContainingCylindersAndRelatedParts"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#CoolingEngineWithAirflow"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#CoolingEngineWithAirflow"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#CylinderOperation"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#CylinderOperation"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#LubricatingEngineComponents"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#LubricatingEngineComponents"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#MaintainingOilPressure"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#MaintainingOilPressure"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#OilDistribution"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#OilDistribution"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#OilTemperatureRegulation"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#OilTemperatureRegulation"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#ProperCooling"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#ProperCooling"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#ProperCylinderSealing"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#ProperCylinderSealing"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#ProperEngineCooling"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#ProperEngineCooling"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#ProperLubrication"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#ProperLubrication"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#ProperOilFlow"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#ProperOilFlow"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#ProperOilPressureRegulation"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#ProperOilPressureRegulation"
         ]
       ],
       "precision": 1.0,
       "pred_rows": [
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#AccurateOilPressureReading"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#AccurateOilPressureReading"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#AccurateTemperatureReading"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#AccurateTemperatureReading"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#AdequateLubrication"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#AdequateLubrication"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#BalancedCylinderCompression"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#BalancedCylinderCompression"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#ContainingCylindersAndRelatedParts"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#ContainingCylindersAndRelatedParts"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#CoolingEngineWithAirflow"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#CoolingEngineWithAirflow"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#CylinderOperation"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#CylinderOperation"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#LubricatingEngineComponents"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#LubricatingEngineComponents"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#MaintainingOilPressure"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#MaintainingOilPressure"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#OilDistribution"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#OilDistribution"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#OilTemperatureRegulation"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#OilTemperatureRegulation"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#ProperCooling"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#ProperCooling"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#ProperCylinderSealing"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#ProperCylinderSealing"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#ProperEngineCooling"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#ProperEngineCooling"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#ProperLubrication"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#ProperLubrication"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#ProperOilFlow"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#ProperOilFlow"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#ProperOilPressureRegulation"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#ProperOilPressureRegulation"
         ]
       ],
       "pred_rows_raw": [
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#AccurateOilPressureReading"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#AccurateOilPressureReading"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#AccurateTemperatureReading"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#AccurateTemperatureReading"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#AdequateLubrication"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#AdequateLubrication"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#BalancedCylinderCompression"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#BalancedCylinderCompression"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#ContainingCylindersAndRelatedParts"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#ContainingCylindersAndRelatedParts"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#CoolingEngineWithAirflow"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#CoolingEngineWithAirflow"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#CylinderOperation"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#CylinderOperation"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#LubricatingEngineComponents"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#LubricatingEngineComponents"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#MaintainingOilPressure"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#MaintainingOilPressure"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#OilDistribution"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#OilDistribution"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#OilTemperatureRegulation"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#OilTemperatureRegulation"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#ProperCooling"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#ProperCooling"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#ProperCylinderSealing"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#ProperCylinderSealing"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#ProperEngineCooling"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#ProperEngineCooling"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#ProperLubrication"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#ProperLubrication"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#ProperOilFlow"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#ProperOilFlow"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#ProperOilPressureRegulation"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#ProperOilPressureRegulation"
         ]
       ],
       "query_path": "queries/documentation/04-function-depends-on-housing-combustion.rq",
@@ -675,7 +675,7 @@
         "predicate_breakdown": [
           {
             "count": 379,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 87,
@@ -687,15 +687,15 @@
           },
           {
             "count": 38,
-            "predicate": "https://w3id.org/zorro#subFunctionOf"
+            "predicate": "https://w3id.org/ZorroOntology#subFunctionOf"
           },
           {
             "count": 22,
-            "predicate": "https://w3id.org/zorro#defines"
+            "predicate": "https://w3id.org/ZorroOntology#defines"
           },
           {
             "count": 22,
-            "predicate": "https://w3id.org/zorro#addressesProblem"
+            "predicate": "https://w3id.org/ZorroOntology#addressesProblem"
           },
           {
             "count": 20,
@@ -703,11 +703,11 @@
           },
           {
             "count": 18,
-            "predicate": "https://w3id.org/zorro#hasFunction"
+            "predicate": "https://w3id.org/ZorroOntology#hasFunction"
           },
           {
             "count": 17,
-            "predicate": "https://w3id.org/zorro#partOf"
+            "predicate": "https://w3id.org/ZorroOntology#partOf"
           },
           {
             "count": 2,
@@ -718,10 +718,10 @@
             "predicate": "__other__"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#HousingAndSupportingCombustion, https://w3id.org/zorro#dependsOn])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#HousingAndSupportingCombustion, https://w3id.org/ZorroOntology#dependsOn])",
         "seeds": [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#dependsOn"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#dependsOn"
         ],
         "subject_term_types": {
           "bnode": 1,
@@ -741,69 +741,69 @@
       "fp": 0,
       "gold_rows": [
         [
-          "https://w3id.org/zorro#AccessoryDrives"
+          "https://w3id.org/ZorroOntology#AccessoryDrives"
         ],
         [
-          "https://w3id.org/zorro#CarburetorAssembly"
+          "https://w3id.org/ZorroOntology#CarburetorAssembly"
         ],
         [
-          "https://w3id.org/zorro#CrankingSection"
+          "https://w3id.org/ZorroOntology#CrankingSection"
         ],
         [
-          "https://w3id.org/zorro#CylinderAssembly"
+          "https://w3id.org/ZorroOntology#CylinderAssembly"
         ],
         [
-          "https://w3id.org/zorro#CylinderSection"
+          "https://w3id.org/ZorroOntology#CylinderSection"
         ],
         [
-          "https://w3id.org/zorro#FuelDistributionSystem"
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem"
         ],
         [
-          "https://w3id.org/zorro#IgnitionDistributionSystem"
+          "https://w3id.org/ZorroOntology#IgnitionDistributionSystem"
         ],
         [
-          "https://w3id.org/zorro#MagnetosMagnetoDrivesHarnessesAndSparkPlugs"
+          "https://w3id.org/ZorroOntology#MagnetosMagnetoDrivesHarnessesAndSparkPlugs"
         ],
         [
-          "https://w3id.org/zorro#PropellerGovernorDriveCoverVacuumPumpDriveAndCover"
+          "https://w3id.org/ZorroOntology#PropellerGovernorDriveCoverVacuumPumpDriveAndCover"
         ],
         [
-          "https://w3id.org/zorro#StarterMotorAndAttachingParts"
+          "https://w3id.org/ZorroOntology#StarterMotorAndAttachingParts"
         ]
       ],
       "precision": 1.0,
       "pred_rows": [
         [
-          "https://w3id.org/zorro#CarburetorAssembly"
+          "https://w3id.org/ZorroOntology#CarburetorAssembly"
         ],
         [
-          "https://w3id.org/zorro#CylinderAssembly"
+          "https://w3id.org/ZorroOntology#CylinderAssembly"
         ],
         [
-          "https://w3id.org/zorro#MagnetosMagnetoDrivesHarnessesAndSparkPlugs"
+          "https://w3id.org/ZorroOntology#MagnetosMagnetoDrivesHarnessesAndSparkPlugs"
         ],
         [
-          "https://w3id.org/zorro#PropellerGovernorDriveCoverVacuumPumpDriveAndCover"
+          "https://w3id.org/ZorroOntology#PropellerGovernorDriveCoverVacuumPumpDriveAndCover"
         ],
         [
-          "https://w3id.org/zorro#StarterMotorAndAttachingParts"
+          "https://w3id.org/ZorroOntology#StarterMotorAndAttachingParts"
         ]
       ],
       "pred_rows_raw": [
         [
-          "https://w3id.org/zorro#CarburetorAssembly"
+          "https://w3id.org/ZorroOntology#CarburetorAssembly"
         ],
         [
-          "https://w3id.org/zorro#CylinderAssembly"
+          "https://w3id.org/ZorroOntology#CylinderAssembly"
         ],
         [
-          "https://w3id.org/zorro#MagnetosMagnetoDrivesHarnessesAndSparkPlugs"
+          "https://w3id.org/ZorroOntology#MagnetosMagnetoDrivesHarnessesAndSparkPlugs"
         ],
         [
-          "https://w3id.org/zorro#PropellerGovernorDriveCoverVacuumPumpDriveAndCover"
+          "https://w3id.org/ZorroOntology#PropellerGovernorDriveCoverVacuumPumpDriveAndCover"
         ],
         [
-          "https://w3id.org/zorro#StarterMotorAndAttachingParts"
+          "https://w3id.org/ZorroOntology#StarterMotorAndAttachingParts"
         ]
       ],
       "query_path": "queries/documentation/05-part-assemblies-std-475.rq",
@@ -822,7 +822,7 @@
           },
           {
             "count": 255,
-            "predicate": "https://w3id.org/zorro#partOf"
+            "predicate": "https://w3id.org/ZorroOntology#partOf"
           },
           {
             "count": 34,
@@ -830,11 +830,11 @@
           },
           {
             "count": 33,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 31,
-            "predicate": "https://w3id.org/zorro#hasFunction"
+            "predicate": "https://w3id.org/ZorroOntology#hasFunction"
           },
           {
             "count": 13,
@@ -842,18 +842,18 @@
           },
           {
             "count": 1,
-            "predicate": "https://w3id.org/zorro#linkCandidate"
+            "predicate": "https://w3id.org/ZorroOntology#linkCandidate"
           },
           {
             "count": 1,
-            "predicate": "https://w3id.org/zorro#partNumber"
+            "predicate": "https://w3id.org/ZorroOntology#partNumber"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#partNumber, https://w3id.org/zorro#partOf, https://w3id.org/zorro#partnr-STD-475])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#partNumber, https://w3id.org/ZorroOntology#partOf, https://w3id.org/ZorroOntology#partnr-STD-475])",
         "seeds": [
-          "https://w3id.org/zorro#partNumber",
-          "https://w3id.org/zorro#partOf",
-          "https://w3id.org/zorro#partnr-STD-475"
+          "https://w3id.org/ZorroOntology#partNumber",
+          "https://w3id.org/ZorroOntology#partOf",
+          "https://w3id.org/ZorroOntology#partnr-STD-475"
         ],
         "subject_term_types": {
           "bnode": 1,
@@ -873,18 +873,18 @@
       "fp": 0,
       "gold_rows": [
         [
-          "https://w3id.org/zorro#AccessoryDrives"
+          "https://w3id.org/ZorroOntology#AccessoryDrives"
         ]
       ],
       "precision": 1.0,
       "pred_rows": [
         [
-          "https://w3id.org/zorro#AccessoryDrives"
+          "https://w3id.org/ZorroOntology#AccessoryDrives"
         ]
       ],
       "pred_rows_raw": [
         [
-          "https://w3id.org/zorro#AccessoryDrives"
+          "https://w3id.org/ZorroOntology#AccessoryDrives"
         ]
       ],
       "query_path": "queries/documentation/06-components-transferring-power.rq",
@@ -899,7 +899,7 @@
         "predicate_breakdown": [
           {
             "count": 403,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 110,
@@ -911,7 +911,7 @@
           },
           {
             "count": 62,
-            "predicate": "https://w3id.org/zorro#partOf"
+            "predicate": "https://w3id.org/ZorroOntology#partOf"
           },
           {
             "count": 20,
@@ -919,19 +919,19 @@
           },
           {
             "count": 20,
-            "predicate": "https://w3id.org/zorro#subFunctionOf"
+            "predicate": "https://w3id.org/ZorroOntology#subFunctionOf"
           },
           {
             "count": 19,
-            "predicate": "https://w3id.org/zorro#hasFunction"
+            "predicate": "https://w3id.org/ZorroOntology#hasFunction"
           },
           {
             "count": 15,
-            "predicate": "https://w3id.org/zorro#addressesProblem"
+            "predicate": "https://w3id.org/ZorroOntology#addressesProblem"
           },
           {
             "count": 15,
-            "predicate": "https://w3id.org/zorro#defines"
+            "predicate": "https://w3id.org/ZorroOntology#defines"
           },
           {
             "count": 4,
@@ -942,10 +942,10 @@
             "predicate": "__other__"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#DrivingPowerToAccessories, https://w3id.org/zorro#hasFunction])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#DrivingPowerToAccessories, https://w3id.org/ZorroOntology#hasFunction])",
         "seeds": [
-          "https://w3id.org/zorro#DrivingPowerToAccessories",
-          "https://w3id.org/zorro#hasFunction"
+          "https://w3id.org/ZorroOntology#DrivingPowerToAccessories",
+          "https://w3id.org/ZorroOntology#hasFunction"
         ],
         "subject_term_types": {
           "uri": 780
@@ -964,69 +964,69 @@
       "fp": 0,
       "gold_rows": [
         [
-          "https://w3id.org/zorro#partnr-1102"
+          "https://w3id.org/ZorroOntology#partnr-1102"
         ],
         [
-          "https://w3id.org/zorro#partnr-21A21533-04"
+          "https://w3id.org/ZorroOntology#partnr-21A21533-04"
         ],
         [
-          "https://w3id.org/zorro#partnr-25C-22"
+          "https://w3id.org/ZorroOntology#partnr-25C-22"
         ],
         [
-          "https://w3id.org/zorro#partnr-31C-12"
+          "https://w3id.org/ZorroOntology#partnr-31C-12"
         ],
         [
-          "https://w3id.org/zorro#partnr-31C-19"
+          "https://w3id.org/ZorroOntology#partnr-31C-19"
         ],
         [
-          "https://w3id.org/zorro#partnr-31CD-17"
+          "https://w3id.org/ZorroOntology#partnr-31CD-17"
         ],
         [
-          "https://w3id.org/zorro#partnr-73818"
+          "https://w3id.org/ZorroOntology#partnr-73818"
         ],
         [
-          "https://w3id.org/zorro#partnr-STD-784"
+          "https://w3id.org/ZorroOntology#partnr-STD-784"
         ]
       ],
       "precision": 1.0,
       "pred_rows": [
         [
-          "https://w3id.org/zorro#partnr-1102"
+          "https://w3id.org/ZorroOntology#partnr-1102"
         ],
         [
-          "https://w3id.org/zorro#partnr-21A21533-04"
+          "https://w3id.org/ZorroOntology#partnr-21A21533-04"
         ],
         [
-          "https://w3id.org/zorro#partnr-31C-12"
+          "https://w3id.org/ZorroOntology#partnr-31C-12"
         ],
         [
-          "https://w3id.org/zorro#partnr-31CD-17"
+          "https://w3id.org/ZorroOntology#partnr-31CD-17"
         ],
         [
-          "https://w3id.org/zorro#partnr-73818"
+          "https://w3id.org/ZorroOntology#partnr-73818"
         ],
         [
-          "https://w3id.org/zorro#partnr-STD-784"
+          "https://w3id.org/ZorroOntology#partnr-STD-784"
         ]
       ],
       "pred_rows_raw": [
         [
-          "https://w3id.org/zorro#partnr-1102"
+          "https://w3id.org/ZorroOntology#partnr-1102"
         ],
         [
-          "https://w3id.org/zorro#partnr-21A21533-04"
+          "https://w3id.org/ZorroOntology#partnr-21A21533-04"
         ],
         [
-          "https://w3id.org/zorro#partnr-31C-12"
+          "https://w3id.org/ZorroOntology#partnr-31C-12"
         ],
         [
-          "https://w3id.org/zorro#partnr-31CD-17"
+          "https://w3id.org/ZorroOntology#partnr-31CD-17"
         ],
         [
-          "https://w3id.org/zorro#partnr-73818"
+          "https://w3id.org/ZorroOntology#partnr-73818"
         ],
         [
-          "https://w3id.org/zorro#partnr-STD-784"
+          "https://w3id.org/ZorroOntology#partnr-STD-784"
         ]
       ],
       "query_path": "queries/documentation/07-parts-in-accessory-housing.rq",
@@ -1041,7 +1041,7 @@
         "predicate_breakdown": [
           {
             "count": 156,
-            "predicate": "https://w3id.org/zorro#partOf"
+            "predicate": "https://w3id.org/ZorroOntology#partOf"
           },
           {
             "count": 72,
@@ -1053,7 +1053,7 @@
           },
           {
             "count": 31,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 20,
@@ -1061,19 +1061,19 @@
           },
           {
             "count": 8,
-            "predicate": "https://w3id.org/zorro#hasFunction"
+            "predicate": "https://w3id.org/ZorroOntology#hasFunction"
           },
           {
             "count": 8,
-            "predicate": "https://w3id.org/zorro#partNumber"
+            "predicate": "https://w3id.org/ZorroOntology#partNumber"
           },
           {
             "count": 3,
-            "predicate": "https://w3id.org/zorro#linkCandidate"
+            "predicate": "https://w3id.org/ZorroOntology#linkCandidate"
           },
           {
             "count": 2,
-            "predicate": "https://w3id.org/zorro#isProbably"
+            "predicate": "https://w3id.org/ZorroOntology#isProbably"
           },
           {
             "count": 2,
@@ -1084,10 +1084,10 @@
             "predicate": "__other__"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#AccessoryHousingAssembly, https://w3id.org/zorro#partOf])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#AccessoryHousingAssembly, https://w3id.org/ZorroOntology#partOf])",
         "seeds": [
-          "https://w3id.org/zorro#AccessoryHousingAssembly",
-          "https://w3id.org/zorro#partOf"
+          "https://w3id.org/ZorroOntology#AccessoryHousingAssembly",
+          "https://w3id.org/ZorroOntology#partOf"
         ],
         "subject_term_types": {
           "bnode": 3,
@@ -1107,18 +1107,18 @@
       "fp": 0,
       "gold_rows": [
         [
-          "https://w3id.org/zorro#FuelDistributionSystem"
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem"
         ]
       ],
       "precision": 1.0,
       "pred_rows": [
         [
-          "https://w3id.org/zorro#FuelDistributionSystem"
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem"
         ]
       ],
       "pred_rows_raw": [
         [
-          "https://w3id.org/zorro#FuelDistributionSystem"
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem"
         ]
       ],
       "query_path": "queries/documentation/08-system-for-carburetor-assembly.rq",
@@ -1133,7 +1133,7 @@
         "predicate_breakdown": [
           {
             "count": 327,
-            "predicate": "https://w3id.org/zorro#partOf"
+            "predicate": "https://w3id.org/ZorroOntology#partOf"
           },
           {
             "count": 76,
@@ -1141,7 +1141,7 @@
           },
           {
             "count": 69,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 59,
@@ -1149,7 +1149,7 @@
           },
           {
             "count": 55,
-            "predicate": "https://w3id.org/zorro#hasFunction"
+            "predicate": "https://w3id.org/ZorroOntology#hasFunction"
           },
           {
             "count": 24,
@@ -1157,11 +1157,11 @@
           },
           {
             "count": 6,
-            "predicate": "https://w3id.org/zorro#partNumber"
+            "predicate": "https://w3id.org/ZorroOntology#partNumber"
           },
           {
             "count": 2,
-            "predicate": "https://w3id.org/zorro#subFunctionOf"
+            "predicate": "https://w3id.org/ZorroOntology#subFunctionOf"
           },
           {
             "count": 2,
@@ -1176,12 +1176,12 @@
             "predicate": "__other__"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#CarburetorAssembly, https://w3id.org/zorro#System, https://w3id.org/zorro#partOf, https://w3id.org/zorro#type])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#CarburetorAssembly, https://w3id.org/ZorroOntology#System, https://w3id.org/ZorroOntology#partOf, https://w3id.org/ZorroOntology#type])",
         "seeds": [
-          "https://w3id.org/zorro#CarburetorAssembly",
-          "https://w3id.org/zorro#System",
-          "https://w3id.org/zorro#partOf",
-          "https://w3id.org/zorro#type"
+          "https://w3id.org/ZorroOntology#CarburetorAssembly",
+          "https://w3id.org/ZorroOntology#System",
+          "https://w3id.org/ZorroOntology#partOf",
+          "https://w3id.org/ZorroOntology#type"
         ],
         "subject_term_types": {
           "bnode": 1,
@@ -1203,33 +1203,33 @@
       "fp": 0,
       "gold_rows": [
         [
-          "https://w3id.org/zorro#DefectiveIgnitionWire",
-          "https://w3id.org/zorro#LowPowerAndUnevenRunning, https://w3id.org/zorro#FailureOfEngineToStart",
+          "https://w3id.org/ZorroOntology#DefectiveIgnitionWire",
+          "https://w3id.org/ZorroOntology#LowPowerAndUnevenRunning, https://w3id.org/ZorroOntology#FailureOfEngineToStart",
           "2"
         ],
         [
-          "https://w3id.org/zorro#DefectiveSparkPlugs",
-          "https://w3id.org/zorro#LowPowerAndUnevenRunning, https://w3id.org/zorro#FailureOfEngineToStart",
+          "https://w3id.org/ZorroOntology#DefectiveSparkPlugs",
+          "https://w3id.org/ZorroOntology#LowPowerAndUnevenRunning, https://w3id.org/ZorroOntology#FailureOfEngineToStart",
           "2"
         ],
         [
-          "https://w3id.org/zorro#FailingOrFailedBearings",
-          "https://w3id.org/zorro#ExcessiveOilConsumption, https://w3id.org/zorro#HighOilTemperature",
+          "https://w3id.org/ZorroOntology#FailingOrFailedBearings",
+          "https://w3id.org/ZorroOntology#ExcessiveOilConsumption, https://w3id.org/ZorroOntology#HighOilTemperature",
           "2"
         ],
         [
-          "https://w3id.org/zorro#ImproperFuel",
-          "https://w3id.org/zorro#FailureOfEngineToDevelopFullPower, https://w3id.org/zorro#LowPowerAndUnevenRunning",
+          "https://w3id.org/ZorroOntology#ImproperFuel",
+          "https://w3id.org/ZorroOntology#FailureOfEngineToDevelopFullPower, https://w3id.org/ZorroOntology#LowPowerAndUnevenRunning",
           "2"
         ],
         [
-          "https://w3id.org/zorro#LeakInInductionSystem",
-          "https://w3id.org/zorro#FailureOfEngineToDevelopFullPower, https://w3id.org/zorro#FailureOfEngineToIdleProperly",
+          "https://w3id.org/ZorroOntology#LeakInInductionSystem",
+          "https://w3id.org/ZorroOntology#FailureOfEngineToDevelopFullPower, https://w3id.org/ZorroOntology#FailureOfEngineToIdleProperly",
           "2"
         ],
         [
-          "https://w3id.org/zorro#LowGradeOfOil",
-          "https://w3id.org/zorro#ExcessiveOilConsumption, https://w3id.org/zorro#HighOilTemperature",
+          "https://w3id.org/ZorroOntology#LowGradeOfOil",
+          "https://w3id.org/ZorroOntology#ExcessiveOilConsumption, https://w3id.org/ZorroOntology#HighOilTemperature",
           "2"
         ]
       ],
@@ -1262,9 +1262,9 @@
             "predicate": "http://www.w3.org/2000/01/rdf-schema#domain"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#hasCause])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#hasCause])",
         "seeds": [
-          "https://w3id.org/zorro#hasCause"
+          "https://w3id.org/ZorroOntology#hasCause"
         ],
         "subject_term_types": {
           "uri": 120
@@ -1286,622 +1286,622 @@
       "gold_rows": [
         [
           "dependedonby",
-          "https://w3id.org/zorro#AccurateOilPressureReading",
-          "https://w3id.org/zorro#AccurateOilPressureReading"
+          "https://w3id.org/ZorroOntology#AccurateOilPressureReading",
+          "https://w3id.org/ZorroOntology#AccurateOilPressureReading"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#AccurateTemperatureReading",
-          "https://w3id.org/zorro#AccurateTemperatureReading"
+          "https://w3id.org/ZorroOntology#AccurateTemperatureReading",
+          "https://w3id.org/ZorroOntology#AccurateTemperatureReading"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#AdequateLubrication",
-          "https://w3id.org/zorro#AdequateLubrication"
+          "https://w3id.org/ZorroOntology#AdequateLubrication",
+          "https://w3id.org/ZorroOntology#AdequateLubrication"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#Air-FuelIntake",
+          "https://w3id.org/ZorroOntology#Air-FuelIntake",
           "air-fuel intake"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#Air-FuelIntakeControl",
+          "https://w3id.org/ZorroOntology#Air-FuelIntakeControl",
           "air-fuel intake control"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#Air-FuelMixtureContamination",
+          "https://w3id.org/ZorroOntology#Air-FuelMixtureContamination",
           "air-fuel mixture contamination"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#AirIntakeRestriction",
-          "https://w3id.org/zorro#AirIntakeRestriction"
+          "https://w3id.org/ZorroOntology#AirIntakeRestriction",
+          "https://w3id.org/ZorroOntology#AirIntakeRestriction"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#AssistingEngineStart",
-          "https://w3id.org/zorro#AssistingEngineStart"
+          "https://w3id.org/ZorroOntology#AssistingEngineStart",
+          "https://w3id.org/ZorroOntology#AssistingEngineStart"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#BalancedCylinderCompression",
-          "https://w3id.org/zorro#BalancedCylinderCompression"
+          "https://w3id.org/ZorroOntology#BalancedCylinderCompression",
+          "https://w3id.org/ZorroOntology#BalancedCylinderCompression"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#CollectingAndScreeningOil",
-          "https://w3id.org/zorro#CollectingAndScreeningOil"
+          "https://w3id.org/ZorroOntology#CollectingAndScreeningOil",
+          "https://w3id.org/ZorroOntology#CollectingAndScreeningOil"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#ContainingCylindersAndRelatedParts",
-          "https://w3id.org/zorro#ContainingCylindersAndRelatedParts"
+          "https://w3id.org/ZorroOntology#ContainingCylindersAndRelatedParts",
+          "https://w3id.org/ZorroOntology#ContainingCylindersAndRelatedParts"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#ControllingIntakeAndExhaustFlow",
-          "https://w3id.org/zorro#ControllingIntakeAndExhaustFlow"
+          "https://w3id.org/ZorroOntology#ControllingIntakeAndExhaustFlow",
+          "https://w3id.org/ZorroOntology#ControllingIntakeAndExhaustFlow"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#ConvertingLinearToRotationalMotion",
-          "https://w3id.org/zorro#ConvertingLinearToRotationalMotion"
+          "https://w3id.org/ZorroOntology#ConvertingLinearToRotationalMotion",
+          "https://w3id.org/ZorroOntology#ConvertingLinearToRotationalMotion"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#CoolingEngineWithAirflow",
-          "https://w3id.org/zorro#CoolingEngineWithAirflow"
+          "https://w3id.org/ZorroOntology#CoolingEngineWithAirflow",
+          "https://w3id.org/ZorroOntology#CoolingEngineWithAirflow"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#CoreEngineFunctionality",
-          "https://w3id.org/zorro#CoreEngineFunctionality"
+          "https://w3id.org/ZorroOntology#CoreEngineFunctionality",
+          "https://w3id.org/ZorroOntology#CoreEngineFunctionality"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#CorrectFuelType",
-          "https://w3id.org/zorro#CorrectFuelType"
+          "https://w3id.org/ZorroOntology#CorrectFuelType",
+          "https://w3id.org/ZorroOntology#CorrectFuelType"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#CoveringDrivesAndProvidingHousing",
-          "https://w3id.org/zorro#CoveringDrivesAndProvidingHousing"
+          "https://w3id.org/ZorroOntology#CoveringDrivesAndProvidingHousing",
+          "https://w3id.org/ZorroOntology#CoveringDrivesAndProvidingHousing"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#CylinderOperation",
-          "https://w3id.org/zorro#CylinderOperation"
+          "https://w3id.org/ZorroOntology#CylinderOperation",
+          "https://w3id.org/ZorroOntology#CylinderOperation"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#DirectingAir-FuelMixture",
+          "https://w3id.org/ZorroOntology#DirectingAir-FuelMixture",
           "directing air-fuel mixture"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#DistributingFuel-AirMixture",
+          "https://w3id.org/ZorroOntology#DistributingFuel-AirMixture",
           "distributing fuel-air mixture"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#DistributingIgnitionAndSparks",
-          "https://w3id.org/zorro#DistributingIgnitionAndSparks"
+          "https://w3id.org/ZorroOntology#DistributingIgnitionAndSparks",
+          "https://w3id.org/ZorroOntology#DistributingIgnitionAndSparks"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#DistributingIgnitionToCylinders",
-          "https://w3id.org/zorro#DistributingIgnitionToCylinders"
+          "https://w3id.org/ZorroOntology#DistributingIgnitionToCylinders",
+          "https://w3id.org/ZorroOntology#DistributingIgnitionToCylinders"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#DrainingAndCoolingCylinders",
-          "https://w3id.org/zorro#DrainingAndCoolingCylinders"
+          "https://w3id.org/ZorroOntology#DrainingAndCoolingCylinders",
+          "https://w3id.org/ZorroOntology#DrainingAndCoolingCylinders"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#DrivingAndTimingComponents",
-          "https://w3id.org/zorro#DrivingAndTimingComponents"
+          "https://w3id.org/ZorroOntology#DrivingAndTimingComponents",
+          "https://w3id.org/ZorroOntology#DrivingAndTimingComponents"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#DrivingPowerToAccessories",
-          "https://w3id.org/zorro#DrivingPowerToAccessories"
+          "https://w3id.org/ZorroOntology#DrivingPowerToAccessories",
+          "https://w3id.org/ZorroOntology#DrivingPowerToAccessories"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#EngineStability",
-          "https://w3id.org/zorro#EngineStability"
+          "https://w3id.org/ZorroOntology#EngineStability",
+          "https://w3id.org/ZorroOntology#EngineStability"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#ExcessiveFuelDuringStart",
-          "https://w3id.org/zorro#ExcessiveFuelDuringStart"
+          "https://w3id.org/ZorroOntology#ExcessiveFuelDuringStart",
+          "https://w3id.org/ZorroOntology#ExcessiveFuelDuringStart"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#FacilitatingEngineStart",
-          "https://w3id.org/zorro#FacilitatingEngineStart"
+          "https://w3id.org/ZorroOntology#FacilitatingEngineStart",
+          "https://w3id.org/ZorroOntology#FacilitatingEngineStart"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#FilteringOilAndControllingFlow",
-          "https://w3id.org/zorro#FilteringOilAndControllingFlow"
+          "https://w3id.org/ZorroOntology#FilteringOilAndControllingFlow",
+          "https://w3id.org/ZorroOntology#FilteringOilAndControllingFlow"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#Fuel-AirMixtureControl",
+          "https://w3id.org/ZorroOntology#Fuel-AirMixtureControl",
           "fuel-air mixture control"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#Fuel-AirMixtureDistribution",
+          "https://w3id.org/ZorroOntology#Fuel-AirMixtureDistribution",
           "fuel-air mixture distribution"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#FuelDelivery",
-          "https://w3id.org/zorro#FuelDelivery"
+          "https://w3id.org/ZorroOntology#FuelDelivery",
+          "https://w3id.org/ZorroOntology#FuelDelivery"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#FuelDistribution",
-          "https://w3id.org/zorro#FuelDistribution"
+          "https://w3id.org/ZorroOntology#FuelDistribution",
+          "https://w3id.org/ZorroOntology#FuelDistribution"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#GeneratingPower"
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#GeneratingPower"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#HousingAccessoriesAndDrives",
-          "https://w3id.org/zorro#HousingAccessoriesAndDrives"
+          "https://w3id.org/ZorroOntology#HousingAccessoriesAndDrives",
+          "https://w3id.org/ZorroOntology#HousingAccessoriesAndDrives"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#HousingAndSupportingCombustion"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#HousingMainEngine",
-          "https://w3id.org/zorro#HousingMainEngine"
+          "https://w3id.org/ZorroOntology#HousingMainEngine",
+          "https://w3id.org/ZorroOntology#HousingMainEngine"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#HousingMainPowerComponents",
-          "https://w3id.org/zorro#HousingMainPowerComponents"
+          "https://w3id.org/ZorroOntology#HousingMainPowerComponents",
+          "https://w3id.org/ZorroOntology#HousingMainPowerComponents"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#IgnitionTiming",
-          "https://w3id.org/zorro#IgnitionTiming"
+          "https://w3id.org/ZorroOntology#IgnitionTiming",
+          "https://w3id.org/ZorroOntology#IgnitionTiming"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#IgnitionTimingAndDistribution",
-          "https://w3id.org/zorro#IgnitionTimingAndDistribution"
+          "https://w3id.org/ZorroOntology#IgnitionTimingAndDistribution",
+          "https://w3id.org/ZorroOntology#IgnitionTimingAndDistribution"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#IgnitionTransfer",
-          "https://w3id.org/zorro#IgnitionTransfer"
+          "https://w3id.org/ZorroOntology#IgnitionTransfer",
+          "https://w3id.org/ZorroOntology#IgnitionTransfer"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#InitiatingEngineStart",
-          "https://w3id.org/zorro#InitiatingEngineStart"
+          "https://w3id.org/ZorroOntology#InitiatingEngineStart",
+          "https://w3id.org/ZorroOntology#InitiatingEngineStart"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#LubricatingEngineComponents",
-          "https://w3id.org/zorro#LubricatingEngineComponents"
+          "https://w3id.org/ZorroOntology#LubricatingEngineComponents",
+          "https://w3id.org/ZorroOntology#LubricatingEngineComponents"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#MaintainingOilPressure",
-          "https://w3id.org/zorro#MaintainingOilPressure"
+          "https://w3id.org/ZorroOntology#MaintainingOilPressure",
+          "https://w3id.org/ZorroOntology#MaintainingOilPressure"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#ManagingAir-FuelMixtureIntake",
+          "https://w3id.org/ZorroOntology#ManagingAir-FuelMixtureIntake",
           "managing air-fuel mixture intake"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#MeasuringOilQuantity",
-          "https://w3id.org/zorro#MeasuringOilQuantity"
+          "https://w3id.org/ZorroOntology#MeasuringOilQuantity",
+          "https://w3id.org/ZorroOntology#MeasuringOilQuantity"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#MixingAndRegulatingFuel-Air",
+          "https://w3id.org/ZorroOntology#MixingAndRegulatingFuel-Air",
           "mixing and regulating fuel-air"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#OilDistribution",
-          "https://w3id.org/zorro#OilDistribution"
+          "https://w3id.org/ZorroOntology#OilDistribution",
+          "https://w3id.org/ZorroOntology#OilDistribution"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#OilTemperatureRegulation",
-          "https://w3id.org/zorro#OilTemperatureRegulation"
+          "https://w3id.org/ZorroOntology#OilTemperatureRegulation",
+          "https://w3id.org/ZorroOntology#OilTemperatureRegulation"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#PowerOutput",
-          "https://w3id.org/zorro#PowerOutput"
+          "https://w3id.org/ZorroOntology#PowerOutput",
+          "https://w3id.org/ZorroOntology#PowerOutput"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#PowerSupplyForStarting",
-          "https://w3id.org/zorro#PowerSupplyForStarting"
+          "https://w3id.org/ZorroOntology#PowerSupplyForStarting",
+          "https://w3id.org/ZorroOntology#PowerSupplyForStarting"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#ProperAir-FuelIntake",
+          "https://w3id.org/ZorroOntology#ProperAir-FuelIntake",
           "proper air-fuel intake"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#ProperAir-FuelMixture",
+          "https://w3id.org/ZorroOntology#ProperAir-FuelMixture",
           "proper air-fuel mixture"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#ProperCooling",
-          "https://w3id.org/zorro#ProperCooling"
+          "https://w3id.org/ZorroOntology#ProperCooling",
+          "https://w3id.org/ZorroOntology#ProperCooling"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#ProperCylinderSealing",
-          "https://w3id.org/zorro#ProperCylinderSealing"
+          "https://w3id.org/ZorroOntology#ProperCylinderSealing",
+          "https://w3id.org/ZorroOntology#ProperCylinderSealing"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#ProperEngineCooling",
-          "https://w3id.org/zorro#ProperEngineCooling"
+          "https://w3id.org/ZorroOntology#ProperEngineCooling",
+          "https://w3id.org/ZorroOntology#ProperEngineCooling"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#ProperIgnition",
-          "https://w3id.org/zorro#ProperIgnition"
+          "https://w3id.org/ZorroOntology#ProperIgnition",
+          "https://w3id.org/ZorroOntology#ProperIgnition"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#ProperIgnitionTiming",
-          "https://w3id.org/zorro#ProperIgnitionTiming"
+          "https://w3id.org/ZorroOntology#ProperIgnitionTiming",
+          "https://w3id.org/ZorroOntology#ProperIgnitionTiming"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#ProperIgnitionTimingAndDistribution",
-          "https://w3id.org/zorro#ProperIgnitionTimingAndDistribution"
+          "https://w3id.org/ZorroOntology#ProperIgnitionTimingAndDistribution",
+          "https://w3id.org/ZorroOntology#ProperIgnitionTimingAndDistribution"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#ProperLubrication",
-          "https://w3id.org/zorro#ProperLubrication"
+          "https://w3id.org/ZorroOntology#ProperLubrication",
+          "https://w3id.org/ZorroOntology#ProperLubrication"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#ProperOilFlow",
-          "https://w3id.org/zorro#ProperOilFlow"
+          "https://w3id.org/ZorroOntology#ProperOilFlow",
+          "https://w3id.org/ZorroOntology#ProperOilFlow"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#ProperOilPressureRegulation",
-          "https://w3id.org/zorro#ProperOilPressureRegulation"
+          "https://w3id.org/ZorroOntology#ProperOilPressureRegulation",
+          "https://w3id.org/ZorroOntology#ProperOilPressureRegulation"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#ProvidingElectricalPower",
-          "https://w3id.org/zorro#ProvidingElectricalPower"
+          "https://w3id.org/ZorroOntology#ProvidingElectricalPower",
+          "https://w3id.org/ZorroOntology#ProvidingElectricalPower"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#PumpingFuelAndSecuringComponents",
-          "https://w3id.org/zorro#PumpingFuelAndSecuringComponents"
+          "https://w3id.org/ZorroOntology#PumpingFuelAndSecuringComponents",
+          "https://w3id.org/ZorroOntology#PumpingFuelAndSecuringComponents"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#PumpingOilAndAttachingHousing",
-          "https://w3id.org/zorro#PumpingOilAndAttachingHousing"
+          "https://w3id.org/ZorroOntology#PumpingOilAndAttachingHousing",
+          "https://w3id.org/ZorroOntology#PumpingOilAndAttachingHousing"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#RegulatingOilFlowAndPressure",
-          "https://w3id.org/zorro#RegulatingOilFlowAndPressure"
+          "https://w3id.org/ZorroOntology#RegulatingOilFlowAndPressure",
+          "https://w3id.org/ZorroOntology#RegulatingOilFlowAndPressure"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#SecuringAndSupportingAlternator",
-          "https://w3id.org/zorro#SecuringAndSupportingAlternator"
+          "https://w3id.org/ZorroOntology#SecuringAndSupportingAlternator",
+          "https://w3id.org/ZorroOntology#SecuringAndSupportingAlternator"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#SecuringCrankcaseComponents",
-          "https://w3id.org/zorro#SecuringCrankcaseComponents"
+          "https://w3id.org/ZorroOntology#SecuringCrankcaseComponents",
+          "https://w3id.org/ZorroOntology#SecuringCrankcaseComponents"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#SmoothEngineOperation",
-          "https://w3id.org/zorro#SmoothEngineOperation"
+          "https://w3id.org/ZorroOntology#SmoothEngineOperation",
+          "https://w3id.org/ZorroOntology#SmoothEngineOperation"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#SupportingCrankcaseOperation",
-          "https://w3id.org/zorro#SupportingCrankcaseOperation"
+          "https://w3id.org/ZorroOntology#SupportingCrankcaseOperation",
+          "https://w3id.org/ZorroOntology#SupportingCrankcaseOperation"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#SupportingCylinderOperation",
-          "https://w3id.org/zorro#SupportingCylinderOperation"
+          "https://w3id.org/ZorroOntology#SupportingCylinderOperation",
+          "https://w3id.org/ZorroOntology#SupportingCylinderOperation"
         ],
         [
           "dependedonby",
-          "https://w3id.org/zorro#TransmittingMotionAndSealingChamber",
-          "https://w3id.org/zorro#TransmittingMotionAndSealingChamber"
+          "https://w3id.org/ZorroOntology#TransmittingMotionAndSealingChamber",
+          "https://w3id.org/ZorroOntology#TransmittingMotionAndSealingChamber"
         ],
         [
           "dependson",
-          "https://w3id.org/zorro#AccurateOilPressureReading",
-          "https://w3id.org/zorro#AccurateOilPressureReading"
+          "https://w3id.org/ZorroOntology#AccurateOilPressureReading",
+          "https://w3id.org/ZorroOntology#AccurateOilPressureReading"
         ],
         [
           "dependson",
-          "https://w3id.org/zorro#AccurateTemperatureReading",
-          "https://w3id.org/zorro#AccurateTemperatureReading"
+          "https://w3id.org/ZorroOntology#AccurateTemperatureReading",
+          "https://w3id.org/ZorroOntology#AccurateTemperatureReading"
         ],
         [
           "dependson",
-          "https://w3id.org/zorro#AdequateLubrication",
-          "https://w3id.org/zorro#AdequateLubrication"
+          "https://w3id.org/ZorroOntology#AdequateLubrication",
+          "https://w3id.org/ZorroOntology#AdequateLubrication"
         ],
         [
           "dependson",
-          "https://w3id.org/zorro#CoolingEngineWithAirflow",
-          "https://w3id.org/zorro#CoolingEngineWithAirflow"
+          "https://w3id.org/ZorroOntology#CoolingEngineWithAirflow",
+          "https://w3id.org/ZorroOntology#CoolingEngineWithAirflow"
         ],
         [
           "dependson",
-          "https://w3id.org/zorro#CoreEngineFunctionality",
-          "https://w3id.org/zorro#CoreEngineFunctionality"
+          "https://w3id.org/ZorroOntology#CoreEngineFunctionality",
+          "https://w3id.org/ZorroOntology#CoreEngineFunctionality"
         ],
         [
           "dependson",
-          "https://w3id.org/zorro#EngineStability",
-          "https://w3id.org/zorro#EngineStability"
+          "https://w3id.org/ZorroOntology#EngineStability",
+          "https://w3id.org/ZorroOntology#EngineStability"
         ],
         [
           "dependson",
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#GeneratingPower"
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#GeneratingPower"
         ],
         [
           "dependson",
-          "https://w3id.org/zorro#HousingMainPowerComponents",
-          "https://w3id.org/zorro#HousingMainPowerComponents"
+          "https://w3id.org/ZorroOntology#HousingMainPowerComponents",
+          "https://w3id.org/ZorroOntology#HousingMainPowerComponents"
         ],
         [
           "dependson",
-          "https://w3id.org/zorro#LubricatingEngineComponents",
-          "https://w3id.org/zorro#LubricatingEngineComponents"
+          "https://w3id.org/ZorroOntology#LubricatingEngineComponents",
+          "https://w3id.org/ZorroOntology#LubricatingEngineComponents"
         ],
         [
           "dependson",
-          "https://w3id.org/zorro#MaintainingOilPressure",
-          "https://w3id.org/zorro#MaintainingOilPressure"
+          "https://w3id.org/ZorroOntology#MaintainingOilPressure",
+          "https://w3id.org/ZorroOntology#MaintainingOilPressure"
         ],
         [
           "dependson",
-          "https://w3id.org/zorro#OilDistribution",
-          "https://w3id.org/zorro#OilDistribution"
+          "https://w3id.org/ZorroOntology#OilDistribution",
+          "https://w3id.org/ZorroOntology#OilDistribution"
         ],
         [
           "dependson",
-          "https://w3id.org/zorro#OilTemperatureRegulation",
-          "https://w3id.org/zorro#OilTemperatureRegulation"
+          "https://w3id.org/ZorroOntology#OilTemperatureRegulation",
+          "https://w3id.org/ZorroOntology#OilTemperatureRegulation"
         ],
         [
           "dependson",
-          "https://w3id.org/zorro#PowerOutput",
-          "https://w3id.org/zorro#PowerOutput"
+          "https://w3id.org/ZorroOntology#PowerOutput",
+          "https://w3id.org/ZorroOntology#PowerOutput"
         ],
         [
           "dependson",
-          "https://w3id.org/zorro#ProperCooling",
-          "https://w3id.org/zorro#ProperCooling"
+          "https://w3id.org/ZorroOntology#ProperCooling",
+          "https://w3id.org/ZorroOntology#ProperCooling"
         ],
         [
           "dependson",
-          "https://w3id.org/zorro#ProperEngineCooling",
-          "https://w3id.org/zorro#ProperEngineCooling"
+          "https://w3id.org/ZorroOntology#ProperEngineCooling",
+          "https://w3id.org/ZorroOntology#ProperEngineCooling"
         ],
         [
           "dependson",
-          "https://w3id.org/zorro#ProperLubrication",
-          "https://w3id.org/zorro#ProperLubrication"
+          "https://w3id.org/ZorroOntology#ProperLubrication",
+          "https://w3id.org/ZorroOntology#ProperLubrication"
         ],
         [
           "dependson",
-          "https://w3id.org/zorro#ProperOilFlow",
-          "https://w3id.org/zorro#ProperOilFlow"
+          "https://w3id.org/ZorroOntology#ProperOilFlow",
+          "https://w3id.org/ZorroOntology#ProperOilFlow"
         ],
         [
           "dependson",
-          "https://w3id.org/zorro#ProperOilPressureRegulation",
-          "https://w3id.org/zorro#ProperOilPressureRegulation"
+          "https://w3id.org/ZorroOntology#ProperOilPressureRegulation",
+          "https://w3id.org/ZorroOntology#ProperOilPressureRegulation"
         ],
         [
           "dependson",
-          "https://w3id.org/zorro#SmoothEngineOperation",
-          "https://w3id.org/zorro#SmoothEngineOperation"
+          "https://w3id.org/ZorroOntology#SmoothEngineOperation",
+          "https://w3id.org/ZorroOntology#SmoothEngineOperation"
         ]
       ],
       "precision": 0.0,
       "pred_rows": [
         [
-          "https://w3id.org/zorro#DrivingPowerToAccessories",
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#GeneratingPower"
+          "https://w3id.org/ZorroOntology#DrivingPowerToAccessories",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#GeneratingPower"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#AccurateOilPressureReading",
-          "https://w3id.org/zorro#AccurateOilPressureReading"
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#AccurateOilPressureReading",
+          "https://w3id.org/ZorroOntology#AccurateOilPressureReading"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#AccurateTemperatureReading",
-          "https://w3id.org/zorro#AccurateTemperatureReading"
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#AccurateTemperatureReading",
+          "https://w3id.org/ZorroOntology#AccurateTemperatureReading"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#AdequateLubrication",
-          "https://w3id.org/zorro#AdequateLubrication"
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#AdequateLubrication",
+          "https://w3id.org/ZorroOntology#AdequateLubrication"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#CoolingEngineWithAirflow",
-          "https://w3id.org/zorro#CoolingEngineWithAirflow"
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#CoolingEngineWithAirflow",
+          "https://w3id.org/ZorroOntology#CoolingEngineWithAirflow"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#LubricatingEngineComponents",
-          "https://w3id.org/zorro#LubricatingEngineComponents"
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#LubricatingEngineComponents",
+          "https://w3id.org/ZorroOntology#LubricatingEngineComponents"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#MaintainingOilPressure",
-          "https://w3id.org/zorro#MaintainingOilPressure"
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#MaintainingOilPressure",
+          "https://w3id.org/ZorroOntology#MaintainingOilPressure"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#OilDistribution",
-          "https://w3id.org/zorro#OilDistribution"
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#OilDistribution",
+          "https://w3id.org/ZorroOntology#OilDistribution"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#OilTemperatureRegulation",
-          "https://w3id.org/zorro#OilTemperatureRegulation"
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#OilTemperatureRegulation",
+          "https://w3id.org/ZorroOntology#OilTemperatureRegulation"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#ProperCooling",
-          "https://w3id.org/zorro#ProperCooling"
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#ProperCooling",
+          "https://w3id.org/ZorroOntology#ProperCooling"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#ProperEngineCooling",
-          "https://w3id.org/zorro#ProperEngineCooling"
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#ProperEngineCooling",
+          "https://w3id.org/ZorroOntology#ProperEngineCooling"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#ProperLubrication",
-          "https://w3id.org/zorro#ProperLubrication"
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#ProperLubrication",
+          "https://w3id.org/ZorroOntology#ProperLubrication"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#ProperOilFlow",
-          "https://w3id.org/zorro#ProperOilFlow"
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#ProperOilFlow",
+          "https://w3id.org/ZorroOntology#ProperOilFlow"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#ProperOilPressureRegulation",
-          "https://w3id.org/zorro#ProperOilPressureRegulation"
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#ProperOilPressureRegulation",
+          "https://w3id.org/ZorroOntology#ProperOilPressureRegulation"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#SmoothEngineOperation",
-          "https://w3id.org/zorro#SmoothEngineOperation"
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#SmoothEngineOperation",
+          "https://w3id.org/ZorroOntology#SmoothEngineOperation"
         ],
         [
-          "https://w3id.org/zorro#HousingAccessoriesAndDrives",
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#GeneratingPower"
+          "https://w3id.org/ZorroOntology#HousingAccessoriesAndDrives",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#GeneratingPower"
         ]
       ],
       "pred_rows_raw": [
         [
-          "https://w3id.org/zorro#DrivingPowerToAccessories",
-          "https://w3id.org/zorro#GeneratingPower",
+          "https://w3id.org/ZorroOntology#DrivingPowerToAccessories",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
           "Generating power"
         ],
         [
-          "https://w3id.org/zorro#HousingAccessoriesAndDrives",
-          "https://w3id.org/zorro#GeneratingPower",
+          "https://w3id.org/ZorroOntology#HousingAccessoriesAndDrives",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
           "Generating power"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#AccurateOilPressureReading",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#AccurateOilPressureReading",
           "Accurate oil pressure reading"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#AccurateTemperatureReading",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#AccurateTemperatureReading",
           "Accurate temperature reading"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#AdequateLubrication",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#AdequateLubrication",
           "Adequate lubrication"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#CoolingEngineWithAirflow",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#CoolingEngineWithAirflow",
           "Cooling engine with airflow"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#LubricatingEngineComponents",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#LubricatingEngineComponents",
           "Lubricating engine components"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#MaintainingOilPressure",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#MaintainingOilPressure",
           "Maintaining oil pressure"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#OilDistribution",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#OilDistribution",
           "Oil distribution"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#OilTemperatureRegulation",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#OilTemperatureRegulation",
           "Oil temperature regulation"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#ProperCooling",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#ProperCooling",
           "Proper cooling"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#ProperEngineCooling",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#ProperEngineCooling",
           "Proper engine cooling"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#ProperLubrication",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#ProperLubrication",
           "Proper lubrication"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#ProperOilFlow",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#ProperOilFlow",
           "Proper oil flow"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#ProperOilPressureRegulation",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#ProperOilPressureRegulation",
           "Proper oil pressure regulation"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#SmoothEngineOperation",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#SmoothEngineOperation",
           "Smooth engine operation"
         ]
       ],
@@ -1917,7 +1917,7 @@
         "predicate_breakdown": [
           {
             "count": 762,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 101,
@@ -1929,15 +1929,15 @@
           },
           {
             "count": 93,
-            "predicate": "https://w3id.org/zorro#subFunctionOf"
+            "predicate": "https://w3id.org/ZorroOntology#subFunctionOf"
           },
           {
             "count": 84,
-            "predicate": "https://w3id.org/zorro#hasFunction"
+            "predicate": "https://w3id.org/ZorroOntology#hasFunction"
           },
           {
             "count": 79,
-            "predicate": "https://w3id.org/zorro#partOf"
+            "predicate": "https://w3id.org/ZorroOntology#partOf"
           },
           {
             "count": 73,
@@ -1945,11 +1945,11 @@
           },
           {
             "count": 60,
-            "predicate": "https://w3id.org/zorro#addressesProblem"
+            "predicate": "https://w3id.org/ZorroOntology#addressesProblem"
           },
           {
             "count": 60,
-            "predicate": "https://w3id.org/zorro#defines"
+            "predicate": "https://w3id.org/ZorroOntology#defines"
           },
           {
             "count": 3,
@@ -1960,13 +1960,13 @@
             "predicate": "__other__"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#Function, https://w3id.org/zorro#GeneratingPower, https://w3id.org/zorro#dependsOn, https://w3id.org/zorro#label, https://w3id.org/zorro#type])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#Function, https://w3id.org/ZorroOntology#GeneratingPower, https://w3id.org/ZorroOntology#dependsOn, https://w3id.org/ZorroOntology#label, https://w3id.org/ZorroOntology#type])",
         "seeds": [
-          "https://w3id.org/zorro#Function",
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#dependsOn",
-          "https://w3id.org/zorro#label",
-          "https://w3id.org/zorro#type"
+          "https://w3id.org/ZorroOntology#Function",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#dependsOn",
+          "https://w3id.org/ZorroOntology#label",
+          "https://w3id.org/ZorroOntology#type"
         ],
         "subject_term_types": {
           "uri": 1415
@@ -1986,480 +1986,480 @@
       "fp": 1,
       "gold_rows": [
         [
-          "https://w3id.org/zorro#AccurateOilPressureReading",
-          "https://w3id.org/zorro#AccurateOilPressureReading"
+          "https://w3id.org/ZorroOntology#AccurateOilPressureReading",
+          "https://w3id.org/ZorroOntology#AccurateOilPressureReading"
         ],
         [
-          "https://w3id.org/zorro#AccurateTemperatureReading",
-          "https://w3id.org/zorro#AccurateTemperatureReading"
+          "https://w3id.org/ZorroOntology#AccurateTemperatureReading",
+          "https://w3id.org/ZorroOntology#AccurateTemperatureReading"
         ],
         [
-          "https://w3id.org/zorro#AdequateLubrication",
-          "https://w3id.org/zorro#AdequateLubrication"
+          "https://w3id.org/ZorroOntology#AdequateLubrication",
+          "https://w3id.org/ZorroOntology#AdequateLubrication"
         ],
         [
-          "https://w3id.org/zorro#Air-FuelIntake",
+          "https://w3id.org/ZorroOntology#Air-FuelIntake",
           "air-fuel intake"
         ],
         [
-          "https://w3id.org/zorro#Air-FuelIntakeControl",
+          "https://w3id.org/ZorroOntology#Air-FuelIntakeControl",
           "air-fuel intake control"
         ],
         [
-          "https://w3id.org/zorro#Air-FuelMixtureContamination",
+          "https://w3id.org/ZorroOntology#Air-FuelMixtureContamination",
           "air-fuel mixture contamination"
         ],
         [
-          "https://w3id.org/zorro#AirIntakeRestriction",
-          "https://w3id.org/zorro#AirIntakeRestriction"
+          "https://w3id.org/ZorroOntology#AirIntakeRestriction",
+          "https://w3id.org/ZorroOntology#AirIntakeRestriction"
         ],
         [
-          "https://w3id.org/zorro#AssistingEngineStart",
-          "https://w3id.org/zorro#AssistingEngineStart"
+          "https://w3id.org/ZorroOntology#AssistingEngineStart",
+          "https://w3id.org/ZorroOntology#AssistingEngineStart"
         ],
         [
-          "https://w3id.org/zorro#BalancedCylinderCompression",
-          "https://w3id.org/zorro#BalancedCylinderCompression"
+          "https://w3id.org/ZorroOntology#BalancedCylinderCompression",
+          "https://w3id.org/ZorroOntology#BalancedCylinderCompression"
         ],
         [
-          "https://w3id.org/zorro#CollectingAndScreeningOil",
-          "https://w3id.org/zorro#CollectingAndScreeningOil"
+          "https://w3id.org/ZorroOntology#CollectingAndScreeningOil",
+          "https://w3id.org/ZorroOntology#CollectingAndScreeningOil"
         ],
         [
-          "https://w3id.org/zorro#ContainingCylindersAndRelatedParts",
-          "https://w3id.org/zorro#ContainingCylindersAndRelatedParts"
+          "https://w3id.org/ZorroOntology#ContainingCylindersAndRelatedParts",
+          "https://w3id.org/ZorroOntology#ContainingCylindersAndRelatedParts"
         ],
         [
-          "https://w3id.org/zorro#ControllingIntakeAndExhaustFlow",
-          "https://w3id.org/zorro#ControllingIntakeAndExhaustFlow"
+          "https://w3id.org/ZorroOntology#ControllingIntakeAndExhaustFlow",
+          "https://w3id.org/ZorroOntology#ControllingIntakeAndExhaustFlow"
         ],
         [
-          "https://w3id.org/zorro#ConvertingLinearToRotationalMotion",
-          "https://w3id.org/zorro#ConvertingLinearToRotationalMotion"
+          "https://w3id.org/ZorroOntology#ConvertingLinearToRotationalMotion",
+          "https://w3id.org/ZorroOntology#ConvertingLinearToRotationalMotion"
         ],
         [
-          "https://w3id.org/zorro#CoolingEngineWithAirflow",
-          "https://w3id.org/zorro#CoolingEngineWithAirflow"
+          "https://w3id.org/ZorroOntology#CoolingEngineWithAirflow",
+          "https://w3id.org/ZorroOntology#CoolingEngineWithAirflow"
         ],
         [
-          "https://w3id.org/zorro#CoreEngineFunctionality",
-          "https://w3id.org/zorro#CoreEngineFunctionality"
+          "https://w3id.org/ZorroOntology#CoreEngineFunctionality",
+          "https://w3id.org/ZorroOntology#CoreEngineFunctionality"
         ],
         [
-          "https://w3id.org/zorro#CorrectFuelType",
-          "https://w3id.org/zorro#CorrectFuelType"
+          "https://w3id.org/ZorroOntology#CorrectFuelType",
+          "https://w3id.org/ZorroOntology#CorrectFuelType"
         ],
         [
-          "https://w3id.org/zorro#CoveringDrivesAndProvidingHousing",
-          "https://w3id.org/zorro#CoveringDrivesAndProvidingHousing"
+          "https://w3id.org/ZorroOntology#CoveringDrivesAndProvidingHousing",
+          "https://w3id.org/ZorroOntology#CoveringDrivesAndProvidingHousing"
         ],
         [
-          "https://w3id.org/zorro#CylinderOperation",
-          "https://w3id.org/zorro#CylinderOperation"
+          "https://w3id.org/ZorroOntology#CylinderOperation",
+          "https://w3id.org/ZorroOntology#CylinderOperation"
         ],
         [
-          "https://w3id.org/zorro#DirectingAir-FuelMixture",
+          "https://w3id.org/ZorroOntology#DirectingAir-FuelMixture",
           "directing air-fuel mixture"
         ],
         [
-          "https://w3id.org/zorro#DistributingFuel-AirMixture",
+          "https://w3id.org/ZorroOntology#DistributingFuel-AirMixture",
           "distributing fuel-air mixture"
         ],
         [
-          "https://w3id.org/zorro#DistributingIgnitionAndSparks",
-          "https://w3id.org/zorro#DistributingIgnitionAndSparks"
+          "https://w3id.org/ZorroOntology#DistributingIgnitionAndSparks",
+          "https://w3id.org/ZorroOntology#DistributingIgnitionAndSparks"
         ],
         [
-          "https://w3id.org/zorro#DistributingIgnitionToCylinders",
-          "https://w3id.org/zorro#DistributingIgnitionToCylinders"
+          "https://w3id.org/ZorroOntology#DistributingIgnitionToCylinders",
+          "https://w3id.org/ZorroOntology#DistributingIgnitionToCylinders"
         ],
         [
-          "https://w3id.org/zorro#DrainingAndCoolingCylinders",
-          "https://w3id.org/zorro#DrainingAndCoolingCylinders"
+          "https://w3id.org/ZorroOntology#DrainingAndCoolingCylinders",
+          "https://w3id.org/ZorroOntology#DrainingAndCoolingCylinders"
         ],
         [
-          "https://w3id.org/zorro#DrivingAndTimingComponents",
-          "https://w3id.org/zorro#DrivingAndTimingComponents"
+          "https://w3id.org/ZorroOntology#DrivingAndTimingComponents",
+          "https://w3id.org/ZorroOntology#DrivingAndTimingComponents"
         ],
         [
-          "https://w3id.org/zorro#DrivingPowerToAccessories",
-          "https://w3id.org/zorro#DrivingPowerToAccessories"
+          "https://w3id.org/ZorroOntology#DrivingPowerToAccessories",
+          "https://w3id.org/ZorroOntology#DrivingPowerToAccessories"
         ],
         [
-          "https://w3id.org/zorro#EngineStability",
-          "https://w3id.org/zorro#EngineStability"
+          "https://w3id.org/ZorroOntology#EngineStability",
+          "https://w3id.org/ZorroOntology#EngineStability"
         ],
         [
-          "https://w3id.org/zorro#ExcessiveFuelDuringStart",
-          "https://w3id.org/zorro#ExcessiveFuelDuringStart"
+          "https://w3id.org/ZorroOntology#ExcessiveFuelDuringStart",
+          "https://w3id.org/ZorroOntology#ExcessiveFuelDuringStart"
         ],
         [
-          "https://w3id.org/zorro#FacilitatingEngineStart",
-          "https://w3id.org/zorro#FacilitatingEngineStart"
+          "https://w3id.org/ZorroOntology#FacilitatingEngineStart",
+          "https://w3id.org/ZorroOntology#FacilitatingEngineStart"
         ],
         [
-          "https://w3id.org/zorro#FilteringOilAndControllingFlow",
-          "https://w3id.org/zorro#FilteringOilAndControllingFlow"
+          "https://w3id.org/ZorroOntology#FilteringOilAndControllingFlow",
+          "https://w3id.org/ZorroOntology#FilteringOilAndControllingFlow"
         ],
         [
-          "https://w3id.org/zorro#Fuel-AirMixtureControl",
+          "https://w3id.org/ZorroOntology#Fuel-AirMixtureControl",
           "fuel-air mixture control"
         ],
         [
-          "https://w3id.org/zorro#Fuel-AirMixtureDistribution",
+          "https://w3id.org/ZorroOntology#Fuel-AirMixtureDistribution",
           "fuel-air mixture distribution"
         ],
         [
-          "https://w3id.org/zorro#FuelDelivery",
-          "https://w3id.org/zorro#FuelDelivery"
+          "https://w3id.org/ZorroOntology#FuelDelivery",
+          "https://w3id.org/ZorroOntology#FuelDelivery"
         ],
         [
-          "https://w3id.org/zorro#FuelDistribution",
-          "https://w3id.org/zorro#FuelDistribution"
+          "https://w3id.org/ZorroOntology#FuelDistribution",
+          "https://w3id.org/ZorroOntology#FuelDistribution"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#GeneratingPower"
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#GeneratingPower"
         ],
         [
-          "https://w3id.org/zorro#HousingAccessoriesAndDrives",
-          "https://w3id.org/zorro#HousingAccessoriesAndDrives"
+          "https://w3id.org/ZorroOntology#HousingAccessoriesAndDrives",
+          "https://w3id.org/ZorroOntology#HousingAccessoriesAndDrives"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#HousingAndSupportingCombustion"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion"
         ],
         [
-          "https://w3id.org/zorro#HousingMainEngine",
-          "https://w3id.org/zorro#HousingMainEngine"
+          "https://w3id.org/ZorroOntology#HousingMainEngine",
+          "https://w3id.org/ZorroOntology#HousingMainEngine"
         ],
         [
-          "https://w3id.org/zorro#HousingMainPowerComponents",
-          "https://w3id.org/zorro#HousingMainPowerComponents"
+          "https://w3id.org/ZorroOntology#HousingMainPowerComponents",
+          "https://w3id.org/ZorroOntology#HousingMainPowerComponents"
         ],
         [
-          "https://w3id.org/zorro#IgnitionTiming",
-          "https://w3id.org/zorro#IgnitionTiming"
+          "https://w3id.org/ZorroOntology#IgnitionTiming",
+          "https://w3id.org/ZorroOntology#IgnitionTiming"
         ],
         [
-          "https://w3id.org/zorro#IgnitionTimingAndDistribution",
-          "https://w3id.org/zorro#IgnitionTimingAndDistribution"
+          "https://w3id.org/ZorroOntology#IgnitionTimingAndDistribution",
+          "https://w3id.org/ZorroOntology#IgnitionTimingAndDistribution"
         ],
         [
-          "https://w3id.org/zorro#IgnitionTransfer",
-          "https://w3id.org/zorro#IgnitionTransfer"
+          "https://w3id.org/ZorroOntology#IgnitionTransfer",
+          "https://w3id.org/ZorroOntology#IgnitionTransfer"
         ],
         [
-          "https://w3id.org/zorro#InitiatingEngineStart",
-          "https://w3id.org/zorro#InitiatingEngineStart"
+          "https://w3id.org/ZorroOntology#InitiatingEngineStart",
+          "https://w3id.org/ZorroOntology#InitiatingEngineStart"
         ],
         [
-          "https://w3id.org/zorro#LubricatingEngineComponents",
-          "https://w3id.org/zorro#LubricatingEngineComponents"
+          "https://w3id.org/ZorroOntology#LubricatingEngineComponents",
+          "https://w3id.org/ZorroOntology#LubricatingEngineComponents"
         ],
         [
-          "https://w3id.org/zorro#MaintainingOilPressure",
-          "https://w3id.org/zorro#MaintainingOilPressure"
+          "https://w3id.org/ZorroOntology#MaintainingOilPressure",
+          "https://w3id.org/ZorroOntology#MaintainingOilPressure"
         ],
         [
-          "https://w3id.org/zorro#ManagingAir-FuelMixtureIntake",
+          "https://w3id.org/ZorroOntology#ManagingAir-FuelMixtureIntake",
           "managing air-fuel mixture intake"
         ],
         [
-          "https://w3id.org/zorro#MeasuringOilQuantity",
-          "https://w3id.org/zorro#MeasuringOilQuantity"
+          "https://w3id.org/ZorroOntology#MeasuringOilQuantity",
+          "https://w3id.org/ZorroOntology#MeasuringOilQuantity"
         ],
         [
-          "https://w3id.org/zorro#MixingAndRegulatingFuel-Air",
+          "https://w3id.org/ZorroOntology#MixingAndRegulatingFuel-Air",
           "mixing and regulating fuel-air"
         ],
         [
-          "https://w3id.org/zorro#OilDistribution",
-          "https://w3id.org/zorro#OilDistribution"
+          "https://w3id.org/ZorroOntology#OilDistribution",
+          "https://w3id.org/ZorroOntology#OilDistribution"
         ],
         [
-          "https://w3id.org/zorro#OilTemperatureRegulation",
-          "https://w3id.org/zorro#OilTemperatureRegulation"
+          "https://w3id.org/ZorroOntology#OilTemperatureRegulation",
+          "https://w3id.org/ZorroOntology#OilTemperatureRegulation"
         ],
         [
-          "https://w3id.org/zorro#PowerOutput",
-          "https://w3id.org/zorro#PowerOutput"
+          "https://w3id.org/ZorroOntology#PowerOutput",
+          "https://w3id.org/ZorroOntology#PowerOutput"
         ],
         [
-          "https://w3id.org/zorro#PowerSupplyForStarting",
-          "https://w3id.org/zorro#PowerSupplyForStarting"
+          "https://w3id.org/ZorroOntology#PowerSupplyForStarting",
+          "https://w3id.org/ZorroOntology#PowerSupplyForStarting"
         ],
         [
-          "https://w3id.org/zorro#ProperAir-FuelIntake",
+          "https://w3id.org/ZorroOntology#ProperAir-FuelIntake",
           "proper air-fuel intake"
         ],
         [
-          "https://w3id.org/zorro#ProperAir-FuelMixture",
+          "https://w3id.org/ZorroOntology#ProperAir-FuelMixture",
           "proper air-fuel mixture"
         ],
         [
-          "https://w3id.org/zorro#ProperCooling",
-          "https://w3id.org/zorro#ProperCooling"
+          "https://w3id.org/ZorroOntology#ProperCooling",
+          "https://w3id.org/ZorroOntology#ProperCooling"
         ],
         [
-          "https://w3id.org/zorro#ProperCylinderSealing",
-          "https://w3id.org/zorro#ProperCylinderSealing"
+          "https://w3id.org/ZorroOntology#ProperCylinderSealing",
+          "https://w3id.org/ZorroOntology#ProperCylinderSealing"
         ],
         [
-          "https://w3id.org/zorro#ProperEngineCooling",
-          "https://w3id.org/zorro#ProperEngineCooling"
+          "https://w3id.org/ZorroOntology#ProperEngineCooling",
+          "https://w3id.org/ZorroOntology#ProperEngineCooling"
         ],
         [
-          "https://w3id.org/zorro#ProperIgnition",
-          "https://w3id.org/zorro#ProperIgnition"
+          "https://w3id.org/ZorroOntology#ProperIgnition",
+          "https://w3id.org/ZorroOntology#ProperIgnition"
         ],
         [
-          "https://w3id.org/zorro#ProperIgnitionTiming",
-          "https://w3id.org/zorro#ProperIgnitionTiming"
+          "https://w3id.org/ZorroOntology#ProperIgnitionTiming",
+          "https://w3id.org/ZorroOntology#ProperIgnitionTiming"
         ],
         [
-          "https://w3id.org/zorro#ProperIgnitionTimingAndDistribution",
-          "https://w3id.org/zorro#ProperIgnitionTimingAndDistribution"
+          "https://w3id.org/ZorroOntology#ProperIgnitionTimingAndDistribution",
+          "https://w3id.org/ZorroOntology#ProperIgnitionTimingAndDistribution"
         ],
         [
-          "https://w3id.org/zorro#ProperLubrication",
-          "https://w3id.org/zorro#ProperLubrication"
+          "https://w3id.org/ZorroOntology#ProperLubrication",
+          "https://w3id.org/ZorroOntology#ProperLubrication"
         ],
         [
-          "https://w3id.org/zorro#ProperOilFlow",
-          "https://w3id.org/zorro#ProperOilFlow"
+          "https://w3id.org/ZorroOntology#ProperOilFlow",
+          "https://w3id.org/ZorroOntology#ProperOilFlow"
         ],
         [
-          "https://w3id.org/zorro#ProperOilPressureRegulation",
-          "https://w3id.org/zorro#ProperOilPressureRegulation"
+          "https://w3id.org/ZorroOntology#ProperOilPressureRegulation",
+          "https://w3id.org/ZorroOntology#ProperOilPressureRegulation"
         ],
         [
-          "https://w3id.org/zorro#ProvidingElectricalPower",
-          "https://w3id.org/zorro#ProvidingElectricalPower"
+          "https://w3id.org/ZorroOntology#ProvidingElectricalPower",
+          "https://w3id.org/ZorroOntology#ProvidingElectricalPower"
         ],
         [
-          "https://w3id.org/zorro#PumpingFuelAndSecuringComponents",
-          "https://w3id.org/zorro#PumpingFuelAndSecuringComponents"
+          "https://w3id.org/ZorroOntology#PumpingFuelAndSecuringComponents",
+          "https://w3id.org/ZorroOntology#PumpingFuelAndSecuringComponents"
         ],
         [
-          "https://w3id.org/zorro#PumpingOilAndAttachingHousing",
-          "https://w3id.org/zorro#PumpingOilAndAttachingHousing"
+          "https://w3id.org/ZorroOntology#PumpingOilAndAttachingHousing",
+          "https://w3id.org/ZorroOntology#PumpingOilAndAttachingHousing"
         ],
         [
-          "https://w3id.org/zorro#RegulatingOilFlowAndPressure",
-          "https://w3id.org/zorro#RegulatingOilFlowAndPressure"
+          "https://w3id.org/ZorroOntology#RegulatingOilFlowAndPressure",
+          "https://w3id.org/ZorroOntology#RegulatingOilFlowAndPressure"
         ],
         [
-          "https://w3id.org/zorro#SecuringAndSupportingAlternator",
-          "https://w3id.org/zorro#SecuringAndSupportingAlternator"
+          "https://w3id.org/ZorroOntology#SecuringAndSupportingAlternator",
+          "https://w3id.org/ZorroOntology#SecuringAndSupportingAlternator"
         ],
         [
-          "https://w3id.org/zorro#SecuringCrankcaseComponents",
-          "https://w3id.org/zorro#SecuringCrankcaseComponents"
+          "https://w3id.org/ZorroOntology#SecuringCrankcaseComponents",
+          "https://w3id.org/ZorroOntology#SecuringCrankcaseComponents"
         ],
         [
-          "https://w3id.org/zorro#SmoothEngineOperation",
-          "https://w3id.org/zorro#SmoothEngineOperation"
+          "https://w3id.org/ZorroOntology#SmoothEngineOperation",
+          "https://w3id.org/ZorroOntology#SmoothEngineOperation"
         ],
         [
-          "https://w3id.org/zorro#SupportingCrankcaseOperation",
-          "https://w3id.org/zorro#SupportingCrankcaseOperation"
+          "https://w3id.org/ZorroOntology#SupportingCrankcaseOperation",
+          "https://w3id.org/ZorroOntology#SupportingCrankcaseOperation"
         ],
         [
-          "https://w3id.org/zorro#SupportingCylinderOperation",
-          "https://w3id.org/zorro#SupportingCylinderOperation"
+          "https://w3id.org/ZorroOntology#SupportingCylinderOperation",
+          "https://w3id.org/ZorroOntology#SupportingCylinderOperation"
         ],
         [
-          "https://w3id.org/zorro#TransmittingMotionAndSealingChamber",
-          "https://w3id.org/zorro#TransmittingMotionAndSealingChamber"
+          "https://w3id.org/ZorroOntology#TransmittingMotionAndSealingChamber",
+          "https://w3id.org/ZorroOntology#TransmittingMotionAndSealingChamber"
         ]
       ],
       "precision": 0.9565217391304348,
       "pred_rows": [
         [
-          "https://w3id.org/zorro#Air-FuelIntake",
+          "https://w3id.org/ZorroOntology#Air-FuelIntake",
           "air-fuel intake"
         ],
         [
-          "https://w3id.org/zorro#Air-FuelIntakeControl",
+          "https://w3id.org/ZorroOntology#Air-FuelIntakeControl",
           "air-fuel intake control"
         ],
         [
-          "https://w3id.org/zorro#Air-FuelMixtureContamination",
+          "https://w3id.org/ZorroOntology#Air-FuelMixtureContamination",
           "air-fuel mixture contamination"
         ],
         [
-          "https://w3id.org/zorro#DistributingFuel-AirMixture",
+          "https://w3id.org/ZorroOntology#DistributingFuel-AirMixture",
           "distributing fuel-air mixture"
         ],
         [
-          "https://w3id.org/zorro#DistributingIgnition",
-          "https://w3id.org/zorro#DistributingIgnition"
+          "https://w3id.org/ZorroOntology#DistributingIgnition",
+          "https://w3id.org/ZorroOntology#DistributingIgnition"
         ],
         [
-          "https://w3id.org/zorro#DistributingIgnitionToCylinders",
-          "https://w3id.org/zorro#DistributingIgnitionToCylinders"
+          "https://w3id.org/ZorroOntology#DistributingIgnitionToCylinders",
+          "https://w3id.org/ZorroOntology#DistributingIgnitionToCylinders"
         ],
         [
-          "https://w3id.org/zorro#DrivingAndTimingComponents",
-          "https://w3id.org/zorro#DrivingAndTimingComponents"
+          "https://w3id.org/ZorroOntology#DrivingAndTimingComponents",
+          "https://w3id.org/ZorroOntology#DrivingAndTimingComponents"
         ],
         [
-          "https://w3id.org/zorro#Fuel-AirMixtureControl",
+          "https://w3id.org/ZorroOntology#Fuel-AirMixtureControl",
           "fuel-air mixture control"
         ],
         [
-          "https://w3id.org/zorro#Fuel-AirMixtureDistribution",
+          "https://w3id.org/ZorroOntology#Fuel-AirMixtureDistribution",
           "fuel-air mixture distribution"
         ],
         [
-          "https://w3id.org/zorro#FuelDelivery",
-          "https://w3id.org/zorro#FuelDelivery"
+          "https://w3id.org/ZorroOntology#FuelDelivery",
+          "https://w3id.org/ZorroOntology#FuelDelivery"
         ],
         [
-          "https://w3id.org/zorro#FuelDistribution",
-          "https://w3id.org/zorro#FuelDistribution"
+          "https://w3id.org/ZorroOntology#FuelDistribution",
+          "https://w3id.org/ZorroOntology#FuelDistribution"
         ],
         [
-          "https://w3id.org/zorro#IgnitionTiming",
-          "https://w3id.org/zorro#IgnitionTiming"
+          "https://w3id.org/ZorroOntology#IgnitionTiming",
+          "https://w3id.org/ZorroOntology#IgnitionTiming"
         ],
         [
-          "https://w3id.org/zorro#IgnitionTimingAndDistribution",
-          "https://w3id.org/zorro#IgnitionTimingAndDistribution"
+          "https://w3id.org/ZorroOntology#IgnitionTimingAndDistribution",
+          "https://w3id.org/ZorroOntology#IgnitionTimingAndDistribution"
         ],
         [
-          "https://w3id.org/zorro#IgnitionTransfer",
-          "https://w3id.org/zorro#IgnitionTransfer"
+          "https://w3id.org/ZorroOntology#IgnitionTransfer",
+          "https://w3id.org/ZorroOntology#IgnitionTransfer"
         ],
         [
-          "https://w3id.org/zorro#MaintainingOilPressure",
-          "https://w3id.org/zorro#MaintainingOilPressure"
+          "https://w3id.org/ZorroOntology#MaintainingOilPressure",
+          "https://w3id.org/ZorroOntology#MaintainingOilPressure"
         ],
         [
-          "https://w3id.org/zorro#MeasuringOilQuantity",
-          "https://w3id.org/zorro#MeasuringOilQuantity"
+          "https://w3id.org/ZorroOntology#MeasuringOilQuantity",
+          "https://w3id.org/ZorroOntology#MeasuringOilQuantity"
         ],
         [
-          "https://w3id.org/zorro#OilDistribution",
-          "https://w3id.org/zorro#OilDistribution"
+          "https://w3id.org/ZorroOntology#OilDistribution",
+          "https://w3id.org/ZorroOntology#OilDistribution"
         ],
         [
-          "https://w3id.org/zorro#OilTemperatureRegulation",
-          "https://w3id.org/zorro#OilTemperatureRegulation"
+          "https://w3id.org/ZorroOntology#OilTemperatureRegulation",
+          "https://w3id.org/ZorroOntology#OilTemperatureRegulation"
         ],
         [
-          "https://w3id.org/zorro#ProperLubrication",
-          "https://w3id.org/zorro#ProperLubrication"
+          "https://w3id.org/ZorroOntology#ProperLubrication",
+          "https://w3id.org/ZorroOntology#ProperLubrication"
         ],
         [
-          "https://w3id.org/zorro#ProperOilFlow",
-          "https://w3id.org/zorro#ProperOilFlow"
+          "https://w3id.org/ZorroOntology#ProperOilFlow",
+          "https://w3id.org/ZorroOntology#ProperOilFlow"
         ],
         [
-          "https://w3id.org/zorro#ProperOilPressureRegulation",
-          "https://w3id.org/zorro#ProperOilPressureRegulation"
+          "https://w3id.org/ZorroOntology#ProperOilPressureRegulation",
+          "https://w3id.org/ZorroOntology#ProperOilPressureRegulation"
         ],
         [
-          "https://w3id.org/zorro#PumpingFuelAndSecuringComponents",
-          "https://w3id.org/zorro#PumpingFuelAndSecuringComponents"
+          "https://w3id.org/ZorroOntology#PumpingFuelAndSecuringComponents",
+          "https://w3id.org/ZorroOntology#PumpingFuelAndSecuringComponents"
         ],
         [
-          "https://w3id.org/zorro#RegulatingOilFlowAndPressure",
-          "https://w3id.org/zorro#RegulatingOilFlowAndPressure"
+          "https://w3id.org/ZorroOntology#RegulatingOilFlowAndPressure",
+          "https://w3id.org/ZorroOntology#RegulatingOilFlowAndPressure"
         ]
       ],
       "pred_rows_raw": [
         [
-          "https://w3id.org/zorro#PumpingFuelAndSecuringComponents",
+          "https://w3id.org/ZorroOntology#PumpingFuelAndSecuringComponents",
           "Pumping fuel and securing components"
         ],
         [
-          "https://w3id.org/zorro#DistributingIgnition",
+          "https://w3id.org/ZorroOntology#DistributingIgnition",
           "Distributing ignition"
         ],
         [
-          "https://w3id.org/zorro#DrivingAndTimingComponents",
+          "https://w3id.org/ZorroOntology#DrivingAndTimingComponents",
           "Driving and timing components"
         ],
         [
-          "https://w3id.org/zorro#DistributingIgnitionToCylinders",
+          "https://w3id.org/ZorroOntology#DistributingIgnitionToCylinders",
           "Distributing ignition to cylinders"
         ],
         [
-          "https://w3id.org/zorro#IgnitionTiming",
+          "https://w3id.org/ZorroOntology#IgnitionTiming",
           "Ignition timing"
         ],
         [
-          "https://w3id.org/zorro#IgnitionTimingAndDistribution",
+          "https://w3id.org/ZorroOntology#IgnitionTimingAndDistribution",
           "Ignition timing and distribution"
         ],
         [
-          "https://w3id.org/zorro#IgnitionTransfer",
+          "https://w3id.org/ZorroOntology#IgnitionTransfer",
           "Ignition transfer"
         ],
         [
-          "https://w3id.org/zorro#DistributingFuel-AirMixture",
+          "https://w3id.org/ZorroOntology#DistributingFuel-AirMixture",
           "Distributing fuel-air mixture"
         ],
         [
-          "https://w3id.org/zorro#FuelDelivery",
+          "https://w3id.org/ZorroOntology#FuelDelivery",
           "Fuel delivery"
         ],
         [
-          "https://w3id.org/zorro#FuelDistribution",
+          "https://w3id.org/ZorroOntology#FuelDistribution",
           "Fuel distribution"
         ],
         [
-          "https://w3id.org/zorro#Air-FuelIntake",
+          "https://w3id.org/ZorroOntology#Air-FuelIntake",
           "Air-fuel intake"
         ],
         [
-          "https://w3id.org/zorro#Air-FuelIntakeControl",
+          "https://w3id.org/ZorroOntology#Air-FuelIntakeControl",
           "Air-fuel intake control"
         ],
         [
-          "https://w3id.org/zorro#Air-FuelMixtureContamination",
+          "https://w3id.org/ZorroOntology#Air-FuelMixtureContamination",
           "Air-fuel mixture contamination"
         ],
         [
-          "https://w3id.org/zorro#Fuel-AirMixtureControl",
+          "https://w3id.org/ZorroOntology#Fuel-AirMixtureControl",
           "Fuel-air mixture control"
         ],
         [
-          "https://w3id.org/zorro#Fuel-AirMixtureDistribution",
+          "https://w3id.org/ZorroOntology#Fuel-AirMixtureDistribution",
           "Fuel-air mixture distribution"
         ],
         [
-          "https://w3id.org/zorro#OilTemperatureRegulation",
+          "https://w3id.org/ZorroOntology#OilTemperatureRegulation",
           "Oil temperature regulation"
         ],
         [
-          "https://w3id.org/zorro#RegulatingOilFlowAndPressure",
+          "https://w3id.org/ZorroOntology#RegulatingOilFlowAndPressure",
           "Regulating oil flow and pressure"
         ],
         [
-          "https://w3id.org/zorro#MeasuringOilQuantity",
+          "https://w3id.org/ZorroOntology#MeasuringOilQuantity",
           "Measuring oil quantity"
         ],
         [
-          "https://w3id.org/zorro#MaintainingOilPressure",
+          "https://w3id.org/ZorroOntology#MaintainingOilPressure",
           "Maintaining oil pressure"
         ],
         [
-          "https://w3id.org/zorro#OilDistribution",
+          "https://w3id.org/ZorroOntology#OilDistribution",
           "Oil distribution"
         ],
         [
-          "https://w3id.org/zorro#ProperLubrication",
+          "https://w3id.org/ZorroOntology#ProperLubrication",
           "Proper lubrication"
         ],
         [
-          "https://w3id.org/zorro#ProperOilFlow",
+          "https://w3id.org/ZorroOntology#ProperOilFlow",
           "Proper oil flow"
         ],
         [
-          "https://w3id.org/zorro#ProperOilPressureRegulation",
+          "https://w3id.org/ZorroOntology#ProperOilPressureRegulation",
           "Proper oil pressure regulation"
         ]
       ],
@@ -2475,11 +2475,11 @@
         "predicate_breakdown": [
           {
             "count": 804,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 432,
-            "predicate": "https://w3id.org/zorro#partOf"
+            "predicate": "https://w3id.org/ZorroOntology#partOf"
           },
           {
             "count": 262,
@@ -2495,37 +2495,37 @@
           },
           {
             "count": 93,
-            "predicate": "https://w3id.org/zorro#subFunctionOf"
+            "predicate": "https://w3id.org/ZorroOntology#subFunctionOf"
           },
           {
             "count": 84,
-            "predicate": "https://w3id.org/zorro#hasFunction"
+            "predicate": "https://w3id.org/ZorroOntology#hasFunction"
           },
           {
             "count": 74,
-            "predicate": "https://w3id.org/zorro#partNumber"
+            "predicate": "https://w3id.org/ZorroOntology#partNumber"
           },
           {
             "count": 60,
-            "predicate": "https://w3id.org/zorro#addressesProblem"
+            "predicate": "https://w3id.org/ZorroOntology#addressesProblem"
           },
           {
             "count": 60,
-            "predicate": "https://w3id.org/zorro#defines"
+            "predicate": "https://w3id.org/ZorroOntology#defines"
           },
           {
             "count": 83,
             "predicate": "__other__"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#Function, https://w3id.org/zorro#PowerSection, https://w3id.org/zorro#dependsOn, https://w3id.org/zorro#hasFunction, https://w3id.org/zorro#label, https://w3id.org/zorro#type])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#Function, https://w3id.org/ZorroOntology#PowerSection, https://w3id.org/ZorroOntology#dependsOn, https://w3id.org/ZorroOntology#hasFunction, https://w3id.org/ZorroOntology#label, https://w3id.org/ZorroOntology#type])",
         "seeds": [
-          "https://w3id.org/zorro#Function",
-          "https://w3id.org/zorro#PowerSection",
-          "https://w3id.org/zorro#dependsOn",
-          "https://w3id.org/zorro#hasFunction",
-          "https://w3id.org/zorro#label",
-          "https://w3id.org/zorro#type"
+          "https://w3id.org/ZorroOntology#Function",
+          "https://w3id.org/ZorroOntology#PowerSection",
+          "https://w3id.org/ZorroOntology#dependsOn",
+          "https://w3id.org/ZorroOntology#hasFunction",
+          "https://w3id.org/ZorroOntology#label",
+          "https://w3id.org/ZorroOntology#type"
         ],
         "subject_term_types": {
           "bnode": 57,
@@ -2548,740 +2548,740 @@
       "fp": 35,
       "gold_rows": [
         [
-          "https://w3id.org/zorro#AccurateOilPressureReading",
-          "https://w3id.org/zorro#AccurateOilPressureReading",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#AccurateOilPressureReading",
+          "https://w3id.org/ZorroOntology#AccurateOilPressureReading",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "18"
         ],
         [
-          "https://w3id.org/zorro#AdequateLubrication",
-          "https://w3id.org/zorro#AdequateLubrication",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#AdequateLubrication",
+          "https://w3id.org/ZorroOntology#AdequateLubrication",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "18"
         ],
         [
-          "https://w3id.org/zorro#BalancedCylinderCompression",
-          "https://w3id.org/zorro#BalancedCylinderCompression",
-          "https://w3id.org/zorro#CylinderSection",
+          "https://w3id.org/ZorroOntology#BalancedCylinderCompression",
+          "https://w3id.org/ZorroOntology#BalancedCylinderCompression",
+          "https://w3id.org/ZorroOntology#CylinderSection",
           "5"
         ],
         [
-          "https://w3id.org/zorro#ContainingCylindersAndRelatedParts",
-          "https://w3id.org/zorro#ContainingCylindersAndRelatedParts",
-          "https://w3id.org/zorro#CylinderSection",
+          "https://w3id.org/ZorroOntology#ContainingCylindersAndRelatedParts",
+          "https://w3id.org/ZorroOntology#ContainingCylindersAndRelatedParts",
+          "https://w3id.org/ZorroOntology#CylinderSection",
           "5"
         ],
         [
-          "https://w3id.org/zorro#CoreEngineFunctionality",
-          "https://w3id.org/zorro#CoreEngineFunctionality",
-          "https://w3id.org/zorro#PowerSection",
+          "https://w3id.org/ZorroOntology#CoreEngineFunctionality",
+          "https://w3id.org/ZorroOntology#CoreEngineFunctionality",
+          "https://w3id.org/ZorroOntology#PowerSection",
           "48"
         ],
         [
-          "https://w3id.org/zorro#CorrectFuelType",
-          "https://w3id.org/zorro#CorrectFuelType",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#CorrectFuelType",
+          "https://w3id.org/ZorroOntology#CorrectFuelType",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#CylinderOperation",
-          "https://w3id.org/zorro#CylinderOperation",
-          "https://w3id.org/zorro#CylinderSection",
+          "https://w3id.org/ZorroOntology#CylinderOperation",
+          "https://w3id.org/ZorroOntology#CylinderOperation",
+          "https://w3id.org/ZorroOntology#CylinderSection",
           "5"
         ],
         [
-          "https://w3id.org/zorro#DistributingFuel-AirMixture",
+          "https://w3id.org/ZorroOntology#DistributingFuel-AirMixture",
           "distributing fuel-air mixture",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#DistributingIgnitionToCylinders",
-          "https://w3id.org/zorro#DistributingIgnitionToCylinders",
-          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "https://w3id.org/ZorroOntology#DistributingIgnitionToCylinders",
+          "https://w3id.org/ZorroOntology#DistributingIgnitionToCylinders",
+          "https://w3id.org/ZorroOntology#IgnitionDistributionSystem",
           "1"
         ],
         [
-          "https://w3id.org/zorro#DrivingPowerToAccessories",
-          "https://w3id.org/zorro#DrivingPowerToAccessories",
-          "https://w3id.org/zorro#AccessoryDrives",
+          "https://w3id.org/ZorroOntology#DrivingPowerToAccessories",
+          "https://w3id.org/ZorroOntology#DrivingPowerToAccessories",
+          "https://w3id.org/ZorroOntology#AccessoryDrives",
           "12"
         ],
         [
-          "https://w3id.org/zorro#EngineStability",
-          "https://w3id.org/zorro#EngineStability",
-          "https://w3id.org/zorro#PowerSection",
+          "https://w3id.org/ZorroOntology#EngineStability",
+          "https://w3id.org/ZorroOntology#EngineStability",
+          "https://w3id.org/ZorroOntology#PowerSection",
           "48"
         ],
         [
-          "https://w3id.org/zorro#FacilitatingEngineStart",
-          "https://w3id.org/zorro#FacilitatingEngineStart",
-          "https://w3id.org/zorro#CrankingSection",
+          "https://w3id.org/ZorroOntology#FacilitatingEngineStart",
+          "https://w3id.org/ZorroOntology#FacilitatingEngineStart",
+          "https://w3id.org/ZorroOntology#CrankingSection",
           "3"
         ],
         [
-          "https://w3id.org/zorro#Fuel-AirMixtureControl",
+          "https://w3id.org/ZorroOntology#Fuel-AirMixtureControl",
           "fuel-air mixture control",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#Fuel-AirMixtureDistribution",
+          "https://w3id.org/ZorroOntology#Fuel-AirMixtureDistribution",
           "fuel-air mixture distribution",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#FuelDelivery",
-          "https://w3id.org/zorro#FuelDelivery",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDelivery",
+          "https://w3id.org/ZorroOntology#FuelDelivery",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#FuelDistribution",
-          "https://w3id.org/zorro#FuelDistribution",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistribution",
+          "https://w3id.org/ZorroOntology#FuelDistribution",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#PowerSection",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#PowerSection",
           "48"
         ],
         [
-          "https://w3id.org/zorro#HousingMainPowerComponents",
-          "https://w3id.org/zorro#HousingMainPowerComponents",
-          "https://w3id.org/zorro#PowerSection",
+          "https://w3id.org/ZorroOntology#HousingMainPowerComponents",
+          "https://w3id.org/ZorroOntology#HousingMainPowerComponents",
+          "https://w3id.org/ZorroOntology#PowerSection",
           "48"
         ],
         [
-          "https://w3id.org/zorro#IgnitionTiming",
-          "https://w3id.org/zorro#IgnitionTiming",
-          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "https://w3id.org/ZorroOntology#IgnitionTiming",
+          "https://w3id.org/ZorroOntology#IgnitionTiming",
+          "https://w3id.org/ZorroOntology#IgnitionDistributionSystem",
           "1"
         ],
         [
-          "https://w3id.org/zorro#IgnitionTimingAndDistribution",
-          "https://w3id.org/zorro#IgnitionTimingAndDistribution",
-          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "https://w3id.org/ZorroOntology#IgnitionTimingAndDistribution",
+          "https://w3id.org/ZorroOntology#IgnitionTimingAndDistribution",
+          "https://w3id.org/ZorroOntology#IgnitionDistributionSystem",
           "1"
         ],
         [
-          "https://w3id.org/zorro#IgnitionTransfer",
-          "https://w3id.org/zorro#IgnitionTransfer",
-          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "https://w3id.org/ZorroOntology#IgnitionTransfer",
+          "https://w3id.org/ZorroOntology#IgnitionTransfer",
+          "https://w3id.org/ZorroOntology#IgnitionDistributionSystem",
           "1"
         ],
         [
-          "https://w3id.org/zorro#InitiatingEngineStart",
-          "https://w3id.org/zorro#InitiatingEngineStart",
-          "https://w3id.org/zorro#CrankingSection",
+          "https://w3id.org/ZorroOntology#InitiatingEngineStart",
+          "https://w3id.org/ZorroOntology#InitiatingEngineStart",
+          "https://w3id.org/ZorroOntology#CrankingSection",
           "3"
         ],
         [
-          "https://w3id.org/zorro#LubricatingEngineComponents",
-          "https://w3id.org/zorro#LubricatingEngineComponents",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#LubricatingEngineComponents",
+          "https://w3id.org/ZorroOntology#LubricatingEngineComponents",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "18"
         ],
         [
-          "https://w3id.org/zorro#MaintainingOilPressure",
-          "https://w3id.org/zorro#MaintainingOilPressure",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#MaintainingOilPressure",
+          "https://w3id.org/ZorroOntology#MaintainingOilPressure",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "18"
         ],
         [
-          "https://w3id.org/zorro#OilDistribution",
-          "https://w3id.org/zorro#OilDistribution",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#OilDistribution",
+          "https://w3id.org/ZorroOntology#OilDistribution",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "18"
         ],
         [
-          "https://w3id.org/zorro#OilTemperatureRegulation",
-          "https://w3id.org/zorro#OilTemperatureRegulation",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#OilTemperatureRegulation",
+          "https://w3id.org/ZorroOntology#OilTemperatureRegulation",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "18"
         ],
         [
-          "https://w3id.org/zorro#PowerOutput",
-          "https://w3id.org/zorro#PowerOutput",
-          "https://w3id.org/zorro#PowerSection",
+          "https://w3id.org/ZorroOntology#PowerOutput",
+          "https://w3id.org/ZorroOntology#PowerOutput",
+          "https://w3id.org/ZorroOntology#PowerSection",
           "48"
         ],
         [
-          "https://w3id.org/zorro#PowerSupplyForStarting",
-          "https://w3id.org/zorro#PowerSupplyForStarting",
-          "https://w3id.org/zorro#ElectricalPower",
+          "https://w3id.org/ZorroOntology#PowerSupplyForStarting",
+          "https://w3id.org/ZorroOntology#PowerSupplyForStarting",
+          "https://w3id.org/ZorroOntology#ElectricalPower",
           "3"
         ],
         [
-          "https://w3id.org/zorro#ProperAir-FuelMixture",
+          "https://w3id.org/ZorroOntology#ProperAir-FuelMixture",
           "proper air-fuel mixture",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#ProperCylinderSealing",
-          "https://w3id.org/zorro#ProperCylinderSealing",
-          "https://w3id.org/zorro#CylinderSection",
+          "https://w3id.org/ZorroOntology#ProperCylinderSealing",
+          "https://w3id.org/ZorroOntology#ProperCylinderSealing",
+          "https://w3id.org/ZorroOntology#CylinderSection",
           "5"
         ],
         [
-          "https://w3id.org/zorro#ProperIgnition",
-          "https://w3id.org/zorro#ProperIgnition",
-          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "https://w3id.org/ZorroOntology#ProperIgnition",
+          "https://w3id.org/ZorroOntology#ProperIgnition",
+          "https://w3id.org/ZorroOntology#IgnitionDistributionSystem",
           "1"
         ],
         [
-          "https://w3id.org/zorro#ProperIgnitionTiming",
-          "https://w3id.org/zorro#ProperIgnitionTiming",
-          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "https://w3id.org/ZorroOntology#ProperIgnitionTiming",
+          "https://w3id.org/ZorroOntology#ProperIgnitionTiming",
+          "https://w3id.org/ZorroOntology#IgnitionDistributionSystem",
           "1"
         ],
         [
-          "https://w3id.org/zorro#ProperIgnitionTimingAndDistribution",
-          "https://w3id.org/zorro#ProperIgnitionTimingAndDistribution",
-          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "https://w3id.org/ZorroOntology#ProperIgnitionTimingAndDistribution",
+          "https://w3id.org/ZorroOntology#ProperIgnitionTimingAndDistribution",
+          "https://w3id.org/ZorroOntology#IgnitionDistributionSystem",
           "1"
         ],
         [
-          "https://w3id.org/zorro#ProperLubrication",
-          "https://w3id.org/zorro#ProperLubrication",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#ProperLubrication",
+          "https://w3id.org/ZorroOntology#ProperLubrication",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "18"
         ],
         [
-          "https://w3id.org/zorro#ProperOilFlow",
-          "https://w3id.org/zorro#ProperOilFlow",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#ProperOilFlow",
+          "https://w3id.org/ZorroOntology#ProperOilFlow",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "18"
         ],
         [
-          "https://w3id.org/zorro#ProperOilPressureRegulation",
-          "https://w3id.org/zorro#ProperOilPressureRegulation",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#ProperOilPressureRegulation",
+          "https://w3id.org/ZorroOntology#ProperOilPressureRegulation",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "18"
         ],
         [
-          "https://w3id.org/zorro#ProvidingElectricalPower",
-          "https://w3id.org/zorro#ProvidingElectricalPower",
-          "https://w3id.org/zorro#ElectricalPower",
+          "https://w3id.org/ZorroOntology#ProvidingElectricalPower",
+          "https://w3id.org/ZorroOntology#ProvidingElectricalPower",
+          "https://w3id.org/ZorroOntology#ElectricalPower",
           "3"
         ],
         [
-          "https://w3id.org/zorro#SmoothEngineOperation",
-          "https://w3id.org/zorro#SmoothEngineOperation",
-          "https://w3id.org/zorro#PowerSection",
+          "https://w3id.org/ZorroOntology#SmoothEngineOperation",
+          "https://w3id.org/ZorroOntology#SmoothEngineOperation",
+          "https://w3id.org/ZorroOntology#PowerSection",
           "48"
         ]
       ],
       "precision": 0.16666666666666666,
       "pred_rows": [
         [
-          "https://w3id.org/zorro#AccurateOilPressureReading",
-          "https://w3id.org/zorro#AccurateOilPressureReading",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#AccurateOilPressureReading",
+          "https://w3id.org/ZorroOntology#AccurateOilPressureReading",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "9"
         ],
         [
-          "https://w3id.org/zorro#AdequateLubrication",
-          "https://w3id.org/zorro#AdequateLubrication",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#AdequateLubrication",
+          "https://w3id.org/ZorroOntology#AdequateLubrication",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "9"
         ],
         [
-          "https://w3id.org/zorro#BalancedCylinderCompression",
-          "https://w3id.org/zorro#BalancedCylinderCompression",
-          "https://w3id.org/zorro#CylinderSection",
+          "https://w3id.org/ZorroOntology#BalancedCylinderCompression",
+          "https://w3id.org/ZorroOntology#BalancedCylinderCompression",
+          "https://w3id.org/ZorroOntology#CylinderSection",
           "4"
         ],
         [
-          "https://w3id.org/zorro#ContainingCylindersAndRelatedParts",
-          "https://w3id.org/zorro#ContainingCylindersAndRelatedParts",
-          "https://w3id.org/zorro#CylinderSection",
+          "https://w3id.org/ZorroOntology#ContainingCylindersAndRelatedParts",
+          "https://w3id.org/ZorroOntology#ContainingCylindersAndRelatedParts",
+          "https://w3id.org/ZorroOntology#CylinderSection",
           "4"
         ],
         [
-          "https://w3id.org/zorro#CoreEngineFunctionality",
-          "https://w3id.org/zorro#CoreEngineFunctionality",
-          "https://w3id.org/zorro#PowerSection",
+          "https://w3id.org/ZorroOntology#CoreEngineFunctionality",
+          "https://w3id.org/ZorroOntology#CoreEngineFunctionality",
+          "https://w3id.org/ZorroOntology#PowerSection",
           "6"
         ],
         [
-          "https://w3id.org/zorro#CorrectFuelType",
-          "https://w3id.org/zorro#CorrectFuelType",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#CorrectFuelType",
+          "https://w3id.org/ZorroOntology#CorrectFuelType",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#CylinderOperation",
-          "https://w3id.org/zorro#CylinderOperation",
-          "https://w3id.org/zorro#CylinderSection",
+          "https://w3id.org/ZorroOntology#CylinderOperation",
+          "https://w3id.org/ZorroOntology#CylinderOperation",
+          "https://w3id.org/ZorroOntology#CylinderSection",
           "4"
         ],
         [
-          "https://w3id.org/zorro#DistributingFuel-AirMixture",
+          "https://w3id.org/ZorroOntology#DistributingFuel-AirMixture",
           "distributing fuel-air mixture",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#DistributingFuelAirMixture",
+          "https://w3id.org/ZorroOntology#DistributingFuelAirMixture",
           "distributing fuel-air mixture",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#DistributingIgnitionToCylinders",
-          "https://w3id.org/zorro#DistributingIgnitionToCylinders",
-          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "https://w3id.org/ZorroOntology#DistributingIgnitionToCylinders",
+          "https://w3id.org/ZorroOntology#DistributingIgnitionToCylinders",
+          "https://w3id.org/ZorroOntology#IgnitionDistributionSystem",
           "7"
         ],
         [
-          "https://w3id.org/zorro#DrivingPowerToAccessories",
-          "https://w3id.org/zorro#DrivingPowerToAccessories",
-          "https://w3id.org/zorro#AccessoryDrives",
+          "https://w3id.org/ZorroOntology#DrivingPowerToAccessories",
+          "https://w3id.org/ZorroOntology#DrivingPowerToAccessories",
+          "https://w3id.org/ZorroOntology#AccessoryDrives",
           "1"
         ],
         [
-          "https://w3id.org/zorro#EngineStability",
-          "https://w3id.org/zorro#EngineStability",
-          "https://w3id.org/zorro#PowerSection",
+          "https://w3id.org/ZorroOntology#EngineStability",
+          "https://w3id.org/ZorroOntology#EngineStability",
+          "https://w3id.org/ZorroOntology#PowerSection",
           "6"
         ],
         [
-          "https://w3id.org/zorro#FacilitatingEngineStart",
-          "https://w3id.org/zorro#FacilitatingEngineStart",
-          "https://w3id.org/zorro#CrankingSection",
+          "https://w3id.org/ZorroOntology#FacilitatingEngineStart",
+          "https://w3id.org/ZorroOntology#FacilitatingEngineStart",
+          "https://w3id.org/ZorroOntology#CrankingSection",
           "2"
         ],
         [
-          "https://w3id.org/zorro#Fuel-AirMixtureControl",
+          "https://w3id.org/ZorroOntology#Fuel-AirMixtureControl",
           "fuel-air mixture control",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#Fuel-AirMixtureDistribution",
+          "https://w3id.org/ZorroOntology#Fuel-AirMixtureDistribution",
           "fuel-air mixture distribution",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#FuelAirMixtureControl",
+          "https://w3id.org/ZorroOntology#FuelAirMixtureControl",
           "fuel-air mixture control",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#FuelAirMixtureDistribution",
+          "https://w3id.org/ZorroOntology#FuelAirMixtureDistribution",
           "fuel-air mixture distribution",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#FuelDelivery",
-          "https://w3id.org/zorro#FuelDelivery",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDelivery",
+          "https://w3id.org/ZorroOntology#FuelDelivery",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#FuelDistribution",
-          "https://w3id.org/zorro#FuelDistribution",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistribution",
+          "https://w3id.org/ZorroOntology#FuelDistribution",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#PowerSection",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#PowerSection",
           "6"
         ],
         [
-          "https://w3id.org/zorro#HousingMainPowerComponents",
-          "https://w3id.org/zorro#HousingMainPowerComponents",
-          "https://w3id.org/zorro#PowerSection",
+          "https://w3id.org/ZorroOntology#HousingMainPowerComponents",
+          "https://w3id.org/ZorroOntology#HousingMainPowerComponents",
+          "https://w3id.org/ZorroOntology#PowerSection",
           "6"
         ],
         [
-          "https://w3id.org/zorro#IgnitionTiming",
-          "https://w3id.org/zorro#IgnitionTiming",
-          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "https://w3id.org/ZorroOntology#IgnitionTiming",
+          "https://w3id.org/ZorroOntology#IgnitionTiming",
+          "https://w3id.org/ZorroOntology#IgnitionDistributionSystem",
           "7"
         ],
         [
-          "https://w3id.org/zorro#IgnitionTimingAndDistribution",
-          "https://w3id.org/zorro#IgnitionTimingAndDistribution",
-          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "https://w3id.org/ZorroOntology#IgnitionTimingAndDistribution",
+          "https://w3id.org/ZorroOntology#IgnitionTimingAndDistribution",
+          "https://w3id.org/ZorroOntology#IgnitionDistributionSystem",
           "7"
         ],
         [
-          "https://w3id.org/zorro#IgnitionTransfer",
-          "https://w3id.org/zorro#IgnitionTransfer",
-          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "https://w3id.org/ZorroOntology#IgnitionTransfer",
+          "https://w3id.org/ZorroOntology#IgnitionTransfer",
+          "https://w3id.org/ZorroOntology#IgnitionDistributionSystem",
           "7"
         ],
         [
-          "https://w3id.org/zorro#InitiatingEngineStart",
-          "https://w3id.org/zorro#InitiatingEngineStart",
-          "https://w3id.org/zorro#CrankingSection",
+          "https://w3id.org/ZorroOntology#InitiatingEngineStart",
+          "https://w3id.org/ZorroOntology#InitiatingEngineStart",
+          "https://w3id.org/ZorroOntology#CrankingSection",
           "2"
         ],
         [
-          "https://w3id.org/zorro#LubricatingEngineComponents",
-          "https://w3id.org/zorro#LubricatingEngineComponents",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#LubricatingEngineComponents",
+          "https://w3id.org/ZorroOntology#LubricatingEngineComponents",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "9"
         ],
         [
-          "https://w3id.org/zorro#MaintainingOilPressure",
-          "https://w3id.org/zorro#MaintainingOilPressure",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#MaintainingOilPressure",
+          "https://w3id.org/ZorroOntology#MaintainingOilPressure",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "9"
         ],
         [
-          "https://w3id.org/zorro#OilDistribution",
-          "https://w3id.org/zorro#OilDistribution",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#OilDistribution",
+          "https://w3id.org/ZorroOntology#OilDistribution",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "9"
         ],
         [
-          "https://w3id.org/zorro#OilTemperatureRegulation",
-          "https://w3id.org/zorro#OilTemperatureRegulation",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#OilTemperatureRegulation",
+          "https://w3id.org/ZorroOntology#OilTemperatureRegulation",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "9"
         ],
         [
-          "https://w3id.org/zorro#PowerOutput",
-          "https://w3id.org/zorro#PowerOutput",
-          "https://w3id.org/zorro#PowerSection",
+          "https://w3id.org/ZorroOntology#PowerOutput",
+          "https://w3id.org/ZorroOntology#PowerOutput",
+          "https://w3id.org/ZorroOntology#PowerSection",
           "6"
         ],
         [
-          "https://w3id.org/zorro#PowerSupplyForStarting",
-          "https://w3id.org/zorro#PowerSupplyForStarting",
-          "https://w3id.org/zorro#ElectricalPower",
+          "https://w3id.org/ZorroOntology#PowerSupplyForStarting",
+          "https://w3id.org/ZorroOntology#PowerSupplyForStarting",
+          "https://w3id.org/ZorroOntology#ElectricalPower",
           "2"
         ],
         [
-          "https://w3id.org/zorro#ProperAir-FuelMixture",
+          "https://w3id.org/ZorroOntology#ProperAir-FuelMixture",
           "proper air-fuel mixture",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#ProperAirFuelMixture",
+          "https://w3id.org/ZorroOntology#ProperAirFuelMixture",
           "proper air-fuel mixture",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#ProperCylinderSealing",
-          "https://w3id.org/zorro#ProperCylinderSealing",
-          "https://w3id.org/zorro#CylinderSection",
+          "https://w3id.org/ZorroOntology#ProperCylinderSealing",
+          "https://w3id.org/ZorroOntology#ProperCylinderSealing",
+          "https://w3id.org/ZorroOntology#CylinderSection",
           "4"
         ],
         [
-          "https://w3id.org/zorro#ProperIgnition",
-          "https://w3id.org/zorro#ProperIgnition",
-          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "https://w3id.org/ZorroOntology#ProperIgnition",
+          "https://w3id.org/ZorroOntology#ProperIgnition",
+          "https://w3id.org/ZorroOntology#IgnitionDistributionSystem",
           "7"
         ],
         [
-          "https://w3id.org/zorro#ProperIgnitionTiming",
-          "https://w3id.org/zorro#ProperIgnitionTiming",
-          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "https://w3id.org/ZorroOntology#ProperIgnitionTiming",
+          "https://w3id.org/ZorroOntology#ProperIgnitionTiming",
+          "https://w3id.org/ZorroOntology#IgnitionDistributionSystem",
           "7"
         ],
         [
-          "https://w3id.org/zorro#ProperIgnitionTimingAndDistribution",
-          "https://w3id.org/zorro#ProperIgnitionTimingAndDistribution",
-          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "https://w3id.org/ZorroOntology#ProperIgnitionTimingAndDistribution",
+          "https://w3id.org/ZorroOntology#ProperIgnitionTimingAndDistribution",
+          "https://w3id.org/ZorroOntology#IgnitionDistributionSystem",
           "7"
         ],
         [
-          "https://w3id.org/zorro#ProperLubrication",
-          "https://w3id.org/zorro#ProperLubrication",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#ProperLubrication",
+          "https://w3id.org/ZorroOntology#ProperLubrication",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "9"
         ],
         [
-          "https://w3id.org/zorro#ProperOilFlow",
-          "https://w3id.org/zorro#ProperOilFlow",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#ProperOilFlow",
+          "https://w3id.org/ZorroOntology#ProperOilFlow",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "9"
         ],
         [
-          "https://w3id.org/zorro#ProperOilPressureRegulation",
-          "https://w3id.org/zorro#ProperOilPressureRegulation",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#ProperOilPressureRegulation",
+          "https://w3id.org/ZorroOntology#ProperOilPressureRegulation",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "9"
         ],
         [
-          "https://w3id.org/zorro#ProvidingElectricalPower",
-          "https://w3id.org/zorro#ProvidingElectricalPower",
-          "https://w3id.org/zorro#ElectricalPower",
+          "https://w3id.org/ZorroOntology#ProvidingElectricalPower",
+          "https://w3id.org/ZorroOntology#ProvidingElectricalPower",
+          "https://w3id.org/ZorroOntology#ElectricalPower",
           "2"
         ],
         [
-          "https://w3id.org/zorro#SmoothEngineOperation",
-          "https://w3id.org/zorro#SmoothEngineOperation",
-          "https://w3id.org/zorro#PowerSection",
+          "https://w3id.org/ZorroOntology#SmoothEngineOperation",
+          "https://w3id.org/ZorroOntology#SmoothEngineOperation",
+          "https://w3id.org/ZorroOntology#PowerSection",
           "6"
         ]
       ],
       "pred_rows_raw": [
         [
-          "https://w3id.org/zorro#DrivingPowerToAccessories",
+          "https://w3id.org/ZorroOntology#DrivingPowerToAccessories",
           "Driving power to accessories",
-          "https://w3id.org/zorro#AccessoryDrives",
+          "https://w3id.org/ZorroOntology#AccessoryDrives",
           "1"
         ],
         [
-          "https://w3id.org/zorro#PowerSupplyForStarting",
+          "https://w3id.org/ZorroOntology#PowerSupplyForStarting",
           "Power supply for starting",
-          "https://w3id.org/zorro#ElectricalPower",
+          "https://w3id.org/ZorroOntology#ElectricalPower",
           "2"
         ],
         [
-          "https://w3id.org/zorro#ProvidingElectricalPower",
+          "https://w3id.org/ZorroOntology#ProvidingElectricalPower",
           "Providing electrical power",
-          "https://w3id.org/zorro#ElectricalPower",
+          "https://w3id.org/ZorroOntology#ElectricalPower",
           "2"
         ],
         [
-          "https://w3id.org/zorro#CorrectFuelType",
+          "https://w3id.org/ZorroOntology#CorrectFuelType",
           "Correct fuel type",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#DistributingFuel-AirMixture",
+          "https://w3id.org/ZorroOntology#DistributingFuel-AirMixture",
           "Distributing fuel-air mixture",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#DistributingFuelAirMixture",
+          "https://w3id.org/ZorroOntology#DistributingFuelAirMixture",
           "Distributing fuel-air mixture",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#Fuel-AirMixtureControl",
+          "https://w3id.org/ZorroOntology#Fuel-AirMixtureControl",
           "Fuel-air mixture control",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#Fuel-AirMixtureDistribution",
+          "https://w3id.org/ZorroOntology#Fuel-AirMixtureDistribution",
           "Fuel-air mixture distribution",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#FuelAirMixtureControl",
+          "https://w3id.org/ZorroOntology#FuelAirMixtureControl",
           "Fuel-air mixture control",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#FuelAirMixtureDistribution",
+          "https://w3id.org/ZorroOntology#FuelAirMixtureDistribution",
           "Fuel-air mixture distribution",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#FuelDelivery",
+          "https://w3id.org/ZorroOntology#FuelDelivery",
           "Fuel delivery",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#FuelDistribution",
+          "https://w3id.org/ZorroOntology#FuelDistribution",
           "Fuel distribution",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#ProperAir-FuelMixture",
+          "https://w3id.org/ZorroOntology#ProperAir-FuelMixture",
           "Proper air-fuel mixture",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#ProperAirFuelMixture",
+          "https://w3id.org/ZorroOntology#ProperAirFuelMixture",
           "Proper air-fuel mixture",
-          "https://w3id.org/zorro#FuelDistributionSystem",
+          "https://w3id.org/ZorroOntology#FuelDistributionSystem",
           "11"
         ],
         [
-          "https://w3id.org/zorro#BalancedCylinderCompression",
+          "https://w3id.org/ZorroOntology#BalancedCylinderCompression",
           "Balanced cylinder compression",
-          "https://w3id.org/zorro#CylinderSection",
+          "https://w3id.org/ZorroOntology#CylinderSection",
           "4"
         ],
         [
-          "https://w3id.org/zorro#ContainingCylindersAndRelatedParts",
+          "https://w3id.org/ZorroOntology#ContainingCylindersAndRelatedParts",
           "Containing cylinders and related parts",
-          "https://w3id.org/zorro#CylinderSection",
+          "https://w3id.org/ZorroOntology#CylinderSection",
           "4"
         ],
         [
-          "https://w3id.org/zorro#CylinderOperation",
+          "https://w3id.org/ZorroOntology#CylinderOperation",
           "Cylinder operation",
-          "https://w3id.org/zorro#CylinderSection",
+          "https://w3id.org/ZorroOntology#CylinderSection",
           "4"
         ],
         [
-          "https://w3id.org/zorro#ProperCylinderSealing",
+          "https://w3id.org/ZorroOntology#ProperCylinderSealing",
           "Proper cylinder sealing",
-          "https://w3id.org/zorro#CylinderSection",
+          "https://w3id.org/ZorroOntology#CylinderSection",
           "4"
         ],
         [
-          "https://w3id.org/zorro#CoreEngineFunctionality",
+          "https://w3id.org/ZorroOntology#CoreEngineFunctionality",
           "Core engine functionality",
-          "https://w3id.org/zorro#PowerSection",
+          "https://w3id.org/ZorroOntology#PowerSection",
           "6"
         ],
         [
-          "https://w3id.org/zorro#EngineStability",
+          "https://w3id.org/ZorroOntology#EngineStability",
           "Engine stability",
-          "https://w3id.org/zorro#PowerSection",
+          "https://w3id.org/ZorroOntology#PowerSection",
           "6"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
           "Generating power",
-          "https://w3id.org/zorro#PowerSection",
+          "https://w3id.org/ZorroOntology#PowerSection",
           "6"
         ],
         [
-          "https://w3id.org/zorro#HousingMainPowerComponents",
+          "https://w3id.org/ZorroOntology#HousingMainPowerComponents",
           "Housing main power components",
-          "https://w3id.org/zorro#PowerSection",
+          "https://w3id.org/ZorroOntology#PowerSection",
           "6"
         ],
         [
-          "https://w3id.org/zorro#PowerOutput",
+          "https://w3id.org/ZorroOntology#PowerOutput",
           "Power output",
-          "https://w3id.org/zorro#PowerSection",
+          "https://w3id.org/ZorroOntology#PowerSection",
           "6"
         ],
         [
-          "https://w3id.org/zorro#SmoothEngineOperation",
+          "https://w3id.org/ZorroOntology#SmoothEngineOperation",
           "Smooth engine operation",
-          "https://w3id.org/zorro#PowerSection",
+          "https://w3id.org/ZorroOntology#PowerSection",
           "6"
         ],
         [
-          "https://w3id.org/zorro#DistributingIgnitionToCylinders",
+          "https://w3id.org/ZorroOntology#DistributingIgnitionToCylinders",
           "Distributing ignition to cylinders",
-          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "https://w3id.org/ZorroOntology#IgnitionDistributionSystem",
           "7"
         ],
         [
-          "https://w3id.org/zorro#IgnitionTiming",
+          "https://w3id.org/ZorroOntology#IgnitionTiming",
           "Ignition timing",
-          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "https://w3id.org/ZorroOntology#IgnitionDistributionSystem",
           "7"
         ],
         [
-          "https://w3id.org/zorro#IgnitionTimingAndDistribution",
+          "https://w3id.org/ZorroOntology#IgnitionTimingAndDistribution",
           "Ignition timing and distribution",
-          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "https://w3id.org/ZorroOntology#IgnitionDistributionSystem",
           "7"
         ],
         [
-          "https://w3id.org/zorro#IgnitionTransfer",
+          "https://w3id.org/ZorroOntology#IgnitionTransfer",
           "Ignition transfer",
-          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "https://w3id.org/ZorroOntology#IgnitionDistributionSystem",
           "7"
         ],
         [
-          "https://w3id.org/zorro#ProperIgnition",
+          "https://w3id.org/ZorroOntology#ProperIgnition",
           "Proper ignition",
-          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "https://w3id.org/ZorroOntology#IgnitionDistributionSystem",
           "7"
         ],
         [
-          "https://w3id.org/zorro#ProperIgnitionTiming",
+          "https://w3id.org/ZorroOntology#ProperIgnitionTiming",
           "Proper ignition timing",
-          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "https://w3id.org/ZorroOntology#IgnitionDistributionSystem",
           "7"
         ],
         [
-          "https://w3id.org/zorro#ProperIgnitionTimingAndDistribution",
+          "https://w3id.org/ZorroOntology#ProperIgnitionTimingAndDistribution",
           "Proper ignition timing and distribution",
-          "https://w3id.org/zorro#IgnitionDistributionSystem",
+          "https://w3id.org/ZorroOntology#IgnitionDistributionSystem",
           "7"
         ],
         [
-          "https://w3id.org/zorro#AccurateOilPressureReading",
+          "https://w3id.org/ZorroOntology#AccurateOilPressureReading",
           "Accurate oil pressure reading",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "9"
         ],
         [
-          "https://w3id.org/zorro#AdequateLubrication",
+          "https://w3id.org/ZorroOntology#AdequateLubrication",
           "Adequate lubrication",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "9"
         ],
         [
-          "https://w3id.org/zorro#LubricatingEngineComponents",
+          "https://w3id.org/ZorroOntology#LubricatingEngineComponents",
           "Lubricating engine components",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "9"
         ],
         [
-          "https://w3id.org/zorro#MaintainingOilPressure",
+          "https://w3id.org/ZorroOntology#MaintainingOilPressure",
           "Maintaining oil pressure",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "9"
         ],
         [
-          "https://w3id.org/zorro#OilDistribution",
+          "https://w3id.org/ZorroOntology#OilDistribution",
           "Oil distribution",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "9"
         ],
         [
-          "https://w3id.org/zorro#OilTemperatureRegulation",
+          "https://w3id.org/ZorroOntology#OilTemperatureRegulation",
           "Oil temperature regulation",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "9"
         ],
         [
-          "https://w3id.org/zorro#ProperLubrication",
+          "https://w3id.org/ZorroOntology#ProperLubrication",
           "Proper lubrication",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "9"
         ],
         [
-          "https://w3id.org/zorro#ProperOilFlow",
+          "https://w3id.org/ZorroOntology#ProperOilFlow",
           "Proper oil flow",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "9"
         ],
         [
-          "https://w3id.org/zorro#ProperOilPressureRegulation",
+          "https://w3id.org/ZorroOntology#ProperOilPressureRegulation",
           "Proper oil pressure regulation",
-          "https://w3id.org/zorro#LubricationSystem",
+          "https://w3id.org/ZorroOntology#LubricationSystem",
           "9"
         ],
         [
-          "https://w3id.org/zorro#FacilitatingEngineStart",
+          "https://w3id.org/ZorroOntology#FacilitatingEngineStart",
           "Facilitating engine start",
-          "https://w3id.org/zorro#CrankingSection",
+          "https://w3id.org/ZorroOntology#CrankingSection",
           "2"
         ],
         [
-          "https://w3id.org/zorro#InitiatingEngineStart",
+          "https://w3id.org/ZorroOntology#InitiatingEngineStart",
           "Initiating engine start",
-          "https://w3id.org/zorro#CrankingSection",
+          "https://w3id.org/ZorroOntology#CrankingSection",
           "2"
         ]
       ],
@@ -3297,11 +3297,11 @@
         "predicate_breakdown": [
           {
             "count": 796,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 308,
-            "predicate": "https://w3id.org/zorro#partOf"
+            "predicate": "https://w3id.org/ZorroOntology#partOf"
           },
           {
             "count": 125,
@@ -3317,19 +3317,19 @@
           },
           {
             "count": 93,
-            "predicate": "https://w3id.org/zorro#subFunctionOf"
+            "predicate": "https://w3id.org/ZorroOntology#subFunctionOf"
           },
           {
             "count": 84,
-            "predicate": "https://w3id.org/zorro#hasFunction"
+            "predicate": "https://w3id.org/ZorroOntology#hasFunction"
           },
           {
             "count": 60,
-            "predicate": "https://w3id.org/zorro#addressesProblem"
+            "predicate": "https://w3id.org/ZorroOntology#addressesProblem"
           },
           {
             "count": 60,
-            "predicate": "https://w3id.org/zorro#defines"
+            "predicate": "https://w3id.org/ZorroOntology#defines"
           },
           {
             "count": 4,
@@ -3340,14 +3340,14 @@
             "predicate": "__other__"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#Function, https://w3id.org/zorro#System, https://w3id.org/zorro#dependsOn, https://w3id.org/zorro#hasFunction, https://w3id.org/zorro#label, https://w3id.org/zorro#type])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#Function, https://w3id.org/ZorroOntology#System, https://w3id.org/ZorroOntology#dependsOn, https://w3id.org/ZorroOntology#hasFunction, https://w3id.org/ZorroOntology#label, https://w3id.org/ZorroOntology#type])",
         "seeds": [
-          "https://w3id.org/zorro#Function",
-          "https://w3id.org/zorro#System",
-          "https://w3id.org/zorro#dependsOn",
-          "https://w3id.org/zorro#hasFunction",
-          "https://w3id.org/zorro#label",
-          "https://w3id.org/zorro#type"
+          "https://w3id.org/ZorroOntology#Function",
+          "https://w3id.org/ZorroOntology#System",
+          "https://w3id.org/ZorroOntology#dependsOn",
+          "https://w3id.org/ZorroOntology#hasFunction",
+          "https://w3id.org/ZorroOntology#label",
+          "https://w3id.org/ZorroOntology#type"
         ],
         "subject_term_types": {
           "uri": 1755
@@ -3395,247 +3395,247 @@
           "2"
         ],
         [
-          "https://w3id.org/zorro#AccurateOilPressureReading",
+          "https://w3id.org/ZorroOntology#AccurateOilPressureReading",
           "1"
         ],
         [
-          "https://w3id.org/zorro#AccurateTemperatureReading",
+          "https://w3id.org/ZorroOntology#AccurateTemperatureReading",
           "1"
         ],
         [
-          "https://w3id.org/zorro#AdequateLubrication",
+          "https://w3id.org/ZorroOntology#AdequateLubrication",
           "1"
         ],
         [
-          "https://w3id.org/zorro#AirIntakeRestriction",
+          "https://w3id.org/ZorroOntology#AirIntakeRestriction",
           "1"
         ],
         [
-          "https://w3id.org/zorro#AssistingEngineStart",
+          "https://w3id.org/ZorroOntology#AssistingEngineStart",
           "1"
         ],
         [
-          "https://w3id.org/zorro#BalancedCylinderCompression",
+          "https://w3id.org/ZorroOntology#BalancedCylinderCompression",
           "1"
         ],
         [
-          "https://w3id.org/zorro#CollectingAndScreeningOil",
+          "https://w3id.org/ZorroOntology#CollectingAndScreeningOil",
           "1"
         ],
         [
-          "https://w3id.org/zorro#ContainingCylindersAndRelatedParts",
+          "https://w3id.org/ZorroOntology#ContainingCylindersAndRelatedParts",
           "1"
         ],
         [
-          "https://w3id.org/zorro#ControllingIntakeAndExhaustFlow",
+          "https://w3id.org/ZorroOntology#ControllingIntakeAndExhaustFlow",
           "1"
         ],
         [
-          "https://w3id.org/zorro#ConvertingLinearToRotationalMotion",
+          "https://w3id.org/ZorroOntology#ConvertingLinearToRotationalMotion",
           "1"
         ],
         [
-          "https://w3id.org/zorro#CoolingEngineWithAirflow",
+          "https://w3id.org/ZorroOntology#CoolingEngineWithAirflow",
           "1"
         ],
         [
-          "https://w3id.org/zorro#CoreEngineFunctionality",
+          "https://w3id.org/ZorroOntology#CoreEngineFunctionality",
           "1"
         ],
         [
-          "https://w3id.org/zorro#CorrectFuelType",
+          "https://w3id.org/ZorroOntology#CorrectFuelType",
           "1"
         ],
         [
-          "https://w3id.org/zorro#CoveringDrivesAndProvidingHousing",
+          "https://w3id.org/ZorroOntology#CoveringDrivesAndProvidingHousing",
           "1"
         ],
         [
-          "https://w3id.org/zorro#CylinderOperation",
+          "https://w3id.org/ZorroOntology#CylinderOperation",
           "1"
         ],
         [
-          "https://w3id.org/zorro#DistributingIgnitionAndSparks",
+          "https://w3id.org/ZorroOntology#DistributingIgnitionAndSparks",
           "1"
         ],
         [
-          "https://w3id.org/zorro#DistributingIgnitionToCylinders",
+          "https://w3id.org/ZorroOntology#DistributingIgnitionToCylinders",
           "1"
         ],
         [
-          "https://w3id.org/zorro#DrainingAndCoolingCylinders",
+          "https://w3id.org/ZorroOntology#DrainingAndCoolingCylinders",
           "1"
         ],
         [
-          "https://w3id.org/zorro#DrivingAndTimingComponents",
+          "https://w3id.org/ZorroOntology#DrivingAndTimingComponents",
           "1"
         ],
         [
-          "https://w3id.org/zorro#DrivingPowerToAccessories",
+          "https://w3id.org/ZorroOntology#DrivingPowerToAccessories",
           "1"
         ],
         [
-          "https://w3id.org/zorro#EngineStability",
+          "https://w3id.org/ZorroOntology#EngineStability",
           "1"
         ],
         [
-          "https://w3id.org/zorro#ExcessiveFuelDuringStart",
+          "https://w3id.org/ZorroOntology#ExcessiveFuelDuringStart",
           "1"
         ],
         [
-          "https://w3id.org/zorro#FacilitatingEngineStart",
+          "https://w3id.org/ZorroOntology#FacilitatingEngineStart",
           "1"
         ],
         [
-          "https://w3id.org/zorro#FilteringOilAndControllingFlow",
+          "https://w3id.org/ZorroOntology#FilteringOilAndControllingFlow",
           "1"
         ],
         [
-          "https://w3id.org/zorro#FuelDelivery",
+          "https://w3id.org/ZorroOntology#FuelDelivery",
           "1"
         ],
         [
-          "https://w3id.org/zorro#FuelDistribution",
+          "https://w3id.org/ZorroOntology#FuelDistribution",
           "1"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
           "1"
         ],
         [
-          "https://w3id.org/zorro#HousingAccessoriesAndDrives",
+          "https://w3id.org/ZorroOntology#HousingAccessoriesAndDrives",
           "1"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
           "1"
         ],
         [
-          "https://w3id.org/zorro#HousingMainEngine",
+          "https://w3id.org/ZorroOntology#HousingMainEngine",
           "1"
         ],
         [
-          "https://w3id.org/zorro#HousingMainPowerComponents",
+          "https://w3id.org/ZorroOntology#HousingMainPowerComponents",
           "1"
         ],
         [
-          "https://w3id.org/zorro#IgnitionTiming",
+          "https://w3id.org/ZorroOntology#IgnitionTiming",
           "1"
         ],
         [
-          "https://w3id.org/zorro#IgnitionTimingAndDistribution",
+          "https://w3id.org/ZorroOntology#IgnitionTimingAndDistribution",
           "1"
         ],
         [
-          "https://w3id.org/zorro#IgnitionTransfer",
+          "https://w3id.org/ZorroOntology#IgnitionTransfer",
           "1"
         ],
         [
-          "https://w3id.org/zorro#InitiatingEngineStart",
+          "https://w3id.org/ZorroOntology#InitiatingEngineStart",
           "2"
         ],
         [
-          "https://w3id.org/zorro#LubricatingEngineComponents",
+          "https://w3id.org/ZorroOntology#LubricatingEngineComponents",
           "1"
         ],
         [
-          "https://w3id.org/zorro#MaintainingOilPressure",
+          "https://w3id.org/ZorroOntology#MaintainingOilPressure",
           "1"
         ],
         [
-          "https://w3id.org/zorro#MeasuringOilQuantity",
+          "https://w3id.org/ZorroOntology#MeasuringOilQuantity",
           "1"
         ],
         [
-          "https://w3id.org/zorro#OilDistribution",
+          "https://w3id.org/ZorroOntology#OilDistribution",
           "1"
         ],
         [
-          "https://w3id.org/zorro#OilTemperatureRegulation",
+          "https://w3id.org/ZorroOntology#OilTemperatureRegulation",
           "1"
         ],
         [
-          "https://w3id.org/zorro#PowerOutput",
+          "https://w3id.org/ZorroOntology#PowerOutput",
           "1"
         ],
         [
-          "https://w3id.org/zorro#PowerSupplyForStarting",
+          "https://w3id.org/ZorroOntology#PowerSupplyForStarting",
           "1"
         ],
         [
-          "https://w3id.org/zorro#ProperCooling",
+          "https://w3id.org/ZorroOntology#ProperCooling",
           "1"
         ],
         [
-          "https://w3id.org/zorro#ProperCylinderSealing",
+          "https://w3id.org/ZorroOntology#ProperCylinderSealing",
           "1"
         ],
         [
-          "https://w3id.org/zorro#ProperEngineCooling",
+          "https://w3id.org/ZorroOntology#ProperEngineCooling",
           "1"
         ],
         [
-          "https://w3id.org/zorro#ProperIgnition",
+          "https://w3id.org/ZorroOntology#ProperIgnition",
           "1"
         ],
         [
-          "https://w3id.org/zorro#ProperIgnitionTiming",
+          "https://w3id.org/ZorroOntology#ProperIgnitionTiming",
           "1"
         ],
         [
-          "https://w3id.org/zorro#ProperIgnitionTimingAndDistribution",
+          "https://w3id.org/ZorroOntology#ProperIgnitionTimingAndDistribution",
           "1"
         ],
         [
-          "https://w3id.org/zorro#ProperLubrication",
+          "https://w3id.org/ZorroOntology#ProperLubrication",
           "1"
         ],
         [
-          "https://w3id.org/zorro#ProperOilFlow",
+          "https://w3id.org/ZorroOntology#ProperOilFlow",
           "1"
         ],
         [
-          "https://w3id.org/zorro#ProperOilPressureRegulation",
+          "https://w3id.org/ZorroOntology#ProperOilPressureRegulation",
           "1"
         ],
         [
-          "https://w3id.org/zorro#ProvidingElectricalPower",
+          "https://w3id.org/ZorroOntology#ProvidingElectricalPower",
           "1"
         ],
         [
-          "https://w3id.org/zorro#PumpingFuelAndSecuringComponents",
+          "https://w3id.org/ZorroOntology#PumpingFuelAndSecuringComponents",
           "1"
         ],
         [
-          "https://w3id.org/zorro#PumpingOilAndAttachingHousing",
+          "https://w3id.org/ZorroOntology#PumpingOilAndAttachingHousing",
           "1"
         ],
         [
-          "https://w3id.org/zorro#RegulatingOilFlowAndPressure",
+          "https://w3id.org/ZorroOntology#RegulatingOilFlowAndPressure",
           "1"
         ],
         [
-          "https://w3id.org/zorro#SecuringAndSupportingAlternator",
+          "https://w3id.org/ZorroOntology#SecuringAndSupportingAlternator",
           "1"
         ],
         [
-          "https://w3id.org/zorro#SecuringCrankcaseComponents",
+          "https://w3id.org/ZorroOntology#SecuringCrankcaseComponents",
           "1"
         ],
         [
-          "https://w3id.org/zorro#SmoothEngineOperation",
+          "https://w3id.org/ZorroOntology#SmoothEngineOperation",
           "1"
         ],
         [
-          "https://w3id.org/zorro#SupportingCrankcaseOperation",
+          "https://w3id.org/ZorroOntology#SupportingCrankcaseOperation",
           "1"
         ],
         [
-          "https://w3id.org/zorro#SupportingCylinderOperation",
+          "https://w3id.org/ZorroOntology#SupportingCylinderOperation",
           "1"
         ],
         [
-          "https://w3id.org/zorro#TransmittingMotionAndSealingChamber",
+          "https://w3id.org/ZorroOntology#TransmittingMotionAndSealingChamber",
           "1"
         ],
         [
@@ -3658,149 +3658,149 @@
       "precision": 0.7777777777777778,
       "pred_rows": [
         [
-          "https://w3id.org/zorro#AccurateOilPressureReading",
+          "https://w3id.org/ZorroOntology#AccurateOilPressureReading",
           "1"
         ],
         [
-          "https://w3id.org/zorro#AssistingEngineStart",
+          "https://w3id.org/ZorroOntology#AssistingEngineStart",
           "1"
         ],
         [
-          "https://w3id.org/zorro#CollectingAndScreeningOil",
+          "https://w3id.org/ZorroOntology#CollectingAndScreeningOil",
           "1"
         ],
         [
-          "https://w3id.org/zorro#CoreEngineFunctionality",
+          "https://w3id.org/ZorroOntology#CoreEngineFunctionality",
           "1"
         ],
         [
-          "https://w3id.org/zorro#DirectingAir-FuelMixture",
+          "https://w3id.org/ZorroOntology#DirectingAir-FuelMixture",
           "1"
         ],
         [
-          "https://w3id.org/zorro#DirectingAirFuelMixture",
+          "https://w3id.org/ZorroOntology#DirectingAirFuelMixture",
           "1"
         ],
         [
-          "https://w3id.org/zorro#EngineStability",
+          "https://w3id.org/ZorroOntology#EngineStability",
           "1"
         ],
         [
-          "https://w3id.org/zorro#ExcessiveFuelDuringStart",
+          "https://w3id.org/ZorroOntology#ExcessiveFuelDuringStart",
           "1"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
           "1"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
           "1"
         ],
         [
-          "https://w3id.org/zorro#HousingMainEngine",
+          "https://w3id.org/ZorroOntology#HousingMainEngine",
           "1"
         ],
         [
-          "https://w3id.org/zorro#HousingMainPowerComponents",
+          "https://w3id.org/ZorroOntology#HousingMainPowerComponents",
           "1"
         ],
         [
-          "https://w3id.org/zorro#MixingAndRegulatingFuel-Air",
+          "https://w3id.org/ZorroOntology#MixingAndRegulatingFuel-Air",
           "1"
         ],
         [
-          "https://w3id.org/zorro#MixingAndRegulatingFuelAir",
+          "https://w3id.org/ZorroOntology#MixingAndRegulatingFuelAir",
           "1"
         ],
         [
-          "https://w3id.org/zorro#PowerSupplyForStarting",
+          "https://w3id.org/ZorroOntology#PowerSupplyForStarting",
           "1"
         ],
         [
-          "https://w3id.org/zorro#ProvidingElectricalPower",
+          "https://w3id.org/ZorroOntology#ProvidingElectricalPower",
           "1"
         ],
         [
-          "https://w3id.org/zorro#PumpingFuelAndSecuringComponents",
+          "https://w3id.org/ZorroOntology#PumpingFuelAndSecuringComponents",
           "1"
         ],
         [
-          "https://w3id.org/zorro#PumpingOilAndAttachingHousing",
+          "https://w3id.org/ZorroOntology#PumpingOilAndAttachingHousing",
           "1"
         ]
       ],
       "pred_rows_raw": [
         [
-          "https://w3id.org/zorro#AccurateOilPressureReading",
+          "https://w3id.org/ZorroOntology#AccurateOilPressureReading",
           "1"
         ],
         [
-          "https://w3id.org/zorro#AssistingEngineStart",
+          "https://w3id.org/ZorroOntology#AssistingEngineStart",
           "1"
         ],
         [
-          "https://w3id.org/zorro#ExcessiveFuelDuringStart",
+          "https://w3id.org/ZorroOntology#ExcessiveFuelDuringStart",
           "1"
         ],
         [
-          "https://w3id.org/zorro#DirectingAir-FuelMixture",
+          "https://w3id.org/ZorroOntology#DirectingAir-FuelMixture",
           "1"
         ],
         [
-          "https://w3id.org/zorro#DirectingAirFuelMixture",
+          "https://w3id.org/ZorroOntology#DirectingAirFuelMixture",
           "1"
         ],
         [
-          "https://w3id.org/zorro#HousingMainEngine",
+          "https://w3id.org/ZorroOntology#HousingMainEngine",
           "1"
         ],
         [
-          "https://w3id.org/zorro#HousingMainPowerComponents",
+          "https://w3id.org/ZorroOntology#HousingMainPowerComponents",
           "1"
         ],
         [
-          "https://w3id.org/zorro#PowerSupplyForStarting",
+          "https://w3id.org/ZorroOntology#PowerSupplyForStarting",
           "1"
         ],
         [
-          "https://w3id.org/zorro#ProvidingElectricalPower",
+          "https://w3id.org/ZorroOntology#ProvidingElectricalPower",
           "1"
         ],
         [
-          "https://w3id.org/zorro#CoreEngineFunctionality",
+          "https://w3id.org/ZorroOntology#CoreEngineFunctionality",
           "1"
         ],
         [
-          "https://w3id.org/zorro#EngineStability",
+          "https://w3id.org/ZorroOntology#EngineStability",
           "1"
         ],
         [
-          "https://w3id.org/zorro#GeneratingPower",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
           "1"
         ],
         [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
           "1"
         ],
         [
-          "https://w3id.org/zorro#PumpingFuelAndSecuringComponents",
+          "https://w3id.org/ZorroOntology#PumpingFuelAndSecuringComponents",
           "1"
         ],
         [
-          "https://w3id.org/zorro#MixingAndRegulatingFuel-Air",
+          "https://w3id.org/ZorroOntology#MixingAndRegulatingFuel-Air",
           "1"
         ],
         [
-          "https://w3id.org/zorro#MixingAndRegulatingFuelAir",
+          "https://w3id.org/ZorroOntology#MixingAndRegulatingFuelAir",
           "1"
         ],
         [
-          "https://w3id.org/zorro#PumpingOilAndAttachingHousing",
+          "https://w3id.org/ZorroOntology#PumpingOilAndAttachingHousing",
           "1"
         ],
         [
-          "https://w3id.org/zorro#CollectingAndScreeningOil",
+          "https://w3id.org/ZorroOntology#CollectingAndScreeningOil",
           "1"
         ]
       ],
@@ -3816,7 +3816,7 @@
         "predicate_breakdown": [
           {
             "count": 566,
-            "predicate": "https://w3id.org/zorro#partOf"
+            "predicate": "https://w3id.org/ZorroOntology#partOf"
           },
           {
             "count": 200,
@@ -3828,15 +3828,15 @@
           },
           {
             "count": 84,
-            "predicate": "https://w3id.org/zorro#hasFunction"
+            "predicate": "https://w3id.org/ZorroOntology#hasFunction"
           },
           {
             "count": 62,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 35,
-            "predicate": "https://w3id.org/zorro#linkCandidate"
+            "predicate": "https://w3id.org/ZorroOntology#linkCandidate"
           },
           {
             "count": 32,
@@ -3844,7 +3844,7 @@
           },
           {
             "count": 13,
-            "predicate": "https://w3id.org/zorro#isProbably"
+            "predicate": "https://w3id.org/ZorroOntology#isProbably"
           },
           {
             "count": 5,
@@ -3855,12 +3855,12 @@
             "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#Component, https://w3id.org/zorro#hasFunction, https://w3id.org/zorro#label, https://w3id.org/zorro#subClassOf])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#Component, https://w3id.org/ZorroOntology#hasFunction, https://w3id.org/ZorroOntology#label, https://w3id.org/ZorroOntology#subClassOf])",
         "seeds": [
-          "https://w3id.org/zorro#Component",
-          "https://w3id.org/zorro#hasFunction",
-          "https://w3id.org/zorro#label",
-          "https://w3id.org/zorro#subClassOf"
+          "https://w3id.org/ZorroOntology#Component",
+          "https://w3id.org/ZorroOntology#hasFunction",
+          "https://w3id.org/ZorroOntology#label",
+          "https://w3id.org/ZorroOntology#subClassOf"
         ],
         "subject_term_types": {
           "bnode": 35,
