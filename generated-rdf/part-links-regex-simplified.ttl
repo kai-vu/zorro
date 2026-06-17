@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/zorro#> .
+@prefix : <https://w3id.org/ZorroOntology#> .
 
 :2IntakeGasket :isProbably :partnr-71973 .
 
