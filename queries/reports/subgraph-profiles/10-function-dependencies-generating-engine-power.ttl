@@ -146,7 +146,7 @@
     rdfs:domain :Function ;
     rdfs:range :Problem .
 
-:dependOn a owl:ObjectProperty ;
+:dependsOn a owl:ObjectProperty ;
     rdfs:domain :Function ;
     rdfs:range :Function .
 
