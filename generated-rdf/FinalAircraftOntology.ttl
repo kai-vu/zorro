@@ -1,76 +1,76 @@
-@prefix : <https://w3id.org/zorro#> .
+@prefix : <https://w3id.org/ZorroOntology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/zorro#> .
+@base <https://w3id.org/ZorroOntology#> .
 
-<https://w3id.org/zorro> rdf:type owl:Ontology; rdfs:label "ZORRO Ontology" .
+<https://w3id.org/ZorroOntology> rdf:type owl:Ontology; rdfs:label "ZORRO Ontology" .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/zorro#dealsWith
+###  https://w3id.org/ZorroOntology#dealsWith
 :dealsWith rdf:type owl:ObjectProperty ;
          rdfs:domain :Action ;
          rdfs:range :Problem .
 
-###  https://w3id.org/zorro#address
+###  https://w3id.org/ZorroOntology#address
 :address rdf:type owl:ObjectProperty ;
          rdfs:domain :WorkAround ;
          rdfs:range :Effect .
 
 
-###  https://w3id.org/zorro#consistOf
+###  https://w3id.org/ZorroOntology#consistOf
 :consistOf rdf:type owl:ObjectProperty ;
            rdfs:range :Step ;
            rdfs:domain :Procedure .
 
 
-###  https://w3id.org/zorro#define
+###  https://w3id.org/ZorroOntology#define
 :define rdf:type owl:ObjectProperty ;
         rdfs:domain :Function ;
         rdfs:range :Problem .
 
 
-###  https://w3id.org/zorro#dependOn
+###  https://w3id.org/ZorroOntology#dependOn
 :dependOn rdf:type owl:ObjectProperty ;
           rdfs:domain :Function ;
           rdfs:range :Function .
 
 
-###  https://w3id.org/zorro#failVia
+###  https://w3id.org/ZorroOntology#failVia
 :failVia rdf:type owl:ObjectProperty ;
          rdfs:domain :Component ;
          rdfs:range :Problem .
 
 
-###  https://w3id.org/zorro#hasCause
+###  https://w3id.org/ZorroOntology#hasCause
 :hasCause rdf:type owl:ObjectProperty ;
           rdfs:domain :Problem .
 
 
-###  https://w3id.org/zorro#hasFunction
+###  https://w3id.org/ZorroOntology#hasFunction
 :hasFunction rdf:type owl:ObjectProperty ;
              rdfs:domain :Component ;
              rdfs:range :Function .
 
 
-###  https://w3id.org/zorro#involve
+###  https://w3id.org/ZorroOntology#involve
 :involve rdf:type owl:ObjectProperty ;
          rdfs:domain :Step ;
          rdfs:range :Component .
 
 
-###  https://w3id.org/zorro#resultIn
+###  https://w3id.org/ZorroOntology#resultIn
 :resultIn rdf:type owl:ObjectProperty ;
           rdfs:domain :Problem ;
           rdfs:range :Effect .
 
 
-###  https://w3id.org/zorro#solve
+###  https://w3id.org/ZorroOntology#solve
 :solve rdf:type owl:ObjectProperty ;
        rdfs:subPropertyOf owl:topObjectProperty ;
        rdfs:domain :Solution ;
@@ -81,13 +81,13 @@
 #    Data properties
 #################################################################
 
-###  https://w3id.org/zorro#hasID
+###  https://w3id.org/ZorroOntology#hasID
 :hasID rdf:type owl:DatatypeProperty ;
        rdfs:domain :Problem ;
        rdfs:range xsd:integer .
 
 
-###  https://w3id.org/zorro#hasName
+###  https://w3id.org/ZorroOntology#hasName
 :hasName rdf:type owl:DatatypeProperty ;
          rdfs:domain :Problem ;
          rdfs:range xsd:string .
@@ -97,52 +97,52 @@
 #    Classes
 #################################################################
 
-###  https://w3id.org/zorro#Assembly
+###  https://w3id.org/ZorroOntology#Assembly
 :Assembly rdf:type owl:Class ;
           rdfs:subClassOf :Component .
 
 
-###  https://w3id.org/zorro#Component
+###  https://w3id.org/ZorroOntology#Component
 :Component rdf:type owl:Class ;
            rdfs:subClassOf owl:Thing .
 
 
-###  https://w3id.org/zorro#Effect
+###  https://w3id.org/ZorroOntology#Effect
 :Effect rdf:type owl:Class .
 
 
-###  https://w3id.org/zorro#Function
+###  https://w3id.org/ZorroOntology#Function
 :Function rdf:type owl:Class .
 
 
-###  https://w3id.org/zorro#Part
+###  https://w3id.org/ZorroOntology#Part
 :Part rdf:type owl:Class ;
       rdfs:subClassOf :Component .
 
 
-###  https://w3id.org/zorro#Problem
+###  https://w3id.org/ZorroOntology#Problem
 :Problem rdf:type owl:Class .
 
 
-###  https://w3id.org/zorro#Procedure
+###  https://w3id.org/ZorroOntology#Procedure
 :Procedure rdf:type owl:Class .
 
 
-###  https://w3id.org/zorro#Solution
+###  https://w3id.org/ZorroOntology#Solution
 :Solution rdf:type owl:Class ;
           rdfs:subClassOf :Procedure .
 
 
-###  https://w3id.org/zorro#Step
+###  https://w3id.org/ZorroOntology#Step
 :Step rdf:type owl:Class .
 
 
-###  https://w3id.org/zorro#System
+###  https://w3id.org/ZorroOntology#System
 :System rdf:type owl:Class ;
         rdfs:subClassOf :Component .
 
 
-###  https://w3id.org/zorro#WorkAround
+###  https://w3id.org/ZorroOntology#WorkAround
 :WorkAround rdf:type owl:Class ;
             rdfs:subClassOf :Procedure .
 
@@ -151,15 +151,15 @@
 #    Individuals
 #################################################################
 
-###  https://w3id.org/zorro#screwDriver1
+###  https://w3id.org/ZorroOntology#screwDriver1
 :screwDriver1 rdf:type owl:NamedIndividual .
 
 
-###  https://w3id.org/zorro#screwDriver2
+###  https://w3id.org/ZorroOntology#screwDriver2
 :screwDriver2 rdf:type owl:NamedIndividual .
 
 
-###  https://w3id.org/zorro#screwDriver3
+###  https://w3id.org/ZorroOntology#screwDriver3
 :screwDriver3 rdf:type owl:NamedIndividual .
 
 
