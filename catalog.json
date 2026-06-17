@@ -16,6 +16,19 @@
         }
       ]
     },
+
+    {
+      "@type": "Dataset",
+      "name": "extractions_regex_trig",
+      "identifier": "extractions_regex_trig",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "application/provenance",
+          "contentUrl": "https://kai-vu.github.io/zorro/generated-provenance/extractions_regex_trig.json"
+        }
+      ]
+    },
     {
       "@type": "Dataset",
       "name": "extractions_NER",
@@ -44,7 +57,7 @@
     {
       "@type": "Dataset",
       "name": "08-system-for-carburetor-assembly",
-      "identifier": "04-function-depends-on-housing-combustion",
+      "identifier": "08-system-for-carburetor-assembly",
       "distribution": [
         {
           "@type": "DataDownload",
@@ -56,7 +69,7 @@
       {
       "@type": "Dataset",
       "name": "11-dependent-functions-power-section",
-      "identifier": "04-function-depends-on-housing-combustion",
+      "identifier": "11-dependent-functions-power-section",
       "distribution": [
         {
           "@type": "DataDownload",
@@ -68,7 +81,7 @@
   {
       "@type": "Dataset",
       "name": "12-most-critical-systems",
-      "identifier": "04-function-depends-on-housing-combustion",
+      "identifier": "12-most-critical-systems",
       "distribution": [
         {
           "@type": "DataDownload",
