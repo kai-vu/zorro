@@ -22,7 +22,7 @@
           },
           {
             "count": 28,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 15,
@@ -30,23 +30,23 @@
           },
           {
             "count": 14,
-            "predicate": "https://w3id.org/zorro#hasCause"
+            "predicate": "https://w3id.org/ZorroOntology#hasCause"
           },
           {
             "count": 13,
-            "predicate": "https://w3id.org/zorro#addresses"
+            "predicate": "https://w3id.org/ZorroOntology#addresses"
           },
           {
             "count": 8,
-            "predicate": "https://w3id.org/zorro#addressesProblem"
+            "predicate": "https://w3id.org/ZorroOntology#addressesProblem"
           },
           {
             "count": 8,
-            "predicate": "https://w3id.org/zorro#defines"
+            "predicate": "https://w3id.org/ZorroOntology#defines"
           },
           {
             "count": 6,
-            "predicate": "https://w3id.org/zorro#solves"
+            "predicate": "https://w3id.org/ZorroOntology#solves"
           },
           {
             "count": 4,
@@ -57,10 +57,10 @@
             "predicate": "__other__"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#LowOilPressure, https://w3id.org/zorro#hasCause])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#LowOilPressure, https://w3id.org/ZorroOntology#hasCause])",
         "seeds": [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#hasCause"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#hasCause"
         ],
         "subject_term_types": {
           "uri": 233
@@ -90,7 +90,7 @@
           },
           {
             "count": 28,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 15,
@@ -98,23 +98,23 @@
           },
           {
             "count": 14,
-            "predicate": "https://w3id.org/zorro#hasCause"
+            "predicate": "https://w3id.org/ZorroOntology#hasCause"
           },
           {
             "count": 13,
-            "predicate": "https://w3id.org/zorro#addresses"
+            "predicate": "https://w3id.org/ZorroOntology#addresses"
           },
           {
             "count": 8,
-            "predicate": "https://w3id.org/zorro#addressesProblem"
+            "predicate": "https://w3id.org/ZorroOntology#addressesProblem"
           },
           {
             "count": 8,
-            "predicate": "https://w3id.org/zorro#defines"
+            "predicate": "https://w3id.org/ZorroOntology#defines"
           },
           {
             "count": 6,
-            "predicate": "https://w3id.org/zorro#solves"
+            "predicate": "https://w3id.org/ZorroOntology#solves"
           },
           {
             "count": 4,
@@ -125,11 +125,11 @@
             "predicate": "__other__"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#LowOilPressure, https://w3id.org/zorro#hasCause, https://w3id.org/zorro#solves])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#LowOilPressure, https://w3id.org/ZorroOntology#hasCause, https://w3id.org/ZorroOntology#solves])",
         "seeds": [
-          "https://w3id.org/zorro#LowOilPressure",
-          "https://w3id.org/zorro#hasCause",
-          "https://w3id.org/zorro#solves"
+          "https://w3id.org/ZorroOntology#LowOilPressure",
+          "https://w3id.org/ZorroOntology#hasCause",
+          "https://w3id.org/ZorroOntology#solves"
         ],
         "subject_term_types": {
           "uri": 233
@@ -151,7 +151,7 @@
         "predicate_breakdown": [
           {
             "count": 209,
-            "predicate": "https://w3id.org/zorro#partOf"
+            "predicate": "https://w3id.org/ZorroOntology#partOf"
           },
           {
             "count": 155,
@@ -163,7 +163,7 @@
           },
           {
             "count": 58,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 37,
@@ -171,15 +171,15 @@
           },
           {
             "count": 14,
-            "predicate": "https://w3id.org/zorro#partNumber"
+            "predicate": "https://w3id.org/ZorroOntology#partNumber"
           },
           {
             "count": 13,
-            "predicate": "https://w3id.org/zorro#hasFunction"
+            "predicate": "https://w3id.org/ZorroOntology#hasFunction"
           },
           {
             "count": 5,
-            "predicate": "https://w3id.org/zorro#linkCandidate"
+            "predicate": "https://w3id.org/ZorroOntology#linkCandidate"
           },
           {
             "count": 4,
@@ -187,18 +187,18 @@
           },
           {
             "count": 4,
-            "predicate": "https://w3id.org/zorro#subFunctionOf"
+            "predicate": "https://w3id.org/ZorroOntology#subFunctionOf"
           },
           {
             "count": 8,
             "predicate": "__other__"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#AccessoryHousingAssembly, https://w3id.org/zorro#CrankingSection, https://w3id.org/zorro#hasFunction])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#AccessoryHousingAssembly, https://w3id.org/ZorroOntology#CrankingSection, https://w3id.org/ZorroOntology#hasFunction])",
         "seeds": [
-          "https://w3id.org/zorro#AccessoryHousingAssembly",
-          "https://w3id.org/zorro#CrankingSection",
-          "https://w3id.org/zorro#hasFunction"
+          "https://w3id.org/ZorroOntology#AccessoryHousingAssembly",
+          "https://w3id.org/ZorroOntology#CrankingSection",
+          "https://w3id.org/ZorroOntology#hasFunction"
         ],
         "subject_term_types": {
           "bnode": 5,
@@ -221,7 +221,7 @@
         "predicate_breakdown": [
           {
             "count": 379,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 87,
@@ -233,15 +233,15 @@
           },
           {
             "count": 38,
-            "predicate": "https://w3id.org/zorro#subFunctionOf"
+            "predicate": "https://w3id.org/ZorroOntology#subFunctionOf"
           },
           {
             "count": 22,
-            "predicate": "https://w3id.org/zorro#defines"
+            "predicate": "https://w3id.org/ZorroOntology#defines"
           },
           {
             "count": 22,
-            "predicate": "https://w3id.org/zorro#addressesProblem"
+            "predicate": "https://w3id.org/ZorroOntology#addressesProblem"
           },
           {
             "count": 20,
@@ -249,11 +249,11 @@
           },
           {
             "count": 18,
-            "predicate": "https://w3id.org/zorro#hasFunction"
+            "predicate": "https://w3id.org/ZorroOntology#hasFunction"
           },
           {
             "count": 17,
-            "predicate": "https://w3id.org/zorro#partOf"
+            "predicate": "https://w3id.org/ZorroOntology#partOf"
           },
           {
             "count": 2,
@@ -264,10 +264,10 @@
             "predicate": "__other__"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#HousingAndSupportingCombustion, https://w3id.org/zorro#dependsOn])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#HousingAndSupportingCombustion, https://w3id.org/ZorroOntology#dependsOn])",
         "seeds": [
-          "https://w3id.org/zorro#HousingAndSupportingCombustion",
-          "https://w3id.org/zorro#dependsOn"
+          "https://w3id.org/ZorroOntology#HousingAndSupportingCombustion",
+          "https://w3id.org/ZorroOntology#dependsOn"
         ],
         "subject_term_types": {
           "bnode": 1,
@@ -294,7 +294,7 @@
           },
           {
             "count": 255,
-            "predicate": "https://w3id.org/zorro#partOf"
+            "predicate": "https://w3id.org/ZorroOntology#partOf"
           },
           {
             "count": 34,
@@ -302,11 +302,11 @@
           },
           {
             "count": 33,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 31,
-            "predicate": "https://w3id.org/zorro#hasFunction"
+            "predicate": "https://w3id.org/ZorroOntology#hasFunction"
           },
           {
             "count": 13,
@@ -314,18 +314,18 @@
           },
           {
             "count": 1,
-            "predicate": "https://w3id.org/zorro#linkCandidate"
+            "predicate": "https://w3id.org/ZorroOntology#linkCandidate"
           },
           {
             "count": 1,
-            "predicate": "https://w3id.org/zorro#partNumber"
+            "predicate": "https://w3id.org/ZorroOntology#partNumber"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#partNumber, https://w3id.org/zorro#partOf, https://w3id.org/zorro#partnr-STD-475])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#partNumber, https://w3id.org/ZorroOntology#partOf, https://w3id.org/ZorroOntology#partnr-STD-475])",
         "seeds": [
-          "https://w3id.org/zorro#partNumber",
-          "https://w3id.org/zorro#partOf",
-          "https://w3id.org/zorro#partnr-STD-475"
+          "https://w3id.org/ZorroOntology#partNumber",
+          "https://w3id.org/ZorroOntology#partOf",
+          "https://w3id.org/ZorroOntology#partnr-STD-475"
         ],
         "subject_term_types": {
           "bnode": 1,
@@ -348,7 +348,7 @@
         "predicate_breakdown": [
           {
             "count": 403,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 110,
@@ -360,11 +360,11 @@
           },
           {
             "count": 62,
-            "predicate": "https://w3id.org/zorro#partOf"
+            "predicate": "https://w3id.org/ZorroOntology#partOf"
           },
           {
             "count": 20,
-            "predicate": "https://w3id.org/zorro#subFunctionOf"
+            "predicate": "https://w3id.org/ZorroOntology#subFunctionOf"
           },
           {
             "count": 20,
@@ -372,15 +372,15 @@
           },
           {
             "count": 19,
-            "predicate": "https://w3id.org/zorro#hasFunction"
+            "predicate": "https://w3id.org/ZorroOntology#hasFunction"
           },
           {
             "count": 15,
-            "predicate": "https://w3id.org/zorro#defines"
+            "predicate": "https://w3id.org/ZorroOntology#defines"
           },
           {
             "count": 15,
-            "predicate": "https://w3id.org/zorro#addressesProblem"
+            "predicate": "https://w3id.org/ZorroOntology#addressesProblem"
           },
           {
             "count": 4,
@@ -391,10 +391,10 @@
             "predicate": "__other__"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#DrivingPowerToAccessories, https://w3id.org/zorro#hasFunction])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#DrivingPowerToAccessories, https://w3id.org/ZorroOntology#hasFunction])",
         "seeds": [
-          "https://w3id.org/zorro#DrivingPowerToAccessories",
-          "https://w3id.org/zorro#hasFunction"
+          "https://w3id.org/ZorroOntology#DrivingPowerToAccessories",
+          "https://w3id.org/ZorroOntology#hasFunction"
         ],
         "subject_term_types": {
           "uri": 780
@@ -416,7 +416,7 @@
         "predicate_breakdown": [
           {
             "count": 156,
-            "predicate": "https://w3id.org/zorro#partOf"
+            "predicate": "https://w3id.org/ZorroOntology#partOf"
           },
           {
             "count": 72,
@@ -428,7 +428,7 @@
           },
           {
             "count": 31,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 20,
@@ -436,15 +436,15 @@
           },
           {
             "count": 8,
-            "predicate": "https://w3id.org/zorro#hasFunction"
+            "predicate": "https://w3id.org/ZorroOntology#hasFunction"
           },
           {
             "count": 8,
-            "predicate": "https://w3id.org/zorro#partNumber"
+            "predicate": "https://w3id.org/ZorroOntology#partNumber"
           },
           {
             "count": 3,
-            "predicate": "https://w3id.org/zorro#linkCandidate"
+            "predicate": "https://w3id.org/ZorroOntology#linkCandidate"
           },
           {
             "count": 2,
@@ -452,17 +452,17 @@
           },
           {
             "count": 2,
-            "predicate": "https://w3id.org/zorro#isProbably"
+            "predicate": "https://w3id.org/ZorroOntology#isProbably"
           },
           {
             "count": 1,
             "predicate": "__other__"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#AccessoryHousingAssembly, https://w3id.org/zorro#partOf])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#AccessoryHousingAssembly, https://w3id.org/ZorroOntology#partOf])",
         "seeds": [
-          "https://w3id.org/zorro#AccessoryHousingAssembly",
-          "https://w3id.org/zorro#partOf"
+          "https://w3id.org/ZorroOntology#AccessoryHousingAssembly",
+          "https://w3id.org/ZorroOntology#partOf"
         ],
         "subject_term_types": {
           "bnode": 3,
@@ -485,7 +485,7 @@
         "predicate_breakdown": [
           {
             "count": 327,
-            "predicate": "https://w3id.org/zorro#partOf"
+            "predicate": "https://w3id.org/ZorroOntology#partOf"
           },
           {
             "count": 76,
@@ -493,7 +493,7 @@
           },
           {
             "count": 69,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 59,
@@ -501,7 +501,7 @@
           },
           {
             "count": 55,
-            "predicate": "https://w3id.org/zorro#hasFunction"
+            "predicate": "https://w3id.org/ZorroOntology#hasFunction"
           },
           {
             "count": 24,
@@ -509,7 +509,7 @@
           },
           {
             "count": 6,
-            "predicate": "https://w3id.org/zorro#partNumber"
+            "predicate": "https://w3id.org/ZorroOntology#partNumber"
           },
           {
             "count": 2,
@@ -517,23 +517,23 @@
           },
           {
             "count": 2,
-            "predicate": "https://w3id.org/zorro#subFunctionOf"
+            "predicate": "https://w3id.org/ZorroOntology#subFunctionOf"
           },
           {
             "count": 1,
-            "predicate": "https://w3id.org/zorro#linkCandidate"
+            "predicate": "https://w3id.org/ZorroOntology#linkCandidate"
           },
           {
             "count": 2,
             "predicate": "__other__"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#CarburetorAssembly, https://w3id.org/zorro#System, https://w3id.org/zorro#partOf, https://w3id.org/zorro#type])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#CarburetorAssembly, https://w3id.org/ZorroOntology#System, https://w3id.org/ZorroOntology#partOf, https://w3id.org/ZorroOntology#type])",
         "seeds": [
-          "https://w3id.org/zorro#CarburetorAssembly",
-          "https://w3id.org/zorro#System",
-          "https://w3id.org/zorro#partOf",
-          "https://w3id.org/zorro#type"
+          "https://w3id.org/ZorroOntology#CarburetorAssembly",
+          "https://w3id.org/ZorroOntology#System",
+          "https://w3id.org/ZorroOntology#partOf",
+          "https://w3id.org/ZorroOntology#type"
         ],
         "subject_term_types": {
           "bnode": 1,
@@ -570,9 +570,9 @@
             "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#hasCause])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#hasCause])",
         "seeds": [
-          "https://w3id.org/zorro#hasCause"
+          "https://w3id.org/ZorroOntology#hasCause"
         ],
         "subject_term_types": {
           "uri": 120
@@ -594,7 +594,7 @@
         "predicate_breakdown": [
           {
             "count": 762,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 101,
@@ -606,15 +606,15 @@
           },
           {
             "count": 93,
-            "predicate": "https://w3id.org/zorro#subFunctionOf"
+            "predicate": "https://w3id.org/ZorroOntology#subFunctionOf"
           },
           {
             "count": 84,
-            "predicate": "https://w3id.org/zorro#hasFunction"
+            "predicate": "https://w3id.org/ZorroOntology#hasFunction"
           },
           {
             "count": 79,
-            "predicate": "https://w3id.org/zorro#partOf"
+            "predicate": "https://w3id.org/ZorroOntology#partOf"
           },
           {
             "count": 73,
@@ -622,11 +622,11 @@
           },
           {
             "count": 60,
-            "predicate": "https://w3id.org/zorro#defines"
+            "predicate": "https://w3id.org/ZorroOntology#defines"
           },
           {
             "count": 60,
-            "predicate": "https://w3id.org/zorro#addressesProblem"
+            "predicate": "https://w3id.org/ZorroOntology#addressesProblem"
           },
           {
             "count": 3,
@@ -637,13 +637,13 @@
             "predicate": "__other__"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#Function, https://w3id.org/zorro#GeneratingPower, https://w3id.org/zorro#dependsOn, https://w3id.org/zorro#label, https://w3id.org/zorro#type])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#Function, https://w3id.org/ZorroOntology#GeneratingPower, https://w3id.org/ZorroOntology#dependsOn, https://w3id.org/ZorroOntology#label, https://w3id.org/ZorroOntology#type])",
         "seeds": [
-          "https://w3id.org/zorro#Function",
-          "https://w3id.org/zorro#GeneratingPower",
-          "https://w3id.org/zorro#dependsOn",
-          "https://w3id.org/zorro#label",
-          "https://w3id.org/zorro#type"
+          "https://w3id.org/ZorroOntology#Function",
+          "https://w3id.org/ZorroOntology#GeneratingPower",
+          "https://w3id.org/ZorroOntology#dependsOn",
+          "https://w3id.org/ZorroOntology#label",
+          "https://w3id.org/ZorroOntology#type"
         ],
         "subject_term_types": {
           "uri": 1415
@@ -665,11 +665,11 @@
         "predicate_breakdown": [
           {
             "count": 804,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 432,
-            "predicate": "https://w3id.org/zorro#partOf"
+            "predicate": "https://w3id.org/ZorroOntology#partOf"
           },
           {
             "count": 262,
@@ -685,37 +685,37 @@
           },
           {
             "count": 93,
-            "predicate": "https://w3id.org/zorro#subFunctionOf"
+            "predicate": "https://w3id.org/ZorroOntology#subFunctionOf"
           },
           {
             "count": 84,
-            "predicate": "https://w3id.org/zorro#hasFunction"
+            "predicate": "https://w3id.org/ZorroOntology#hasFunction"
           },
           {
             "count": 74,
-            "predicate": "https://w3id.org/zorro#partNumber"
+            "predicate": "https://w3id.org/ZorroOntology#partNumber"
           },
           {
             "count": 60,
-            "predicate": "https://w3id.org/zorro#addressesProblem"
+            "predicate": "https://w3id.org/ZorroOntology#addressesProblem"
           },
           {
             "count": 60,
-            "predicate": "https://w3id.org/zorro#defines"
+            "predicate": "https://w3id.org/ZorroOntology#defines"
           },
           {
             "count": 83,
             "predicate": "__other__"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#Function, https://w3id.org/zorro#PowerSection, https://w3id.org/zorro#dependsOn, https://w3id.org/zorro#hasFunction, https://w3id.org/zorro#label, https://w3id.org/zorro#type])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#Function, https://w3id.org/ZorroOntology#PowerSection, https://w3id.org/ZorroOntology#dependsOn, https://w3id.org/ZorroOntology#hasFunction, https://w3id.org/ZorroOntology#label, https://w3id.org/ZorroOntology#type])",
         "seeds": [
-          "https://w3id.org/zorro#Function",
-          "https://w3id.org/zorro#PowerSection",
-          "https://w3id.org/zorro#dependsOn",
-          "https://w3id.org/zorro#hasFunction",
-          "https://w3id.org/zorro#label",
-          "https://w3id.org/zorro#type"
+          "https://w3id.org/ZorroOntology#Function",
+          "https://w3id.org/ZorroOntology#PowerSection",
+          "https://w3id.org/ZorroOntology#dependsOn",
+          "https://w3id.org/ZorroOntology#hasFunction",
+          "https://w3id.org/ZorroOntology#label",
+          "https://w3id.org/ZorroOntology#type"
         ],
         "subject_term_types": {
           "bnode": 57,
@@ -738,11 +738,11 @@
         "predicate_breakdown": [
           {
             "count": 796,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 308,
-            "predicate": "https://w3id.org/zorro#partOf"
+            "predicate": "https://w3id.org/ZorroOntology#partOf"
           },
           {
             "count": 125,
@@ -758,19 +758,19 @@
           },
           {
             "count": 93,
-            "predicate": "https://w3id.org/zorro#subFunctionOf"
+            "predicate": "https://w3id.org/ZorroOntology#subFunctionOf"
           },
           {
             "count": 84,
-            "predicate": "https://w3id.org/zorro#hasFunction"
+            "predicate": "https://w3id.org/ZorroOntology#hasFunction"
           },
           {
             "count": 60,
-            "predicate": "https://w3id.org/zorro#defines"
+            "predicate": "https://w3id.org/ZorroOntology#defines"
           },
           {
             "count": 60,
-            "predicate": "https://w3id.org/zorro#addressesProblem"
+            "predicate": "https://w3id.org/ZorroOntology#addressesProblem"
           },
           {
             "count": 4,
@@ -781,14 +781,14 @@
             "predicate": "__other__"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#Function, https://w3id.org/zorro#System, https://w3id.org/zorro#dependsOn, https://w3id.org/zorro#hasFunction, https://w3id.org/zorro#label, https://w3id.org/zorro#type])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#Function, https://w3id.org/ZorroOntology#System, https://w3id.org/ZorroOntology#dependsOn, https://w3id.org/ZorroOntology#hasFunction, https://w3id.org/ZorroOntology#label, https://w3id.org/ZorroOntology#type])",
         "seeds": [
-          "https://w3id.org/zorro#Function",
-          "https://w3id.org/zorro#System",
-          "https://w3id.org/zorro#dependsOn",
-          "https://w3id.org/zorro#hasFunction",
-          "https://w3id.org/zorro#label",
-          "https://w3id.org/zorro#type"
+          "https://w3id.org/ZorroOntology#Function",
+          "https://w3id.org/ZorroOntology#System",
+          "https://w3id.org/ZorroOntology#dependsOn",
+          "https://w3id.org/ZorroOntology#hasFunction",
+          "https://w3id.org/ZorroOntology#label",
+          "https://w3id.org/ZorroOntology#type"
         ],
         "subject_term_types": {
           "uri": 1755
@@ -810,7 +810,7 @@
         "predicate_breakdown": [
           {
             "count": 566,
-            "predicate": "https://w3id.org/zorro#partOf"
+            "predicate": "https://w3id.org/ZorroOntology#partOf"
           },
           {
             "count": 200,
@@ -822,15 +822,15 @@
           },
           {
             "count": 84,
-            "predicate": "https://w3id.org/zorro#hasFunction"
+            "predicate": "https://w3id.org/ZorroOntology#hasFunction"
           },
           {
             "count": 62,
-            "predicate": "https://w3id.org/zorro#dependsOn"
+            "predicate": "https://w3id.org/ZorroOntology#dependsOn"
           },
           {
             "count": 35,
-            "predicate": "https://w3id.org/zorro#linkCandidate"
+            "predicate": "https://w3id.org/ZorroOntology#linkCandidate"
           },
           {
             "count": 32,
@@ -838,7 +838,7 @@
           },
           {
             "count": 13,
-            "predicate": "https://w3id.org/zorro#isProbably"
+            "predicate": "https://w3id.org/ZorroOntology#isProbably"
           },
           {
             "count": 5,
@@ -849,12 +849,12 @@
             "predicate": "http://www.w3.org/2000/01/rdf-schema#range"
           }
         ],
-        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/zorro#Component, https://w3id.org/zorro#hasFunction, https://w3id.org/zorro#label, https://w3id.org/zorro#subClassOf])",
+        "retrieval_query": "expand_subgraph(depth=1, seeds=[https://w3id.org/ZorroOntology#Component, https://w3id.org/ZorroOntology#hasFunction, https://w3id.org/ZorroOntology#label, https://w3id.org/ZorroOntology#subClassOf])",
         "seeds": [
-          "https://w3id.org/zorro#Component",
-          "https://w3id.org/zorro#hasFunction",
-          "https://w3id.org/zorro#label",
-          "https://w3id.org/zorro#subClassOf"
+          "https://w3id.org/ZorroOntology#Component",
+          "https://w3id.org/ZorroOntology#hasFunction",
+          "https://w3id.org/ZorroOntology#label",
+          "https://w3id.org/ZorroOntology#subClassOf"
         ],
         "subject_term_types": {
           "bnode": 35,
