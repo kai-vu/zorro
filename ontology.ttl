@@ -5,7 +5,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix romain: <https://github.com/HediKarray/ReferenceOntologyOfMaintenance/blob/master/ROMAIN.owl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix zorro: <https://w3id.org/zorro/ontology#> .
+@prefix zorro: <https://w3id.org/ZorroOntology#> .
 
 zorro:Assembly a owl:Class ;
     rdfs:label "Assembly" ;
