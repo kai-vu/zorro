@@ -12,7 +12,7 @@ import pandas as pd
 from makeprov import InPath, OutPath, rule
 
 LOGGER = logging.getLogger(__name__)
-BASE_IRI = "https://w3id.org/zorro#"
+BASE_IRI = "https://w3id.org/ZorroOntology#"
 
 PROBLEM_PROMPT = """Given a set of aircraft maintenance problem descriptions, output a json object with an array of problem objects: {"problems":[ problem1, problem2, ... ]}
 Each problem is an object with the following fields:
