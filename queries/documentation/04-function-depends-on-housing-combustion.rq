@@ -6,6 +6,6 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?function ?dependency
 WHERE {
-    BIND(:HousingAndSupportingCombustion AS ?function)
-    ?function :dependsOn ?dependency .
+  ?function rdfs:label "Housing and supporting combustion" ;
+            :dependsOn ?dependency .
 }
