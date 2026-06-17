@@ -125,7 +125,7 @@ class RegexExtractionConfig:
 
 @rule(
     name="problem_extractions_regex",
-    base_iri="https://w3id.org/zorro#",
+    base_iri="https://w3id.org/ZorroOntology#",
     prov_dir="generated-provenance",
 )
 def extract_problems_regex(
@@ -185,7 +185,7 @@ def extract_problems_regex(
 
 @rule(
     name="action_extractions_regex",
-    base_iri="https://w3id.org/zorro#",
+    base_iri="https://w3id.org/ZorroOntology#",
     prov_dir="generated-provenance",
 )
 def extract_actions_regex(
