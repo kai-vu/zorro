@@ -1,9 +1,9 @@
-id: https://w3id.org/ZorroOntology/ontology
+id: https://w3id.org/ZorroOntology/
 name: ZorroOntology
 title: ZORRO Ontology
 description: ZORRO ontology for troubleshooting and maintenance.
 prefixes:
-  ZorroOntology: https://w3id.org/ZorroOntology/ontology#
+  ZorroOntology: https://w3id.org/ZorroOntology#
   linkml: https://w3id.org/linkml/
   skos: http://www.w3.org/2004/02/skos/core#
   rdfs: http://www.w3.org/2000/01/rdf-schema#
