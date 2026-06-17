@@ -14,9 +14,9 @@ from rdflib.namespace import DC, DCTERMS, OWL, RDF, RDFS, SKOS
 
 LOGGER = logging.getLogger(__name__)
 
-BASE_IRI = "https://w3id.org/zorro#"
+BASE_IRI = "https://w3id.org/ZorroOntology#"
 BASE = Namespace(BASE_IRI)
-GRAPH_NS = Namespace("https://w3id.org/zorro/graph/")
+GRAPH_NS = Namespace("https://w3id.org/ZorroOntology/graph/")
 
 
 def iri_slug(value: str) -> str:
