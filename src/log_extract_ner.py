@@ -13,7 +13,7 @@ from makeprov import InPath, OutPath, rule
 from sklearn.model_selection import train_test_split
 
 LOGGER = logging.getLogger(__name__)
-BASE_IRI = "https://w3id.org/zorro#"
+BASE_IRI = "https://w3id.org/ZorroOntology#"
 
 ENTITY_COLUMNS = ("LOCATION", "PART", "TGGEDPROBLEM")
 
