@@ -49,7 +49,7 @@ LEGACY_CACHE_PATHS = [
     REPORT_DIR / "competency_llm_subgraph_cache.json",
     REPORT_DIR / "competency_llm_cache.json",
 ]
-BASE_NS = Namespace("https://w3id.org/zorro#")
+BASE_NS = Namespace("https://w3id.org/ZorroOntology#")
 DEFAULT_SUBGRAPH_DEPTH = 1
 DEFAULT_LENIENCE = 0.0
 
