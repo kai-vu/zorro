@@ -30,9 +30,9 @@ from sssom.writers import to_rdf_graph, write_tsv
 
 LOGGER = logging.getLogger(__name__)
 
-BASE_IRI = "https://w3id.org/zorro#"
+BASE_IRI = "https://w3id.org/ZorroOntology#"
 BASE = Namespace(BASE_IRI)
-GRAPH_NS = Namespace("https://w3id.org/zorro/graph/")
+GRAPH_NS = Namespace("https://w3id.org/ZorroOntology/graph/")
 SEMAPV = Namespace("http://purl.org/semapv/")
 
 
@@ -191,7 +191,7 @@ def _head_modifier_split(part_name: str) -> tuple[str, str]:
 def _build_prefix_map() -> dict[str, str]:
     """Return prefix map for SSSOM artefacts."""
     return {
-        "zorro": BASE_IRI,
+        "ZorroOntology": BASE_IRI,
         "skos": str(SKOS),
         "semapv": str(SEMAPV),
         "prov": str(PROV),
@@ -202,17 +202,17 @@ def _build_prefix_map() -> dict[str, str]:
 
 def _mapping_id(subject_slug: str, object_curie: str) -> str:
     """Return deterministic mapping identifier."""
-    return f"zorro:mapping/{subject_slug}--{_slugify(object_curie)}"
+    return f"ZorroOntology:mapping/{subject_slug}--{_slugify(object_curie)}"
 
 
 def _subject_curie(subject_slug: str) -> str:
     """Return subject CURIE."""
-    return f"zorro:part-mention/{subject_slug}"
+    return f"ZorroOntology:part-mention/{subject_slug}"
 
 
 def _object_curie(part_number: str) -> str:
     """Return object CURIE based on catalog part number."""
-    return f"zorro:partnr-{part_number}"
+    return f"ZorroOntology:partnr-{part_number}"
 
 
 def _mapping_rows(
@@ -303,8 +303,8 @@ def _as_msdf(rows: Sequence[dict[str, str | float]]) -> MappingSetDataFrame:
     metadata = {
         "mapping_set_id": f"{BASE_IRI}mapping-set/part-links-regex",
         "license": "https://creativecommons.org/licenses/by/4.0/",
-        "creator_id": "zorro:link_parts.py",
-        "creator_label": "Zorro Part Linking Script",
+        "creator_id": "ZorroOntology:link_parts.py",
+        "creator_label": "ZorroOntology Part Linking Script",
     }
     msdf = MappingSetDataFrame(df=df, metadata=metadata)
     msdf.prefix_map.update(_build_prefix_map())
