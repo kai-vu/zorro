@@ -283,7 +283,7 @@
 
 :define rdfs:domain :Function .
 
-:dependOn rdfs:domain :Function ;
+:dependsOn rdfs:domain :Function ;
     rdfs:range :Function .
 
 :hasFunction rdfs:range :Function .
