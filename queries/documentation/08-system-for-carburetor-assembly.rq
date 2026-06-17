@@ -6,7 +6,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?system
 WHERE {
-    BIND(:CarburetorAssembly AS ?assembly)
-    ?assembly :partOf ?system .
+  ?assembly rdfs:label "Carburetor Assembly" ;
+     :partOf ?system .
     ?system rdf:type :System .
 }
