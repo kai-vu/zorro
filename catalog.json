@@ -28,6 +28,21 @@
         }
       ]
     },
+
+  {
+      "@type": "Dataset",
+      "name": "04-function-depends-on-housing-combustion",
+      "identifier": "04-function-depends-on-housing-combustion",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/turtle",
+          "contentUrl": "https://kai-vu.github.io/zorro/queries/reports/subgraph-profiles/04-function-depends-on-housing-combustion.ttl"
+        }
+      ]
+    },
+
+
     {
       "@type": "Dataset",
       "name": "extractions_chatgpt_4o",
