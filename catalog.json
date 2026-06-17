@@ -24,7 +24,7 @@
       "distribution": [
         {
           "@type": "DataDownload",
-          "encodingFormat": "application/provenance",
+          "encodingFormat": "application/json",
           "contentUrl": "https://kai-vu.github.io/zorro/generated-provenance/extractions_regex_trig.json"
         }
       ]
