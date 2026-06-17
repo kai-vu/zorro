@@ -1,8 +1,8 @@
-@prefix : <https://w3id.org/zorro#> .
+@prefix : <https://w3id.org/ZorroOntology#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/zorro/graph/parts> {
+<https://w3id.org/ZorroOntology/graph/parts> {
     :partnr-01L23459 a :PartInstance ;
         rdfs:label " 25/32 I.D. x 3/8 O.D. x 1/32 thick (Roller tappet engines)" ;
         rdfs:subClassOf :Washer ;
