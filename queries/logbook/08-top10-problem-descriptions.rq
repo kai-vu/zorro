@@ -1,6 +1,6 @@
 # Which problem descriptions occur most frequently in the logbook extracts?
 
-PREFIX : <https://w3id.org/zorro#>
+PREFIX : <https://w3id.org/ZorroOntology#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
