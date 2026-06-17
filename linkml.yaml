@@ -1,9 +1,9 @@
-id: https://w3id.org/zorro/ontology
-name: zorro
+id: https://w3id.org/ZorroOntology/ontology
+name: ZorroOntology
 title: ZORRO Ontology
 description: ZORRO ontology for troubleshooting and maintenance.
 prefixes:
-  zorro: https://w3id.org/zorro/ontology#
+  ZorroOntology: https://w3id.org/ZorroOntology/ontology#
   linkml: https://w3id.org/linkml/
   skos: http://www.w3.org/2004/02/skos/core#
   rdfs: http://www.w3.org/2000/01/rdf-schema#
@@ -11,113 +11,113 @@ prefixes:
   iof-core:  https://spec.industrialontologies.org/iof/ontology/core/Core/
   romain:    https://github.com/HediKarray/ReferenceOntologyOfMaintenance/blob/master/ROMAIN.owl#
   ido:       https://rds.posccaesar.org/ontology/IDO/
-default_prefix: zorro
+default_prefix: ZorroOntology
 default_range: string
 
 
 slots:
   has_cause:
-    slot_uri: zorro:hasCause
+    slot_uri: ZorroOntology:hasCause
     description: Problem has associated cause.
     domain: Problem
     range: Problem
     multivalued: true
   addresses:
-    slot_uri: zorro:addresses
+    slot_uri: ZorroOntology:addresses
     description: Solution addresses a problem.
     domain: Solution
     range: Problem
     multivalued: true
   solves:
-    slot_uri: zorro:solves
+    slot_uri: ZorroOntology:solves
     description: Solution resolves a problem.
     domain: Solution
     range: Problem
     multivalued: true
   has_function:
-    slot_uri: zorro:hasFunction
+    slot_uri: ZorroOntology:hasFunction
     description: Component has required function.
     domain: Component
     range: Function
     multivalued: true
   addresses_problem:
-    slot_uri: zorro:addressesProblem
+    slot_uri: ZorroOntology:addressesProblem
     description: Function mitigates a problem.
     domain: Function
     range: Problem
     multivalued: true
   depends_on:
-    slot_uri: zorro:dependsOn
+    slot_uri: ZorroOntology:dependsOn
     description: Entity depends on another entity.
     domain: Thing
     range: Thing
     multivalued: true
   sub_function_of:
-    slot_uri: zorro:subFunctionOf
+    slot_uri: ZorroOntology:subFunctionOf
     description: Function is a sub-function of another function.
     domain: Function
     range: Function
     multivalued: true
   deals_with:
-    slot_uri: zorro:dealsWith
+    slot_uri: ZorroOntology:dealsWith
     description: Action deals with a problem.
     domain: Action
     range: Problem
     multivalued: true
   involves:
-    slot_uri: zorro:involves
+    slot_uri: ZorroOntology:involves
     description: Event involves a component or part.
     domain: Thing
     range: Thing
     multivalued: true
   at_location:
-    slot_uri: zorro:atLocation
+    slot_uri: ZorroOntology:atLocation
     description: Problem occurs at a specific location.
     domain: Problem
     range: Location
     multivalued: true
   location:
-    slot_uri: zorro:location
+    slot_uri: ZorroOntology:location
     description: Literal representation of the reported location.
     domain: Problem
     range: string
     multivalued: true
   part_of:
-    slot_uri: zorro:partOf
+    slot_uri: ZorroOntology:partOf
     description: Component is part of another component.
     domain: Component
     range: Component
     multivalued: true
   part_number:
-    slot_uri: zorro:partNumber
+    slot_uri: ZorroOntology:partNumber
     description: Manufacturer part number for a part instance.
     domain: PartInstance
     range: string
   consist_of:
-    slot_uri: zorro:consistOf
+    slot_uri: ZorroOntology:consistOf
     description: Procedure consists of steps.
     domain: Procedure
     range: Step
     multivalued: true
   involve:
-    slot_uri: zorro:involve
+    slot_uri: ZorroOntology:involve
     description: Step involves components.
     domain: Step
     range: Component
     multivalued: true
   define:
-    slot_uri: zorro:define
+    slot_uri: ZorroOntology:define
     description: Function defines a problem.
     domain: Function
     range: Problem
   fail_via:
-    slot_uri: zorro:failVia
+    slot_uri: ZorroOntology:failVia
     description: Component fails via problem.
     domain: Component
     range: Problem
     multivalued: true
   result_in:
-    slot_uri: zorro:resultIn
+    slot_uri: ZorroOntology:resultIn
     description: Problem results in an effect.
     domain: Problem
     range: Effect
