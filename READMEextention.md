@@ -10,7 +10,7 @@ https://w3id.org/ZorroOntology (registered via perma-id/w3id.org) **User intefac
 **Zenodo DOI**: https://doi.org/10.5281/zenodo.17815628 **Repository**: https://github.com/kai-vu/zorro
 
 ## News
-- We have updated the user interfsce page to include additional competency questions (https://kai-vu.github.io/zorro/query.html)
+- We have updated the user interfsce page to include additional competency questions https://kai-vu.github.io/zorro/query.html
 
 
 ## Introduction
