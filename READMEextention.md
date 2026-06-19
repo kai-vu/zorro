@@ -10,7 +10,9 @@ https://w3id.org/ZorroOntology (registered via perma-id/w3id.org) **User intefac
 **Zenodo DOI**: https://doi.org/10.5281/zenodo.17815628 **Repository**: https://github.com/kai-vu/zorro
 
 ## News
-- We have updated the user interfsce page to include additional competency questions https://kai-vu.github.io/zorro/query.html
+- We are updating the annotations based on feedback from aircraft experts. The revised version will be published on Zenodo soon.
+- We evaluated a representative subset of the logbook annotations together with an aircraft maintenance expert.
+- We updated the user interface page to include additional competency questions. https://kai-vu.github.io/zorro/query.html
 
 
 ## Introduction
