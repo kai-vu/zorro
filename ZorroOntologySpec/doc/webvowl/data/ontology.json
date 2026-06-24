@@ -2,8 +2,8 @@
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
     "languages" : [ "undefined" ],
-    "baseIris" : [ "http://www.ZorroUpperLevelOntology", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
-    "iri" : "http://www.ZorroUpperLevelOntology/"
+    "baseIris" : [ "http://www.ZorroOntology", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://www.ZorroOntology/"
   },
   "namespace" : [ ],
   "class" : [ {
@@ -27,13 +27,16 @@
   }, {
     "id" : "9",
     "type" : "owl:Class"
-  }, {
+  },  {
+    "id" : "21",
+    "type" : "owl:Class"
+  },{
     "id" : "14",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
-    "iri" : "http://www.ZorroUpperLevelOntology/Cause",
-    "baseIri" : "http://www.ZorroUpperLevelOntology",
+    "iri" : "http://www.ZorroOntology/Cause",
+    "baseIri" : "http://www.ZorroOntology",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Cause"
@@ -42,9 +45,20 @@
       "undefined" : "Cause itself  is a problem"
     },
     "id" : "0"
+  },{
+    "iri" : "http://www.ZorroOntology/Effect",
+    "baseIri" : "http://www.ZorroOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Effect"
+    },
+    "comment" : {
+      "undefined" : "Effect itself  is a problem"
+    },
+    "id" : "21"
   }, {
-    "iri" : "http://www.ZorroUpperLevelOntology/Assembly",
-    "baseIri" : "http://www.ZorroUpperLevelOntology",
+    "iri" : "http://www.ZorroOntology/Assembly",
+    "baseIri" : "http://www.ZorroOntology",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Assembly"
@@ -52,8 +66,8 @@
     "id" : "1",
     "superClasses" : [ "2" ]
   }, {
-    "iri" : "http://www.ZorroUpperLevelOntology/System",
-    "baseIri" : "http://www.ZorroUpperLevelOntology",
+    "iri" : "http://www.ZorroOntology/System",
+    "baseIri" : "http://www.ZorroOntology",
     "instances" : 0,
     "label" : {
       "IRI-based" : "System"
@@ -61,8 +75,8 @@
     "id" : "6",
     "superClasses" : [ "2" ]
   }, {
-    "iri" : "http://www.ZorroUpperLevelOntology/Solution",
-    "baseIri" : "http://www.ZorroUpperLevelOntology",
+    "iri" : "http://www.ZorroOntology/Solution",
+    "baseIri" : "http://www.ZorroOntology",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Solution"
@@ -72,8 +86,8 @@
     },
     "id" : "8"
   }, {
-    "iri" : "http://www.ZorroUpperLevelOntology/Function",
-    "baseIri" : "http://www.ZorroUpperLevelOntology",
+    "iri" : "http://www.ZorroOntology/Function",
+    "baseIri" : "http://www.ZorroOntology",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Function"
@@ -83,8 +97,8 @@
     },
     "id" : "4"
   }, {
-    "iri" : "http://www.ZorroUpperLevelOntology/Component",
-    "baseIri" : "http://www.ZorroUpperLevelOntology",
+    "iri" : "http://www.ZorroOntology/Component",
+    "baseIri" : "http://www.ZorroOntology",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Component"
@@ -95,16 +109,16 @@
     },
     "id" : "2"
   }, {
-    "iri" : "http://www.ZorroUpperLevelOntology/Problem",
-    "baseIri" : "http://www.ZorroUpperLevelOntology",
+    "iri" : "http://www.ZorroOntology/Problem",
+    "baseIri" : "http://www.ZorroOntology",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Problem"
     },
     "id" : "9"
   }, {
-    "iri" : "http://www.ZorroUpperLevelOntology/Part",
-    "baseIri" : "http://www.ZorroUpperLevelOntology",
+    "iri" : "http://www.ZorroOntology/Part",
+    "baseIri" : "http://www.ZorroOntology",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Part"
@@ -114,6 +128,9 @@
   } ],
   "property" : [ {
     "id" : "3",
+    "type" : "owl:objectProperty"
+  },{
+    "id" : "22",
     "type" : "owl:objectProperty"
   }, {
     "id" : "5",
@@ -153,8 +170,8 @@
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "http://www.ZorroUpperLevelOntology/hasFunction",
-    "baseIri" : "http://www.ZorroUpperLevelOntology",
+    "iri" : "http://www.ZorroOntology/hasFunction",
+    "baseIri" : "http://www.ZorroOntology",
     "range" : "4",
     "label" : {
       "IRI-based" : "hasFunction"
@@ -162,10 +179,20 @@
     "domain" : "2",
     "attributes" : [ "object" ],
     "id" : "3"
+  },{
+    "iri" : "http://www.ZorroOntology/hasEffect",
+    "baseIri" : "http://www.ZorroOntology",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hasEffect"
+    },
+    "domain" : "0",
+    "attributes" : [ "object" ],
+    "id" : "22"
   }, {
-    "iri" : "http://www.ZorroUpperLevelOntology/inSystem",
-    "baseIri" : "http://www.ZorroUpperLevelOntology",
-    "range" : "6",
+    "iri" : "http://www.ZorroOntology/inSystem",
+    "baseIri" : "http://www.ZorroOntology",
+    "range" : "21",
     "label" : {
       "IRI-based" : "inSystem"
     },
@@ -173,8 +200,8 @@
     "attributes" : [ "object" ],
     "id" : "5"
   }, {
-    "iri" : "http://www.ZorroUpperLevelOntology/solves",
-    "baseIri" : "http://www.ZorroUpperLevelOntology",
+    "iri" : "http://www.ZorroOntology/solves",
+    "baseIri" : "http://www.ZorroOntology",
     "range" : "9",
     "label" : {
       "IRI-based" : "solves"
@@ -183,8 +210,8 @@
     "attributes" : [ "object" ],
     "id" : "7"
   }, {
-    "iri" : "http://www.ZorroUpperLevelOntology/failsVia",
-    "baseIri" : "http://www.ZorroUpperLevelOntology",
+    "iri" : "http://www.ZorroOntology/failsVia",
+    "baseIri" : "http://www.ZorroOntology",
     "range" : "9",
     "label" : {
       "IRI-based" : "failsVia"
@@ -193,8 +220,8 @@
     "attributes" : [ "object" ],
     "id" : "10"
   }, {
-    "iri" : "http://www.ZorroUpperLevelOntology/dependsOn",
-    "baseIri" : "http://www.ZorroUpperLevelOntology",
+    "iri" : "http://www.ZorroOntology/dependsOn",
+    "baseIri" : "http://www.ZorroOntology",
     "range" : "4",
     "label" : {
       "IRI-based" : "dependsOn"
@@ -213,8 +240,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "13"
   }, {
-    "iri" : "http://www.ZorroUpperLevelOntology/involves",
-    "baseIri" : "http://www.ZorroUpperLevelOntology",
+    "iri" : "http://www.ZorroOntology/involves",
+    "baseIri" : "http://www.ZorroOntology",
     "range" : "14",
     "label" : {
       "IRI-based" : "involves"
@@ -223,8 +250,8 @@
     "attributes" : [ "object" ],
     "id" : "15"
   }, {
-    "iri" : "http://www.ZorroUpperLevelOntology/defines",
-    "baseIri" : "http://www.ZorroUpperLevelOntology",
+    "iri" : "http://www.ZorroOntology/defines",
+    "baseIri" : "http://www.ZorroOntology",
     "range" : "9",
     "label" : {
       "IRI-based" : "defines"
@@ -233,8 +260,8 @@
     "attributes" : [ "object" ],
     "id" : "16"
   }, {
-    "iri" : "http://www.ZorroUpperLevelOntology/hasCause",
-    "baseIri" : "http://www.ZorroUpperLevelOntology",
+    "iri" : "http://www.ZorroOntology/hasCause",
+    "baseIri" : "http://www.ZorroOntology",
     "range" : "0",
     "label" : {
       "IRI-based" : "hasCause"
@@ -253,8 +280,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "19"
   }, {
-    "iri" : "http://www.ZorroUpperLevelOntology/PartOf",
-    "baseIri" : "http://www.ZorroUpperLevelOntology",
+    "iri" : "http://www.ZorroOntology/PartOf",
+    "baseIri" : "http://www.ZorroOntology",
     "range" : "1",
     "label" : {
       "IRI-based" : "PartOf"
