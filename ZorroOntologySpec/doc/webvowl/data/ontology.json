@@ -192,7 +192,7 @@
   }, {
     "iri" : "http://www.ZorroOntology/inSystem",
     "baseIri" : "http://www.ZorroOntology",
-    "range" : "1",
+    "range" : "6",
     "label" : {
       "IRI-based" : "inSystem"
     },
