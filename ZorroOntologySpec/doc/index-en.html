@@ -191,6 +191,11 @@ This ontology has the following classes and properties.</span>
          <span>Function</span>
       </a>
    </li>
+	<li>
+      <a href="#Effect" title="http://w3id.org/ZorroOntology/Effect">
+         <span>Effect</span>
+      </a>
+   </li>
    <li>
       <a href="#Part" title="http://w3id.org/ZorroOntology/Part">
          <span>Part</span>
@@ -222,6 +227,11 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#dependsOn" title="http://w3id.org/ZorroOntology/dependsOn">
          <span>depends On</span>
+      </a>
+   </li>
+	<li>
+      <a href="#hasEffect" title="http://w3id.org/ZorroOntology/hasEffect">
+         <span>has Effect</span>
       </a>
    </li>
    <li>
@@ -286,6 +296,7 @@ This section provides details for each class and property defined by Zorro Ontol
   <li><a href="#Problem" title="http://w3id.org/ZorroOntology/Problem"> <span>Problem</span> </a></li>
   <li><a href="#Solution" title="http://w3id.org/ZorroOntology/Solution"> <span>Solution</span> </a></li>
   <li><a href="#System" title="http://w3id.org/ZorroOntology/System"> <span>System</span> </a></li>
+  <li><a href="#Effect" title="http://w3id.org/ZorroOntology/Effect"> <span>Effect</span> </a></li>
  </ul>
  <div class="entity" id="Assembly">
   <h3>Assembly<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
@@ -334,6 +345,35 @@ This section provides details for each class and property defined by Zorro Ontol
    </dd>
   </dl>
  </div>
+
+
+<div class="entity" id="Effect">
+  <h3>Effect<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://w3id.org/ZorroOntology/Effect</p>
+  <div class="comment">
+   <span class="markdown">Effect is also a problem</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasEffect" title="http://w3id.org/ZorroOntology/hasEffect">has Cause</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+	<dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Solution" title="http://w3id.org/ZorroOntology/Solution">Solution</a> <sup class="type-c" title="class">c</sup>,
+    <a href="#Function" title="http://w3id.org/ZorroOntology/Function">Function</a> <sup class="type-c" title="class">c</sup>,
+  <a href="#Component" title="http://w3id.org/ZorroOntology/Component">Component</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+
+
+
+	
  <div class="entity" id="Component">
   <h3>Component<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://w3id.org/ZorroOntology/Component</p>
@@ -359,7 +399,8 @@ This section provides details for each class and property defined by Zorro Ontol
    <dd>
     <a href="#Solution" title="http://w3id.org/ZorroOntology/Solution">Solution</a> <sup class="type-c" title="class">c</sup>,
     <a href="#Function" title="http://w3id.org/ZorroOntology/Function">Function</a> <sup class="type-c" title="class">c</sup>,
-  <a href="#Cause" title="http://w3id.org/ZorroOntology/Cause">Cause</a> <sup class="type-c" title="class">c</sup>
+  <a href="#Cause" title="http://w3id.org/ZorroOntology/Cause">Cause</a> <sup class="type-c" title="class">c</sup>,
+	   <a href="#Effect" title="http://w3id.org/ZorroOntology/Effect">Effect</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -389,7 +430,8 @@ This section provides details for each class and property defined by Zorro Ontol
     <a href="#Solution" title="http://w3id.org/ZorroOntology/Solution">Solution</a> <sup class="type-c" title="class">c</sup>,
     <a href="#Cause" title="http://w3id.org/ZorroOntology/Cause">Cause</a> <sup class="type-c" title="class">c</sup>,
   <a href="#Component" title="http://w3id.org/ZorroOntology/Component">Component</a> <sup class="type-c" title="class">c</sup>,
-	<a href="#Problem" title="http://w3id.org/ZorroOntology/Problem">Problem</a> <sup class="type-c" title="class">c</sup>
+	<a href="#Problem" title="http://w3id.org/ZorroOntology/Problem">Problem</a> <sup class="type-c" title="class">c</sup>,
+	   <a href="#Effect" title="http://w3id.org/ZorroOntology/Effect">Effect</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -466,7 +508,8 @@ This section provides details for each class and property defined by Zorro Ontol
     <a href="#Problem" title="http://w3id.org/ZorroOntology/Problem">Problem</a> <sup class="type-c" title="class">c</sup>,
     <a href="#Function" title="http://w3id.org/ZorroOntology/Function">Function</a> <sup class="type-c" title="class">c</sup>,
     <a href="#Component" title="http://w3id.org/ZorroOntology/Component">Component</a> <sup class="type-c" title="class">c</sup>,
-	<a href="#Cause" title="http://w3id.org/ZorroOntology/Cause">Cause</a> <sup class="type-c" title="class">c</sup>
+	<a href="#Cause" title="http://w3id.org/ZorroOntology/Cause">Cause</a> <sup class="type-c" title="class">c</sup>,
+	 <a href="#Effect" title="http://w3id.org/ZorroOntology/Effect">Effect</a> <sup class="type-c" title="class">c</sup>
 
    </dd>
   </dl>
@@ -501,6 +544,7 @@ This section provides details for each class and property defined by Zorro Ontol
   <li><a href="#involves" title="http://w3id.org/ZorroOntology/involves"> <span>involves</span> </a></li>
   <li><a href="#PartOf" title="http://w3id.org/ZorroOntology/PartOf"> <span>Part Of</span> </a></li>
   <li><a href="#solves" title="http://w3id.org/ZorroOntology/solves"> <span>solves</span> </a></li>
+	<li><a href="#hasEffect" title="http://w3id.org/ZorroOntology/hasEffect"> <span>hasEffect</span> </a></li>
  </ul>
  <div class="entity" id="defines">
   <h3>defines<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
