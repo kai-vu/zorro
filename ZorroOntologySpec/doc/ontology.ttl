@@ -35,6 +35,11 @@
           rdfs:domain :Component ;
           rdfs:range :Problem .
 
+###  http://w3id.org/ZorroOntology/hasEffect
+:failsVia rdf:type owl:ObjectProperty ;
+          rdfs:domain :Cause ;
+          rdfs:range :Effect .
+
 
 ###  http://w3id.org/ZorroOntology/hasCause
 :hasCause rdf:type owl:ObjectProperty ;
@@ -83,6 +88,14 @@
         owl:disjointWith :Component.
 
 
+###  http://w3id.org/ZorroOntology/Effect
+:Effect rdf:type owl:Class ;
+       rdfs:comment "Effect is also a problem" ;
+        owl:disjointWith :Solution;
+        owl:disjointWith :Function;
+        owl:disjointWith :Component.
+
+
 
 ###  http://w3id.org/ZorroOntology/Component
 :Component rdf:type owl:Class ;
@@ -90,6 +103,8 @@
         owl:disjointWith :Solution;
         owl:disjointWith :Function;
         owl:disjointWith :Problem.
+        owl:disjointWith :Effect.
+        owl:disjointWith :Cause.
 
 
 ###  http://w3id.org/ZorroOntology/Function
@@ -98,6 +113,8 @@
 owl:disjointWith :Solution;
         owl:disjointWith :Problem;
         owl:disjointWith :Component.
+        owl:disjointWith :Effect.
+        owl:disjointWith :Cause.
 
 
 ###  http://w3id.org/ZorroOntology/Part
@@ -112,6 +129,7 @@ owl:disjointWith :Solution;
         owl:disjointWith :Component.
 
 
+
 ###  http://w3id.org/ZorroOntology/Solution
 :Solution rdf:type owl:Class ;
           rdfs:comment "Solution solves the cause of the problem" ;
@@ -119,6 +137,7 @@ owl:disjointWith :Solution;
         owl:disjointWith :Function;
         owl:disjointWith :Component;
         owl:disjointWith :Cause.
+       owl:disjointWith :Effect.
 
 
 ###  http://w3id.org/ZorroOntology/System
