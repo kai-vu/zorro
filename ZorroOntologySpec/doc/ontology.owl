@@ -79,6 +79,17 @@
         <rdfs:domain rdf:resource="http://w3id.org/ZorroOntology/Component"/>
         <rdfs:range rdf:resource="http://w3id.org/ZorroOntology/Function"/>
     </owl:ObjectProperty>
+
+
+
+    <!-- http://w3id.org/ZorroOntology/hasEffect -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/ZorroOntology/hasEffect">
+        <rdfs:domain rdf:resource="http://w3id.org/ZorroOntology/Cause"/>
+        <rdfs:range rdf:resource="http://w3id.org/ZorroOntology/Effect"/>
+    </owl:ObjectProperty>
+    
     
 
 
@@ -142,6 +153,18 @@
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Component"/>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Function"/>
     </owl:Class>
+
+
+
+  <!-- http://w3id.org/ZorroOntology/Effect -->
+
+
+    <owl:Class rdf:about="http://w3id.org/ZorroOntology/Effect">
+        <rdfs:comment>Effect is also a problem</rdfs:comment>
+          <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Solution"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Component"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Function"/>
+    </owl:Class>
     
 
 
@@ -154,6 +177,7 @@
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Cause"/>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Function"/>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Problem"/>
+<owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Effect"/>
     </owl:Class>
     
 
@@ -167,6 +191,7 @@
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Cause"/>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Component"/>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Problem"/>
+<owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Effect"/>
 
     </owl:Class>
     
@@ -202,6 +227,7 @@
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Cause"/>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Function"/>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Component"/>
+      <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology/Effect"/>
     </owl:Class>
     
 
