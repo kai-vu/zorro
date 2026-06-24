@@ -53,6 +53,12 @@
 <http://w3id.org/ZorroOntology/solves> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ZorroOntology/Solution> .
 <http://w3id.org/ZorroOntology/solves> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ZorroOntology/Problem> .
 # 
+#http://w3id.org/ZorroOntology/hasEffect
+<http://w3id.org/ZorroOntology/hasEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ZorroOntology/hasEffect> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ZorroOntology/Cause> .
+<http://w3id.org/ZorroOntology/hasEffect> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ZorroOntology/Effect> .
+# 
+# 
 # 
 # 
 # #################################################################
@@ -73,12 +79,21 @@
 <http://w3id.org/ZorroOntology/Cause> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology/Function> .
 <http://w3id.org/ZorroOntology/Cause> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology/Component> .
 # 
+
+# http://w3id.org/ZorroOntology/Effect
+<http://w3id.org/ZorroOntology/Effect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/ZorroOntology/Effect> <http://www.w3.org/2000/01/rdf-schema#comment> "Cause itself  is a problem" .
+<http://w3id.org/ZorroOntology/Effect> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology/Solution> .
+<http://w3id.org/ZorroOntology/Effect> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology/Function> .
+<http://w3id.org/ZorroOntology/Effect> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology/Component> .
+#
 # http://w3id.org/ZorroOntology/Component
 <http://w3id.org/ZorroOntology/Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/ZorroOntology/Component> <http://www.w3.org/2000/01/rdf-schema#comment> "A component can have one or more functions" .
 <http://w3id.org/ZorroOntology/Component> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology/Solution> .
 <http://w3id.org/ZorroOntology/Component> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology/Function> .
 <http://w3id.org/ZorroOntology/Component> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology/Cause> .
+<http://w3id.org/ZorroOntology/Component> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology/Effect> .
 # 
 # 
 # http://w3id.org/ZorroOntology/Function
@@ -87,6 +102,7 @@
 <http://w3id.org/ZorroOntology/Function> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology/Solution> .
 <http://w3id.org/ZorroOntology/Function> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology/Component> .
 <http://w3id.org/ZorroOntology/Function> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology/Cause> .
+<http://w3id.org/ZorroOntology/Function> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology/Effect> .
 # 
 # http://w3id.org/ZorroOntology/Part
 <http://w3id.org/ZorroOntology/Part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -104,6 +120,7 @@
 <http://w3id.org/ZorroOntology/Solution> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology/Problem> .
 <http://w3id.org/ZorroOntology/Solution> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology/Function> .
 <http://w3id.org/ZorroOntology/Solution> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology/Component> .
+<http://w3id.org/ZorroOntology/Solution> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology/Effect> .
 # 
 # http://w3id.org/ZorroOntology/System
 <http://w3id.org/ZorroOntology/System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
