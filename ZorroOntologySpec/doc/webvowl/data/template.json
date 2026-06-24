@@ -43,9 +43,9 @@
     }
   },
   "metrics": {
-    "classCount": 40,
+    "classCount": 41,
     "datatypeCount": 13,
-    "objectPropertyCount": 23,
+    "objectPropertyCount": 24,
     "datatypePropertyCount": 13,
     "propertyCount": 36,
     "nodeCount": 53,
