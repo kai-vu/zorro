@@ -25,7 +25,8 @@
 
 
 ###  http://w3id.org/ZorroOntology/dependsOn
-:dependsOn rdf:type owl:ObjectProperty ;
+:dependsOn rdf:type owl:ObjectProperty ,
+                    owl:TransitiveProperty ;
            rdfs:domain :Function ;
            rdfs:range :Function .
 
