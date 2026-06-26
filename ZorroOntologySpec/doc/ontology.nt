@@ -20,6 +20,7 @@
 # 
 #http://w3id.org/ZorroOntology/dependsOn
 <http://w3id.org/ZorroOntology/dependsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ZorroOntology/dependsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
 <http://w3id.org/ZorroOntology/dependsOn> <http://www.w3.org/2000/01/rdf-schema#domain> <hhttp://w3id.org/ZorroOntology/Function> .
 <http://w3id.org/ZorroOntology/dependsOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ZorroOntology/Function> .
 # 
