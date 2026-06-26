@@ -46,6 +46,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://w3id.org/ZorroOntology/dependsOn">
+         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://w3id.org/ZorroOntology/Function"/>
         <rdfs:range rdf:resource="http://w3id.org/ZorroOntology/Function"/>
     </owl:ObjectProperty>
