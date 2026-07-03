@@ -92,18 +92,6 @@
     },
     {
       "@type": "Dataset",
-      "name": "extractions_chatgpt_4o",
-      "identifier": "extractions_chatgpt_4o",
-      "distribution": [
-        {
-          "@type": "DataDownload",
-          "encodingFormat": "text/turtle",
-          "contentUrl": "https://kai-vu.github.io/zorro/generated-rdf/extractions_chatgpt_4o.ttl"
-        }
-      ]
-    },
-    {
-      "@type": "Dataset",
       "name": "extractions_regex",
       "identifier": "extractions_regex",
       "distribution": [
