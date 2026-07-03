@@ -16,32 +16,7 @@
         }
       ]
     },
-
- 
-      {
-      "@type": "Dataset",
-      "name": "11-dependent-functions-power-section",
-      "identifier": "11-dependent-functions-power-section",
-      "distribution": [
-        {
-          "@type": "DataDownload",
-          "encodingFormat": "text/turtle",
-          "contentUrl": "https://kai-vu.github.io/zorro/queries/reports/subgraph-profiles/11-dependent-functions-power-section.ttl"
-        }
-      ]
-    },
-  {
-      "@type": "Dataset",
-      "name": "12-most-critical-systems",
-      "identifier": "12-most-critical-systems",
-      "distribution": [
-        {
-          "@type": "DataDownload",
-          "encodingFormat": "text/turtle",
-          "contentUrl": "https://kai-vu.github.io/zorro/queries/reports/subgraph-profiles/12-most-critical-systems.ttl"
-        }
-      ]
-    },
+    
     {
       "@type": "Dataset",
       "name": "extractions_regex",
