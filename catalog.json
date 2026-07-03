@@ -17,19 +17,6 @@
       ]
     },
 
-    {
-      "@type": "Dataset",
-      "name": "extractions_regex_trig",
-      "identifier": "extractions_regex_trig",
-      "distribution": [
-        {
-          "@type": "DataDownload",
-          "encodingFormat": "application/json",
-          "contentUrl": "https://kai-vu.github.io/zorro/generated-provenance/extractions_regex_trig.json"
-        }
-      ]
-    },
-
   {
       "@type": "Dataset",
       "name": "04-function-depends-on-housing-combustion",
