@@ -29,18 +29,6 @@
         }
       ]
     },
-    {
-      "@type": "Dataset",
-      "name": "extractions_NER",
-      "identifier": "extractions_NER",
-      "distribution": [
-        {
-          "@type": "DataDownload",
-          "encodingFormat": "text/turtle",
-          "contentUrl": "https://kai-vu.github.io/zorro/generated-rdf/extractions_NER.ttl"
-        }
-      ]
-    },
 
   {
       "@type": "Dataset",
