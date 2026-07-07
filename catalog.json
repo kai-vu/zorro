@@ -41,6 +41,19 @@
         }
       ]
     },
+
+    {
+      "@type": "Dataset",
+      "name": "functions",
+      "identifier": "functions",
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/turtle",
+          "contentUrl": "https://kai-vu.github.io/zorro/generated-rdf/functions.trig"
+        }
+      ]
+    },
     {
       "@type": "Dataset",
       "name": "part-links-regex-simplified",
