@@ -4,14 +4,11 @@ PREFIX : <https://w3id.org/ZorroOntology#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?event
+SELECT ?problem
 WHERE {
-  ?event :hasProblem ?problem .
-
-  ?problem
-      a :LooseProblem ;
-      :involves ?part ;
-      :location "ALL CYL" .
-
-  ?part a :Screws .
-}
+  GRAPH <https://w3id.org/ZorroOntology/graph/extractions-regex>{
+  ?problem a ?problemType ;
+      :involves :BaffleScrew;
+      :location "R/H REAR" .
+   ?problemType rdfs:subClassOf :Problem
+  }}
