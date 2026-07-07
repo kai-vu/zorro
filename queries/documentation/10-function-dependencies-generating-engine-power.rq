@@ -4,22 +4,23 @@ PREFIX : <https://w3id.org/ZorroOntology#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-SELECT ?relationship ?dependency ?dependencyLabel
+PREFIX : <https://w3id.org/ZorroOntology#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?relatedFunction ?relation
 WHERE {
-    BIND(:GeneratingPower AS ?focusFunction)
-    ?focusFunction rdf:type :Function .
+  GRAPH <https://w3id.org/ZorroOntology/graph/functions> {
     {
-        BIND("dependedOnBy" AS ?relationship)
-        ?dependency :dependsOn+ ?focusFunction ;
-                    rdf:type :Function ;
-                    rdfs:label ?dependencyLabel .
+      ?relatedFunction a :Function ;
+                       :dependsOn :GeneratingPower .
+      BIND("depends on Generating power" AS ?relation)
     }
     UNION
     {
-        BIND("dependsOn" AS ?relationship)
-        ?focusFunction :dependsOn+ ?dependency .
-        ?dependency rdf:type :Function ;
-                    rdfs:label ?dependencyLabel .
+      :GeneratingPower :dependsOn ?relatedFunction .
+      BIND("depended on by Generating power" AS ?relation)
     }
+  }
 }
-ORDER BY ?relationship ?dependencyLabel
+ORDER BY ?relation ?relatedFunction
