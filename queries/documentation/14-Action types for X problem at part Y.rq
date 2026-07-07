@@ -7,9 +7,9 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?action ?problem
 WHERE {
-  ?action a ?actionType ;
+   GRAPH <https://w3id.org/ZorroOntology/graph/extractions-regex>{
+  ?action a :Action ;
           :dealsWith ?problem .
   ?problem a :LooseProblem ;
-          :involves ?part.
-  ?part a :RockerBoxCover.
-}
+          :involves :InductionTubeHoseClamp .
+  }}
