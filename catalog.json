@@ -25,7 +25,7 @@
         {
           "@type": "DataDownload",
           "encodingFormat": "text/turtle",
-          "contentUrl": "https://kai-vu.github.io/zorro/generated-rdf/extractions_regex.ttl"
+          "contentUrl": "https://kai-vu.github.io/zorro/generated-rdf/extractions_regex.trig"
         }
       ]
     },
