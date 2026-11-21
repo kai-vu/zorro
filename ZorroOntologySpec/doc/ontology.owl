@@ -121,7 +121,36 @@
         <rdfs:domain rdf:resource="hhttp://w3id.org/ZorroOntology#Solution"/>
         <rdfs:range rdf:resource="http://w3id.org/ZorroOntology#Problem"/>
     </owl:ObjectProperty>
+
+
+
+ <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
     
+
+
+    <!-- http://w3id.org/ZorroOntology#partNumber -->
+
+
+    <owl:DataProperty rdf:about="http://w3id.org/ZorroOntology#partNumber">
+        <rdfs:domain rdf:resource="http://w3id.org/ZorroOntology#Part"/>
+    </owl:DataProperty>
+
+
+      <!-- http://w3id.org/ZorroOntology#partPrice -->
+
+
+    <owl:DataProperty rdf:about="http://w3id.org/ZorroOntology#partPrice">
+        <rdfs:domain rdf:resource="http://w3id.org/ZorroOntology#Part"/>
+    </owl:DataProperty>
+
 
 
     <!-- 
@@ -242,10 +271,9 @@
 
     <!-- http://w3id.org/ZorroOntology#SubSystem -->
 
-
-    <owl:Class rdf:about="http://w3id.org/ZorroOntology#SubSystem">
+  <owl:Class rdf:about="http://w3id.org/ZorroOntology#SubSystem">
   <rdfs:comment>SubSystem is part of a system</rdfs:comment>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/ZorroOntology#Component"/>
+  <rdfs:subClassOf rdf:resource="http://w3id.org/ZorroOntology#Component"/>
           <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Problem"/>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Cause"/>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Function"/>
