@@ -8,10 +8,10 @@
 # #################################################################
 # 
 # 
-# http://w3id.org/ZorroOntology#PartOf
-<http://w3id.org/ZorroOntology#PartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://w3id.org/ZorroOntology#PartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ZorroOntology#Part> .
-<http://w3id.org/ZorroOntology#PartOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ZorroOntology#Assembly> .
+# http://w3id.org/ZorroOntology#partOf
+<http://w3id.org/ZorroOntology#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/ZorroOntology#partOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ZorroOntology#Part> .
+<http://w3id.org/ZorroOntology#partOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ZorroOntology#Assembly> .
 # 
 #http://w3id.org/ZorroOntology#defines
 <http://w3id.org/ZorroOntology#defines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -60,6 +60,20 @@
 <http://w3id.org/ZorroOntology#hasEffect> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ZorroOntology#Effect> .
 # 
 # 
+# #################################################################
+# #
+# #    Data Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/ZorroOntology#partNumber
+<http://w3id.org/ZorroOntology#partNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<http://w3id.org/ZorroOntology#partNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ZorroOntology#Part> .
+# 
+#http://w3id.org/ZorroOntology#partPrice
+<http://w3id.org/ZorroOntology#partPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DataProperty> .
+<http://w3id.org/ZorroOntology#partPrice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ZorroOntology#Part> .
 # 
 # 
 # #################################################################
