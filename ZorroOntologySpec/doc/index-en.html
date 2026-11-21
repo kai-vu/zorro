@@ -148,12 +148,16 @@ Cyber-Physical Systems (CPSs) are at the core of critical infrastructure in doma
 	Knowledge-driven approaches leveraging domain expertise encoded in ontologies and KGs have shown promise in this area, yet existing ontologies are either too broad to be 
 	useful for fault diagnosis, such as IDO and IOF-MRO,  or narrowly scoped to a specific domain or process. For example, the IoT Failure Ontology covers device-level 
 	failures in IoT settings, while the Manufacturing Quality Troubleshooting Ontology targets manufacturing quality processes. Critically, neither models functional 
-	dependencies between components, which are essential for reasoning about failure propagation through a system. To address this gap, we introduce the Zorro Ontology, 
+	dependencies between components, which are essential for reasoning about failure propagation through a system. 
+	
+	To address this gap, we introduce the Zorro Ontology, 
 	a domain-agnostic, publicly available ontology designed specifically for fault diagnosis in CPSs. 
-	It draws inspiration from the part-whole ontology design pattern, as well as from IDO and IOF-MRO. Zorro models systems by its subsystems, assemblies, and parts where each assembly carries a function. 
-	These are implemented through class  and properties of zorroOntology:Function, zorroOntology:assembly and zorroOntology:hasFunction. 
-	While an assembly may fail via something other than its function through zorroOntology:failVia. Functional dependencies between components are expressed via 
-	zorro:dependsOn, enabling principled reasoning about failure propagation across interconnected parts of a system.</span>
+	It draws inspiration from the part-whole ontology design pattern, as well as from IDO and IOF-MRO. 
+	
+	Zorro models systems by its subsystems, assemblies, and parts where each assembly carries a function. 
+	These are implemented through class  and properties of *ZorroOntology:Function*, *ZorroOntology:Assembly* and *ZorroOntology:hasFunction*. 
+	While an assembly may fail via something other than its function through *ZorroOntology:failVia*. Functional dependencies between components are expressed via 
+	*ZorroOntology:dependsOn*, enabling principled reasoning about failure propagation across interconnected parts of a system.</span>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
