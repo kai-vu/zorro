@@ -136,6 +136,19 @@
     "@id" : "http://w3id.org/ZorroOntology#Part"
   } ]
 }, {
+  "@id" : "http://w3id.org/ZorroOntology#partNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DataProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/ZorroOntology#Part"
+  } ]
+},
+ {
+  "@id" : "http://w3id.org/ZorroOntology#partPrice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DataProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/ZorroOntology#Part"
+  } ]
+},{
   "@id" : "http://w3id.org/ZorroOntology#solves",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
