@@ -73,6 +73,19 @@
 
 
 #################################################################
+#    Data Properties
+#################################################################
+
+###  http://w3id.org/ZorroOntology#partNumber
+:partNumber rdf:type owl:DataProperty ;
+        rdfs:domain :Part .
+
+###  http://w3id.org/ZorroOntology#partPrice
+:partPrice rdf:type owl:DataProperty ;
+        rdfs:domain :Part .
+
+
+#################################################################
 #    Classes
 #################################################################
 
