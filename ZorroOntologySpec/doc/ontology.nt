@@ -123,6 +123,14 @@
 <http://w3id.org/ZorroOntology#Solution> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Component> .
 <http://w3id.org/ZorroOntology#Solution> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Effect> .
 # 
+# http://w3id.org/ZorroOntology#SubSystem
+<http://w3id.org/ZorroOntology#SubSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/ZorroOntology#SubSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "SubSystem is part of a system" .
+<http://w3id.org/ZorroOntology#SubSystem> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Problem> .
+<http://w3id.org/ZorroOntology#SubSystem> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Function> .
+<http://w3id.org/ZorroOntology#SubSystem> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Solusion> .
+<http://w3id.org/ZorroOntology#SubSystem> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Effect> .
+# 
 # http://w3id.org/ZorroOntology#System
 <http://w3id.org/ZorroOntology#System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/ZorroOntology#System> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ZorroUpperLevelOntology/Component> .
