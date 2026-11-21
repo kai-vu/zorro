@@ -239,7 +239,25 @@
     <owl:Class rdf:about="http://w3id.org/ZorroOntology#System">
         <rdfs:subClassOf rdf:resource="http://w3id.org/ZorroOntology#Component"/>
     </owl:Class>
+
+    <!-- http://w3id.org/ZorroOntology#SubSystem -->
+
+
+    <owl:Class rdf:about="http://w3id.org/ZorroOntology#SubSystem">
+  <rdfs:comment>SubSystem is part of a system</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/ZorroOntology#Component"/>
+          <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Problem"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Cause"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Function"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Solusion"/>
+      <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Effect"/>
+    </owl:Class>
+
+
+
 </rdf:RDF>
+
+
 
 
 
