@@ -6,37 +6,46 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://w3id.org/ZorroOntology#Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A structured collection of parts that together carry out a specific function within a subsystem. "
   } ]
 }, {
   "@id" : "http://w3id.org/ZorroOntology#SubSystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://w3id.org/ZorroOntology#Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A major structural division of a system, grouping one or more assemblies that collectively contribute to a specific aspect of the system’s operation. "
   } ]
 },
  {
   "@id" : "http://w3id.org/ZorroOntology#Cause",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Cause itself  is a problem"
+    "@value" : "The underlying reason or condition that leads to a problem. Cause itself is a problem."
   } ]
 }, {
   "@id" : "http://w3id.org/ZorroOntology#Component",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A component can have one or more functions"
+    "@value" : "A physical unit within a cyber-physical system. It serves as the top-level concept encompassing all structural elements of a system."
   } ]
 }, {
   "@id" : "http://w3id.org/ZorroOntology#Function",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A function can be performed by one or several componenets"
+    "@value" : "The intended purpose or behavior that an assembly is designed to perform within the system. A function can be performed by one or several assemblies."
   } ]
 }, {
   "@id" : "http://w3id.org/ZorroOntology#Part",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://w3id.org/ZorroOntology#Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The most granular physical element within an assembly."
   } ]
 }, {
   "@id" : "http://w3id.org/ZorroOntology#partOf",
@@ -59,18 +68,24 @@
     {
       "@id": "http://w3id.org/ZorroOntology#Component"
     }
-   ]
+   ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An observed deviation from the expected behavior or function."
+  } ]
 }, {
   "@id" : "http://w3id.org/ZorroOntology#Solution",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Solution solves the cause of the problem"
+    "@value" : "A corrective or remedial action taken to resolve a problem by addressing its cause, restoring the affected component or system to its expected functional state."
   } ]
 }, {
   "@id" : "http://w3id.org/ZorroOntology#System",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://w3id.org/ZorroOntology#Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The complete machine or operational whole, composed of interrelated subsystems, assemblies, and parts that together fulfill its overall function."
   } ]
 }, {
   "@id" : "http://w3id.org/ZorroOntology#defines",
