@@ -1,4 +1,4 @@
-<http://w3id.org/ZorroOntology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/zorro#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 # 
 # 
 # #################################################################
@@ -8,56 +8,56 @@
 # #################################################################
 # 
 # 
-# http://w3id.org/ZorroOntology#partOf
-<http://w3id.org/ZorroOntology#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://w3id.org/ZorroOntology#partOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ZorroOntology#Part> .
-<http://w3id.org/ZorroOntology#partOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ZorroOntology#Assembly> .
+# http://w3id.org/zorro#partOf
+<http://w3id.org/zorro#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/zorro#partOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/zorro#Part> .
+<http://w3id.org/zorro#partOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/zorro#Assembly> .
 # 
-#http://w3id.org/ZorroOntology#defines
-<http://w3id.org/ZorroOntology#defines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://w3id.org/ZorroOntology#defines> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ZorroOntology#Function> .
-<http://w3id.org/ZorroOntology#defines> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ZorroOntology#Problem> .
+#http://w3id.org/zorro#defines
+<http://w3id.org/zorro#defines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/zorro#defines> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/zorro#Function> .
+<http://w3id.org/zorro#defines> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/zorro#Problem> .
 # 
-#http://w3id.org/ZorroOntology#dependsOn
-<http://w3id.org/ZorroOntology#dependsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://w3id.org/ZorroOntology#dependsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
-<http://w3id.org/ZorroOntology#dependsOn> <http://www.w3.org/2000/01/rdf-schema#domain> <hhttp://w3id.org/ZorroOntology#Function> .
-<http://w3id.org/ZorroOntology#dependsOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ZorroOntology#Function> .
+#http://w3id.org/zorro#dependsOn
+<http://w3id.org/zorro#dependsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/zorro#dependsOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://w3id.org/zorro#dependsOn> <http://www.w3.org/2000/01/rdf-schema#domain> <hhttp://w3id.org/zorro#Function> .
+<http://w3id.org/zorro#dependsOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/zorro#Function> .
 # 
-# http://w3id.org/ZorroOntology#failsVia
-<http://w3id.org/ZorroOntology#failsVia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://w3id.org/ZorroOntology#failsVia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ZorroOntology#Component> .
-<http://w3id.org/ZorroOntology#failsVia> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ZorroOntology#Problem> .
+# http://w3id.org/zorro#failsVia
+<http://w3id.org/zorro#failsVia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/zorro#failsVia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/zorro#Component> .
+<http://w3id.org/zorro#failsVia> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/zorro#Problem> .
 # 
-# http://w3id.org/ZorroOntology#hasCause
-<http://w3id.org/ZorroOntology#hasCause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://w3id.org/ZorroOntology#hasCause> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ZorroOntology#Problem> .
-<http://w3id.org/ZorroOntology#hasCause> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ZorroOntology#Cause> .
+# http://w3id.org/zorro#hasCause
+<http://w3id.org/zorro#hasCause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/zorro#hasCause> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/zorro#Problem> .
+<http://w3id.org/zorro#hasCause> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/zorro#Cause> .
 # 
-# http://w3id.org/ZorroOntology#hasFunction
-<http://w3id.org/ZorroOntology#hasFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://w3id.org/ZorroOntology#hasFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ZorroOntology#Component> .
-<http://w3id.org/ZorroOntology#hasFunction> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ZorroOntology#Function> .
+# http://w3id.org/zorro#hasFunction
+<http://w3id.org/zorro#hasFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/zorro#hasFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/zorro#Component> .
+<http://w3id.org/zorro#hasFunction> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/zorro#Function> .
 # 
-# http://w3id.org/ZorroOntology#inSystem
-<http://w3id.org/ZorroOntology#inSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://w3id.org/ZorroOntology#inSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ZorroOntology#Assembly> .
-<http://w3id.org/ZorroOntology#inSystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ZorroOntology#System> .
+# http://w3id.org/zorro#inSystem
+<http://w3id.org/zorro#inSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/zorro#inSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/zorro#Assembly> .
+<http://w3id.org/zorro#inSystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/zorro#System> .
 # 
-# http://w3id.org/ZorroOntology#involves
-<http://w3id.org/ZorroOntology#involves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://w3id.org/ZorroOntology#involves> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ZorroOntology#Problem> .
-<http://w3id.org/ZorroOntology#involves> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ZorroOntology#Part> .
+# http://w3id.org/zorro#involves
+<http://w3id.org/zorro#involves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/zorro#involves> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/zorro#Problem> .
+<http://w3id.org/zorro#involves> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/zorro#Part> .
 # 
-# http://w3id.org/ZorroOntology#solves
-<http://w3id.org/ZorroOntology#solves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://w3id.org/ZorroOntology#solves> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ZorroOntology#Solution> .
-<http://w3id.org/ZorroOntology#solves> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ZorroOntology#Problem> .
+# http://w3id.org/zorro#solves
+<http://w3id.org/zorro#solves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/zorro#solves> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/zorro#Solution> .
+<http://w3id.org/zorro#solves> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/zorro#Problem> .
 # 
-#http://w3id.org/ZorroOntology#hasEffect
-<http://w3id.org/ZorroOntology#hasEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://w3id.org/ZorroOntology#hasEffect> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ZorroOntology#Cause> .
-<http://w3id.org/ZorroOntology#hasEffect> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/ZorroOntology#Effect> .
+#http://w3id.org/zorro#hasEffect
+<http://w3id.org/zorro#hasEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/zorro#hasEffect> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/zorro#Cause> .
+<http://w3id.org/zorro#hasEffect> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/zorro#Effect> .
 # 
 # 
 # #################################################################
@@ -67,13 +67,13 @@
 # #################################################################
 # 
 # 
-# http://w3id.org/ZorroOntology#partNumber
-<http://w3id.org/ZorroOntology#partNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/ZorroOntology#partNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ZorroOntology#Part> .
+# http://w3id.org/zorro#partNumber
+<http://w3id.org/zorro#partNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/zorro#partNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/zorro#Part> .
 # 
-#http://w3id.org/ZorroOntology#partPrice
-<http://w3id.org/ZorroOntology#partPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/ZorroOntology#partPrice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/ZorroOntology#Part> .
+#http://w3id.org/zorro#partPrice
+<http://w3id.org/zorro#partPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://w3id.org/zorro#partPrice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/zorro#Part> .
 # 
 # 
 # #################################################################
@@ -83,74 +83,74 @@
 # #################################################################
 # 
 # 
-# http://w3id.org/ZorroOntology#Assembly
-<http://w3id.org/ZorroOntology#Assembly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/ZorroOntology#Assembly> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured collection of parts that together carry out a specific function within a subsystem." .
-<http://w3id.org/ZorroOntology#Assembly> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/ZorroOntology#Component> .
+# http://w3id.org/zorro#Assembly
+<http://w3id.org/zorro#Assembly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/zorro#Assembly> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured collection of parts that together carry out a specific function within a subsystem." .
+<http://w3id.org/zorro#Assembly> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/zorro#Component> .
 # 
-# http://w3id.org/ZorroOntology#Cause
-<http://w3id.org/ZorroOntology#Cause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/ZorroOntology#Cause> <http://www.w3.org/2000/01/rdf-schema#comment> "The underlying reason or condition that leads to a problem. Cause itself is a problem." .
-<http://w3id.org/ZorroOntology#Cause> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Solution> .
-<http://w3id.org/ZorroOntology#Cause> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Function> .
-<http://w3id.org/ZorroOntology#Cause> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Component> .
+# http://w3id.org/zorro#Cause
+<http://w3id.org/zorro#Cause> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/zorro#Cause> <http://www.w3.org/2000/01/rdf-schema#comment> "The underlying reason or condition that leads to a problem. Cause itself is a problem." .
+<http://w3id.org/zorro#Cause> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Solution> .
+<http://w3id.org/zorro#Cause> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Function> .
+<http://w3id.org/zorro#Cause> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Component> .
 # 
 
-# http://w3id.org/ZorroOntology#Effect
-<http://w3id.org/ZorroOntology#Effect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/ZorroOntology#Effect> <http://www.w3.org/2000/01/rdf-schema#comment> "The consequence or impact of a problem. Effect is also a problem." .
-<http://w3id.org/ZorroOntology#Effect> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Solution> .
-<http://w3id.org/ZorroOntology#Effect> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Function> .
-<http://w3id.org/ZorroOntology#Effect> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Component> .
+# http://w3id.org/zorro#Effect
+<http://w3id.org/zorro#Effect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/zorro#Effect> <http://www.w3.org/2000/01/rdf-schema#comment> "The consequence or impact of a problem. Effect is also a problem." .
+<http://w3id.org/zorro#Effect> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Solution> .
+<http://w3id.org/zorro#Effect> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Function> .
+<http://w3id.org/zorro#Effect> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Component> .
 #
-# http://w3id.org/ZorroOntology#Component
-<http://w3id.org/ZorroOntology#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/ZorroOntology#Component> <http://www.w3.org/2000/01/rdf-schema#comment> "A physical unit within a cyber-physical system. It serves as the top-level concept encompassing all structural elements of a system." .
-<http://w3id.org/ZorroOntology#Component> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Solution> .
-<http://w3id.org/ZorroOntology#Component> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Function> .
-<http://w3id.org/ZorroOntology#Component> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Cause> .
-<http://w3id.org/ZorroOntology#Component> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Effect> .
+# http://w3id.org/zorro#Component
+<http://w3id.org/zorro#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/zorro#Component> <http://www.w3.org/2000/01/rdf-schema#comment> "A physical unit within a cyber-physical system. It serves as the top-level concept encompassing all structural elements of a system." .
+<http://w3id.org/zorro#Component> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Solution> .
+<http://w3id.org/zorro#Component> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Function> .
+<http://w3id.org/zorro#Component> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Cause> .
+<http://w3id.org/zorro#Component> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Effect> .
 # 
 # 
-# http://w3id.org/ZorroOntology#Function
-<http://w3id.org/ZorroOntology#Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/ZorroOntology#Function> <http://www.w3.org/2000/01/rdf-schema#comment> "The intended purpose or behavior that an assembly is designed to perform within the system. A function can be performed by one or several assemblies." .
-<http://w3id.org/ZorroOntology#Function> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Solution> .
-<http://w3id.org/ZorroOntology#Function> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Component> .
-<http://w3id.org/ZorroOntology#Function> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Cause> .
-<http://w3id.org/ZorroOntology#Function> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Effect> .
+# http://w3id.org/zorro#Function
+<http://w3id.org/zorro#Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/zorro#Function> <http://www.w3.org/2000/01/rdf-schema#comment> "The intended purpose or behavior that an assembly is designed to perform within the system. A function can be performed by one or several assemblies." .
+<http://w3id.org/zorro#Function> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Solution> .
+<http://w3id.org/zorro#Function> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Component> .
+<http://w3id.org/zorro#Function> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Cause> .
+<http://w3id.org/zorro#Function> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Effect> .
 # 
-# http://w3id.org/ZorroOntology#Part
-<http://w3id.org/ZorroOntology#Part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/ZorroOntology#Part> <http://www.w3.org/2000/01/rdf-schema#comment> "The most granular physical element within an assembly." .
-<http://w3id.org/ZorroOntology#Part> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/ZorroOntology#Component> .
+# http://w3id.org/zorro#Part
+<http://w3id.org/zorro#Part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/zorro#Part> <http://www.w3.org/2000/01/rdf-schema#comment> "The most granular physical element within an assembly." .
+<http://w3id.org/zorro#Part> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/zorro#Component> .
 # 
-# http://w3id.org/ZorroOntology#Problem
-<http://w3id.org/ZorroOntology#Problem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/ZorroOntology#Problem> <http://www.w3.org/2000/01/rdf-schema#comment> "An observed deviation from the expected behavior or function." .
-<http://w3id.org/ZorroOntology#Problem> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Solution> .
-<http://w3id.org/ZorroOntology#Problem> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Function> .
-<http://w3id.org/ZorroOntology#Problem> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Component> .
+# http://w3id.org/zorro#Problem
+<http://w3id.org/zorro#Problem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/zorro#Problem> <http://www.w3.org/2000/01/rdf-schema#comment> "An observed deviation from the expected behavior or function." .
+<http://w3id.org/zorro#Problem> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Solution> .
+<http://w3id.org/zorro#Problem> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Function> .
+<http://w3id.org/zorro#Problem> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Component> .
 # 
-# http://w3id.org/ZorroOntology#Solution
-<http://w3id.org/ZorroOntology#Solution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/ZorroOntology#Solution> <http://www.w3.org/2000/01/rdf-schema#comment> "A corrective or remedial action taken to resolve a problem by addressing its cause, restoring the affected component or system to its expected functional state." .
-<http://w3id.org/ZorroOntology#Solution> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Problem> .
-<http://w3id.org/ZorroOntology#Solution> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Function> .
-<http://w3id.org/ZorroOntology#Solution> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Component> .
-<http://w3id.org/ZorroOntology#Solution> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Effect> .
+# http://w3id.org/zorro#Solution
+<http://w3id.org/zorro#Solution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/zorro#Solution> <http://www.w3.org/2000/01/rdf-schema#comment> "A corrective or remedial action taken to resolve a problem by addressing its cause, restoring the affected component or system to its expected functional state." .
+<http://w3id.org/zorro#Solution> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Problem> .
+<http://w3id.org/zorro#Solution> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Function> .
+<http://w3id.org/zorro#Solution> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Component> .
+<http://w3id.org/zorro#Solution> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Effect> .
 # 
-# http://w3id.org/ZorroOntology#SubSystem
-<http://w3id.org/ZorroOntology#SubSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/ZorroOntology#SubSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "A major structural division of a system, grouping one or more assemblies that collectively contribute to a specific aspect of the system’s operation." .
-<http://w3id.org/ZorroOntology#SubSystem> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Problem> .
-<http://w3id.org/ZorroOntology#SubSystem> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Function> .
-<http://w3id.org/ZorroOntology#SubSystem> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Solusion> .
-<http://w3id.org/ZorroOntology#SubSystem> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/ZorroOntology#Effect> .
+# http://w3id.org/zorro#SubSystem
+<http://w3id.org/zorro#SubSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/zorro#SubSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "A major structural division of a system, grouping one or more assemblies that collectively contribute to a specific aspect of the system’s operation." .
+<http://w3id.org/zorro#SubSystem> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Problem> .
+<http://w3id.org/zorro#SubSystem> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Function> .
+<http://w3id.org/zorro#SubSystem> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Solusion> .
+<http://w3id.org/zorro#SubSystem> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/zorro#Effect> .
 # 
-# http://w3id.org/ZorroOntology#System
-<http://w3id.org/ZorroOntology#System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/ZorroOntology#System> <http://www.w3.org/2000/01/rdf-schema#comment> "The complete machine or operational whole, composed of interrelated subsystems, assemblies, and parts that together fulfill its overall function." .
-<http://w3id.org/ZorroOntology#System> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ZorroUpperLevelOntology/Component> .
+# http://w3id.org/zorro#System
+<http://w3id.org/zorro#System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/zorro#System> <http://www.w3.org/2000/01/rdf-schema#comment> "The complete machine or operational whole, composed of interrelated subsystems, assemblies, and parts that together fulfill its overall function." .
+<http://w3id.org/zorro#System> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ZorroUpperLevelOntology/Component> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
