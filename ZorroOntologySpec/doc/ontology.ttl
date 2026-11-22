@@ -91,12 +91,13 @@
 
 ###  http://w3id.org/ZorroOntology#Assembly
 :Assembly rdf:type owl:Class ;
+         rdfs:comment "A structured collection of parts that together carry out a specific function within a subsystem." ;
           rdfs:subClassOf :Component .
 
 
 ###  http://w3id.org/ZorroOntology#Cause
 :Cause rdf:type owl:Class ;
-       rdfs:comment "Cause itself  is a problem" ;
+       rdfs:comment "The underlying reason or condition that leads to a problem. Cause itself is a problem." ;
         owl:disjointWith :Solution;
         owl:disjointWith :Function;
         owl:disjointWith :Component.
@@ -104,7 +105,7 @@
 
 ###  http://w3id.org/ZorroOntology#Effect
 :Effect rdf:type owl:Class ;
-       rdfs:comment "Effect is also a problem" ;
+       rdfs:comment "The consequence or impact of a problem. Effect is also a problem." ;
         owl:disjointWith :Solution;
         owl:disjointWith :Function;
         owl:disjointWith :Component.
@@ -113,7 +114,7 @@
 
 ###  http://w3id.org/ZorroOntology#Component
 :Component rdf:type owl:Class ;
-           rdfs:comment "A component can have one or more functions" ;
+           rdfs:comment "A physical unit within a cyber-physical system. It serves as the top-level concept encompassing all structural elements of a system." ;
         owl:disjointWith :Solution;
         owl:disjointWith :Function;
         owl:disjointWith :Problem.
@@ -123,7 +124,7 @@
 
 ###  http://w3id.org/ZorroOntology#Function
 :Function rdf:type owl:Class ;
-          rdfs:comment "A function can be performed by one or several componenets" ;
+          rdfs:comment "The intended purpose or behavior that an assembly is designed to perform within the system. A function can be performed by one or several assemblies." ;
 owl:disjointWith :Solution;
         owl:disjointWith :Problem;
         owl:disjointWith :Component.
@@ -133,11 +134,13 @@ owl:disjointWith :Solution;
 
 ###  http://w3id.org/ZorroOntology#Part
 :Part rdf:type owl:Class ;
+        rdfs:comment "The most granular physical element within an assembly." ;
       rdfs:subClassOf :Component .
 
 
 ###  http://w3id.org/ZorroOntology#Problem
 :Problem rdf:type owl:Class ;
+        rdfs:comment "An observed deviation from the expected behavior or function." ;
         owl:disjointWith :Solution;
         owl:disjointWith :Function;
         owl:disjointWith :Component.
@@ -146,7 +149,7 @@ owl:disjointWith :Solution;
 
 ###  http://w3id.org/ZorroOntology#Solution
 :Solution rdf:type owl:Class ;
-          rdfs:comment "Solution solves the cause of the problem" ;
+          rdfs:comment "A corrective or remedial action taken to resolve a problem by addressing its cause, restoring the affected component or system to its expected functional state." ;
         owl:disjointWith :Problem;
         owl:disjointWith :Function;
         owl:disjointWith :Component;
@@ -156,12 +159,13 @@ owl:disjointWith :Solution;
 
 ###  http://w3id.org/ZorroOntology#System
         :System rdf:type owl:Class ;
+        rdfs:comment "" ;
         rdfs:subClassOf :Component .
 
 ###  http://w3id.org/ZorroOntology#SubSystem
 :SubSystem rdf:type owl:Class ;
         rdfs:subClassOf :Component ;
-        rdfs:comment "SubSystem is part of a system" ;
+        rdfs:comment "" ;
         owl:disjointWith :Problem;
         owl:disjointWith :Function;
         owl:disjointWith :Solution;
