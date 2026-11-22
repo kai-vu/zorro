@@ -159,13 +159,13 @@ owl:disjointWith :Solution;
 
 ###  http://w3id.org/ZorroOntology#System
         :System rdf:type owl:Class ;
-        rdfs:comment "" ;
+        rdfs:comment "The complete machine or operational whole, composed of interrelated subsystems, assemblies, and parts that together fulfill its overall function." ;
         rdfs:subClassOf :Component .
 
 ###  http://w3id.org/ZorroOntology#SubSystem
 :SubSystem rdf:type owl:Class ;
         rdfs:subClassOf :Component ;
-        rdfs:comment "" ;
+        rdfs:comment "A major structural division of a system, grouping one or more assemblies that collectively contribute to a specific aspect of the system’s operation." ;
         owl:disjointWith :Problem;
         owl:disjointWith :Function;
         owl:disjointWith :Solution;
