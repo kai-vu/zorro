@@ -179,7 +179,7 @@
 
 
     <owl:Class rdf:about="http://w3id.org/ZorroOntology#Cause">
-        <rdfs:comment>Cause itself  is a problem</rdfs:comment>
+        <rdfs:comment>The underlying reason or condition that leads to a problem. Cause itself is a problem.</rdfs:comment>
           <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Solution"/>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Component"/>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Function"/>
