@@ -12,8 +12,8 @@
 #    Object Properties
 #################################################################
 
-###  http://w3id.org/ZorroOntology#PartOf
-:PartOf rdf:type owl:ObjectProperty ;
+###  http://w3id.org/ZorroOntology#partOf
+:partOf rdf:type owl:ObjectProperty ;
         rdfs:domain :Part ;
         rdfs:range :Assembly .
 
@@ -77,11 +77,11 @@
 #################################################################
 
 ###  http://w3id.org/ZorroOntology#partNumber
-:partNumber rdf:type owl:DataProperty ;
+:partNumber rdf:type owl:DatatypeProperty ;
         rdfs:domain :Part .
 
 ###  http://w3id.org/ZorroOntology#partPrice
-:partPrice rdf:type owl:DataProperty ;
+:partPrice rdf:type owl:DatatypeProperty ;
         rdfs:domain :Part .
 
 
