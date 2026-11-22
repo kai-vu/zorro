@@ -1,72 +1,72 @@
-@prefix : <http://w3id.org/ZorroOntology#> .
+@prefix : <http://w3id.org/zorro#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://w3id.org/ZorroOntology#> .
+@base <http://w3id.org/zorro#> .
 
-<http://w3id.org/ZorroOntology#> rdf:type owl:Ontology .
+<http://w3id.org/zorro#> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://w3id.org/ZorroOntology#partOf
+###  http://w3id.org/zorro#partOf
 :partOf rdf:type owl:ObjectProperty ;
         rdfs:domain :Part ;
         rdfs:range :Assembly .
 
 
-###  http://w3id.org/ZorroOntology#defines
+###  http://w3id.org/zorro#defines
 :defines rdf:type owl:ObjectProperty ;
          rdfs:domain :Function ;
          rdfs:range :Problem .
 
 
-###  http://w3id.org/ZorroOntology#dependsOn
+###  http://w3id.org/zorro#dependsOn
 :dependsOn rdf:type owl:ObjectProperty ,
                     owl:TransitiveProperty ;
            rdfs:domain :Function ;
            rdfs:range :Function .
 
 
-###  http://w3id.org/ZorroOntology#failsVia
+###  http://w3id.org/zorro#failsVia
 :failsVia rdf:type owl:ObjectProperty ;
           rdfs:domain :Component ;
           rdfs:range :Problem .
 
-###  http://w3id.org/ZorroOntology#hasEffect
+###  http://w3id.org/zorro#hasEffect
 :failsVia rdf:type owl:ObjectProperty ;
           rdfs:domain :Cause ;
           rdfs:range :Effect .
 
 
-###  http://w3id.org/ZorroOntology#hasCause
+###  http://w3id.org/zorro#hasCause
 :hasCause rdf:type owl:ObjectProperty ;
           rdfs:domain :Problem ;
           rdfs:range :Cause .
 
 
-###  http://w3id.org/ZorroOntology#hasFunction
+###  http://w3id.org/zorro#hasFunction
 :hasFunction rdf:type owl:ObjectProperty ;
              rdfs:domain :Component ;
              rdfs:range :Function .
 
 
-###  http://w3id.org/ZorroOntology#inSystem
+###  http://w3id.org/zorro#inSystem
 :inSystem rdf:type owl:ObjectProperty ;
           rdfs:domain :Assembly ;
           rdfs:range :System .
 
 
-###  http://w3id.org/ZorroOntology#involves
+###  http://w3id.org/zorro#involves
 :involves rdf:type owl:ObjectProperty ;
           rdfs:domain :Problem ;
           rdfs:range :Part .
 
 
-###  http://w3id.org/ZorroOntology#solves
+###  http://w3id.org/zorro#solves
 :solves rdf:type owl:ObjectProperty ;
         rdfs:domain :Solution ;
         rdfs:range :Problem .
@@ -76,11 +76,11 @@
 #    Data Properties
 #################################################################
 
-###  http://w3id.org/ZorroOntology#partNumber
+###  http://w3id.org/zorro#partNumber
 :partNumber rdf:type owl:DatatypeProperty ;
         rdfs:domain :Part .
 
-###  http://w3id.org/ZorroOntology#partPrice
+###  http://w3id.org/zorro#partPrice
 :partPrice rdf:type owl:DatatypeProperty ;
         rdfs:domain :Part .
 
@@ -89,13 +89,13 @@
 #    Classes
 #################################################################
 
-###  http://w3id.org/ZorroOntology#Assembly
+###  http://w3id.org/zorro#Assembly
 :Assembly rdf:type owl:Class ;
          rdfs:comment "A structured collection of parts that together carry out a specific function within a subsystem." ;
           rdfs:subClassOf :Component .
 
 
-###  http://w3id.org/ZorroOntology#Cause
+###  http://w3id.org/zorro#Cause
 :Cause rdf:type owl:Class ;
        rdfs:comment "The underlying reason or condition that leads to a problem. Cause itself is a problem." ;
         owl:disjointWith :Solution;
@@ -103,7 +103,7 @@
         owl:disjointWith :Component.
 
 
-###  http://w3id.org/ZorroOntology#Effect
+###  http://w3id.org/zorro#Effect
 :Effect rdf:type owl:Class ;
        rdfs:comment "The consequence or impact of a problem. Effect is also a problem." ;
         owl:disjointWith :Solution;
@@ -112,7 +112,7 @@
 
 
 
-###  http://w3id.org/ZorroOntology#Component
+###  http://w3id.org/zorro#Component
 :Component rdf:type owl:Class ;
            rdfs:comment "A physical unit within a cyber-physical system. It serves as the top-level concept encompassing all structural elements of a system." ;
         owl:disjointWith :Solution;
@@ -122,7 +122,7 @@
         owl:disjointWith :Cause.
 
 
-###  http://w3id.org/ZorroOntology#Function
+###  http://w3id.org/zorro#Function
 :Function rdf:type owl:Class ;
           rdfs:comment "The intended purpose or behavior that an assembly is designed to perform within the system. A function can be performed by one or several assemblies." ;
 owl:disjointWith :Solution;
@@ -132,13 +132,13 @@ owl:disjointWith :Solution;
         owl:disjointWith :Cause.
 
 
-###  http://w3id.org/ZorroOntology#Part
+###  http://w3id.org/zorro#Part
 :Part rdf:type owl:Class ;
         rdfs:comment "The most granular physical element within an assembly." ;
       rdfs:subClassOf :Component .
 
 
-###  http://w3id.org/ZorroOntology#Problem
+###  http://w3id.org/zorro#Problem
 :Problem rdf:type owl:Class ;
         rdfs:comment "An observed deviation from the expected behavior or function." ;
         owl:disjointWith :Solution;
@@ -147,7 +147,7 @@ owl:disjointWith :Solution;
 
 
 
-###  http://w3id.org/ZorroOntology#Solution
+###  http://w3id.org/zorro#Solution
 :Solution rdf:type owl:Class ;
           rdfs:comment "A corrective or remedial action taken to resolve a problem by addressing its cause, restoring the affected component or system to its expected functional state." ;
         owl:disjointWith :Problem;
@@ -157,12 +157,12 @@ owl:disjointWith :Solution;
        owl:disjointWith :Effect.
 
 
-###  http://w3id.org/ZorroOntology#System
+###  http://w3id.org/zorro#System
         :System rdf:type owl:Class ;
         rdfs:comment "The complete machine or operational whole, composed of interrelated subsystems, assemblies, and parts that together fulfill its overall function." ;
         rdfs:subClassOf :Component .
 
-###  http://w3id.org/ZorroOntology#SubSystem
+###  http://w3id.org/zorro#SubSystem
 :SubSystem rdf:type owl:Class ;
         rdfs:subClassOf :Component ;
         rdfs:comment "A major structural division of a system, grouping one or more assemblies that collectively contribute to a specific aspect of the system’s operation." ;
