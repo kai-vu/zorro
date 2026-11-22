@@ -22,10 +22,10 @@
     
 
 
-    <!-- http://w3id.org/ZorroOntology#PartOf -->
+    <!-- http://w3id.org/ZorroOntology#partOf -->
 
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/ZorroOntology#PartOf">
+    <owl:ObjectProperty rdf:about="http://w3id.org/ZorroOntology#partOf">
         <rdfs:domain rdf:resource="http://w3id.org/ZorroOntology#Part"/>
         <rdfs:range rdf:resource="http://w3id.org/ZorroOntology#Assembly"/>
     </owl:ObjectProperty>
@@ -139,17 +139,17 @@
     <!-- http://w3id.org/ZorroOntology#partNumber -->
 
 
-    <owl:DataProperty rdf:about="http://w3id.org/ZorroOntology#partNumber">
+    <owl:DatatypeProperty rdf:about="http://w3id.org/ZorroOntology#partNumber">
         <rdfs:domain rdf:resource="http://w3id.org/ZorroOntology#Part"/>
-    </owl:DataProperty>
+    </owl:DatatypeProperty>
 
 
       <!-- http://w3id.org/ZorroOntology#partPrice -->
 
 
-    <owl:DataProperty rdf:about="http://w3id.org/ZorroOntology#partPrice">
+    <owl:DatatypeProperty rdf:about="http://w3id.org/ZorroOntology#partPrice">
         <rdfs:domain rdf:resource="http://w3id.org/ZorroOntology#Part"/>
-    </owl:DataProperty>
+    </owl:DatatypeProperty>
 
 
 
