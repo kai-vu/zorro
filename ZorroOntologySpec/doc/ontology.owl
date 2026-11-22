@@ -169,6 +169,7 @@
 
 
     <owl:Class rdf:about="http://w3id.org/ZorroOntology#Assembly">
+     <rdfs:comment>A structured collection of parts that together carry out a specific function within a subsystem. </rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://w3id.org/ZorroOntology#Component"/>
     </owl:Class>
     
@@ -190,7 +191,7 @@
 
 
     <owl:Class rdf:about="http://w3id.org/ZorroOntology#Effect">
-        <rdfs:comment>Effect is also a problem</rdfs:comment>
+        <rdfs:comment>The consequence or impact of a problem. Effect is also a problem.</rdfs:comment>
           <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Solution"/>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Component"/>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Function"/>
@@ -202,7 +203,7 @@
 
 
     <owl:Class rdf:about="http://w3id.org/ZorroOntology#Component">
-        <rdfs:comment>A component can have one or more functions</rdfs:comment>
+        <rdfs:comment>A physical unit within a cyber-physical system. It serves as the top-level concept encompassing all structural elements of a system.</rdfs:comment>
 <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Solution"/>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Cause"/>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Function"/>
@@ -216,7 +217,7 @@
 
 
     <owl:Class rdf:about="http://w3id.org/ZorroOntology#Function">
-        <rdfs:comment>A function can be performed by one or several componenets</rdfs:comment>
+        <rdfs:comment>The intended purpose or behavior that an assembly is designed to perform within the system. A function can be performed by one or several assemblies.</rdfs:comment>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Solution"/>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Cause"/>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Component"/>
@@ -231,6 +232,7 @@
 
 
     <owl:Class rdf:about="http://w3id.org/ZorroOntology#Part">
+     <rdfs:comment>The most granular physical element within an assembly.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://w3id.org/ZorroOntology#Component"/>
     </owl:Class>
     
@@ -240,6 +242,7 @@
 
 
     <owl:Class rdf:about="http://w3id.org/ZorroOntology#Problem">
+     <rdfs:comment>An observed deviation from the expected behavior or function.</rdfs:comment>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Solution"/>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Function"/>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Component"/>
@@ -252,7 +255,7 @@
 
 
     <owl:Class rdf:about="http://w3id.org/ZorroOntology#Solution">
-        <rdfs:comment>Solution solves the cause of the problem</rdfs:comment>
+        <rdfs:comment>A corrective or remedial action taken to resolve a problem by addressing its cause, restoring the affected component or system to its expected functional state.</rdfs:comment>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Problem"/>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Cause"/>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Function"/>
@@ -266,13 +269,14 @@
 
 
     <owl:Class rdf:about="http://w3id.org/ZorroOntology#System">
+     <rdfs:comment>The complete machine or operational whole, composed of interrelated subsystems, assemblies, and parts that together fulfill its overall function.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://w3id.org/ZorroOntology#Component"/>
     </owl:Class>
 
     <!-- http://w3id.org/ZorroOntology#SubSystem -->
 
   <owl:Class rdf:about="http://w3id.org/ZorroOntology#SubSystem">
-  <rdfs:comment>SubSystem is part of a system</rdfs:comment>
+  <rdfs:comment>A major structural division of a system, grouping one or more assemblies that collectively contribute to a specific aspect of the system’s operation.</rdfs:comment>
   <rdfs:subClassOf rdf:resource="http://w3id.org/ZorroOntology#Component"/>
           <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Problem"/>
         <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Cause"/>
