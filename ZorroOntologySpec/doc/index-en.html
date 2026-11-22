@@ -139,14 +139,19 @@ alt="CC BY 4.0" />
 
 	
 
-	
-<!--INTRODUCTION SECTION-->
-    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-<h3>Motivation</h3>
+<!-- INTRODUCTION SECTION -->
+<div id="introduction">
+    <h2 id="intro" class="list">
+        Introduction 
+        <span class="backlink"> back to <a href="#toc">ToC</a></span>
+    </h2>
+    <hr>
+    
+    <div class="markdown">
+        <!-- SUBSECTION 1: MOTIVATION -->
+        <h3>Motivation</h3>
         <hr>
-        <p>Cyber-Physical Systems (CPSs) are at the core of critical infrastructure in domains ranging from aviation and manufacturing to energy, healthcare, and transportation. Their failure consequences extend far beyond technical disruption: halting critical infrastructure, endangering lives, and triggering cascading economic and societal impacts.
-		Knowledge-driven approaches leveraging domain expertise encoded in ontologies and KGs have shown promise in fault diagnosis, yet existing ontologies are either too broad or narrowly scoped to a specific domain or process:</p>
+        <p>Cyber-Physical Systems (CPSs) are at the core of critical infrastructure in domains ranging from aviation and manufacturing to energy, healthcare, and transportation. Their failure consequences extend far beyond technical disruption: halting critical infrastructure, endangering lives, and triggering cascading economic and societal impacts. Knowledge-driven approaches leveraging domain expertise encoded in ontologies and KGs have shown promise in fault diagnosis, yet existing ontologies are either too broad or narrowly scoped to a specific domain or process:</p>
         <ul>
             <li><strong>IDO and IOF-MRO:</strong> Provide broad foundational or maintenance concepts, making them too general for granular fault diagnosis.</li>
             <li><strong>IoT Failure Ontology (IoT-F):</strong> Covers device-level failures specifically in IoT settings.</li>
@@ -159,12 +164,11 @@ alt="CC BY 4.0" />
         <hr>
         <p>To address this gap, we introduce the <strong>Zorro Ontology</strong>, a domain-agnostic, publicly available ontology designed specifically for fault diagnosis in CPSs. It draws inspiration from the part-whole ontology design pattern, as well as from IDO and IOF-MRO, with the following core modeling features:</p>
         <ol>
-            <li><strong>System & Functional Modeling:</strong> Models systems by subsystems, assemblies, and parts where each assembly carries a function via <code>zorro:Assembly</code>, <code>zorro:hasFunction</code>, and <code>zorro:Function</code>. </li>
+            <li><strong>System & Functional Modeling:</strong> Models systems by subsystems, assemblies, and parts where each assembly carries a function via <code>zorro:Assembly</code>, <code>zorro:hasFunction</code>, and <code>zorro:Function</code>.</li>
             <li><strong>Failure Propagation:</strong> Expresses functional dependencies via <code>zorro:dependsOn</code>, enabling principled reasoning about cascading failures across interconnected assemblies.</li>
         </ol>
     </div>
 </div>
-</span>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
