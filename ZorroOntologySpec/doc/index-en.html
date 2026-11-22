@@ -330,6 +330,9 @@ This section provides details for each class and property defined by Zorro Ontol
  <div class="entity" id="Assembly">
   <h3>Assembly<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://w3id.org/ZorroOntology#Assembly</p>
+  <div class="comment">
+   <span class="markdown">A structured collection of parts that together carry out a specific function within a subsystem.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -341,13 +344,13 @@ This section provides details for each class and property defined by Zorro Ontol
     is in domain of
    </dt>
    <dd>
-    <a href="#inSystem" title="http://w3id.org/ZorroOntology#inSystem">in System</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#inSubSystem" title="http://w3id.org/ZorroOntology#inSystem">in SubSystem</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#PartOf" title="http://w3id.org/ZorroOntology#PartOf">Part Of</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#part Of" title="http://w3id.org/ZorroOntology#PartOf">part Of</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -355,7 +358,7 @@ This section provides details for each class and property defined by Zorro Ontol
   <h3>Cause<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://w3id.org/ZorroOntology#Cause</p>
   <div class="comment">
-   <span class="markdown">Cause itself is a problem</span>
+   <span class="markdown">The underlying reason or condition that leads to a problem. Cause itself is a problem.</span>
   </div>
   <dl class="description">
    <dt>
@@ -380,7 +383,7 @@ This section provides details for each class and property defined by Zorro Ontol
   <h3>Effect<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://w3id.org/ZorroOntology#Effect</p>
   <div class="comment">
-   <span class="markdown">Effect is also a problem</span>
+   <span class="markdown">The consequence or impact of a problem. Effect is also a problem.</span>
   </div>
   <dl class="description">
    <dt>
@@ -407,7 +410,7 @@ This section provides details for each class and property defined by Zorro Ontol
   <h3>Component<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://w3id.org/ZorroOntology#Component</p>
   <div class="comment">
-   <span class="markdown">A component can have one or more functions</span>
+   <span class="markdown">A physical unit within a cyber-physical system. It serves as the top-level concept encompassing all structural elements of a system.</span>
   </div>
   <dl class="description">
    <dt>
@@ -437,7 +440,7 @@ This section provides details for each class and property defined by Zorro Ontol
   <h3>Function<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://w3id.org/ZorroOntology#Function</p>
   <div class="comment">
-   <span class="markdown">A function can be performed by one or several componenets</span>
+   <span class="markdown">The intended purpose or behavior that an assembly is designed to perform within the system. A function can be performed by one or several assemblies.</span>
   </div>
   <dl class="description">
    <dt>
@@ -467,6 +470,9 @@ This section provides details for each class and property defined by Zorro Ontol
  <div class="entity" id="Part">
   <h3>Part<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://w3id.org/ZorroOntology#Part</p>
+	<div class="comment">
+   <span class="markdown">The most granular physical element within an assembly.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -491,6 +497,9 @@ This section provides details for each class and property defined by Zorro Ontol
  <div class="entity" id="Problem">
   <h3>Problem<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://w3id.org/ZorroOntology#Problem</p>
+	 <div class="comment">
+   <span class="markdown">An observed deviation from the expected behavior or function.</span>
+  </div>
   <dl class="description">
    <dt>
     is in domain of
@@ -518,7 +527,7 @@ This section provides details for each class and property defined by Zorro Ontol
   <h3>Solution<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://w3id.org/ZorroOntology#Solution</p>
   <div class="comment">
-   <span class="markdown">Solution solves the cause of the problem</span>
+   <span class="markdown">A corrective or remedial action taken to resolve a problem by addressing its cause, restoring the affected component or system to its expected functional state.</span>
   </div>
   <dl class="description">
    <dt>
@@ -543,6 +552,9 @@ This section provides details for each class and property defined by Zorro Ontol
  <div class="entity" id="System">
   <h3>System<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://w3id.org/ZorroOntology#System</p>
+  <div class="comment">
+   <span class="markdown">The complete machine or operational whole, composed of interrelated subsystems, assemblies, and parts that together fulfill its overall function.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
