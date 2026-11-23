@@ -1,175 +1,175 @@
 [ {
-  "@id" : "http://w3id.org/ZorroOntology#",
+  "@id" : "https://w3id.org/ZorroOntology#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
 }, {
-  "@id" : "http://w3id.org/ZorroOntology#Assembly",
+  "@id" : "https://w3id.org/ZorroOntology#Assembly",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Component"
+    "@id" : "https://w3id.org/ZorroOntology#Component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A structured collection of parts that together carry out a specific function within a subsystem. "
   } ]
 }, {
-  "@id" : "http://w3id.org/ZorroOntology#SubSystem",
+  "@id" : "https://w3id.org/ZorroOntology#SubSystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Component"
+    "@id" : "https://w3id.org/ZorroOntology#Component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A major structural division of a system, grouping one or more assemblies that collectively contribute to a specific aspect of the system’s operation. "
   } ]
 },
  {
-  "@id" : "http://w3id.org/ZorroOntology#Cause",
+  "@id" : "https://w3id.org/ZorroOntology#Cause",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The underlying reason or condition that leads to a problem. Cause itself is a problem."
   } ]
 }, {
-  "@id" : "http://w3id.org/ZorroOntology#Component",
+  "@id" : "https://w3id.org/ZorroOntology#Component",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A physical unit within a cyber-physical system. It serves as the top-level concept encompassing all structural elements of a system."
   } ]
 }, {
-  "@id" : "http://w3id.org/ZorroOntology#Function",
+  "@id" : "https://w3id.org/ZorroOntology#Function",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The intended purpose or behavior that an assembly is designed to perform within the system. A function can be performed by one or several assemblies."
   } ]
 }, {
-  "@id" : "http://w3id.org/ZorroOntology#Part",
+  "@id" : "https://w3id.org/ZorroOntology#Part",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Component"
+    "@id" : "https://w3id.org/ZorroOntology#Component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The most granular physical element within an assembly."
   } ]
 }, {
-  "@id" : "http://w3id.org/ZorroOntology#partOf",
+  "@id" : "https://w3id.org/ZorroOntology#partOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Part"
+    "@id" : "https://w3id.org/ZorroOntology#Part"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Assembly"
+    "@id" : "https://w3id.org/ZorroOntology#Assembly"
   } ]
 }, {
-  "@id" : "http://w3id.org/ZorroOntology#Problem",
+  "@id" : "https://w3id.org/ZorroOntology#Problem",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Solution"
+    "@id" : "https://w3id.org/ZorroOntology#Solution"
     },
     {
-      "@id": "http://w3id.org/ZorroOntology#Function"
+      "@id": "https://w3id.org/ZorroOntology#Function"
     },
     {
-      "@id": "http://w3id.org/ZorroOntology#Component"
+      "@id": "https://w3id.org/ZorroOntology#Component"
     }
    ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "An observed deviation from the expected behavior or function."
   } ]
 }, {
-  "@id" : "http://w3id.org/ZorroOntology#Solution",
+  "@id" : "https://w3id.org/ZorroOntology#Solution",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A corrective or remedial action taken to resolve a problem by addressing its cause, restoring the affected component or system to its expected functional state."
   } ]
 }, {
-  "@id" : "http://w3id.org/ZorroOntology#System",
+  "@id" : "https://w3id.org/ZorroOntology#System",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Component"
+    "@id" : "https://w3id.org/ZorroOntology#Component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The complete machine or operational whole, composed of interrelated subsystems, assemblies, and parts that together fulfill its overall function."
   } ]
 }, {
-  "@id" : "http://w3id.org/ZorroOntology#defines",
+  "@id" : "https://w3id.org/ZorroOntology#defines",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Function"
+    "@id" : "https://w3id.org/ZorroOntology#Function"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Problem"
+    "@id" : "https://w3id.org/ZorroOntology#Problem"
   } ]
 }, {
-  "@id" : "http://w3id.org/ZorroOntology#dependsOn",
+  "@id" : "https://w3id.org/ZorroOntology#dependsOn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Function"
+    "@id" : "https://w3id.org/ZorroOntology#Function"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Function"
+    "@id" : "https://w3id.org/ZorroOntology#Function"
   } ]
 }, {
-  "@id" : "http://w3id.org/ZorroOntology#failsVia",
+  "@id" : "https://w3id.org/ZorroOntology#failsVia",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Component"
+    "@id" : "https://w3id.org/ZorroOntology#Component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Problem"
+    "@id" : "https://w3id.org/ZorroOntology#Problem"
   } ]
 }, {
-  "@id" : "http://w3id.org/ZorroOntology#hasCause",
+  "@id" : "https://w3id.org/ZorroOntology#hasCause",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Problem"
+    "@id" : "https://w3id.org/ZorroOntology#Problem"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Cause"
+    "@id" : "https://w3id.org/ZorroOntology#Cause"
   } ]
 }, {
-  "@id" : "http://w3id.org/ZorroOntology#hasFunction",
+  "@id" : "https://w3id.org/ZorroOntology#hasFunction",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Component"
+    "@id" : "https://w3id.org/ZorroOntology#Component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Function"
+    "@id" : "https://w3id.org/ZorroOntology#Function"
   } ]
 }, {
-  "@id" : "http://w3id.org/ZorroOntology#inSystem",
+  "@id" : "https://w3id.org/ZorroOntology#inSystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Assembly"
+    "@id" : "https://w3id.org/ZorroOntology#Assembly"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#System"
+    "@id" : "https://w3id.org/ZorroOntology#System"
   } ]
 }, {
-  "@id" : "http://w3id.org/ZorroOntology#involves",
+  "@id" : "https://w3id.org/ZorroOntology#involves",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Problem"
+    "@id" : "https://w3id.org/ZorroOntology#Problem"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Part"
+    "@id" : "https://w3id.org/ZorroOntology#Part"
   } ]
 }, {
-  "@id" : "http://w3id.org/ZorroOntology#partNumber",
+  "@id" : "https://w3id.org/ZorroOntology#partNumber",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Part"
+    "@id" : "https://w3id.org/ZorroOntology#Part"
   } ]
 },
  {
-  "@id" : "http://w3id.org/ZorroOntology#partPrice",
+  "@id" : "https://w3id.org/ZorroOntology#partPrice",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Part"
+    "@id" : "https://w3id.org/ZorroOntology#Part"
   } ]
 },{
-  "@id" : "http://w3id.org/ZorroOntology#solves",
+  "@id" : "https://w3id.org/ZorroOntology#solves",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Solution"
+    "@id" : "https://w3id.org/ZorroOntology#Solution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/ZorroOntology#Problem"
+    "@id" : "https://w3id.org/ZorroOntology#Problem"
   } ]
 } ]
