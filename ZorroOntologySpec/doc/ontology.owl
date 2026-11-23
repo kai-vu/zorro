@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://w3id.org/ZorroOntology#"
-     xml:base="http://w3id.org/ZorroOntology#"
+<rdf:RDF xmlns="https://w3id.org/ZorroOntology#"
+     xml:base="https://w3id.org/ZorroOntology#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://w3id.org/ZorroOntology#"/>
+    <owl:Ontology rdf:about="https://w3id.org/ZorroOntology#"/>
     
 
 
@@ -22,104 +22,104 @@
     
 
 
-    <!-- http://w3id.org/ZorroOntology#partOf -->
+    <!-- https://w3id.org/ZorroOntology#partOf -->
 
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/ZorroOntology#partOf">
-        <rdfs:domain rdf:resource="http://w3id.org/ZorroOntology#Part"/>
-        <rdfs:range rdf:resource="http://w3id.org/ZorroOntology#Assembly"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ZorroOntology#partOf">
+        <rdfs:domain rdf:resource="https://w3id.org/ZorroOntology#Part"/>
+        <rdfs:range rdf:resource="https://w3id.org/ZorroOntology#Assembly"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://w3id.org/ZorroOntology#defines -->
+    <!-- https://w3id.org/ZorroOntology#defines -->
 
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/ZorroOntology#defines">
-        <rdfs:domain rdf:resource="http://w3id.org/ZorroOntology#Function"/>
-        <rdfs:range rdf:resource="http://w3id.org/ZorroOntology#Problem"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ZorroOntology#defines">
+        <rdfs:domain rdf:resource="https://w3id.org/ZorroOntology#Function"/>
+        <rdfs:range rdf:resource="https://w3id.org/ZorroOntology#Problem"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://w3id.org/ZorroOntology#dependsOn -->
+    <!-- https://w3id.org/ZorroOntology#dependsOn -->
 
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/ZorroOntology#dependsOn">
+    <owl:ObjectProperty rdf:about="https://w3id.org/ZorroOntology#dependsOn">
          <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:domain rdf:resource="http://w3id.org/ZorroOntology#Function"/>
-        <rdfs:range rdf:resource="http://w3id.org/ZorroOntology#Function"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ZorroOntology#Function"/>
+        <rdfs:range rdf:resource="https://w3id.org/ZorroOntology#Function"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://w3id.org/ZorroOntology#failsVia -->
+    <!-- https://w3id.org/ZorroOntology#failsVia -->
 
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/ZorroOntology#failsVia">
-        <rdfs:domain rdf:resource="http://w3id.org/ZorroOntology#Component"/>
-        <rdfs:range rdf:resource="http://w3id.org/ZorroOntology#Problem"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ZorroOntology#failsVia">
+        <rdfs:domain rdf:resource="https://w3id.org/ZorroOntology#Component"/>
+        <rdfs:range rdf:resource="https://w3id.org/ZorroOntology#Problem"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://w3id.org/ZorroOntology#hasCause -->
+    <!-- https://w3id.org/ZorroOntology#hasCause -->
 
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/ZorroOntology#hasCause">
-        <rdfs:domain rdf:resource="http://w3id.org/ZorroOntology#Problem"/>
-        <rdfs:range rdf:resource="http://w3id.org/ZorroOntology#Cause"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ZorroOntology#hasCause">
+        <rdfs:domain rdf:resource="https://w3id.org/ZorroOntology#Problem"/>
+        <rdfs:range rdf:resource="https://w3id.org/ZorroOntology#Cause"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://w3id.org/ZorroOntology#hasFunction -->
+    <!-- https://w3id.org/ZorroOntology#hasFunction -->
 
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/ZorroOntology#hasFunction">
-        <rdfs:domain rdf:resource="http://w3id.org/ZorroOntology#Component"/>
-        <rdfs:range rdf:resource="http://w3id.org/ZorroOntology#Function"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ZorroOntology#hasFunction">
+        <rdfs:domain rdf:resource="https://w3id.org/ZorroOntology#Component"/>
+        <rdfs:range rdf:resource="https://w3id.org/ZorroOntology#Function"/>
     </owl:ObjectProperty>
 
 
 
-    <!-- http://w3id.org/ZorroOntology#hasEffect -->
+    <!-- https://w3id.org/ZorroOntology#hasEffect -->
 
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/ZorroOntology#hasEffect">
-        <rdfs:domain rdf:resource="http://w3id.org/ZorroOntology#Cause"/>
-        <rdfs:range rdf:resource="http://w3id.org/ZorroOntology#Effect"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ZorroOntology#hasEffect">
+        <rdfs:domain rdf:resource="https://w3id.org/ZorroOntology#Cause"/>
+        <rdfs:range rdf:resource="https://w3id.org/ZorroOntology#Effect"/>
     </owl:ObjectProperty>
     
     
 
 
-    <!-- http://w3id.org/ZorroOntology#inSystem -->
+    <!-- https://w3id.org/ZorroOntology#inSystem -->
 
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/ZorroOntology#inSystem">
-        <rdfs:domain rdf:resource="http://w3id.org/ZorroOntology#Assembly"/>
-        <rdfs:range rdf:resource="http://w3id.org/ZorroOntology#System"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ZorroOntology#inSystem">
+        <rdfs:domain rdf:resource="https://w3id.org/ZorroOntology#Assembly"/>
+        <rdfs:range rdf:resource="https://w3id.org/ZorroOntology#System"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://w3id.org/ZorroOntology#involves -->
+    <!-- https://w3id.org/ZorroOntology#involves -->
 
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/ZorroOntology#involves">
-        <rdfs:domain rdf:resource="http://w3id.org/ZorroOntology#Problem"/>
-        <rdfs:range rdf:resource="http://w3id.org/ZorroOntology#Part"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ZorroOntology#involves">
+        <rdfs:domain rdf:resource="https://w3id.org/ZorroOntology#Problem"/>
+        <rdfs:range rdf:resource="https://w3id.org/ZorroOntology#Part"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://w3id.org/ZorroOntology#solves -->
+    <!-- https://w3id.org/ZorroOntology#solves -->
 
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/ZorroOntology#solves">
-        <rdfs:domain rdf:resource="hhttp://w3id.org/ZorroOntology#Solution"/>
-        <rdfs:range rdf:resource="http://w3id.org/ZorroOntology#Problem"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/ZorroOntology#solves">
+        <rdfs:domain rdf:resource="hhttps://w3id.org/ZorroOntology#Solution"/>
+        <rdfs:range rdf:resource="https://w3id.org/ZorroOntology#Problem"/>
     </owl:ObjectProperty>
 
 
@@ -136,19 +136,19 @@
     
 
 
-    <!-- http://w3id.org/ZorroOntology#partNumber -->
+    <!-- https://w3id.org/ZorroOntology#partNumber -->
 
 
-    <owl:DatatypeProperty rdf:about="http://w3id.org/ZorroOntology#partNumber">
-        <rdfs:domain rdf:resource="http://w3id.org/ZorroOntology#Part"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ZorroOntology#partNumber">
+        <rdfs:domain rdf:resource="https://w3id.org/ZorroOntology#Part"/>
     </owl:DatatypeProperty>
 
 
-      <!-- http://w3id.org/ZorroOntology#partPrice -->
+      <!-- https://w3id.org/ZorroOntology#partPrice -->
 
 
-    <owl:DatatypeProperty rdf:about="http://w3id.org/ZorroOntology#partPrice">
-        <rdfs:domain rdf:resource="http://w3id.org/ZorroOntology#Part"/>
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ZorroOntology#partPrice">
+        <rdfs:domain rdf:resource="https://w3id.org/ZorroOntology#Part"/>
     </owl:DatatypeProperty>
 
 
@@ -165,124 +165,124 @@
     
 
 
-    <!-- http://w3id.org/ZorroOntology#Assembly -->
+    <!-- https://w3id.org/ZorroOntology#Assembly -->
 
 
-    <owl:Class rdf:about="http://w3id.org/ZorroOntology#Assembly">
+    <owl:Class rdf:about="https://w3id.org/ZorroOntology#Assembly">
      <rdfs:comment>A structured collection of parts that together carry out a specific function within a subsystem. </rdfs:comment>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/ZorroOntology#Component"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ZorroOntology#Component"/>
     </owl:Class>
     
 
 
-    <!-- http://w3id.org/ZorroOntology#Cause -->
+    <!-- https://w3id.org/ZorroOntology#Cause -->
 
 
-    <owl:Class rdf:about="http://w3id.org/ZorroOntology#Cause">
+    <owl:Class rdf:about="https://w3id.org/ZorroOntology#Cause">
         <rdfs:comment>The underlying reason or condition that leads to a problem. Cause itself is a problem.</rdfs:comment>
-          <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Solution"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Component"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Function"/>
+          <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Solution"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Component"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Function"/>
     </owl:Class>
 
 
 
-  <!-- http://w3id.org/ZorroOntology#Effect -->
+  <!-- https://w3id.org/ZorroOntology#Effect -->
 
 
-    <owl:Class rdf:about="http://w3id.org/ZorroOntology#Effect">
+    <owl:Class rdf:about="https://w3id.org/ZorroOntology#Effect">
         <rdfs:comment>The consequence or impact of a problem. Effect is also a problem.</rdfs:comment>
-          <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Solution"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Component"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Function"/>
+          <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Solution"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Component"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Function"/>
     </owl:Class>
     
 
 
-    <!-- http://w3id.org/ZorroOntology#Component -->
+    <!-- https://w3id.org/ZorroOntology#Component -->
 
 
-    <owl:Class rdf:about="http://w3id.org/ZorroOntology#Component">
+    <owl:Class rdf:about="https://w3id.org/ZorroOntology#Component">
         <rdfs:comment>A physical unit within a cyber-physical system. It serves as the top-level concept encompassing all structural elements of a system.</rdfs:comment>
-<owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Solution"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Cause"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Function"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Problem"/>
-<owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Effect"/>
+<owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Solution"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Cause"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Function"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Problem"/>
+<owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Effect"/>
     </owl:Class>
     
 
 
-    <!-- http://w3id.org/ZorroOntology#Function -->
+    <!-- https://w3id.org/ZorroOntology#Function -->
 
 
-    <owl:Class rdf:about="http://w3id.org/ZorroOntology#Function">
+    <owl:Class rdf:about="https://w3id.org/ZorroOntology#Function">
         <rdfs:comment>The intended purpose or behavior that an assembly is designed to perform within the system. A function can be performed by one or several assemblies.</rdfs:comment>
-        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Solution"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Cause"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Component"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Problem"/>
-<owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Effect"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Solution"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Cause"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Component"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Problem"/>
+<owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Effect"/>
 
     </owl:Class>
     
 
 
-    <!-- http://w3id.org/ZorroOntology#Part -->
+    <!-- https://w3id.org/ZorroOntology#Part -->
 
 
-    <owl:Class rdf:about="http://w3id.org/ZorroOntology#Part">
+    <owl:Class rdf:about="https://w3id.org/ZorroOntology#Part">
      <rdfs:comment>The most granular physical element within an assembly.</rdfs:comment>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/ZorroOntology#Component"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ZorroOntology#Component"/>
     </owl:Class>
     
 
 
-    <!-- http://w3id.org/ZorroOntology#Problem -->
+    <!-- https://w3id.org/ZorroOntology#Problem -->
 
 
-    <owl:Class rdf:about="http://w3id.org/ZorroOntology#Problem">
+    <owl:Class rdf:about="https://w3id.org/ZorroOntology#Problem">
      <rdfs:comment>An observed deviation from the expected behavior or function.</rdfs:comment>
-        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Solution"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Function"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Component"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Solution"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Function"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Component"/>
     </owl:Class>
 
 
 
 
-    <!-- http://w3id.org/ZorroOntology#Solution -->
+    <!-- https://w3id.org/ZorroOntology#Solution -->
 
 
-    <owl:Class rdf:about="http://w3id.org/ZorroOntology#Solution">
+    <owl:Class rdf:about="https://w3id.org/ZorroOntology#Solution">
         <rdfs:comment>A corrective or remedial action taken to resolve a problem by addressing its cause, restoring the affected component or system to its expected functional state.</rdfs:comment>
-        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Problem"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Cause"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Function"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Component"/>
-      <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Effect"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Problem"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Cause"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Function"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Component"/>
+      <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Effect"/>
     </owl:Class>
     
 
 
-    <!-- http://w3id.org/ZorroOntology#System -->
+    <!-- https://w3id.org/ZorroOntology#System -->
 
 
-    <owl:Class rdf:about="http://w3id.org/ZorroOntology#System">
+    <owl:Class rdf:about="https://w3id.org/ZorroOntology#System">
      <rdfs:comment>The complete machine or operational whole, composed of interrelated subsystems, assemblies, and parts that together fulfill its overall function.</rdfs:comment>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/ZorroOntology#Component"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ZorroOntology#Component"/>
     </owl:Class>
 
-    <!-- http://w3id.org/ZorroOntology#SubSystem -->
+    <!-- https://w3id.org/ZorroOntology#SubSystem -->
 
-  <owl:Class rdf:about="http://w3id.org/ZorroOntology#SubSystem">
+  <owl:Class rdf:about="https://w3id.org/ZorroOntology#SubSystem">
   <rdfs:comment>A major structural division of a system, grouping one or more assemblies that collectively contribute to a specific aspect of the system’s operation.</rdfs:comment>
-  <rdfs:subClassOf rdf:resource="http://w3id.org/ZorroOntology#Component"/>
-          <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Problem"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Cause"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Function"/>
-        <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Solution"/>
-      <owl:disjointWith rdf:resource="http://w3id.org/ZorroOntology#Effect"/>
+  <rdfs:subClassOf rdf:resource="https://w3id.org/ZorroOntology#Component"/>
+          <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Problem"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Cause"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Function"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Solution"/>
+      <owl:disjointWith rdf:resource="https://w3id.org/ZorroOntology#Effect"/>
     </owl:Class>
 
 
